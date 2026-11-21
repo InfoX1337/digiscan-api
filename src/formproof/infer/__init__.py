@@ -608,6 +608,7 @@ def _address_fields(found: dict[str, list[Item]], key: _Keys, optional: bool) ->
             df.evidence = _ev(gen, sp.reason) if gen else df.evidence
         if sp.title == "Kraj":
             df.default_value = ["Polska"]
+            df.dictionary_name = "Kraje"
         by_title[sp.title] = df
         out.append(df)
     for df, sp in zip(out, std, strict=True):

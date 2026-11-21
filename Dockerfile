@@ -16,7 +16,7 @@ FROM ${PY_IMAGE} AS runtime
 # tesseract (Apache-2.0) + polski model OCR; bez GPL
 RUN apk add --no-cache tesseract-ocr tesseract-ocr-data-pol \
  && addgroup -S app && adduser -S -G app -H app
-ENV APP_ENV=production PORT=8000 HOST=0.0.0.0 PATH="/app/.venv/bin:$PATH" WEB_DIR=/app/web PYTHONDONTWRITEBYTECODE=1
+ENV APP_ENV=demo PORT=8000 HOST=0.0.0.0 PATH="/app/.venv/bin:$PATH" WEB_DIR=/app/web PYTHONDONTWRITEBYTECODE=1
 WORKDIR /app
 COPY --from=build --chown=app:app /app/.venv ./.venv
 COPY --from=build --chown=app:app /app/src ./src
