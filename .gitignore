@@ -1,10 +1,12 @@
 .work/
-node_modules/
-dist/
-web/dist/
+.venv/
+__pycache__/
+*.pyc
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
 .env
 .env.local
-coverage/
-test/fixtures/materials
+tests/fixtures/materials
 *.log
 .DS_Store

@@ -11,14 +11,16 @@ Godziny: Faza 3 sekwencja 12:25–13:15, runda 1 13:15–14:45, runda 2 14:45–
 5. Słowniki (Kraje→SELECT dictionaryName), PESEL→MLPZ defaultValue readOnly, zależność SHOW JSONata ("Polska"), propozycja nowego słownika.
 6. Pobierz JSON; `curl` API z JWT (REST, batch).
 
-## Stack (zmiana vs domyślny skill: regulamin zakazuje SaaS i LLM-API)
-Node 24 + TypeScript + pnpm, Fastify 5, Docker (node:24-alpine pinned, user `node`), Ollama (osobny kontener, open weights, pinned tag) do wzbogacenia; baza: brak (stateless, pliki tylko w pamięci/tmp). UI: Vite + vanilla TS (bez frameworka), serwowane przez Fastify (`@fastify/static`).
-Biblioteki (tylko MIT/BSD/Apache): fastify, @fastify/jwt, @fastify/multipart, @fastify/swagger(+ui), ajv, jsonata, pdfjs-dist, @napi-rs/canvas, tesseract.js (+ pol traineddata w obrazie), fflate, fast-xml-parser, exceljs, word-extractor, file-type, pino, vitest. Zakaz: GPL/AGPL (mupdf, poppler, libreoffice, pdftotext). Skrypt `pnpm license:check`.
-Uzasadnienie TS w README (regulamin "preferuje" Java/Python, nie wymaga).
+## Stack (zmiana 11:55: Python zamiast TS – regulamin preferuje Python 3.14+)
+Python 3.14 + uv, FastAPI + uvicorn, pydantic v2 (kontrakt = modele), PyJWT, jsonschema, jsonata-python. Docker `python:3.14.0-alpine3.22`, user `app`, read-only FS. Ollama (osobny kontener, pinned tag) do wzbogacenia. Baza: brak (stateless, pliki w pamięci).
+Ekstrakcja: pdfplumber (tekst+pozycje+prostokąty/checkboxy), pypdfium2 (render stron -> OCR/podgląd), pytesseract + tesseract-ocr pol (apk), Pillow, python-docx, openpyxl, ODS = zip+xml (stdlib), DOC = olefile + własny odczyt tekstu z WordDocument (bez układu).
+UI: `web/` czysty HTML + ES modules JS (bez Node/build), serwowany przez FastAPI StaticFiles. Podgląd oryginału: `?previews=true` -> `report.previews[]` (PNG + width/height w jednostkach bbox) – bez pdf.js.
+Licencje: tylko MIT/BSD/Apache/MPL(certifi). Zakaz GPL/AGPL (PyMuPDF, antiword, poppler, libreoffice). `uv run python scripts/license_check.py`.
+Jakość: `uv run pytest`, `uv run ruff check`, `uv run mypy src`.
 
 ## Architektura (pipeline, każdy krok czysta funkcja, testowalny)
 `ingest` (walidacja) → `extract` (plik→SourceDoc) → `infer` (SourceDoc→DraftForm z confidence+source) → `llm` (opcjonalne wzbogacenie, timeout, fallback) → `dict` (słowniki, dane inicjalne, propozycja) → `build` (DraftForm→FormDefinition) → `validate` (reguły COI + schema + auto-naprawa → Report) → odpowiedź `{form, report}`.
-`form` = czysty JSON zgodny ze schemą COI (bez dodatkowych kluczy). `report` osobno: `fields[techName|id] → {confidence, source:{page,bbox?,text}}`, `review[]`, `rules[]`, `repairs[]`, `proposedDictionaries[]`, `timings`, `llm:{used,model}`.
+`form` = czysty JSON zgodny ze schemą COI (bez dodatkowych kluczy, `FormDefinition.dump()`). `report` osobno: `fields[techName|id] → {confidence, source:{page,bbox?,text}}`, `review[]`, `rules[]`, `repairs[]`, `proposedDictionaries[]`, `timings`, `llm:{used,model}`.
 Uogólnianie: zero hardkodu pod pliki/tytuły; obrona na nowych plikach.
 
 ## Model danych
@@ -26,13 +28,13 @@ Brak bazy. Stan = request. Cache wyników LLM in-memory po SHA-256 tekstu (demo,
 
 ## Kontrakt API (Fastify, prefix `/api/v1`, JWT Bearer)
 - `POST /auth/token` {clientId, clientSecret} (z env) → {accessToken, expiresIn}. Parametry JWT: `JWT_SECRET`, `JWT_EXPIRES_IN`, `JWT_ISSUER`, `JWT_AUDIENCE`.
-- `POST /forms/convert` multipart `file` (+ query `llm=true|false`, `report=true|false`) → 200 `{form, report}`; 400 walidacja pliku (kod błędu: `FILE_TOO_LARGE`, `BAD_EXTENSION`, `MIME_MISMATCH`, `BAD_FILENAME`, `EMPTY`), 401, 415, 422 (nic nie wyekstrahowano), 504 (timeout).
+- `POST /forms/convert` multipart `file` (+ query `llm=true|false`, `previews=true|false`) → 200 `{form, report}`; 400 walidacja pliku (kod błędu: `FILE_TOO_LARGE`, `BAD_EXTENSION`, `MIME_MISMATCH`, `BAD_FILENAME`, `EMPTY`), 401, 415, 422 (nic nie wyekstrahowano), 504 (timeout).
 - `POST /forms/convert/batch` multipart wiele `file` → `{results:[{filename, ok, form?, report?, error?}]}` (limit liczby plików z configu).
 - `POST /forms/validate` body `FormDefinition` → `Report.rules/repairs` (walidator jako osobna usługa; dla UI po ręcznych poprawkach).
 - `GET /dictionaries`, `GET /dictionaries/:name` (JWT) → pozycje.
 - `GET /health` (bez JWT), `GET /docs` (OpenAPI).
-Config env: `MAX_FILE_BYTES`, `MAX_BATCH_FILES`, `JWT_*`, `AUTH_CLIENT_ID/SECRET`, `OLLAMA_URL`, `LLM_MODEL`, `LLM_ENABLED`, `LLM_TIMEOUT_MS`, `PORT`, `INTEGRATION_*` (parametry integracyjne, np. adres Ollama).
-Typy: `src/types/form.ts` (FormDefinition wg schema.json; uwaga: w przykładach klucz `repeatingSectionGrid`, w schemie literówka `repetingSectionGrid` – emitujemy `repeatingSectionGrid`), `src/types/source.ts` (SourceDoc: pages[], blocks[] {id,page,kind:text|cell|checkbox|line,text,bbox?,style?,row?,col?}), `src/types/report.ts`, `src/types/draft.ts`.
+Config env (`src/formproof/config.py`, `.env.example`): `MAX_FILE_BYTES`, `MAX_BATCH_FILES`, `MAX_OCR_PAGES`, `REQUEST_TIMEOUT_S`, `JWT_SECRET/EXPIRES_S/ISSUER/AUDIENCE`, `AUTH_CLIENT_ID/SECRET`, `OLLAMA_URL`, `LLM_MODEL`, `LLM_ENABLED`, `LLM_TIMEOUT_S`, `TESSERACT_CMD`, `DEMO_UI`, `PORT`.
+Typy (pydantic): `src/formproof/types/form.py` (FormDefinition; emitujemy `repeatingSectionGrid`, wejście toleruje `{}` zamiast `[]`), `source.py` (SourceDoc), `draft.py` (DraftForm), `report.py` (Report, camelCase), `stages.py` (sygnatury kroków: ExtractFn, InferFn, EnrichFn, DictFn, BuildFn, ValidateFn). Query `/forms/convert`: `llm`, `previews`.
 
 ## Auth
 JWT (HS256) na wszystkich `/api/v1/*` poza `/auth/token`, `/health`. Brak kont użytkowników; klient z env. UI loguje się automatycznie danymi z env (tryb demo) lub formularzem tokenu. Konto demo w README.
@@ -43,31 +45,31 @@ Uproszczone: Powiat/Gmina/Miejscowość próbka (jeśli brak otwartego TERYT), b
 Plan B: LLM pada/wolny → tryb rules-only (pełny, poprawny JSON, niższe confidence). Ollama w Dockerze na Mac bez GPU wolna: timeout 45 s, cache, demo na hoście z Metal (`OLLAMA_URL`).
 
 ## Mapa własności plików (rozłączna)
-- Integrator (main): `package.json`, `tsconfig*`, `src/types/**`, `src/server.ts`, `src/config.ts`, `src/routes/**`, `src/auth/**`, `src/ingest/**`, `src/infer/**`, `src/build/**`, `src/pipeline.ts`, Docker*, `README.md`, `docs/**`.
-- Strumień EXTRACT: `src/extract/**`, `test/extract/**`, `test/fixtures/materials` (symlink do `.work/mat`, nie commit).
-- Strumień UI: `web/**` (Vite), `test/e2e/ui.*`.
-- Strumień VALIDATE: `src/validate/**`, `test/validate/**`.
-- Runda 2: LLM (`src/llm/**`), DICT (`src/dict/**`), EVAL (`scripts/eval/**`, `test/e2e/api.*`).
-Kontrakty: `SourceDoc` (EXTRACT out), `FormDefinition`+`Report` (VALIDATE in/out, UI in).
-Start strumieni: na `main` zcommitowane typy, fixture `test/fixtures/sample-source.json`, `test/fixtures/expected1.json` (= example1.json), `test/fixtures/sample-response.json` (dla UI).
+- Integrator (main): `pyproject.toml`, `uv.lock`, `src/formproof/types/**`, `src/formproof/config.py`, `src/formproof/app.py`, `src/formproof/routes/**`, `src/formproof/auth/**`, `src/formproof/ingest/**`, `src/formproof/infer/**`, `src/formproof/build/**`, `src/formproof/pipeline.py`, Docker*, `README.md`, `docs/**`, `tests/test_api.py`, `tests/test_contract.py`, `tests/conftest.py`.
+- Strumień EXTRACT: `src/formproof/extract/**`, `tests/extract/**` (materiały: `tests/fixtures/materials` = symlink do `.work/mat`, poza gitem).
+- Strumień UI: `web/**`, `tests/e2e/ui_*`.
+- Strumień VALIDATE: `src/formproof/validate/**`, `tests/validate/**`.
+- Runda 2: LLM (`src/formproof/llm/**`), DICT (`src/formproof/dictionaries/**`), EVAL (`scripts/eval/**`, `tests/e2e/api_*`).
+Kontrakty: `SourceDoc` (EXTRACT out), `FormDefinition`+`Report` (VALIDATE in/out, UI in). Nowa zależność = prośba do integratora (`uv add` na main).
+Fixtures na main: `tests/fixtures/sample-source.json` (form 2 PDF), `sample-source1.json` (form 1 PDF), `expected1.json` (= example1.json), `sample-response.json` (dla UI; syntetyczny report).
 
 ## Zadania rdzenia (≤30 min każde) – 12
 Etap 1 sekwencyjny (integrator, Opus):
-- [ ] S1 Szkielet: pnpm+TS strict+vitest+eslint, struktura katalogów, config.ts, typy kontraktu (form/source/draft/report), fixtures, `.gitignore`, CLAUDE.md
-- [ ] S2 Auth JWT + `/auth/token` + `/health` + ingest (ext + magic-bytes MIME, nazwa, rozmiar, empty) + `/forms/convert` z pipeline-stubem + testy
-- [ ] S3 `pnpm license:check` + Dockerfile (alpine pinned, user node) + compose (api+ollama) – smoke build
+- [x] S1 Szkielet (Python: uv+pydantic+pytest+ruff+mypy), struktura katalogów, config.py, typy kontraktu (form/source/draft/report), fixtures, `.gitignore`, CLAUDE.md
+- [x] S2 Auth JWT + `/auth/token` + `/health` + ingest (ext + magic-bytes MIME, nazwa, rozmiar, empty) + `/forms/convert` z pipeline-stubem + testy
+- [x] S3 license_check.py + Dockerfile (alpine pinned, user app) + compose (api+ollama) – smoke build
 Etap 2 równoległy – runda 1 (max 3 worktree):
-- [ ] E1 (Sonnet) EXTRACT PDF (pdfjs, pozycje) + obraz/skan OCR (tesseract.js pol, bbox) + wykrywanie PDF bez warstwy tekstu → OCR
+- [ ] E1 (Sonnet) EXTRACT PDF (pdfplumber, pozycje, rect-checkboxy) + obraz/skan OCR (pytesseract pol, bbox) + wykrywanie PDF bez warstwy tekstu → OCR
 - [ ] E2 (Sonnet) EXTRACT DOCX/ODS/XLSX/DOC → SourceDoc (tabele, checkboxy ☐/☑, komórki)
 - [ ] U1 (Sonnet) UI: upload (drag&drop), JWT demo, widok JSON, lista "do przeglądu", panel reguł COI
-- [ ] U2 (Sonnet) UI: wizualizacja eUsługi z JSON (grid x/y/rows/cols, typy komponentów, states SHOW) + podświetlanie źródła w oryginale (pdf.js/img)
-- [ ] V1 (Opus) VALIDATE: reguły COI (≥12 reguł z dokumentu) + ajv schema + auto-naprawa + Report.rules/repairs; `POST /forms/validate` handler
+- [ ] U2 (Sonnet) UI: wizualizacja eUsługi z JSON (grid x/y/rows/cols, typy komponentów, states SHOW) + podświetlanie źródła na `report.previews` (PNG)
+- [ ] V1 (Opus) VALIDATE: reguły COI (≥12 reguł z dokumentu) + jsonschema + auto-naprawa + Report.rules/repairs; `POST /forms/validate` handler
 - Integrator w tym czasie: [ ] I1 infer (SourceDoc→DraftForm: sekcje, pola, typ z etykiety/kształtu, opcje z checkboxów, REQUIRED, confidence) [ ] I2 build (UUID, techName slug ASCII unikalny, grid layout, tabs MAIN/FINISH, flow links, states JSONata z zależności, defaultValue EXTERNAL_SYSTEM z mapy atrybutów)
   (UI = 1 worktree łącznie U1+U2; EXTRACT = 1 worktree E1+E2 sekwencyjnie jeśli trzeba; VALIDATE = 1 worktree)
 Etap 3 – runda 2 + końcowy:
 - [ ] R1 (Opus) LLM: Ollama client, JSON-constrained prompty (typ pola, walidator, słownik, zależności, nazwy sekcji), timeout, cache, fallback, confidence fusion
 - [ ] R2 (Sonnet) DICT: dane słowników + dopasowanie pola→słownik (opcja I), dane inicjalne PESEL/PESEL_ADDRESS/MLPZ (readOnly+EXTERNAL_SYSTEM), propozycja nowego słownika (II) do `report.proposedDictionaries`
-- [ ] R3 (Sonnet) EVAL+e2e: skrypt porównania z `expected1.json` (P/R pól i typów), e2e API na 4 formularzach × formatach (Playwright/vitest), batch endpoint
+- [ ] R3 (Sonnet) EVAL+e2e: skrypt porównania z `expected1.json` (P/R pól i typów), e2e API na 4 formularzach × formatach (pytest + Playwright UI), batch endpoint
 - [ ] F1 Końcowy: spięcie UI↔API na deployu (docker compose), stany ładowania/błędów, README + docs/architektura.md, `data-testid`
 
 ## Stretch (wg wag oceny)

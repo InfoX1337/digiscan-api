@@ -1,0 +1,9 @@
+.venv
+.work
+.git
+hackathon
+materiały
+tests
+**/__pycache__
+*.pdf
+.env*
