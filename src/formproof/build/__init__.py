@@ -65,12 +65,16 @@ def _ref(ctx: _Ctx, key: str) -> str | None:
 
 def _states(ctx: _Ctx, f: DraftField) -> list[FieldState]:
     out = [FieldState(type=s.type, query=s.query) for s in f.states]
+    conds: list[str] = []
     for w in f.show_when:
         ref = _ref(ctx, w.when_key)
         if ref is None:
             continue
         cond = f'("{_q(w.equals)}" in {ref})'
-        out.append(FieldState(type="SHOW", query=f"$not{cond}" if w.negate else cond))
+        conds.append(f"$not{cond}" if w.negate else cond)
+    if conds:
+        # kilka warunków widoczności = wszystkie naraz (jeden stan SHOW, JSONata 'and')
+        out.append(FieldState(type="SHOW", query=" and ".join(conds)))
     return out
 
 

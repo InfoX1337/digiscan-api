@@ -5,7 +5,7 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 
-from ..types.draft import DraftField, DraftForm, DraftOption, DraftTab, Evidence, ShowWhen
+from ..types.draft import DraftField, DraftForm, DraftOption, DraftTab, Evidence, ShowWhen, iter_draft
 from ..types.form import Consent, ConsentSectionConfig, Validator
 from ..types.source import SourceDoc
 from . import concepts as C
@@ -682,6 +682,8 @@ def _assemble(
                     if "pelnomocn" in fold(c.title):
                         c.show_when.append(ShowWhen(when_key=proxy_switch.key, equals="Tak"))
 
+    if proxy_switch is None:
+        _subject_block(data, key)
     tabs: list[DraftTab] = []
     if data:
         tabs.append(DraftTab(title="Dane", fields=data, confidence=0.8))
@@ -723,6 +725,140 @@ def _assemble(
         else [Evidence(by="rules", reason="tytuł z nazwy pliku")],
         tabs=tabs,
     )
+
+
+_FIZ, _INNA, _PRAWNA = "Swoim", "Innej osoby", "Osoby prawnej lub jednostki organizacyjnej"
+_FEE_TEXT = (
+    "Opłata skarbowa za pełnomocnictwo wynosi 17 zł. Przelej ją na konto urzędu miasta lub gminy właściwego "
+    "dla adresu zamieszkania osoby, która udzieliła pełnomocnictwa. W tytule przelewu wpisz nazwę wniosku "
+    "i „opłata skarbowa za pełnomocnictwo”. Dodaj plik z potwierdzeniem przelewu."
+)
+
+
+def _subject_block(data: list[DraftField], key: _Keys) -> None:
+    """Standard eUsługi 'Podmiot wniosku': gdy dane wnioskodawcy dopuszczają podmiot ('imię i nazwisko/nazwa').
+
+    Dodaje wybór, w czyim imieniu / jako kto, oraz sekcje warunkowe (dane podmiotu, adres siedziby, dane
+    innej osoby, pełnomocnictwo, opłata skarbowa). Pole 'Nazwa' z sekcji osoby przechodzi do 'Dane podmiotu'.
+    """
+    person = next(
+        (
+            sec
+            for sec in data
+            if sec.type == "SECTION"
+            and any(c.title == "Nazwa" for c in sec.children)
+            and any(c.title in ("Imię", "Nazwisko") for c in sec.children)
+        ),
+        None,
+    )
+    if person is None:
+        return
+    nazwa = next(c for c in person.children if c.title == "Nazwa")
+    person.children = [c for c in person.children if c is not nazwa]
+    ev_doc = list(nazwa.evidence)
+    conf = 0.6
+
+    def std(reason: str) -> list[Evidence]:
+        return [Evidence(by="rules", reason=f"standard eUsługi: {reason}")]
+
+    def fld(title: str, typ: str = "TEXT_FIELD", val: list[Validator] | None = None, **kw: object) -> DraftField:
+        kw.setdefault("evidence", std("pole sekcji podmiotu wniosku"))
+        return DraftField(
+            key=key(),
+            type=typ,  # type: ignore[arg-type]
+            title=title,
+            validation=val if val is not None else ["REQUIRED"],
+            confidence=conf,
+            **kw,  # type: ignore[arg-type]
+        )
+
+    def sec(title: str, children: list[DraftField], when: list[ShowWhen], reason: str, **kw: object) -> DraftField:
+        return DraftField(
+            key=key(),
+            type="SECTION",
+            title=title,
+            children=children,
+            show_when=when,
+            confidence=conf,
+            evidence=std(reason),
+            **kw,  # type: ignore[arg-type]
+        )
+
+    who = fld(
+        "Wybierz, w czyim imieniu wnioskujesz",
+        "RADIO",
+        options=[DraftOption(name=n) for n in (_FIZ, _INNA, _PRAWNA)],
+        evidence=[*ev_doc, *std("wnioskodawcą może być osoba fizyczna lub podmiot ('nazwa wnioskodawcy')")],
+    )
+    role = fld(
+        "Wybierz, jako kto wnioskujesz", "RADIO", options=[DraftOption(name=n) for n in ("Pełnomocnik", "Reprezentant")]
+    )
+    not_own = ShowWhen(when_key=who.key, equals=_FIZ, negate=True)
+    role.show_when = [not_own]
+    is_firm, is_other = ShowWhen(when_key=who.key, equals=_PRAWNA), ShowWhen(when_key=who.key, equals=_INNA)
+    is_proxy, is_repr = (
+        ShowWhen(when_key=role.key, equals="Pełnomocnik"),
+        ShowWhen(when_key=role.key, equals="Reprezentant"),
+    )
+    nazwa.validation = ["REQUIRED"]
+    firm = sec(
+        "Dane podmiotu",
+        [nazwa, fld("NIP", val=["REQUIRED", "NIP"]), fld("REGON", val=["REQUIRED", "REGON"]), fld("Numer KRS", val=[])],
+        [is_firm],
+        "dane podmiotu, gdy wniosek w imieniu osoby prawnej",
+    )
+    fee = fld(
+        "Czy złożenie pełnomocnictwa wymaga opłaty skarbowej?",
+        "RADIO",
+        options=[DraftOption(name=n) for n in ("Tak", "Nie")],
+    )
+    fee_yes = ShowWhen(when_key=fee.key, equals="Tak")
+    upload = "Plik z potwierdzeniem przelewu"
+    block = [
+        firm,
+        sec("Adres siedziby", _address_fields({}, key, False), [is_firm], "adres siedziby podmiotu"),
+        sec(
+            "Potwierdzenie, że jesteś reprezentantem",
+            [fld("Plik z odpisem danych", "FILE_UPLOADER")],
+            [is_firm, is_repr],
+            "dokument potwierdzający reprezentację",
+        ),
+        sec(
+            "Dane innej osoby",
+            [fld("Imię"), fld("Nazwisko"), fld("Numer PESEL", val=["REQUIRED", "PESEL"])],
+            [is_other],
+            "wniosek w imieniu innej osoby",
+        ),
+        sec("Adres zamieszkania innej osoby", _address_fields({}, key, False), [is_other], "adres innej osoby"),
+        sec(
+            "Pełnomocnictwo",
+            [fld("Plik dokumentu z pełnomocnictwem", "FILE_UPLOADER")],
+            [not_own, is_proxy],
+            "pełnomocnictwo, gdy działasz jako pełnomocnik",
+        ),
+        sec(
+            "Opłata skarbowa",
+            [
+                fee,
+                fld("", "TEXT_BLOCK", val=[], description=_FEE_TEXT, show_when=[fee_yes]),
+                fld(upload, "FILE_UPLOADER", show_when=[fee_yes]),
+            ],
+            [is_other, is_proxy],
+            "opłata skarbowa za pełnomocnictwo (osoba fizyczna)",
+        ),
+        sec(
+            "Opłata skarbowa za pełnomocnictwo",
+            [fld("", "TEXT_BLOCK", val=[], description=_FEE_TEXT), fld(upload, "FILE_UPLOADER")],
+            [is_firm, is_proxy],
+            "opłata skarbowa za pełnomocnictwo (podmiot)",
+        ),
+    ]
+    for f in iter_draft(block):
+        if f.type == "TEXT_BLOCK":
+            f.validation = []
+    subject = sec("Podmiot wniosku", [who, role], [], "wybór podmiotu wniosku")
+    data.insert(data.index(person), subject)
+    data.extend(block)
 
 
 def _address_fields(found: dict[str, list[Item]], key: _Keys, optional: bool) -> list[DraftField]:
