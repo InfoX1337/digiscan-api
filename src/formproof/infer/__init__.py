@@ -139,7 +139,18 @@ def _organ(lines: list[Line]) -> tuple[str, list[Line]] | None:
                 return clean(col[0].text), [ln, *col]
     for ln in lines[:15]:
         if ln.page == 1 and C.ORGAN.match(fold(clean(ln.text))) and len(clean(ln.text)) < 80:
-            return clean(ln.text), [ln]
+            # adres urzędu pod nazwą ('Płoskinia 8', '14-526 Płoskinia') – nadruk, nie pola
+            k = lines.index(ln)
+            addr = [
+                x
+                for x in lines[k + 1 : k + 3]
+                if x.page == 1
+                and not x.has_placeholder
+                and len(clean(x.text)) < 50
+                and re.search(r"\d", x.text)
+                and (not x.bbox or not ln.bbox or abs(x.x - ln.x) < 60)
+            ]
+            return clean(ln.text), [ln, *addr]
     return None
 
 
@@ -359,9 +370,27 @@ def infer(doc: SourceDoc) -> DraftForm:
                 last_item.spec.reason += f"; podpowiedź: {hint.group(1)}"
             continue
         if ln.has_placeholder:
+            prev_date = False
             for lab in _labels_from_line(ln):
-                for sp in C.specs_for_label(lab):
+                lab = lab.replace("*", "").strip()
+                specs = C.specs_for_label(lab)
+                typed = [sp for sp in specs if sp.type != "TEXT_FIELD" or sp.validation]
+                if len(lab.split()) >= 5 and typed and typed[0].type == "DATEPICKER" and fold(lab).endswith(" od"):
+                    typed[0].title = "Data od"
+                    specs = typed[:1]
+                elif len(lab.split()) >= 5 and not typed and not C.NAME_PAIR.search(fold(lab)):
+                    # luka w treści zdania ('Proszę o wynajem … w ____') – jedno pole, tytuł do sprawdzenia
+                    add_item(
+                        Spec(_sentence(lab)[:120], confidence=0.55, reason="pole w treści zdania – sprawdź tytuł"), [ln]
+                    )
+                    prev_date = False
+                    continue
+                if prev_date and fold(lab) in ("do", "od", "i"):
+                    add_item(Spec(f"Data {lab.lower()}", "DATEPICKER", reason="zakres dat 'od … do …'"), [ln])
+                    continue
+                for sp in specs:
                     add_item(sp, [ln])
+                prev_date = bool(specs) and specs[-1].type == "DATEPICKER"
             continue
         # etykieta bez miejsca do wpisania: komórka tabeli lub krótka linia (pole po prawej / poniżej)
         words = t.split()
