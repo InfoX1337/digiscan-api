@@ -92,8 +92,25 @@ def extract_image(inp: ExtractInput) -> SourceDoc:
     lang = pick_lang(warnings)
     if lang is None:
         return SourceDoc(filename=inp.filename, format="image", ocr=True, pages=pages, blocks=[], warnings=warnings)
-    if expired(inp.deadline):
-        warnings.append("OCR: przekroczono limit czasu")
-    else:
-        add_ocr_lines(b, 1, ocr_lines(img.convert("RGB"), lang))
+    rgb = img.convert("RGB")
+    lines: list[OcrLine] = []
+    # tesseract nie przyjmuje obrazów > 32767 px – długie skany OCR-ujemy w pasach z zakładką
+    strip, overlap = 8000, 120
+    y0 = 0
+    while y0 < rgb.height:
+        if expired(inp.deadline):
+            warnings.append("OCR: przekroczono limit czasu")
+            break
+        y1 = min(rgb.height, y0 + strip)
+        lo = y0 + (overlap / 2 if y0 > 0 else 0)
+        hi = y1 - overlap / 2 if y1 < rgb.height else float(y1)
+        part = rgb if (y0, y1) == (0, rgb.height) else rgb.crop((0, y0, rgb.width, y1))
+        for ln in ocr_lines(part, lang):
+            ln.y += y0
+            if lo <= ln.y + ln.h / 2 < hi:
+                lines.append(ln)
+        if y1 >= rgb.height:
+            break
+        y0 = y1 - overlap
+    add_ocr_lines(b, 1, lines)
     return SourceDoc(filename=inp.filename, format="image", ocr=True, pages=pages, blocks=b.blocks, warnings=warnings)

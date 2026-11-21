@@ -5,14 +5,15 @@ from __future__ import annotations
 import re
 from dataclasses import dataclass, field
 
-from ..types.draft import DraftField, DraftForm, DraftOption, DraftTab, Evidence, ShowWhen
+from ..types.draft import DraftField, DraftForm, DraftOption, DraftTab, Evidence, ShowWhen, iter_draft
 from ..types.form import Consent, ConsentSectionConfig, Validator
 from ..types.source import SourceDoc
 from . import concepts as C
 from .concepts import Spec
-from .lines import FOOTNOTE_MARK, PAREN_HINT, PLACEHOLDER, Line, clean, fold, median_font, to_lines
+from .lines import FOOTNOTE_MARK, PAREN_HINT, PLACEHOLDER, Line, clean, fold, hint_text, median_font, to_lines
 
 SUBMISSION_META = {"data", "miejscowosc i data", "miejscowosc, data", "data zlozenia wniosku", "data wypelnienia"}
+SUBMISSION_PLACE_DATE = re.compile(r"^[\w .-]{2,40},?\s+(dnia|dn\.?)$")  # 'Młynary, dnia ……'
 HEADING_NUM = re.compile(r"^(\d{1,2}(?:\.\d{1,2})*)\.?\s+(\S.*)$")
 INLINE_FN = re.compile(r"(?:(?<=[^\W\d_])|(?<=\)))(\d)\)(?=\s|$|[._…])")
 PAGE_NO = re.compile(r"^(strona|str\.)\s*\d+(\s*(/|z)\s*\d+)?$|^\d+\s*/\s*\d+$|^-?\s*\d+\s*-?$")
@@ -45,6 +46,7 @@ class Section:
     conds: dict[int, tuple[Choice, str]] = field(default_factory=dict)  # id(entry) -> warunek
     texts: list[Line] = field(default_factory=list)
     level: int = 1
+    list_choice: Choice | None = None  # 'Proszę o …:' + wyliczenie małą literą -> opcje
 
 
 class _Keys:
@@ -141,17 +143,31 @@ def _organ(lines: list[Line]) -> tuple[str, list[Line]] | None:
         if ln.page == 1 and C.ORGAN.match(fold(clean(ln.text))) and len(clean(ln.text)) < 80:
             # adres urzędu pod nazwą ('Płoskinia 8', '14-526 Płoskinia') – nadruk, nie pola
             k = lines.index(ln)
+            # z układem: linie adresu w tej samej kolumnie mogą przeplatać się z polami obok (do 6 linii niżej)
+            window = lines[k + 1 : k + 7] if ln.bbox else lines[k + 1 : k + 3]
             addr = [
                 x
-                for x in lines[k + 1 : k + 3]
+                for x in window
                 if x.page == 1
                 and not x.has_placeholder
                 and len(clean(x.text)) < 50
                 and re.search(r"\d", x.text)
-                and (not x.bbox or not ln.bbox or abs(x.x - ln.x) < 60)
-            ]
+                and not PAREN_HINT.match(x.text.strip())
+                and (not x.bbox or not ln.bbox or (abs(x.x - ln.x) < 60 and 0 <= x.y - ln.y < 60))
+            ][:2]
             return clean(ln.text), [ln, *addr]
     return None
+
+
+def _starts_list(ln: Line, lines: list[Line], i: int) -> bool:
+    """'…:' a pod nim ≥2 pozycje pisane małą literą bez miejsca do wpisania (dokończenia zdania) = wyliczenie opcji."""
+    if not ln.text.rstrip(" *").endswith(":"):
+        return False
+    nxt = [x for x in lines[i : i + 3] if not x.consumed]
+    return len(nxt) >= 2 and all(
+        clean(x.text)[:1].islower() and not x.has_placeholder and x.kind != "checkbox" and len(clean(x.text)) < 200
+        for x in nxt[:2]
+    )
 
 
 def _labels_from_line(ln: Line) -> list[str]:
@@ -294,12 +310,36 @@ def infer(doc: SourceDoc) -> DraftForm:
             if C.CHOICE_HINT.search(fold(ln.text)):
                 cur.choice_mode = True
             last_item = None
+            if cur.kind not in ("skip", "consent") and not cur.choice_mode and _starts_list(ln, lines, i):
+                cur.list_choice = Choice(title=_sentence(t), lines=[ln], multi=bool(C.MULTI_HINT.search(ft)))
+                cur.entries.append(cur.list_choice)
             continue
         if cur.kind == "skip":
             continue
         if cur.kind == "consent":
             cur.texts.append(ln)
             continue
+        if cur.list_choice is not None:
+            lc = cur.list_choice
+            nxt_input = i < len(lines) and lines[i].only_placeholder and not lines[i].consumed
+            if t[:1].islower() and len(t) < 200 and not ln.has_placeholder and ln.kind != "checkbox" and not nxt_input:
+                lc.options.append((_sentence(t), ln))
+                lc.lines.append(ln)
+                continue
+            cur.list_choice = None
+            if nxt_input and t[:1].islower() and len(t.split()) <= 3 and lc.options:
+                ln.block_ids = ln.block_ids + lines[i].block_ids
+                lines[i].consumed = True
+                ln.tags.add("input")
+            if t[:1].islower() and ln.has_placeholder and len(t.split()) <= 3 and lc.options:
+                # ostatnia pozycja 'inne ……' – opcja + pole tekstowe widoczne po jej wybraniu
+                lc.options.append((_sentence(t), ln))
+                lc.lines.append(ln)
+                it = add_item(Spec(_sentence(t), reason="pozycja 'inne' wyliczenia z miejscem do wpisania"), [ln])
+                cur.conds[id(it)] = (lc, _sentence(t))
+                continue
+            if not lc.options:
+                cur.entries.remove(lc)
         if C.CONDITION.match(ft):
             prev_choice = next((e for e in reversed(cur.entries) if isinstance(e, Choice)), None)
             if prev_choice and prev_choice.options:
@@ -353,7 +393,7 @@ def infer(doc: SourceDoc) -> DraftForm:
             plabel: str | None = None
             src = [ln]
             if nxt and PAREN_HINT.match(nxt.text.strip()) and nxt.y - ln.y < 40:
-                plabel = PAREN_HINT.match(nxt.text.strip()).group(1)  # type: ignore[union-attr]
+                plabel = hint_text(PAREN_HINT.match(nxt.text.strip()))  # type: ignore[arg-type]
                 src.append(nxt)
                 nxt.consumed = True
             elif last_item and last_item.lines[-1].text.strip().endswith(":"):
@@ -367,10 +407,10 @@ def infer(doc: SourceDoc) -> DraftForm:
             continue
         if hint:
             if last_item and abs(last_item.lines[-1].y - ln.y) < 40:
-                last_item.spec.reason += f"; podpowiedź: {hint.group(1)}"
-            elif doc.ocr and not C.DROP.search(fold(hint.group(1))):
+                last_item.spec.reason += f"; podpowiedź: {hint_text(hint)}"
+            elif doc.ocr and not C.DROP.search(fold(hint_text(hint))):
                 # skan: OCR gubi wykropkowanie nad podpisem '(imię i nazwisko)' – podpis sam wyznacza pole
-                for sp in C.specs_for_label(hint.group(1)):
+                for sp in C.specs_for_label(hint_text(hint)):
                     sp.confidence = min(sp.confidence, 0.65)
                     sp.reason += "; podpis pod brakującym w OCR miejscem do wpisania"
                     add_item(sp, [ln])
@@ -410,6 +450,13 @@ def infer(doc: SourceDoc) -> DraftForm:
             ln.block_ids = ln.block_ids + lines[i].block_ids
             lines[i].consumed = True
             words = t.split()
+        if ln.text.rstrip(" *").endswith(":") and len(t) <= 120 and _starts_list(ln, lines, i):
+            cur.list_choice = Choice(title=_sentence(t), lines=[ln], multi=bool(C.MULTI_HINT.search(ft)))
+            if cur.pending_cond:
+                cur.conds[id(cur.list_choice)] = cur.pending_cond
+            cur.entries.append(cur.list_choice)
+            last_item = None
+            continue
         before_input = i < len(lines) and lines[i].only_placeholder and not lines[i].consumed
         if (
             len(t) <= 70
@@ -553,7 +600,12 @@ def _assemble(
                 g = ""
             else:
                 g = e.spec.group
-                if fold(e.spec.title) in SUBMISSION_META and s.kind in ("", "person"):
+                if (
+                    fold(e.spec.title) in SUBMISSION_META or SUBMISSION_PLACE_DATE.match(fold(e.spec.title))
+                ) and s.kind in (
+                    "",
+                    "person",
+                ):
                     continue  # data/miejsce złożenia – nadaje system
                 if g == "address" and not addr_ok:
                     g = ""
@@ -630,6 +682,8 @@ def _assemble(
                     if "pelnomocn" in fold(c.title):
                         c.show_when.append(ShowWhen(when_key=proxy_switch.key, equals="Tak"))
 
+    if proxy_switch is None:
+        _subject_block(data, key)
     tabs: list[DraftTab] = []
     if data:
         tabs.append(DraftTab(title="Dane", fields=data, confidence=0.8))
@@ -673,22 +727,158 @@ def _assemble(
     )
 
 
+_FIZ, _INNA, _PRAWNA = "Swoim", "Innej osoby", "Osoby prawnej lub jednostki organizacyjnej"
+_FEE_TEXT = (
+    "Opłata skarbowa za pełnomocnictwo wynosi 17 zł. Przelej ją na konto urzędu miasta lub gminy właściwego "
+    "dla adresu zamieszkania osoby, która udzieliła pełnomocnictwa. W tytule przelewu wpisz nazwę wniosku "
+    "i „opłata skarbowa za pełnomocnictwo”. Dodaj plik z potwierdzeniem przelewu."
+)
+
+
+def _subject_block(data: list[DraftField], key: _Keys) -> None:
+    """Standard eUsługi 'Podmiot wniosku': gdy dane wnioskodawcy dopuszczają podmiot ('imię i nazwisko/nazwa').
+
+    Dodaje wybór, w czyim imieniu / jako kto, oraz sekcje warunkowe (dane podmiotu, adres siedziby, dane
+    innej osoby, pełnomocnictwo, opłata skarbowa). Pole 'Nazwa' z sekcji osoby przechodzi do 'Dane podmiotu'.
+    """
+    person = next(
+        (
+            sec
+            for sec in data
+            if sec.type == "SECTION"
+            and any(c.title == "Nazwa" for c in sec.children)
+            and any(c.title in ("Imię", "Nazwisko") for c in sec.children)
+        ),
+        None,
+    )
+    if person is None:
+        return
+    nazwa = next(c for c in person.children if c.title == "Nazwa")
+    person.children = [c for c in person.children if c is not nazwa]
+    ev_doc = list(nazwa.evidence)
+    conf = 0.6
+
+    def std(reason: str) -> list[Evidence]:
+        return [Evidence(by="rules", reason=f"standard eUsługi: {reason}")]
+
+    def fld(title: str, typ: str = "TEXT_FIELD", val: list[Validator] | None = None, **kw: object) -> DraftField:
+        kw.setdefault("evidence", std("pole sekcji podmiotu wniosku"))
+        return DraftField(
+            key=key(),
+            type=typ,  # type: ignore[arg-type]
+            title=title,
+            validation=val if val is not None else ["REQUIRED"],
+            confidence=conf,
+            **kw,  # type: ignore[arg-type]
+        )
+
+    def sec(title: str, children: list[DraftField], when: list[ShowWhen], reason: str, **kw: object) -> DraftField:
+        return DraftField(
+            key=key(),
+            type="SECTION",
+            title=title,
+            children=children,
+            show_when=when,
+            confidence=conf,
+            evidence=std(reason),
+            **kw,  # type: ignore[arg-type]
+        )
+
+    who = fld(
+        "Wybierz, w czyim imieniu wnioskujesz",
+        "RADIO",
+        options=[DraftOption(name=n) for n in (_FIZ, _INNA, _PRAWNA)],
+        evidence=[*ev_doc, *std("wnioskodawcą może być osoba fizyczna lub podmiot ('nazwa wnioskodawcy')")],
+    )
+    role = fld(
+        "Wybierz, jako kto wnioskujesz", "RADIO", options=[DraftOption(name=n) for n in ("Pełnomocnik", "Reprezentant")]
+    )
+    not_own = ShowWhen(when_key=who.key, equals=_FIZ, negate=True)
+    role.show_when = [not_own]
+    is_firm, is_other = ShowWhen(when_key=who.key, equals=_PRAWNA), ShowWhen(when_key=who.key, equals=_INNA)
+    is_proxy, is_repr = (
+        ShowWhen(when_key=role.key, equals="Pełnomocnik"),
+        ShowWhen(when_key=role.key, equals="Reprezentant"),
+    )
+    nazwa.validation = ["REQUIRED"]
+    firm = sec(
+        "Dane podmiotu",
+        [nazwa, fld("NIP", val=["REQUIRED", "NIP"]), fld("REGON", val=["REQUIRED", "REGON"]), fld("Numer KRS", val=[])],
+        [is_firm],
+        "dane podmiotu, gdy wniosek w imieniu osoby prawnej",
+    )
+    fee = fld(
+        "Czy złożenie pełnomocnictwa wymaga opłaty skarbowej?",
+        "RADIO",
+        options=[DraftOption(name=n) for n in ("Tak", "Nie")],
+    )
+    fee_yes = ShowWhen(when_key=fee.key, equals="Tak")
+    upload = "Plik z potwierdzeniem przelewu"
+    block = [
+        firm,
+        sec("Adres siedziby", _address_fields({}, key, False), [is_firm], "adres siedziby podmiotu"),
+        sec(
+            "Potwierdzenie, że jesteś reprezentantem",
+            [fld("Plik z odpisem danych", "FILE_UPLOADER")],
+            [is_firm, is_repr],
+            "dokument potwierdzający reprezentację",
+        ),
+        sec(
+            "Dane innej osoby",
+            [fld("Imię"), fld("Nazwisko"), fld("Numer PESEL", val=["REQUIRED", "PESEL"])],
+            [is_other],
+            "wniosek w imieniu innej osoby",
+        ),
+        sec("Adres zamieszkania innej osoby", _address_fields({}, key, False), [is_other], "adres innej osoby"),
+        sec(
+            "Pełnomocnictwo",
+            [fld("Plik dokumentu z pełnomocnictwem", "FILE_UPLOADER")],
+            [not_own, is_proxy],
+            "pełnomocnictwo, gdy działasz jako pełnomocnik",
+        ),
+        sec(
+            "Opłata skarbowa",
+            [
+                fee,
+                fld("", "TEXT_BLOCK", val=[], description=_FEE_TEXT, show_when=[fee_yes]),
+                fld(upload, "FILE_UPLOADER", show_when=[fee_yes]),
+            ],
+            [is_other, is_proxy],
+            "opłata skarbowa za pełnomocnictwo (osoba fizyczna)",
+        ),
+        sec(
+            "Opłata skarbowa za pełnomocnictwo",
+            [fld("", "TEXT_BLOCK", val=[], description=_FEE_TEXT), fld(upload, "FILE_UPLOADER")],
+            [is_firm, is_proxy],
+            "opłata skarbowa za pełnomocnictwo (podmiot)",
+        ),
+    ]
+    for f in iter_draft(block):
+        if f.type == "TEXT_BLOCK":
+            f.validation = []
+    subject = sec("Podmiot wniosku", [who, role], [], "wybór podmiotu wniosku")
+    data.insert(data.index(person), subject)
+    data.extend(block)
+
+
 def _address_fields(found: dict[str, list[Item]], key: _Keys, optional: bool) -> list[DraftField]:
     std = C.address_set("uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)", set(found))
     # jeżeli dokument ma tylko pojedyncze ogólne "adres" – w found nie ma składników
     by_title: dict[str, DraftField] = {}
     out: list[DraftField] = []
     for sp in std:
-        src = [ln for it in found.get(sp.title, []) for ln in it.lines]
-        if not src and sp.title in found:
-            src = []
-        if found.get(sp.title):
+        parts = C.TERYT_PARTS if sp.title == C.TERYT_DICT else (sp.title,)
+        hits = [it for t in parts for it in found.get(t, [])]
+        src = [ln for it in hits for ln in it.lines]
+        if hits and sp.title == C.TERYT_DICT:
+            sp.confidence = max(sp.confidence, min(0.85, hits[0].spec.confidence))
+        elif found.get(sp.title):
             sp.from_doc = True
             sp.confidence = max(sp.confidence, found[sp.title][0].spec.confidence)
             sp.reason = found[sp.title][0].spec.reason or "składnik adresu"
         elif any(it.spec.reason.startswith("rozwinięto") for its in found.values() for it in its):
             sp.from_doc = False
-        req = not optional and sp.title not in ("Numer lokalu", "Województwo")
+        req = not optional and sp.title != "Numer lokalu"
         df = _field(sp, key(), src, required=req)
         if not sp.from_doc:
             gen = [ln for its in found.values() for it in its for ln in it.lines]
@@ -696,6 +886,9 @@ def _address_fields(found: dict[str, list[Item]], key: _Keys, optional: bool) ->
         if sp.title == "Kraj":
             df.default_value = ["Polska"]
             df.dictionary_name = "Kraje"
+        elif sp.title == C.TERYT_DICT:
+            df.dictionary_name = C.TERYT_DICT
+            df.multi_level_tree = True
         by_title[sp.title] = df
         out.append(df)
     for df, sp in zip(out, std, strict=True):

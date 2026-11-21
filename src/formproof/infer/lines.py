@@ -10,7 +10,15 @@ from dataclasses import dataclass, field
 from ..types.source import BBox, SourceBlock, SourceDoc
 
 PLACEHOLDER = re.compile(r"[.…_]{3,}|…+|_{2,}")
-PAREN_HINT = re.compile(r"^\(([^()]{2,120})\)$")
+# podpis pod miejscem do wpisania: '(imię i nazwisko)' albo '/ imię i nazwisko /'
+PAREN_HINT = re.compile(r"^(?:\((?P<p>[^()]{2,120})\)|/\s*(?P<s>[^/()]{2,60}?)\s*/)$")
+_PRIVATE_GLYPH = re.compile(r"^[\ue000-\uf8ff\u24d8\u2139\u2022\u25aa\u25cf\u2023\u2043]+\s*")
+
+
+def hint_text(m: re.Match[str]) -> str:
+    return m.group("p") or m.group("s")
+
+
 FOOTNOTE_MARK = re.compile(r"^\d{1,2}\s?\)$")
 
 
@@ -22,6 +30,7 @@ def fold(s: str) -> str:
 
 def clean(s: str) -> str:
     s = PLACEHOLDER.sub(" ", s).replace("`", " ")
+    s = _PRIVATE_GLYPH.sub("", s.strip())  # znak symbolu (Wingdings, ⓘ, punktor) na początku
     s = re.sub(r"\s+", " ", s).strip(" :;,-–*\t")
     return s
 

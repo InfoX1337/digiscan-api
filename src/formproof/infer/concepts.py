@@ -45,6 +45,10 @@ ADDRESS_PARTS: list[tuple[re.Pattern[str], str, list[Validator]]] = [
 ]
 
 
+TERYT_DICT = "TERYT_4G_DOWODOWY"  # standard eUsługi: adres krajowy jako lista wielopoziomowa
+TERYT_PARTS = ("Województwo", "Powiat", "Gmina", "Miejscowość")
+
+
 def address_set(reason: str, found: set[str]) -> list[Spec]:
     """Standard adresu eUsługi: kraj + pola dla Polski + pola dla adresu zagranicznego (SHOW zależne od kraju)."""
 
@@ -64,18 +68,27 @@ def address_set(reason: str, found: set[str]) -> list[Spec]:
     zagr = ("Kraj", "Polska", True)
     kraj = s("Kraj")
     kraj.type = "SELECT"
+    # adres w Polsce: województwo/powiat/gmina/miejscowość = jedna lista wielopoziomowa ze słownika TERYT
+    teryt = s(TERYT_DICT, show=pl)
+    teryt.type = "SELECT"
+    if found & set(TERYT_PARTS):
+        teryt.from_doc, teryt.confidence, teryt.reason = True, 0.85, "składniki adresu (miejscowość/gmina/…) -> TERYT"
+
+    def z(title: str) -> Spec:
+        return Spec(
+            f"{title} (zagranica)", group="address", confidence=0.6, reason=reason, from_doc=False, show_when=zagr
+        )
+
     return [
         kraj,
-        s("Województwo", show=pl),
-        s("Miejscowość", show=pl),
+        z("Miejscowość"),
+        z("Kod pocztowy"),
+        z("Ulica"),
+        teryt,
         s("Kod pocztowy", ["ZIP_CODE"], show=pl),
         s("Ulica", show=pl),
         s("Numer budynku"),
         s("Numer lokalu"),
-        Spec("Miejscowość (zagranica)", group="address", confidence=0.6, reason=reason, from_doc=False, show_when=zagr),
-        Spec(
-            "Kod pocztowy (zagranica)", group="address", confidence=0.6, reason=reason, from_doc=False, show_when=zagr
-        ),
     ]
 
 
