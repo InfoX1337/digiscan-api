@@ -1,0 +1,25 @@
+{
+ "name": "Gmina",
+ "description": "Próbka słownika gmin (pełny słownik TERYT dostarcza platforma).",
+ "sample": true,
+ "items": [
+  "Warszawa",
+  "Kraków",
+  "Wrocław",
+  "Poznań",
+  "Gdańsk",
+  "Łódź",
+  "Lublin",
+  "Elbląg",
+  "Szczecin",
+  "Katowice",
+  "Białystok",
+  "Bydgoszcz",
+  "Rzeszów",
+  "Opole",
+  "Kielce",
+  "Olsztyn",
+  "Zielona Góra",
+  "Gorzów Wielkopolski"
+ ]
+}
