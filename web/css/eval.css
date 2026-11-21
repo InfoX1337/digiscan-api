@@ -1,0 +1,32 @@
+.eval h1 { margin: 4px 0 2px; font-size: 26px; }
+.eval h2 { margin: 0 0 10px; font-size: 18px; }
+.eval section { margin-top: 18px; }
+.pad { padding: 16px 18px; }
+.tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); gap: 12px; }
+.tile { background: var(--card); border: 1px solid var(--line); border-radius: var(--r); padding: 14px 16px; }
+.tile b { display: block; font-size: 28px; line-height: 1.15; color: var(--navy); }
+.tile span { color: var(--muted); font-size: 13px; }
+.tile.ok b { color: var(--ok); }
+.tbl-wrap { overflow-x: auto; }
+.etbl { width: 100%; border-collapse: collapse; font-size: 14px; }
+.etbl th, .etbl td { padding: 7px 10px; border-bottom: 1px solid var(--line); text-align: left; white-space: nowrap; }
+.etbl th { color: var(--muted); font-size: 12px; text-transform: uppercase; letter-spacing: .03em; }
+.etbl .n { text-align: right; font-variant-numeric: tabular-nums; }
+.etbl td.name { white-space: normal; min-width: 180px; }
+.etbl tr.err td { color: var(--fail); }
+.fmt { font-family: var(--mono); font-size: 12px; text-transform: uppercase; }
+.prow { display: grid; grid-template-columns: 70px 1fr; gap: 8px 12px; align-items: center; padding: 8px 0; border-bottom: 1px solid var(--line); }
+.prow:last-child { border-bottom: 0; }
+.bars { display: grid; gap: 6px; }
+.bar { display: grid; grid-template-columns: 110px 1fr 54px; gap: 8px; align-items: center; font-size: 13px; }
+.bar .track { height: 12px; background: var(--bg); border: 1px solid var(--line); border-radius: 99px; overflow: hidden; }
+.bar .fill { display: block; height: 100%; border-radius: 99px; }
+.bar .fill.hi { background: var(--ok); } .bar .fill.mid { background: var(--warn); } .bar .fill.lo { background: var(--fail); }
+.bar .v { text-align: right; font-variant-numeric: tabular-nums; font-weight: 700; }
+.meth { margin: 0; padding-left: 20px; display: grid; gap: 6px; }
+@media (max-width: 600px) {
+  .prow { grid-template-columns: 1fr; }
+  .bar { grid-template-columns: 90px 1fr 46px; }
+  main.eval { padding: 14px 12px 40px; }
+  .tile b { font-size: 24px; }
+}

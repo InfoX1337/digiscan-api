@@ -14,6 +14,7 @@ import re
 import sys
 import time
 import unicodedata
+from datetime import UTC, datetime
 from pathlib import Path
 from typing import Any
 
@@ -116,9 +117,73 @@ def form_label(p: Path) -> str:
     return m.group(1) if m else "?"
 
 
+def form_name(p: Path) -> str:
+    return re.sub(r"^\d+\.\s*", "", p.relative_to(MATERIALS).parts[0]).strip()
+
+
+def web_payload(rows: list[dict[str, Any]], llm: bool) -> dict[str, Any]:
+    """Zwięzły, publiczny JSON (bez treści materiałów – tylko nazwy formularzy i metryki)."""
+    files = []
+    for r in rows:
+        item: dict[str, Any] = {
+            "form": r["form"],
+            "formName": r["formName"],
+            "format": r["ext"],
+            "ok": r["ok"],
+            "ms": round(r["seconds"] * 1000),
+        }
+        if r["ok"]:
+            item.update(
+                fields=r["fields"],
+                sections=r["sections"],
+                rulesPass=r["rulesPass"],
+                rulesTotal=r["rulesTotal"],
+                repairs=r["repairs"],
+                review=r["review"],
+                confidence=round(r["confidence"] or 0, 3),
+            )
+        files.append(item)
+    ok = [f for f in files if f["ok"]]
+    f1 = [
+        {
+            "format": r["ext"],
+            **{
+                k: r["compare"][k]
+                for k in ("precision", "recall", "typeAccuracy", "expectedFields", "gotFields", "matched")
+            },
+        }
+        for r in rows
+        if r.get("compare")
+    ]
+    n = len(ok)
+    summary = {
+        "files": len(files),
+        "failed": len(files) - n,
+        "forms": len({f["form"] for f in files}),
+        "formats": sorted({f["format"] for f in files}),
+        "rulesPass": sum(f["rulesPass"] for f in ok),
+        "rulesTotal": sum(f["rulesTotal"] for f in ok),
+        "filesAllRulesPass": sum(f["rulesPass"] == f["rulesTotal"] for f in ok),
+        "repairs": sum(f["repairs"] for f in ok),
+        "avgConfidence": round(sum(f["confidence"] for f in ok) / n, 3) if n else 0.0,
+        "avgMs": round(sum(f["ms"] for f in ok) / n) if n else 0,
+        "form1AvgPrecision": round(sum(x["precision"] for x in f1) / len(f1), 3) if f1 else None,
+        "form1AvgRecall": round(sum(x["recall"] for x in f1) / len(f1), 3) if f1 else None,
+        "form1AvgTypeAccuracy": round(sum(x["typeAccuracy"] for x in f1) / len(f1), 3) if f1 else None,
+    }
+    return {
+        "generatedAt": datetime.now(UTC).strftime("%Y-%m-%d %H:%M UTC"),
+        "llm": llm,
+        "summary": summary,
+        "files": files,
+        "form1": f1,
+    }
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--llm", action="store_true", help="włącz LLM (domyślnie wyłączony)")
+    ap.add_argument("--web-out", default="", help="zapisz publiczny JSON dla strony web/eval.html")
     ap.add_argument("--only", default="", help="filtr rozszerzeń, np. pdf,docx")
     args = ap.parse_args()
     if not args.llm:
@@ -137,7 +202,7 @@ def main() -> int:
         ext = p.suffix.lower().lstrip(".")
         if only and ext not in only:
             continue
-        row: dict[str, Any] = {"form": form_label(p), "file": p.name, "ext": ext}
+        row: dict[str, Any] = {"form": form_label(p), "formName": form_name(p), "file": p.name, "ext": ext}
         row["isForm1"] = ratio(norm(p.stem), exp_title) >= 0.8
         t0 = time.perf_counter()
         try:
@@ -154,6 +219,7 @@ def main() -> int:
                 rulesTotal=len(rules),
                 repairs=len(rep.get("repairs", [])),
                 confidence=rep.get("confidence"),
+                sections=sum(f["type"] in ("SECTION", "REPEATING_SECTION") for f in collect_fields(form)),
             )
             if row["isForm1"]:
                 row["compare"] = compare(expected, form)
@@ -166,6 +232,12 @@ def main() -> int:
 
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(json.dumps({"llm": args.llm, "rows": rows}, ensure_ascii=False, indent=2), encoding="utf-8")
+
+    if args.web_out:
+        wp = Path(args.web_out)
+        wp.parent.mkdir(parents=True, exist_ok=True)
+        wp.write_text(json.dumps(web_payload(rows, args.llm), ensure_ascii=False, indent=2), encoding="utf-8")
+        print(f"# web JSON: {wp}", file=sys.stderr)
 
     print(f"## Eval (llm={'on' if args.llm else 'off'})\n")
     print("| form | plik | pola | review | reguły | naprawy | conf | czas s |")

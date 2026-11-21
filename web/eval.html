@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FormProof – wyniki ewaluacji</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b3d6e'/%3E%3Cpath d='M8 17l5 5 11-12' stroke='%23fff' stroke-width='3.5' fill='none'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/app.css">
+<link rel="stylesheet" href="css/eval.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo" aria-hidden="true">✓</span><div><b>FormProof</b><small>Formularze urzędowe → eUsługa COI, z dowodem zaufania</small></div></div>
+  <div class="top-r">
+    <a class="btn small" href="./">← Konwerter</a>
+    <button id="theme" class="btn small" title="Przełącz motyw">Motyw</button>
+  </div>
+</header>
+
+<main class="eval">
+  <h1>Wyniki ewaluacji</h1>
+  <p class="muted" id="meta">Ładowanie…</p>
+  <div id="error" class="error" role="alert" hidden></div>
+
+  <section aria-label="Podsumowanie">
+    <div class="tiles" data-testid="eval-summary" id="summary"></div>
+  </section>
+
+  <section class="card pad" aria-label="Formularz i format">
+    <h2>Formularz × format</h2>
+    <div class="tbl-wrap">
+      <table class="etbl" data-testid="eval-table" id="table">
+        <thead><tr><th>Formularz</th><th>Format</th><th class="n">Pola</th><th class="n">Sekcje</th><th class="n">Reguły COI</th><th class="n">Auto-naprawy</th><th class="n">Do przeglądu</th><th class="n">Pewność</th><th class="n">Czas</th></tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card pad" aria-label="Formularz 1 vs wzorzec">
+    <h2>Formularz 1 vs wzorzec COI</h2>
+    <p class="muted">Dopasowanie pól po tytule (podobieństwo ≥ 0,78) do wzorcowego JSON-a COI.</p>
+    <div id="pr" data-testid="eval-pr"></div>
+  </section>
+
+  <section class="card pad" aria-label="Metodologia">
+    <h2>Metodologia i ograniczenia</h2>
+    <ul class="meth">
+      <li><b>Co mierzymy.</b> Pipeline uruchamiany jest na wszystkich materiałach konkursowych. Dla każdego pliku liczymy pola, sekcje, spełnione reguły COI, auto-naprawy, pola oznaczone do przeglądu i średnią pewność.</li>
+      <li><b>Precyzja i czułość.</b> Tylko dla formularza 1 mamy wzorcowy JSON COI. Precyzja = dopasowane pola / pola wygenerowane, czułość = dopasowane / pola we wzorcu, zgodność typów liczona na dopasowanych parach.</li>
+      <li><b>Pozostałe formularze.</b> Bez wzorca podajemy wyłącznie metryki wewnętrzne (reguły COI, pewność) – nie są one dowodem poprawności semantycznej.</li>
+      <li><b>LLM.</b> <span id="llm-note"></span></li>
+      <li><b>Obrazy.</b> Skany PNG/JPG przechodzą przez lokalny OCR, więc wyniki są zwykle słabsze niż dla plików z warstwą tekstową.</li>
+      <li><b>Czas.</b> Wall-clock jednego przebiegu na maszynie deweloperskiej, bez generowania podglądów.</li>
+    </ul>
+  </section>
+</main>
+<script src="js/eval.js"></script>
+</body>
+</html>
