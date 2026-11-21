@@ -101,6 +101,19 @@ def _title(lines: list[Line], doc: SourceDoc, mf: float) -> tuple[str, float, li
             if nxt.text.isupper() and nxt.page == best.page and not HEADING_NUM.match(nxt.text) and len(nxt.text) < 90:
                 t += " " + clean(nxt.text)
                 used.append(nxt)
+        # 'WNIOSEK' / 'o' / 'wynajęcie świetlicy' – dokończenie tytułu z kolejnych linii pisanych małą literą
+        j = i + len(used)
+        while len(t.split()) <= 3 and j < len(lines) and j - i <= 3:
+            nxt = lines[j]
+            nt = clean(nxt.text).replace("*", "").strip()
+            if len(nt) <= 1 and not nt.isalnum():  # szum OCR ('°' zamiast 'o')
+                j += 1
+                continue
+            if not nt or nxt.has_placeholder or nxt.page != best.page or not nt[:1].islower() or len(t + nt) > 160:
+                break
+            t = (_sentence(t) if t.isupper() else t) + " " + nt
+            used.append(nxt)
+            j += 1
         return _sentence(t)[:255], 0.9, used
     stem = doc.filename.rsplit(".", 1)[0]
     return _sentence(re.sub(r"^\d+[.)]\s*", "", stem))[:255], 0.4, []
