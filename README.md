@@ -12,6 +12,17 @@ z auto-naprawą kieruje urzędnika tylko do pól niepewnych, więc cyfryzacja tr
 - `report` – osobno: pewność i źródło każdego pola, lista „Do przeglądu”, wynik reguł COI, wykonane naprawy,
   propozycje nowych słowników, czasy etapów, informacja o użyciu LLM.
 
+![FormProof – wynik konwersji: 29/29 reguł COI, podgląd e-usługi z pewnością pól, oryginał obok](docs/screenshot.png)
+
+**Co działa:**
+
+- 8 formatów wejścia (PDF, DOCX, DOC, XLSX, ODS, JPG/PNG/TIFF przez OCR), także kilka plików naraz.
+- Sekcje, pola, typy, walidatory, REQUIRED, słowniki (Kraje, Numery kierunkowe, Województwo, adres TERYT), stany SHOW.
+- Plik z kilkoma wnioskami (spis „Rodzaje wniosków”) → pole wyboru rodzaju wniosku, sekcje wariantów pokazywane warunkowo,
+  wspólne sekcje raz.
+- Pętla urzędnika: edycja pola w UI → ponowna walidacja (`/forms/validate`), walidatory sprawdzane na żywo w podglądzie.
+- Strona „Wyniki ewaluacji” (`/eval.html`): metryki względem wzorcowego JSON formularza 1.
+
 ## Szybki start
 
 ```bash
@@ -99,6 +110,8 @@ MIT/BSD/Apache/MPL.
 - Słowniki Powiat/Gmina/Miejscowość to próbka (pełny TERYT nie jest dołączony); Kraje, Numery kierunkowe, Województwo – pełne.
 - DOC (binarny Word) – tylko tekst, bez układu.
 - Jakość OCR zależy od skanu; pola z OCR mają niższe `confidence` i trafiają do przeglądu.
+- Pliki z kilkoma wnioskami: powtarzane bloki (np. kilka podopiecznych) wychodzą jako osobne sekcje, nie `REPEATING_SECTION`;
+  nietypowe bloki wnioskodawcy rozpoznawane słabiej.
 - Wynik to propozycja do przeglądu przez urzędnika, nie ostateczna decyzja.
 
 Licencja: MIT.

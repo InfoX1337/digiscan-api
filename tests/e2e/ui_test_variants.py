@@ -62,7 +62,8 @@ def test_variant_choice_drives_sections(page: Page) -> None:
 
 def test_title_combined(page: Page) -> None:
     page.get_by_role("tab", name="JSON").click()
-    expect(page.get_by_test_id("json-view")).to_contain_text("Wniosek o przyznanie stypendium, nagrody lub wyróżnienia sportowego")
+    title = "Wniosek o przyznanie stypendium, nagrody lub wyróżnienia sportowego"
+    expect(page.get_by_test_id("json-view")).to_contain_text(title)
 
 
 def test_no_page_errors(page: Page) -> None:
