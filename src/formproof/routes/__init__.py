@@ -137,4 +137,6 @@ def dictionary(_: Auth, name: str) -> Any:
 def demo_config(cfg: Cfg) -> Any:
     if not cfg.demo_ui:
         return {"demo": False}
-    return {"demo": True, "clientId": cfg.auth_client_id, "clientSecret": cfg.auth_client_secret}
+    # Nigdy nie zwracamy sekretu klienta – tylko krótkożyciowy token demo (15 min).
+    token, exp = issue_token(cfg, "demo-ui", expires_s=min(cfg.jwt_expires_s, 900))
+    return {"demo": True, "accessToken": token, "expiresIn": exp}

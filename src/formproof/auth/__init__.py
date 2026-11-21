@@ -21,16 +21,17 @@ def check_client(cfg: Settings, client_id: str, client_secret: str) -> bool:
     return ok_id and ok_secret
 
 
-def issue_token(cfg: Settings, subject: str) -> tuple[str, int]:
+def issue_token(cfg: Settings, subject: str, expires_s: int | None = None) -> tuple[str, int]:
     now = int(time.time())
+    ttl = expires_s if expires_s is not None else cfg.jwt_expires_s
     payload = {
         "sub": subject,
         "iat": now,
-        "exp": now + cfg.jwt_expires_s,
+        "exp": now + ttl,
         "iss": cfg.jwt_issuer,
         "aud": cfg.jwt_audience,
     }
-    return jwt.encode(payload, cfg.jwt_secret, algorithm="HS256"), cfg.jwt_expires_s
+    return jwt.encode(payload, cfg.jwt_secret, algorithm="HS256"), ttl
 
 
 def _unauthorized() -> HTTPException:

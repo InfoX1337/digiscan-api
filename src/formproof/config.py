@@ -7,6 +7,7 @@ from functools import lru_cache
 from pydantic import Field, field_validator
 from pydantic_settings import BaseSettings, SettingsConfigDict
 
+DEV_CLIENT_SECRET = "demo-secret"  # noqa: S105 – konto demo tylko dev
 DEV_SECRET = "dev-secret-change-me-dev-secret-change-me"  # noqa: S105 – tylko dev; produkcja wymaga JWT_SECRET
 
 
@@ -29,7 +30,7 @@ class Settings(BaseSettings):
     jwt_audience: str = "formproof-api"
 
     auth_client_id: str = "demo"
-    auth_client_secret: str = "demo-secret"  # noqa: S105 – konto demo (README); nadpisz w env
+    auth_client_secret: str = DEV_CLIENT_SECRET  # konto demo (README); produkcja wymaga AUTH_CLIENT_SECRET
 
     llm_enabled: bool = True
     ollama_url: str = "http://localhost:11434"
@@ -52,4 +53,8 @@ def get_settings() -> Settings:
     s = Settings()
     if s.env == "production" and s.jwt_secret == DEV_SECRET:
         raise RuntimeError("Produkcja wymaga ustawienia JWT_SECRET (>= 32 znaki).")
+    if s.env == "production" and s.auth_client_secret == DEV_CLIENT_SECRET:
+        raise RuntimeError("Produkcja wymaga ustawienia AUTH_CLIENT_SECRET (nie domyślnego).")
+    if s.env == "production" and s.demo_ui:
+        raise RuntimeError("DEMO_UI=true niedozwolone przy APP_ENV=production.")
     return s

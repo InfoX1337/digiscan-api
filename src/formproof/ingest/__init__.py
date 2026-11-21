@@ -56,9 +56,13 @@ def sniff(data: bytes) -> str:
     if data.startswith(b"PK\x03\x04"):
         try:
             with zipfile.ZipFile(io.BytesIO(data)) as z:
-                names = set(z.namelist())
+                infos = z.infolist()
+                if len(infos) > MAX_ZIP_ENTRIES or sum(i.file_size for i in infos) > MAX_ZIP_UNCOMPRESSED:
+                    return "zip-bomb"
+                names = {i.filename for i in infos}
                 if "mimetype" in names:
-                    mt = z.read("mimetype").decode("ascii", "replace").strip()
+                    with z.open("mimetype") as fh:
+                        mt = fh.read(128).decode("ascii", "replace").strip()
                     if mt == "application/vnd.oasis.opendocument.spreadsheet":
                         return "ods"
                     return "odf-other"
@@ -71,6 +75,9 @@ def sniff(data: bytes) -> str:
         return "zip"
     return "unknown"
 
+
+MAX_ZIP_ENTRIES = 5000
+MAX_ZIP_UNCOMPRESSED = 200 * 1024 * 1024  # ochrona przed zip bomb (DOCX/XLSX/ODS)
 
 _EXT_SNIFF: dict[str, set[str]] = {
     "pdf": {"pdf"},
