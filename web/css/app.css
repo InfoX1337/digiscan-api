@@ -214,3 +214,4 @@ blockquote { margin: 6px 0; padding: 6px 10px; border-left: 4px solid var(--hl);
 .edit-form label { display: grid; gap: 3px; font-size: 13px; } .edit-form label.opt { display: flex; gap: 6px; align-items: center; }
 .edit-btns { display: flex; gap: 8px; flex-wrap: wrap; }
 .edit-msg { font-size: 13px; margin: 0; } .edit-msg.bad { color: var(--fail); }
+a.btn { text-decoration: none; display: inline-block; }

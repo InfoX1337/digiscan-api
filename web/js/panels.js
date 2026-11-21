@@ -112,7 +112,7 @@ export function renderReport(root, report) {
 export function renderDetails(root, f, fr, onApply) {
   if (!f) { root.replaceChildren(h("p", { class: "muted" }, "Kliknij pole w wizualizacji albo pozycję z listy „Do przeglądu”, aby zobaczyć dowód: źródło, pewność i powody decyzji.")); return; }
   const dec = { rules: "reguły", human: "urzędnik", llm: "model językowy", dict: "słownik", repair: "auto-naprawa" };
-  const edit = f && onApply && !["SECTION", "REPEATING_SECTION"].includes(f.type) ? editForm(f, onApply) : null;
+  const edit = f && onApply ? editForm(f, onApply) : null;
   root.replaceChildren(
     h("h3", {}, f.title), h("p", { class: "muted" }, `${typeLabel(f.type)} · `, h("code", {}, f.techName)),
     fr ? h("div", { class: `conf-big ${confClass(fr.confidence)}` }, h("b", {}, pct(fr.confidence)), ` pewność ${confLabel(fr.confidence)}`) : h("p", { class: "muted" }, "Brak danych report dla tego pola."),
@@ -124,6 +124,7 @@ export function renderDetails(root, f, fr, onApply) {
 }
 
 function editForm(f, onApply) {
+  const box = ["SECTION", "REPEATING_SECTION"].includes(f.type);
   const title = h("input", { type: "text", value: f.title, "data-testid": "edit-title" });
   const type = h("select", { "data-testid": "edit-type" }, Object.entries(TYPE_PL_EDIT).map(([k, v]) => h("option", { value: k, selected: k === f.type }, v)));
   const req = h("input", { type: "checkbox", checked: f.validation.includes("REQUIRED"), "data-testid": "edit-required" });
@@ -135,12 +136,12 @@ function editForm(f, onApply) {
     catch (e) { msg.className = "edit-msg bad"; msg.textContent = `Nie udało się sprawdzić reguł: ${e.message}`; btns.forEach((b) => (b.disabled = false)); }
   };
   btns.push(
-    h("button", { class: "btn small primary", "data-testid": "edit-apply", onclick: () => run({ title: title.value.trim() || f.title, type: type.value, required: req.checked }) }, "Zatwierdź i sprawdź reguły"),
+    h("button", { class: "btn small primary", "data-testid": "edit-apply", onclick: () => run({ title: title.value.trim() || f.title, type: box ? f.type : type.value, required: box ? f.validation.includes("REQUIRED") : req.checked }) }, "Zatwierdź i sprawdź reguły"),
     h("button", { class: "btn small", "data-testid": "edit-confirm", onclick: () => run(null) }, "Zatwierdź bez zmian"));
   return h("form", { class: "edit-form", "data-testid": "edit-form", onsubmit: (e) => e.preventDefault() },
     h("h4", {}, "Weryfikacja urzędnika"),
-    h("label", {}, "Tytuł", title), h("label", {}, "Typ", type),
-    h("label", { class: "opt" }, req, "Pole wymagane"),
+    h("label", {}, "Tytuł", title), box ? null : h("label", {}, "Typ", type),
+    box ? null : h("label", { class: "opt" }, req, "Pole wymagane"),
     h("div", { class: "edit-btns" }, btns), msg);
 }
 
