@@ -10,9 +10,10 @@ from ..types.form import Consent, ConsentSectionConfig, Validator
 from ..types.source import SourceDoc
 from . import concepts as C
 from .concepts import Spec
-from .lines import FOOTNOTE_MARK, PAREN_HINT, PLACEHOLDER, Line, clean, fold, median_font, to_lines
+from .lines import FOOTNOTE_MARK, PAREN_HINT, PLACEHOLDER, Line, clean, fold, hint_text, median_font, to_lines
 
 SUBMISSION_META = {"data", "miejscowosc i data", "miejscowosc, data", "data zlozenia wniosku", "data wypelnienia"}
+SUBMISSION_PLACE_DATE = re.compile(r"^[\w .-]{2,40},?\s+(dnia|dn\.?)$")  # 'Młynary, dnia ……'
 HEADING_NUM = re.compile(r"^(\d{1,2}(?:\.\d{1,2})*)\.?\s+(\S.*)$")
 INLINE_FN = re.compile(r"(?:(?<=[^\W\d_])|(?<=\)))(\d)\)(?=\s|$|[._…])")
 PAGE_NO = re.compile(r"^(strona|str\.)\s*\d+(\s*(/|z)\s*\d+)?$|^\d+\s*/\s*\d+$|^-?\s*\d+\s*-?$")
@@ -45,6 +46,7 @@ class Section:
     conds: dict[int, tuple[Choice, str]] = field(default_factory=dict)  # id(entry) -> warunek
     texts: list[Line] = field(default_factory=list)
     level: int = 1
+    list_choice: Choice | None = None  # 'Proszę o …:' + wyliczenie małą literą -> opcje
 
 
 class _Keys:
@@ -141,17 +143,31 @@ def _organ(lines: list[Line]) -> tuple[str, list[Line]] | None:
         if ln.page == 1 and C.ORGAN.match(fold(clean(ln.text))) and len(clean(ln.text)) < 80:
             # adres urzędu pod nazwą ('Płoskinia 8', '14-526 Płoskinia') – nadruk, nie pola
             k = lines.index(ln)
+            # z układem: linie adresu w tej samej kolumnie mogą przeplatać się z polami obok (do 6 linii niżej)
+            window = lines[k + 1 : k + 7] if ln.bbox else lines[k + 1 : k + 3]
             addr = [
                 x
-                for x in lines[k + 1 : k + 3]
+                for x in window
                 if x.page == 1
                 and not x.has_placeholder
                 and len(clean(x.text)) < 50
                 and re.search(r"\d", x.text)
-                and (not x.bbox or not ln.bbox or abs(x.x - ln.x) < 60)
-            ]
+                and not PAREN_HINT.match(x.text.strip())
+                and (not x.bbox or not ln.bbox or (abs(x.x - ln.x) < 60 and 0 <= x.y - ln.y < 60))
+            ][:2]
             return clean(ln.text), [ln, *addr]
     return None
+
+
+def _starts_list(ln: Line, lines: list[Line], i: int) -> bool:
+    """'…:' a pod nim ≥2 pozycje pisane małą literą bez miejsca do wpisania (dokończenia zdania) = wyliczenie opcji."""
+    if not ln.text.rstrip(" *").endswith(":"):
+        return False
+    nxt = [x for x in lines[i : i + 3] if not x.consumed]
+    return len(nxt) >= 2 and all(
+        clean(x.text)[:1].islower() and not x.has_placeholder and x.kind != "checkbox" and len(clean(x.text)) < 200
+        for x in nxt[:2]
+    )
 
 
 def _labels_from_line(ln: Line) -> list[str]:
@@ -294,12 +310,36 @@ def infer(doc: SourceDoc) -> DraftForm:
             if C.CHOICE_HINT.search(fold(ln.text)):
                 cur.choice_mode = True
             last_item = None
+            if cur.kind not in ("skip", "consent") and not cur.choice_mode and _starts_list(ln, lines, i):
+                cur.list_choice = Choice(title=_sentence(t), lines=[ln], multi=bool(C.MULTI_HINT.search(ft)))
+                cur.entries.append(cur.list_choice)
             continue
         if cur.kind == "skip":
             continue
         if cur.kind == "consent":
             cur.texts.append(ln)
             continue
+        if cur.list_choice is not None:
+            lc = cur.list_choice
+            nxt_input = i < len(lines) and lines[i].only_placeholder and not lines[i].consumed
+            if t[:1].islower() and len(t) < 200 and not ln.has_placeholder and ln.kind != "checkbox" and not nxt_input:
+                lc.options.append((_sentence(t), ln))
+                lc.lines.append(ln)
+                continue
+            cur.list_choice = None
+            if nxt_input and t[:1].islower() and len(t.split()) <= 3 and lc.options:
+                ln.block_ids = ln.block_ids + lines[i].block_ids
+                lines[i].consumed = True
+                ln.tags.add("input")
+            if t[:1].islower() and ln.has_placeholder and len(t.split()) <= 3 and lc.options:
+                # ostatnia pozycja 'inne ……' – opcja + pole tekstowe widoczne po jej wybraniu
+                lc.options.append((_sentence(t), ln))
+                lc.lines.append(ln)
+                it = add_item(Spec(_sentence(t), reason="pozycja 'inne' wyliczenia z miejscem do wpisania"), [ln])
+                cur.conds[id(it)] = (lc, _sentence(t))
+                continue
+            if not lc.options:
+                cur.entries.remove(lc)
         if C.CONDITION.match(ft):
             prev_choice = next((e for e in reversed(cur.entries) if isinstance(e, Choice)), None)
             if prev_choice and prev_choice.options:
@@ -353,7 +393,7 @@ def infer(doc: SourceDoc) -> DraftForm:
             plabel: str | None = None
             src = [ln]
             if nxt and PAREN_HINT.match(nxt.text.strip()) and nxt.y - ln.y < 40:
-                plabel = PAREN_HINT.match(nxt.text.strip()).group(1)  # type: ignore[union-attr]
+                plabel = hint_text(PAREN_HINT.match(nxt.text.strip()))  # type: ignore[arg-type]
                 src.append(nxt)
                 nxt.consumed = True
             elif last_item and last_item.lines[-1].text.strip().endswith(":"):
@@ -367,10 +407,10 @@ def infer(doc: SourceDoc) -> DraftForm:
             continue
         if hint:
             if last_item and abs(last_item.lines[-1].y - ln.y) < 40:
-                last_item.spec.reason += f"; podpowiedź: {hint.group(1)}"
-            elif doc.ocr and not C.DROP.search(fold(hint.group(1))):
+                last_item.spec.reason += f"; podpowiedź: {hint_text(hint)}"
+            elif doc.ocr and not C.DROP.search(fold(hint_text(hint))):
                 # skan: OCR gubi wykropkowanie nad podpisem '(imię i nazwisko)' – podpis sam wyznacza pole
-                for sp in C.specs_for_label(hint.group(1)):
+                for sp in C.specs_for_label(hint_text(hint)):
                     sp.confidence = min(sp.confidence, 0.65)
                     sp.reason += "; podpis pod brakującym w OCR miejscem do wpisania"
                     add_item(sp, [ln])
@@ -410,6 +450,13 @@ def infer(doc: SourceDoc) -> DraftForm:
             ln.block_ids = ln.block_ids + lines[i].block_ids
             lines[i].consumed = True
             words = t.split()
+        if ln.text.rstrip(" *").endswith(":") and len(t) <= 120 and _starts_list(ln, lines, i):
+            cur.list_choice = Choice(title=_sentence(t), lines=[ln], multi=bool(C.MULTI_HINT.search(ft)))
+            if cur.pending_cond:
+                cur.conds[id(cur.list_choice)] = cur.pending_cond
+            cur.entries.append(cur.list_choice)
+            last_item = None
+            continue
         before_input = i < len(lines) and lines[i].only_placeholder and not lines[i].consumed
         if (
             len(t) <= 70
@@ -553,7 +600,12 @@ def _assemble(
                 g = ""
             else:
                 g = e.spec.group
-                if fold(e.spec.title) in SUBMISSION_META and s.kind in ("", "person"):
+                if (
+                    fold(e.spec.title) in SUBMISSION_META or SUBMISSION_PLACE_DATE.match(fold(e.spec.title))
+                ) and s.kind in (
+                    "",
+                    "person",
+                ):
                     continue  # data/miejsce złożenia – nadaje system
                 if g == "address" and not addr_ok:
                     g = ""
