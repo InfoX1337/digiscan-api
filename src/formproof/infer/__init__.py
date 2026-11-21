@@ -368,6 +368,12 @@ def infer(doc: SourceDoc) -> DraftForm:
         if hint:
             if last_item and abs(last_item.lines[-1].y - ln.y) < 40:
                 last_item.spec.reason += f"; podpowiedź: {hint.group(1)}"
+            elif doc.ocr and not C.DROP.search(fold(hint.group(1))):
+                # skan: OCR gubi wykropkowanie nad podpisem '(imię i nazwisko)' – podpis sam wyznacza pole
+                for sp in C.specs_for_label(hint.group(1)):
+                    sp.confidence = min(sp.confidence, 0.65)
+                    sp.reason += "; podpis pod brakującym w OCR miejscem do wpisania"
+                    add_item(sp, [ln])
             continue
         if ln.has_placeholder:
             prev_date = False

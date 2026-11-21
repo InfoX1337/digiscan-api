@@ -233,3 +233,11 @@ def test_not_a_field_lowers_confidence_and_keeps_field() -> None:
     f = DraftField(key="x1", type="TEXT_FIELD", title="Ptoskinia 8", confidence=0.7)
     ch = fuse_field(f, {"key": "x1", "type": "BRAK"}, {"x1": f})
     assert ch == ["nie-pole"] and f.confidence == pytest.approx(0.35) and f.evidence[-1].by == "llm"
+
+
+def test_section_title_rejects_prompt_echo() -> None:
+    from formproof.llm.fusion import fuse_field
+
+    f = DraftField(key="s1", type="SECTION", title="Adres zamieszkania", confidence=0.5)
+    fuse_field(f, {"key": "s1", "type": "SECTION", "title": "pokaż_gdy=f5=Polska"}, {"s1": f})
+    assert f.title == "Adres zamieszkania"

@@ -26,6 +26,7 @@ def fold(s: str) -> str:
     return " ".join("".join(c if c.isalnum() else " " for c in s).split())
 
 
+_BAD_TITLE = re.compile(r"[=|;]|pokaż_gdy|pewność|^f\d+\b|^(SECTION|TEXT_FIELD|BRAK)$", re.I)  # echo promptu
 _DEP = re.compile(r"^\s*([^\s=!]+)\s*(!=|=)\s*(.+?)\s*$")
 
 
@@ -132,7 +133,7 @@ def fuse_field(f: DraftField, s: dict[str, Any], by_key: dict[str, DraftField]) 
     if f.type in CONTAINER_TYPES and title:
         if fold(title) == fold(f.title):
             agree += 1
-        elif c0 < OVERRIDE_BELOW and 2 <= len(title) <= 200:
+        elif c0 < OVERRIDE_BELOW and 2 <= len(title) <= 200 and not _BAD_TITLE.search(title):
             changes.append(f"tytuł sekcji '{f.title}'->'{title}'")
             f.evidence.append(_ev(f"LLM: tytuł sekcji '{title}' zamiast '{f.title}'"))
             f.title = title
@@ -186,7 +187,7 @@ def fuse(draft: DraftForm, responses: list[dict[str, Any]]) -> list[str]:
                 if draft.title_confidence < AGREE_CONF:
                     draft.title_confidence = AGREE_CONF
                     draft.title_evidence.append(_ev("LLM potwierdza tytuł formularza"))
-            elif draft.title_confidence < OVERRIDE_BELOW and 3 <= len(title) <= 250:
+            elif draft.title_confidence < OVERRIDE_BELOW and 3 <= len(title) <= 250 and not _BAD_TITLE.search(title):
                 draft.title_evidence.append(_ev(f"LLM: tytuł '{title}' zamiast '{draft.title}'"))
                 log.append(f"tytuł formularza '{draft.title}'->'{title}'")
                 draft.title = title
