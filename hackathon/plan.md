@@ -67,10 +67,10 @@ Etap 2 równoległy – runda 1 (max 3 worktree):
 - Integrator w tym czasie: [x] I1 infer (SourceDoc→DraftForm: sekcje, pola, typ z etykiety/kształtu, opcje z checkboxów, REQUIRED, confidence) [x] I2 build (UUID, techName slug ASCII unikalny, grid layout, tabs MAIN/FINISH, flow links, states JSONata z zależności, defaultValue EXTERNAL_SYSTEM z mapy atrybutów)
   (UI = 1 worktree łącznie U1+U2; EXTRACT = 1 worktree E1+E2 sekwencyjnie jeśli trzeba; VALIDATE = 1 worktree)
 Etap 3 – runda 2 + końcowy:
-- [ ] R1 (Opus) LLM: Ollama client, JSON-constrained prompty (typ pola, walidator, słownik, zależności, nazwy sekcji), timeout, cache, fallback, confidence fusion
-- [ ] R2 (Sonnet) DICT: dane słowników + dopasowanie pola→słownik (opcja I), dane inicjalne PESEL/PESEL_ADDRESS/MLPZ (readOnly+EXTERNAL_SYSTEM), propozycja nowego słownika (II) do `report.proposedDictionaries`
-- [ ] R3 (Sonnet) EVAL+e2e: skrypt porównania z `expected1.json` (P/R pól i typów), e2e API na 4 formularzach × formatach (pytest + Playwright UI), batch endpoint
-- [ ] F1 Końcowy: spięcie UI↔API na deployu (docker compose), stany ładowania/błędów, README + docs/architektura.md, `data-testid`
+- [x] R1 (Opus) LLM: Ollama client, JSON-constrained prompty (typ pola, walidator, słownik, zależności, nazwy sekcji), timeout, cache, fallback, confidence fusion
+- [x] R2 (Sonnet) DICT: dane słowników + dopasowanie pola→słownik (opcja I), dane inicjalne PESEL/PESEL_ADDRESS/MLPZ (readOnly+EXTERNAL_SYSTEM), propozycja nowego słownika (II) do `report.proposedDictionaries`
+- [x] R3 (Sonnet) EVAL+e2e: skrypt porównania z `expected1.json` (P/R pól i typów), e2e API na 4 formularzach × formatach (pytest + Playwright UI), batch endpoint
+- [~] F1 Końcowy (README+LICENSE+export_results+UI e2e real zrobione; zostało: docs/architektura.md, stany błędów UI – sprawdzić w 3b): spięcie UI↔API na deployu (docker compose), stany ładowania/błędów, README + docs/architektura.md, `data-testid`
 
 ## Stretch (wg wag oceny)
 1. Walidatory w podglądzie (PESEL/NIP/REGON checksum live w wizualizacji) – VI

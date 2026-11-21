@@ -1,30 +1,28 @@
 # STATE
-Faza: 3 (Rdzeń). S1–S3 + runda 1 (EXTRACT, UI, VALIDATE, I1 infer, I2 build) DONE i scalone (12:40, ~2 h przed planem). Następna: runda 2.
-Start sesji: 2026-11-21 11:35. Deadline ok. 21:30. Plan godzinowy w plan.md (rdzeń 12:25–16:30, 3b do 18:00, prezentacja+wideo 18:00–20:00).
-Następny krok: /clear -> 'hackathon-sprint-app, kontynuuj' -> runda 2: 3 worktree LLM (R1, Opus), DICT (R2, Sonnet), EVAL+e2e (R3, Sonnet); integrator: jakość infer na formatach nie-PDF (form 1 DOCX/XLSX 5–18 pól vs PDF 30; form 4 tytuł 'Wniosek'), endpoint POST /forms/validate (sprawdź routes), potem F1.
-Materiały: COI/.work/mat (pliki 4 formularzy × formaty), COI/.work/txt (schema.json, example1.json, reguły, słowniki, dane.txt, standardy.txt).
+Faza: 3 (Rdzeń) DONE 13:15 (~3 h przed planem). Następna: 3b (dopracowanie, stretch, zamrożenie).
+Start sesji: 2026-11-21 11:35. Deadline 21:30. Plan godzinowy w plan.md (3b do 18:00, prezentacja+wideo 18:00–20:00).
+Następny krok: /clear -> 'hackathon-sprint-app, kontynuuj' -> 3b: (1) przegląd jakości UI w Dockerze + zrzuty (max 10 poprawek, Sonnet równolegle), (2) stretch wg plan.md (1: walidatory live, 2: edycja->re-validate, 3: strona eval), (3) jakość infer: form 1 ODS/XLSX (13 pól vs PDF 22), form 3 (5–15 pól), TERYT multi-level (expected1: TERYT_DOWODOWY), (4) repo publiczne GitHub, freeze, tag demo-freeze.
+Materiały: COI/.work/mat (symlink tests/fixtures/materials), COI/.work/txt (schema, example1, reguły, słowniki, dane.txt).
 
 ## Decyzje
-- Stack (zmiana 11:55 na prośbę użytkownika): Python 3.14 + uv + FastAPI + pydantic, Docker python:3.14.0-alpine3.22 + tesseract pol (apk), Ollama (qwen3.5:4b). UI: czysty HTML+JS w web/ (bez Node). exceljs/TS porzucone.
-- Podgląd oryginału w UI: `?previews=true` -> report.previews (PNG z pypdfium2), zamiast pdf.js.
-- Przykład COI ma `validation: {}` – model toleruje, emituje `[]`.
-- Wyróżnik: Dowód i zaufanie (confidence+source w `report`, walidator COI + auto-naprawa, lista do przeglądu).
-- Odpowiedź API: `{form, report}`; form czysty wg schemy (klucz `repeatingSectionGrid`, nie literówka ze schemy).
-- Brak bazy (stateless). Słowniki statyczne JSON; TERYT może być próbką (uczciwie w README).
-- 12 zadań rdzenia + stretch w plan.md.
-- Streamy runda 1: EXTRACT (Sonnet), UI (Sonnet), VALIDATE (Opus); integrator robi infer+build.
-- Uwaga: tylko formularz 1 ma oczekiwany JSON (example1.json) -> golden/eval tylko na nim.
+- Stack: Python 3.14 + uv + FastAPI + pydantic, Docker python:3.14.0-alpine3.22 + tesseract pol, Ollama qwen3.5:4b. UI czysty HTML+JS w web/.
+- Wyróżnik: Dowód i zaufanie (confidence+source w `report`, 29 reguł COI + auto-naprawa, lista do przeglądu).
+- LLM (R1): tylko pola <0.8; zgoda podnosi pewność, ale NIE wyciąga pola spod progu przeglądu 0.6; zmiana od LLM = 0.55 (człowiek zatwierdza); typ BRAK = nie pole (0.35); odrzuca tytuły-echo promptu. keep_alive 30m, num_predict 1024. ~9–16 s/plik na hoście (Metal), zimny start ~70 s.
+- DICT (R2): Kraje 198, Numery kierunkowe 198, Województwo 16; Powiat/Gmina/Miejscowość próbka (sample:true). MLPZ defaulty tylko w sekcjach wnioskodawcy. Brak TERYT multi-level.
+- Odpowiedź API: `{form, report}`; brak bazy (stateless).
+- Bezpieczeństwo (automatyczny review): APP_ENV=demo domyślnie w Dockerfile – świadomie dla jury; APP_ENV=production wymusza sekrety i DEMO_UI=false. ODS: stdlib expat (bez zewn. encji) – zostaje.
 
-## Środowisko
-OK: python3.14 + uv 0.11, tesseract (host, brew), git, gh, ffmpeg, docker (obraz formproof:dev 343 MB działa), ollama (qwen3.5:4b), playwright chromium. Mac M4 24 GB. Brak remote git (utworzyć repo publiczne na GitHub przed zgłoszeniem – wideo musi być w otwartym repo).
+## Wyniki (llm off)
+- Eval form 1 vs expected1: PDF/DOC/DOCX P 0.86 R 0.36 typ 0.92 (było 0.63/0.28); ODS/XLSX P 0.44 R 0.12; obrazy na hoście słabe (brak pol), w Dockerze lepsze.
+- Pola: form 2 ~33–40 we wszystkich formatach; form 4 PDF/DOC/DOCX/obrazy 21–24, ODS/XLSX 11; 29/29 reguł wszędzie.
+- Testy: 134 pytest (unit + e2e API na 32 plikach); UI e2e real `tests/e2e/ui_test_real.py` 4/4 na kontenerze.
 
-## Stan rundy 1 (12:40)
-- Pipeline end-to-end działa na 32 plikach (4 formularze × pdf/docx/doc/xlsx/ods/jpg/png), 0.0–1.5 s/plik, bez LLM. PDF form 2: 51 pól, 29/29 reguł.
-- Podgląd: skrypt `scratchpad/run_all.py` (filtr nazwy jako arg) – przenieść do scripts/eval w R3.
-- UI sprawdzone z prawdziwym backendem (python-playwright przez `uvx --with playwright`, Chrome z ~/Library/Caches/ms-playwright/chromium-1243; MCP playwright nie ma Chrome).
-- VALIDATE: 29 reguł COI-R01..R29 + naprawy (uuid5 deterministyczne). R25 dodaje walidatory wg etykiety (wpływa na eval vs expected1).
-- Bezpieczeństwo: /demo-config zwraca token 15 min (nie sekret); APP_ENV=production wymaga AUTH_CLIENT_SECRET i DEMO_UI=false; limit zip bomb. Domyślnie APP_ENV=demo (Dockerfile, .env).
-- ODS parser: stdlib xml.etree (expat ma ochronę przed entity bomb) – decyzja: zostaje, bez defusedxml.
+## Komendy
+- Eval: `uv run python scripts/eval/run.py`; wyniki do zgłoszenia: `uv run python scripts/export_results.py tests/fixtures/materials wyniki`
+- UI e2e: `BASE_URL=http://localhost:8010 CHROME_PATH=~/Library/Caches/ms-playwright/chromium-1243/chrome-mac-arm64/Google\ Chrome\ for\ Testing.app/Contents/MacOS/Google\ Chrome\ for\ Testing uvx --with playwright --with pytest pytest -o addopts="" tests/e2e/ui_test_real.py`
+- Kontener testowy: `docker compose build api && docker run -d --name fp-test --env-file .env -e OLLAMA_URL=http://host.docker.internal:11434 -p 8010:8000 --read-only --tmpfs /tmp coi-api`
+- `.env` (lokalny, poza gitem): OLLAMA_URL=http://localhost:11434 dla uruchomienia na hoście; compose nadpisuje na ollama:11434.
 
 ## Linki / worktree / problemy
-brak / runda 2 aktywna (12:35): ../COI-llm feat/llm (R1 Opus), ../COI-dict feat/dict (R2 Sonnet), ../COI-eval feat/eval (R3 Sonnet) / Tesseract na hoście bez `pol` (OCR fallback eng, zła diakrytyka) – doinstalować pol.traineddata lub demo w Dockerze (apk pol). Zasady AI hacknation.pl niesprawdzone. Ollama w Dockerze na Mac bez GPU wolna -> plan B rules-only + OLLAMA_URL na host.
+Repo remote: brak (utworzyć publiczne na GitHub przed zgłoszeniem). Worktree: brak (wszystkie scalone).
+Problemy: Tesseract na hoście bez `pol` (brew install tesseract-lang albo demo w Dockerze). Zasady AI hacknation.pl niesprawdzone. Ollama w Dockerze na Mac bez GPU wolna -> OLLAMA_URL na host.
