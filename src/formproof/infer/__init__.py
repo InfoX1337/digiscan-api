@@ -731,16 +731,18 @@ def _address_fields(found: dict[str, list[Item]], key: _Keys, optional: bool) ->
     by_title: dict[str, DraftField] = {}
     out: list[DraftField] = []
     for sp in std:
-        src = [ln for it in found.get(sp.title, []) for ln in it.lines]
-        if not src and sp.title in found:
-            src = []
-        if found.get(sp.title):
+        parts = C.TERYT_PARTS if sp.title == C.TERYT_DICT else (sp.title,)
+        hits = [it for t in parts for it in found.get(t, [])]
+        src = [ln for it in hits for ln in it.lines]
+        if hits and sp.title == C.TERYT_DICT:
+            sp.confidence = max(sp.confidence, min(0.85, hits[0].spec.confidence))
+        elif found.get(sp.title):
             sp.from_doc = True
             sp.confidence = max(sp.confidence, found[sp.title][0].spec.confidence)
             sp.reason = found[sp.title][0].spec.reason or "składnik adresu"
         elif any(it.spec.reason.startswith("rozwinięto") for its in found.values() for it in its):
             sp.from_doc = False
-        req = not optional and sp.title not in ("Numer lokalu", "Województwo")
+        req = not optional and sp.title != "Numer lokalu"
         df = _field(sp, key(), src, required=req)
         if not sp.from_doc:
             gen = [ln for its in found.values() for it in its for ln in it.lines]
@@ -748,6 +750,9 @@ def _address_fields(found: dict[str, list[Item]], key: _Keys, optional: bool) ->
         if sp.title == "Kraj":
             df.default_value = ["Polska"]
             df.dictionary_name = "Kraje"
+        elif sp.title == C.TERYT_DICT:
+            df.dictionary_name = C.TERYT_DICT
+            df.multi_level_tree = True
         by_title[sp.title] = df
         out.append(df)
     for df, sp in zip(out, std, strict=True):

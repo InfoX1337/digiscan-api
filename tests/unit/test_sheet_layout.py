@@ -49,8 +49,11 @@ def test_xlsx_borders_become_lines_with_bbox() -> None:
     kinds = [b.kind for b in doc.blocks]
     assert kinds[:2] == ["line", "text"]  # linia nad podpisem
     assert all(b.bbox is not None for b in doc.blocks)
-    titles = {f.title for f in _all(doc)}
-    assert {"Imię", "Nazwisko", "Miejscowość"} <= titles
+    fields = _all(doc)
+    assert {"Imię", "Nazwisko"} <= {f.title for f in fields}
+    teryt = next(f for f in fields if f.dictionary_name == "TERYT_4G_DOWODOWY")  # miejscowość -> lista TERYT
+    assert teryt.type == "SELECT" and teryt.multi_level_tree
+    assert teryt.evidence[0].block_ids  # ślad w dokumencie ('w miejscowości')
 
 
 def _doc(*items: tuple[str, str]) -> SourceDoc:
