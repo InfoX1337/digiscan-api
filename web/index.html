@@ -1,1 +1,71 @@
-<!doctype html><meta charset="utf-8"><title>FormProof</title><p>UI w budowie</p>
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>FormProof – formularz z dowodem zaufania</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b3d6e'/%3E%3Cpath d='M8 17l5 5 11-12' stroke='%23fff' stroke-width='3.5' fill='none'/%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<header class="top">
+  <div class="brand"><span class="logo" aria-hidden="true">✓</span><div><b>FormProof</b><small>Formularze urzędowe → eUsługa COI, z dowodem zaufania</small></div></div>
+  <div class="top-r">
+    <span id="demo-badge" class="pill warn" hidden>DEMO</span>
+    <span id="auth-state" class="muted"></span>
+    <input data-testid="login-token" type="text" placeholder="Token JWT (Bearer)" aria-label="Token JWT" hidden autocomplete="off">
+    <button id="theme" class="btn small" title="Przełącz motyw">Motyw</button>
+  </div>
+</header>
+
+<main>
+  <section class="upload card" aria-label="Wczytywanie formularza">
+    <div class="drop" data-testid="upload-dropzone" tabindex="0" role="button" aria-label="Upuść pliki lub wybierz z dysku">
+      <div class="drop-ico" aria-hidden="true">⇪</div>
+      <div><b>Upuść formularz tutaj</b> lub kliknij, aby wybrać<br><small>PDF, skan (PNG/JPG/TIFF), DOCX, DOC, XLSX, ODS · do 15 MB · pliki nie są zapisywane</small></div>
+      <ul id="file-list"></ul>
+    </div>
+    <input data-testid="upload-input" id="file" type="file" multiple hidden accept=".pdf,.png,.jpg,.jpeg,.tif,.tiff,.docx,.doc,.xlsx,.ods">
+    <div class="opts-col">
+      <label class="opt"><input type="checkbox" id="opt-llm" checked> Wzbogać lokalnym LLM</label>
+      <label class="opt"><input type="checkbox" id="opt-previews" checked> Podgląd oryginału</label>
+      <button class="btn primary" data-testid="convert-btn" disabled>Konwertuj</button>
+    </div>
+    <div data-testid="progress" class="progress" hidden aria-live="polite"></div>
+    <div id="error" class="error" role="alert" hidden></div>
+  </section>
+
+  <div id="batch-bar" class="batch-bar" hidden></div>
+
+  <div id="results" hidden>
+    <h1 id="form-title" class="form-title"></h1>
+    <section class="card rules" data-testid="rules-panel" aria-label="Zgodność z regułami COI"></section>
+
+    <div class="cols">
+      <section class="col col-src" aria-label="Oryginał">
+        <h2 class="col-h">Oryginał</h2>
+        <div id="preview" class="preview"></div>
+      </section>
+      <section class="col col-viz" aria-label="Wizualizacja eUsługi">
+        <h2 class="col-h">Wizualizacja eUsługi <small>klik w pole = dowód</small></h2>
+        <div class="viz" data-testid="form-viz"></div>
+      </section>
+      <section class="col col-side" aria-label="Dane i raport">
+        <div class="rtabs" role="tablist">
+          <button class="rtab" role="tab" data-tab="review">Do przeglądu</button>
+          <button class="rtab" role="tab" data-tab="details">Szczegóły pola</button>
+          <button class="rtab" role="tab" data-tab="json">JSON</button>
+          <button class="rtab" role="tab" data-tab="report">Raport</button>
+        </div>
+        <div id="tab-review" class="tabpanel" role="tabpanel"></div>
+        <div id="tab-details" class="tabpanel" role="tabpanel" hidden></div>
+        <div id="tab-json" class="tabpanel" role="tabpanel" hidden></div>
+        <div id="tab-report" class="tabpanel" role="tabpanel" hidden></div>
+        <button id="dl" class="btn primary wide" data-testid="download-json">Pobierz JSON (czysty formularz)</button>
+      </section>
+    </div>
+  </div>
+</main>
+<script type="module" src="js/main.js"></script>
+</body>
+</html>
