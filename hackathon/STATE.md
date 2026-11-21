@@ -1,7 +1,7 @@
 # STATE
-Faza: 0 DONE. Następna: Faza 1 (Pomysł/wyróżnik)
+Faza: 1 DONE (wyróżnik A: Dowód i zaufanie, patrz idea.md). Następna: Faza 2 (Plan)
 Start sesji: 2026-11-21 11:35 (event startuje 11:00). Deadline: ok. 21:30 (10 h od 11:35).
-Następny krok: user wrzuca materiały do COI/materialy -> /clear -> 'hackathon-sprint-app, kontynuuj' -> Faza 1.
+Następny krok: /clear -> 'hackathon-sprint-app, kontynuuj' -> Faza 2. Materiały rozpakowane: COI/.work/mat, tekst: COI/.work/txt (schema.json, example1.json, reguły, słowniki, dane.txt). Dodać .work do .gitignore.
 
 ## Decyzje
 - Skill domyślny stack (Next.js/Supabase/Vercel/Claude API) ODRZUCONY: regulamin zakazuje SaaS/API/LLM-only-API. Stack (wybór usera): Node.js + TypeScript + pnpm (Fastify), Docker (node alpine, wersja pinned), lokalne parsery + OCR + lokalny LLM (open weights).
