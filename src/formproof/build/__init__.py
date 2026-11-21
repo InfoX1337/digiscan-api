@@ -6,6 +6,8 @@ siatka jednokolumnowa (standard COI: układ jednokolumnowy, x=0, cols=3), flow l
 
 from __future__ import annotations
 
+import re
+
 from ..types.draft import DraftField, DraftForm
 from ..types.form import (
     CONTAINER_TYPES,
@@ -22,6 +24,8 @@ from ..types.form import (
 from ..types.stages import BuildResult
 from ..validate.common import new_id, slugify, unique_name
 
+# kwalifikator wariantu tylko w techName (np. "Ulica (zagranica)" -> title "Ulica", techName "ulica_zagranica")
+VARIANT = re.compile(r"\s*\((zagranica|siedziba|pełnomocnik)\)$")
 INPUT_TYPES = frozenset({"SELECT", "RADIO", "CHECKBOX"})
 
 
@@ -88,7 +92,7 @@ def _field(ctx: _Ctx, f: DraftField, order: int, children: list[Question]) -> Fo
         id=fid,
         type=f.type,
         techName=tech,
-        title=f.title,
+        title=VARIANT.sub("", f.title),
         description=f.description or "",
         options=opts,
         validation=list(dict.fromkeys(f.validation)),

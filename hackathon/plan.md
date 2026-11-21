@@ -59,12 +59,12 @@ Etap 1 sekwencyjny (integrator, Opus):
 - [x] S2 Auth JWT + `/auth/token` + `/health` + ingest (ext + magic-bytes MIME, nazwa, rozmiar, empty) + `/forms/convert` z pipeline-stubem + testy
 - [x] S3 license_check.py + Dockerfile (alpine pinned, user app) + compose (api+ollama) – smoke build
 Etap 2 równoległy – runda 1 (max 3 worktree):
-- [ ] E1 (Sonnet) EXTRACT PDF (pdfplumber, pozycje, rect-checkboxy) + obraz/skan OCR (pytesseract pol, bbox) + wykrywanie PDF bez warstwy tekstu → OCR
-- [ ] E2 (Sonnet) EXTRACT DOCX/ODS/XLSX/DOC → SourceDoc (tabele, checkboxy ☐/☑, komórki)
-- [ ] U1 (Sonnet) UI: upload (drag&drop), JWT demo, widok JSON, lista "do przeglądu", panel reguł COI
-- [ ] U2 (Sonnet) UI: wizualizacja eUsługi z JSON (grid x/y/rows/cols, typy komponentów, states SHOW) + podświetlanie źródła na `report.previews` (PNG)
-- [ ] V1 (Opus) VALIDATE: reguły COI (≥12 reguł z dokumentu) + jsonschema + auto-naprawa + Report.rules/repairs; `POST /forms/validate` handler
-- Integrator w tym czasie: [ ] I1 infer (SourceDoc→DraftForm: sekcje, pola, typ z etykiety/kształtu, opcje z checkboxów, REQUIRED, confidence) [ ] I2 build (UUID, techName slug ASCII unikalny, grid layout, tabs MAIN/FINISH, flow links, states JSONata z zależności, defaultValue EXTERNAL_SYSTEM z mapy atrybutów)
+- [x] E1 (Sonnet) EXTRACT PDF (pdfplumber, pozycje, rect-checkboxy) + obraz/skan OCR (pytesseract pol, bbox) + wykrywanie PDF bez warstwy tekstu → OCR
+- [x] E2 (Sonnet) EXTRACT DOCX/ODS/XLSX/DOC → SourceDoc (tabele, checkboxy ☐/☑, komórki)
+- [x] U1 (Sonnet) UI: upload (drag&drop), JWT demo, widok JSON, lista "do przeglądu", panel reguł COI
+- [x] U2 (Sonnet) UI: wizualizacja eUsługi z JSON (grid x/y/rows/cols, typy komponentów, states SHOW) + podświetlanie źródła na `report.previews` (PNG)
+- [x] V1 (Opus) VALIDATE: reguły COI (≥12 reguł z dokumentu) + jsonschema + auto-naprawa + Report.rules/repairs; `POST /forms/validate` handler
+- Integrator w tym czasie: [x] I1 infer (SourceDoc→DraftForm: sekcje, pola, typ z etykiety/kształtu, opcje z checkboxów, REQUIRED, confidence) [x] I2 build (UUID, techName slug ASCII unikalny, grid layout, tabs MAIN/FINISH, flow links, states JSONata z zależności, defaultValue EXTERNAL_SYSTEM z mapy atrybutów)
   (UI = 1 worktree łącznie U1+U2; EXTRACT = 1 worktree E1+E2 sekwencyjnie jeśli trzeba; VALIDATE = 1 worktree)
 Etap 3 – runda 2 + końcowy:
 - [ ] R1 (Opus) LLM: Ollama client, JSON-constrained prompty (typ pola, walidator, słownik, zależności, nazwy sekcji), timeout, cache, fallback, confidence fusion

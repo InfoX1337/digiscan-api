@@ -1,7 +1,7 @@
 # STATE
-Faza: 3 (Rdzeń). S1–S3 DONE (12:10). Następna: runda 1 równoległa (EXTRACT, UI, VALIDATE) + integrator I1/I2.
+Faza: 3 (Rdzeń). S1–S3 + runda 1 (EXTRACT, UI, VALIDATE, I1 infer, I2 build) DONE i scalone (12:40, ~2 h przed planem). Następna: runda 2.
 Start sesji: 2026-11-21 11:35. Deadline ok. 21:30. Plan godzinowy w plan.md (rdzeń 12:25–16:30, 3b do 18:00, prezentacja+wideo 18:00–20:00).
-Następny krok: /clear -> 'hackathon-sprint-app, kontynuuj' -> utwórz 3 worktree (COI-extract, COI-ui, COI-validate), briefy subagentów wg plan.md, integrator robi infer+build na main.
+Następny krok: /clear -> 'hackathon-sprint-app, kontynuuj' -> runda 2: 3 worktree LLM (R1, Opus), DICT (R2, Sonnet), EVAL+e2e (R3, Sonnet); integrator: jakość infer na formatach nie-PDF (form 1 DOCX/XLSX 5–18 pól vs PDF 30; form 4 tytuł 'Wniosek'), endpoint POST /forms/validate (sprawdź routes), potem F1.
 Materiały: COI/.work/mat (pliki 4 formularzy × formaty), COI/.work/txt (schema.json, example1.json, reguły, słowniki, dane.txt, standardy.txt).
 
 ## Decyzje
@@ -18,5 +18,13 @@ Materiały: COI/.work/mat (pliki 4 formularzy × formaty), COI/.work/txt (schema
 ## Środowisko
 OK: python3.14 + uv 0.11, tesseract (host, brew), git, gh, ffmpeg, docker (obraz formproof:dev 343 MB działa), ollama (qwen3.5:4b), playwright chromium. Mac M4 24 GB. Brak remote git (utworzyć repo publiczne na GitHub przed zgłoszeniem – wideo musi być w otwartym repo).
 
+## Stan rundy 1 (12:40)
+- Pipeline end-to-end działa na 32 plikach (4 formularze × pdf/docx/doc/xlsx/ods/jpg/png), 0.0–1.5 s/plik, bez LLM. PDF form 2: 51 pól, 29/29 reguł.
+- Podgląd: skrypt `scratchpad/run_all.py` (filtr nazwy jako arg) – przenieść do scripts/eval w R3.
+- UI sprawdzone z prawdziwym backendem (python-playwright przez `uvx --with playwright`, Chrome z ~/Library/Caches/ms-playwright/chromium-1243; MCP playwright nie ma Chrome).
+- VALIDATE: 29 reguł COI-R01..R29 + naprawy (uuid5 deterministyczne). R25 dodaje walidatory wg etykiety (wpływa na eval vs expected1).
+- Bezpieczeństwo: /demo-config zwraca token 15 min (nie sekret); APP_ENV=production wymaga AUTH_CLIENT_SECRET i DEMO_UI=false; limit zip bomb. Domyślnie APP_ENV=demo (Dockerfile, .env).
+- ODS parser: stdlib xml.etree (expat ma ochronę przed entity bomb) – decyzja: zostaje, bez defusedxml.
+
 ## Linki / worktree / problemy
-brak / brak / Zasady AI hacknation.pl niesprawdzone. Ollama w Dockerze na Mac bez GPU wolna -> plan B rules-only + OLLAMA_URL na host.
+brak / brak (wszystkie scalone) / Tesseract na hoście bez `pol` (OCR fallback eng, zła diakrytyka) – doinstalować pol.traineddata lub demo w Dockerze (apk pol). Zasady AI hacknation.pl niesprawdzone. Ollama w Dockerze na Mac bez GPU wolna -> plan B rules-only + OLLAMA_URL na host.

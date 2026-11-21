@@ -615,7 +615,6 @@ def _address_fields(found: dict[str, list[Item]], key: _Keys, optional: bool) ->
         if sp.show_when:
             trg = by_title[sp.show_when[0]]
             df.show_when.append(ShowWhen(when_key=trg.key, equals=sp.show_when[1], negate=sp.show_when[2]))
-        df.title = df.title.replace(" (zagranica)", "")
     return out
 
 
