@@ -71,8 +71,36 @@ def _merge(a: SourceBlock, b: SourceBlock) -> bool:
     return same_row and -h < gap < 2.5 * h
 
 
+COL_GAP = re.compile(r"\s{6,}")
+LINE_MARK = "____"  # znacznik miejsca do wpisania (blok 'line') w scalonej linii
+
+
+def _split_columns(b: SourceBlock) -> list[SourceBlock]:
+    """Blok z dwiema kolumnami tekstu ('(imię i nazwisko)      Wójt', 'Wnioskodawca: Adresat:') -> osobne bloki."""
+    if b.kind != "text" or not b.text.strip():
+        return [b]
+    raw = b.text.strip()
+    parts = [p for p in COL_GAP.split(raw) if p.strip()]
+    if len(parts) == 1:
+        m = re.fullmatch(r"([^:]{2,40}:)\s+([^:]{2,40}:)", raw)
+        if not m:
+            return [b]
+        parts = [m.group(1), m.group(2)]
+    out: list[SourceBlock] = []
+    pos = 0
+    n = max(len(raw), 1)
+    for p in parts:
+        start = raw.index(p, pos)
+        pos = start + len(p)
+        bb = None
+        if b.bbox:
+            bb = BBox(x=b.bbox.x + b.bbox.w * start / n, y=b.bbox.y, w=b.bbox.w * len(p) / n, h=b.bbox.h)
+        out.append(b.model_copy(update={"text": p, "bbox": bb}))  # to samo id – źródło w raporcie wskazuje blok
+    return out
+
+
 def to_lines(doc: SourceDoc) -> list[Line]:
-    blocks = list(doc.blocks)
+    blocks = [x for b in doc.blocks for x in _split_columns(b)]
     if blocks and all(b.bbox for b in blocks):
         blocks.sort(key=lambda b: (b.page, round((b.bbox.y + b.bbox.h / 2) / 4), b.bbox.x))  # type: ignore[union-attr]
     lines: list[Line] = []
@@ -89,8 +117,15 @@ def to_lines(doc: SourceDoc) -> list[Line]:
         if bbs:
             x, y = min(b.x for b in bbs), min(b.y for b in bbs)
             bbox = BBox(x=x, y=y, w=max(b.x + b.w for b in bbs) - x, h=max(b.y + b.h for b in bbs) - y)
-        text = " ".join(b.text.strip() for b in g if b.text.strip())
+        if len(g) > 1:
+            text = " ".join(
+                LINE_MARK if b.kind == "line" else b.text.strip() for b in g if b.kind == "line" or b.text.strip()
+            )
+        else:
+            text = b0.text.strip()
         text = re.sub(r"(\d)\s+\)", r"\1)", text)
+        if text.startswith("(") and text.count(")") > text.count("("):
+            text = re.sub(r"\)\)+$", ")", text)  # literówka '(nr telefonu))'
         st = b0.style
         lines.append(
             Line(

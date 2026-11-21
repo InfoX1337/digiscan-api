@@ -27,4 +27,4 @@ OK: python3.14 + uv 0.11, tesseract (host, brew), git, gh, ffmpeg, docker (obraz
 - ODS parser: stdlib xml.etree (expat ma ochronę przed entity bomb) – decyzja: zostaje, bez defusedxml.
 
 ## Linki / worktree / problemy
-brak / brak (wszystkie scalone) / Tesseract na hoście bez `pol` (OCR fallback eng, zła diakrytyka) – doinstalować pol.traineddata lub demo w Dockerze (apk pol). Zasady AI hacknation.pl niesprawdzone. Ollama w Dockerze na Mac bez GPU wolna -> plan B rules-only + OLLAMA_URL na host.
+brak / runda 2 aktywna (12:35): ../COI-llm feat/llm (R1 Opus), ../COI-dict feat/dict (R2 Sonnet), ../COI-eval feat/eval (R3 Sonnet) / Tesseract na hoście bez `pol` (OCR fallback eng, zła diakrytyka) – doinstalować pol.traineddata lub demo w Dockerze (apk pol). Zasady AI hacknation.pl niesprawdzone. Ollama w Dockerze na Mac bez GPU wolna -> plan B rules-only + OLLAMA_URL na host.

@@ -14,6 +14,7 @@ from .lines import FOOTNOTE_MARK, PAREN_HINT, PLACEHOLDER, Line, clean, fold, me
 
 SUBMISSION_META = {"data", "miejscowosc i data", "miejscowosc, data", "data zlozenia wniosku", "data wypelnienia"}
 HEADING_NUM = re.compile(r"^(\d{1,2}(?:\.\d{1,2})*)\.?\s+(\S.*)$")
+INLINE_FN = re.compile(r"(?:(?<=[^\W\d_])|(?<=\)))(\d)\)(?=\s|$|[._…])")
 PAGE_NO = re.compile(r"^(strona|str\.)\s*\d+(\s*(/|z)\s*\d+)?$|^\d+\s*/\s*\d+$|^-?\s*\d+\s*-?$")
 
 
@@ -114,7 +115,12 @@ def _organ(lines: list[Line]) -> tuple[str, list[Line]] | None:
             col = [
                 x
                 for x in lines[i + 1 : i + 12]
-                if x.page == 1 and abs(x.x - ln.x) < 40 and x.y - ln.y < 120 and clean(x.text) and not x.has_placeholder
+                if x.page == 1
+                and abs(x.x - ln.x) < 40
+                and x.y - ln.y < 120
+                and clean(x.text)
+                and not x.has_placeholder
+                and not PAREN_HINT.match(x.text.strip())
             ]
             if col:
                 return clean(col[0].text), [ln, *col]
@@ -162,6 +168,10 @@ def infer(doc: SourceDoc) -> DraftForm:
             if fm and len(ln.text.strip()) > 3:
                 ln.tags.add("fn" + fm.group(1))
                 ln.text = ln.text[: fm.start()]
+            # odsyłacz przyklejony do słowa/nawiasu: 'przy ulicy1) ____', '(nr telefonu)1)'
+            for mk in INLINE_FN.findall(ln.text):
+                ln.tags.add("fn" + mk)
+            ln.text = INLINE_FN.sub("", ln.text)
 
     organ = _organ(lines)
     if organ:
@@ -239,6 +249,19 @@ def infer(doc: SourceDoc) -> DraftForm:
                 last_item.optional = True
             continue
         h = _is_heading(ln, mf) if ln.kind != "checkbox" else None
+        if h and cur.kind == "consent" and not cur.texts and not HEADING_NUM.match(ln.text.strip()):
+            # podtytuł bezpośrednio pod 'KLAUZULA INFORMACYJNA' – część tej samej sekcji
+            cur.lines.append(ln)
+            continue
+        strong = (
+            ln.bold
+            or ln.heading
+            or ln.text.isupper()
+            or (ln.font is not None and ln.font > 1.1 * mf)
+            or bool(HEADING_NUM.match(ln.text.strip()))
+        )
+        if h and cur.kind in ("consent", "skip") and not strong:
+            h = None  # '- przez e-mail:' w treści klauzuli to nie nowa sekcja
         if h:
             cur = new_section(h[1], h[0], ln)
             if C.OPTIONAL.search(fold(ln.text)):
@@ -291,7 +314,18 @@ def infer(doc: SourceDoc) -> DraftForm:
             continue
         hint = PAREN_HINT.match(t) or PAREN_HINT.match(ln.text.strip())
         if ln.only_placeholder:
-            nxt = next((x for x in lines[i : i + 4] if not x.consumed), None)
+            nxt = None
+            for x in lines[i : i + 4]:
+                if x.consumed:
+                    continue
+                if x.has_placeholder or x.kind == "checkbox":
+                    break
+                if PAREN_HINT.match(x.text.strip()):
+                    nxt = x
+                    break
+                # tekst innej kolumny (np. adres organu obok linii wnioskodawcy) – pomiń tylko, gdy krótki
+                if len(clean(x.text)) > 40 or (x.bbox and ln.bbox and abs(x.x - ln.x) < 60):
+                    break
             plabel: str | None = None
             src = [ln]
             if nxt and PAREN_HINT.match(nxt.text.strip()) and nxt.y - ln.y < 40:
@@ -328,12 +362,17 @@ def infer(doc: SourceDoc) -> DraftForm:
             ln.block_ids = ln.block_ids + lines[i].block_ids
             lines[i].consumed = True
             words = t.split()
+        before_input = i < len(lines) and lines[i].only_placeholder and not lines[i].consumed
         if (
             len(t) <= 70
             and (len(words) <= 6 or ln.kind == "cell")
             and not t.endswith((".", ")"))
-            and (t[:1].isupper() or t[:1].isdigit() or ln.kind == "cell")
+            and (t[:1].isupper() or t[:1].isdigit() or ln.kind == "cell" or before_input)
         ):
+            if before_input:
+                t = re.sub(r"^(w|we|przy|z|o|na|do|od|i)\s+", "", t, flags=re.I)  # 'w miejscowości ____'
+                lines[i].consumed = True
+                ln.block_ids = ln.block_ids + lines[i].block_ids
             for sp in C.specs_for_label(t):
                 if ln.kind != "cell":
                     sp.confidence = min(sp.confidence, 0.78)
