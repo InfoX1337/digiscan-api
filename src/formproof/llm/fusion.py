@@ -12,7 +12,8 @@ from .prompt import CHOICE_TYPES, DICTIONARIES, FORMAT_VALIDATORS, all_fields
 
 AGREE_CONF = 0.85  # zgoda reguł i LLM
 OVERRIDE_BELOW = 0.6  # LLM nadpisuje decyzję reguł tylko poniżej tej pewności
-LLM_CONF = 0.7  # pewność decyzji przejętej od LLM
+LLM_CONF = 0.55  # decyzja przejęta od LLM – nadal poniżej progu przeglądu: człowiek zatwierdza
+NOT_FIELD_CONF = 0.35  # LLM: to nie pole do wypełnienia (nadruk, adres urzędu, szum OCR)
 ADD_BELOW = OVERRIDE_BELOW  # uzupełnienia (walidator/słownik/zależność) też tylko dla niepewnych pól
 
 # typy, na które LLM może zmienić pole proste (bez opcji nie przechodzimy na RADIO/SELECT)
@@ -78,6 +79,12 @@ def fuse_field(f: DraftField, s: dict[str, Any], by_key: dict[str, DraftField]) 
 
     # --- typ ---
     new_type = _str(s.get("type"))
+    if new_type == "BRAK" and f.type not in CONTAINER_TYPES:
+        if c0 < AGREE_CONF:
+            f.confidence = min(c0, NOT_FIELD_CONF)
+            f.evidence.append(_ev("LLM: to raczej nie pole do wypełnienia (tekst nadrukowany lub szum OCR)"))
+            changes.append("nie-pole")
+        return changes
     if new_type == f.type:
         agree += 1
     elif new_type:
@@ -149,7 +156,8 @@ def fuse_field(f: DraftField, s: dict[str, Any], by_key: dict[str, DraftField]) 
                 f.evidence.append(_ev(f"LLM: pokaż, gdy '{ctrl.title}' {'≠' if neg else '='} '{match}'"))
 
     if agree and not disagree and not changes and f.confidence < AGREE_CONF:
-        f.confidence = AGREE_CONF
+        # zgoda podnosi pewność, ale nie wyciąga niepewnego pola spod progu przeglądu
+        f.confidence = min(AGREE_CONF, c0 + 0.1) if c0 >= OVERRIDE_BELOW else min(c0 + 0.05, OVERRIDE_BELOW - 0.01)
         f.evidence.append(_ev("LLM potwierdza decyzję reguł"))
         changes.append("potwierdzenie")
     return changes

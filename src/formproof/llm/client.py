@@ -94,7 +94,8 @@ def chat_json(
         "format": schema,
         "stream": False,
         "think": False,
-        "options": {"temperature": 0, "num_ctx": 8192},
+        "keep_alive": "30m",  # model w pamięci między żądaniami demo
+        "options": {"temperature": 0, "num_ctx": 8192, "num_predict": 1024},
     }
     url = base_url.rstrip("/") + "/api/chat"
     remaining = deadline - time.monotonic()

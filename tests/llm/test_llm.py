@@ -89,14 +89,14 @@ def test_fusion_agree_disagree_and_additions(monkeypatch: pytest.MonkeyPatch) ->
     p = calls[0]
     assert p["stream"] is False and p["options"]["temperature"] == 0 and isinstance(p["format"], dict)
     f = _by_key(res.draft)
-    assert f["f2"].type == "RADIO" and f["f2"].confidence == pytest.approx(0.85)  # zgoda
-    assert f["f3"].type == "DATEPICKER" and f["f3"].confidence == pytest.approx(0.7)
+    assert f["f2"].type == "RADIO" and f["f2"].confidence == pytest.approx(0.59)  # zgoda, nadal do przeglądu
+    assert f["f3"].type == "DATEPICKER" and f["f3"].confidence == pytest.approx(0.55)
     assert any(e.by == "llm" and e.reason for e in f["f3"].evidence)
     assert f["f4"].type == "SELECT" and f["f4"].dictionary_name == "Województwo"
     assert f["f1"].title == "Dane wnioskodawcy"
     assert f["f5"].validation == ["NIP"] and f["f5"].confidence == 0.95  # wysoka pewność nietknięta
     assert f["f6"].show_when and f["f6"].show_when[0].when_key == "f2" and f["f6"].show_when[0].equals == "Tak"
-    assert res.draft.title == "Wniosek o coś" and res.draft.title_confidence == pytest.approx(0.7)
+    assert res.draft.title == "Wniosek o coś" and res.draft.title_confidence == pytest.approx(0.55)
     assert len(f) == len(_by_key(src))  # nie gubimy pól
     assert _by_key(src)["f3"].type == "TEXT_FIELD"  # wejście niezmienione
 
@@ -225,3 +225,11 @@ def test_integration_ollama(monkeypatch: pytest.MonkeyPatch) -> None:
     res = llm.enrich(doc, draft)
     assert len(_by_key(res.draft)) == len(_by_key(draft))
     assert res.used or res.error
+
+
+def test_not_a_field_lowers_confidence_and_keeps_field() -> None:
+    from formproof.llm.fusion import fuse_field
+
+    f = DraftField(key="x1", type="TEXT_FIELD", title="Ptoskinia 8", confidence=0.7)
+    ch = fuse_field(f, {"key": "x1", "type": "BRAK"}, {"x1": f})
+    assert ch == ["nie-pole"] and f.confidence == pytest.approx(0.35) and f.evidence[-1].by == "llm"

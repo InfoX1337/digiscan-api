@@ -27,7 +27,8 @@ SYSTEM = (
     "Bądź zachowawczy: jeśli pole jest poprawne, zwróć jego obecne wartości. Nie wymyślaj pól. "
     "Typy: TEXT_FIELD (krótki tekst), TEXTAREA (dłuższy opis), NUMBER (liczba/kwota), DATEPICKER (data), "
     "SELECT (lista/słownik), RADIO (jeden z kilku), CHECKBOX (zaznaczenie), FILE_UPLOADER (załącznik), "
-    "SECTION (grupa pól). Walidatory: PESEL, NIP, REGON, EMAIL, ZIP_CODE (kod pocztowy), EPUAP, ADE, "
+    "SECTION (grupa pól), BRAK (to nie jest pole do wypełnienia: tekst nadrukowany, dane urzędu, "
+    "fragment zdania lub szum OCR). Walidatory: PESEL, NIP, REGON, EMAIL, ZIP_CODE (kod pocztowy), EPUAP, ADE, "
     "SERIAL_NUMBER_ID_CARD (seria i numer dowodu). Słowniki: " + ", ".join(DICTIONARIES) + ". "
     "Odpowiadaj wyłącznie JSON-em zgodnym ze schemą."
 )
