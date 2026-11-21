@@ -185,9 +185,19 @@ def _labels_from_line(ln: Line) -> list[str]:
 
 
 def infer(doc: SourceDoc) -> DraftForm:
+    """Jeden formularz albo kilka wariantów w jednym pliku ('Rodzaje wniosków: I. … II. …')."""
+    from .variants import merge_variants, split_variants
+
+    key = _Keys()
+    parts = split_variants(doc, [ln for ln in to_lines(doc) if ln.text.strip()])
+    if not parts:
+        return _infer_one(doc, key)
+    return merge_variants([(v, _infer_one(sub, key)) for v, sub in parts], key)
+
+
+def _infer_one(doc: SourceDoc, key: _Keys) -> DraftForm:
     lines = [ln for ln in to_lines(doc) if ln.text.strip() or ln.kind == "line"]
     mf = median_font(lines)
-    key = _Keys()
     title, tconf, tlines = _title(lines, doc, mf)
     for ln in tlines:
         ln.consumed = True
@@ -482,7 +492,10 @@ def infer(doc: SourceDoc) -> DraftForm:
 def _field(spec: Spec, key: str, src: list[Line], required: bool) -> DraftField:
     conf = spec.confidence * min((ln.conf for ln in src), default=1.0)
     req: list[Validator] = ["REQUIRED"] if required else []
+    teryt = spec.title == C.TERYT_DICT
     return DraftField(
+        dictionary_name=C.TERYT_DICT if teryt else None,
+        multi_level_tree=True if teryt else None,
         key=key,
         type=spec.type,
         title=spec.title,

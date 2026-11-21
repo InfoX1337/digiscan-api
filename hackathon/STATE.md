@@ -27,6 +27,8 @@ Materiały: COI/.work/mat (symlink tests/fixtures/materials), COI/.work/txt (sch
 Repo remote: brak (utworzyć publiczne na GitHub przed zgłoszeniem).
 3b (13:11): krok 1 przegląd UI DONE (commit 4db5f58: reguły OK zwinięte, intro 3 kroki, placeholder rejestru, odmiana; UI e2e 9/9).
 Stretch 1+2+3 SCALONE (15:33): walidatory live, pętla urzędnika (edit-apply/edit-confirm → /forms/validate, sekcje też), strona web/eval.html (link w nagłówku, testid eval-link). pytest 135, UI e2e 11/11.
-Worktree AKTYWNE: ../COI-infer feat/infer (Opus: ODS/XLSX, recall form 1, form 3, TERYT). Po merge: `uv run python scripts/eval/run.py --web-out web/demo/eval.json` i commit.
+feat/infer SCALONY (eval form 1 PDF/ODS P 0.93 R 0.96). Worktree: brak.
+Form 9 (3 wnioski w 1, materiał w .work/mat/9.*): infer/variants.py – spis 'Rodzaje wniosków' (rzymskie I.. albo powtórzone tytuły w DOCX) -> RADIO 'Wybierz rodzaj wniosku' (techName wybierz_rodzaj_wniosku) + SHOW na sekcjach wariantu, wspólne sekcje raz. 8/8 formatów, 29/29 reguł, 0 fałszywych trafień w form 1–4. OCR obrazów >32767 px w pasach. UI e2e: tests/e2e/ui_test_variants.py.
+Znane braki form 9: blok 'Wnioskodawca' (Prezydent/Klub) słabo rozpoznany; 4× 'Dane osobowe podopiecznego' zamiast REPEATING_SECTION; ukryte sekcje zostawiają lukę w siatce podglądu.
 Następnie: scal (rebase, przegląd diffu, pytest+mypy+ruff, UI e2e w Dockerze), docs/architektura.md (opcjonalne – README ma sekcję), repo GitHub, freeze, tag demo-freeze.
 Problemy: Tesseract na hoście bez `pol` (brew install tesseract-lang albo demo w Dockerze). Zasady AI hacknation.pl niesprawdzone. Ollama w Dockerze na Mac bez GPU wolna -> OLLAMA_URL na host.

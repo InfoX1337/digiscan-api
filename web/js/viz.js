@@ -113,11 +113,11 @@ export function renderForm(root, form, report, { onSelect }) {
       const tn = names.at(-1)?.[1];
       if (!tn || !known.has(tn)) return true;
       const a = answers[tn];
-      res.push(a instanceof Set ? a.has(c[1]) : a === c[1]);
+      const hit = a instanceof Set ? a.has(c[1]) : a === c[1];
+      // $not dotyczy tylko swojej klauzuli: '$not("x" in …) and ("y" in …)'
+      res.push(/\$not\s*\(\s*$/.test(q.slice(0, c.index)) ? !hit : hit);
     }
-    let v = / or /.test(q) ? res.some(Boolean) : res.every(Boolean);
-    if (/\$not\s*\(/.test(q)) v = !v;
-    return v;
+    return / or /.test(q) ? res.some(Boolean) : res.every(Boolean);
   }
   function applyStates() {
     let hidden = 0;
