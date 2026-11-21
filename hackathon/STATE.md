@@ -1,7 +1,7 @@
 # STATE
-Faza: 3 (Rdzeń) DONE 13:15 (~3 h przed planem). Następna: 3b (dopracowanie, stretch, zamrożenie).
+Faza: 3b DONE 17:50 – ZAMROŻONE (tag demo-freeze, commit 396c093). Od teraz tylko poprawki błędów. Następna: hackathon-sprint-presentation.
 Start sesji: 2026-11-21 11:35. Deadline 21:30. Plan godzinowy w plan.md (3b do 18:00, prezentacja+wideo 18:00–20:00).
-Następny krok: /clear -> 'hackathon-sprint-app, kontynuuj' -> 3b: (1) przegląd jakości UI w Dockerze + zrzuty (max 10 poprawek, Sonnet równolegle), (2) stretch wg plan.md (1: walidatory live, 2: edycja->re-validate, 3: strona eval), (3) jakość infer: form 1 ODS/XLSX (13 pól vs PDF 22), form 3 (5–15 pól), TERYT multi-level (expected1: TERYT_DOWODOWY), (4) repo publiczne GitHub, freeze, tag demo-freeze.
+Następny krok: /clear -> 'hackathon-sprint-presentation, kontynuuj' (slajdy, wideo z UI e2e, tekst zgłoszenia). Repo GitHub: użytkownik tworzy sam (git push + git push --tags).
 Materiały: COI/.work/mat (symlink tests/fixtures/materials), COI/.work/txt (schema, example1, reguły, słowniki, dane.txt).
 
 ## Decyzje
@@ -30,5 +30,5 @@ Stretch 1+2+3 SCALONE (15:33): walidatory live, pętla urzędnika (edit-apply/ed
 feat/infer SCALONY (eval form 1 PDF/ODS P 0.93 R 0.96). Worktree: brak.
 Form 9 (3 wnioski w 1, materiał w .work/mat/9.*): infer/variants.py – spis 'Rodzaje wniosków' (rzymskie I.. albo powtórzone tytuły w DOCX) -> RADIO 'Wybierz rodzaj wniosku' (techName wybierz_rodzaj_wniosku) + SHOW na sekcjach wariantu, wspólne sekcje raz. 8/8 formatów, 29/29 reguł, 0 fałszywych trafień w form 1–4. OCR obrazów >32767 px w pasach. UI e2e: tests/e2e/ui_test_variants.py.
 Znane braki form 9: blok 'Wnioskodawca' (Prezydent/Klub) słabo rozpoznany; 4× 'Dane osobowe podopiecznego' zamiast REPEATING_SECTION; ukryte sekcje zostawiają lukę w siatce podglądu.
-Następnie: scal (rebase, przegląd diffu, pytest+mypy+ruff, UI e2e w Dockerze), docs/architektura.md (opcjonalne – README ma sekcję), repo GitHub, freeze, tag demo-freeze.
+Freeze 17:50: pytest 149/149, ruff+mypy zielone, UI e2e (real+variants) 7/7 w Dockerze, README z listą funkcji i docs/screenshot.png. Demo: Docker :8000, konto demo/demo-secret (auto-login APP_ENV=demo). testid: upload-input, convert-btn, form-viz, rules-panel, download-json, eval-link. Reset: brak bazy (bezstanowe).
 Problemy: Tesseract na hoście bez `pol` (brew install tesseract-lang albo demo w Dockerze). Zasady AI hacknation.pl niesprawdzone. Ollama w Dockerze na Mac bez GPU wolna -> OLLAMA_URL na host.
