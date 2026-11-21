@@ -24,5 +24,11 @@ Materiały: COI/.work/mat (symlink tests/fixtures/materials), COI/.work/txt (sch
 - `.env` (lokalny, poza gitem): OLLAMA_URL=http://localhost:11434 dla uruchomienia na hoście; compose nadpisuje na ollama:11434.
 
 ## Linki / worktree / problemy
-Repo remote: brak (utworzyć publiczne na GitHub przed zgłoszeniem). Worktree: brak (wszystkie scalone).
+Repo remote: brak (utworzyć publiczne na GitHub przed zgłoszeniem).
+3b (13:11): krok 1 przegląd UI DONE (commit 4db5f58: reguły OK zwinięte, intro 3 kroki, placeholder rejestru, odmiana; UI e2e 9/9).
+Worktree AKTYWNE (subagenci mogli zostać przerwani limitem – sprawdź `git -C ../COI-<s> log main..` i stan plików):
+- ../COI-ui feat/ui: stretch 1 walidatory live (web/js/validators.js) + 2 edycja/zatwierdź → /forms/validate (testid edit-apply, edit-confirm, field-error)
+- ../COI-eval feat/eval: strona web/eval.html + js/eval.js + css/eval.css + `run.py --web-out web/demo/eval.json`; po merge dodać link w index.html; regenerować eval.json po merge infer
+- ../COI-infer feat/infer: jakość ODS/XLSX, recall form 1, form 3, TERYT
+Następnie: scal (rebase, przegląd diffu, pytest+mypy+ruff, UI e2e w Dockerze), docs/architektura.md (opcjonalne – README ma sekcję), repo GitHub, freeze, tag demo-freeze.
 Problemy: Tesseract na hoście bez `pol` (brew install tesseract-lang albo demo w Dockerze). Zasady AI hacknation.pl niesprawdzone. Ollama w Dockerze na Mac bez GPU wolna -> OLLAMA_URL na host.
