@@ -43,7 +43,12 @@ export function renderRules(root, report) {
         ? h("div", { class: "ba" }, h("span", { class: "before" }, short(p.before)), h("span", { class: "arrow", "aria-hidden": "true" }, "→"), h("span", { class: "after" }, short(p.after)))
         : null));
 
-  root.replaceChildren(h("div", { class: `rules-hero ${state}` },
+  const nFields = Object.keys(report.fields || {}).length;
+  const nReview = (report.review || []).length;
+  const notOk = chips.filter((c) => c.dataset.status !== "ok");
+  const okChips = chips.filter((c) => c.dataset.status === "ok");
+
+  root.replaceChildren(...[h("div", { class: `rules-hero ${state}` },
     h("div", { class: "score" },
       h("div", { class: "score-row" }, okEl, h("span", { class: "big-d" }, `/${rules.length}`)),
       h("div", { class: "score-l" }, "reguł COI spełnionych")),
@@ -52,12 +57,17 @@ export function renderRules(root, report) {
       h("p", { class: "pills" },
         h("span", { class: "pill fixed" }, `${nRep} ${plural(nRep, "auto-naprawa", "auto-naprawy", "auto-napraw")}`),
         bad.length ? h("span", { class: `pill ${state}` }, `${bad.length} ${plural(bad.length, "uwaga", "uwagi", "uwag")}`) : null,
-        h("span", { class: "pill" }, `${repaired} ${plural(repaired, "reguła naprawiona", "reguły naprawione", "reguł naprawionych")}`)),
-      h("p", { class: "muted" }, "Walidator sprawdził wynikowy JSON względem reguł kreatora eUsług i poprawił to, co dało się naprawić bez udziału człowieka."))),
-    h("ul", { class: "rule-grid" }, chips),
+        repaired ? h("span", { class: "pill" }, `${repaired} ${plural(repaired, "reguła naprawiona", "reguły naprawione", "reguł naprawionych")}`) : null,
+        nFields ? h("span", { class: "pill" }, `${nFields} ${plural(nFields, "element z dowodem", "elementy z dowodem", "elementów z dowodem")}`) : null,
+        nReview ? h("span", { class: "pill warn" }, `${nReview} do przeglądu człowieka`) : null),
+      h("p", { class: "muted" }, "Walidator sprawdził wynikowy JSON względem reguł kreatora eUsług i poprawił to, co dało się naprawić bez udziału człowieka. Każde pole ma pewność i źródło w oryginale – kliknij pole poniżej."))),
+    notOk.length ? h("ul", { class: "rule-grid" }, notOk) : null,
+    h("details", { class: "rules-ok", "data-testid": "rules-ok" },
+      h("summary", {}, notOk.length ? `Pozostałe reguły spełnione (${okChips.length})` : `Pokaż wszystkie spełnione reguły (${okChips.length})`),
+      h("ul", { class: "rule-grid" }, okChips)),
     h("details", { class: "repairs", open: nRep > 0 },
       h("summary", {}, `Wykonane auto-naprawy (${nRep})`),
-      nRep ? h("ol", { "data-testid": "repairs-list", class: "repairs-list" }, reps) : h("p", { class: "muted", "data-testid": "repairs-list" }, "Nie była potrzebna żadna naprawa.")));
+      nRep ? h("ol", { "data-testid": "repairs-list", class: "repairs-list" }, reps) : h("p", { class: "muted", "data-testid": "repairs-list" }, "Nie była potrzebna żadna naprawa."))].filter(Boolean));
   countUp(okEl, ok);
 }
 
@@ -69,7 +79,7 @@ export function plural(n, one, few, many) {
 export function renderReview(root, report, onSelect) {
   const items = [...(report.review || [])].sort((a, b) => a.confidence - b.confidence);
   root.replaceChildren(
-    h("p", { class: "muted" }, items.length ? `${items.length} pól wymaga weryfikacji człowieka, od najmniej pewnych.` : "Brak pól wymagających przeglądu."),
+    h("p", { class: "muted" }, items.length ? `${items.length} ${plural(items.length, "pole wymaga", "pola wymagają", "pól wymaga")} weryfikacji człowieka, od najmniej pewnych.` : "Brak pól wymagających przeglądu."),
     h("ul", { "data-testid": "review-list", class: "review-list" }, items.map((it) =>
       h("li", {}, h("button", { class: "review-item", "data-testid": "review-item", "data-field-id": it.fieldId, onclick: () => onSelect(it.fieldId) },
         h("span", { class: `conf ${confClass(it.confidence)}` }, pct(it.confidence)),

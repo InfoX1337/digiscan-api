@@ -10,3 +10,4 @@ __pycache__/
 tests/fixtures/materials
 *.log
 .DS_Store
+materiały/

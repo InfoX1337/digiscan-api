@@ -108,6 +108,7 @@ function show(res) {
   batchBar.hidden = results.length < 2;
   batchBar.replaceChildren(...results.map((r) => h("button", { class: `chip-btn${r === res ? " on" : ""}${r.error ? " bad" : ""}`, onclick: () => r.form && show(r) }, r.filename)));
   $("#results").hidden = !res;
+  $("#intro").hidden = !!res;
   if (!res) return;
   const { form, report } = res;
   report.fields ||= {}; report.review ||= []; report.rules ||= []; report.repairs ||= [];

@@ -26,8 +26,10 @@ export function renderForm(root, form, report, { onSelect }) {
     return h("span", { class: `conf ${confClass(r.confidence)}`, title: `Pewność ${pct(r.confidence)}` }, pct(r.confidence));
   }
   function control(f) {
-    const dv = Array.isArray(f.defaultValue) ? f.defaultValue[0] : f.defaultValue;
+    const ext = f.defaultValueType === "EXTERNAL_SYSTEM";
+    const dv = ext ? undefined : Array.isArray(f.defaultValue) ? f.defaultValue[0] : f.defaultValue;
     const ro = f.readOnly;
+    if (ext && !["SELECT", "RADIO", "CHECKBOX"].includes(f.type)) return h("input", { type: "text", readonly: true, placeholder: "uzupełni system po zalogowaniu (rejestr)" });
     const rec = (v) => { answers[f.techName] = v; applyStates(); };
     switch (f.type) {
       case "TEXTAREA": return h("textarea", { rows: 3, readonly: ro, oninput: (e) => rec(e.target.value) }, dv || "");
