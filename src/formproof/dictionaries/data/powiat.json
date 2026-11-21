@@ -1,0 +1,24 @@
+{
+ "name": "Powiat",
+ "description": "Próbka słownika powiatów (pełny słownik TERYT dostarcza platforma).",
+ "sample": true,
+ "items": [
+  "warszawski zachodni",
+  "grodziski",
+  "krakowski",
+  "Kraków (miasto)",
+  "Warszawa (miasto)",
+  "wrocławski",
+  "Wrocław (miasto)",
+  "poznański",
+  "Poznań (miasto)",
+  "gdański",
+  "Gdańsk (miasto)",
+  "elbląski",
+  "Elbląg (miasto)",
+  "łódzki wschodni",
+  "Łódź (miasto)",
+  "lubelski",
+  "Lublin (miasto)"
+ ]
+}
