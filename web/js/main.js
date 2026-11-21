@@ -1,5 +1,5 @@
 import { h, $, $$ } from "./util.js";
-import { demoLogin, setToken, getToken, convert, convertBatch } from "./api.js";
+import { demoLogin, setToken, getToken, convert, convertBatch, validate } from "./api.js";
 import { renderForm, iterQuestions } from "./viz.js";
 import { renderRules, renderReview, renderJson, renderReport, renderDetails, renderPreview, download } from "./panels.js";
 
@@ -102,7 +102,7 @@ btn.addEventListener("click", async () => {
 let viz = null, preview = null, activeId = null;
 const byId = new Map();
 
-function show(res) {
+function show(res, keepId = null) {
   cur = res;
   const batchBar = $("#batch-bar");
   batchBar.hidden = results.length < 2;
@@ -127,18 +127,37 @@ function show(res) {
   renderReport($("#tab-report"), report);
   select(null);
   setTab("review");
+  if (keepId && byId.has(keepId)) select(keepId);
   $("#dl").onclick = () => download(`${(report.filename || "formularz").replace(/\.[^.]+$/, "")}.json`, JSON.stringify(form, null, 2));
-  $("#results").scrollIntoView({ behavior: "smooth", block: "start" });
+  if (!keepId) $("#results").scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
 function select(id) {
   activeId = id;
   const f = id ? byId.get(id) : null;
   const fr = id ? cur?.report.fields?.[id] : null;
-  renderDetails($("#tab-details"), f, fr);
+  renderDetails($("#tab-details"), f, fr, applyEdit);
   if (id) { viz.select(id); preview.show(fr?.sources); setTab("details"); }
   else preview?.show([]);
   $$("[data-testid=review-item]").forEach((b) => b.classList.toggle("on", b.dataset.fieldId === id));
+}
+
+/** Pętla urzędnika: zmiana pola (changes) lub samo zatwierdzenie (null) -> walidacja COI -> odświeżenie. */
+async function applyEdit(id, changes) {
+  const f = byId.get(id);
+  if (changes) {
+    f.title = changes.title; f.type = changes.type;
+    f.validation = changes.required ? [...new Set([...f.validation, "REQUIRED"])] : f.validation.filter((v) => v !== "REQUIRED");
+  }
+  const r = await validate(cur.form);
+  const rep = cur.report;
+  cur.form = r.form; rep.rules = r.rules; rep.repairs = r.repairs;
+  const fr = (rep.fields[id] ||= { confidence: 1, decidedBy: [], reasons: [], sources: [] });
+  fr.confidence = 1;
+  if (!(fr.decidedBy ||= []).includes("human")) fr.decidedBy.push("human");
+  if (!(fr.reasons ||= []).includes("zatwierdzone przez urzędnika")) fr.reasons.push("zatwierdzone przez urzędnika");
+  rep.review = rep.review.filter((x) => x.fieldId !== id);
+  show(cur, id);
 }
 
 function setTab(name) {

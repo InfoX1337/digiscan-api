@@ -62,3 +62,53 @@ def test_json_and_download(page: Page) -> None:
 
 def test_no_console_errors(page: Page) -> None:
     assert page.errors == []  # type: ignore[attr-defined]
+
+
+def test_human_confirm_reduces_review(page: Page) -> None:
+    page.get_by_role("tab", name="Do przeglądu").click()
+    items = page.get_by_test_id("review-item")
+    n = items.count()
+    items.first.click()
+    page.get_by_test_id("edit-confirm").click()
+    page.get_by_role("tab", name="Do przeglądu").click()
+    expect(page.get_by_test_id("review-item")).to_have_count(n - 1, timeout=10_000)
+    assert page.errors == []  # type: ignore[attr-defined]
+
+
+def test_live_nip_validator(page: Page) -> None:
+    import json
+
+    if True:
+        pg = page.context.browser.new_context(viewport={"width": 1600, "height": 1000}).new_page()  # type: ignore[union-attr]
+
+        def inject(route):  # wstrzyknięcie walidatora NIP w pierwsze pole tekstowe
+            data = json.loads(route.fetch().text())
+
+            def walk(qs):
+                for q in qs:
+                    f = q["field"]
+                    if f["type"] == "TEXT_FIELD" and not f.get("states"):
+                        return f
+                    r = walk(f.get("repeatingSectionGrid") or [])
+                    if r:
+                        return r
+                return None
+
+            f = next(x for t in data["form"]["tabs"][:1] if (x := walk(t["questions"])))
+            f.update(validation=["REQUIRED", "NIP"], readOnly=False, defaultValue="")
+            f.pop("defaultValueType", None)
+            data["form"]["_nip"] = f["techName"]
+            route.fulfill(json=data)
+
+        pg.route("**/demo/sample-response.json", inject)
+        pg.goto(f"{BASE}/?demo=1")
+        # pierwsze pole z walidatorem NIP: wskazuje je chip „NIP”
+        box = pg.locator(".q.t-TEXT_FIELD:has(.chip.val:text-is('NIP')) input").first
+        box.fill("5260250275")
+        expect(pg.get_by_test_id("field-error").filter(has_text="NIP")).to_be_visible()
+        box.fill("5260250274")
+        expect(pg.locator(".q-err:visible")).to_have_count(0)
+        box.fill("")
+        box.blur()
+        expect(pg.locator(".q-err:visible")).to_have_text("Pole wymagane")
+        pg.context.close()

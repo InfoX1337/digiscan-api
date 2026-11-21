@@ -206,3 +206,11 @@ blockquote { margin: 6px 0; padding: 6px 10px; border-left: 4px solid var(--hl);
   .top { padding: 10px 12px; }
 }
 @media (prefers-reduced-motion: reduce) { * { animation: none !important; transition: none !important; } }
+
+/* walidatory live + edycja urzędnika */
+.q-err { color: var(--fail); font-size: 12px; margin-top: 3px; } .q-err[hidden] { display: none; }
+.q input.invalid, .q textarea.invalid, .q select.invalid { border-color: var(--fail); outline-color: var(--fail); background: var(--fail-bg); }
+.edit-form { margin-top: 16px; padding-top: 12px; border-top: 1px solid var(--line); display: grid; gap: 8px; }
+.edit-form label { display: grid; gap: 3px; font-size: 13px; } .edit-form label.opt { display: flex; gap: 6px; align-items: center; }
+.edit-btns { display: flex; gap: 8px; flex-wrap: wrap; }
+.edit-msg { font-size: 13px; margin: 0; } .edit-msg.bad { color: var(--fail); }

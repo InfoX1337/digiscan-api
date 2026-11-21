@@ -1,7 +1,9 @@
+import { validateValue } from "./validators.js";
 import { h, $$, pct, confClass, safeHtml, hasText } from "./util.js";
 
 const CONTAINERS = new Set(["SECTION", "REPEATING_SECTION"]);
 const TYPE_PL = { TEXT_FIELD: "Tekst", TEXTAREA: "Tekst wieloliniowy", NUMBER: "Liczba", DATEPICKER: "Data", SELECT: "Lista", RADIO: "Wybór", CHECKBOX: "Checkbox", FILE_UPLOADER: "Załącznik", CONSENT_SECTION: "Zgody", TEXT_BLOCK: "Blok tekstu", INFO_SECTION: "Informacja", SECTION: "Sekcja", REPEATING_SECTION: "Sekcja powtarzalna" };
+export const TYPE_PL_EDIT = Object.fromEntries(Object.entries(TYPE_PL).filter(([k]) => !CONTAINERS.has(k)));
 export const typeLabel = (t) => TYPE_PL[t] || t;
 
 export function* iterQuestions(qs) {
@@ -31,9 +33,19 @@ export function renderForm(root, form, report, { onSelect }) {
     const ro = f.readOnly;
     if (ext && !["SELECT", "RADIO", "CHECKBOX"].includes(f.type)) return h("input", { type: "text", readonly: true, placeholder: "uzupełni system po zalogowaniu (rejestr)" });
     const rec = (v) => { answers[f.techName] = v; applyStates(); };
+    const vals = f.validation;
+    const check = (e, final) => {
+      const box = e.target.closest(".q"), err = box.querySelector(".q-err");
+      const empty = !String(e.target.value).trim();
+      const msg = empty && !final ? null : validateValue(e.target.value, vals);
+      err.textContent = msg || ""; err.hidden = !msg;
+      e.target.classList.toggle("invalid", !!msg);
+      if (msg) e.target.setAttribute("aria-invalid", "true"); else e.target.removeAttribute("aria-invalid");
+    };
+    const live = { oninput: (e) => { rec(e.target.value); check(e, false); }, onblur: (e) => check(e, true) };
     switch (f.type) {
-      case "TEXTAREA": return h("textarea", { rows: 3, readonly: ro, oninput: (e) => rec(e.target.value) }, dv || "");
-      case "NUMBER": return h("input", { type: "number", value: dv, readonly: ro, oninput: (e) => rec(e.target.value) });
+      case "TEXTAREA": return h("textarea", { rows: 3, readonly: ro, ...live }, dv || "");
+      case "NUMBER": return h("input", { type: "number", value: dv, readonly: ro, ...live });
       case "DATEPICKER": return h("input", { type: "date", value: dv, readonly: ro, onchange: (e) => rec(e.target.value) });
       case "SELECT": {
         const s = h("select", { disabled: ro, onchange: (e) => rec(e.target.value) }, h("option", { value: "" }, f.dictionaryName ? `Słownik: ${f.dictionaryName}` : "Wybierz…"));
@@ -50,7 +62,7 @@ export function renderForm(root, form, report, { onSelect }) {
       }
       case "FILE_UPLOADER": return h("div", { class: "file-ph" }, "Przeciągnij plik lub wybierz z dysku");
       case "CONSENT_SECTION": return h("div", { class: "opts" }, (f.consentSectionConfig?.consents || []).map((c) => h("label", { class: "opt" }, h("input", { type: "checkbox" }), c.description)));
-      default: return h("input", { type: "text", value: dv, readonly: ro, oninput: (e) => rec(e.target.value) });
+      default: return h("input", { type: "text", value: dv, readonly: ro, ...live });
     }
   }
   function renderQ(q) {
@@ -71,6 +83,7 @@ export function renderForm(root, form, report, { onSelect }) {
         h("label", { class: "q-label" }, f.title, req ? h("span", { class: "req", title: "Pole wymagane", "aria-label": "wymagane" }, "*") : null,
           f.tooltipMessage ? h("span", { class: "tip", title: f.tooltipMessage }, "i") : null, badge(f)),
         control(f),
+        h("div", { class: "q-err", role: "alert", "data-testid": "field-error", hidden: true }),
         h("div", { class: "q-meta" },
           f.readOnly ? h("span", { class: "chip ro" }, "tylko do odczytu") : null,
           f.defaultValueType === "EXTERNAL_SYSTEM" ? h("span", { class: "chip ext" }, `dane z systemu: ${f.defaultValue}`) : null,

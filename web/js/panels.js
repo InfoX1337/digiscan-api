@@ -1,5 +1,5 @@
 import { h, pct, confClass, confLabel, highlightJson, download } from "./util.js";
-import { typeLabel } from "./viz.js";
+import { typeLabel, TYPE_PL_EDIT } from "./viz.js";
 
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -109,16 +109,39 @@ export function renderReport(root, report) {
       report.proposedDictionaries.map((d) => h("div", { class: "dict" }, h("strong", {}, d.name), h("div", { class: "muted" }, d.reason), h("div", {}, d.items.map((i) => h("span", { class: "chip" }, i)))))) : null);
 }
 
-export function renderDetails(root, f, fr) {
+export function renderDetails(root, f, fr, onApply) {
   if (!f) { root.replaceChildren(h("p", { class: "muted" }, "Kliknij pole w wizualizacji albo pozycję z listy „Do przeglądu”, aby zobaczyć dowód: źródło, pewność i powody decyzji.")); return; }
-  const dec = { rules: "reguły", llm: "model językowy", dict: "słownik", repair: "auto-naprawa" };
+  const dec = { rules: "reguły", human: "urzędnik", llm: "model językowy", dict: "słownik", repair: "auto-naprawa" };
+  const edit = f && onApply && !["SECTION", "REPEATING_SECTION"].includes(f.type) ? editForm(f, onApply) : null;
   root.replaceChildren(
     h("h3", {}, f.title), h("p", { class: "muted" }, `${typeLabel(f.type)} · `, h("code", {}, f.techName)),
     fr ? h("div", { class: `conf-big ${confClass(fr.confidence)}` }, h("b", {}, pct(fr.confidence)), ` pewność ${confLabel(fr.confidence)}`) : h("p", { class: "muted" }, "Brak danych report dla tego pola."),
     fr?.decidedBy?.length ? h("p", {}, "Zdecydowali: ", fr.decidedBy.map((d) => h("span", { class: "chip" }, dec[d] || d))) : null,
     fr?.reasons?.length ? h("div", {}, h("h4", {}, "Powody"), h("ul", {}, fr.reasons.map((r) => h("li", {}, r)))) : null,
     h("h4", {}, "Tekst źródłowy"),
-    fr?.sources?.length ? h("div", {}, fr.sources.map((s) => h("blockquote", {}, s.text, h("small", {}, ` strona ${s.page}`)))) : h("p", { class: "muted" }, "Brak źródła w oryginale (pole dodane przez regułę lub naprawę)."));
+    fr?.sources?.length ? h("div", {}, fr.sources.map((s) => h("blockquote", {}, s.text, h("small", {}, ` strona ${s.page}`)))) : h("p", { class: "muted" }, "Brak źródła w oryginale (pole dodane przez regułę lub naprawę)."),
+    edit);
+}
+
+function editForm(f, onApply) {
+  const title = h("input", { type: "text", value: f.title, "data-testid": "edit-title" });
+  const type = h("select", { "data-testid": "edit-type" }, Object.entries(TYPE_PL_EDIT).map(([k, v]) => h("option", { value: k, selected: k === f.type }, v)));
+  const req = h("input", { type: "checkbox", checked: f.validation.includes("REQUIRED"), "data-testid": "edit-required" });
+  const msg = h("p", { class: "edit-msg", role: "status", "data-testid": "edit-msg" });
+  const btns = [];
+  const run = async (changes) => {
+    btns.forEach((b) => (b.disabled = true)); msg.className = "edit-msg"; msg.textContent = "Sprawdzam reguły…";
+    try { await onApply(f.id, changes); }
+    catch (e) { msg.className = "edit-msg bad"; msg.textContent = `Nie udało się sprawdzić reguł: ${e.message}`; btns.forEach((b) => (b.disabled = false)); }
+  };
+  btns.push(
+    h("button", { class: "btn small primary", "data-testid": "edit-apply", onclick: () => run({ title: title.value.trim() || f.title, type: type.value, required: req.checked }) }, "Zatwierdź i sprawdź reguły"),
+    h("button", { class: "btn small", "data-testid": "edit-confirm", onclick: () => run(null) }, "Zatwierdź bez zmian"));
+  return h("form", { class: "edit-form", "data-testid": "edit-form", onsubmit: (e) => e.preventDefault() },
+    h("h4", {}, "Weryfikacja urzędnika"),
+    h("label", {}, "Tytuł", title), h("label", {}, "Typ", type),
+    h("label", { class: "opt" }, req, "Pole wymagane"),
+    h("div", { class: "edit-btns" }, btns), msg);
 }
 
 /** Podgląd oryginału z nakładką bbox; zwraca {show(sources)}. */

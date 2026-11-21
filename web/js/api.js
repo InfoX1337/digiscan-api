@@ -15,7 +15,7 @@ export async function demoLogin() {
 }
 
 async function call(path, init, retried = false) {
-  const r = await fetch(BASE + path, { ...init, headers: { Authorization: `Bearer ${token}` } });
+  const r = await fetch(BASE + path, { ...init, headers: { ...init?.headers, Authorization: `Bearer ${token}` } });
   if (r.status === 401 && !retried && (await demoLogin())) return call(path, init, true);
   const body = await r.json().catch(() => ({}));
   if (!r.ok) {
@@ -33,4 +33,7 @@ export function convert(file, { llm, previews }) {
 export function convertBatch(files, { llm }) {
   const fd = new FormData(); files.forEach((f) => fd.append("file", f));
   return call(`/forms/convert/batch?llm=${llm}`, { method: "POST", body: fd });
+}
+export function validate(form) {
+  return call("/forms/validate?repair=true", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify(form) });
 }
