@@ -82,7 +82,9 @@ def _split_columns(b: SourceBlock) -> list[SourceBlock]:
     raw = b.text.strip()
     parts = [p for p in COL_GAP.split(raw) if p.strip()]
     if len(parts) == 1:
-        m = re.fullmatch(r"([^:]{2,40}:)\s+([^:]{2,40}:)", raw)
+        m = re.fullmatch(r"([^:]{2,40}:)\s+([^:]{2,40}:)", raw) or re.fullmatch(
+            r"(\([^()]{2,120}\))\s+([A-ZĄĆĘŁŃÓŚŹŻ][^()]{1,80})", raw
+        )
         if not m:
             return [b]
         parts = [m.group(1), m.group(2)]
@@ -99,14 +101,62 @@ def _split_columns(b: SourceBlock) -> list[SourceBlock]:
     return out
 
 
+_LEADER_CHARS = set("ceosuvartnilm")
+
+
+def _is_leader(tok: str) -> bool:
+    """Kropki wykropkowania odczytane przez OCR ('cece', 'eee', 'ceceueveseee', '0.6...')."""
+    if len(tok) < 2:
+        return False
+    dots = sum(tok.count(c) for c in ".…")
+    if dots >= 0.5 * len(tok) and len(tok) >= 3:
+        return True
+    t = tok.strip(".,:;…'`-").lower()
+    return len(t) >= 2 and set(t) <= _LEADER_CHARS and (t.count("e") + t.count("c")) >= 0.6 * len(t)
+
+
+def _is_weak_leader(tok: str) -> bool:
+    t = tok.strip(".,:;…'`-").lower()
+    return 0 < len(t) <= 9 and set(t) <= _LEADER_CHARS
+
+
+def denoise_ocr(text: str) -> str:
+    """Ciąg śmieci OCR (co najmniej jeden pewny token kropek, razem ≥6 znaków) -> znacznik miejsca do wpisania."""
+    toks = [t for t in text.split(" ") if t]
+    out: list[str] = []
+    i = 0
+    while i < len(toks):
+        j = i
+        while j < len(toks) and (_is_leader(toks[j]) or _is_weak_leader(toks[j])):
+            j += 1
+        run = toks[i:j]
+        strong = sum(1 for t in run if _is_leader(t))
+        if run and strong and sum(len(t) for t in run) >= 6 and strong >= len(run) / 2:
+            out.append(LINE_MARK)
+            i = j
+        else:
+            out.append(toks[i])
+            i += 1
+    return " ".join(out)
+
+
 def to_lines(doc: SourceDoc) -> list[Line]:
-    blocks = [x for b in doc.blocks for x in _split_columns(b)]
+    src = doc.blocks
+    if doc.ocr:
+        src = [b.model_copy(update={"text": denoise_ocr(b.text)}) if b.kind == "text" else b for b in src]
+    blocks: list[SourceBlock] = []
+    split_ids: set[int] = set()
+    for b in src:
+        parts = _split_columns(b)
+        if len(parts) > 1:
+            split_ids.update(id(x) for x in parts)
+        blocks.extend(parts)
     if blocks and all(b.bbox for b in blocks):
         blocks.sort(key=lambda b: (b.page, round((b.bbox.y + b.bbox.h / 2) / 4), b.bbox.x))  # type: ignore[union-attr]
     lines: list[Line] = []
     groups: list[list[SourceBlock]] = []
     for b in blocks:
-        if groups and _merge(groups[-1][-1], b):
+        if groups and _merge(groups[-1][-1], b) and not (id(b) in split_ids and groups[-1][-1].id == b.id):
             groups[-1].append(b)
         else:
             groups.append([b])
