@@ -1,0 +1,1188 @@
+{
+ "filename": "Wniosek o zwrot opłaty skarbowej.pdf",
+ "format": "pdf",
+ "ocr": false,
+ "pages": [
+  {
+   "page": 1,
+   "width": 595.303937007874,
+   "height": 841.889763779528
+  },
+  {
+   "page": 2,
+   "width": 595.303937007874,
+   "height": 841.889763779528
+  }
+ ],
+ "blocks": [
+  {
+   "id": "p1-b1",
+   "page": 1,
+   "kind": "text",
+   "text": "Urząd Gminy Stawiguda",
+   "bbox": {
+    "x": 426.7,
+    "y": 106.3,
+    "w": 96.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b2",
+   "page": 1,
+   "kind": "text",
+   "text": "Wniosek o zwrot opłaty skarbowej",
+   "bbox": {
+    "x": 209.4,
+    "y": 227.3,
+    "w": 233,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b3",
+   "page": 1,
+   "kind": "text",
+   "text": "1. Instrukcja wypełnienia dokumentu",
+   "bbox": {
+    "x": 76.5,
+    "y": 255.4,
+    "w": 168.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b4",
+   "page": 1,
+   "kind": "text",
+   "text": "1.",
+   "bbox": {
+    "x": 215.2,
+    "y": 282.1,
+    "w": 8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b5",
+   "page": 1,
+   "kind": "text",
+   "text": "WYPEŁNIJ WIELKIMI LITERAMI.",
+   "bbox": {
+    "x": 234.1,
+    "y": 282.1,
+    "w": 127.3,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b6",
+   "page": 1,
+   "kind": "text",
+   "text": "Pola wyboru oznaczaj",
+   "bbox": {
+    "x": 234.1,
+    "y": 310,
+    "w": 86.5,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b7",
+   "page": 1,
+   "kind": "text",
+   "text": "lub",
+   "bbox": {
+    "x": 336.4,
+    "y": 310,
+    "w": 12.2,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b8",
+   "page": 1,
+   "kind": "text",
+   "text": ".",
+   "bbox": {
+    "x": 367.8,
+    "y": 310,
+    "w": 2.9,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b9",
+   "page": 1,
+   "kind": "text",
+   "text": "2.",
+   "bbox": {
+    "x": 215.2,
+    "y": 310.1,
+    "w": 8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b10",
+   "page": 1,
+   "kind": "text",
+   "text": "3.",
+   "bbox": {
+    "x": 215.2,
+    "y": 330.6,
+    "w": 8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b11",
+   "page": 1,
+   "kind": "text",
+   "text": "Wypełniaj kolorem",
+   "bbox": {
+    "x": 234.1,
+    "y": 330.6,
+    "w": 74.5,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b12",
+   "page": 1,
+   "kind": "text",
+   "text": "czarnym",
+   "bbox": {
+    "x": 311.5,
+    "y": 330.6,
+    "w": 38.1,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b13",
+   "page": 1,
+   "kind": "text",
+   "text": "lub",
+   "bbox": {
+    "x": 352.5,
+    "y": 330.6,
+    "w": 12.2,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b14",
+   "page": 1,
+   "kind": "text",
+   "text": "niebieskim",
+   "bbox": {
+    "x": 367.6,
+    "y": 330.6,
+    "w": 48.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b15",
+   "page": 1,
+   "kind": "text",
+   "text": ".",
+   "bbox": {
+    "x": 416.3,
+    "y": 330.6,
+    "w": 2.9,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b16",
+   "page": 1,
+   "kind": "text",
+   "text": "2. Dane wnioskodawcy",
+   "bbox": {
+    "x": 76.5,
+    "y": 351.3,
+    "w": 102.9,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b17",
+   "page": 1,
+   "kind": "text",
+   "text": "2.1. Dane identyfikacyjne",
+   "bbox": {
+    "x": 234.1,
+    "y": 376.3,
+    "w": 114.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b18",
+   "page": 1,
+   "kind": "text",
+   "text": "Nazwa /Imię i nazwisko",
+   "bbox": {
+    "x": 128,
+    "y": 403.1,
+    "w": 95,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b19",
+   "page": 1,
+   "kind": "text",
+   "text": "NIP",
+   "bbox": {
+    "x": 209,
+    "y": 429.9,
+    "w": 14.1,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b20",
+   "page": 1,
+   "kind": "text",
+   "text": "2.2. Adres siedziby lub miejsca zamieszkania wnioskodawcy",
+   "bbox": {
+    "x": 234.1,
+    "y": 451,
+    "w": 271,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b21",
+   "page": 1,
+   "kind": "text",
+   "text": "Miejscowość",
+   "bbox": {
+    "x": 173.9,
+    "y": 477.7,
+    "w": 49.3,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b22",
+   "page": 1,
+   "kind": "text",
+   "text": "Ulica",
+   "bbox": {
+    "x": 204.1,
+    "y": 504.4,
+    "w": 19.2,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b23",
+   "page": 1,
+   "kind": "text",
+   "text": "Nr domu",
+   "bbox": {
+    "x": 188.4,
+    "y": 531.2,
+    "w": 34.8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b24",
+   "page": 1,
+   "kind": "text",
+   "text": "Nr lokalu",
+   "bbox": {
+    "x": 292.8,
+    "y": 531.2,
+    "w": 35.9,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b25",
+   "page": 1,
+   "kind": "text",
+   "text": "Kod pocztowy",
+   "bbox": {
+    "x": 414.3,
+    "y": 531.2,
+    "w": 55.4,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b26",
+   "page": 1,
+   "kind": "text",
+   "text": "-",
+   "bbox": {
+    "x": 516.1,
+    "y": 531.2,
+    "w": 3.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b27",
+   "page": 1,
+   "kind": "text",
+   "text": "2.3. Dane kontaktowe wnioskodawcy",
+   "bbox": {
+    "x": 234.1,
+    "y": 552.3,
+    "w": 167.4,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b28",
+   "page": 1,
+   "kind": "text",
+   "text": "(dane kontaktowe nie są obowiązkowe,",
+   "bbox": {
+    "x": 404.5,
+    "y": 552.3,
+    "w": 158.2,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b29",
+   "page": 1,
+   "kind": "text",
+   "text": "ale ułatwią kontakt w sprawie wniosku)",
+   "bbox": {
+    "x": 234.1,
+    "y": 562,
+    "w": 158.5,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b30",
+   "page": 1,
+   "kind": "text",
+   "text": "Numer telefonu",
+   "bbox": {
+    "x": 160.8,
+    "y": 586.8,
+    "w": 62.4,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b31",
+   "page": 1,
+   "kind": "text",
+   "text": "Adres poczty elektronicznej",
+   "bbox": {
+    "x": 112.7,
+    "y": 613.6,
+    "w": 110.4,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b32",
+   "page": 1,
+   "kind": "text",
+   "text": "2.4. Dane pełnomocnika",
+   "bbox": {
+    "x": 234.1,
+    "y": 634.6,
+    "w": 108.2,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b33",
+   "page": 1,
+   "kind": "text",
+   "text": "Imię i nazwisko",
+   "bbox": {
+    "x": 160.8,
+    "y": 661.4,
+    "w": 62.3,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b34",
+   "page": 1,
+   "kind": "text",
+   "text": "Miejscowość",
+   "bbox": {
+    "x": 173.9,
+    "y": 688.2,
+    "w": 49.3,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b35",
+   "page": 1,
+   "kind": "text",
+   "text": "Ulica",
+   "bbox": {
+    "x": 204.1,
+    "y": 714.9,
+    "w": 19.2,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b36",
+   "page": 1,
+   "kind": "text",
+   "text": "Nr domu",
+   "bbox": {
+    "x": 188.4,
+    "y": 741.7,
+    "w": 34.8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b37",
+   "page": 1,
+   "kind": "text",
+   "text": "Nr lokalu",
+   "bbox": {
+    "x": 292.8,
+    "y": 741.7,
+    "w": 35.9,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b38",
+   "page": 1,
+   "kind": "text",
+   "text": "Kod pocztowy",
+   "bbox": {
+    "x": 414.3,
+    "y": 741.7,
+    "w": 55.4,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b39",
+   "page": 1,
+   "kind": "text",
+   "text": "-",
+   "bbox": {
+    "x": 517.6,
+    "y": 741.7,
+    "w": 3.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b40",
+   "page": 1,
+   "kind": "text",
+   "text": "strona 1/2",
+   "bbox": {
+    "x": 525.2,
+    "y": 823.9,
+    "w": 42.1,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b41",
+   "page": 2,
+   "kind": "text",
+   "text": "3. Informacje o opłacie skarbowej",
+   "bbox": {
+    "x": 76.5,
+    "y": 91.2,
+    "w": 153.7,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b42",
+   "page": 2,
+   "kind": "text",
+   "text": "Data uiszczenia opłaty",
+   "bbox": {
+    "x": 133,
+    "y": 118,
+    "w": 90,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b43",
+   "page": 2,
+   "kind": "text",
+   "text": "-",
+   "bbox": {
+    "x": 269.3,
+    "y": 118,
+    "w": 3.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b44",
+   "page": 2,
+   "kind": "text",
+   "text": "-",
+   "bbox": {
+    "x": 322.2,
+    "y": 118,
+    "w": 3.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b45",
+   "page": 2,
+   "kind": "text",
+   "text": "DD-MM-RRRR",
+   "bbox": {
+    "x": 242.5,
+    "y": 139.5,
+    "w": 55.1,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b46",
+   "page": 2,
+   "kind": "text",
+   "text": "Wysokość opłaty",
+   "bbox": {
+    "x": 156.1,
+    "y": 166.2,
+    "w": 66.8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b47",
+   "page": 2,
+   "kind": "text",
+   "text": "Nazwa organu,",
+   "bbox": {
+    "x": 163.1,
+    "y": 187,
+    "w": 60.2,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b48",
+   "page": 2,
+   "kind": "text",
+   "text": "`",
+   "bbox": {
+    "x": 234.1,
+    "y": 187.3,
+    "w": 5.1,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b49",
+   "page": 2,
+   "kind": "text",
+   "text": "w którym zapłacono opłatę",
+   "bbox": {
+    "x": 114.8,
+    "y": 196.7,
+    "w": 108.4,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b50",
+   "page": 2,
+   "kind": "text",
+   "text": "4. Uzasadnienie wniosku",
+   "bbox": {
+    "x": 72.2,
+    "y": 214.6,
+    "w": 111.3,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b51",
+   "page": 2,
+   "kind": "text",
+   "text": "(opisz w polu poniżej dlaczego opłata skarbowa, której dotyczy wniosek została błędnie uiszczona",
+   "bbox": {
+    "x": 186.3,
+    "y": 214.6,
+    "w": 393.4,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b52",
+   "page": 2,
+   "kind": "text",
+   "text": "5. Informacje dotyczące sposobu zwrotu opłaty skarbowej",
+   "bbox": {
+    "x": 76.5,
+    "y": 289.2,
+    "w": 263.2,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b53",
+   "page": 2,
+   "kind": "text",
+   "text": "(postaw „x” w wybranym polu)",
+   "bbox": {
+    "x": 342.8,
+    "y": 289.2,
+    "w": 124.7,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b54",
+   "page": 2,
+   "kind": "text",
+   "text": "Gotówką w kasie organu",
+   "bbox": {
+    "x": 251.8,
+    "y": 315.9,
+    "w": 98.9,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b55",
+   "page": 2,
+   "kind": "text",
+   "text": "Przelewem na rachunek w banku",
+   "bbox": {
+    "x": 251.8,
+    "y": 342.6,
+    "w": 132.4,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b56",
+   "page": 2,
+   "kind": "text",
+   "text": "Jeśli wybierzesz tę formę, wpisz poniżej nr rachunku i dane jego właściciela",
+   "bbox": {
+    "x": 228.5,
+    "y": 364.1,
+    "w": 304.1,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b57",
+   "page": 2,
+   "kind": "text",
+   "text": "Nr rachunku",
+   "bbox": {
+    "x": 173.6,
+    "y": 390.9,
+    "w": 49.3,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b58",
+   "page": 2,
+   "kind": "text",
+   "text": "Dane właściciela",
+   "bbox": {
+    "x": 173.6,
+    "y": 410.3,
+    "w": 65.8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b59",
+   "page": 2,
+   "kind": "text",
+   "text": "6. Podstawa prawna",
+   "bbox": {
+    "x": 76.5,
+    "y": 423.1,
+    "w": 91.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b60",
+   "page": 2,
+   "kind": "text",
+   "text": "Art. 9 ustawy z dnia 16 listopada 2006 r. o opłacie skarbowej",
+   "bbox": {
+    "x": 76.5,
+    "y": 446.7,
+    "w": 246.1,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b61",
+   "page": 2,
+   "kind": "text",
+   "text": "7. Załączniki",
+   "bbox": {
+    "x": 76.5,
+    "y": 467.3,
+    "w": 56.3,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b62",
+   "page": 2,
+   "kind": "text",
+   "text": "(postaw „x” w wybranym polu)",
+   "bbox": {
+    "x": 135.6,
+    "y": 467.3,
+    "w": 124.7,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b63",
+   "page": 2,
+   "kind": "text",
+   "text": "Dokument stwierdzający udzielenie pełnomocnictwa",
+   "bbox": {
+    "x": 234.1,
+    "y": 493.5,
+    "w": 209.3,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b64",
+   "page": 2,
+   "kind": "text",
+   "text": "1.",
+   "bbox": {
+    "x": 183.4,
+    "y": 494.1,
+    "w": 8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b65",
+   "page": 2,
+   "kind": "text",
+   "text": "Dowód uiszczenia opłaty skarbowej za pełnomocnictwo",
+   "bbox": {
+    "x": 234.1,
+    "y": 520.3,
+    "w": 221.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b66",
+   "page": 2,
+   "kind": "text",
+   "text": "2.",
+   "bbox": {
+    "x": 183.4,
+    "y": 520.7,
+    "w": 8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b67",
+   "page": 2,
+   "kind": "text",
+   "text": "8. Data i podpis wnioskodawcy",
+   "bbox": {
+    "x": 76.5,
+    "y": 547.8,
+    "w": 138.8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b68",
+   "page": 2,
+   "kind": "text",
+   "text": "Data",
+   "bbox": {
+    "x": 204.3,
+    "y": 574.6,
+    "w": 18.9,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b69",
+   "page": 2,
+   "kind": "text",
+   "text": "-",
+   "bbox": {
+    "x": 270.8,
+    "y": 574.6,
+    "w": 3.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b70",
+   "page": 2,
+   "kind": "text",
+   "text": "-",
+   "bbox": {
+    "x": 323.8,
+    "y": 574.6,
+    "w": 3.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b71",
+   "page": 2,
+   "kind": "text",
+   "text": "DD-MM-RRRR",
+   "bbox": {
+    "x": 242.5,
+    "y": 593.1,
+    "w": 55.1,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b72",
+   "page": 2,
+   "kind": "text",
+   "text": "Podpis",
+   "bbox": {
+    "x": 197.2,
+    "y": 623.7,
+    "w": 25.7,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b73",
+   "page": 2,
+   "kind": "text",
+   "text": "strona 2/2",
+   "bbox": {
+    "x": 525.2,
+    "y": 823.9,
+    "w": 42.1,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  }
+ ],
+ "warnings": []
+}

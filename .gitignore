@@ -1,1 +1,10 @@
 .work/
+node_modules/
+dist/
+web/dist/
+.env
+.env.local
+coverage/
+test/fixtures/materials
+*.log
+.DS_Store

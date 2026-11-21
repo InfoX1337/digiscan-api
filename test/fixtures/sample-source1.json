@@ -1,0 +1,1492 @@
+{
+ "filename": "Wniosek o ustalenie numeru porządkowego nieruchomości.pdf",
+ "format": "pdf",
+ "ocr": false,
+ "pages": [
+  {
+   "page": 1,
+   "width": 595.303937007874,
+   "height": 841.889763779528
+  },
+  {
+   "page": 2,
+   "width": 595.303937007874,
+   "height": 841.889763779528
+  }
+ ],
+ "blocks": [
+  {
+   "id": "p1-b1",
+   "page": 1,
+   "kind": "line",
+   "text": "………………………………",
+   "bbox": {
+    "x": 380.6,
+    "y": 65.2,
+    "w": 144,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b2",
+   "page": 1,
+   "kind": "text",
+   "text": "(data)",
+   "bbox": {
+    "x": 442.1,
+    "y": 80.1,
+    "w": 23.2,
+    "h": 10
+   },
+   "style": {
+    "fontSize": 10
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b3",
+   "page": 1,
+   "kind": "text",
+   "text": "Wnioskodawca:",
+   "bbox": {
+    "x": 71,
+    "y": 115.2,
+    "w": 77.2,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b4",
+   "page": 1,
+   "kind": "text",
+   "text": "Adresat:",
+   "bbox": {
+    "x": 382.8,
+    "y": 115.2,
+    "w": 40.5,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b5",
+   "page": 1,
+   "kind": "line",
+   "text": "………………………………….",
+   "bbox": {
+    "x": 71,
+    "y": 137.9,
+    "w": 159,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b6",
+   "page": 1,
+   "kind": "text",
+   "text": "Wójt Gminy Elbląg",
+   "bbox": {
+    "x": 381.8,
+    "y": 152.7,
+    "w": 100.5,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b7",
+   "page": 1,
+   "kind": "text",
+   "text": "(imię i nazwisko/nazwa wnioskodawcy)",
+   "bbox": {
+    "x": 71,
+    "y": 154.7,
+    "w": 160.5,
+    "h": 10
+   },
+   "style": {
+    "fontSize": 10
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b8",
+   "page": 1,
+   "kind": "line",
+   "text": "………………………….............",
+   "bbox": {
+    "x": 71,
+    "y": 175.4,
+    "w": 159,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b9",
+   "page": 1,
+   "kind": "text",
+   "text": "ul. Browarna 85",
+   "bbox": {
+    "x": 382.8,
+    "y": 175.4,
+    "w": 83,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b10",
+   "page": 1,
+   "kind": "line",
+   "text": "………………………………….",
+   "bbox": {
+    "x": 71,
+    "y": 198.2,
+    "w": 159,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b11",
+   "page": 1,
+   "kind": "text",
+   "text": "82-300 Elbląg",
+   "bbox": {
+    "x": 382.8,
+    "y": 198.2,
+    "w": 70.3,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b12",
+   "page": 1,
+   "kind": "text",
+   "text": "(adres)",
+   "bbox": {
+    "x": 85.2,
+    "y": 213.1,
+    "w": 27.6,
+    "h": 10
+   },
+   "style": {
+    "fontSize": 10
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b13",
+   "page": 1,
+   "kind": "line",
+   "text": "………………………………….",
+   "bbox": {
+    "x": 71,
+    "y": 233.3,
+    "w": 159,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b14",
+   "page": 1,
+   "kind": "text",
+   "text": "(nr telefonu/adres e-mail)",
+   "bbox": {
+    "x": 85.2,
+    "y": 248.2,
+    "w": 102,
+    "h": 10
+   },
+   "style": {
+    "fontSize": 10
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b15",
+   "page": 1,
+   "kind": "text",
+   "text": "1)",
+   "bbox": {
+    "x": 187.4,
+    "y": 248.5,
+    "w": 4.8,
+    "h": 5.8
+   },
+   "style": {
+    "fontSize": 5.8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b16",
+   "page": 1,
+   "kind": "text",
+   "text": "WNIOSEK O USTALENIE NUMERU PORZĄDKOWEGO",
+   "bbox": {
+    "x": 142.1,
+    "y": 328.6,
+    "w": 311,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b17",
+   "page": 1,
+   "kind": "text",
+   "text": "Wnoszę o ustalenie numeru porządkowego budynkowi zlokalizowanemu",
+   "bbox": {
+    "x": 71,
+    "y": 355.4,
+    "w": 351,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b18",
+   "page": 1,
+   "kind": "text",
+   "text": "w",
+   "bbox": {
+    "x": 71,
+    "y": 388.1,
+    "w": 8.7,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b19",
+   "page": 1,
+   "kind": "text",
+   "text": "miejscowości……………….……………… przy ulicy",
+   "bbox": {
+    "x": 82.6,
+    "y": 388.1,
+    "w": 263.5,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b20",
+   "page": 1,
+   "kind": "line",
+   "text": "……………….…………………",
+   "bbox": {
+    "x": 351.1,
+    "y": 388.1,
+    "w": 159,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b21",
+   "page": 1,
+   "kind": "text",
+   "text": "1)",
+   "bbox": {
+    "x": 346.3,
+    "y": 390.4,
+    "w": 4.8,
+    "h": 5.8
+   },
+   "style": {
+    "fontSize": 5.8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b22",
+   "page": 1,
+   "kind": "text",
+   "text": "nr ewidencyjny działki ……………w obrębie ………………………….……………………",
+   "bbox": {
+    "x": 71,
+    "y": 416.8,
+    "w": 442.5,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b23",
+   "page": 1,
+   "kind": "line",
+   "text": "…………………………",
+   "bbox": {
+    "x": 404.6,
+    "y": 474.2,
+    "w": 120,
+    "h": 12
+   },
+   "style": {
+    "fontSize": 12
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b24",
+   "page": 1,
+   "kind": "text",
+   "text": "(podpis wnioskodawcy)",
+   "bbox": {
+    "x": 417.5,
+    "y": 495,
+    "w": 95.7,
+    "h": 10
+   },
+   "style": {
+    "fontSize": 10
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b25",
+   "page": 1,
+   "kind": "text",
+   "text": "2)",
+   "bbox": {
+    "x": 513.4,
+    "y": 495.3,
+    "w": 4.8,
+    "h": 5.8
+   },
+   "style": {
+    "fontSize": 5.8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b26",
+   "page": 1,
+   "kind": "text",
+   "text": "1",
+   "bbox": {
+    "x": 71,
+    "y": 735,
+    "w": 2.9,
+    "h": 5.8
+   },
+   "style": {
+    "fontSize": 5.8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b27",
+   "page": 1,
+   "kind": "text",
+   "text": ")",
+   "bbox": {
+    "x": 78.1,
+    "y": 735,
+    "w": 1.8,
+    "h": 5.8
+   },
+   "style": {
+    "fontSize": 5.8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b28",
+   "page": 1,
+   "kind": "text",
+   "text": "Dane nieobowiązkowe.",
+   "bbox": {
+    "x": 82.1,
+    "y": 735.8,
+    "w": 84.3,
+    "h": 9
+   },
+   "style": {
+    "fontSize": 9
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b29",
+   "page": 1,
+   "kind": "text",
+   "text": "2",
+   "bbox": {
+    "x": 71,
+    "y": 747,
+    "w": 3.2,
+    "h": 6.4
+   },
+   "style": {
+    "fontSize": 6.4
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b30",
+   "page": 1,
+   "kind": "text",
+   "text": ")",
+   "bbox": {
+    "x": 78.1,
+    "y": 749,
+    "w": 1.6,
+    "h": 5.2
+   },
+   "style": {
+    "fontSize": 5.2
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b31",
+   "page": 1,
+   "kind": "text",
+   "text": "Podpis własnoręczny, a w przypadku składania wniosku w postaci elektronicznej: kwalifikowany podpis elektroniczny,",
+   "bbox": {
+    "x": 82.6,
+    "y": 749,
+    "w": 440.9,
+    "h": 9
+   },
+   "style": {
+    "fontSize": 9
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p1-b32",
+   "page": 1,
+   "kind": "text",
+   "text": "podpis osobisty albo podpis zaufany.",
+   "bbox": {
+    "x": 78.1,
+    "y": 760.1,
+    "w": 133,
+    "h": 9
+   },
+   "style": {
+    "fontSize": 9
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b33",
+   "page": 2,
+   "kind": "text",
+   "text": "KLAUZULA INFORMACYJNA",
+   "bbox": {
+    "x": 240,
+    "y": 56.3,
+    "w": 113.4,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b34",
+   "page": 2,
+   "kind": "text",
+   "text": "numeracja porządkowa nieruchomości",
+   "bbox": {
+    "x": 231.3,
+    "y": 66.1,
+    "w": 132.7,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b35",
+   "page": 2,
+   "kind": "text",
+   "text": "Zgodnie z art. 13 ust. 1 i 2 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony",
+   "bbox": {
+    "x": 71,
+    "y": 101.7,
+    "w": 452.5,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b36",
+   "page": 2,
+   "kind": "text",
+   "text": "osób fizycznych w związku przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia",
+   "bbox": {
+    "x": 71,
+    "y": 111.5,
+    "w": 452.5,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b37",
+   "page": 2,
+   "kind": "text",
+   "text": "dyrektywy 95/46/W – ogólne rozporządzenie o ochronie danych, informujemy, iż:",
+   "bbox": {
+    "x": 71,
+    "y": 121.3,
+    "w": 263.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b38",
+   "page": 2,
+   "kind": "text",
+   "text": "1.",
+   "bbox": {
+    "x": 89,
+    "y": 139.1,
+    "w": 6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b39",
+   "page": 2,
+   "kind": "text",
+   "text": "Administratorem Państwa danych osobowych jest Gmina Elbląg.",
+   "bbox": {
+    "x": 107,
+    "y": 139.1,
+    "w": 208.4,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b40",
+   "page": 2,
+   "kind": "text",
+   "text": "Można się z nim kontaktować w następujący sposób:",
+   "bbox": {
+    "x": 106.4,
+    "y": 149.6,
+    "w": 169.8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b41",
+   "page": 2,
+   "kind": "text",
+   "text": "- listownie na adres: Urząd Gminy Elbląg 82-300 Elbląg, ul. Browarna 85,",
+   "bbox": {
+    "x": 106.4,
+    "y": 160.2,
+    "w": 240.4,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b42",
+   "page": 2,
+   "kind": "text",
+   "text": "- przez e-mail:",
+   "bbox": {
+    "x": 106.4,
+    "y": 169.4,
+    "w": 46.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b43",
+   "page": 2,
+   "kind": "text",
+   "text": "sekretariat@gminaelblag.pl",
+   "bbox": {
+    "x": 157,
+    "y": 169.4,
+    "w": 88.3,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b44",
+   "page": 2,
+   "kind": "text",
+   "text": "- telefonicznie: 55",
+   "bbox": {
+    "x": 106.4,
+    "y": 178.6,
+    "w": 58.2,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b45",
+   "page": 2,
+   "kind": "text",
+   "text": "234-18-84",
+   "bbox": {
+    "x": 166.6,
+    "y": 178.6,
+    "w": 33.3,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b46",
+   "page": 2,
+   "kind": "text",
+   "text": "2.",
+   "bbox": {
+    "x": 89,
+    "y": 187.8,
+    "w": 6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b47",
+   "page": 2,
+   "kind": "text",
+   "text": "Wyznaczyliśmy",
+   "bbox": {
+    "x": 107,
+    "y": 187.8,
+    "w": 51.4,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b48",
+   "page": 2,
+   "kind": "text",
+   "text": "Inspektora",
+   "bbox": {
+    "x": 163.4,
+    "y": 187.8,
+    "w": 33.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b49",
+   "page": 2,
+   "kind": "text",
+   "text": "Ochrony",
+   "bbox": {
+    "x": 202.1,
+    "y": 187.8,
+    "w": 28,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b50",
+   "page": 2,
+   "kind": "text",
+   "text": "Danych.",
+   "bbox": {
+    "x": 235,
+    "y": 187.8,
+    "w": 26.9,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b51",
+   "page": 2,
+   "kind": "text",
+   "text": "Jest",
+   "bbox": {
+    "x": 266.9,
+    "y": 187.8,
+    "w": 11.9,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b52",
+   "page": 2,
+   "kind": "text",
+   "text": "to",
+   "bbox": {
+    "x": 283.7,
+    "y": 187.8,
+    "w": 6.2,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b53",
+   "page": 2,
+   "kind": "text",
+   "text": "osoba,",
+   "bbox": {
+    "x": 294.9,
+    "y": 187.8,
+    "w": 20.7,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b54",
+   "page": 2,
+   "kind": "text",
+   "text": "z",
+   "bbox": {
+    "x": 320.5,
+    "y": 187.8,
+    "w": 3.5,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b55",
+   "page": 2,
+   "kind": "text",
+   "text": "którą",
+   "bbox": {
+    "x": 329,
+    "y": 187.8,
+    "w": 16.4,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b56",
+   "page": 2,
+   "kind": "text",
+   "text": "możesz",
+   "bbox": {
+    "x": 350.4,
+    "y": 187.8,
+    "w": 23.9,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b57",
+   "page": 2,
+   "kind": "text",
+   "text": "się",
+   "bbox": {
+    "x": 379.3,
+    "y": 187.8,
+    "w": 8.8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b58",
+   "page": 2,
+   "kind": "text",
+   "text": "kontaktować",
+   "bbox": {
+    "x": 393.1,
+    "y": 187.8,
+    "w": 40.8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b59",
+   "page": 2,
+   "kind": "text",
+   "text": "we",
+   "bbox": {
+    "x": 438.9,
+    "y": 187.8,
+    "w": 9.3,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b60",
+   "page": 2,
+   "kind": "text",
+   "text": "wszystkich",
+   "bbox": {
+    "x": 453.2,
+    "y": 187.8,
+    "w": 35.5,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b61",
+   "page": 2,
+   "kind": "text",
+   "text": "sprawach",
+   "bbox": {
+    "x": 493.7,
+    "y": 187.8,
+    "w": 30.2,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b62",
+   "page": 2,
+   "kind": "text",
+   "text": "dotyczących przetwarzania Twoich danych osobowych oraz korzystania z przysługujących Ci praw związanych z przetwarzaniem",
+   "bbox": {
+    "x": 107,
+    "y": 197,
+    "w": 416.9,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b63",
+   "page": 2,
+   "kind": "text",
+   "text": "danych. Z inspektorem możesz się kontaktować w następujący sposób:",
+   "bbox": {
+    "x": 107,
+    "y": 206.2,
+    "w": 227.1,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b64",
+   "page": 2,
+   "kind": "text",
+   "text": "- listownie na adres: 82-300 Elbląg, ul. Browarna 85",
+   "bbox": {
+    "x": 107,
+    "y": 215.4,
+    "w": 167.9,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b65",
+   "page": 2,
+   "kind": "text",
+   "text": "- przez e-mail:",
+   "bbox": {
+    "x": 107,
+    "y": 224.6,
+    "w": 46.6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b66",
+   "page": 2,
+   "kind": "text",
+   "text": "iod@gminaelblag.pl",
+   "bbox": {
+    "x": 157.6,
+    "y": 224.6,
+    "w": 65.3,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b67",
+   "page": 2,
+   "kind": "text",
+   "text": "3.",
+   "bbox": {
+    "x": 89,
+    "y": 233.8,
+    "w": 6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b68",
+   "page": 2,
+   "kind": "text",
+   "text": "Państwa dane osobowe będą przetwarzane w celu ustalenia i potwierdzenia numeru porządkowego nieruchomości na podstawie",
+   "bbox": {
+    "x": 107,
+    "y": 233.8,
+    "w": 416.8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b69",
+   "page": 2,
+   "kind": "text",
+   "text": "art. 6 ust. 1 lit c RODO, art. 47 a ust. 1 ustawy z dnia 17 maja 1989 r. Prawo geodezyjne i kartograficzne.",
+   "bbox": {
+    "x": 107,
+    "y": 243.6,
+    "w": 337.3,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b70",
+   "page": 2,
+   "kind": "text",
+   "text": "4.",
+   "bbox": {
+    "x": 89,
+    "y": 253.4,
+    "w": 6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b71",
+   "page": 2,
+   "kind": "text",
+   "text": "Państwa dane osobowe możemy przekazywać i udostępniać wyłącznie podmiotom uprawnionym na podstawie obowiązujących",
+   "bbox": {
+    "x": 107,
+    "y": 253.4,
+    "w": 417.1,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b72",
+   "page": 2,
+   "kind": "text",
+   "text": "przepisów prawa są nimi np.: sądy, organy ścigania, organy podatkowe oraz inne podmioty publiczne, gdy wystąpią z takim",
+   "bbox": {
+    "x": 107,
+    "y": 263.2,
+    "w": 417,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b73",
+   "page": 2,
+   "kind": "text",
+   "text": "żądaniem oczywiście w oparciu o stosowną podstawę prawną. Państwa dane osobowe możemy także przekazywać podmiotom,",
+   "bbox": {
+    "x": 107,
+    "y": 273,
+    "w": 416.7,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b74",
+   "page": 2,
+   "kind": "text",
+   "text": "które przetwarzają je na zlecenie administratora tzw. podmiotom przetwarzającym, są nimi np.: podmioty świadczące usługi",
+   "bbox": {
+    "x": 107,
+    "y": 282.8,
+    "w": 416.8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b75",
+   "page": 2,
+   "kind": "text",
+   "text": "informatyczne, telekomunikacyjne, pocztowe i inne, jednakże przekazanie Państwa danych nastąpić może tylko wtedy, gdy",
+   "bbox": {
+    "x": 107,
+    "y": 292.6,
+    "w": 416.7,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b76",
+   "page": 2,
+   "kind": "text",
+   "text": "zapewnią one odpowiednią ochronę Państwa praw.",
+   "bbox": {
+    "x": 107,
+    "y": 302.4,
+    "w": 163.4,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b77",
+   "page": 2,
+   "kind": "text",
+   "text": "5.",
+   "bbox": {
+    "x": 89,
+    "y": 312.2,
+    "w": 6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b78",
+   "page": 2,
+   "kind": "text",
+   "text": "Państwa dane osobowe nie będą przekazywane do państw trzecich ani do organizacji międzynarodowych.",
+   "bbox": {
+    "x": 107,
+    "y": 312.2,
+    "w": 338.9,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b79",
+   "page": 2,
+   "kind": "text",
+   "text": "6.",
+   "bbox": {
+    "x": 89,
+    "y": 322,
+    "w": 6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b80",
+   "page": 2,
+   "kind": "text",
+   "text": "Państwa dane osobowe będą przetwarzane przez okres zgodny z obowiązującymi przepisami prawa, tj. przez 25 lat, a następnie",
+   "bbox": {
+    "x": 107,
+    "y": 322,
+    "w": 416.7,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b81",
+   "page": 2,
+   "kind": "text",
+   "text": "przekazane do archiwum państwowego.",
+   "bbox": {
+    "x": 107,
+    "y": 331.8,
+    "w": 127.8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b82",
+   "page": 2,
+   "kind": "text",
+   "text": "7.",
+   "bbox": {
+    "x": 89,
+    "y": 341.6,
+    "w": 6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b83",
+   "page": 2,
+   "kind": "text",
+   "text": "Mają Państwo prawo do żądania od administratora dostępu do danych, można je sprostować, gdy zachodzi taka konieczność.",
+   "bbox": {
+    "x": 107,
+    "y": 341.6,
+    "w": 417,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b84",
+   "page": 2,
+   "kind": "text",
+   "text": "Mają Państwo także prawo żądania usunięcia lub ograniczenia przetwarzania.",
+   "bbox": {
+    "x": 107,
+    "y": 351.4,
+    "w": 248.8,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b85",
+   "page": 2,
+   "kind": "text",
+   "text": "8.",
+   "bbox": {
+    "x": 89,
+    "y": 361.2,
+    "w": 6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b86",
+   "page": 2,
+   "kind": "text",
+   "text": "Podania danych wymaga ustawa na podstawie, której działa administrator.",
+   "bbox": {
+    "x": 107,
+    "y": 361.2,
+    "w": 238.4,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b87",
+   "page": 2,
+   "kind": "text",
+   "text": "9.",
+   "bbox": {
+    "x": 89,
+    "y": 371,
+    "w": 6,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b88",
+   "page": 2,
+   "kind": "text",
+   "text": "Przysługuje Państwu także skarga do organu do organu nadzorczego - Prezesa Urzędu Ochrony Danych Osobowych ul. Stawki 2,",
+   "bbox": {
+    "x": 107,
+    "y": 371,
+    "w": 417.5,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b89",
+   "page": 2,
+   "kind": "text",
+   "text": "00-193 Warszawa, gdy przetwarzanie Państwa danych osobowych naruszy przepisy ogólnego rozporządzenia o ochronie danych",
+   "bbox": {
+    "x": 107,
+    "y": 380.8,
+    "w": 416.9,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b90",
+   "page": 2,
+   "kind": "text",
+   "text": "osobowych z dnia 27 kwietnia 2016 r.",
+   "bbox": {
+    "x": 107,
+    "y": 390.6,
+    "w": 121.9,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b91",
+   "page": 2,
+   "kind": "text",
+   "text": "10.",
+   "bbox": {
+    "x": 89,
+    "y": 400.4,
+    "w": 10,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  },
+  {
+   "id": "p2-b92",
+   "page": 2,
+   "kind": "text",
+   "text": "Państwa dane nie będą przetwarzane w sposób zautomatyzowany, w tym również w formie profilowania.",
+   "bbox": {
+    "x": 107,
+    "y": 400.4,
+    "w": 337.1,
+    "h": 8
+   },
+   "style": {
+    "fontSize": 8
+   },
+   "confidence": 1
+  }
+ ],
+ "warnings": []
+}
