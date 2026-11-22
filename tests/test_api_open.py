@@ -27,3 +27,13 @@ def test_open_api_needs_no_token(open_client) -> None:  # type: ignore[no-untype
 
 def test_demo_config_open(open_client) -> None:  # type: ignore[no-untyped-def]
     assert open_client.get("/api/v1/demo-config").json()["authRequired"] is False
+
+
+def test_production_requires_auth(monkeypatch: pytest.MonkeyPatch) -> None:
+    monkeypatch.setenv("APP_ENV", "production")
+    monkeypatch.setenv("AUTH_ENABLED", "false")
+    get_settings.cache_clear()
+    with pytest.raises(RuntimeError):
+        get_settings()
+    monkeypatch.undo()
+    get_settings.cache_clear()

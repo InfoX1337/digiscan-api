@@ -45,7 +45,7 @@ uv run python -m formproof        # :8000
 ## Uwierzytelnianie (opcjonalne)
 
 To wersja demonstracyjna, więc API jest domyślnie otwarte: UI i `curl` działają bez tokenu.
-Wdrożenie z JWT (HS256) włączasz zmienną `AUTH_ENABLED=true`. Wtedy wszystkie endpointy poza `/health` i `/auth/token`
+Wdrożenie z JWT (HS256) włączasz zmienną `AUTH_ENABLED=true`; `APP_ENV=production` bez niej się nie uruchomi. Wtedy wszystkie endpointy poza `/health` i `/auth/token`
 wymagają `Authorization: Bearer`, a przy `APP_ENV=production` aplikacja odmówi startu bez własnych
 `JWT_SECRET` (≥ 32 znaki) i `AUTH_CLIENT_SECRET` oraz z `DEMO_UI=true`. Konto klienta: `AUTH_CLIENT_ID` / `AUTH_CLIENT_SECRET`
 (domyślnie `demo` / `demo-secret`, tylko dev).

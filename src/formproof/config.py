@@ -54,6 +54,8 @@ class Settings(BaseSettings):
 @lru_cache
 def get_settings() -> Settings:
     s = Settings()
+    if s.env == "production" and not s.auth_enabled:
+        raise RuntimeError("APP_ENV=production wymaga AUTH_ENABLED=true (otwarte API tylko w trybie demo/dev).")
     if not s.auth_enabled:
         return s
     if s.env == "production" and s.jwt_secret == DEV_SECRET:
