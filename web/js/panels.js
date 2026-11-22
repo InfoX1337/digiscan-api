@@ -3,17 +3,6 @@ import { typeLabel, TYPE_PL_EDIT } from "./viz.js";
 
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-function countUp(el, to) {
-  if (reduce || to === 0) { el.textContent = to; return; }
-  const t0 = performance.now();
-  const step = (t) => {
-    const k = Math.min(1, (t - t0) / 900);
-    el.textContent = Math.round(to * (1 - Math.pow(1 - k, 3)));
-    if (k < 1) requestAnimationFrame(step);
-  };
-  requestAnimationFrame(step);
-}
-
 const short = (v) => { const s = typeof v === "string" ? v : JSON.stringify(v); return s == null ? "—" : s.length > 80 ? s.slice(0, 77) + "…" : s; };
 
 export function renderRules(root, report) {
@@ -24,12 +13,12 @@ export function renderRules(root, report) {
   const bad = rules.filter((r) => !r.passed);
   const errs = bad.filter((r) => r.severity === "error").length;
   const state = errs ? "fail" : bad.length ? "warn" : "ok";
-  const okEl = h("span", { class: "big-n" }, "0");
-  const verdict = { ok: "Formularz zgodny z regułami kreatora COI", warn: "Zgodny, z uwagami do sprawdzenia", fail: "Wykryto błędy zgodności" }[state];
+  const okEl = h("span", {}, "0");
+  const verdict = { ok: "Zgodny z regułami COI", warn: "Zgodny, z uwagami", fail: "Błędy zgodności" }[state];
 
   const chips = rules.map((r) => {
     const st = r.passed ? (r.repaired ? "fixed" : "ok") : r.severity === "error" ? "fail" : "warn";
-    const lbl = { ok: "OK", fixed: "naprawiono automatycznie", fail: "błąd", warn: "ostrzeżenie" }[st];
+    const lbl = { ok: "OK", fixed: "naprawiono", fail: "błąd", warn: "ostrzeżenie" }[st];
     const ico = { ok: "✓", fixed: "✎", fail: "✕", warn: "!" }[st];
     return h("li", { class: `rule ${st}`, "data-testid": `rule-${r.id}`, "data-status": st },
       h("span", { class: "ico", "aria-hidden": "true" }, ico),
@@ -47,28 +36,27 @@ export function renderRules(root, report) {
   const nReview = (report.review || []).length;
   const notOk = chips.filter((c) => c.dataset.status !== "ok");
   const okChips = chips.filter((c) => c.dataset.status === "ok");
+  const ico = h("span", { class: "verdict-ico", "aria-hidden": "true" });
+  ico.innerHTML = `<svg class="i" viewBox="0 0 24 24">${{ ok: '<path d="M5 12.5l4.5 4.5L19 7.5"/>', warn: '<path d="M12 7v6M12 17h.01"/>', fail: '<path d="M7 7l10 10M17 7L7 17"/>' }[state]}</svg>`;
+  const stat = (label, value, cls = "", extra = null) => h("div", { class: `stat ${cls}` }, h("dt", {}, label), h("dd", {}, value, extra));
+  const sub = [repaired ? `${repaired} ${plural(repaired, "reguła naprawiona", "reguły naprawione", "reguł naprawionych")} automatycznie` : null,
+    bad.length ? `${bad.length} ${plural(bad.length, "uwaga", "uwagi", "uwag")}` : null].filter(Boolean).join(" · ") || "Bez uwag";
 
   root.replaceChildren(...[h("div", { class: `rules-hero ${state}` },
-    h("div", { class: "score" },
-      h("div", { class: "score-row" }, okEl, h("span", { class: "big-d" }, `/${rules.length}`)),
-      h("div", { class: "score-l" }, "reguł COI spełnionych")),
-    h("div", { class: "score-side" },
-      h("h2", {}, verdict),
-      h("p", { class: "pills" },
-        h("span", { class: "pill fixed" }, `${nRep} ${plural(nRep, "auto-naprawa", "auto-naprawy", "auto-napraw")}`),
-        bad.length ? h("span", { class: `pill ${state}` }, `${bad.length} ${plural(bad.length, "uwaga", "uwagi", "uwag")}`) : null,
-        repaired ? h("span", { class: "pill" }, `${repaired} ${plural(repaired, "reguła naprawiona", "reguły naprawione", "reguł naprawionych")}`) : null,
-        nFields ? h("span", { class: "pill" }, `${nFields} ${plural(nFields, "element z dowodem", "elementy z dowodem", "elementów z dowodem")}`) : null,
-        nReview ? h("span", { class: "pill warn" }, `${nReview} do przeglądu człowieka`) : null),
-      h("p", { class: "muted" }, "Walidator sprawdził wynikowy JSON względem reguł kreatora eUsług i poprawił to, co dało się naprawić bez udziału człowieka. Każde pole ma pewność i źródło w oryginale – kliknij pole poniżej."))),
+    h("div", { class: "verdict" }, ico, h("div", {}, h("h2", {}, verdict), h("p", {}, sub))),
+    h("dl", { class: "stats" },
+      stat("Reguły COI", okEl, state, h("small", { class: "muted" }, `/${rules.length}`)),
+      stat("Auto-naprawy", String(nRep), nRep ? "fixed" : ""),
+      stat("Do przeglądu", String(nReview), nReview ? "warn" : ""),
+      stat("Pola z dowodem", String(nFields)))),
     notOk.length ? h("ul", { class: "rule-grid" }, notOk) : null,
     h("details", { class: "rules-ok", "data-testid": "rules-ok" },
-      h("summary", {}, notOk.length ? `Pozostałe reguły spełnione (${okChips.length})` : `Pokaż wszystkie spełnione reguły (${okChips.length})`),
+      h("summary", {}, `Spełnione reguły (${okChips.length})`),
       h("ul", { class: "rule-grid" }, okChips)),
     h("details", { class: "repairs", open: nRep > 0 },
       h("summary", {}, `Wykonane auto-naprawy (${nRep})`),
-      nRep ? h("ol", { "data-testid": "repairs-list", class: "repairs-list" }, reps) : h("p", { class: "muted", "data-testid": "repairs-list" }, "Nie była potrzebna żadna naprawa."))].filter(Boolean));
-  countUp(okEl, ok);
+      nRep ? h("ol", { "data-testid": "repairs-list", class: "repairs-list" }, reps) : h("p", { class: "muted", "data-testid": "repairs-list" }, "Brak napraw."))].filter(Boolean));
+  okEl.textContent = ok;
 }
 
 export function plural(n, one, few, many) {
@@ -79,7 +67,7 @@ export function plural(n, one, few, many) {
 export function renderReview(root, report, onSelect) {
   const items = [...(report.review || [])].sort((a, b) => a.confidence - b.confidence);
   root.replaceChildren(
-    h("p", { class: "muted" }, items.length ? `${items.length} ${plural(items.length, "pole wymaga", "pola wymagają", "pól wymaga")} weryfikacji człowieka, od najmniej pewnych.` : "Brak pól wymagających przeglądu."),
+    h("p", { class: "muted" }, items.length ? `${items.length} ${plural(items.length, "pole", "pola", "pól")} do weryfikacji, od najmniej pewnych.` : "Brak pól wymagających przeglądu."),
     h("ul", { "data-testid": "review-list", class: "review-list" }, items.map((it) =>
       h("li", {}, h("button", { class: "review-item", "data-testid": "review-item", "data-field-id": it.fieldId, onclick: () => onSelect(it.fieldId) },
         h("span", { class: `conf ${confClass(it.confidence)}` }, pct(it.confidence)),
@@ -91,7 +79,7 @@ export function renderJson(root, form) {
   const pre = h("pre", { "data-testid": "json-view", class: "json" });
   pre.innerHTML = highlightJson(form);
   const copy = h("button", { class: "btn small", onclick: async () => { try { await navigator.clipboard.writeText(text); copy.textContent = "Skopiowano"; setTimeout(() => (copy.textContent = "Kopiuj"), 1500); } catch { /* brak schowka */ } } }, "Kopiuj");
-  root.replaceChildren(h("div", { class: "json-bar" }, h("span", { class: "muted" }, `${(text.length / 1024).toFixed(1)} kB · czysty JSON kreatora eUsług`), copy), pre);
+  root.replaceChildren(h("div", { class: "json-bar" }, h("span", { class: "muted" }, `${(text.length / 1024).toFixed(1)} kB`), copy), pre);
 }
 
 export function renderReport(root, report) {
@@ -110,7 +98,7 @@ export function renderReport(root, report) {
 }
 
 export function renderDetails(root, f, fr, onApply) {
-  if (!f) { root.replaceChildren(h("p", { class: "muted" }, "Kliknij pole w wizualizacji albo pozycję z listy „Do przeglądu”, aby zobaczyć dowód: źródło, pewność i powody decyzji.")); return; }
+  if (!f) { root.replaceChildren(h("p", { class: "muted" }, "Wybierz pole, aby zobaczyć źródło, pewność i powody decyzji.")); return; }
   const dec = { rules: "reguły", human: "urzędnik", llm: "model językowy", dict: "słownik", repair: "auto-naprawa" };
   const edit = f && onApply ? editForm(f, onApply) : null;
   root.replaceChildren(
@@ -149,7 +137,7 @@ function editForm(f, onApply) {
 export function renderPreview(root, report) {
   const prev = report.previews || [];
   if (!prev.length) {
-    root.replaceChildren(h("p", { class: "muted pad" }, "Podgląd oryginału niedostępny. Włącz „Podgląd oryginału” przy konwersji; źródło pola zobaczysz w panelu szczegółów."));
+    root.replaceChildren(h("p", { class: "muted pad" }, "Brak podglądu. Włącz „Podgląd oryginału” przy konwersji."));
     return { show() {} };
   }
   const wraps = new Map();

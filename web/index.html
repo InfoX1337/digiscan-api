@@ -3,40 +3,37 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FormProof – formularz z dowodem zaufania</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b3d6e'/%3E%3Cpath d='M8 17l5 5 11-12' stroke='%23fff' stroke-width='3.5' fill='none'/%3E%3C/svg%3E">
+<title>FormProof</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2318181b'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/app.css">
 </head>
 <body>
 <header class="top">
-  <div class="brand"><span class="logo" aria-hidden="true">✓</span><div><b>FormProof</b><small>Formularze urzędowe → eUsługa COI, z dowodem zaufania</small></div></div>
+  <a class="brand" href="./"><span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>FormProof</a>
   <div class="top-r">
-    <span id="demo-badge" class="pill warn" hidden>DEMO</span>
+    <span id="demo-badge" class="pill warn" hidden>Demo</span>
     <span id="auth-state" class="muted"></span>
     <input data-testid="login-token" type="text" placeholder="Token JWT (Bearer)" aria-label="Token JWT" hidden autocomplete="off">
-    <a href="eval.html" class="btn small" data-testid="eval-link">Wyniki ewaluacji</a>
-    <button id="theme" class="btn small" title="Przełącz motyw">Motyw</button>
+    <a href="eval.html" class="nav-link" data-testid="eval-link">Ewaluacja</a>
+    <button id="theme" class="icon-btn" title="Przełącz motyw" aria-label="Przełącz motyw"><svg class="i sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
   </div>
 </header>
 
-<div class="hero" aria-label="Opis usługi">
-  <div class="hero-in">
-    <h1>Od papierowego wniosku do eUsługi w minutę</h1>
-    <p>Wczytaj PDF, DOCX, XLSX albo skan. Dostaniesz gotowy JSON dla kreatora COI, a przy każdym polu zobaczysz skąd się wzięło i jak pewnie je rozpoznano.</p>
-    <ul class="hero-tags"><li>100% lokalnie, bez chmury</li><li>0 zł licencji</li><li>29 reguł COI sprawdzonych automatycznie</li><li>Działa na MacBooku Air M4</li></ul>
-  </div>
-</div>
-
 <main>
+  <div class="page-head">
+    <h1>Formularz → eUsługa COI</h1>
+    <p>Każde pole z pewnością i źródłem w oryginale. Wszystko lokalnie.</p>
+  </div>
+
   <section class="upload card" aria-label="Wczytywanie formularza">
     <div class="drop" data-testid="upload-dropzone" tabindex="0" role="button" aria-label="Upuść pliki lub wybierz z dysku">
-      <div class="drop-ico" aria-hidden="true">⇪</div>
-      <div><b>Upuść formularz tutaj</b> lub kliknij, aby wybrać<br><small>PDF, skan (PNG/JPG), DOCX, DOC, XLSX, ODS · do 15 MB · pliki nie są zapisywane</small></div>
+      <div class="drop-ico" aria-hidden="true"><svg class="i" viewBox="0 0 24 24"><path d="M12 15V4M7 9l5-5 5 5M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3"/></svg></div>
+      <div><b>Upuść pliki</b> lub kliknij, aby wybrać<small>PDF, DOCX, DOC, XLSX, ODS, PNG, JPG · do 15 MB</small></div>
       <ul id="file-list"></ul>
     </div>
     <input data-testid="upload-input" id="file" type="file" multiple hidden accept=".pdf,.png,.jpg,.jpeg,.docx,.doc,.xlsx,.ods">
     <div class="opts-col">
-      <label class="opt"><input type="checkbox" id="opt-llm" checked> Wzbogać lokalnym LLM</label>
+      <label class="opt"><input type="checkbox" id="opt-llm" checked> Lokalny LLM</label>
       <label class="opt"><input type="checkbox" id="opt-previews" checked> Podgląd oryginału</label>
       <button class="btn primary" data-testid="convert-btn" disabled>Konwertuj</button>
     </div>
@@ -48,11 +45,10 @@
 
   <section id="intro" class="intro" aria-label="Jak to działa">
     <ol>
-      <li><b>Wczytaj formularz</b><span>PDF, skan, DOC/DOCX, XLSX/ODS. Plik zostaje tylko w pamięci na czas konwersji.</span></li>
-      <li><b>Dostań JSON eUsługi</b><span>Sekcje, pola, typy, słowniki, warunki i dane z rejestrów – gotowe do importu w kreatorze COI.</span></li>
-      <li><b>Sprawdź dowód</b><span>Każde pole ma pewność i źródło w oryginale. 29 reguł COI sprawdzonych i naprawionych automatycznie; niepewne pola trafiają do przeglądu.</span></li>
+      <li><b>Wczytaj</b><span>Plik zostaje tylko w pamięci.</span></li>
+      <li><b>Sprawdź</b><span>Pewność i źródło przy każdym polu.</span></li>
+      <li><b>Pobierz JSON</b><span>Gotowy do kreatora eUsług.</span></li>
     </ol>
-    <p class="muted">Bez chmury: OCR, reguły i model językowy działają lokalnie.</p>
   </section>
 
   <div id="results" hidden>
@@ -65,7 +61,7 @@
         <div id="preview" class="preview"></div>
       </section>
       <section class="col col-viz" aria-label="Wizualizacja eUsługi">
-        <h2 class="col-h">Wizualizacja eUsługi <small>klik w pole = dowód</small></h2>
+        <h2 class="col-h">Podgląd eUsługi <small>kliknij pole, by zobaczyć źródło</small></h2>
         <div class="viz" data-testid="form-viz"></div>
       </section>
       <section class="col col-side" aria-label="Dane i raport">
@@ -79,7 +75,7 @@
         <div id="tab-details" class="tabpanel" role="tabpanel" hidden></div>
         <div id="tab-json" class="tabpanel" role="tabpanel" hidden></div>
         <div id="tab-report" class="tabpanel" role="tabpanel" hidden></div>
-        <button id="dl" class="btn primary wide" data-testid="download-json">Pobierz JSON (czysty formularz)</button>
+        <button id="dl" class="btn primary wide" data-testid="download-json">Pobierz JSON</button>
       </section>
     </div>
   </div>

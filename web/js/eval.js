@@ -20,7 +20,7 @@ function el(tag, attrs = {}, text) {
 
 function tile(value, label, extra = "") {
   const t = el("div", { class: `tile ${extra}`.trim() });
-  t.append(el("b", {}, value), el("span", {}, label));
+  t.append(el("span", {}, label), el("b", {}, value));
   return t;
 }
 
@@ -28,18 +28,18 @@ function renderSummary(s) {
   const box = $("#summary");
   const allOk = s.rulesPass === s.rulesTotal;
   box.append(
-    tile(`${s.rulesPass}/${s.rulesTotal}`, "reguły COI spełnione (suma po plikach)", allOk ? "ok" : ""),
-    tile(`${s.filesAllRulesPass}/${s.files}`, "plików z kompletem reguł", s.filesAllRulesPass === s.files ? "ok" : ""),
-    tile(String(s.files), `plików · ${s.forms} formularze · ${s.formats.length} formatów (${s.formats.join(", ")})`),
-    tile(pct(s.avgConfidence), "średnia pewność"),
-    tile(String(s.repairs), "auto-napraw"),
-    tile(fmtMs(s.avgMs), "średni czas na plik"),
+    tile(`${s.rulesPass}/${s.rulesTotal}`, "Reguły COI (suma)", allOk ? "ok" : ""),
+    tile(`${s.filesAllRulesPass}/${s.files}`, "Pliki z kompletem reguł", s.filesAllRulesPass === s.files ? "ok" : ""),
+    tile(String(s.files), `Pliki · ${s.forms} formularze, ${s.formats.length} formatów`),
+    tile(pct(s.avgConfidence), "Średnia pewność"),
+    tile(String(s.repairs), "Auto-naprawy"),
+    tile(fmtMs(s.avgMs), "Średni czas na plik"),
   );
   if (s.form1AvgPrecision !== null) {
     box.append(
-      tile(pct(s.form1AvgPrecision), "formularz 1: precyzja pól (średnia)"),
-      tile(pct(s.form1AvgRecall), "formularz 1: czułość pól (średnia)"),
-      tile(pct(s.form1AvgTypeAccuracy), "formularz 1: zgodność typów"),
+      tile(pct(s.form1AvgPrecision), "Form. 1 – precyzja"),
+      tile(pct(s.form1AvgRecall), "Form. 1 – czułość"),
+      tile(pct(s.form1AvgTypeAccuracy), "Form. 1 – zgodność typów"),
     );
   }
 }

@@ -41,7 +41,7 @@ Zostaje (użytkownik): repo publiczne, prezentacja PDF ≤10 slajdów, film ≤3
 ## Poprawki ryzyk 2026-11-22 (po freeze, tylko poprawki)
 - Auth: API domyślnie otwarte (AUTH_ENABLED=false, demo); JWT zostaje opcjonalnie (AUTH_ENABLED=true). Testy JWT działają z AUTH_ENABLED=true w conftest; test_api_open.py dla trybu otwartego.
 - Form 9: infer/repeating.py scala sąsiednie identyczne sekcje w REPEATING_SECTION.
-- UI: design system FormProof (web/css/tokens.css: kolor, typografia, odstępy, cienie), hero, odświeżone komponenty; karta kosztów w eval.html.
+- UI redesign 2026-11-22: neutralny design system (tokens.css: skala zinc + 1 akcent, płasko, bez gradientów), bez hero/tagów, krótkie teksty, panel reguł = pasek metryk, przełączniki opcji, ikona motywu. testid/klasy zachowane; UI e2e 14/14 (demo+real+variants) na :8020. docs/screenshot.png odświeżony.
 - README: sekcja "Cena i koszt rozwiązania" (0 zł licencji, M4 Air, czasy, założenia oszczędności).
 - OCR: preprocessing (autocontrast, upscale) nie poprawił recall – cofnięty. Skany R ~0.72 (struktura, nie OCR).
 - wyniki/ odświeżone z nowego obrazu: 40/40 schema, 29/29 reguł. pytest 177, UI e2e 14/14 na kontenerze :8000.

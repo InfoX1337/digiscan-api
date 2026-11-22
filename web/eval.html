@@ -3,23 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>FormProof – wyniki ewaluacji</title>
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230b3d6e'/%3E%3Cpath d='M8 17l5 5 11-12' stroke='%23fff' stroke-width='3.5' fill='none'/%3E%3C/svg%3E">
+<title>FormProof · Ewaluacja</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%2318181b'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11' stroke='%23fff' stroke-width='3' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
 <link rel="stylesheet" href="css/app.css">
 <link rel="stylesheet" href="css/eval.css">
 </head>
 <body>
 <header class="top">
-  <div class="brand"><span class="logo" aria-hidden="true">✓</span><div><b>FormProof</b><small>Formularze urzędowe → eUsługa COI, z dowodem zaufania</small></div></div>
+  <a class="brand" href="./"><span class="logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>FormProof</a>
   <div class="top-r">
-    <a class="btn small" href="./">← Konwerter</a>
-    <button id="theme" class="btn small" title="Przełącz motyw">Motyw</button>
+    <a href="./" class="nav-link">Konwerter</a>
+    <button id="theme" class="icon-btn" title="Przełącz motyw" aria-label="Przełącz motyw"><svg class="i sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg><svg class="i moon" viewBox="0 0 24 24"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z"/></svg></button>
   </div>
 </header>
 
 <main class="eval">
-  <h1>Wyniki ewaluacji</h1>
-  <p class="muted" id="meta">Ładowanie…</p>
+  <div class="page-head">
+    <h1>Ewaluacja</h1>
+    <p class="muted" id="meta">Ładowanie…</p>
+  </div>
   <div id="error" class="error" role="alert" hidden></div>
 
   <section aria-label="Podsumowanie">
@@ -37,32 +39,30 @@
   </section>
 
   <section class="card pad" aria-label="Formularz 1 vs wzorzec">
-    <h2>Formularz 1 vs wzorzec COI</h2>
-    <p class="muted">Dopasowanie pól po tytule (podobieństwo ≥ 0,78) do wzorcowego JSON-a COI.</p>
+    <h2>Formularz 1 vs wzorzec</h2>
+    <p class="muted">Dopasowanie po tytule pola, podobieństwo ≥ 0,78.</p>
     <div id="pr" data-testid="eval-pr"></div>
   </section>
 
   <section class="card pad" aria-label="Cena i koszt" data-testid="cost-card">
-    <h2>Cena i koszt rozwiązania</h2>
+    <h2>Koszt</h2>
     <div class="tiles">
-      <div class="tile ok"><b>0 zł</b><span>licencje, API LLM i SaaS (MIT/BSD/Apache, model open-weights)</span></div>
-      <div class="tile"><b>1 laptop</b><span>MacBook Air M4 wystarcza (ok. 5–6 tys. zł, cena rynkowa)</span></div>
-      <div class="tile"><b>0,3–16 s</b><span>na plik: tryb reguł ok. 0,3–8 s, z lokalnym LLM ok. 9–16 s</span></div>
-      <div class="tile"><b>&lt; 1 zł</b><span>energii na 1000 formularzy (ok. 15 W, 15 s na plik)</span></div>
-      <div class="tile ok"><b>ok. −80%</b><span>czasu pracy na formularz (założenie: 2 h ręcznie vs 20 min przeglądu)</span></div>
+      <div class="tile"><span>Licencje i API</span><b>0 zł</b></div>
+      <div class="tile"><span>Sprzęt</span><b>1 laptop</b><small>MacBook Air M4</small></div>
+      <div class="tile"><span>Czas na plik</span><b>0,3–16 s</b><small>z LLM 9–16 s</small></div>
+      <div class="tile"><span>Energia / 1000 plików</span><b>&lt; 1 zł</b></div>
+      <div class="tile"><span>Czas pracy urzędnika</span><b>−80%</b><small>2 h → 20 min przeglądu</small></div>
     </div>
-    <p class="muted">Założenia kosztu pracy (100 zł/h) i szczegóły są w README, sekcja „Cena i koszt rozwiązania”. Czasy pochodzą z pomiarów poniżej.</p>
   </section>
 
   <section class="card pad" aria-label="Metodologia">
-    <h2>Metodologia i ograniczenia</h2>
+    <h2>Metodologia</h2>
     <ul class="meth">
-      <li><b>Co mierzymy.</b> Pipeline uruchamiany jest na wszystkich materiałach konkursowych. Dla każdego pliku liczymy pola, sekcje, spełnione reguły COI, auto-naprawy, pola oznaczone do przeglądu i średnią pewność.</li>
-      <li><b>Precyzja i czułość.</b> Tylko dla formularza 1 mamy wzorcowy JSON COI. Precyzja = dopasowane pola / pola wygenerowane, czułość = dopasowane / pola we wzorcu, zgodność typów liczona na dopasowanych parach.</li>
-      <li><b>Pozostałe formularze.</b> Bez wzorca podajemy wyłącznie metryki wewnętrzne (reguły COI, pewność) – nie są one dowodem poprawności semantycznej.</li>
+      <li><b>Zakres.</b> Wszystkie materiały konkursowe; liczymy pola, sekcje, reguły COI, auto-naprawy, pola do przeglądu i pewność.</li>
+      <li><b>Precyzja i czułość.</b> Tylko formularz 1 ma wzorzec COI. Pozostałe – metryki wewnętrzne, nie dowód poprawności.</li>
       <li><b>LLM.</b> <span id="llm-note"></span></li>
-      <li><b>Obrazy.</b> Skany PNG/JPG przechodzą przez lokalny OCR, więc wyniki są zwykle słabsze niż dla plików z warstwą tekstową.</li>
-      <li><b>Czas.</b> Wall-clock jednego przebiegu na maszynie deweloperskiej, bez generowania podglądów.</li>
+      <li><b>Skany.</b> PNG/JPG przez lokalny OCR – zwykle słabiej niż pliki z tekstem.</li>
+      <li><b>Czas.</b> Jeden przebieg, maszyna deweloperska, bez podglądów.</li>
     </ul>
   </section>
 </main>
