@@ -208,6 +208,31 @@ def infer(doc: SourceDoc) -> DraftForm:
     return merge_repeating(merge_variants([(v, _infer_one(sub, key)) for v, sub in parts], key))
 
 
+def _labels_before_options(lines: list[Line]) -> None:
+    """Etykieta wiersza tabeli wyśrodkowana w pionie trafia w kolejności za pierwszą kratką swojego wiersza
+    ('mikroprocesor' przed 'Sposób oznakowania:'). Przesuń ją przed kratki leżące na jej wysokości lub niżej."""
+    i = 0
+    while i < len(lines):
+        lab = lines[i]
+        is_label = lab.kind == "cell" or (lab.kind == "text" and lab.text.rstrip(" *").endswith(":"))
+        if is_label and lab.bbox and not lab.has_placeholder:
+            j = i
+            while j > 0:
+                cb = lines[j - 1]
+                if not (
+                    cb.kind in ("checkbox", "line")
+                    and cb.bbox
+                    and cb.page == lab.page
+                    and cb.x > lab.x + 40
+                    and cb.y >= lab.y - 4
+                ):
+                    break
+                j -= 1
+            if j < i:
+                lines.insert(j, lines.pop(i))
+        i += 1
+
+
 def _infer_one(doc: SourceDoc, key: _Keys) -> DraftForm:
     lines = [ln for ln in to_lines(doc) if ln.text.strip() or ln.kind == "line"]
     mf = median_font(lines)
@@ -240,6 +265,8 @@ def _infer_one(doc: SourceDoc, key: _Keys) -> DraftForm:
     if organ:
         for ln in organ[1]:
             ln.consumed = True
+
+    _labels_before_options(lines)
 
     sections: list[Section] = []
     cur = Section(title="Dane wniosku", kind="")
@@ -280,10 +307,15 @@ def _infer_one(doc: SourceDoc, key: _Keys) -> DraftForm:
         last_item = it
         return it
 
+    open_choice: tuple[Choice, Line] | None = None
+    prev_ln: Line | None = None  # poprzednia linia z treścią (bez kresek pól)
+    ln_seen: Line | None = None
     i = 0
     while i < len(lines):
         ln = lines[i]
         i += 1
+        if ln.kind != "line" or ln.text.strip():
+            prev_ln, ln_seen = ln_seen, ln
         if ln.consumed:
             if ln in tlines and cur.entries:
                 cur = Section(title="Szczegóły wniosku", lines=[ln])
@@ -380,24 +412,35 @@ def _infer_one(doc: SourceDoc, key: _Keys) -> DraftForm:
                 )
                 continue
             ch = cur.entries[-1] if cur.entries and isinstance(cur.entries[-1], Choice) else None
+            if ch is None and open_choice is not None and open_choice[1] is prev_ln:
+                ch = open_choice[0]  # kolejna kratka tego samego pytania (pole z etykiety stoi za wyborem)
             if ch is None:
                 q = cur.title
+                at = len(cur.entries)
                 if (
                     last_item
                     and last_item.spec.type == "TEXT_FIELD"
                     and not any(x.has_placeholder for x in last_item.lines)
                 ):
-                    cur.entries.remove(last_item)
-                    q = last_item.spec.title
+                    # etykieta dzielona na kilka pól ('Sposób oznakowania psa / nr ident.:') – pytaniem jest
+                    # pierwsze z nich, pozostałe zostają polami tekstowymi (np. numer identyfikacyjny)
+                    same = [
+                        e for e in cur.entries if isinstance(e, Item) and e.lines and e.lines[0] is last_item.lines[0]
+                    ]
+                    head = same[0] if same else last_item
+                    at = cur.entries.index(head)
+                    cur.entries.remove(head)
+                    q = head.spec.title
                 ch = Choice(
                     title=q, lines=[], multi=bool(C.MULTI_HINT.search(fold(" ".join(x.text for x in cur.lines))))
                 )
                 if cur.pending_cond:
                     cur.conds[id(ch)] = cur.pending_cond
-                cur.entries.append(ch)
+                cur.entries.insert(at, ch)
                 last_item = None
             ch.options.append((re.sub(r"^[☐☑□■✓✗xX]\s*", "", label), ln))
             ch.lines.append(ln)
+            open_choice = (ch, ln)
             continue
         hint = PAREN_HINT.match(t) or PAREN_HINT.match(ln.text.strip())
         if ln.only_placeholder:
@@ -484,7 +527,7 @@ def _infer_one(doc: SourceDoc, key: _Keys) -> DraftForm:
         if (
             len(t) <= 70
             and (len(words) <= 6 or ln.kind == "cell")
-            and not t.endswith((".", ")"))
+            and (not t.endswith((".", ")")) or ln.kind == "cell" or ln.text.rstrip(" *").endswith(":"))
             and (t[:1].isupper() or t[:1].isdigit() or ln.kind == "cell" or before_input)
         ):
             if before_input:
