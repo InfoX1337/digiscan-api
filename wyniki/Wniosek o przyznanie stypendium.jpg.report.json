@@ -4026,7 +4026,7 @@
       "id": "ad7df267-ffb0-5bfc-b309-8a2e2d6ac5c2",
       "techName": "zgody_i_oswiadczenia",
       "title": "Zgody i oświadczenia",
-      "type": "SECTION",
+      "type": "REPEATING_SECTION",
       "confidence": 0.7,
       "sources": [
         {
@@ -4052,7 +4052,8 @@
         "rules"
       ],
       "reasons": [
-        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
+        "klauzula/oświadczenie w dokumencie -> sekcja zgód",
+        "2 powtórzone bloki o tym samym układzie -> sekcja powtarzająca się"
       ]
     },
     "d0d41447-765c-591c-95db-075ffdaed5d0": {
@@ -4088,75 +4089,9 @@
         "klauzula/oświadczenie w dokumencie -> sekcja zgód"
       ]
     },
-    "1e0854b0-6f06-5b98-9fea-e4bd3a2f9e32": {
-      "id": "1e0854b0-6f06-5b98-9fea-e4bd3a2f9e32",
-      "techName": "zgody_i_oswiadczenia_2",
-      "title": "Zgody i oświadczenia",
-      "type": "SECTION",
-      "confidence": 0.7,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 19470.0,
-            "w": 1249.0,
-            "h": 262.0
-          },
-          "text": "4. Klauzula informacyjna Informacje na temat ochrony danych osobowych stosowanych przez administratora danych, którymi są wnioskujący: a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5; b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza",
-          "blockIds": [
-            "p1-b176",
-            "p1-b177",
-            "p1-b178",
-            "p1-b179",
-            "p1-b180",
-            "p1-b181"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
-      ]
-    },
-    "49416290-fd07-5930-9828-9d0799c8e0e0": {
-      "id": "49416290-fd07-5930-9828-9d0799c8e0e0",
-      "techName": "consent_section_2",
-      "title": "",
-      "type": "CONSENT_SECTION",
-      "confidence": 0.7,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 19470.0,
-            "w": 1249.0,
-            "h": 262.0
-          },
-          "text": "4. Klauzula informacyjna Informacje na temat ochrony danych osobowych stosowanych przez administratora danych, którymi są wnioskujący: a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5; b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza",
-          "blockIds": [
-            "p1-b176",
-            "p1-b177",
-            "p1-b178",
-            "p1-b179",
-            "p1-b180",
-            "p1-b181"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
-      ]
-    },
     "fb304919-1626-5901-bdf8-bd5a6ac1031e": {
       "id": "fb304919-1626-5901-bdf8-bd5a6ac1031e",
-      "techName": "zgody_i_oswiadczenia_3",
+      "techName": "zgody_i_oswiadczenia_2",
       "title": "Zgody i oświadczenia",
       "type": "SECTION",
       "confidence": 0.7,
@@ -4189,7 +4124,7 @@
     },
     "843eac2c-0291-5f13-bed9-35dc22f63b43": {
       "id": "843eac2c-0291-5f13-bed9-35dc22f63b43",
-      "techName": "consent_section_3",
+      "techName": "consent_section_2",
       "title": "",
       "type": "CONSENT_SECTION",
       "confidence": 0.7,
@@ -4896,15 +4831,6 @@
         "REQUIRED"
       ],
       "after": []
-    },
-    {
-      "ruleId": "COI-R26",
-      "path": "/tabs/2/questions/3/field/repeatingSectionGrid/0/field/validation",
-      "description": "Usunięto niedozwolone/powtórzone walidatory",
-      "before": [
-        "REQUIRED"
-      ],
-      "after": []
     }
   ],
   "proposedDictionaries": [
@@ -4938,11 +4864,11 @@
   ],
   "warnings": [],
   "timings": {
-    "extract": 11876,
-    "infer": 68,
+    "extract": 12118,
+    "infer": 73,
     "dict": 3,
     "build": 2,
-    "validate": 35
+    "validate": 34
   },
   "llm": {
     "used": false

@@ -4,7 +4,7 @@
 
 ```
  urzędnik (przeglądarka)            system integrujący (np. kreator eUsług)
-        │  UI web/ (HTML+JS)                 │  REST + JWT
+        │  UI web/ (HTML+JS)                 │  REST (JWT opcjonalnie)
         └──────────────┬─────────────────────┘
                        ▼
         ┌─────────────────────────────┐        ┌──────────────────────────┐
@@ -23,7 +23,7 @@ dostępnych tylko w chmurze. Usługa jest bezstanowa, więc skaluje się poziomo
 | # | Warstwa | Moduł | Co robi | Wyjście |
 |---|---|---|---|---|
 | 0 | limit ciała | `limits.py` | 413 przy `Content-Length` > limit albo po przekroczeniu w trakcie odbioru | – |
-| 1 | auth | `auth/` | weryfikacja JWT HS256 (`iss`, `aud`, `exp`) | claims |
+| 1 | auth | `auth/` | opcjonalna (`AUTH_ENABLED`) weryfikacja JWT HS256 (`iss`, `aud`, `exp`) | claims |
 | 2 | ingest | `ingest/` | nazwa (≤250, zakazane `; : > < / \ \| ' * % $`), rozszerzenie, `Content-Type`, magic bytes + struktura ZIP/OLE, rozmiar, ochrona przed zip bomb | `IngestedFile` (bajty w RAM) |
 | 3 | extract | `extract/` | pdfplumber (PDF z tekstem), pypdfium2 + Tesseract (skany, obrazy), python-docx, olefile (DOC), openpyxl (XLSX), expat (ODS) | `SourceDoc`: bloki tekstu z bbox i stroną |
 | 4 | infer | `infer/` | układ linii + katalog pojęć: sekcje, pola, typy, walidatory, REQUIRED, warianty wniosku, zależności SHOW | `DraftForm` z `confidence` i `evidence` |
@@ -56,8 +56,8 @@ eUsług COI i są dodawane tylko wtedy, gdy treść dokumentu je uzasadnia (np. 
   jeden port (8000), sekrety wyłącznie z env w runtime.
 - ODS parsowany przez stdlib expat (bez zewnętrznych encji XML), ZIP z limitem wpisów i rozmiaru po rozpakowaniu,
   OCR z limitem stron (`MAX_OCR_PAGES`), całe przetwarzanie z limitem czasu (`REQUEST_TIMEOUT_S`).
-- `APP_ENV=demo` (domyślny w obrazie, dla jury) wydaje token UI bez logowania – **nie do wdrożenia**.
-  `APP_ENV=production` wymaga własnych `JWT_SECRET` i `AUTH_CLIENT_SECRET` oraz `DEMO_UI=false`, inaczej start się nie uda.
+- Domyślnie (demo) API jest otwarte, `AUTH_ENABLED=false` – **nie do wdrożenia publicznego**.
+  `AUTH_ENABLED=true` włącza JWT; z `APP_ENV=production` wymaga własnych `JWT_SECRET` i `AUTH_CLIENT_SECRET` oraz `DEMO_UI=false`, inaczej start się nie uda.
 
 ## Konfiguracja
 

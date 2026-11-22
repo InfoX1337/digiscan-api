@@ -1726,11 +1726,11 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 144,
-    "infer": 3,
+    "extract": 151,
+    "infer": 4,
     "dict": 1,
     "build": 1,
-    "validate": 23
+    "validate": 25
   },
   "llm": {
     "used": false

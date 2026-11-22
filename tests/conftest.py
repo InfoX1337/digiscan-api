@@ -8,6 +8,7 @@ import pytest
 
 os.environ["APP_ENV"] = "test"
 os.environ["LLM_ENABLED"] = "false"
+os.environ["AUTH_ENABLED"] = "true"  # testy JWT; tryb otwarty testuje test_api_open.py
 
 FIXTURES = Path(__file__).parent / "fixtures"
 MATERIALS = FIXTURES / "materials"

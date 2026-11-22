@@ -1433,9 +1433,9 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 1885,
-    "infer": 14,
-    "dict": 2,
+    "extract": 1993,
+    "infer": 18,
+    "dict": 3,
     "build": 1,
     "validate": 19
   },

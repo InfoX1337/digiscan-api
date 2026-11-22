@@ -4386,10 +4386,10 @@
   "warnings": [],
   "timings": {
     "extract": 15,
-    "infer": 17,
+    "infer": 18,
     "dict": 3,
     "build": 1,
-    "validate": 32
+    "validate": 33
   },
   "llm": {
     "used": false

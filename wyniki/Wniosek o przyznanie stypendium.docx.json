@@ -1175,7 +1175,7 @@
           "cols": 3,
           "field": {
             "id": "850fc27e-66a7-58a5-bd45-654f64afa581",
-            "type": "SECTION",
+            "type": "REPEATING_SECTION",
             "techName": "dane_osobowe_podopiecznego_trenera",
             "title": "Dane osobowe podopiecznego trenera",
             "description": "",
@@ -1248,216 +1248,6 @@
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "fee99385-3329-5aaa-a9dd-ce5b88ebeef9",
-            "type": "SECTION",
-            "techName": "dane_osobowe_podopiecznego_trenera_2",
-            "title": "Dane osobowe podopiecznego trenera",
-            "description": "",
-            "options": [],
-            "validation": [],
-            "readOnly": false,
-            "repeatingSectionGrid": [
-              {
-                "x": 0,
-                "y": 0,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "e73d7a33-bfe2-5b44-b825-c56eb2c72903",
-                  "type": "TEXT_FIELD",
-                  "techName": "imie_11",
-                  "title": "Imię",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 0,
-                  "tooltipMessage": ""
-                }
-              },
-              {
-                "x": 0,
-                "y": 1,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "1bafe305-6594-5dce-8694-b9aec430f95d",
-                  "type": "TEXT_FIELD",
-                  "techName": "nazwisko_11",
-                  "title": "Nazwisko",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 1,
-                  "tooltipMessage": ""
-                }
-              }
-            ],
-            "states": [
-              {
-                "type": "SHOW",
-                "query": "(\"Wniosek o przyznanie wyróżnienia sportowego Rady Miasta Zgierza\" in tabs['Dane' in title].questions['rodzaj_wniosku' in field.techName].field.repeatingSectionGrid['wybierz_rodzaj_wniosku' in field.techName].field.__userAnswer)"
-              }
-            ],
-            "questionOrder": 14,
-            "tooltipMessage": ""
-          }
-        },
-        {
-          "x": 0,
-          "y": 54,
-          "rows": 3,
-          "cols": 3,
-          "field": {
-            "id": "27b9953c-04b3-54f7-9aa2-6ddb807c74aa",
-            "type": "SECTION",
-            "techName": "dane_osobowe_podopiecznego_trenera_3",
-            "title": "Dane osobowe podopiecznego trenera",
-            "description": "",
-            "options": [],
-            "validation": [],
-            "readOnly": false,
-            "repeatingSectionGrid": [
-              {
-                "x": 0,
-                "y": 0,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "99d07c0b-afb1-5bdc-a421-d581e6a2b511",
-                  "type": "TEXT_FIELD",
-                  "techName": "imie_12",
-                  "title": "Imię",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 0,
-                  "tooltipMessage": ""
-                }
-              },
-              {
-                "x": 0,
-                "y": 1,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "ffe84e21-ebe8-5d3b-a1e6-b68b755d613f",
-                  "type": "TEXT_FIELD",
-                  "techName": "nazwisko_12",
-                  "title": "Nazwisko",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 1,
-                  "tooltipMessage": ""
-                }
-              }
-            ],
-            "states": [
-              {
-                "type": "SHOW",
-                "query": "(\"Wniosek o przyznanie wyróżnienia sportowego Rady Miasta Zgierza\" in tabs['Dane' in title].questions['rodzaj_wniosku' in field.techName].field.repeatingSectionGrid['wybierz_rodzaj_wniosku' in field.techName].field.__userAnswer)"
-              }
-            ],
-            "questionOrder": 15,
-            "tooltipMessage": ""
-          }
-        },
-        {
-          "x": 0,
-          "y": 57,
-          "rows": 3,
-          "cols": 3,
-          "field": {
-            "id": "566d5172-3a7c-54c5-ba0e-57146e0f7f62",
-            "type": "SECTION",
-            "techName": "dane_osobowe_podopiecznego_trenera_4",
-            "title": "Dane osobowe podopiecznego trenera",
-            "description": "",
-            "options": [],
-            "validation": [],
-            "readOnly": false,
-            "repeatingSectionGrid": [
-              {
-                "x": 0,
-                "y": 0,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "23f1bd40-2df8-5b47-b24c-9dbfcad1c220",
-                  "type": "TEXT_FIELD",
-                  "techName": "imie_13",
-                  "title": "Imię",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 0,
-                  "tooltipMessage": ""
-                }
-              },
-              {
-                "x": 0,
-                "y": 1,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "6555ff92-556f-5c3d-ad27-983fc3b8c300",
-                  "type": "TEXT_FIELD",
-                  "techName": "nazwisko_13",
-                  "title": "Nazwisko",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 1,
-                  "tooltipMessage": ""
-                }
-              }
-            ],
-            "states": [
-              {
-                "type": "SHOW",
-                "query": "(\"Wniosek o przyznanie wyróżnienia sportowego Rady Miasta Zgierza\" in tabs['Dane' in title].questions['rodzaj_wniosku' in field.techName].field.repeatingSectionGrid['wybierz_rodzaj_wniosku' in field.techName].field.__userAnswer)"
-              }
-            ],
-            "questionOrder": 16,
-            "tooltipMessage": ""
-          }
-        },
-        {
-          "x": 0,
-          "y": 60,
-          "rows": 3,
-          "cols": 3,
-          "field": {
             "id": "901cbdee-0791-5563-9217-da342b12daf7",
             "type": "SECTION",
             "techName": "wymagane_zaswiadczenia_wymienionych_podopiecznych_trenera",
@@ -1516,13 +1306,13 @@
                 "query": "(\"Wniosek o przyznanie wyróżnienia sportowego Rady Miasta Zgierza\" in tabs['Dane' in title].questions['rodzaj_wniosku' in field.techName].field.repeatingSectionGrid['wybierz_rodzaj_wniosku' in field.techName].field.__userAnswer)"
               }
             ],
-            "questionOrder": 17,
+            "questionOrder": 14,
             "tooltipMessage": ""
           }
         },
         {
           "x": 0,
-          "y": 63,
+          "y": 54,
           "rows": 3,
           "cols": 3,
           "field": {
@@ -1543,7 +1333,7 @@
                 "field": {
                   "id": "d187283d-cab4-51ce-8db3-cc43ec7e006c",
                   "type": "TEXT_FIELD",
-                  "techName": "imie_14",
+                  "techName": "imie_11",
                   "title": "Imię",
                   "description": "",
                   "options": [],
@@ -1565,7 +1355,7 @@
                 "field": {
                   "id": "b79f0b5d-26a0-5ba3-9e68-f325ee69cac8",
                   "type": "TEXT_FIELD",
-                  "techName": "nazwisko_14",
+                  "techName": "nazwisko_11",
                   "title": "Nazwisko",
                   "description": "",
                   "options": [],
@@ -1586,13 +1376,13 @@
                 "query": "(\"Wniosek o przyznanie wyróżnienia sportowego Rady Miasta Zgierza\" in tabs['Dane' in title].questions['rodzaj_wniosku' in field.techName].field.repeatingSectionGrid['wybierz_rodzaj_wniosku' in field.techName].field.__userAnswer)"
               }
             ],
-            "questionOrder": 18,
+            "questionOrder": 15,
             "tooltipMessage": ""
           }
         },
         {
           "x": 0,
-          "y": 66,
+          "y": 57,
           "rows": 3,
           "cols": 3,
           "field": {
@@ -1613,7 +1403,7 @@
                 "field": {
                   "id": "25f64dee-99ff-5f00-a41e-e8178fdec1e5",
                   "type": "TEXT_FIELD",
-                  "techName": "imie_15",
+                  "techName": "imie_12",
                   "title": "Imię",
                   "description": "",
                   "options": [],
@@ -1635,7 +1425,7 @@
                 "field": {
                   "id": "0c6ec827-a8fe-5d78-a353-5f5ff91e4589",
                   "type": "TEXT_FIELD",
-                  "techName": "nazwisko_15",
+                  "techName": "nazwisko_12",
                   "title": "Nazwisko",
                   "description": "",
                   "options": [],
@@ -1656,13 +1446,13 @@
                 "query": "(\"Wniosek o przyznanie wyróżnienia sportowego Rady Miasta Zgierza\" in tabs['Dane' in title].questions['rodzaj_wniosku' in field.techName].field.repeatingSectionGrid['wybierz_rodzaj_wniosku' in field.techName].field.__userAnswer)"
               }
             ],
-            "questionOrder": 19,
+            "questionOrder": 16,
             "tooltipMessage": ""
           }
         },
         {
           "x": 0,
-          "y": 69,
+          "y": 60,
           "rows": 3,
           "cols": 3,
           "field": {
@@ -1683,7 +1473,7 @@
                 "field": {
                   "id": "35778c58-b0d9-5575-96b1-956fe5738405",
                   "type": "TEXT_FIELD",
-                  "techName": "imie_16",
+                  "techName": "imie_13",
                   "title": "Imię",
                   "description": "",
                   "options": [],
@@ -1705,7 +1495,7 @@
                 "field": {
                   "id": "63b1c4a7-e31d-52ec-be13-7cb4915a766b",
                   "type": "TEXT_FIELD",
-                  "techName": "nazwisko_16",
+                  "techName": "nazwisko_13",
                   "title": "Nazwisko",
                   "description": "",
                   "options": [],
@@ -1726,7 +1516,7 @@
                 "query": "(\"Wniosek o przyznanie wyróżnienia sportowego Rady Miasta Zgierza\" in tabs['Dane' in title].questions['rodzaj_wniosku' in field.techName].field.repeatingSectionGrid['wybierz_rodzaj_wniosku' in field.techName].field.__userAnswer)"
               }
             ],
-            "questionOrder": 20,
+            "questionOrder": 17,
             "tooltipMessage": ""
           }
         }

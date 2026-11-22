@@ -553,7 +553,7 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 780,
+    "extract": 804,
     "infer": 2,
     "dict": 0,
     "build": 0,

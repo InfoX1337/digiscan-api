@@ -1,5 +1,5 @@
 import { h, $, $$ } from "./util.js";
-import { demoLogin, setToken, getToken, convert, convertBatch, validate } from "./api.js";
+import { authRequired, demoLogin, setToken, getToken, convert, convertBatch, validate } from "./api.js";
 import { renderForm, iterQuestions } from "./viz.js";
 import { renderRules, renderReview, renderJson, renderReport, renderDetails, renderPreview, download } from "./panels.js";
 
@@ -28,7 +28,10 @@ $("#theme").addEventListener("click", () => {
 /* ---------- auth ---------- */
 const authState = $("#auth-state");
 async function login() {
-  if (await demoLogin()) { authState.textContent = "Zalogowano automatycznie (konto demo)"; tokenInput.hidden = true; return; }
+  if (await demoLogin()) {
+    authState.textContent = authRequired ? "Zalogowano automatycznie (konto demo)" : "";
+    tokenInput.hidden = true; return;
+  }
   authState.textContent = "Wklej token JWT:"; tokenInput.hidden = false;
 }
 tokenInput.addEventListener("input", () => setToken(tokenInput.value));

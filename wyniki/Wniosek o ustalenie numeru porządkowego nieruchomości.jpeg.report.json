@@ -1351,7 +1351,7 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 1974,
+    "extract": 2033,
     "infer": 5,
     "dict": 1,
     "build": 1,

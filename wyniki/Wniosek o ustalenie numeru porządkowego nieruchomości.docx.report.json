@@ -1554,7 +1554,7 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 40,
+    "extract": 42,
     "infer": 3,
     "dict": 1,
     "build": 1,

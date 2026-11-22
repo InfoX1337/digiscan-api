@@ -31,7 +31,7 @@ docker compose up --build         # api :8000 + ollama
 docker compose exec ollama ollama pull qwen3.5:4b   # jednorazowo (opcjonalne; bez modelu działa tryb reguł)
 ```
 
-UI: http://localhost:8000/ (tryb demo loguje się sam). OpenAPI: http://localhost:8000/docs.
+UI: http://localhost:8000/ (bez logowania). OpenAPI: http://localhost:8000/docs.
 
 Na Macu Ollama w Dockerze nie ma GPU – szybciej z Ollamą na hoście: `OLLAMA_URL=http://host.docker.internal:11434`.
 
@@ -42,26 +42,19 @@ uv sync
 uv run python -m formproof        # :8000
 ```
 
-## Konto demo
+## Uwierzytelnianie (opcjonalne)
 
-| | |
-|---|---|
-| clientId | `demo` |
-| clientSecret | `demo-secret` |
+To wersja demonstracyjna, więc API jest domyślnie otwarte: UI i `curl` działają bez tokenu.
+Wdrożenie z JWT (HS256) włączasz zmienną `AUTH_ENABLED=true`. Wtedy wszystkie endpointy poza `/health` i `/auth/token`
+wymagają `Authorization: Bearer`, a przy `APP_ENV=production` aplikacja odmówi startu bez własnych
+`JWT_SECRET` (≥ 32 znaki) i `AUTH_CLIENT_SECRET` oraz z `DEMO_UI=true`. Konto klienta: `AUTH_CLIENT_ID` / `AUTH_CLIENT_SECRET`
+(domyślnie `demo` / `demo-secret`, tylko dev).
 
-Dane z `.env` (`AUTH_CLIENT_ID`, `AUTH_CLIENT_SECRET`). `APP_ENV=production` wymaga własnych sekretów i wyłącza auto-logowanie UI.
-
-> **Uwaga – tryb demo nie jest zabezpieczony.** Obraz startuje z `APP_ENV=demo`, żeby jury mogło od razu klikać w UI:
-> `GET /api/v1/demo-config` wydaje każdemu 15-minutowy token, a `JWT_SECRET` i `demo-secret` mają jawne wartości
-> domyślne (w kodzie i w tym README). W tym trybie JWT **nie chroni** API. Wdrożenie: `APP_ENV=production`,
-> losowy `JWT_SECRET` (≥ 32 znaki), własny `AUTH_CLIENT_SECRET`, `DEMO_UI=false` – aplikacja odmówi startu,
-> jeśli któregoś brakuje.
-
-## REST API (prefiks `/api/v1`, JWT Bearer HS256)
+## REST API (prefiks `/api/v1`)
 
 | Metoda | Ścieżka | Opis |
 |---|---|---|
-| POST | `/auth/token` | `{clientId, clientSecret}` → `{accessToken, expiresIn}` |
+| POST | `/auth/token` | tylko z `AUTH_ENABLED=true`: `{clientId, clientSecret}` → `{accessToken, expiresIn}` |
 | POST | `/forms/convert?llm=true&previews=false` | multipart `file` → `{form, report}` |
 | POST | `/forms/convert/batch` | multipart wiele `file` → `{results: [{filename, ok, form?, report?, error?}]}` |
 | POST | `/forms/validate?repair=true` | body: JSON formularza → `{form, rules, repairs}` (form po naprawie) |
@@ -69,9 +62,7 @@ Dane z `.env` (`AUTH_CLIENT_ID`, `AUTH_CLIENT_SECRET`). `APP_ENV=production` wym
 | GET | `/health` | bez JWT |
 
 ```bash
-TOKEN=$(curl -s localhost:8000/api/v1/auth/token -H 'content-type: application/json' \
-  -d '{"clientId":"demo","clientSecret":"demo-secret"}' | jq -r .accessToken)
-curl -s localhost:8000/api/v1/forms/convert -H "Authorization: Bearer $TOKEN" \
+curl -s localhost:8000/api/v1/forms/convert \
   -F 'file=@Wniosek o zwrot opłaty skarbowej.pdf' | jq '.report.rules | length'
 ```
 
@@ -91,9 +82,34 @@ Walidacja pliku:
 
 ## Konfiguracja (`.env`)
 
-`APP_ENV`, `PORT`, `JWT_SECRET`, `JWT_EXPIRES_S`, `JWT_ISSUER`, `JWT_AUDIENCE`, `AUTH_CLIENT_ID`, `AUTH_CLIENT_SECRET`,
+`APP_ENV`, `PORT`, `AUTH_ENABLED`, `JWT_SECRET`, `JWT_EXPIRES_S`, `JWT_ISSUER`, `JWT_AUDIENCE`, `AUTH_CLIENT_ID`, `AUTH_CLIENT_SECRET`,
 `MAX_FILE_BYTES`, `MAX_BATCH_FILES`, `MAX_BATCH_BYTES`, `MAX_OCR_PAGES`, `REQUEST_TIMEOUT_S`, `LLM_ENABLED`, `OLLAMA_URL`, `LLM_MODEL`,
 `LLM_TIMEOUT_S`, `TESSERACT_CMD`, `DEMO_UI`. Opis i wartości domyślne: `.env.example`.
+
+## Cena i koszt rozwiązania
+
+Rozwiązanie działa w całości lokalnie, więc nie ma opłat za licencje, API ani chmurę. Zmierzone na MacBooku Air z Apple M4 (24 GB RAM).
+
+| Pozycja | Wartość |
+|---|---|
+| Licencje (kod, zależności, model) | **0 zł**: MIT/BSD/Apache/MPL, model Qwen 3.5 4B open-weights |
+| Opłaty za API LLM / SaaS | **0 zł**, brak takich wywołań w runtime |
+| Sprzęt do uruchomienia | jeden MacBook Air M4 albo zwykły serwer x86 (4 rdzenie, 8 GB RAM bez LLM, 16 GB z LLM) |
+| Rozmiar obrazu Docker (API) | ok. 350 MB; model Ollama ok. 4 GB (opcjonalny) |
+| Czas konwersji jednego pliku | tryb reguł: ok. 0,3–8 s (skany dłużej); z lokalnym LLM: ok. 9–16 s |
+| Energia na 1000 formularzy | ok. 0,06 kWh przy 15 W i 15 s na plik, czyli poniżej 1 zł |
+
+**Szacunek oszczędności (założenia do zmiany pod własną organizację).** Ręczna analiza i przepisanie jednego formularza
+zajmuje analitykowi ok. 2 h (COI opisuje ten proces jako czasochłonny i kosztowny). Przy wersji roboczej od FormProof urzędnik
+sprawdza tylko pola z listy „Do przeglądu”, załóżmy ok. 20 min. Przy stawce 100 zł/h:
+
+| | Ręcznie | Z FormProof |
+|---|---|---|
+| Koszt pracy na formularz | 200 zł | ok. 33 zł |
+| 500 formularzy | 100 000 zł | ok. 16 500 zł + sprzęt |
+
+Oszczędność ok. 80% czasu pracy, a całkowity koszt wdrożenia to sprzęt (np. jeden MacBook Air M4, cena rynkowa ok. 5–6 tys. zł)
+i godziny administratora. Liczby czasu pochodzą z pomiarów (`scripts/eval/run.py`), liczby kosztu pracy to założenia.
 
 ## Architektura
 
@@ -125,10 +141,10 @@ MIT/BSD/Apache/MPL.
 
 ## Ograniczenia (uczciwie)
 
-- Słowniki Powiat/Gmina/Miejscowość to próbka (pełny TERYT nie jest dołączony); Kraje, Numery kierunkowe, Województwo – pełne.
+- Słowniki Powiat/Gmina/Miejscowość: w JSON-ie pola dostają `dictionaryName` (dane dostarcza platforma COI); lokalnie dołączona jest tylko próbka. Kraje, Numery kierunkowe, Województwo – pełne.
 - DOC (binarny Word) – tylko tekst, bez układu.
 - Jakość OCR zależy od skanu; pola z OCR mają niższe `confidence` i trafiają do przeglądu.
-- Pliki z kilkoma wnioskami: powtarzane bloki (np. kilka podopiecznych) wychodzą jako osobne sekcje, nie `REPEATING_SECTION`;
+- Pliki z kilkoma wnioskami: sąsiednie identyczne bloki (np. kilku podopiecznych) scalamy w `REPEATING_SECTION`;
   nietypowe bloki wnioskodawcy rozpoznawane słabiej.
 - Wynik to propozycja do przeglądu przez urzędnika, nie ostateczna decyzja.
 

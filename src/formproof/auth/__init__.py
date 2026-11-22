@@ -1,4 +1,4 @@
-"""JWT (HS256): wydawanie tokenu dla klienta z env i weryfikacja Bearer."""
+"""JWT (HS256, opcjonalny – AUTH_ENABLED): wydawanie tokenu dla klienta z env i weryfikacja Bearer."""
 
 from __future__ import annotations
 
@@ -46,6 +46,8 @@ def require_jwt(
     creds: Annotated[HTTPAuthorizationCredentials | None, Depends(_bearer)],
     cfg: Annotated[Settings, Depends(get_settings)],
 ) -> dict[str, Any]:
+    if not cfg.auth_enabled:
+        return {}
     if creds is None or creds.scheme.lower() != "bearer":
         raise _unauthorized()
     try:

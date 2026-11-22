@@ -3551,7 +3551,7 @@
           "cols": 3,
           "field": {
             "id": "9904a2fb-2478-5f4f-96a3-ddd780b981e9",
-            "type": "SECTION",
+            "type": "REPEATING_SECTION",
             "techName": "zgody_i_oswiadczenia",
             "title": "Zgody i oświadczenia",
             "description": "",
@@ -3602,61 +3602,6 @@
         {
           "x": 0,
           "y": 10,
-          "rows": 2,
-          "cols": 3,
-          "field": {
-            "id": "8109082e-9cbb-5439-a867-cf48d67c5ffa",
-            "type": "SECTION",
-            "techName": "zgody_i_oswiadczenia_2",
-            "title": "Zgody i oświadczenia",
-            "description": "",
-            "options": [],
-            "validation": [],
-            "readOnly": false,
-            "repeatingSectionGrid": [
-              {
-                "x": 0,
-                "y": 0,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "29205e53-b1d1-52b0-a2d9-8149ecfeba6c",
-                  "type": "CONSENT_SECTION",
-                  "techName": "consent_section_2",
-                  "title": "",
-                  "description": "Informacje na temat ochrony danych osobowych stosowanych przez administratora danych którymi są wnioskujący a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5 b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza pod adresem: www.bip.zgierz.pl lub w siedzibie Urzędu Miasta Zgierza oraz wymagane zgody zpkt.5.",
-                  "options": [],
-                  "validation": [],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 0,
-                  "tooltipMessage": "",
-                  "consentSectionConfig": {
-                    "consents": [
-                      {
-                        "description": "Potwierdzam zapoznanie się z informacją o przetwarzaniu danych osobowych."
-                      }
-                    ],
-                    "required": true,
-                    "files": []
-                  }
-                }
-              }
-            ],
-            "states": [
-              {
-                "type": "SHOW",
-                "query": "(\"Wniosek o przyznanie stypendium sportowego Rady Miasta\" in tabs['Dane' in title].questions['rodzaj_wniosku' in field.techName].field.repeatingSectionGrid['wybierz_rodzaj_wniosku' in field.techName].field.__userAnswer)"
-              }
-            ],
-            "questionOrder": 3,
-            "tooltipMessage": ""
-          }
-        },
-        {
-          "x": 0,
-          "y": 12,
           "rows": 4,
           "cols": 3,
           "field": {
@@ -3744,19 +3689,19 @@
                 "query": "(\"Wniosek o przyznanie wyróżnienia sportowego Rady Miasta Zgierza\" in tabs['Dane' in title].questions['rodzaj_wniosku' in field.techName].field.repeatingSectionGrid['wybierz_rodzaj_wniosku' in field.techName].field.__userAnswer)"
               }
             ],
-            "questionOrder": 4,
+            "questionOrder": 3,
             "tooltipMessage": ""
           }
         },
         {
           "x": 0,
-          "y": 16,
+          "y": 14,
           "rows": 2,
           "cols": 3,
           "field": {
             "id": "9ac61814-cd30-5f96-8472-124c6fc852a2",
             "type": "SECTION",
-            "techName": "zgody_i_oswiadczenia_3",
+            "techName": "zgody_i_oswiadczenia_2",
             "title": "Zgody i oświadczenia",
             "description": "",
             "options": [],
@@ -3771,7 +3716,7 @@
                 "field": {
                   "id": "b5bf6089-8b9d-52f3-aed2-37d3c1354b1d",
                   "type": "CONSENT_SECTION",
-                  "techName": "consent_section_3",
+                  "techName": "consent_section_2",
                   "title": "",
                   "description": "Informacje na temat ochrony danych osobowych stosowanych przez administratora danych którymi są wnioskujący a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5i 6 b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza pod adresem: www.bip.zgierz.pl lub w siedzibie Urzędu Miasta Zgierza oraz wymagane zgody zpkt.5i6.",
                   "options": [],
@@ -3799,7 +3744,7 @@
                 "query": "(\"Wniosek o przyznanie wyróżnienia sportowego Rady Miasta Zgierza\" in tabs['Dane' in title].questions['rodzaj_wniosku' in field.techName].field.repeatingSectionGrid['wybierz_rodzaj_wniosku' in field.techName].field.__userAnswer)"
               }
             ],
-            "questionOrder": 5,
+            "questionOrder": 4,
             "tooltipMessage": ""
           }
         }

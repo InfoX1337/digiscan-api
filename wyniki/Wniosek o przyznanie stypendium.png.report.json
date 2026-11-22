@@ -5672,7 +5672,7 @@
       "id": "96055def-ef31-5086-849b-efff20110f43",
       "techName": "dane_do_kontaktu_2",
       "title": "Dane do kontaktu",
-      "type": "SECTION",
+      "type": "REPEATING_SECTION",
       "confidence": 0.41,
       "sources": [
         {
@@ -5693,7 +5693,8 @@
         "rules"
       ],
       "reasons": [
-        "nagłówek sekcji w dokumencie"
+        "nagłówek sekcji w dokumencie",
+        "2 powtórzone bloki o tym samym układzie -> sekcja powtarzająca się"
       ]
     },
     "e4465d13-62b3-56de-b09c-210a6a37d0d9": {
@@ -5843,189 +5844,11 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "a76b246b-5bff-5a8e-88aa-75e0c884e3f7": {
-      "id": "a76b246b-5bff-5a8e-88aa-75e0c884e3f7",
-      "techName": "dane_do_kontaktu_3",
-      "title": "Dane do kontaktu",
-      "type": "SECTION",
-      "confidence": 0.2,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 200.0,
-            "y": 23719.0,
-            "w": 246.0,
-            "h": 26.0
-          },
-          "text": "1. Wnioskodawca",
-          "blockIds": [
-            "p1-b219"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "nagłówek sekcji w dokumencie"
-      ]
-    },
-    "150e8afb-84fd-52d5-b3c2-d834333a9cf6": {
-      "id": "150e8afb-84fd-52d5-b3c2-d834333a9cf6",
-      "techName": "numer_telefonu_5",
-      "title": "Numer telefonu",
-      "type": "TEXT_FIELD",
-      "confidence": 0.16,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 199.0,
-            "y": 24143.0,
-            "w": 1258.0,
-            "h": 37.0
-          },
-          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
-          "blockIds": [
-            "p1-b224",
-            "p1-b225",
-            "p1-b226"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "typ z etykiety (TEXT_FIELD)"
-      ]
-    },
-    "cb785fea-abb2-5a3a-b062-fd1a9d61a440": {
-      "id": "cb785fea-abb2-5a3a-b062-fd1a9d61a440",
-      "techName": "numer_telefonu_6",
-      "title": "Numer telefonu",
-      "type": "TEXT_FIELD",
-      "confidence": 0.16,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 199.0,
-            "y": 24457.0,
-            "w": 1258.0,
-            "h": 37.0
-          },
-          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
-          "blockIds": [
-            "p1-b231",
-            "p1-b232",
-            "p1-b233"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "typ z etykiety (TEXT_FIELD)"
-      ]
-    },
-    "1d29d35d-0c20-58cb-bd2e-da4b739f973d": {
-      "id": "1d29d35d-0c20-58cb-bd2e-da4b739f973d",
-      "techName": "numer_telefonu_7",
-      "title": "Numer telefonu",
-      "type": "TEXT_FIELD",
-      "confidence": 0.2,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 24791.0,
-            "w": 1258.0,
-            "h": 37.0
-          },
-          "text": "Telefon kontaktowy (opcjonalnie)  eeseeevovesorosononoonoweseeoewaweaawawowow sse ee awewaawesenowa ses es e see oa s",
-          "blockIds": [
-            "p1-b241",
-            "p1-b242",
-            "p1-b243"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "typ z etykiety (TEXT_FIELD)"
-      ]
-    },
-    "e10f5b20-d86d-53c4-a97d-9c2047abb362": {
-      "id": "e10f5b20-d86d-53c4-a97d-9c2047abb362",
-      "techName": "adres_skrytki_epuap_3",
-      "title": "Adres skrytki ePUAP",
-      "type": "TEXT_FIELD",
-      "confidence": 0.24,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 257.0,
-            "y": 25178.0,
-            "w": 1193.0,
-            "h": 38.0
-          },
-          "text": "Skrzynka ePUAP - adres skrzynki:  eeeeeeeoreeneneseeweroeneneneeeeneenenen ee een eee see wen ee onen seee nane ne es",
-          "blockIds": [
-            "p1-b251",
-            "p1-b252",
-            "p1-b253"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "typ z etykiety (TEXT_FIELD)"
-      ]
-    },
-    "1edf7975-c8f1-5c1c-8edb-d7d601e96203": {
-      "id": "1edf7975-c8f1-5c1c-8edb-d7d601e96203",
-      "techName": "adres_do_e_doreczen_3",
-      "title": "Adres do e-Doręczeń",
-      "type": "TEXT_FIELD",
-      "confidence": 0.24,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 257.0,
-            "y": 25226.0,
-            "w": 1200.0,
-            "h": 38.0
-          },
-          "text": "eDoręczenia - adres skrzynki:  e.veveeeenenreneneeeeneneeneereeneneaweweseenene ee eenen eee ee ee en eee eee ee",
-          "blockIds": [
-            "p1-b254",
-            "p1-b255",
-            "p1-b256"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "typ z etykiety (TEXT_FIELD)"
-      ]
-    },
     "0c7ac2ee-2e9b-5613-9b88-5aa87c815cec": {
       "id": "0c7ac2ee-2e9b-5613-9b88-5aa87c815cec",
       "techName": "zgody_i_oswiadczenia",
       "title": "Zgody i oświadczenia",
-      "type": "SECTION",
+      "type": "REPEATING_SECTION",
       "confidence": 0.7,
       "sources": [
         {
@@ -6051,7 +5874,8 @@
         "rules"
       ],
       "reasons": [
-        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
+        "klauzula/oświadczenie w dokumencie -> sekcja zgód",
+        "3 powtórzone bloki o tym samym układzie -> sekcja powtarzająca się"
       ]
     },
     "ccbd1355-21a0-524b-9c0c-a5dd2b3cfcd8": {
@@ -6077,138 +5901,6 @@
             "p1-b101",
             "p1-b102",
             "p1-b103"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
-      ]
-    },
-    "ebeb3681-84d3-508f-bb0a-a89637461646": {
-      "id": "ebeb3681-84d3-508f-bb0a-a89637461646",
-      "techName": "zgody_i_oswiadczenia_2",
-      "title": "Zgody i oświadczenia",
-      "type": "SECTION",
-      "confidence": 0.7,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 19470.0,
-            "w": 1249.0,
-            "h": 262.0
-          },
-          "text": "4. Klauzula informacyjna Informacje na temat ochrony danych osobowych stosowanych przez administratora danych, którymi są wnioskujący: a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5; b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza",
-          "blockIds": [
-            "p1-b188",
-            "p1-b189",
-            "p1-b190",
-            "p1-b191",
-            "p1-b192",
-            "p1-b193"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
-      ]
-    },
-    "5665a5ae-b88f-5f0a-9d50-938c2fc705c2": {
-      "id": "5665a5ae-b88f-5f0a-9d50-938c2fc705c2",
-      "techName": "consent_section_2",
-      "title": "",
-      "type": "CONSENT_SECTION",
-      "confidence": 0.7,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 19470.0,
-            "w": 1249.0,
-            "h": 262.0
-          },
-          "text": "4. Klauzula informacyjna Informacje na temat ochrony danych osobowych stosowanych przez administratora danych, którymi są wnioskujący: a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5; b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza",
-          "blockIds": [
-            "p1-b188",
-            "p1-b189",
-            "p1-b190",
-            "p1-b191",
-            "p1-b192",
-            "p1-b193"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
-      ]
-    },
-    "ce03e5ca-9988-5824-ada4-437855f31ae8": {
-      "id": "ce03e5ca-9988-5824-ada4-437855f31ae8",
-      "techName": "zgody_i_oswiadczenia_3",
-      "title": "Zgody i oświadczenia",
-      "type": "SECTION",
-      "confidence": 0.7,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 31614.0,
-            "w": 1249.0,
-            "h": 262.0
-          },
-          "text": "4. Klauzula informacyjna Informacje na temat ochrony danych osobowych stosowanych przez administratora danych, którymi są wnioskujący: a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5i 6; b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza",
-          "blockIds": [
-            "p1-b293",
-            "p1-b294",
-            "p1-b295",
-            "p1-b296",
-            "p1-b297",
-            "p1-b298"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
-      ]
-    },
-    "8027e93b-b1fc-59c3-96cd-2ca4cd85dd59": {
-      "id": "8027e93b-b1fc-59c3-96cd-2ca4cd85dd59",
-      "techName": "consent_section_3",
-      "title": "",
-      "type": "CONSENT_SECTION",
-      "confidence": 0.7,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 31614.0,
-            "w": 1249.0,
-            "h": 262.0
-          },
-          "text": "4. Klauzula informacyjna Informacje na temat ochrony danych osobowych stosowanych przez administratora danych, którymi są wnioskujący: a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5i 6; b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza",
-          "blockIds": [
-            "p1-b293",
-            "p1-b294",
-            "p1-b295",
-            "p1-b296",
-            "p1-b297",
-            "p1-b298"
           ]
         }
       ],
@@ -6782,20 +6474,6 @@
       "reason": "typ z etykiety (TEXT_FIELD)"
     },
     {
-      "fieldId": "150e8afb-84fd-52d5-b3c2-d834333a9cf6",
-      "techName": "numer_telefonu_5",
-      "title": "Numer telefonu",
-      "confidence": 0.16,
-      "reason": "typ z etykiety (TEXT_FIELD)"
-    },
-    {
-      "fieldId": "cb785fea-abb2-5a3a-b062-fd1a9d61a440",
-      "techName": "numer_telefonu_6",
-      "title": "Numer telefonu",
-      "confidence": 0.16,
-      "reason": "typ z etykiety (TEXT_FIELD)"
-    },
-    {
       "fieldId": "d89eb100-4a2d-5833-b202-9390233e02d9",
       "techName": "eeversereeeeenereeneneneewoneenene_see_eeneenenew",
       "title": "Eeversereeeeenereeneneneewoneenene see eeneenenew",
@@ -6838,20 +6516,6 @@
       "reason": "typ z etykiety (TEXT_FIELD)"
     },
     {
-      "fieldId": "a76b246b-5bff-5a8e-88aa-75e0c884e3f7",
-      "techName": "dane_do_kontaktu_3",
-      "title": "Dane do kontaktu",
-      "confidence": 0.2,
-      "reason": "nagłówek sekcji w dokumencie"
-    },
-    {
-      "fieldId": "1d29d35d-0c20-58cb-bd2e-da4b739f973d",
-      "techName": "numer_telefonu_7",
-      "title": "Numer telefonu",
-      "confidence": 0.2,
-      "reason": "typ z etykiety (TEXT_FIELD)"
-    },
-    {
       "fieldId": "d8783a5b-2d3b-5dd2-8a99-b2edda295657",
       "techName": "seria_i_numer_dowodu_osobistego",
       "title": "Seria i numer dowodu osobistego",
@@ -6877,20 +6541,6 @@
       "techName": "numer_telefonu_4",
       "title": "Numer telefonu",
       "confidence": 0.23,
-      "reason": "typ z etykiety (TEXT_FIELD)"
-    },
-    {
-      "fieldId": "e10f5b20-d86d-53c4-a97d-9c2047abb362",
-      "techName": "adres_skrytki_epuap_3",
-      "title": "Adres skrytki ePUAP",
-      "confidence": 0.24,
-      "reason": "typ z etykiety (TEXT_FIELD)"
-    },
-    {
-      "fieldId": "1edf7975-c8f1-5c1c-8edb-d7d601e96203",
-      "techName": "adres_do_e_doreczen_3",
-      "title": "Adres do e-Doręczeń",
-      "confidence": 0.24,
       "reason": "typ z etykiety (TEXT_FIELD)"
     },
     {
@@ -6947,7 +6597,7 @@
       "techName": "dane_do_kontaktu_2",
       "title": "Dane do kontaktu",
       "confidence": 0.41,
-      "reason": "nagłówek sekcji w dokumencie"
+      "reason": "2 powtórzone bloki o tym samym układzie -> sekcja powtarzająca się"
     },
     {
       "fieldId": "2c0a29d6-e254-5f5e-8d19-e1b8ed32e998",
@@ -7300,25 +6950,7 @@
   "repairs": [
     {
       "ruleId": "COI-R26",
-      "path": "/tabs/2/questions/3/field/repeatingSectionGrid/0/field/validation",
-      "description": "Usunięto niedozwolone/powtórzone walidatory",
-      "before": [
-        "REQUIRED"
-      ],
-      "after": []
-    },
-    {
-      "ruleId": "COI-R26",
-      "path": "/tabs/2/questions/4/field/repeatingSectionGrid/0/field/validation",
-      "description": "Usunięto niedozwolone/powtórzone walidatory",
-      "before": [
-        "REQUIRED"
-      ],
-      "after": []
-    },
-    {
-      "ruleId": "COI-R26",
-      "path": "/tabs/2/questions/5/field/repeatingSectionGrid/0/field/validation",
+      "path": "/tabs/2/questions/2/field/repeatingSectionGrid/0/field/validation",
       "description": "Usunięto niedozwolone/powtórzone walidatory",
       "before": [
         "REQUIRED"
@@ -7357,11 +6989,11 @@
   ],
   "warnings": [],
   "timings": {
-    "extract": 11372,
-    "infer": 34,
-    "dict": 5,
-    "build": 3,
-    "validate": 33
+    "extract": 11309,
+    "infer": 25,
+    "dict": 4,
+    "build": 2,
+    "validate": 29
   },
   "llm": {
     "used": false

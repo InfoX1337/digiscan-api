@@ -37,3 +37,12 @@ Problemy: Tesseract na hoście bez `pol` (brew install tesseract-lang albo demo 
 Nazwa: zakazane ; : > < / \ | ' * % $, ≤250. Usunięto .tif/.tiff (poza listą zadania). Content-Type musi pasować do rozszerzenia (octet-stream dopuszczony); DOC = OLE ze strumieniem WordDocument. limits.py: limit ciała (Content-Length + strumień), MAX_BATCH_BYTES=50 MB. README: ostrzeżenie o trybie demo, kody błędów, walidacja. docs/ARCHITECTURE.md. compose: .env opcjonalny. Dockerfile: uv z PyPI (bez obrazu ghcr). wyniki/: 40 form + raporty (Docker, llm off), 40/40 schema, 29/29 reguł. Hardkod 17 zł/pełnomocnictwo = standard eUsług COI (standardy.txt), wyzwalany treścią – zostaje.
 Testy: pytest 175 + e2e API 45, UI e2e 7/7 na nowym obrazie, ruff/mypy/licencje OK. Kontener formproof-demo (:8000) na starym obrazie – przebudować.
 Zostaje (użytkownik): repo publiczne, prezentacja PDF ≤10 slajdów, film ≤3 min w otwartym repo, opis zgłoszenia, sprawdzić regulamin AI hacknation.pl.
+
+## Poprawki ryzyk 2026-11-22 (po freeze, tylko poprawki)
+- Auth: API domyślnie otwarte (AUTH_ENABLED=false, demo); JWT zostaje opcjonalnie (AUTH_ENABLED=true). Testy JWT działają z AUTH_ENABLED=true w conftest; test_api_open.py dla trybu otwartego.
+- Form 9: infer/repeating.py scala sąsiednie identyczne sekcje w REPEATING_SECTION.
+- UI: design system FormProof (web/css/tokens.css: kolor, typografia, odstępy, cienie), hero, odświeżone komponenty; karta kosztów w eval.html.
+- README: sekcja "Cena i koszt rozwiązania" (0 zł licencji, M4 Air, czasy, założenia oszczędności).
+- OCR: preprocessing (autocontrast, upscale) nie poprawił recall – cofnięty. Skany R ~0.72 (struktura, nie OCR).
+- wyniki/ odświeżone z nowego obrazu: 40/40 schema, 29/29 reguł. pytest 177, UI e2e 14/14 na kontenerze :8000.
+- Nie ruszone (decyzja użytkownika): przepisanie historii git (materiały COI od ad4a168), upublicznienie repo, regulamin AI hacknation.pl.

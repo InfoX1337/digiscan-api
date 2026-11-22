@@ -4464,7 +4464,7 @@
           "cols": 3,
           "field": {
             "id": "96055def-ef31-5086-849b-efff20110f43",
-            "type": "SECTION",
+            "type": "REPEATING_SECTION",
             "techName": "dane_do_kontaktu_2",
             "title": "Dane do kontaktu",
             "description": "",
@@ -4593,144 +4593,11 @@
         {
           "x": 0,
           "y": 10,
-          "rows": 6,
-          "cols": 3,
-          "field": {
-            "id": "a76b246b-5bff-5a8e-88aa-75e0c884e3f7",
-            "type": "SECTION",
-            "techName": "dane_do_kontaktu_3",
-            "title": "Dane do kontaktu",
-            "description": "",
-            "options": [],
-            "validation": [],
-            "readOnly": false,
-            "repeatingSectionGrid": [
-              {
-                "x": 0,
-                "y": 0,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "150e8afb-84fd-52d5-b3c2-d834333a9cf6",
-                  "type": "TEXT_FIELD",
-                  "techName": "numer_telefonu_5",
-                  "title": "Numer telefonu",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 0,
-                  "tooltipMessage": ""
-                }
-              },
-              {
-                "x": 0,
-                "y": 1,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "cb785fea-abb2-5a3a-b062-fd1a9d61a440",
-                  "type": "TEXT_FIELD",
-                  "techName": "numer_telefonu_6",
-                  "title": "Numer telefonu",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 1,
-                  "tooltipMessage": ""
-                }
-              },
-              {
-                "x": 0,
-                "y": 2,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "1d29d35d-0c20-58cb-bd2e-da4b739f973d",
-                  "type": "TEXT_FIELD",
-                  "techName": "numer_telefonu_7",
-                  "title": "Numer telefonu",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 2,
-                  "tooltipMessage": ""
-                }
-              },
-              {
-                "x": 0,
-                "y": 3,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "e10f5b20-d86d-53c4-a97d-9c2047abb362",
-                  "type": "TEXT_FIELD",
-                  "techName": "adres_skrytki_epuap_3",
-                  "title": "Adres skrytki ePUAP",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED",
-                    "EPUAP"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 3,
-                  "tooltipMessage": ""
-                }
-              },
-              {
-                "x": 0,
-                "y": 4,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "1edf7975-c8f1-5c1c-8edb-d7d601e96203",
-                  "type": "TEXT_FIELD",
-                  "techName": "adres_do_e_doreczen_3",
-                  "title": "Adres do e-Doręczeń",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED",
-                    "ADE"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 4,
-                  "tooltipMessage": ""
-                }
-              }
-            ],
-            "states": [],
-            "questionOrder": 2,
-            "tooltipMessage": ""
-          }
-        },
-        {
-          "x": 0,
-          "y": 16,
           "rows": 2,
           "cols": 3,
           "field": {
             "id": "0c7ac2ee-2e9b-5613-9b88-5aa87c815cec",
-            "type": "SECTION",
+            "type": "REPEATING_SECTION",
             "techName": "zgody_i_oswiadczenia",
             "title": "Zgody i oświadczenia",
             "description": "",
@@ -4769,107 +4636,7 @@
               }
             ],
             "states": [],
-            "questionOrder": 3,
-            "tooltipMessage": ""
-          }
-        },
-        {
-          "x": 0,
-          "y": 18,
-          "rows": 2,
-          "cols": 3,
-          "field": {
-            "id": "ebeb3681-84d3-508f-bb0a-a89637461646",
-            "type": "SECTION",
-            "techName": "zgody_i_oswiadczenia_2",
-            "title": "Zgody i oświadczenia",
-            "description": "",
-            "options": [],
-            "validation": [],
-            "readOnly": false,
-            "repeatingSectionGrid": [
-              {
-                "x": 0,
-                "y": 0,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "5665a5ae-b88f-5f0a-9d50-938c2fc705c2",
-                  "type": "CONSENT_SECTION",
-                  "techName": "consent_section_2",
-                  "title": "",
-                  "description": "Informacje na temat ochrony danych osobowych stosowanych przez administratora danych którymi są wnioskujący a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5 b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza pod adresem: www.bip.zgierz.pl lub w siedzibie Urzędu Miasta Zgierza oraz wymagane zgody zpkt.5.",
-                  "options": [],
-                  "validation": [],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 0,
-                  "tooltipMessage": "",
-                  "consentSectionConfig": {
-                    "consents": [
-                      {
-                        "description": "Potwierdzam zapoznanie się z informacją o przetwarzaniu danych osobowych."
-                      }
-                    ],
-                    "required": true,
-                    "files": []
-                  }
-                }
-              }
-            ],
-            "states": [],
-            "questionOrder": 4,
-            "tooltipMessage": ""
-          }
-        },
-        {
-          "x": 0,
-          "y": 20,
-          "rows": 2,
-          "cols": 3,
-          "field": {
-            "id": "ce03e5ca-9988-5824-ada4-437855f31ae8",
-            "type": "SECTION",
-            "techName": "zgody_i_oswiadczenia_3",
-            "title": "Zgody i oświadczenia",
-            "description": "",
-            "options": [],
-            "validation": [],
-            "readOnly": false,
-            "repeatingSectionGrid": [
-              {
-                "x": 0,
-                "y": 0,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "8027e93b-b1fc-59c3-96cd-2ca4cd85dd59",
-                  "type": "CONSENT_SECTION",
-                  "techName": "consent_section_3",
-                  "title": "",
-                  "description": "Informacje na temat ochrony danych osobowych stosowanych przez administratora danych którymi są wnioskujący a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5i 6 b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza pod adresem: www.bip.zgierz.pl lub w siedzibie Urzędu Miasta Zgierza oraz wymagane zgody zpkt.5i6.",
-                  "options": [],
-                  "validation": [],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 0,
-                  "tooltipMessage": "",
-                  "consentSectionConfig": {
-                    "consents": [
-                      {
-                        "description": "Potwierdzam zapoznanie się z informacją o przetwarzaniu danych osobowych."
-                      }
-                    ],
-                    "required": true,
-                    "files": []
-                  }
-                }
-              }
-            ],
-            "states": [],
-            "questionOrder": 5,
+            "questionOrder": 2,
             "tooltipMessage": ""
           }
         }

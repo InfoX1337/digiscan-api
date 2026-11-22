@@ -1723,11 +1723,11 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 110,
+    "extract": 113,
     "infer": 4,
     "dict": 1,
     "build": 1,
-    "validate": 22
+    "validate": 23
   },
   "llm": {
     "used": false

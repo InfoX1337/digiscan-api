@@ -4385,8 +4385,8 @@
   ],
   "warnings": [],
   "timings": {
-    "extract": 290,
-    "infer": 17,
+    "extract": 284,
+    "infer": 18,
     "dict": 3,
     "build": 1,
     "validate": 33

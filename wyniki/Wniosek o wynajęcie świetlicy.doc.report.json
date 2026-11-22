@@ -1000,7 +1000,7 @@
   ],
   "timings": {
     "extract": 0,
-    "infer": 1,
+    "infer": 2,
     "dict": 1,
     "build": 0,
     "validate": 5

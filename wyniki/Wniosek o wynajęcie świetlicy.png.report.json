@@ -999,9 +999,9 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 951,
-    "infer": 3,
-    "dict": 1,
+    "extract": 934,
+    "infer": 2,
+    "dict": 0,
     "build": 0,
     "validate": 5
   },

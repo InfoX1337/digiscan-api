@@ -932,7 +932,7 @@
   "warnings": [],
   "timings": {
     "extract": 10,
-    "infer": 2,
+    "infer": 1,
     "dict": 1,
     "build": 0,
     "validate": 5

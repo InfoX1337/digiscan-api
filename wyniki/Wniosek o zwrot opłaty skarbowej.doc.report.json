@@ -1525,11 +1525,11 @@
     "DOC: tylko tekst"
   ],
   "timings": {
-    "extract": 2,
+    "extract": 3,
     "infer": 3,
     "dict": 1,
     "build": 1,
-    "validate": 11
+    "validate": 13
   },
   "llm": {
     "used": false

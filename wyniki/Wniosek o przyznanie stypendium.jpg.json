@@ -3363,7 +3363,7 @@
           "cols": 3,
           "field": {
             "id": "ad7df267-ffb0-5bfc-b309-8a2e2d6ac5c2",
-            "type": "SECTION",
+            "type": "REPEATING_SECTION",
             "techName": "zgody_i_oswiadczenia",
             "title": "Zgody i oświadczenia",
             "description": "",
@@ -3417,7 +3417,7 @@
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "1e0854b0-6f06-5b98-9fea-e4bd3a2f9e32",
+            "id": "fb304919-1626-5901-bdf8-bd5a6ac1031e",
             "type": "SECTION",
             "techName": "zgody_i_oswiadczenia_2",
             "title": "Zgody i oświadczenia",
@@ -3432,64 +3432,9 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "49416290-fd07-5930-9828-9d0799c8e0e0",
-                  "type": "CONSENT_SECTION",
-                  "techName": "consent_section_2",
-                  "title": "",
-                  "description": "Informacje na temat ochrony danych osobowych stosowanych przez administratora danych którymi są wnioskujący a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5 b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza pod adresem: www.bip.zgierz.pl lub w siedzibie Urzędu Miasta Zgierza oraz wymagane zgody zpkt.5.",
-                  "options": [],
-                  "validation": [],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 0,
-                  "tooltipMessage": "",
-                  "consentSectionConfig": {
-                    "consents": [
-                      {
-                        "description": "Potwierdzam zapoznanie się z informacją o przetwarzaniu danych osobowych."
-                      }
-                    ],
-                    "required": true,
-                    "files": []
-                  }
-                }
-              }
-            ],
-            "states": [
-              {
-                "type": "SHOW",
-                "query": "(\"Wniosek o przyznanie stypendium sportowego Rady Miasta Zgierza\" in tabs['Dane' in title].questions['rodzaj_wniosku' in field.techName].field.repeatingSectionGrid['wybierz_rodzaj_wniosku' in field.techName].field.__userAnswer)"
-              }
-            ],
-            "questionOrder": 2,
-            "tooltipMessage": ""
-          }
-        },
-        {
-          "x": 0,
-          "y": 8,
-          "rows": 2,
-          "cols": 3,
-          "field": {
-            "id": "fb304919-1626-5901-bdf8-bd5a6ac1031e",
-            "type": "SECTION",
-            "techName": "zgody_i_oswiadczenia_3",
-            "title": "Zgody i oświadczenia",
-            "description": "",
-            "options": [],
-            "validation": [],
-            "readOnly": false,
-            "repeatingSectionGrid": [
-              {
-                "x": 0,
-                "y": 0,
-                "rows": 1,
-                "cols": 3,
-                "field": {
                   "id": "843eac2c-0291-5f13-bed9-35dc22f63b43",
                   "type": "CONSENT_SECTION",
-                  "techName": "consent_section_3",
+                  "techName": "consent_section_2",
                   "title": "",
                   "description": "Informacje na temat ochrony danych osobowych stosowanych przez administratora danych którymi są wnioskujący a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5i 6 b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza pod adresem: www.bip.zgierz.pl lub w siedzibie Urzędu Miasta Zgierza oraz wymagane zgody zpkt.5i6.",
                   "options": [],
@@ -3517,7 +3462,7 @@
                 "query": "(\"Wniosek o przyznanie wyróżnienia sportowego Rady Miasta Zgierza\" in tabs['Dane' in title].questions['rodzaj_wniosku' in field.techName].field.repeatingSectionGrid['wybierz_rodzaj_wniosku' in field.techName].field.__userAnswer)"
               }
             ],
-            "questionOrder": 3,
+            "questionOrder": 2,
             "tooltipMessage": ""
           }
         }

@@ -1554,7 +1554,7 @@
     "DOC: tylko tekst"
   ],
   "timings": {
-    "extract": 17,
+    "extract": 19,
     "infer": 3,
     "dict": 1,
     "build": 1,

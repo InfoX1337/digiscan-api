@@ -4244,7 +4244,7 @@
       "id": "9904a2fb-2478-5f4f-96a3-ddd780b981e9",
       "techName": "zgody_i_oswiadczenia",
       "title": "Zgody i oświadczenia",
-      "type": "SECTION",
+      "type": "REPEATING_SECTION",
       "confidence": 0.7,
       "sources": [
         {
@@ -4270,7 +4270,8 @@
         "rules"
       ],
       "reasons": [
-        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
+        "klauzula/oświadczenie w dokumencie -> sekcja zgód",
+        "2 powtórzone bloki o tym samym układzie -> sekcja powtarzająca się"
       ]
     },
     "8746cbb0-8474-596a-a164-87326311a498": {
@@ -4296,72 +4297,6 @@
             "p1-b95",
             "p1-b96",
             "p1-b97"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
-      ]
-    },
-    "8109082e-9cbb-5439-a867-cf48d67c5ffa": {
-      "id": "8109082e-9cbb-5439-a867-cf48d67c5ffa",
-      "techName": "zgody_i_oswiadczenia_2",
-      "title": "Zgody i oświadczenia",
-      "type": "SECTION",
-      "confidence": 0.7,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 19470.0,
-            "w": 1249.0,
-            "h": 262.0
-          },
-          "text": "4. Klauzula informacyjna Informacje na temat ochrony danych osobowych stosowanych przez administratora danych, którymi są wnioskujący: a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5; b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza",
-          "blockIds": [
-            "p1-b180",
-            "p1-b181",
-            "p1-b182",
-            "p1-b183",
-            "p1-b184",
-            "p1-b185"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
-      ]
-    },
-    "29205e53-b1d1-52b0-a2d9-8149ecfeba6c": {
-      "id": "29205e53-b1d1-52b0-a2d9-8149ecfeba6c",
-      "techName": "consent_section_2",
-      "title": "",
-      "type": "CONSENT_SECTION",
-      "confidence": 0.7,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 19470.0,
-            "w": 1249.0,
-            "h": 262.0
-          },
-          "text": "4. Klauzula informacyjna Informacje na temat ochrony danych osobowych stosowanych przez administratora danych, którymi są wnioskujący: a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5; b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza",
-          "blockIds": [
-            "p1-b180",
-            "p1-b181",
-            "p1-b182",
-            "p1-b183",
-            "p1-b184",
-            "p1-b185"
           ]
         }
       ],
@@ -4492,7 +4427,7 @@
     },
     "9ac61814-cd30-5f96-8472-124c6fc852a2": {
       "id": "9ac61814-cd30-5f96-8472-124c6fc852a2",
-      "techName": "zgody_i_oswiadczenia_3",
+      "techName": "zgody_i_oswiadczenia_2",
       "title": "Zgody i oświadczenia",
       "type": "SECTION",
       "confidence": 0.7,
@@ -4525,7 +4460,7 @@
     },
     "b5bf6089-8b9d-52f3-aed2-37d3c1354b1d": {
       "id": "b5bf6089-8b9d-52f3-aed2-37d3c1354b1d",
-      "techName": "consent_section_3",
+      "techName": "consent_section_2",
       "title": "",
       "type": "CONSENT_SECTION",
       "confidence": 0.7,
@@ -5275,16 +5210,7 @@
     },
     {
       "ruleId": "COI-R26",
-      "path": "/tabs/2/questions/3/field/repeatingSectionGrid/0/field/validation",
-      "description": "Usunięto niedozwolone/powtórzone walidatory",
-      "before": [
-        "REQUIRED"
-      ],
-      "after": []
-    },
-    {
-      "ruleId": "COI-R26",
-      "path": "/tabs/2/questions/5/field/repeatingSectionGrid/0/field/validation",
+      "path": "/tabs/2/questions/4/field/repeatingSectionGrid/0/field/validation",
       "description": "Usunięto niedozwolone/powtórzone walidatory",
       "before": [
         "REQUIRED"
@@ -5323,8 +5249,8 @@
   ],
   "warnings": [],
   "timings": {
-    "extract": 12814,
-    "infer": 26,
+    "extract": 13347,
+    "infer": 28,
     "dict": 3,
     "build": 2,
     "validate": 38

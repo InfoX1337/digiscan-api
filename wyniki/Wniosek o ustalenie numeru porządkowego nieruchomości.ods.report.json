@@ -1727,10 +1727,10 @@
   "warnings": [],
   "timings": {
     "extract": 6,
-    "infer": 3,
-    "dict": 1,
+    "infer": 4,
+    "dict": 2,
     "build": 1,
-    "validate": 23
+    "validate": 22
   },
   "llm": {
     "used": false

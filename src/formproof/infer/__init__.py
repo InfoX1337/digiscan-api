@@ -186,13 +186,14 @@ def _labels_from_line(ln: Line) -> list[str]:
 
 def infer(doc: SourceDoc) -> DraftForm:
     """Jeden formularz albo kilka wariantów w jednym pliku ('Rodzaje wniosków: I. … II. …')."""
+    from .repeating import merge_repeating
     from .variants import merge_variants, split_variants
 
     key = _Keys()
     parts = split_variants(doc, [ln for ln in to_lines(doc) if ln.text.strip()])
     if not parts:
-        return _infer_one(doc, key)
-    return merge_variants([(v, _infer_one(sub, key)) for v, sub in parts], key)
+        return merge_repeating(_infer_one(doc, key))
+    return merge_repeating(merge_variants([(v, _infer_one(sub, key)) for v, sub in parts], key))
 
 
 def _infer_one(doc: SourceDoc, key: _Keys) -> DraftForm:

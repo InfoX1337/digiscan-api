@@ -25,6 +25,8 @@ class Settings(BaseSettings):
     max_ocr_pages: int = 5
     request_timeout_s: float = 120.0
 
+    # Demo: API otwarte (bez JWT). AUTH_ENABLED=true włącza Bearer HS256 na wszystkich endpointach.
+    auth_enabled: bool = False
     jwt_secret: str = DEV_SECRET
     jwt_expires_s: int = 3600
     jwt_issuer: str = "formproof"
@@ -52,6 +54,8 @@ class Settings(BaseSettings):
 @lru_cache
 def get_settings() -> Settings:
     s = Settings()
+    if not s.auth_enabled:
+        return s
     if s.env == "production" and s.jwt_secret == DEV_SECRET:
         raise RuntimeError("Produkcja wymaga ustawienia JWT_SECRET (>= 32 znaki).")
     if s.env == "production" and s.auth_client_secret == DEV_CLIENT_SECRET:

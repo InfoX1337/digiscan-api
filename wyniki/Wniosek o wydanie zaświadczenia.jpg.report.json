@@ -542,7 +542,7 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 841,
+    "extract": 872,
     "infer": 2,
     "dict": 0,
     "build": 0,

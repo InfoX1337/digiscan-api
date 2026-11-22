@@ -3,20 +3,24 @@ let token = "";
 export const getToken = () => token;
 export const setToken = (t) => { token = (t || "").trim(); };
 
-/** Tryb demo: token prosto z /demo-config. Zwraca true, gdy token pobrany. */
+export let authRequired = true;
+
+/** Tryb demo: API otwarte (authRequired=false) albo token z /demo-config. Zwraca true, gdy można działać. */
 export async function demoLogin() {
   try {
     const r = await fetch(`${BASE}/demo-config`);
     if (!r.ok) return false;
     const j = await r.json();
+    authRequired = j.authRequired !== false;
+    if (!authRequired) return true;
     if (j.demo && j.accessToken) { token = j.accessToken; return true; }
   } catch { /* brak backendu */ }
   return false;
 }
 
 async function call(path, init, retried = false) {
-  const r = await fetch(BASE + path, { ...init, headers: { ...init?.headers, Authorization: `Bearer ${token}` } });
-  if (r.status === 401 && !retried && (await demoLogin())) return call(path, init, true);
+  const r = await fetch(BASE + path, { ...init, headers: { ...init?.headers, ...(token ? { Authorization: `Bearer ${token}` } : {}) } });
+  if (r.status === 401 && authRequired && !retried && (await demoLogin())) return call(path, init, true);
   const body = await r.json().catch(() => ({}));
   if (!r.ok) {
     const e = new Error(body.message || `Błąd HTTP ${r.status}`);

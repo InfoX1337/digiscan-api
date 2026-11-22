@@ -1821,11 +1821,11 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 1302,
-    "infer": 5,
+    "extract": 1495,
+    "infer": 4,
     "dict": 1,
     "build": 1,
-    "validate": 13
+    "validate": 10
   },
   "llm": {
     "used": false

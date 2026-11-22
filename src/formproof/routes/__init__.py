@@ -1,4 +1,4 @@
-"""API v1 (FastAPI). Wszystkie endpointy poza /auth/token i /health wymagają JWT Bearer."""
+"""API v1 (FastAPI). Domyślnie otwarte (demo); z AUTH_ENABLED=true wymagają JWT Bearer (poza /auth/token i /health)."""
 
 from __future__ import annotations
 
@@ -135,8 +135,10 @@ def dictionary(_: Auth, name: str) -> Any:
 
 @router.get("/demo-config", include_in_schema=False)
 def demo_config(cfg: Cfg) -> Any:
+    if not cfg.auth_enabled:
+        return {"demo": True, "authRequired": False}
     if not cfg.demo_ui:
-        return {"demo": False}
+        return {"demo": False, "authRequired": True}
     # Nigdy nie zwracamy sekretu klienta – tylko krótkożyciowy token demo (15 min).
     token, exp = issue_token(cfg, "demo-ui", expires_s=min(cfg.jwt_expires_s, 900))
-    return {"demo": True, "accessToken": token, "expiresIn": exp}
+    return {"demo": True, "authRequired": True, "accessToken": token, "expiresIn": exp}

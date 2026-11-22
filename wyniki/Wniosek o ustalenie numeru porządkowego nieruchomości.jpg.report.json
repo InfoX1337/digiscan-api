@@ -1429,7 +1429,7 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 2041,
+    "extract": 2104,
     "infer": 5,
     "dict": 1,
     "build": 1,

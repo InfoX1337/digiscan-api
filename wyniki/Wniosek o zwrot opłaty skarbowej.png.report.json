@@ -1821,8 +1821,8 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 1243,
-    "infer": 3,
+    "extract": 1291,
+    "infer": 4,
     "dict": 1,
     "build": 1,
     "validate": 10
