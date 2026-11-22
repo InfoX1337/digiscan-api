@@ -2,7 +2,7 @@
   "filename": "Wniosek o wynajęcie świetlicy.png",
   "format": "image",
   "ocr": true,
-  "confidence": 0.64,
+  "confidence": 0.65,
   "fields": {
     "6f9f8bf6-b6e6-50f3-9224-8771eb8fbb4e": {
       "id": "6f9f8bf6-b6e6-50f3-9224-8771eb8fbb4e",
@@ -434,12 +434,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "447305e7-e085-5bcc-90b6-4f3916884ee9": {
-      "id": "447305e7-e085-5bcc-90b6-4f3916884ee9",
+    "b6a1ade2-775a-5da7-aedd-266dc2562ce7": {
+      "id": "b6a1ade2-775a-5da7-aedd-266dc2562ce7",
       "techName": "szczegoly_wniosku",
       "title": "Szczegóły wniosku",
       "type": "SECTION",
-      "confidence": 0.43,
+      "confidence": 0.42,
       "sources": [
         {
           "page": 1,
@@ -467,7 +467,7 @@
       "techName": "prosze_o_wynajem_uzyczenie_swietlicy_wiejskiej_w",
       "title": "Proszę o wynajem/użyczenie świetlicy wiejskiej w",
       "type": "TEXT_FIELD",
-      "confidence": 0.3,
+      "confidence": 0.37,
       "sources": [
         {
           "page": 1,
@@ -477,7 +477,7 @@
             "w": 1292.0,
             "h": 36.0
           },
-          "text": "Proszę o wynajem/użyczenie* świetlicy wiejskiej w  e.eesereessese s seee ne",
+          "text": "Proszę o wynajem/użyczenie* świetlicy wiejskiej w  e.eeeeseesesseeeeee ne",
           "blockIds": [
             "p1-b10",
             "p1-b11",
@@ -494,40 +494,10 @@
     },
     "a4e4d2a6-cdb5-5d22-b247-ff4952ba39c7": {
       "id": "a4e4d2a6-cdb5-5d22-b247-ff4952ba39c7",
-      "techName": "e_eesereessese_s",
-      "title": "E.eesereessese s",
-      "type": "TEXT_FIELD",
-      "confidence": 0.44,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 153.0,
-            "y": 966.0,
-            "w": 1292.0,
-            "h": 36.0
-          },
-          "text": "Proszę o wynajem/użyczenie* świetlicy wiejskiej w  e.eesereessese s seee ne",
-          "blockIds": [
-            "p1-b10",
-            "p1-b11",
-            "p1-b12"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "etykieta w dokumencie"
-      ]
-    },
-    "7388bbfd-3fdf-5802-8ddc-fbfd5ded08c4": {
-      "id": "7388bbfd-3fdf-5802-8ddc-fbfd5ded08c4",
       "techName": "data_od",
       "title": "Data od",
       "type": "DATEPICKER",
-      "confidence": 0.49,
+      "confidence": 0.44,
       "sources": [
         {
           "page": 1,
@@ -537,7 +507,7 @@
             "w": 1296.0,
             "h": 36.0
           },
-          "text": "wraz z wyposażeniem w terminie od  do  eesee eee eeer eee",
+          "text": "wraz z wyposażeniem w terminie od  do  eeese eee eee eee ne",
           "blockIds": [
             "p1-b13",
             "p1-b14",
@@ -554,12 +524,12 @@
         "typ z etykiety (DATEPICKER)"
       ]
     },
-    "b6a1ade2-775a-5da7-aedd-266dc2562ce7": {
-      "id": "b6a1ade2-775a-5da7-aedd-266dc2562ce7",
+    "7388bbfd-3fdf-5802-8ddc-fbfd5ded08c4": {
+      "id": "7388bbfd-3fdf-5802-8ddc-fbfd5ded08c4",
       "techName": "data_do",
       "title": "Data do",
       "type": "DATEPICKER",
-      "confidence": 0.49,
+      "confidence": 0.44,
       "sources": [
         {
           "page": 1,
@@ -569,7 +539,7 @@
             "w": 1296.0,
             "h": 36.0
           },
-          "text": "wraz z wyposażeniem w terminie od  do  eesee eee eeer eee",
+          "text": "wraz z wyposażeniem w terminie od  do  eeese eee eee eee ne",
           "blockIds": [
             "p1-b13",
             "p1-b14",
@@ -586,10 +556,10 @@
         "zakres dat 'od … do …'"
       ]
     },
-    "c5f7bad8-e5cb-52c1-a70c-4cece341c35c": {
-      "id": "c5f7bad8-e5cb-52c1-a70c-4cece341c35c",
-      "techName": "cel_wynajecia_swietlicy_x_see_es_ee_ss8_e_ss8_ke_ss8_es_er_ee",
-      "title": "Cel wynajęcia świetlicy: --x.see. es ee ss8 e ss8 ke ss8 es er ee",
+    "046fced6-0c6e-567e-98df-91fac204bf3f": {
+      "id": "046fced6-0c6e-567e-98df-91fac204bf3f",
+      "techName": "cel_wynajecia_swietlicy_x_see_sesse_ss8_e_8_s8",
+      "title": "Cel wynajęcia świetlicy: -.x+see.sesse ss8 e 8 s8",
       "type": "SECTION",
       "confidence": 0.55,
       "sources": [
@@ -601,7 +571,7 @@
             "w": 1289.0,
             "h": 36.0
           },
-          "text": "1. Cel wynajęcia świetlicy:  --x.see. es ee ss8 e ss8 sse seee eee eeer ke ss8 es er ee",
+          "text": "1. Cel wynajęcia świetlicy:  -.x+see.sesse ss8 e seee ser 8 eeer e seee s8 e es eeer ee",
           "blockIds": [
             "p1-b18",
             "p1-b19",
@@ -616,10 +586,10 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "046fced6-0c6e-567e-98df-91fac204bf3f": {
-      "id": "046fced6-0c6e-567e-98df-91fac204bf3f",
-      "techName": "cel_wynajecia_swietlicy_x_see_es_ee_ss8_e_ss8_ke_ss8_es_er_ee_2",
-      "title": "Cel wynajęcia świetlicy: --x.see. es ee ss8 e ss8 ke ss8 es er ee",
+    "447305e7-e085-5bcc-90b6-4f3916884ee9": {
+      "id": "447305e7-e085-5bcc-90b6-4f3916884ee9",
+      "techName": "cel_wynajecia_swietlicy_x_see_sesse_ss8_e_8_s8_2",
+      "title": "Cel wynajęcia świetlicy: -.x+see.sesse ss8 e 8 s8",
       "type": "RADIO",
       "confidence": 0.55,
       "sources": [
@@ -689,8 +659,8 @@
         "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (phoneNumber)"
       ]
     },
-    "25c96587-055c-5860-b829-4d420cb36071": {
-      "id": "25c96587-055c-5860-b829-4d420cb36071",
+    "717041e8-1a8a-5e6d-a132-abb6031f85d2": {
+      "id": "717041e8-1a8a-5e6d-a132-abb6031f85d2",
       "techName": "podglad_uzupelnionego_wniosku",
       "title": "Podgląd uzupełnionego wniosku",
       "type": "SECTION",
@@ -703,8 +673,8 @@
         "standard: strona końcowa z podglądem"
       ]
     },
-    "717041e8-1a8a-5e6d-a132-abb6031f85d2": {
-      "id": "717041e8-1a8a-5e6d-a132-abb6031f85d2",
+    "c5f7bad8-e5cb-52c1-a70c-4cece341c35c": {
+      "id": "c5f7bad8-e5cb-52c1-a70c-4cece341c35c",
       "techName": "podglad",
       "title": "Podgląd",
       "type": "INFO_SECTION",
@@ -723,48 +693,41 @@
       "fieldId": "99058463-54ac-576f-90a8-ead6b11ef993",
       "techName": "prosze_o_wynajem_uzyczenie_swietlicy_wiejskiej_w",
       "title": "Proszę o wynajem/użyczenie świetlicy wiejskiej w",
-      "confidence": 0.3,
+      "confidence": 0.37,
       "reason": "pole w treści zdania – sprawdź tytuł"
     },
     {
-      "fieldId": "447305e7-e085-5bcc-90b6-4f3916884ee9",
+      "fieldId": "b6a1ade2-775a-5da7-aedd-266dc2562ce7",
       "techName": "szczegoly_wniosku",
       "title": "Szczegóły wniosku",
-      "confidence": 0.43,
+      "confidence": 0.42,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
       "fieldId": "a4e4d2a6-cdb5-5d22-b247-ff4952ba39c7",
-      "techName": "e_eesereessese_s",
-      "title": "E.eesereessese s",
-      "confidence": 0.44,
-      "reason": "etykieta w dokumencie"
-    },
-    {
-      "fieldId": "7388bbfd-3fdf-5802-8ddc-fbfd5ded08c4",
       "techName": "data_od",
       "title": "Data od",
-      "confidence": 0.49,
+      "confidence": 0.44,
       "reason": "typ z etykiety (DATEPICKER)"
     },
     {
-      "fieldId": "b6a1ade2-775a-5da7-aedd-266dc2562ce7",
+      "fieldId": "7388bbfd-3fdf-5802-8ddc-fbfd5ded08c4",
       "techName": "data_do",
       "title": "Data do",
-      "confidence": 0.49,
+      "confidence": 0.44,
       "reason": "zakres dat 'od … do …'"
     },
     {
-      "fieldId": "c5f7bad8-e5cb-52c1-a70c-4cece341c35c",
-      "techName": "cel_wynajecia_swietlicy_x_see_es_ee_ss8_e_ss8_ke_ss8_es_er_ee",
-      "title": "Cel wynajęcia świetlicy: --x.see. es ee ss8 e ss8 ke ss8 es er ee",
+      "fieldId": "046fced6-0c6e-567e-98df-91fac204bf3f",
+      "techName": "cel_wynajecia_swietlicy_x_see_sesse_ss8_e_8_s8",
+      "title": "Cel wynajęcia świetlicy: -.x+see.sesse ss8 e 8 s8",
       "confidence": 0.55,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "046fced6-0c6e-567e-98df-91fac204bf3f",
-      "techName": "cel_wynajecia_swietlicy_x_see_es_ee_ss8_e_ss8_ke_ss8_es_er_ee_2",
-      "title": "Cel wynajęcia świetlicy: --x.see. es ee ss8 e ss8 ke ss8 es er ee",
+      "fieldId": "447305e7-e085-5bcc-90b6-4f3916884ee9",
+      "techName": "cel_wynajecia_swietlicy_x_see_sesse_ss8_e_8_s8_2",
+      "title": "Cel wynajęcia świetlicy: -.x+see.sesse ss8 e 8 s8",
       "confidence": 0.55,
       "reason": "opcje z listy po instrukcji 'zaznacz' (brak wykrytych kratek)"
     }
@@ -1036,8 +999,8 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 954,
-    "infer": 2,
+    "extract": 951,
+    "infer": 3,
     "dict": 1,
     "build": 0,
     "validate": 5

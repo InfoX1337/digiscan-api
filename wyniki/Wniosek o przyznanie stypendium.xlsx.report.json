@@ -4385,10 +4385,10 @@
   ],
   "warnings": [],
   "timings": {
-    "extract": 259,
+    "extract": 290,
     "infer": 17,
     "dict": 3,
-    "build": 2,
+    "build": 1,
     "validate": 33
   },
   "llm": {

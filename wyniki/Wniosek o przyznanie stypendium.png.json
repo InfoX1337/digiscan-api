@@ -51,10 +51,10 @@
         {
           "x": 0,
           "y": 2,
-          "rows": 15,
+          "rows": 12,
           "cols": 3,
           "field": {
-            "id": "228d2498-7208-5ac2-a227-940c5dffe2ac",
+            "id": "83dec20b-f898-577d-a4a9-8ed17e495b3c",
             "type": "SECTION",
             "techName": "wnioskodawca",
             "title": "Wnioskodawca",
@@ -69,7 +69,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "0af2ebd7-c296-505f-a9e1-d381fd316dcc",
+                  "id": "fa959613-4821-5e3b-a411-32c4762eb4f6",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block",
                   "title": "",
@@ -111,10 +111,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "38ffb2ac-9f32-5158-9aca-7997b4a1e9ea",
+                  "id": "4ae6d726-ca4b-58cd-8a6f-537ee4418b71",
                   "type": "TEXT_FIELD",
-                  "techName": "eesereseeeroeeroneeenoenawe",
-                  "title": "Eesereseeeroeeroneeenoenawe",
+                  "techName": "seesvovosososooneoroneoeoenawewawawowawawowesawe",
+                  "title": "Seesvovosososooneoroneoeoenawewawawowawawowesawe",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -133,10 +133,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "4ae6d726-ca4b-58cd-8a6f-537ee4418b71",
+                  "id": "27cf3889-7a0a-5eaa-9b9d-12dd751d569b",
                   "type": "TEXT_FIELD",
-                  "techName": "aneewowa_es_ak_eee_on_ee_ee_oa_es_se",
-                  "title": "Aneewowa es ak eee on ee ee oa es se",
+                  "techName": "owa_es_ow",
+                  "title": "Owa es ow",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -157,8 +157,8 @@
                 "field": {
                   "id": "803486bf-0375-5e29-9c35-f442c124437d",
                   "type": "TEXT_FIELD",
-                  "techName": "seesvovessvosonoeworonesoeonwaweaewawowawawowewawe_ee_awe_se_owa_es_owa_w_ee_aa",
-                  "title": "Seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es",
+                  "techName": "dane_klubu_sportowego",
+                  "title": "Dane klubu sportowego",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -179,8 +179,8 @@
                 "field": {
                   "id": "c4dbfee4-70f4-5b8a-b79f-00d413cbaa1b",
                   "type": "TEXT_FIELD",
-                  "techName": "dane_klubu_sportowego",
-                  "title": "Dane klubu sportowego",
+                  "techName": "nazwa_klubu_sportowego",
+                  "title": "Nazwa klubu sportowego",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -201,8 +201,8 @@
                 "field": {
                   "id": "78cac623-5e7d-5f0b-8664-064b6e042fec",
                   "type": "TEXT_FIELD",
-                  "techName": "nazwa_klubu_sportowego",
-                  "title": "Nazwa klubu sportowego",
+                  "techName": "eeseeeeesosoneononesoe",
+                  "title": "Eeseeeeesosoneononesoe",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -223,8 +223,8 @@
                 "field": {
                   "id": "c4c57bd6-9303-5ea8-a2c3-4cb1bbb90258",
                   "type": "TEXT_FIELD",
-                  "techName": "eeseeesesesoneoroneoeoewawe",
-                  "title": "Eeseeesesesoneoroneoeoewawe",
+                  "techName": "waw_oo_ses_akekataw_es_oe_see_k",
+                  "title": "Waw oo ses akekataw es oe see k",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -245,8 +245,8 @@
                 "field": {
                   "id": "0601ba8c-5110-56b2-b103-3572383eecd5",
                   "type": "TEXT_FIELD",
-                  "techName": "ako_ses_oo_awaw",
-                  "title": "Ako ses oo awaw",
+                  "techName": "inny_adres_korespondencyjny",
+                  "title": "Inny adres korespondencyjny",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -267,8 +267,8 @@
                 "field": {
                   "id": "3361f4b1-cc41-5433-84d0-a9f56c6facb1",
                   "type": "TEXT_FIELD",
-                  "techName": "eevoveeevesosawewononenoroewsoeoewawe_se_awa_seee_wow_oo_ee_w_awa",
-                  "title": "Eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa",
+                  "techName": "eseesesessreeeeneeenesewanonowonosa_es_ote_ses_oawasa_ee_ee_eee_oo_ee_ee_ses_o_s",
+                  "title": "Eseesesessreeeeneeenesewanonowonosa es ote ses oawasa ee ee eee oo ee ee ses o so ses an",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -287,10 +287,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "d3e49b2a-29fe-5ff8-b17e-bb38c8f75118",
+                  "id": "d89eb100-4a2d-5833-b202-9390233e02d9",
                   "type": "TEXT_FIELD",
-                  "techName": "inny_adres_korespondencyjny",
-                  "title": "Inny adres korespondencyjny",
+                  "techName": "eeversereeeeenereeneneneewoneenene_see_eeneenenew",
+                  "title": "Eeversereeeeenereeneneneewoneenene see eeneenenew",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -302,72 +302,6 @@
                   "questionOrder": 10,
                   "tooltipMessage": ""
                 }
-              },
-              {
-                "x": 0,
-                "y": 11,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "79a9819a-d4a0-5bd1-bd1a-005c14434246",
-                  "type": "TEXT_FIELD",
-                  "techName": "eseereseseseeeeweeeawewononowonosaseeoneeaeoawewe",
-                  "title": "Eseereseseseeeeweeeawewononowonosaseeoneeaeoawewe",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 11,
-                  "tooltipMessage": ""
-                }
-              },
-              {
-                "x": 0,
-                "y": 12,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "d89eb100-4a2d-5833-b202-9390233e02d9",
-                  "type": "TEXT_FIELD",
-                  "techName": "awe",
-                  "title": "Awe",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 12,
-                  "tooltipMessage": ""
-                }
-              },
-              {
-                "x": 0,
-                "y": 13,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "415cdab2-060c-59b8-96fc-bf3fdc6ccd47",
-                  "type": "TEXT_FIELD",
-                  "techName": "eeververeeesesereeneneewenenoeneneneeeeneenane",
-                  "title": "Eeververeeesesereeneneewenenoeneneneeeeneenane",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 13,
-                  "tooltipMessage": ""
-                }
               }
             ],
             "states": [],
@@ -377,11 +311,11 @@
         },
         {
           "x": 0,
-          "y": 17,
+          "y": 14,
           "rows": 4,
           "cols": 3,
           "field": {
-            "id": "098c7ab7-4cf3-52c8-8379-a85989500944",
+            "id": "379be171-c5bf-576b-ace5-f618a35711ce",
             "type": "SECTION",
             "techName": "twoje_dane",
             "title": "Twoje dane",
@@ -469,11 +403,11 @@
         },
         {
           "x": 0,
-          "y": 21,
+          "y": 18,
           "rows": 10,
           "cols": 3,
           "field": {
-            "id": "0180861b-b9ea-5144-87cc-e6bec5585543",
+            "id": "228d2498-7208-5ac2-a227-940c5dffe2ac",
             "type": "SECTION",
             "techName": "adres_zamieszkania",
             "title": "Adres zamieszkania",
@@ -488,7 +422,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "118a28a0-25b9-5912-a712-adfacbcc8d18",
+                  "id": "8246c6f5-b60d-5667-8fe4-b27ee73cb570",
                   "type": "SELECT",
                   "techName": "kraj",
                   "title": "Kraj",
@@ -515,7 +449,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "eab8b79f-599a-5b2e-bd43-7e65f95786f4",
+                  "id": "a1b743f0-61b1-532a-9047-1063b8c7e4a9",
                   "type": "TEXT_FIELD",
                   "techName": "miejscowosc_zagranica",
                   "title": "Miejscowość",
@@ -542,7 +476,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "2ffd39d5-e773-513d-bf0e-58af2ef17151",
+                  "id": "415cdab2-060c-59b8-96fc-bf3fdc6ccd47",
                   "type": "TEXT_FIELD",
                   "techName": "kod_pocztowy_zagranica",
                   "title": "Kod pocztowy",
@@ -569,7 +503,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "36143b3d-1965-59ea-a7ad-1f502b64a7ec",
+                  "id": "118a28a0-25b9-5912-a712-adfacbcc8d18",
                   "type": "TEXT_FIELD",
                   "techName": "ulica_zagranica",
                   "title": "Ulica",
@@ -596,7 +530,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "64412605-a595-5f7a-bff1-1a2b15a82f5a",
+                  "id": "eab8b79f-599a-5b2e-bd43-7e65f95786f4",
                   "type": "SELECT",
                   "techName": "teryt_4g_dowodowy",
                   "title": "TERYT_4G_DOWODOWY",
@@ -626,7 +560,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "51052a5f-41cc-5322-b418-606a6e87ffdb",
+                  "id": "2ffd39d5-e773-513d-bf0e-58af2ef17151",
                   "type": "TEXT_FIELD",
                   "techName": "kod_pocztowy",
                   "title": "Kod pocztowy",
@@ -656,7 +590,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "fa959613-4821-5e3b-a411-32c4762eb4f6",
+                  "id": "36143b3d-1965-59ea-a7ad-1f502b64a7ec",
                   "type": "TEXT_FIELD",
                   "techName": "ulica",
                   "title": "Ulica",
@@ -685,7 +619,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "83dec20b-f898-577d-a4a9-8ed17e495b3c",
+                  "id": "64412605-a595-5f7a-bff1-1a2b15a82f5a",
                   "type": "TEXT_FIELD",
                   "techName": "numer_budynku",
                   "title": "Numer budynku",
@@ -709,7 +643,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "379be171-c5bf-576b-ace5-f618a35711ce",
+                  "id": "51052a5f-41cc-5322-b418-606a6e87ffdb",
                   "type": "TEXT_FIELD",
                   "techName": "numer_lokalu",
                   "title": "Numer lokalu",
@@ -733,11 +667,11 @@
         },
         {
           "x": 0,
-          "y": 31,
+          "y": 28,
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "36bcafa6-87d1-5b54-a576-7edc047109e3",
+            "id": "9beb4a19-38e5-5d6f-a73d-90d58e1518ea",
             "type": "SECTION",
             "techName": "zgoda_kandydata_pelnoletniego_do_stypendium",
             "title": "Zgoda kandydata pełnoletniego do stypendium",
@@ -752,7 +686,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "cd30eefd-0cf8-596e-b69f-27e827633de2",
+                  "id": "f7d00402-1e15-5c33-8d0b-03c9ab39cb2a",
                   "type": "TEXT_FIELD",
                   "techName": "imie_2",
                   "title": "Imię",
@@ -774,7 +708,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "86c1dbc9-6e7f-5ddb-babf-0c6afcbb4ed3",
+                  "id": "e5a2a212-48fd-506e-804c-061d244fe5a0",
                   "type": "TEXT_FIELD",
                   "techName": "nazwisko_2",
                   "title": "Nazwisko",
@@ -798,11 +732,11 @@
         },
         {
           "x": 0,
-          "y": 34,
+          "y": 31,
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "6559730e-ecfa-5615-97e5-a0cf3f1dd10a",
+            "id": "d48e5cd4-0e21-5c53-8a7a-771114116337",
             "type": "SECTION",
             "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_stypendium",
             "title": "Zgoda w imieniu kandydata nieletniego do stypendium",
@@ -817,7 +751,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "61de19db-e890-5e72-805b-4d3d7644f8d3",
+                  "id": "3b7c56e3-c6d5-5b1c-8132-91d0d7f2e06d",
                   "type": "TEXT_FIELD",
                   "techName": "imie_3",
                   "title": "Imię",
@@ -839,7 +773,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "8d951229-2c57-57cc-9c18-502137ac6267",
+                  "id": "36bcafa6-87d1-5b54-a576-7edc047109e3",
                   "type": "TEXT_FIELD",
                   "techName": "nazwisko_3",
                   "title": "Nazwisko",
@@ -863,11 +797,11 @@
         },
         {
           "x": 0,
-          "y": 37,
+          "y": 34,
           "rows": 12,
           "cols": 3,
           "field": {
-            "id": "d851db14-96bd-5392-abc5-3260becd4fc2",
+            "id": "586be780-4558-5368-a520-d1bf6f0427e7",
             "type": "SECTION",
             "techName": "wnioskodawca_2",
             "title": "Wnioskodawca",
@@ -882,7 +816,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "a44519c8-d5dd-560a-9029-1d276d8eb01c",
+                  "id": "a19fb85e-20a9-5aa2-9804-515dc1b8f733",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_2",
                   "title": "",
@@ -902,7 +836,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "1607ecf6-7663-5ff0-83b3-b232af64dbae",
+                  "id": "61b07844-eb5f-5dfd-96eb-3450d7a28470",
                   "type": "TEXT_FIELD",
                   "techName": "prezydent_miasta_zgierza",
                   "title": "Prezydent Miasta Zgierza",
@@ -924,7 +858,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "3be57019-2a08-54d4-946f-d8d446645a76",
+                  "id": "6559730e-ecfa-5615-97e5-a0cf3f1dd10a",
                   "type": "TEXT_FIELD",
                   "techName": "klub_sportowy_2",
                   "title": "Klub sportowy",
@@ -946,10 +880,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "273333a4-64a9-5733-a479-c73cac7be6ed",
+                  "id": "1607ecf6-7663-5ff0-83b3-b232af64dbae",
                   "type": "TEXT_FIELD",
-                  "techName": "seesvovessvosonoeworonesoeonwaweaewawowawawowewawe_ee_awe_se_owa_es_owa_w_ee_aa_2",
-                  "title": "Seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es",
+                  "techName": "seesvovosososooneoroneoeoenawewawawowawawowesawe_2",
+                  "title": "Seesvovosososooneoroneoeoenawewawawowawawowesawe",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -968,10 +902,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "007047ee-656a-5609-aabb-e2286b45d554",
+                  "id": "3be57019-2a08-54d4-946f-d8d446645a76",
                   "type": "TEXT_FIELD",
-                  "techName": "eeeereseseoeeroneeeroenewe",
-                  "title": "Eeeereseseoeeroneeeroenewe",
+                  "techName": "owa_es_ow_2",
+                  "title": "Owa es ow",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -990,10 +924,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "0b47d935-0d95-5e13-94d7-21a88a0c3965",
+                  "id": "b5050fd3-130f-50c8-86bc-e41cce9964e1",
                   "type": "TEXT_FIELD",
-                  "techName": "seesvovessvosonoeworonesoeonwaweaewawowawawowewawe_ee_awe_se_owa_es_owa_w_ee_aa_3",
-                  "title": "Seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es",
+                  "techName": "seesvovosososooneoroneoeoenawewawawowawawowesawe_3",
+                  "title": "Seesvovosososooneoroneoeoenawewawawowawawowesawe",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1012,10 +946,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "94ab6b1a-be35-5019-bc32-a9225ebdcd19",
+                  "id": "007047ee-656a-5609-aabb-e2286b45d554",
                   "type": "TEXT_FIELD",
-                  "techName": "dane_klubu_sportowego_2",
-                  "title": "Dane klubu sportowego",
+                  "techName": "owa_es_ow_3",
+                  "title": "Owa es ow",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1034,10 +968,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "519c3ab5-c70e-5c00-a5e2-1487be81fd2d",
+                  "id": "23942126-0077-5150-bf44-c7e67cb6c98d",
                   "type": "TEXT_FIELD",
-                  "techName": "nazwa_klubu_sportowego_2",
-                  "title": "Nazwa klubu sportowego",
+                  "techName": "dane_klubu_sportowego_2",
+                  "title": "Dane klubu sportowego",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1056,10 +990,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "a033078f-85c0-535b-bdfc-ed7a192eddd4",
+                  "id": "0b47d935-0d95-5e13-94d7-21a88a0c3965",
                   "type": "TEXT_FIELD",
-                  "techName": "eesevesesesoneoronesoeoew",
-                  "title": "Eesevesesesoneoronesoeoew",
+                  "techName": "nazwa_klubu_sportowego_2",
+                  "title": "Nazwa klubu sportowego",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1078,10 +1012,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "74ccfb26-a26d-5ae5-b8f2-4f150bce6ae4",
+                  "id": "94ab6b1a-be35-5019-bc32-a9225ebdcd19",
                   "type": "TEXT_FIELD",
-                  "techName": "wewakeatae",
-                  "title": "Wewakeatae",
+                  "techName": "eeseeesesesonenoronesoe",
+                  "title": "Eeseeesesesonenoronesoe",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1100,10 +1034,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "4e234228-1a00-5d69-9417-eedf63589e90",
+                  "id": "519c3ab5-c70e-5c00-a5e2-1487be81fd2d",
                   "type": "TEXT_FIELD",
-                  "techName": "eevoveeevesosawewononenoroewsoeoewawe_se_awa_seee_wow_oo_ee_w_awa_2",
-                  "title": "Eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa",
+                  "techName": "aewasowawako_ses_akesataw_es_ot_eee_k",
+                  "title": "Aewasowawako ses akesataw es ot eee k",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1124,11 +1058,11 @@
         },
         {
           "x": 0,
-          "y": 49,
+          "y": 46,
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "a8a5653f-fdec-5c31-898b-7033566a7c76",
+            "id": "a44519c8-d5dd-560a-9029-1d276d8eb01c",
             "type": "SECTION",
             "techName": "twoje_dane_2",
             "title": "Twoje dane",
@@ -1143,7 +1077,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "b5050fd3-130f-50c8-86bc-e41cce9964e1",
+                  "id": "385f742d-25a6-5513-84d5-0c569fdee424",
                   "type": "TEXT_FIELD",
                   "techName": "seria_i_numer_dowodu_osobistego_2",
                   "title": "Seria i numer dowodu osobistego",
@@ -1168,11 +1102,11 @@
         },
         {
           "x": 0,
-          "y": 51,
+          "y": 48,
           "rows": 10,
           "cols": 3,
           "field": {
-            "id": "9d44bf60-325f-5950-9e06-346f843e1c3b",
+            "id": "d851db14-96bd-5392-abc5-3260becd4fc2",
             "type": "SECTION",
             "techName": "adres_zamieszkania_2",
             "title": "Adres zamieszkania",
@@ -1187,7 +1121,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "af9d34c1-29c2-5d47-9610-87d11cd4f92b",
+                  "id": "4e234228-1a00-5d69-9417-eedf63589e90",
                   "type": "SELECT",
                   "techName": "kraj_2",
                   "title": "Kraj",
@@ -1214,7 +1148,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "8d396d4d-d6e2-5518-895c-24a96da36874",
+                  "id": "5125d9ec-8d53-5100-983f-24ad9fcd7c11",
                   "type": "TEXT_FIELD",
                   "techName": "miejscowosc_zagranica_2",
                   "title": "Miejscowość",
@@ -1241,7 +1175,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "e3b03b82-a876-55f4-a4f2-a1ce93198711",
+                  "id": "d5c0ad27-f0f9-52bc-883b-d65ee3922256",
                   "type": "TEXT_FIELD",
                   "techName": "kod_pocztowy_zagranica_2",
                   "title": "Kod pocztowy",
@@ -1268,7 +1202,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "b24bc2aa-963c-5199-b2b4-050e0ab33fd9",
+                  "id": "af9d34c1-29c2-5d47-9610-87d11cd4f92b",
                   "type": "TEXT_FIELD",
                   "techName": "ulica_zagranica_2",
                   "title": "Ulica",
@@ -1295,7 +1229,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "a558ce17-a31b-5641-ac86-9b2d02cc5605",
+                  "id": "8d396d4d-d6e2-5518-895c-24a96da36874",
                   "type": "SELECT",
                   "techName": "teryt_4g_dowodowy_2",
                   "title": "TERYT_4G_DOWODOWY",
@@ -1325,7 +1259,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "632c9c3b-f613-50eb-a8a5-14896c2fcd48",
+                  "id": "e3b03b82-a876-55f4-a4f2-a1ce93198711",
                   "type": "TEXT_FIELD",
                   "techName": "kod_pocztowy_2",
                   "title": "Kod pocztowy",
@@ -1353,7 +1287,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "a19fb85e-20a9-5aa2-9804-515dc1b8f733",
+                  "id": "b24bc2aa-963c-5199-b2b4-050e0ab33fd9",
                   "type": "TEXT_FIELD",
                   "techName": "ulica_2",
                   "title": "Ulica",
@@ -1380,7 +1314,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "586be780-4558-5368-a520-d1bf6f0427e7",
+                  "id": "a558ce17-a31b-5641-ac86-9b2d02cc5605",
                   "type": "TEXT_FIELD",
                   "techName": "numer_budynku_2",
                   "title": "Numer budynku",
@@ -1402,7 +1336,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "96055def-ef31-5086-849b-efff20110f43",
+                  "id": "632c9c3b-f613-50eb-a8a5-14896c2fcd48",
                   "type": "TEXT_FIELD",
                   "techName": "numer_lokalu_2",
                   "title": "Numer lokalu",
@@ -1424,11 +1358,11 @@
         },
         {
           "x": 0,
-          "y": 61,
+          "y": 58,
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "cdebc9ca-4972-5b8d-9e38-f0e01da845b5",
+            "id": "14b36573-550f-5edd-901e-d258abeabe1d",
             "type": "SECTION",
             "techName": "zgoda_kandydata_pelnoletniego_do_nagrody",
             "title": "Zgoda kandydata pełnoletniego do nagrody",
@@ -1443,7 +1377,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "738fc24d-374b-5f1e-a260-93a1bfbbc3fe",
+                  "id": "b0b46663-b808-57cf-b77d-16b70ae8d8d2",
                   "type": "TEXT_FIELD",
                   "techName": "imie_4",
                   "title": "Imię",
@@ -1465,7 +1399,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "c7fab2ab-1154-53b6-9cd3-00980c5f9bb9",
+                  "id": "f4919694-a964-5989-85f0-72d6cf327bd5",
                   "type": "TEXT_FIELD",
                   "techName": "nazwisko_4",
                   "title": "Nazwisko",
@@ -1489,11 +1423,11 @@
         },
         {
           "x": 0,
-          "y": 64,
+          "y": 61,
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "0fac5a9f-afd7-5d68-838a-9e6c5c30e237",
+            "id": "5769e08c-fdf1-5770-bdcd-74d23d877deb",
             "type": "SECTION",
             "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_nagrody",
             "title": "Zgoda w imieniu kandydata nieletniego do nagrody",
@@ -1508,7 +1442,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "e6de9133-4aac-5df4-be17-7e57cac4d9f3",
+                  "id": "46e20221-c8e5-531b-9734-d49362c8ba8f",
                   "type": "TEXT_FIELD",
                   "techName": "imie_5",
                   "title": "Imię",
@@ -1530,7 +1464,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "70bb1d16-2272-5632-9222-66fa4d1e3566",
+                  "id": "cdebc9ca-4972-5b8d-9e38-f0e01da845b5",
                   "type": "TEXT_FIELD",
                   "techName": "nazwisko_5",
                   "title": "Nazwisko",
@@ -1554,11 +1488,11 @@
         },
         {
           "x": 0,
-          "y": 67,
+          "y": 64,
           "rows": 14,
           "cols": 3,
           "field": {
-            "id": "ada3d0cf-f25c-554c-be8a-936db1869408",
+            "id": "a05ae993-6c62-5147-9177-ef40a61fe782",
             "type": "SECTION",
             "techName": "wnioskodawca_3",
             "title": "Wnioskodawca",
@@ -1573,7 +1507,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "28068881-b672-50aa-b163-b2064305ad83",
+                  "id": "58f7c1c6-9e91-54c1-b701-9c2875e8f117",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_3",
                   "title": "",
@@ -1593,7 +1527,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "7fa7ddf9-ecba-5d76-900f-a2e8564897ae",
+                  "id": "c0ea870a-ba8c-51d0-8dea-ca16b2042a71",
                   "type": "TEXT_FIELD",
                   "techName": "prezydent_miasta_zgierza_2",
                   "title": "Prezydent Miasta Zgierza",
@@ -1615,7 +1549,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "78876de1-a56f-5a5d-85c5-027a378d81fe",
+                  "id": "0fac5a9f-afd7-5d68-838a-9e6c5c30e237",
                   "type": "TEXT_FIELD",
                   "techName": "klub_sportowy_3",
                   "title": "Klub sportowy",
@@ -1637,10 +1571,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "f4921d63-e443-5e5f-b989-c63328c3144c",
+                  "id": "7fa7ddf9-ecba-5d76-900f-a2e8564897ae",
                   "type": "TEXT_FIELD",
-                  "techName": "seesvovessvosonoeworonesoeonwaweaewawowawawowewawe_ee_awe_se_owa_es_owa_w_ee_aa_4",
-                  "title": "Seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es",
+                  "techName": "seesvovosososooneoroneoeoenawewawawowawawowesawe_4",
+                  "title": "Seesvovosososooneoroneoeoenawewawawowawawowesawe",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1659,10 +1593,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "0a52d6c7-0b2d-5d10-bbb4-9d280928f0da",
+                  "id": "78876de1-a56f-5a5d-85c5-027a378d81fe",
                   "type": "TEXT_FIELD",
-                  "techName": "seesvovessvosonoeworonesoeonwaweaewawowawawowewawe_ee_awe_se_owa_es_owa_w_ee_aa_5",
-                  "title": "Seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es",
+                  "techName": "owa_es_ow_4",
+                  "title": "Owa es ow",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1681,10 +1615,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "39977a99-4ff1-507c-ac35-744f6bc91d47",
+                  "id": "f4921d63-e443-5e5f-b989-c63328c3144c",
                   "type": "TEXT_FIELD",
-                  "techName": "dane_klubu_sportowego_3",
-                  "title": "Dane klubu sportowego",
+                  "techName": "eesereseeeoneeroneseronewe_ee_enewaanewow_es_eee_ak_es",
+                  "title": "Eesereseeeoneeroneseronewe ee enewaanewow es eee ak es",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1703,10 +1637,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "0350bfb8-e0b6-5549-9f0e-6e9a52b60ba2",
+                  "id": "019715c1-e38d-5188-9f47-0d1deb41b638",
                   "type": "TEXT_FIELD",
-                  "techName": "nazwa_klubu_sportowego_3",
-                  "title": "Nazwa klubu sportowego",
+                  "techName": "seesvovosososooneoroneoeoenawewawawowawawowesawe_5",
+                  "title": "Seesvovosososooneoroneoeoenawewawawowawawowesawe",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1725,10 +1659,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "5cb039fb-6b3a-5dfe-8a1b-768fb163d733",
+                  "id": "0a52d6c7-0b2d-5d10-bbb4-9d280928f0da",
                   "type": "TEXT_FIELD",
-                  "techName": "eeseeesesesoneoroneoeoewawe_2",
-                  "title": "Eeseeesesesoneoroneoeoewawe",
+                  "techName": "owa_es_ow_5",
+                  "title": "Owa es ow",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1747,10 +1681,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "1d29d35d-0c20-58cb-bd2e-da4b739f973d",
+                  "id": "39977a99-4ff1-507c-ac35-744f6bc91d47",
                   "type": "TEXT_FIELD",
-                  "techName": "akowewakewawae",
-                  "title": "Akowewakewawae",
+                  "techName": "dane_klubu_sportowego_3",
+                  "title": "Dane klubu sportowego",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1769,10 +1703,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "9d404833-edfd-512f-8157-7ebe34206cfc",
+                  "id": "0350bfb8-e0b6-5549-9f0e-6e9a52b60ba2",
                   "type": "TEXT_FIELD",
-                  "techName": "seesecevovosovosononoononooe",
-                  "title": "Seesecevovosovosononoononooe",
+                  "techName": "nazwa_klubu_sportowego_3",
+                  "title": "Nazwa klubu sportowego",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1791,10 +1725,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "1edf7975-c8f1-5c1c-8edb-d7d601e96203",
+                  "id": "5cb039fb-6b3a-5dfe-8a1b-768fb163d733",
                   "type": "TEXT_FIELD",
-                  "techName": "eevoveeevesosawewononenoroewsoeoewawe_se_awa_seee_wow_oo_ee_w_awa_3",
-                  "title": "Eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa",
+                  "techName": "eeseveeesosoeenosesoe",
+                  "title": "Eeseveeesosoeenosesoe",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1813,10 +1747,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "68a36fa8-3983-5b29-9ad2-06fa5834e1a4",
+                  "id": "9d404833-edfd-512f-8157-7ebe34206cfc",
                   "type": "TEXT_FIELD",
-                  "techName": "eeeeeeeeereenoneasowonoeneneeeweneeneneneeeen",
-                  "title": "Eeeeeeeeereenoneasowonoeneneeeweneeneneneeeen",
+                  "techName": "eeeeeeeoreeneneseeweroeneneneeeeneenenen",
+                  "title": "Eeeeeeeoreeneneseeweroeneneneeeeneenenen",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1835,10 +1769,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "b099a940-c04d-5227-86f9-6e58d59febca",
+                  "id": "1ee612cd-6f66-50e3-8567-395647a03d26",
                   "type": "TEXT_FIELD",
-                  "techName": "e_eeveeeeenrenenereeneneenenereenoneaeeneneenene",
-                  "title": "E.eeveeeeenrenenereeneneenenereenoneaeeneneenene",
+                  "techName": "e_veveeeenenreneneeeeneneeneereeneneaweweseenene",
+                  "title": "E.veveeeenenreneneeeeneneeneereeneneaweweseenene",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1859,11 +1793,11 @@
         },
         {
           "x": 0,
-          "y": 81,
+          "y": 78,
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "0f078103-6bdb-55bd-9465-6b425ca7c5fd",
+            "id": "28068881-b672-50aa-b163-b2064305ad83",
             "type": "SECTION",
             "techName": "twoje_dane_3",
             "title": "Twoje dane",
@@ -1878,7 +1812,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "cb785fea-abb2-5a3a-b062-fd1a9d61a440",
+                  "id": "6fbf33ff-1558-5a4a-8aaa-75458d8d472b",
                   "type": "TEXT_FIELD",
                   "techName": "seria_i_numer_dowodu_osobistego_3",
                   "title": "Seria i numer dowodu osobistego",
@@ -1903,11 +1837,11 @@
         },
         {
           "x": 0,
-          "y": 83,
+          "y": 80,
           "rows": 10,
           "cols": 3,
           "field": {
-            "id": "a9c2e055-b493-5668-a0ec-006e964e227c",
+            "id": "ada3d0cf-f25c-554c-be8a-936db1869408",
             "type": "SECTION",
             "techName": "adres_zamieszkania_3",
             "title": "Adres zamieszkania",
@@ -1922,7 +1856,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "90319c75-5e06-5e48-9796-4a611c5928dd",
+                  "id": "68a36fa8-3983-5b29-9ad2-06fa5834e1a4",
                   "type": "SELECT",
                   "techName": "kraj_3",
                   "title": "Kraj",
@@ -1949,7 +1883,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "960aaf0c-ae8f-5691-9c06-c09ef73be7bd",
+                  "id": "12de914a-8f0e-56ba-9a9b-cef8f538a8c6",
                   "type": "TEXT_FIELD",
                   "techName": "miejscowosc_zagranica_3",
                   "title": "Miejscowość",
@@ -1976,7 +1910,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "61ff9df8-6724-5139-9383-a412c143edbe",
+                  "id": "b099a940-c04d-5227-86f9-6e58d59febca",
                   "type": "TEXT_FIELD",
                   "techName": "kod_pocztowy_zagranica_3",
                   "title": "Kod pocztowy",
@@ -2003,7 +1937,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "c43bd2b9-cc5f-57f0-8459-ca3cd1bfa7f5",
+                  "id": "90319c75-5e06-5e48-9796-4a611c5928dd",
                   "type": "TEXT_FIELD",
                   "techName": "ulica_zagranica_3",
                   "title": "Ulica",
@@ -2030,7 +1964,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "5efd01e3-fc60-5e17-857d-9a7b3d09a384",
+                  "id": "960aaf0c-ae8f-5691-9c06-c09ef73be7bd",
                   "type": "SELECT",
                   "techName": "teryt_4g_dowodowy_3",
                   "title": "TERYT_4G_DOWODOWY",
@@ -2060,7 +1994,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "95271dab-8c18-5b7a-bbab-03aa34332161",
+                  "id": "61ff9df8-6724-5139-9383-a412c143edbe",
                   "type": "TEXT_FIELD",
                   "techName": "kod_pocztowy_3",
                   "title": "Kod pocztowy",
@@ -2088,7 +2022,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "58f7c1c6-9e91-54c1-b701-9c2875e8f117",
+                  "id": "c43bd2b9-cc5f-57f0-8459-ca3cd1bfa7f5",
                   "type": "TEXT_FIELD",
                   "techName": "ulica_3",
                   "title": "Ulica",
@@ -2115,7 +2049,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "a05ae993-6c62-5147-9177-ef40a61fe782",
+                  "id": "5efd01e3-fc60-5e17-857d-9a7b3d09a384",
                   "type": "TEXT_FIELD",
                   "techName": "numer_budynku_3",
                   "title": "Numer budynku",
@@ -2137,7 +2071,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "a76b246b-5bff-5a8e-88aa-75e0c884e3f7",
+                  "id": "95271dab-8c18-5b7a-bbab-03aa34332161",
                   "type": "TEXT_FIELD",
                   "techName": "numer_lokalu_3",
                   "title": "Numer lokalu",
@@ -2159,11 +2093,11 @@
         },
         {
           "x": 0,
-          "y": 93,
+          "y": 90,
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "700594e3-26a8-5e7f-a6a7-a75dde23b039",
+            "id": "89bd550d-7664-5f72-a1e7-846c0e59de6b",
             "type": "SECTION",
             "techName": "twoje_dane_4",
             "title": "Twoje dane",
@@ -2178,7 +2112,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "89bd550d-7664-5f72-a1e7-846c0e59de6b",
+                  "id": "cd0fd642-d422-5f4b-afcb-bcac89fe2fd1",
                   "type": "TEXT_FIELD",
                   "techName": "imie_6",
                   "title": "Imię",
@@ -2200,7 +2134,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "a2127a9f-6691-54b8-9ccb-55b5fe22f5c4",
+                  "id": "6607cf9b-a4dc-57ab-9b50-ce23c5c2af1f",
                   "type": "TEXT_FIELD",
                   "techName": "nazwisko_6",
                   "title": "Nazwisko",
@@ -2224,11 +2158,11 @@
         },
         {
           "x": 0,
-          "y": 96,
+          "y": 93,
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "7504b0db-96af-5616-af20-bbedfa949b29",
+            "id": "a2127a9f-6691-54b8-9ccb-55b5fe22f5c4",
             "type": "SECTION",
             "techName": "dane_osobowe_podopiecznego_trenera",
             "title": "Dane osobowe podopiecznego trenera",
@@ -2243,7 +2177,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "ca226cd1-68eb-5fa2-b9fb-0a0ad240c4be",
+                  "id": "d7a3cc0e-28e4-5f50-93ff-3269edf93c81",
                   "type": "TEXT_FIELD",
                   "techName": "osiagniecia_sportowe_podopiecznego",
                   "title": "Osiągnięcia sportowe podopiecznego",
@@ -2267,11 +2201,11 @@
         },
         {
           "x": 0,
-          "y": 98,
+          "y": 95,
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "840b9ffe-062d-54ac-86f6-832681c1c69a",
+            "id": "ae6be8a6-6f2d-54a2-9b2e-2b363c88b5a8",
             "type": "SECTION",
             "techName": "twoje_dane_5",
             "title": "Twoje dane",
@@ -2286,7 +2220,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "ae6be8a6-6f2d-54a2-9b2e-2b363c88b5a8",
+                  "id": "ca226cd1-68eb-5fa2-b9fb-0a0ad240c4be",
                   "type": "TEXT_FIELD",
                   "techName": "imie_7",
                   "title": "Imię",
@@ -2308,7 +2242,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "c9bfd19e-ef7c-5caf-9abf-bce2b6017491",
+                  "id": "700594e3-26a8-5e7f-a6a7-a75dde23b039",
                   "type": "TEXT_FIELD",
                   "techName": "nazwisko_7",
                   "title": "Nazwisko",
@@ -2332,11 +2266,11 @@
         },
         {
           "x": 0,
-          "y": 101,
+          "y": 98,
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "9c8089ee-4029-58fd-8bc9-39a18e0d1c53",
+            "id": "c9bfd19e-ef7c-5caf-9abf-bce2b6017491",
             "type": "SECTION",
             "techName": "dane_osobowe_podopiecznego_trenera_2",
             "title": "Dane osobowe podopiecznego trenera",
@@ -2351,7 +2285,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "2fd23df4-1d04-5e9e-9df7-f90a7428cd0d",
+                  "id": "7504b0db-96af-5616-af20-bbedfa949b29",
                   "type": "TEXT_FIELD",
                   "techName": "osiagniecia_sportowe_podopiecznego_2",
                   "title": "Osiągnięcia sportowe podopiecznego",
@@ -2375,11 +2309,11 @@
         },
         {
           "x": 0,
-          "y": 103,
+          "y": 100,
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "8721605e-1278-5dd2-a94f-bfa9918bf63b",
+            "id": "e781d6d5-d5c6-5750-85cf-8c61d5f4ba16",
             "type": "SECTION",
             "techName": "twoje_dane_6",
             "title": "Twoje dane",
@@ -2394,7 +2328,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "cf367d2e-ae20-5004-9417-f29fdd4a22bf",
+                  "id": "2fd23df4-1d04-5e9e-9df7-f90a7428cd0d",
                   "type": "TEXT_FIELD",
                   "techName": "imie_8",
                   "title": "Imię",
@@ -2416,7 +2350,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "e781d6d5-d5c6-5750-85cf-8c61d5f4ba16",
+                  "id": "840b9ffe-062d-54ac-86f6-832681c1c69a",
                   "type": "TEXT_FIELD",
                   "techName": "nazwisko_8",
                   "title": "Nazwisko",
@@ -2440,11 +2374,11 @@
         },
         {
           "x": 0,
-          "y": 106,
+          "y": 103,
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "10147a92-63ce-527b-9ce0-a4213bc23b16",
+            "id": "e9b5902c-ff99-5b76-a4de-be7895a35142",
             "type": "SECTION",
             "techName": "dane_osobowe_podopiecznego_trenera_3",
             "title": "Dane osobowe podopiecznego trenera",
@@ -2459,7 +2393,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "d6dd3f8e-9c17-5e38-b134-210c2991f13d",
+                  "id": "cf367d2e-ae20-5004-9417-f29fdd4a22bf",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_4",
                   "title": "",
@@ -2479,7 +2413,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "e9b5902c-ff99-5b76-a4de-be7895a35142",
+                  "id": "9c8089ee-4029-58fd-8bc9-39a18e0d1c53",
                   "type": "TEXT_FIELD",
                   "techName": "osiagniecia_sportowe_podopiecznego_3",
                   "title": "Osiągnięcia sportowe podopiecznego",
@@ -2503,11 +2437,11 @@
         },
         {
           "x": 0,
-          "y": 109,
+          "y": 106,
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "ce03e5ca-9988-5824-ada4-437855f31ae8",
+            "id": "06ba5d48-1d72-5a3a-9132-11034f0754f3",
             "type": "SECTION",
             "techName": "twoje_dane_7",
             "title": "Twoje dane",
@@ -2522,7 +2456,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "3c72fa43-92e6-59d0-a8b8-91c3005d4e9c",
+                  "id": "d6dd3f8e-9c17-5e38-b134-210c2991f13d",
                   "type": "TEXT_FIELD",
                   "techName": "imie_9",
                   "title": "Imię",
@@ -2544,7 +2478,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "b4bebdb2-d84d-55d0-94a0-d867a40051ca",
+                  "id": "8721605e-1278-5dd2-a94f-bfa9918bf63b",
                   "type": "TEXT_FIELD",
                   "techName": "nazwisko_9",
                   "title": "Nazwisko",
@@ -2568,11 +2502,11 @@
         },
         {
           "x": 0,
-          "y": 112,
+          "y": 109,
           "rows": 4,
           "cols": 3,
           "field": {
-            "id": "b935c1b5-d6ef-5cb2-9512-7310026e17ec",
+            "id": "ddc3d289-1bff-572d-967d-0ca53544775c",
             "type": "SECTION",
             "techName": "dane_osobowe_podopiecznego_trenera_4",
             "title": "Dane osobowe podopiecznego trenera",
@@ -2587,7 +2521,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "8027e93b-b1fc-59c3-96cd-2ca4cd85dd59",
+                  "id": "b4bebdb2-d84d-55d0-94a0-d867a40051ca",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_5",
                   "title": "",
@@ -2607,7 +2541,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "06ba5d48-1d72-5a3a-9132-11034f0754f3",
+                  "id": "10147a92-63ce-527b-9ce0-a4213bc23b16",
                   "type": "TEXT_FIELD",
                   "techName": "osiagniecia_sportowe_podopiecznego_4",
                   "title": "Osiągnięcia sportowe podopiecznego",
@@ -2629,7 +2563,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "ddc3d289-1bff-572d-967d-0ca53544775c",
+                  "id": "3c72fa43-92e6-59d0-a8b8-91c3005d4e9c",
                   "type": "TEXT_FIELD",
                   "techName": "wymagane_zaswiadczenia_wymienionych_podopiecznych_trenera",
                   "title": "Wymagane zaświadczenia wymienionych podopiecznych trenera",
@@ -2653,11 +2587,11 @@
         },
         {
           "x": 0,
-          "y": 116,
+          "y": 113,
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "51612a71-781e-5b0b-bc36-e3f1f87b5bab",
+            "id": "927bd811-2e02-585d-9f4d-b173a1a9ef29",
             "type": "SECTION",
             "techName": "zgoda_kandydata_do_wyroznienia",
             "title": "Zgoda kandydata do wyróżnienia",
@@ -2672,7 +2606,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "a23d85aa-7ca7-5f3a-81ec-4f1804c4cef7",
+                  "id": "b935c1b5-d6ef-5cb2-9512-7310026e17ec",
                   "type": "TEXT_FIELD",
                   "techName": "imie_10",
                   "title": "Imię",
@@ -2694,7 +2628,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "e3605e5d-1ae6-5147-a114-8d4141c9cb56",
+                  "id": "bd23718c-304b-5583-a1ad-250d6fabaa2f",
                   "type": "TEXT_FIELD",
                   "techName": "nazwisko_10",
                   "title": "Nazwisko",
@@ -2718,11 +2652,11 @@
         },
         {
           "x": 0,
-          "y": 119,
+          "y": 116,
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "cbb59a33-6253-5297-9053-6884b3ea5f98",
+            "id": "4be34e58-4de1-5924-ab3e-b32dd7451895",
             "type": "SECTION",
             "techName": "zgoda_podopiecznego_pelnoletniego",
             "title": "Zgoda podopiecznego pełnoletniego",
@@ -2737,7 +2671,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "71370cca-e962-595e-ab29-012a7af2032e",
+                  "id": "bd010476-95f1-5cef-9e09-2a25efdfdbe6",
                   "type": "TEXT_FIELD",
                   "techName": "imie_11",
                   "title": "Imię",
@@ -2759,7 +2693,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "d6a84705-fdde-557d-955e-cd8ccedd7dc5",
+                  "id": "51612a71-781e-5b0b-bc36-e3f1f87b5bab",
                   "type": "TEXT_FIELD",
                   "techName": "nazwisko_11",
                   "title": "Nazwisko",
@@ -2783,11 +2717,11 @@
         },
         {
           "x": 0,
-          "y": 122,
+          "y": 119,
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "1470fa49-c16a-5027-abe8-7412d033c7ac",
+            "id": "1d088dcb-8103-5434-8b34-a950e64fa36c",
             "type": "SECTION",
             "techName": "zgoda_w_imieniu_podopiecznego_nieletniego",
             "title": "Zgoda w imieniu podopiecznego nieletniego",
@@ -2802,7 +2736,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "d9f4403d-91dc-5247-9ad8-05c238e23eed",
+                  "id": "cbb59a33-6253-5297-9053-6884b3ea5f98",
                   "type": "TEXT_FIELD",
                   "techName": "imie_12",
                   "title": "Imię",
@@ -2824,7 +2758,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "f4851c2c-85d5-5b41-a28c-24eaeb712948",
+                  "id": "aef669da-3661-58de-ad3f-12c33432f12a",
                   "type": "TEXT_FIELD",
                   "techName": "nazwisko_12",
                   "title": "Nazwisko",
@@ -2940,8 +2874,8 @@
                 "field": {
                   "id": "2c65512d-dcd5-5af9-99c7-29a163adebd9",
                   "type": "TEXT_FIELD",
-                  "techName": "text_field_1x",
-                  "title": "1x",
+                  "techName": "ix",
+                  "title": "Ix",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -3029,7 +2963,7 @@
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_7",
                   "title": "",
-                  "description": "I. — Wniosek o przyznanie stypendium sportowego Rady Miasta Zgierza II. — Wniosek o przyznanie nagrody sportowej Rady Miasta Zgierza II. Wniosek o przyznanie wyróżnienia sportowego Rady Miasta Zgierza I Wniosek o przyznanie stypendium sportowego Rady Miasta",
+                  "description": "I. — Wniosek o przyznanie stypendium sportowego Rady Miasta Zgierza II. — Wniosek o przyznanie nagrody sportowej Rady Miasta Zgierza II. Wniosek o przyznanie wyróżnienia sportowego Rady Miasta Zgierza I. Wniosek o przyznanie stypendium sportowego Rady Miasta",
                   "options": [],
                   "validation": [],
                   "readOnly": false,
@@ -3073,7 +3007,7 @@
           "rows": 4,
           "cols": 3,
           "field": {
-            "id": "928227e6-3c5c-57b0-9495-8f277e161af5",
+            "id": "4ef62a0b-840e-58d4-a9ca-0a53fe81b97d",
             "type": "SECTION",
             "techName": "dane_kandydatki_kandydata_do_stypendium",
             "title": "Dane kandydatki/kandydata do stypendium",
@@ -3088,7 +3022,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "d2dbaa70-0cf2-564f-a3a5-3ddf6dfca60f",
+                  "id": "0180861b-b9ea-5144-87cc-e6bec5585543",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_8",
                   "title": "",
@@ -3108,7 +3042,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "4ef62a0b-840e-58d4-a9ca-0a53fe81b97d",
+                  "id": "098c7ab7-4cf3-52c8-8379-a85989500944",
                   "type": "TEXT_FIELD",
                   "techName": "dyscypliny_sportowe",
                   "title": "Dyscypliny sportowe",
@@ -3130,24 +3064,24 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "65b8e5d0-ebff-5d05-9c5c-e54dcb5a447e",
+                  "id": "2a4b65f8-d727-54c0-bec8-be036246d193",
                   "type": "RADIO",
                   "techName": "a_nastepnie_wybierz_konkretne_dyscypliny_z_listy",
                   "title": "A następnie wybierz konkretne dyscypliny z listy",
                   "description": "",
                   "options": [
                     {
-                      "id": "1c1a36c7-4dd3-53d7-93d7-77b35625cd6b",
+                      "id": "6fb168ec-d28e-5c7f-9e9b-327079e5b354",
                       "name": "Zespołowa",
                       "techName": "zespolowa"
                     },
                     {
-                      "id": "ef9949c5-5621-51f5-9e00-3cac1bf586c2",
+                      "id": "42bcb443-2647-51d0-8b22-b21e04e4678f",
                       "name": "Indywidualna — inna",
                       "techName": "indywidualna_inna"
                     },
                     {
-                      "id": "9c8a51de-873f-535f-9156-9964d847a4af",
+                      "id": "bc8dd4ce-1f9e-5421-99db-5cf17cdd4cb6",
                       "name": "Indywidualna — lekkoatletyka",
                       "techName": "indywidualna_lekkoatletyka"
                     }
@@ -3174,7 +3108,7 @@
           "rows": 4,
           "cols": 3,
           "field": {
-            "id": "d8b301a7-5127-5251-80c2-fcfdb6b6e6af",
+            "id": "9be63b85-1120-59b5-b454-f4250711c851",
             "type": "SECTION",
             "techName": "dyscypliny_sportowe_2",
             "title": "Dyscypliny sportowe",
@@ -3189,7 +3123,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "f68f786c-1922-5fba-8ef2-b6e92b11a38f",
+                  "id": "928227e6-3c5c-57b0-9495-8f277e161af5",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_9",
                   "title": "",
@@ -3209,109 +3143,109 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "9be63b85-1120-59b5-b454-f4250711c851",
+                  "id": "65b8e5d0-ebff-5d05-9c5c-e54dcb5a447e",
                   "type": "RADIO",
                   "techName": "dyscypliny_sportowe_3",
                   "title": "Dyscypliny sportowe",
                   "description": "",
                   "options": [
                     {
-                      "id": "a43584cc-22b9-555e-8d87-fdc54e26639b",
+                      "id": "0e0595d9-1c0f-54ea-b122-b3900af110cf",
                       "name": "Gimnastyka artystyczna",
                       "techName": "gimnastyka_artystyczna"
                     },
                     {
-                      "id": "83540dc6-2337-5d91-a1fb-bf55388f43f6",
+                      "id": "487f58df-f062-5bc5-ac0f-e14df8fff25c",
                       "name": "Hokej",
                       "techName": "hokej"
                     },
                     {
-                      "id": "4cb681f4-a0fb-5f7d-a4d6-dd74ec2c1763",
+                      "id": "28b26d79-fb17-5810-b223-937ef660b5e0",
                       "name": "Karate",
                       "techName": "karate"
                     },
                     {
-                      "id": "fc57f6b7-ff44-5031-8f99-f9aa9a7c77fd",
+                      "id": "44b92e1e-4856-5b49-ae17-08af9860f13f",
                       "name": "Kolarstwo",
                       "techName": "kolarstwo"
                     },
                     {
-                      "id": "a817f4e8-7c62-5229-84a6-815f89fab238",
+                      "id": "fd5b2119-f00e-5046-81c6-7cdca017c889",
                       "name": "Koszykówka",
                       "techName": "koszykowka"
                     },
                     {
-                      "id": "4ae9f95f-2380-5784-b0f5-c75361563a95",
+                      "id": "c6a245dd-de06-5765-9684-94eb31647883",
                       "name": "Lekkoatletyka",
                       "techName": "lekkoatletyka"
                     },
                     {
-                      "id": "fcba412a-57ad-51b7-8275-a4681b0e56f4",
+                      "id": "018280eb-a526-545d-9e3d-6fe3bb5c08b6",
                       "name": "Łucznictwo",
                       "techName": "lucznictwo"
                     },
                     {
-                      "id": "53c6e698-2054-5b70-991b-a4e1de97ce6d",
+                      "id": "d69c4786-3d30-5f09-af97-7b581c07f082",
                       "name": "Łyżwiarstwo",
                       "techName": "lyzwiarstwo"
                     },
                     {
-                      "id": "7738486d-c4e3-53c5-9738-794dc3d9a195",
+                      "id": "6ff6f038-7172-546c-a83e-6412a61a3ec7",
                       "name": "Narciarstwo klasyczne",
                       "techName": "narciarstwo_klasyczne"
                     },
                     {
-                      "id": "9bd876d1-4a28-53fd-b1e9-ececbfbeacba",
+                      "id": "ac6cee66-fad1-5ef0-804b-3dbbb2e4005c",
                       "name": "Piłka nożna",
                       "techName": "pilka_nozna"
                     },
                     {
-                      "id": "d8549b89-bad6-5941-ad72-8f587634c601",
+                      "id": "0d5f116e-ecf7-5297-ae95-b5be24e1bec0",
                       "name": "Piłka ręczna",
                       "techName": "pilka_reczna"
                     },
                     {
-                      "id": "fc43a3c6-ccff-5a9e-9be0-6256538365a9",
+                      "id": "1df9531e-98b1-5968-9dc9-08fdf126637b",
                       "name": "Piłka siatkowa",
                       "techName": "pilka_siatkowa"
                     },
                     {
-                      "id": "822b4fe4-661b-55bb-9cb3-8a9434c577cb",
+                      "id": "c866097b-42a5-55dc-9f8c-374b425bca8f",
                       "name": "Piłka wodna",
                       "techName": "pilka_wodna"
                     },
                     {
-                      "id": "399f25cb-4606-5615-b760-51f76dc30320",
+                      "id": "03ab46fd-2a85-5ea7-9ba4-d12a8972e14c",
                       "name": "Sport motocyklowy",
                       "techName": "sport_motocyklowy"
                     },
                     {
-                      "id": "c864d9f1-71f9-5e65-b3aa-4f4280628e35",
+                      "id": "b69e4d87-b98a-5957-aaab-73d244dc3b2e",
                       "name": "Sporty walki",
                       "techName": "sporty_walki"
                     },
                     {
-                      "id": "cbbc55c3-ac8f-5a02-9244-3867d497e864",
+                      "id": "ff1b7bb5-f37b-5f1d-8c6f-3b8c9f5868e1",
                       "name": "Sporty wodne",
                       "techName": "sporty_wodne"
                     },
                     {
-                      "id": "75180c52-365e-57d6-86a6-91f688a8d37a",
+                      "id": "c496d6e1-949a-525c-a6dd-ed142f147e50",
                       "name": "Tenis stołowy",
                       "techName": "tenis_stolowy"
                     },
                     {
-                      "id": "9ed841e9-f594-581f-afa6-c0b745d64cfa",
+                      "id": "a3c2f412-1018-566f-bea3-b261c65e81b9",
                       "name": "Tenis ziemny",
                       "techName": "tenis_ziemny"
                     },
                     {
-                      "id": "90832cc1-e0a7-5719-9716-743f5eac166e",
+                      "id": "2381cc92-bae4-5871-a211-4d03f5db70b1",
                       "name": "Unihokej",
                       "techName": "unihokej"
                     },
                     {
-                      "id": "681a8034-75bf-525e-8188-78c874ca77e8",
+                      "id": "ec7673f9-966f-5ddf-8dab-8c8c4000ceb6",
                       "name": "Zapasy",
                       "techName": "zapasy"
                     }
@@ -3333,7 +3267,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "b18dc0db-df5c-5c81-bde7-00c62fe3febc",
+                  "id": "d2dbaa70-0cf2-564f-a3a5-3ddf6dfca60f",
                   "type": "TEXT_FIELD",
                   "techName": "inna",
                   "title": "Inna",
@@ -3361,7 +3295,7 @@
           "rows": 5,
           "cols": 3,
           "field": {
-            "id": "f7d00402-1e15-5c33-8d0b-03c9ab39cb2a",
+            "id": "958454cd-02e7-584b-82f0-76938bc5daf1",
             "type": "SECTION",
             "techName": "osiagniecia_sportowe",
             "title": "Osiągnięcia sportowe",
@@ -3376,7 +3310,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "0c7ac2ee-2e9b-5613-9b88-5aa87c815cec",
+                  "id": "8699e30f-8d38-5758-8a1d-72a690b923a8",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_10",
                   "title": "",
@@ -3396,7 +3330,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "8699e30f-8d38-5758-8a1d-72a690b923a8",
+                  "id": "b18dc0db-df5c-5c81-bde7-00c62fe3febc",
                   "type": "TEXT_FIELD",
                   "techName": "opinia_macierzystego_klubu_sportowego",
                   "title": "Opinia macierzystego klubu sportowego",
@@ -3418,7 +3352,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "958454cd-02e7-584b-82f0-76938bc5daf1",
+                  "id": "f68f786c-1922-5fba-8ef2-b6e92b11a38f",
                   "type": "TEXT_FIELD",
                   "techName": "wymagane_zaswiadczenia",
                   "title": "Wymagane zaświadczenia",
@@ -3440,7 +3374,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "ccbd1355-21a0-524b-9c0c-a5dd2b3cfcd8",
+                  "id": "d8b301a7-5127-5251-80c2-fcfdb6b6e6af",
                   "type": "TEXT_FIELD",
                   "techName": "dodatkowe_informacje_o_osiagnieciach_sportowych",
                   "title": "Dodatkowe informacje o osiągnieciach sportowych",
@@ -3468,7 +3402,7 @@
           "rows": 4,
           "cols": 3,
           "field": {
-            "id": "e94c204d-d920-507a-8a14-e0e2a8134b59",
+            "id": "639fbbe9-3df9-5c2c-983a-47c940c046b7",
             "type": "SECTION",
             "techName": "zgoda_kandydata_pelnoletniego_do_stypendium_2",
             "title": "Zgoda kandydata pełnoletniego do stypendium",
@@ -3483,7 +3417,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "3b7c56e3-c6d5-5b1c-8132-91d0d7f2e06d",
+                  "id": "86c1dbc9-6e7f-5ddb-babf-0c6afcbb4ed3",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_11",
                   "title": "",
@@ -3503,10 +3437,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "9beb4a19-38e5-5d6f-a73d-90d58e1518ea",
+                  "id": "95beef5a-d1cb-5122-affb-37f36709185b",
                   "type": "TEXT_FIELD",
-                  "techName": "eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe",
-                  "title": "Eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe",
+                  "techName": "eceoreseoresoronesneeneosowawenowawowowawokowewow_es_se_ae_e_ae",
+                  "title": "Eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -3525,7 +3459,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "639fbbe9-3df9-5c2c-983a-47c940c046b7",
+                  "id": "cd30eefd-0cf8-596e-b69f-27e827633de2",
                   "type": "DATEPICKER",
                   "techName": "data_podpis_kandydata",
                   "title": "Data Podpis kandydata",
@@ -3553,7 +3487,7 @@
           "rows": 6,
           "cols": 3,
           "field": {
-            "id": "e4465d13-62b3-56de-b09c-210a6a37d0d9",
+            "id": "a479ef30-fbba-51ce-af76-c1a2a7e5cce2",
             "type": "SECTION",
             "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_stypendium_2",
             "title": "Zgoda w imieniu kandydata nieletniego do stypendium",
@@ -3568,7 +3502,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "61b07844-eb5f-5dfd-96eb-3450d7a28470",
+                  "id": "0573cdfb-a6e6-54e7-bd3a-f843dc3cf38d",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_12",
                   "title": "",
@@ -3588,10 +3522,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "ace63e4d-b817-51da-beab-2e92e7fbb2ec",
+                  "id": "e94c204d-d920-507a-8a14-e0e2a8134b59",
                   "type": "TEXT_FIELD",
-                  "techName": "eeeeceeeseeeeosoeneonowononowononowowon",
-                  "title": "Eeeeceeeseeeeosoeneonowononowononowowon",
+                  "techName": "text_field_1_ja_nizej_podpisany",
+                  "title": "1) Ja niżej podpisany",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -3610,10 +3544,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "0573cdfb-a6e6-54e7-bd3a-f843dc3cf38d",
+                  "id": "61de19db-e890-5e72-805b-4d3d7644f8d3",
                   "type": "TEXT_FIELD",
-                  "techName": "text_field_1_ja_nizej_podpisany",
-                  "title": "1) Ja niżej podpisany",
+                  "techName": "eeeeeeseseeesowowanowosowowososeosowanawewenowasesan",
+                  "title": "Eeeeeeseseeesowowanowosowowososeosowanawewenowasesan",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -3632,7 +3566,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "d48e5cd4-0e21-5c53-8a7a-771114116337",
+                  "id": "8d951229-2c57-57cc-9c18-502137ac6267",
                   "type": "DATEPICKER",
                   "techName": "data_podpis_rodzica",
                   "title": "Data podpis rodzica",
@@ -3654,7 +3588,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "a479ef30-fbba-51ce-af76-c1a2a7e5cce2",
+                  "id": "ace63e4d-b817-51da-beab-2e92e7fbb2ec",
                   "type": "TEXT_FIELD",
                   "techName": "opiekuna_prawnego",
                   "title": "Opiekuna prawnego",
@@ -3682,7 +3616,7 @@
           "rows": 5,
           "cols": 3,
           "field": {
-            "id": "b0b46663-b808-57cf-b77d-16b70ae8d8d2",
+            "id": "0913893e-6dc4-5ad4-8826-a5774fcac7b5",
             "type": "SECTION",
             "techName": "osiagniecia_sportowe_2",
             "title": "Osiągnięcia sportowe",
@@ -3697,7 +3631,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "ebeb3681-84d3-508f-bb0a-a89637461646",
+                  "id": "1bd53320-0b56-5d51-a866-f6526bd9e12c",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_13",
                   "title": "",
@@ -3717,7 +3651,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "1bd53320-0b56-5d51-a866-f6526bd9e12c",
+                  "id": "1810a267-6731-57bc-acd5-94fa76eea939",
                   "type": "TEXT_FIELD",
                   "techName": "opinia_macierzystego_klubu_sportowego_2",
                   "title": "Opinia macierzystego klubu sportowego",
@@ -3739,7 +3673,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "0913893e-6dc4-5ad4-8826-a5774fcac7b5",
+                  "id": "a8a5653f-fdec-5c31-898b-7033566a7c76",
                   "type": "TEXT_FIELD",
                   "techName": "wymagane_zaswiadczenia_2",
                   "title": "Wymagane zaświadczenia",
@@ -3761,7 +3695,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "5665a5ae-b88f-5f0a-9d50-938c2fc705c2",
+                  "id": "9d44bf60-325f-5950-9e06-346f843e1c3b",
                   "type": "TEXT_FIELD",
                   "techName": "dodatkowe_informacje_o_osiagnieciach_sportowych_2",
                   "title": "Dodatkowe informacje o osiągnieciach sportowych",
@@ -3789,7 +3723,7 @@
           "rows": 4,
           "cols": 3,
           "field": {
-            "id": "2c0a29d6-e254-5f5e-8d19-e1b8ed32e998",
+            "id": "8a816719-ec6c-5ca6-8266-282ceb719e5f",
             "type": "SECTION",
             "techName": "zgoda_kandydata_pelnoletniego_do_nagrody_2",
             "title": "Zgoda kandydata pełnoletniego do nagrody",
@@ -3804,7 +3738,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "46e20221-c8e5-531b-9734-d49362c8ba8f",
+                  "id": "c7fab2ab-1154-53b6-9cd3-00980c5f9bb9",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_14",
                   "title": "",
@@ -3824,10 +3758,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "14b36573-550f-5edd-901e-d258abeabe1d",
+                  "id": "f2aec0bb-d987-53d3-b93d-552a84e49069",
                   "type": "TEXT_FIELD",
-                  "techName": "eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe_2",
-                  "title": "Eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe",
+                  "techName": "eceoreseoresoronesneeneosowawenowawowowawokowewow_es_se_ae_e_ae_2",
+                  "title": "Eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -3846,7 +3780,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "8a816719-ec6c-5ca6-8266-282ceb719e5f",
+                  "id": "738fc24d-374b-5f1e-a260-93a1bfbbc3fe",
                   "type": "DATEPICKER",
                   "techName": "data_podpis_kandydata_2",
                   "title": "Data Podpis kandydata",
@@ -3874,7 +3808,7 @@
           "rows": 6,
           "cols": 3,
           "field": {
-            "id": "150e8afb-84fd-52d5-b3c2-d834333a9cf6",
+            "id": "128c9d2d-982f-5e42-891b-2bf7c5fbdcaa",
             "type": "SECTION",
             "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_nagrody_2",
             "title": "Zgoda w imieniu kandydata nieletniego do nagrody",
@@ -3889,11 +3823,11 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "c0ea870a-ba8c-51d0-8dea-ca16b2042a71",
+                  "id": "4e726795-2c07-59de-9242-2fcfe8bfbe92",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_15",
                   "title": "",
-                  "description": "wyrażam zgodę na przetwarzanie danych osobowych mojego dziecka/podopiecznego zawartych we wniosku w celu przekazania go do dalszego procedowania. 2) Oświadczam, że zapoznałem się z regulaminem przyznawania nagród sportowych Rady Miasta Zgierza i akceptuję wszystkie jego postanowienia. Wypełniony formularz zgody przechowuje właściwy administrator danych osobowych. II. Wniosek o przyznanie wyróżnienia sportowego Rady Miasta",
+                  "description": "wyrażam zgodę na przetwarzanie danych osobowych mojego dziecka/podopiecznego zawartych we wniosku w celu przekazania go do dalszego procedowania. 2) Oświadczam, że zapoznałem się z regulaminem przyznawania nagród sportowych Rady Miasta Zgierza i akceptuję wszystkie jego postanowienia. Wypełniony formularz zgody przechowuje właściwy administrator danych osobowych. I. Wniosek o przyznanie wyróżnienia sportowego Rady Miasta",
                   "options": [],
                   "validation": [],
                   "readOnly": false,
@@ -3909,7 +3843,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "f8fae6c9-8756-5e3a-988a-0ad34367801b",
+                  "id": "2c0a29d6-e254-5f5e-8d19-e1b8ed32e998",
                   "type": "TEXT_FIELD",
                   "techName": "text_field_1_ja_nizej_podpisany_2",
                   "title": "1) Ja niżej podpisany",
@@ -3931,7 +3865,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "4e726795-2c07-59de-9242-2fcfe8bfbe92",
+                  "id": "e6de9133-4aac-5df4-be17-7e57cac4d9f3",
                   "type": "DATEPICKER",
                   "techName": "data_podpis_rodzica_2",
                   "title": "Data podpis rodzica",
@@ -3953,7 +3887,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "5769e08c-fdf1-5770-bdcd-74d23d877deb",
+                  "id": "70bb1d16-2272-5632-9222-66fa4d1e3566",
                   "type": "TEXT_FIELD",
                   "techName": "opiekuna_prawnego_2",
                   "title": "Opiekuna prawnego",
@@ -3975,7 +3909,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "128c9d2d-982f-5e42-891b-2bf7c5fbdcaa",
+                  "id": "f8fae6c9-8756-5e3a-988a-0ad34367801b",
                   "type": "TEXT_FIELD",
                   "techName": "zgierza_2",
                   "title": "Zgierza",
@@ -4003,7 +3937,7 @@
           "rows": 6,
           "cols": 3,
           "field": {
-            "id": "d7a3cc0e-28e4-5f50-93ff-3269edf93c81",
+            "id": "fa0aea07-ed8d-5925-9bc1-a2e87fd43539",
             "type": "SECTION",
             "techName": "dane_trenera",
             "title": "Dane trenera",
@@ -4018,7 +3952,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "6607cf9b-a4dc-57ab-9b50-ce23c5c2af1f",
+                  "id": "3bd50056-37bc-589e-bbcf-6713c3155ae5",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_16",
                   "title": "",
@@ -4038,7 +3972,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "622b0d2a-6fb5-5df8-94a7-b77bb4b79a14",
+                  "id": "5c4dd472-c040-526b-8034-42eb5354a8ad",
                   "type": "TEXT_FIELD",
                   "techName": "dane_osobowe_kandydatki",
                   "title": "Dane osobowe kandydatki",
@@ -4060,7 +3994,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "3bd50056-37bc-589e-bbcf-6713c3155ae5",
+                  "id": "0f078103-6bdb-55bd-9465-6b425ca7c5fd",
                   "type": "TEXT_FIELD",
                   "techName": "kandydata_do_wyroznienia",
                   "title": "Kandydata do wyroznienia",
@@ -4082,7 +4016,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "fa0aea07-ed8d-5925-9bc1-a2e87fd43539",
+                  "id": "a9c2e055-b493-5668-a0ec-006e964e227c",
                   "type": "TEXT_FIELD",
                   "techName": "opinia_macierzystego_klubu_sportowego_3",
                   "title": "Opinia macierzystego klubu sportowego",
@@ -4104,7 +4038,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "cd0fd642-d422-5f4b-afcb-bcac89fe2fd1",
+                  "id": "622b0d2a-6fb5-5df8-94a7-b77bb4b79a14",
                   "type": "TEXT_FIELD",
                   "techName": "dodatkowe_informacje_o_osiagnieciach_sportowych_3",
                   "title": "Dodatkowe informacje o osiągnieciach sportowych",
@@ -4132,7 +4066,7 @@
           "rows": 4,
           "cols": 3,
           "field": {
-            "id": "70e92d9e-e274-514c-996c-0b7d97f8619e",
+            "id": "2cb39f7c-9c5e-587a-82dc-0a438daaaa65",
             "type": "SECTION",
             "techName": "zgoda_kandydata_do_wyroznienia_2",
             "title": "Zgoda kandydata do wyróżnienia",
@@ -4147,7 +4081,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "bd010476-95f1-5cef-9e09-2a25efdfdbe6",
+                  "id": "e3605e5d-1ae6-5147-a114-8d4141c9cb56",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_17",
                   "title": "",
@@ -4167,10 +4101,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "927bd811-2e02-585d-9f4d-b173a1a9ef29",
+                  "id": "ef951778-a20f-5d94-9c24-67c321fc0d5e",
                   "type": "TEXT_FIELD",
-                  "techName": "eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe_3",
-                  "title": "Eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe",
+                  "techName": "eceoreseoresoronesneeneosowawenowawowowawokowewow_es_se_ae_e_ae_3",
+                  "title": "Eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -4189,7 +4123,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "2cb39f7c-9c5e-587a-82dc-0a438daaaa65",
+                  "id": "a23d85aa-7ca7-5f3a-81ec-4f1804c4cef7",
                   "type": "DATEPICKER",
                   "techName": "data_podpis_kandydata_3",
                   "title": "Data Podpis kandydata",
@@ -4214,10 +4148,10 @@
         {
           "x": 0,
           "y": 58,
-          "rows": 3,
+          "rows": 4,
           "cols": 3,
           "field": {
-            "id": "aef669da-3661-58de-ad3f-12c33432f12a",
+            "id": "3940f7e9-8771-5240-97dd-c47cb07bba77",
             "type": "SECTION",
             "techName": "zgoda_podopiecznego_pelnoletniego_2",
             "title": "Zgoda podopiecznego pełnoletniego",
@@ -4232,7 +4166,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "3940f7e9-8771-5240-97dd-c47cb07bba77",
+                  "id": "d6a84705-fdde-557d-955e-cd8ccedd7dc5",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_18",
                   "title": "",
@@ -4252,10 +4186,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "4be34e58-4de1-5924-ab3e-b32dd7451895",
+                  "id": "70e92d9e-e274-514c-996c-0b7d97f8619e",
                   "type": "TEXT_FIELD",
-                  "techName": "eeeeveseeesesesonesesoe_ee_eee_wewasowewa",
-                  "title": "Eeeeveseeesesesonesesoe ee eee wewasowewa",
+                  "techName": "eeeeveseeereseeonoeesseoewawa_se_oo_see_oo_ee_o_eee_ae_e",
+                  "title": "Eeeeveseeereseeonoeesseoewawa se oo see oo ee o eee ae e",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -4267,6 +4201,28 @@
                   "questionOrder": 1,
                   "tooltipMessage": ""
                 }
+              },
+              {
+                "x": 0,
+                "y": 2,
+                "rows": 1,
+                "cols": 3,
+                "field": {
+                  "id": "71370cca-e962-595e-ab29-012a7af2032e",
+                  "type": "TEXT_FIELD",
+                  "techName": "ke",
+                  "title": "Ke",
+                  "description": "",
+                  "options": [],
+                  "validation": [
+                    "REQUIRED"
+                  ],
+                  "readOnly": false,
+                  "repeatingSectionGrid": [],
+                  "states": [],
+                  "questionOrder": 2,
+                  "tooltipMessage": ""
+                }
               }
             ],
             "states": [],
@@ -4276,11 +4232,11 @@
         },
         {
           "x": 0,
-          "y": 61,
-          "rows": 5,
+          "y": 62,
+          "rows": 6,
           "cols": 3,
           "field": {
-            "id": "c3e04d65-96b4-5fd8-89c3-4011ef592299",
+            "id": "1470fa49-c16a-5027-abe8-7412d033c7ac",
             "type": "SECTION",
             "techName": "zgoda_w_imieniu_podopiecznego_nieletniego_2",
             "title": "Zgoda w imieniu podopiecznego nieletniego",
@@ -4295,7 +4251,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "1d088dcb-8103-5434-8b34-a950e64fa36c",
+                  "id": "220c21f3-6c7d-508e-9ceb-2bfdca073cd1",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_19",
                   "title": "",
@@ -4315,10 +4271,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "aa8af368-87d8-50b2-b080-260d39d670fc",
+                  "id": "d9f4403d-91dc-5247-9ad8-05c238e23eed",
                   "type": "TEXT_FIELD",
-                  "techName": "eeeeveseeesesesonesesoe_ee_eee_wewasowewa_2",
-                  "title": "Eeeeveseeesesesonesesoe ee eee wewasowewa",
+                  "techName": "eeeeveseeereseeonoeesseoewawa_se_oo_see_oo_ee_o_eee_ae_e_2",
+                  "title": "Eeeeveseeereseeonoeesseoewawa se oo see oo ee o eee ae e",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -4337,10 +4293,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "5f5b8d4b-183f-526c-943b-63a0879aed88",
-                  "type": "DATEPICKER",
-                  "techName": "data_podpis_rodzica_3",
-                  "title": "Data podpis rodzica",
+                  "id": "f4851c2c-85d5-5b41-a28c-24eaeb712948",
+                  "type": "TEXT_FIELD",
+                  "techName": "ke_2",
+                  "title": "Ke",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -4359,7 +4315,29 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "220c21f3-6c7d-508e-9ceb-2bfdca073cd1",
+                  "id": "aa8af368-87d8-50b2-b080-260d39d670fc",
+                  "type": "DATEPICKER",
+                  "techName": "data_podpis_rodzica_3",
+                  "title": "Data podpis rodzica",
+                  "description": "",
+                  "options": [],
+                  "validation": [
+                    "REQUIRED"
+                  ],
+                  "readOnly": false,
+                  "repeatingSectionGrid": [],
+                  "states": [],
+                  "questionOrder": 3,
+                  "tooltipMessage": ""
+                }
+              },
+              {
+                "x": 0,
+                "y": 4,
+                "rows": 1,
+                "cols": 3,
+                "field": {
+                  "id": "5f5b8d4b-183f-526c-943b-63a0879aed88",
                   "type": "TEXT_FIELD",
                   "techName": "opiekuna_prawnego_3",
                   "title": "Opiekuna prawnego",
@@ -4371,7 +4349,7 @@
                   "readOnly": false,
                   "repeatingSectionGrid": [],
                   "states": [],
-                  "questionOrder": 3,
+                  "questionOrder": 4,
                   "tooltipMessage": ""
                 }
               }
@@ -4394,7 +4372,7 @@
           "rows": 4,
           "cols": 3,
           "field": {
-            "id": "2a4b65f8-d727-54c0-bec8-be036246d193",
+            "id": "0af2ebd7-c296-505f-a9e1-d381fd316dcc",
             "type": "SECTION",
             "techName": "dane_do_kontaktu",
             "title": "Dane do kontaktu",
@@ -4409,7 +4387,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "27cf3889-7a0a-5eaa-9b9d-12dd751d569b",
+                  "id": "38ffb2ac-9f32-5158-9aca-7997b4a1e9ea",
                   "type": "TEXT_FIELD",
                   "techName": "numer_telefonu",
                   "title": "Numer telefonu",
@@ -4433,7 +4411,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "8246c6f5-b60d-5667-8fe4-b27ee73cb570",
+                  "id": "d3e49b2a-29fe-5ff8-b17e-bb38c8f75118",
                   "type": "TEXT_FIELD",
                   "techName": "adres_skrytki_epuap",
                   "title": "Adres skrytki ePUAP",
@@ -4456,7 +4434,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "a1b743f0-61b1-532a-9047-1063b8c7e4a9",
+                  "id": "79a9819a-d4a0-5bd1-bd1a-005c14434246",
                   "type": "TEXT_FIELD",
                   "techName": "adres_do_e_doreczen",
                   "title": "Adres do e-Doręczeń",
@@ -4485,7 +4463,7 @@
           "rows": 6,
           "cols": 3,
           "field": {
-            "id": "1810a267-6731-57bc-acd5-94fa76eea939",
+            "id": "96055def-ef31-5086-849b-efff20110f43",
             "type": "SECTION",
             "techName": "dane_do_kontaktu_2",
             "title": "Dane do kontaktu",
@@ -4500,7 +4478,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "385f742d-25a6-5513-84d5-0c569fdee424",
+                  "id": "e4465d13-62b3-56de-b09c-210a6a37d0d9",
                   "type": "TEXT_FIELD",
                   "techName": "numer_telefonu_2",
                   "title": "Numer telefonu",
@@ -4522,7 +4500,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "23942126-0077-5150-bf44-c7e67cb6c98d",
+                  "id": "273333a4-64a9-5733-a479-c73cac7be6ed",
                   "type": "TEXT_FIELD",
                   "techName": "numer_telefonu_3",
                   "title": "Numer telefonu",
@@ -4544,7 +4522,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "e4b27357-2313-5a97-a6d3-11a147187ed0",
+                  "id": "a033078f-85c0-535b-bdfc-ed7a192eddd4",
                   "type": "TEXT_FIELD",
                   "techName": "numer_telefonu_4",
                   "title": "Numer telefonu",
@@ -4566,7 +4544,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "5125d9ec-8d53-5100-983f-24ad9fcd7c11",
+                  "id": "74ccfb26-a26d-5ae5-b8f2-4f150bce6ae4",
                   "type": "TEXT_FIELD",
                   "techName": "adres_skrytki_epuap_2",
                   "title": "Adres skrytki ePUAP",
@@ -4589,7 +4567,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "d5c0ad27-f0f9-52bc-883b-d65ee3922256",
+                  "id": "e4b27357-2313-5a97-a6d3-11a147187ed0",
                   "type": "TEXT_FIELD",
                   "techName": "adres_do_e_doreczen_2",
                   "title": "Adres do e-Doręczeń",
@@ -4618,7 +4596,7 @@
           "rows": 6,
           "cols": 3,
           "field": {
-            "id": "5c4dd472-c040-526b-8034-42eb5354a8ad",
+            "id": "a76b246b-5bff-5a8e-88aa-75e0c884e3f7",
             "type": "SECTION",
             "techName": "dane_do_kontaktu_3",
             "title": "Dane do kontaktu",
@@ -4633,7 +4611,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "6fbf33ff-1558-5a4a-8aaa-75458d8d472b",
+                  "id": "150e8afb-84fd-52d5-b3c2-d834333a9cf6",
                   "type": "TEXT_FIELD",
                   "techName": "numer_telefonu_5",
                   "title": "Numer telefonu",
@@ -4655,7 +4633,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "019715c1-e38d-5188-9f47-0d1deb41b638",
+                  "id": "cb785fea-abb2-5a3a-b062-fd1a9d61a440",
                   "type": "TEXT_FIELD",
                   "techName": "numer_telefonu_6",
                   "title": "Numer telefonu",
@@ -4677,7 +4655,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "e10f5b20-d86d-53c4-a97d-9c2047abb362",
+                  "id": "1d29d35d-0c20-58cb-bd2e-da4b739f973d",
                   "type": "TEXT_FIELD",
                   "techName": "numer_telefonu_7",
                   "title": "Numer telefonu",
@@ -4699,7 +4677,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "1ee612cd-6f66-50e3-8567-395647a03d26",
+                  "id": "e10f5b20-d86d-53c4-a97d-9c2047abb362",
                   "type": "TEXT_FIELD",
                   "techName": "adres_skrytki_epuap_3",
                   "title": "Adres skrytki ePUAP",
@@ -4722,7 +4700,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "12de914a-8f0e-56ba-9a9b-cef8f538a8c6",
+                  "id": "1edf7975-c8f1-5c1c-8edb-d7d601e96203",
                   "type": "TEXT_FIELD",
                   "techName": "adres_do_e_doreczen_3",
                   "title": "Adres do e-Doręczeń",
@@ -4751,7 +4729,7 @@
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "95beef5a-d1cb-5122-affb-37f36709185b",
+            "id": "0c7ac2ee-2e9b-5613-9b88-5aa87c815cec",
             "type": "SECTION",
             "techName": "zgody_i_oswiadczenia",
             "title": "Zgody i oświadczenia",
@@ -4766,7 +4744,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "e5a2a212-48fd-506e-804c-061d244fe5a0",
+                  "id": "ccbd1355-21a0-524b-9c0c-a5dd2b3cfcd8",
                   "type": "CONSENT_SECTION",
                   "techName": "consent_section",
                   "title": "",
@@ -4801,7 +4779,7 @@
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "f2aec0bb-d987-53d3-b93d-552a84e49069",
+            "id": "ebeb3681-84d3-508f-bb0a-a89637461646",
             "type": "SECTION",
             "techName": "zgody_i_oswiadczenia_2",
             "title": "Zgody i oświadczenia",
@@ -4816,7 +4794,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "f4919694-a964-5989-85f0-72d6cf327bd5",
+                  "id": "5665a5ae-b88f-5f0a-9d50-938c2fc705c2",
                   "type": "CONSENT_SECTION",
                   "techName": "consent_section_2",
                   "title": "",
@@ -4851,7 +4829,7 @@
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "ef951778-a20f-5d94-9c24-67c321fc0d5e",
+            "id": "ce03e5ca-9988-5824-ada4-437855f31ae8",
             "type": "SECTION",
             "techName": "zgody_i_oswiadczenia_3",
             "title": "Zgody i oświadczenia",
@@ -4866,7 +4844,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "bd23718c-304b-5583-a1ad-250d6fabaa2f",
+                  "id": "8027e93b-b1fc-59c3-96cd-2ca4cd85dd59",
                   "type": "CONSENT_SECTION",
                   "techName": "consent_section_3",
                   "title": "",
@@ -4908,7 +4886,7 @@
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "80d35239-3bf3-5daa-a000-ceea6c4a2a29",
+            "id": "de2b0b35-977c-54a7-86ef-8fc60a3ac687",
             "type": "SECTION",
             "techName": "podglad_uzupelnionego_wniosku",
             "title": "Podgląd uzupełnionego wniosku",
@@ -4923,7 +4901,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "de2b0b35-977c-54a7-86ef-8fc60a3ac687",
+                  "id": "c3e04d65-96b4-5fd8-89c3-4011ef592299",
                   "type": "INFO_SECTION",
                   "techName": "podglad",
                   "title": "Podgląd",

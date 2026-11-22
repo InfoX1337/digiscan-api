@@ -318,7 +318,7 @@
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "25c96587-055c-5860-b829-4d420cb36071",
+            "id": "54131817-d469-5074-a7a2-d59a5a8278b4",
             "type": "SECTION",
             "techName": "szczegoly_wniosku",
             "title": "Szczegóły wniosku",
@@ -333,7 +333,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "447305e7-e085-5bcc-90b6-4f3916884ee9",
+                  "id": "046fced6-0c6e-567e-98df-91fac204bf3f",
                   "type": "TEXT_FIELD",
                   "techName": "imie",
                   "title": "Imię",
@@ -355,7 +355,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "046fced6-0c6e-567e-98df-91fac204bf3f",
+                  "id": "c5f7bad8-e5cb-52c1-a70c-4cece341c35c",
                   "type": "TEXT_FIELD",
                   "techName": "nazwisko",
                   "title": "Nazwisko",
@@ -472,10 +472,10 @@
         {
           "x": 0,
           "y": 4,
-          "rows": 6,
+          "rows": 7,
           "cols": 3,
           "field": {
-            "id": "717041e8-1a8a-5e6d-a132-abb6031f85d2",
+            "id": "25c96587-055c-5860-b829-4d420cb36071",
             "type": "SECTION",
             "techName": "szczegoly_wniosku_2",
             "title": "Szczegóły wniosku",
@@ -490,11 +490,11 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "c5f7bad8-e5cb-52c1-a70c-4cece341c35c",
+                  "id": "717041e8-1a8a-5e6d-a132-abb6031f85d2",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_2",
                   "title": "",
-                  "description": "1. Col wynajęcia ŚWIELICY: szcsyszsyśsśsyksHrsKISRONNKKGHAYNEKO E ENWKZANY ASA REKOK KKK KSKANYJ E ENWKANAN RAA",
+                  "description": "1. Col wynajęcia ŚWIELICY: szcsszsyśsśswksHPsKISRONNKNGKAYNESACHNENWKZANY ASA REKONKONKEAEAKENYO E ENWKCANA ARA",
                   "options": [],
                   "validation": [],
                   "readOnly": false,
@@ -534,8 +534,8 @@
                 "field": {
                   "id": "a4e4d2a6-cdb5-5d22-b247-ff4952ba39c7",
                   "type": "TEXT_FIELD",
-                  "techName": "e_eeseeseeses",
-                  "title": "E.-eeseeseeses",
+                  "techName": "se_eeseseesssses",
+                  "title": "Se.eeseseesssses",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -577,6 +577,28 @@
                 "cols": 3,
                 "field": {
                   "id": "b6a1ade2-775a-5da7-aedd-266dc2562ce7",
+                  "type": "DATEPICKER",
+                  "techName": "data_do",
+                  "title": "Data do",
+                  "description": "",
+                  "options": [],
+                  "validation": [
+                    "REQUIRED"
+                  ],
+                  "readOnly": false,
+                  "repeatingSectionGrid": [],
+                  "states": [],
+                  "questionOrder": 4,
+                  "tooltipMessage": ""
+                }
+              },
+              {
+                "x": 0,
+                "y": 5,
+                "rows": 1,
+                "cols": 3,
+                "field": {
+                  "id": "447305e7-e085-5bcc-90b6-4f3916884ee9",
                   "type": "TEXT_FIELD",
                   "techName": "rodzaj_uroczystosci_np_wesele_urodziny_zabawa_itp",
                   "title": "Rodzaj uroczystości, np. wesele, urodziny, zabawa itp.",
@@ -588,7 +610,7 @@
                   "readOnly": false,
                   "repeatingSectionGrid": [],
                   "states": [],
-                  "questionOrder": 4,
+                  "questionOrder": 5,
                   "tooltipMessage": ""
                 }
               }
@@ -663,7 +685,7 @@
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "f31727bb-4444-58e8-9f45-c7f579012ebd",
+            "id": "7d3ca654-7d07-57d4-abea-53e73a5224e8",
             "type": "SECTION",
             "techName": "podglad_uzupelnionego_wniosku",
             "title": "Podgląd uzupełnionego wniosku",
@@ -678,7 +700,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "54131817-d469-5074-a7a2-d59a5a8278b4",
+                  "id": "f31727bb-4444-58e8-9f45-c7f579012ebd",
                   "type": "INFO_SECTION",
                   "techName": "podglad",
                   "title": "Podgląd",

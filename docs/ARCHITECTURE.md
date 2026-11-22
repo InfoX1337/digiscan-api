@@ -9,7 +9,7 @@
                        ▼
         ┌─────────────────────────────┐        ┌──────────────────────────┐
         │ kontener api (FastAPI)      │ HTTP   │ kontener ollama          │
-        │ python:3.14.0-alpine3.22    │───────▶│ lokalny model open-weights│
+        │ python:3.14.10-alpine3.24   │───────▶│ lokalny model open-weights│
         │ user app, read-only, tmpfs  │ (opcj.)│ (qwen3.5:4b, Apache-2.0) │
         │ Tesseract OCR (pol)         │        └──────────────────────────┘
         └─────────────────────────────┘

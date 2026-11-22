@@ -93,7 +93,7 @@
       "techName": "twoje_dane",
       "title": "Twoje dane",
       "type": "SECTION",
-      "confidence": 0.68,
+      "confidence": 0.69,
       "sources": [
         {
           "page": 1,
@@ -121,7 +121,7 @@
       "techName": "nazwa",
       "title": "Nazwa",
       "type": "TEXT_FIELD",
-      "confidence": 0.63,
+      "confidence": 0.64,
       "sources": [
         {
           "page": 1,
@@ -1159,7 +1159,7 @@
       "techName": "g_dd_mm_rrrr",
       "title": "G©dd-mm-rrrr",
       "type": "SECTION",
-      "confidence": 0.74,
+      "confidence": 0.75,
       "sources": [
         {
           "page": 1,
@@ -1215,7 +1215,7 @@
       "techName": "wysokosc_oplaty",
       "title": "Wysokość opłaty",
       "type": "NUMBER",
-      "confidence": 0.71,
+      "confidence": 0.72,
       "sources": [
         {
           "page": 1,
@@ -1243,7 +1243,7 @@
       "techName": "nazwa_organu_2",
       "title": "Nazwa organu",
       "type": "TEXT_FIELD",
-      "confidence": 0.71,
+      "confidence": 0.72,
       "sources": [
         {
           "page": 1,
@@ -1271,7 +1271,7 @@
       "techName": "uzasadnienie_wniosku",
       "title": "Uzasadnienie wniosku",
       "type": "SECTION",
-      "confidence": 0.64,
+      "confidence": 0.65,
       "sources": [
         {
           "page": 1,
@@ -1299,7 +1299,7 @@
       "techName": "uzasadnienie_wniosku_2",
       "title": "Uzasadnienie wniosku",
       "type": "TEXTAREA",
-      "confidence": 0.64,
+      "confidence": 0.65,
       "sources": [
         {
           "page": 1,
@@ -1387,7 +1387,7 @@
       "techName": "g_dd_mm_rrrr_2",
       "title": "G©dd-mm-rrrr",
       "type": "SECTION",
-      "confidence": 0.38,
+      "confidence": 0.45,
       "sources": [
         {
           "page": 1,
@@ -1415,7 +1415,7 @@
       "techName": "g_dd_mm_rrrr_3",
       "title": "G©dd-mm-rrrr",
       "type": "DATEPICKER",
-      "confidence": 0.38,
+      "confidence": 0.45,
       "sources": [
         {
           "page": 1,
@@ -1443,7 +1443,7 @@
       "techName": "dane_kontaktowe_wnioskodawcy",
       "title": "Dane kontaktowe wnioskodawcy",
       "type": "SECTION",
-      "confidence": 0.72,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -1501,7 +1501,7 @@
       "techName": "adres_e_mail",
       "title": "Adres e-mail",
       "type": "TEXT_FIELD",
-      "confidence": 0.72,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -1560,14 +1560,14 @@
       "fieldId": "1db6c35b-50c3-5182-8fbe-17111fdf44d6",
       "techName": "g_dd_mm_rrrr_2",
       "title": "G©dd-mm-rrrr",
-      "confidence": 0.38,
+      "confidence": 0.45,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
       "fieldId": "f18e81ec-bdbd-54aa-9e6e-0ef87bf5361b",
       "techName": "g_dd_mm_rrrr_3",
       "title": "G©dd-mm-rrrr",
-      "confidence": 0.38,
+      "confidence": 0.45,
       "reason": "pole wynika z nagłówka sekcji (miejsce do wpisania pod nagłówkiem)"
     },
     {
@@ -1880,8 +1880,8 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 1434,
-    "infer": 3,
+    "extract": 1333,
+    "infer": 4,
     "dict": 1,
     "build": 1,
     "validate": 10

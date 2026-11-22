@@ -4387,9 +4387,9 @@
   "timings": {
     "extract": 15,
     "infer": 17,
-    "dict": 2,
+    "dict": 3,
     "build": 1,
-    "validate": 34
+    "validate": 32
   },
   "llm": {
     "used": false

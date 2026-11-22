@@ -2,7 +2,7 @@
   "filename": "Wniosek o zwrot opłaty skarbowej.png",
   "format": "image",
   "ocr": true,
-  "confidence": 0.68,
+  "confidence": 0.69,
   "fields": {
     "fe810756-04ea-5299-82ef-ec507949decc": {
       "id": "fe810756-04ea-5299-82ef-ec507949decc",
@@ -1328,7 +1328,7 @@
       "techName": "g_dd_mm_rrrr_2",
       "title": "G©dd-mm-rrrr",
       "type": "SECTION",
-      "confidence": 0.36,
+      "confidence": 0.45,
       "sources": [
         {
           "page": 1,
@@ -1356,7 +1356,7 @@
       "techName": "g_dd_mm_rrrr_3",
       "title": "G©dd-mm-rrrr",
       "type": "DATEPICKER",
-      "confidence": 0.36,
+      "confidence": 0.45,
       "sources": [
         {
           "page": 1,
@@ -1501,14 +1501,14 @@
       "fieldId": "940d6e38-7d29-5b76-b02c-22f1f7723c8f",
       "techName": "g_dd_mm_rrrr_2",
       "title": "G©dd-mm-rrrr",
-      "confidence": 0.36,
+      "confidence": 0.45,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
       "fieldId": "3b4c8818-7ebd-58fa-a91f-e754910e0c61",
       "techName": "g_dd_mm_rrrr_3",
       "title": "G©dd-mm-rrrr",
-      "confidence": 0.36,
+      "confidence": 0.45,
       "reason": "pole wynika z nagłówka sekcji (miejsce do wpisania pod nagłówkiem)"
     },
     {
@@ -1821,7 +1821,7 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 1359,
+    "extract": 1243,
     "infer": 3,
     "dict": 1,
     "build": 1,

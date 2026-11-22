@@ -3514,10 +3514,10 @@
   ],
   "timings": {
     "extract": 3,
-    "infer": 18,
+    "infer": 20,
     "dict": 3,
     "build": 2,
-    "validate": 33
+    "validate": 35
   },
   "llm": {
     "used": false

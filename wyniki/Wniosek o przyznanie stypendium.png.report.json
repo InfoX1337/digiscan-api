@@ -60,12 +60,12 @@
         "adresat wniosku z nagłówka dokumentu"
       ]
     },
-    "228d2498-7208-5ac2-a227-940c5dffe2ac": {
-      "id": "228d2498-7208-5ac2-a227-940c5dffe2ac",
+    "83dec20b-f898-577d-a4a9-8ed17e495b3c": {
+      "id": "83dec20b-f898-577d-a4a9-8ed17e495b3c",
       "techName": "wnioskodawca",
       "title": "Wnioskodawca",
       "type": "SECTION",
-      "confidence": 0.26,
+      "confidence": 0.29,
       "sources": [
         {
           "page": 1,
@@ -88,8 +88,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "0af2ebd7-c296-505f-a9e1-d381fd316dcc": {
-      "id": "0af2ebd7-c296-505f-a9e1-d381fd316dcc",
+    "fa959613-4821-5e3b-a411-32c4762eb4f6": {
+      "id": "fa959613-4821-5e3b-a411-32c4762eb4f6",
       "techName": "text_block",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -157,72 +157,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "38ffb2ac-9f32-5158-9aca-7997b4a1e9ea": {
-      "id": "38ffb2ac-9f32-5158-9aca-7997b4a1e9ea",
-      "techName": "eesereseeeroeeroneeenoenawe",
-      "title": "Eesereseeeroeeroneeenoenawe",
-      "type": "TEXT_FIELD",
-      "confidence": 0.18,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 198.0,
-            "y": 3404.0,
-            "w": 1261.0,
-            "h": 37.0
-          },
-          "text": "Seria i numer dowodu osobistego  eesereseeeroeeroneeenoenawe ee ee ee aneewowa es ak eee on ee ee oa es se eee seee aaa es",
-          "blockIds": [
-            "p1-b21",
-            "p1-b22",
-            "p1-b23"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "etykieta w dokumencie"
-      ]
-    },
     "4ae6d726-ca4b-58cd-8a6f-537ee4418b71": {
       "id": "4ae6d726-ca4b-58cd-8a6f-537ee4418b71",
-      "techName": "aneewowa_es_ak_eee_on_ee_ee_oa_es_se",
-      "title": "Aneewowa es ak eee on ee ee oa es se",
+      "techName": "seesvovosososooneoroneoeoenawewawawowawawowesawe",
+      "title": "Seesvovosososooneoroneoeoenawewawawowawawowesawe",
       "type": "TEXT_FIELD",
-      "confidence": 0.13,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 198.0,
-            "y": 3404.0,
-            "w": 1261.0,
-            "h": 37.0
-          },
-          "text": "Seria i numer dowodu osobistego  eesereseeeroeeroneeenoenawe ee ee ee aneewowa es ak eee on ee ee oa es se eee seee aaa es",
-          "blockIds": [
-            "p1-b21",
-            "p1-b22",
-            "p1-b23"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "pole w treści zdania – sprawdź tytuł"
-      ]
-    },
-    "803486bf-0375-5e29-9c35-f442c124437d": {
-      "id": "803486bf-0375-5e29-9c35-f442c124437d",
-      "techName": "seesvovessvosonoeworonesoeonwaweaewawowawawowewawe_ee_awe_se_owa_es_owa_w_ee_aa",
-      "title": "Seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es",
-      "type": "TEXT_FIELD",
-      "confidence": 0.09,
+      "confidence": 0.14,
       "sources": [
         {
           "page": 1,
@@ -232,7 +172,7 @@
             "w": 1258.0,
             "h": 37.0
           },
-          "text": "Numer telefonu (opcjonalnie)  seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es sn ee or ee",
+          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
           "blockIds": [
             "p1-b24",
             "p1-b25",
@@ -244,11 +184,41 @@
         "rules"
       ],
       "reasons": [
-        "pole w treści zdania – sprawdź tytuł"
+        "etykieta w dokumencie"
       ]
     },
-    "c4dbfee4-70f4-5b8a-b79f-00d413cbaa1b": {
-      "id": "c4dbfee4-70f4-5b8a-b79f-00d413cbaa1b",
+    "27cf3889-7a0a-5eaa-9b9d-12dd751d569b": {
+      "id": "27cf3889-7a0a-5eaa-9b9d-12dd751d569b",
+      "techName": "owa_es_ow",
+      "title": "Owa es ow",
+      "type": "TEXT_FIELD",
+      "confidence": 0.14,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 3473.0,
+            "w": 1258.0,
+            "h": 37.0
+          },
+          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
+          "blockIds": [
+            "p1-b24",
+            "p1-b25",
+            "p1-b26"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "803486bf-0375-5e29-9c35-f442c124437d": {
+      "id": "803486bf-0375-5e29-9c35-f442c124437d",
       "techName": "dane_klubu_sportowego",
       "title": "Dane klubu sportowego",
       "type": "TEXT_FIELD",
@@ -275,12 +245,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "78cac623-5e7d-5f0b-8664-064b6e042fec": {
-      "id": "78cac623-5e7d-5f0b-8664-064b6e042fec",
+    "c4dbfee4-70f4-5b8a-b79f-00d413cbaa1b": {
+      "id": "c4dbfee4-70f4-5b8a-b79f-00d413cbaa1b",
       "techName": "nazwa_klubu_sportowego",
       "title": "Nazwa klubu sportowego",
       "type": "TEXT_FIELD",
-      "confidence": 0.1,
+      "confidence": 0.12,
       "sources": [
         {
           "page": 1,
@@ -290,7 +260,37 @@
             "w": 1254.0,
             "h": 37.0
           },
-          "text": "Nazwa klubu sportowego  eeseeesesesoneoroneoeoewawe seee see ako ses oo awaw es oe see see see eee o eee ee see se seee see w o e aa nn",
+          "text": "Nazwa klubu sportowego  eeseeeeesosoneononesoe eee see seee waw oo ses akekataw es oe see k ee eee eee aa e eee see ne seee se es o eee",
+          "blockIds": [
+            "p1-b31",
+            "p1-b32",
+            "p1-b33"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "78cac623-5e7d-5f0b-8664-064b6e042fec": {
+      "id": "78cac623-5e7d-5f0b-8664-064b6e042fec",
+      "techName": "eeseeeeesosoneononesoe",
+      "title": "Eeseeeeesosoneononesoe",
+      "type": "TEXT_FIELD",
+      "confidence": 0.12,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 3726.0,
+            "w": 1254.0,
+            "h": 37.0
+          },
+          "text": "Nazwa klubu sportowego  eeseeeeesosoneononesoe eee see seee waw oo ses akekataw es oe see k ee eee eee aa e eee see ne seee se es o eee",
           "blockIds": [
             "p1-b31",
             "p1-b32",
@@ -307,10 +307,10 @@
     },
     "c4c57bd6-9303-5ea8-a2c3-4cb1bbb90258": {
       "id": "c4c57bd6-9303-5ea8-a2c3-4cb1bbb90258",
-      "techName": "eeseeesesesoneoroneoeoewawe",
-      "title": "Eeseeesesesoneoroneoeoewawe",
+      "techName": "waw_oo_ses_akekataw_es_oe_see_k",
+      "title": "Waw oo ses akekataw es oe see k",
       "type": "TEXT_FIELD",
-      "confidence": 0.1,
+      "confidence": 0.08,
       "sources": [
         {
           "page": 1,
@@ -320,7 +320,7 @@
             "w": 1254.0,
             "h": 37.0
           },
-          "text": "Nazwa klubu sportowego  eeseeesesesoneoroneoeoewawe seee see ako ses oo awaw es oe see see see eee o eee ee see se seee see w o e aa nn",
+          "text": "Nazwa klubu sportowego  eeseeeeesosoneononesoe eee see seee waw oo ses akekataw es oe see k ee eee eee aa e eee see ne seee se es o eee",
           "blockIds": [
             "p1-b31",
             "p1-b32",
@@ -332,29 +332,29 @@
         "rules"
       ],
       "reasons": [
-        "etykieta w dokumencie"
+        "pole w treści zdania – sprawdź tytuł"
       ]
     },
     "0601ba8c-5110-56b2-b103-3572383eecd5": {
       "id": "0601ba8c-5110-56b2-b103-3572383eecd5",
-      "techName": "ako_ses_oo_awaw",
-      "title": "Ako ses oo awaw",
+      "techName": "inny_adres_korespondencyjny",
+      "title": "Inny adres korespondencyjny",
       "type": "TEXT_FIELD",
-      "confidence": 0.1,
+      "confidence": 0.11,
       "sources": [
         {
           "page": 1,
           "bbox": {
-            "x": 199.0,
-            "y": 3726.0,
-            "w": 1254.0,
+            "x": 238.0,
+            "y": 4070.0,
+            "w": 1217.0,
             "h": 37.0
           },
-          "text": "Nazwa klubu sportowego  eeseeesesesoneoroneoeoewawe seee see ako ses oo awaw es oe see see see eee o eee ee see se seee see w o e aa nn",
+          "text": "o inny adres korespondencyjny  eseesesessreeeeneeenesewanonowonosa es ote ses oawasa ee ee eee oo ee ee ses o so ses an e see oa ee",
           "blockIds": [
-            "p1-b31",
-            "p1-b32",
-            "p1-b33"
+            "p1-b41",
+            "p1-b42",
+            "p1-b43"
           ]
         }
       ],
@@ -367,24 +367,24 @@
     },
     "3361f4b1-cc41-5433-84d0-a9f56c6facb1": {
       "id": "3361f4b1-cc41-5433-84d0-a9f56c6facb1",
-      "techName": "eevoveeevesosawewononenoroewsoeoewawe_se_awa_seee_wow_oo_ee_w_awa",
-      "title": "Eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa",
+      "techName": "eseesesessreeeeneeenesewanonowonosa_es_ote_ses_oawasa_ee_ee_eee_oo_ee_ee_ses_o_s",
+      "title": "Eseesesessreeeeneeenesewanonowonosa es ote ses oawasa ee ee eee oo ee ee ses o so ses an",
       "type": "TEXT_FIELD",
-      "confidence": 0.04,
+      "confidence": 0.08,
       "sources": [
         {
           "page": 1,
           "bbox": {
-            "x": 197.0,
-            "y": 3859.0,
-            "w": 1261.0,
+            "x": 238.0,
+            "y": 4070.0,
+            "w": 1217.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "o inny adres korespondencyjny  eseesesessreeeeneeenesewanonowonosa es ote ses oawasa ee ee eee oo ee ee ses o so ses an e see oa ee",
           "blockIds": [
-            "p1-b35",
-            "p1-b36",
-            "p1-b37"
+            "p1-b41",
+            "p1-b42",
+            "p1-b43"
           ]
         }
       ],
@@ -395,102 +395,12 @@
         "pole w treści zdania – sprawdź tytuł"
       ]
     },
-    "d3e49b2a-29fe-5ff8-b17e-bb38c8f75118": {
-      "id": "d3e49b2a-29fe-5ff8-b17e-bb38c8f75118",
-      "techName": "inny_adres_korespondencyjny",
-      "title": "Inny adres korespondencyjny",
-      "type": "TEXT_FIELD",
-      "confidence": 0.16,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 238.0,
-            "y": 4070.0,
-            "w": 1217.0,
-            "h": 37.0
-          },
-          "text": "o inny adres korespondencyjny  eseereseseseeeeweeeawewononowonosaseeoneeaeoawewe ee ee eee oo seee ses awe see an eee aa ee",
-          "blockIds": [
-            "p1-b41",
-            "p1-b42",
-            "p1-b43"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "etykieta w dokumencie"
-      ]
-    },
-    "79a9819a-d4a0-5bd1-bd1a-005c14434246": {
-      "id": "79a9819a-d4a0-5bd1-bd1a-005c14434246",
-      "techName": "eseereseseseeeeweeeawewononowonosaseeoneeaeoawewe",
-      "title": "Eseereseseseeeeweeeawewononowonosaseeoneeaeoawewe",
-      "type": "TEXT_FIELD",
-      "confidence": 0.16,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 238.0,
-            "y": 4070.0,
-            "w": 1217.0,
-            "h": 37.0
-          },
-          "text": "o inny adres korespondencyjny  eseereseseseeeeweeeawewononowonosaseeoneeaeoawewe ee ee eee oo seee ses awe see an eee aa ee",
-          "blockIds": [
-            "p1-b41",
-            "p1-b42",
-            "p1-b43"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "etykieta w dokumencie"
-      ]
-    },
     "d89eb100-4a2d-5833-b202-9390233e02d9": {
       "id": "d89eb100-4a2d-5833-b202-9390233e02d9",
-      "techName": "awe",
-      "title": "Awe",
+      "techName": "eeversereeeeenereeneneneewoneenene_see_eeneenenew",
+      "title": "Eeversereeeeenereeneneneewoneenene see eeneenenew",
       "type": "TEXT_FIELD",
-      "confidence": 0.16,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 238.0,
-            "y": 4070.0,
-            "w": 1217.0,
-            "h": 37.0
-          },
-          "text": "o inny adres korespondencyjny  eseereseseseeeeweeeawewononowonosaseeoneeaeoawewe ee ee eee oo seee ses awe see an eee aa ee",
-          "blockIds": [
-            "p1-b41",
-            "p1-b42",
-            "p1-b43"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "etykieta w dokumencie"
-      ]
-    },
-    "415cdab2-060c-59b8-96fc-bf3fdc6ccd47": {
-      "id": "415cdab2-060c-59b8-96fc-bf3fdc6ccd47",
-      "techName": "eeververeeesesereeneneewenenoeneneneeeeneenane",
-      "title": "Eeververeeesesereeneneewenenoeneneneeeeneenane",
-      "type": "TEXT_FIELD",
-      "confidence": 0.21,
+      "confidence": 0.18,
       "sources": [
         {
           "page": 1,
@@ -500,7 +410,7 @@
             "w": 1193.0,
             "h": 38.0
           },
-          "text": "eDoręczenia - adres skrzynki:  eeververeeesesereeneneewenenoeneneneeeeneenane ee eenen eee ee ee es eee eee see",
+          "text": "eDoręczenia - adres skrzynki:  eeversereeeeenereeneneneewoneenene see eeneenenew ee eenen eee eee ee en e ne eee seee",
           "blockIds": [
             "p1-b45",
             "p1-b46",
@@ -515,8 +425,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "098c7ab7-4cf3-52c8-8379-a85989500944": {
-      "id": "098c7ab7-4cf3-52c8-8379-a85989500944",
+    "379be171-c5bf-576b-ace5-f618a35711ce": {
+      "id": "379be171-c5bf-576b-ace5-f618a35711ce",
       "techName": "twoje_dane",
       "title": "Twoje dane",
       "type": "SECTION",
@@ -548,7 +458,7 @@
       "techName": "imie",
       "title": "Imię",
       "type": "TEXT_FIELD",
-      "confidence": 0.53,
+      "confidence": 0.55,
       "sources": [
         {
           "page": 1,
@@ -579,7 +489,7 @@
       "techName": "nazwisko",
       "title": "Nazwisko",
       "type": "TEXT_FIELD",
-      "confidence": 0.72,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -619,7 +529,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Seria i numer dowodu osobistego  eesereseeeroeeroneeenoenawe ee ee ee aneewowa es ak eee on ee ee oa es se eee seee aaa es",
+          "text": "Seria i numer dowodu osobistego  eesereseseeneeroneseronewe ee enewaanawokowa see ak eee o ke see oa ee se eee se eee ne es",
           "blockIds": [
             "p1-b21",
             "p1-b22",
@@ -634,8 +544,8 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "0180861b-b9ea-5144-87cc-e6bec5585543": {
-      "id": "0180861b-b9ea-5144-87cc-e6bec5585543",
+    "228d2498-7208-5ac2-a227-940c5dffe2ac": {
+      "id": "228d2498-7208-5ac2-a227-940c5dffe2ac",
       "techName": "adres_zamieszkania",
       "title": "Adres zamieszkania",
       "type": "SECTION",
@@ -662,8 +572,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "118a28a0-25b9-5912-a712-adfacbcc8d18": {
-      "id": "118a28a0-25b9-5912-a712-adfacbcc8d18",
+    "8246c6f5-b60d-5667-8fe4-b27ee73cb570": {
+      "id": "8246c6f5-b60d-5667-8fe4-b27ee73cb570",
       "techName": "kraj",
       "title": "Kraj",
       "type": "SELECT",
@@ -677,7 +587,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b35",
             "p1-b36",
@@ -694,8 +604,8 @@
         "pole korzysta ze słownika „Kraje”"
       ]
     },
-    "eab8b79f-599a-5b2e-bd43-7e65f95786f4": {
-      "id": "eab8b79f-599a-5b2e-bd43-7e65f95786f4",
+    "a1b743f0-61b1-532a-9047-1063b8c7e4a9": {
+      "id": "a1b743f0-61b1-532a-9047-1063b8c7e4a9",
       "techName": "miejscowosc_zagranica",
       "title": "Miejscowość",
       "type": "TEXT_FIELD",
@@ -709,7 +619,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b35",
             "p1-b36",
@@ -724,8 +634,8 @@
         "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
       ]
     },
-    "2ffd39d5-e773-513d-bf0e-58af2ef17151": {
-      "id": "2ffd39d5-e773-513d-bf0e-58af2ef17151",
+    "415cdab2-060c-59b8-96fc-bf3fdc6ccd47": {
+      "id": "415cdab2-060c-59b8-96fc-bf3fdc6ccd47",
       "techName": "kod_pocztowy_zagranica",
       "title": "Kod pocztowy",
       "type": "TEXT_FIELD",
@@ -739,7 +649,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b35",
             "p1-b36",
@@ -754,8 +664,8 @@
         "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
       ]
     },
-    "36143b3d-1965-59ea-a7ad-1f502b64a7ec": {
-      "id": "36143b3d-1965-59ea-a7ad-1f502b64a7ec",
+    "118a28a0-25b9-5912-a712-adfacbcc8d18": {
+      "id": "118a28a0-25b9-5912-a712-adfacbcc8d18",
       "techName": "ulica_zagranica",
       "title": "Ulica",
       "type": "TEXT_FIELD",
@@ -769,7 +679,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b35",
             "p1-b36",
@@ -784,8 +694,8 @@
         "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
       ]
     },
-    "64412605-a595-5f7a-bff1-1a2b15a82f5a": {
-      "id": "64412605-a595-5f7a-bff1-1a2b15a82f5a",
+    "eab8b79f-599a-5b2e-bd43-7e65f95786f4": {
+      "id": "eab8b79f-599a-5b2e-bd43-7e65f95786f4",
       "techName": "teryt_4g_dowodowy",
       "title": "TERYT_4G_DOWODOWY",
       "type": "SELECT",
@@ -798,8 +708,8 @@
         "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
       ]
     },
-    "51052a5f-41cc-5322-b418-606a6e87ffdb": {
-      "id": "51052a5f-41cc-5322-b418-606a6e87ffdb",
+    "2ffd39d5-e773-513d-bf0e-58af2ef17151": {
+      "id": "2ffd39d5-e773-513d-bf0e-58af2ef17151",
       "techName": "kod_pocztowy",
       "title": "Kod pocztowy",
       "type": "TEXT_FIELD",
@@ -813,7 +723,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b35",
             "p1-b36",
@@ -830,8 +740,8 @@
         "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (postCode)"
       ]
     },
-    "fa959613-4821-5e3b-a411-32c4762eb4f6": {
-      "id": "fa959613-4821-5e3b-a411-32c4762eb4f6",
+    "36143b3d-1965-59ea-a7ad-1f502b64a7ec": {
+      "id": "36143b3d-1965-59ea-a7ad-1f502b64a7ec",
       "techName": "ulica",
       "title": "Ulica",
       "type": "TEXT_FIELD",
@@ -845,7 +755,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b35",
             "p1-b36",
@@ -862,8 +772,8 @@
         "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (street)"
       ]
     },
-    "83dec20b-f898-577d-a4a9-8ed17e495b3c": {
-      "id": "83dec20b-f898-577d-a4a9-8ed17e495b3c",
+    "64412605-a595-5f7a-bff1-1a2b15a82f5a": {
+      "id": "64412605-a595-5f7a-bff1-1a2b15a82f5a",
       "techName": "numer_budynku",
       "title": "Numer budynku",
       "type": "TEXT_FIELD",
@@ -877,7 +787,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b35",
             "p1-b36",
@@ -894,8 +804,8 @@
         "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (building)"
       ]
     },
-    "379be171-c5bf-576b-ace5-f618a35711ce": {
-      "id": "379be171-c5bf-576b-ace5-f618a35711ce",
+    "51052a5f-41cc-5322-b418-606a6e87ffdb": {
+      "id": "51052a5f-41cc-5322-b418-606a6e87ffdb",
       "techName": "numer_lokalu",
       "title": "Numer lokalu",
       "type": "TEXT_FIELD",
@@ -909,7 +819,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b35",
             "p1-b36",
@@ -926,12 +836,12 @@
         "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (apartment)"
       ]
     },
-    "36bcafa6-87d1-5b54-a576-7edc047109e3": {
-      "id": "36bcafa6-87d1-5b54-a576-7edc047109e3",
+    "9beb4a19-38e5-5d6f-a73d-90d58e1518ea": {
+      "id": "9beb4a19-38e5-5d6f-a73d-90d58e1518ea",
       "techName": "zgoda_kandydata_pelnoletniego_do_stypendium",
       "title": "Zgoda kandydata pełnoletniego do stypendium",
       "type": "SECTION",
-      "confidence": 0.21,
+      "confidence": 0.16,
       "sources": [
         {
           "page": 1,
@@ -954,12 +864,12 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "cd30eefd-0cf8-596e-b69f-27e827633de2": {
-      "id": "cd30eefd-0cf8-596e-b69f-27e827633de2",
+    "f7d00402-1e15-5c33-8d0b-03c9ab39cb2a": {
+      "id": "f7d00402-1e15-5c33-8d0b-03c9ab39cb2a",
       "techName": "imie_2",
       "title": "Imię",
       "type": "TEXT_FIELD",
-      "confidence": 0.21,
+      "confidence": 0.16,
       "sources": [
         {
           "page": 1,
@@ -969,7 +879,7 @@
             "w": 1233.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko kandydata  eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe sse eee ee see seee w o so seee se oo",
+          "text": "Imię i nazwisko kandydata  eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae see se seee so see o wa oo",
           "blockIds": [
             "p1-b108",
             "p1-b109",
@@ -984,12 +894,12 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "86c1dbc9-6e7f-5ddb-babf-0c6afcbb4ed3": {
-      "id": "86c1dbc9-6e7f-5ddb-babf-0c6afcbb4ed3",
+    "e5a2a212-48fd-506e-804c-061d244fe5a0": {
+      "id": "e5a2a212-48fd-506e-804c-061d244fe5a0",
       "techName": "nazwisko_2",
       "title": "Nazwisko",
       "type": "TEXT_FIELD",
-      "confidence": 0.21,
+      "confidence": 0.16,
       "sources": [
         {
           "page": 1,
@@ -999,7 +909,7 @@
             "w": 1233.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko kandydata  eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe sse eee ee see seee w o so seee se oo",
+          "text": "Imię i nazwisko kandydata  eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae see se seee so see o wa oo",
           "blockIds": [
             "p1-b108",
             "p1-b109",
@@ -1014,12 +924,12 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "6559730e-ecfa-5615-97e5-a0cf3f1dd10a": {
-      "id": "6559730e-ecfa-5615-97e5-a0cf3f1dd10a",
+    "d48e5cd4-0e21-5c53-8a7a-771114116337": {
+      "id": "d48e5cd4-0e21-5c53-8a7a-771114116337",
       "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_stypendium",
       "title": "Zgoda w imieniu kandydata nieletniego do stypendium",
       "type": "SECTION",
-      "confidence": 0.13,
+      "confidence": 0.15,
       "sources": [
         {
           "page": 1,
@@ -1042,12 +952,12 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "61de19db-e890-5e72-805b-4d3d7644f8d3": {
-      "id": "61de19db-e890-5e72-805b-4d3d7644f8d3",
+    "3b7c56e3-c6d5-5b1c-8132-91d0d7f2e06d": {
+      "id": "3b7c56e3-c6d5-5b1c-8132-91d0d7f2e06d",
       "techName": "imie_3",
       "title": "Imię",
       "type": "TEXT_FIELD",
-      "confidence": 0.13,
+      "confidence": 0.15,
       "sources": [
         {
           "page": 1,
@@ -1057,7 +967,7 @@
             "w": 1239.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko kandydata  eeeeceeeseeeeosoeneonowononowononowowon es seee ee seee eee se aso ses oo see see ses eee ee se ne",
+          "text": "Imię i nazwisko kandydata  eeeceeeseeneosoeneonowononowononowowone sse eee sse ee ee aa ee sooo es a ke aa see se se ne",
           "blockIds": [
             "p1-b118",
             "p1-b119",
@@ -1072,12 +982,12 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "8d951229-2c57-57cc-9c18-502137ac6267": {
-      "id": "8d951229-2c57-57cc-9c18-502137ac6267",
+    "36bcafa6-87d1-5b54-a576-7edc047109e3": {
+      "id": "36bcafa6-87d1-5b54-a576-7edc047109e3",
       "techName": "nazwisko_3",
       "title": "Nazwisko",
       "type": "TEXT_FIELD",
-      "confidence": 0.13,
+      "confidence": 0.15,
       "sources": [
         {
           "page": 1,
@@ -1087,7 +997,7 @@
             "w": 1239.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko kandydata  eeeeceeeseeeeosoeneonowononowononowowon es seee ee seee eee se aso ses oo see see ses eee ee se ne",
+          "text": "Imię i nazwisko kandydata  eeeceeeseeneosoeneonowononowononowowone sse eee sse ee ee aa ee sooo es a ke aa see se se ne",
           "blockIds": [
             "p1-b118",
             "p1-b119",
@@ -1102,12 +1012,12 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "d851db14-96bd-5392-abc5-3260becd4fc2": {
-      "id": "d851db14-96bd-5392-abc5-3260becd4fc2",
+    "586be780-4558-5368-a520-d1bf6f0427e7": {
+      "id": "586be780-4558-5368-a520-d1bf6f0427e7",
       "techName": "wnioskodawca_2",
       "title": "Wnioskodawca",
       "type": "SECTION",
-      "confidence": 0.33,
+      "confidence": 0.35,
       "sources": [
         {
           "page": 1,
@@ -1130,8 +1040,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "a44519c8-d5dd-560a-9029-1d276d8eb01c": {
-      "id": "a44519c8-d5dd-560a-9029-1d276d8eb01c",
+    "a19fb85e-20a9-5aa2-9804-515dc1b8f733": {
+      "id": "a19fb85e-20a9-5aa2-9804-515dc1b8f733",
       "techName": "text_block_2",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -1170,8 +1080,8 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "1607ecf6-7663-5ff0-83b3-b232af64dbae": {
-      "id": "1607ecf6-7663-5ff0-83b3-b232af64dbae",
+    "61b07844-eb5f-5dfd-96eb-3450d7a28470": {
+      "id": "61b07844-eb5f-5dfd-96eb-3450d7a28470",
       "techName": "prezydent_miasta_zgierza",
       "title": "Prezydent Miasta Zgierza",
       "type": "TEXT_FIELD",
@@ -1198,12 +1108,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "3be57019-2a08-54d4-946f-d8d446645a76": {
-      "id": "3be57019-2a08-54d4-946f-d8d446645a76",
+    "6559730e-ecfa-5615-97e5-a0cf3f1dd10a": {
+      "id": "6559730e-ecfa-5615-97e5-a0cf3f1dd10a",
       "techName": "klub_sportowy_2",
       "title": "Klub sportowy",
       "type": "TEXT_FIELD",
-      "confidence": 0.72,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -1226,12 +1136,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "273333a4-64a9-5733-a479-c73cac7be6ed": {
-      "id": "273333a4-64a9-5733-a479-c73cac7be6ed",
-      "techName": "seesvovessvosonoeworonesoeonwaweaewawowawawowewawe_ee_awe_se_owa_es_owa_w_ee_aa_2",
-      "title": "Seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es",
+    "1607ecf6-7663-5ff0-83b3-b232af64dbae": {
+      "id": "1607ecf6-7663-5ff0-83b3-b232af64dbae",
+      "techName": "seesvovosososooneoroneoeoenawewawawowawawowesawe_2",
+      "title": "Seesvovosososooneoroneoeoenawewawawowawawowesawe",
       "type": "TEXT_FIELD",
-      "confidence": 0.09,
+      "confidence": 0.14,
       "sources": [
         {
           "page": 1,
@@ -1241,7 +1151,7 @@
             "w": 1258.0,
             "h": 37.0
           },
-          "text": "Numer telefonu (opcjonalnie)  seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es sn ee or ee",
+          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
           "blockIds": [
             "p1-b137",
             "p1-b138",
@@ -1253,29 +1163,29 @@
         "rules"
       ],
       "reasons": [
-        "pole w treści zdania – sprawdź tytuł"
+        "etykieta w dokumencie"
       ]
     },
-    "007047ee-656a-5609-aabb-e2286b45d554": {
-      "id": "007047ee-656a-5609-aabb-e2286b45d554",
-      "techName": "eeeereseseoeeroneeeroenewe",
-      "title": "Eeeereseseoeeroneeeroenewe",
+    "3be57019-2a08-54d4-946f-d8d446645a76": {
+      "id": "3be57019-2a08-54d4-946f-d8d446645a76",
+      "techName": "owa_es_ow_2",
+      "title": "Owa es ow",
       "type": "TEXT_FIELD",
-      "confidence": 0.16,
+      "confidence": 0.14,
       "sources": [
         {
           "page": 1,
           "bbox": {
-            "x": 198.0,
-            "y": 14996.0,
-            "w": 1256.0,
+            "x": 199.0,
+            "y": 14734.0,
+            "w": 1258.0,
             "h": 37.0
           },
-          "text": "Seria i numer dowodu osobistego  eeeereseseoeeroneeeroenewe ee ee ee ane eee eee eee oa e eee ee awa eee eee an ee n o ne sen",
+          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
           "blockIds": [
-            "p1-b141",
-            "p1-b142",
-            "p1-b143"
+            "p1-b137",
+            "p1-b138",
+            "p1-b139"
           ]
         }
       ],
@@ -1286,12 +1196,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "0b47d935-0d95-5e13-94d7-21a88a0c3965": {
-      "id": "0b47d935-0d95-5e13-94d7-21a88a0c3965",
-      "techName": "seesvovessvosonoeworonesoeonwaweaewawowawawowewawe_ee_awe_se_owa_es_owa_w_ee_aa_3",
-      "title": "Seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es",
+    "b5050fd3-130f-50c8-86bc-e41cce9964e1": {
+      "id": "b5050fd3-130f-50c8-86bc-e41cce9964e1",
+      "techName": "seesvovosososooneoroneoeoenawewawawowawawowesawe_3",
+      "title": "Seesvovosososooneoroneoeoenawewawawowawawowesawe",
       "type": "TEXT_FIELD",
-      "confidence": 0.09,
+      "confidence": 0.14,
       "sources": [
         {
           "page": 1,
@@ -1301,7 +1211,7 @@
             "w": 1258.0,
             "h": 37.0
           },
-          "text": "Numer telefonu (opcjonalnie)  seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es sn ee or ee",
+          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
           "blockIds": [
             "p1-b144",
             "p1-b145",
@@ -1313,11 +1223,41 @@
         "rules"
       ],
       "reasons": [
-        "pole w treści zdania – sprawdź tytuł"
+        "etykieta w dokumencie"
       ]
     },
-    "94ab6b1a-be35-5019-bc32-a9225ebdcd19": {
-      "id": "94ab6b1a-be35-5019-bc32-a9225ebdcd19",
+    "007047ee-656a-5609-aabb-e2286b45d554": {
+      "id": "007047ee-656a-5609-aabb-e2286b45d554",
+      "techName": "owa_es_ow_3",
+      "title": "Owa es ow",
+      "type": "TEXT_FIELD",
+      "confidence": 0.14,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 15065.0,
+            "w": 1258.0,
+            "h": 37.0
+          },
+          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
+          "blockIds": [
+            "p1-b144",
+            "p1-b145",
+            "p1-b146"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "23942126-0077-5150-bf44-c7e67cb6c98d": {
+      "id": "23942126-0077-5150-bf44-c7e67cb6c98d",
       "techName": "dane_klubu_sportowego_2",
       "title": "Dane klubu sportowego",
       "type": "TEXT_FIELD",
@@ -1344,22 +1284,22 @@
         "etykieta w dokumencie"
       ]
     },
-    "519c3ab5-c70e-5c00-a5e2-1487be81fd2d": {
-      "id": "519c3ab5-c70e-5c00-a5e2-1487be81fd2d",
+    "0b47d935-0d95-5e13-94d7-21a88a0c3965": {
+      "id": "0b47d935-0d95-5e13-94d7-21a88a0c3965",
       "techName": "nazwa_klubu_sportowego_2",
       "title": "Nazwa klubu sportowego",
       "type": "TEXT_FIELD",
-      "confidence": 0.11,
+      "confidence": 0.12,
       "sources": [
         {
           "page": 1,
           "bbox": {
             "x": 199.0,
             "y": 15357.0,
-            "w": 1254.0,
+            "w": 1250.0,
             "h": 37.0
           },
-          "text": "Nazwa klubu sportowego  eesevesesesoneoronesoeoew see seee see oo wewakeatae oo e see ee see eee o eee ee see se seee se eee o w o",
+          "text": "Nazwa klubu sportowego  eeseeesesesonenoronesoe eee sse aewasowawako ses akesataw es ot eee k ee eee ee ae w eee see ne seee see o e n anasan",
           "blockIds": [
             "p1-b151",
             "p1-b152",
@@ -1374,22 +1314,22 @@
         "etykieta w dokumencie"
       ]
     },
-    "a033078f-85c0-535b-bdfc-ed7a192eddd4": {
-      "id": "a033078f-85c0-535b-bdfc-ed7a192eddd4",
-      "techName": "eesevesesesoneoronesoeoew",
-      "title": "Eesevesesesoneoronesoeoew",
+    "94ab6b1a-be35-5019-bc32-a9225ebdcd19": {
+      "id": "94ab6b1a-be35-5019-bc32-a9225ebdcd19",
+      "techName": "eeseeesesesonenoronesoe",
+      "title": "Eeseeesesesonenoronesoe",
       "type": "TEXT_FIELD",
-      "confidence": 0.11,
+      "confidence": 0.12,
       "sources": [
         {
           "page": 1,
           "bbox": {
             "x": 199.0,
             "y": 15357.0,
-            "w": 1254.0,
+            "w": 1250.0,
             "h": 37.0
           },
-          "text": "Nazwa klubu sportowego  eesevesesesoneoronesoeoew see seee see oo wewakeatae oo e see ee see eee o eee ee see se seee se eee o w o",
+          "text": "Nazwa klubu sportowego  eeseeesesesonenoronesoe eee sse aewasowawako ses akesataw es ot eee k ee eee ee ae w eee see ne seee see o e n anasan",
           "blockIds": [
             "p1-b151",
             "p1-b152",
@@ -1404,56 +1344,26 @@
         "etykieta w dokumencie"
       ]
     },
-    "74ccfb26-a26d-5ae5-b8f2-4f150bce6ae4": {
-      "id": "74ccfb26-a26d-5ae5-b8f2-4f150bce6ae4",
-      "techName": "wewakeatae",
-      "title": "Wewakeatae",
+    "519c3ab5-c70e-5c00-a5e2-1487be81fd2d": {
+      "id": "519c3ab5-c70e-5c00-a5e2-1487be81fd2d",
+      "techName": "aewasowawako_ses_akesataw_es_ot_eee_k",
+      "title": "Aewasowawako ses akesataw es ot eee k",
       "type": "TEXT_FIELD",
-      "confidence": 0.11,
+      "confidence": 0.08,
       "sources": [
         {
           "page": 1,
           "bbox": {
             "x": 199.0,
             "y": 15357.0,
-            "w": 1254.0,
+            "w": 1250.0,
             "h": 37.0
           },
-          "text": "Nazwa klubu sportowego  eesevesesesoneoronesoeoew see seee see oo wewakeatae oo e see ee see eee o eee ee see se seee se eee o w o",
+          "text": "Nazwa klubu sportowego  eeseeesesesonenoronesoe eee sse aewasowawako ses akesataw es ot eee k ee eee ee ae w eee see ne seee see o e n anasan",
           "blockIds": [
             "p1-b151",
             "p1-b152",
             "p1-b153"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "etykieta w dokumencie"
-      ]
-    },
-    "4e234228-1a00-5d69-9417-eedf63589e90": {
-      "id": "4e234228-1a00-5d69-9417-eedf63589e90",
-      "techName": "eevoveeevesosawewononenoroewsoeoewawe_se_awa_seee_wow_oo_ee_w_awa_2",
-      "title": "Eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa",
-      "type": "TEXT_FIELD",
-      "confidence": 0.04,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 15490.0,
-            "w": 1261.0,
-            "h": 37.0
-          },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
-          "blockIds": [
-            "p1-b157",
-            "p1-b158",
-            "p1-b159"
           ]
         }
       ],
@@ -1464,8 +1374,8 @@
         "pole w treści zdania – sprawdź tytuł"
       ]
     },
-    "a8a5653f-fdec-5c31-898b-7033566a7c76": {
-      "id": "a8a5653f-fdec-5c31-898b-7033566a7c76",
+    "a44519c8-d5dd-560a-9029-1d276d8eb01c": {
+      "id": "a44519c8-d5dd-560a-9029-1d276d8eb01c",
       "techName": "twoje_dane_2",
       "title": "Twoje dane",
       "type": "SECTION",
@@ -1492,8 +1402,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "b5050fd3-130f-50c8-86bc-e41cce9964e1": {
-      "id": "b5050fd3-130f-50c8-86bc-e41cce9964e1",
+    "385f742d-25a6-5513-84d5-0c569fdee424": {
+      "id": "385f742d-25a6-5513-84d5-0c569fdee424",
       "techName": "seria_i_numer_dowodu_osobistego_2",
       "title": "Seria i numer dowodu osobistego",
       "type": "TEXT_FIELD",
@@ -1507,7 +1417,7 @@
             "w": 1256.0,
             "h": 37.0
           },
-          "text": "Seria i numer dowodu osobistego  eeeereseseoeeroneeeroenewe ee ee ee ane eee eee eee oa e eee ee awa eee eee an ee n o ne sen",
+          "text": "Seria i numer dowodu osobistego  eesereseseeneeroneseroenewe ee enewaane eee ae w eee oe e eee eee ne ee ee eee ne e n o ne an",
           "blockIds": [
             "p1-b141",
             "p1-b142",
@@ -1522,8 +1432,8 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "9d44bf60-325f-5950-9e06-346f843e1c3b": {
-      "id": "9d44bf60-325f-5950-9e06-346f843e1c3b",
+    "d851db14-96bd-5392-abc5-3260becd4fc2": {
+      "id": "d851db14-96bd-5392-abc5-3260becd4fc2",
       "techName": "adres_zamieszkania_2",
       "title": "Adres zamieszkania",
       "type": "SECTION",
@@ -1550,8 +1460,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "af9d34c1-29c2-5d47-9610-87d11cd4f92b": {
-      "id": "af9d34c1-29c2-5d47-9610-87d11cd4f92b",
+    "4e234228-1a00-5d69-9417-eedf63589e90": {
+      "id": "4e234228-1a00-5d69-9417-eedf63589e90",
       "techName": "kraj_2",
       "title": "Kraj",
       "type": "SELECT",
@@ -1565,7 +1475,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b157",
             "p1-b158",
@@ -1582,8 +1492,8 @@
         "pole korzysta ze słownika „Kraje”"
       ]
     },
-    "8d396d4d-d6e2-5518-895c-24a96da36874": {
-      "id": "8d396d4d-d6e2-5518-895c-24a96da36874",
+    "5125d9ec-8d53-5100-983f-24ad9fcd7c11": {
+      "id": "5125d9ec-8d53-5100-983f-24ad9fcd7c11",
       "techName": "miejscowosc_zagranica_2",
       "title": "Miejscowość",
       "type": "TEXT_FIELD",
@@ -1597,7 +1507,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b157",
             "p1-b158",
@@ -1612,8 +1522,8 @@
         "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
       ]
     },
-    "e3b03b82-a876-55f4-a4f2-a1ce93198711": {
-      "id": "e3b03b82-a876-55f4-a4f2-a1ce93198711",
+    "d5c0ad27-f0f9-52bc-883b-d65ee3922256": {
+      "id": "d5c0ad27-f0f9-52bc-883b-d65ee3922256",
       "techName": "kod_pocztowy_zagranica_2",
       "title": "Kod pocztowy",
       "type": "TEXT_FIELD",
@@ -1627,7 +1537,81 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
+          "blockIds": [
+            "p1-b157",
+            "p1-b158",
+            "p1-b159"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "af9d34c1-29c2-5d47-9610-87d11cd4f92b": {
+      "id": "af9d34c1-29c2-5d47-9610-87d11cd4f92b",
+      "techName": "ulica_zagranica_2",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.04,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 15490.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
+          "blockIds": [
+            "p1-b157",
+            "p1-b158",
+            "p1-b159"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "8d396d4d-d6e2-5518-895c-24a96da36874": {
+      "id": "8d396d4d-d6e2-5518-895c-24a96da36874",
+      "techName": "teryt_4g_dowodowy_2",
+      "title": "TERYT_4G_DOWODOWY",
+      "type": "SELECT",
+      "confidence": 0.9,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "e3b03b82-a876-55f4-a4f2-a1ce93198711": {
+      "id": "e3b03b82-a876-55f4-a4f2-a1ce93198711",
+      "techName": "kod_pocztowy_2",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.06,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 15490.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b157",
             "p1-b158",
@@ -1644,10 +1628,10 @@
     },
     "b24bc2aa-963c-5199-b2b4-050e0ab33fd9": {
       "id": "b24bc2aa-963c-5199-b2b4-050e0ab33fd9",
-      "techName": "ulica_zagranica_2",
+      "techName": "ulica_2",
       "title": "Ulica",
       "type": "TEXT_FIELD",
-      "confidence": 0.04,
+      "confidence": 0.06,
       "sources": [
         {
           "page": 1,
@@ -1657,7 +1641,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b157",
             "p1-b158",
@@ -1674,80 +1658,6 @@
     },
     "a558ce17-a31b-5641-ac86-9b2d02cc5605": {
       "id": "a558ce17-a31b-5641-ac86-9b2d02cc5605",
-      "techName": "teryt_4g_dowodowy_2",
-      "title": "TERYT_4G_DOWODOWY",
-      "type": "SELECT",
-      "confidence": 0.9,
-      "sources": [],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
-      ]
-    },
-    "632c9c3b-f613-50eb-a8a5-14896c2fcd48": {
-      "id": "632c9c3b-f613-50eb-a8a5-14896c2fcd48",
-      "techName": "kod_pocztowy_2",
-      "title": "Kod pocztowy",
-      "type": "TEXT_FIELD",
-      "confidence": 0.06,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 15490.0,
-            "w": 1261.0,
-            "h": 37.0
-          },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
-          "blockIds": [
-            "p1-b157",
-            "p1-b158",
-            "p1-b159"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
-      ]
-    },
-    "a19fb85e-20a9-5aa2-9804-515dc1b8f733": {
-      "id": "a19fb85e-20a9-5aa2-9804-515dc1b8f733",
-      "techName": "ulica_2",
-      "title": "Ulica",
-      "type": "TEXT_FIELD",
-      "confidence": 0.06,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 15490.0,
-            "w": 1261.0,
-            "h": 37.0
-          },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
-          "blockIds": [
-            "p1-b157",
-            "p1-b158",
-            "p1-b159"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
-      ]
-    },
-    "586be780-4558-5368-a520-d1bf6f0427e7": {
-      "id": "586be780-4558-5368-a520-d1bf6f0427e7",
       "techName": "numer_budynku_2",
       "title": "Numer budynku",
       "type": "TEXT_FIELD",
@@ -1761,7 +1671,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b157",
             "p1-b158",
@@ -1776,8 +1686,8 @@
         "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
       ]
     },
-    "96055def-ef31-5086-849b-efff20110f43": {
-      "id": "96055def-ef31-5086-849b-efff20110f43",
+    "632c9c3b-f613-50eb-a8a5-14896c2fcd48": {
+      "id": "632c9c3b-f613-50eb-a8a5-14896c2fcd48",
       "techName": "numer_lokalu_2",
       "title": "Numer lokalu",
       "type": "TEXT_FIELD",
@@ -1791,7 +1701,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b157",
             "p1-b158",
@@ -1806,12 +1716,12 @@
         "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
       ]
     },
-    "cdebc9ca-4972-5b8d-9e38-f0e01da845b5": {
-      "id": "cdebc9ca-4972-5b8d-9e38-f0e01da845b5",
+    "14b36573-550f-5edd-901e-d258abeabe1d": {
+      "id": "14b36573-550f-5edd-901e-d258abeabe1d",
       "techName": "zgoda_kandydata_pelnoletniego_do_nagrody",
       "title": "Zgoda kandydata pełnoletniego do nagrody",
       "type": "SECTION",
-      "confidence": 0.21,
+      "confidence": 0.16,
       "sources": [
         {
           "page": 1,
@@ -1834,12 +1744,12 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "738fc24d-374b-5f1e-a260-93a1bfbbc3fe": {
-      "id": "738fc24d-374b-5f1e-a260-93a1bfbbc3fe",
+    "b0b46663-b808-57cf-b77d-16b70ae8d8d2": {
+      "id": "b0b46663-b808-57cf-b77d-16b70ae8d8d2",
       "techName": "imie_4",
       "title": "Imię",
       "type": "TEXT_FIELD",
-      "confidence": 0.21,
+      "confidence": 0.16,
       "sources": [
         {
           "page": 1,
@@ -1849,7 +1759,7 @@
             "w": 1233.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko kandydata  eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe sse eee ee see seee w o so seee se oo",
+          "text": "Imię i nazwisko kandydata  eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae see se seee so see o wa oo",
           "blockIds": [
             "p1-b198",
             "p1-b199",
@@ -1864,12 +1774,12 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "c7fab2ab-1154-53b6-9cd3-00980c5f9bb9": {
-      "id": "c7fab2ab-1154-53b6-9cd3-00980c5f9bb9",
+    "f4919694-a964-5989-85f0-72d6cf327bd5": {
+      "id": "f4919694-a964-5989-85f0-72d6cf327bd5",
       "techName": "nazwisko_4",
       "title": "Nazwisko",
       "type": "TEXT_FIELD",
-      "confidence": 0.21,
+      "confidence": 0.16,
       "sources": [
         {
           "page": 1,
@@ -1879,7 +1789,7 @@
             "w": 1233.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko kandydata  eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe sse eee ee see seee w o so seee se oo",
+          "text": "Imię i nazwisko kandydata  eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae see se seee so see o wa oo",
           "blockIds": [
             "p1-b198",
             "p1-b199",
@@ -1894,8 +1804,8 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "0fac5a9f-afd7-5d68-838a-9e6c5c30e237": {
-      "id": "0fac5a9f-afd7-5d68-838a-9e6c5c30e237",
+    "5769e08c-fdf1-5770-bdcd-74d23d877deb": {
+      "id": "5769e08c-fdf1-5770-bdcd-74d23d877deb",
       "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_nagrody",
       "title": "Zgoda w imieniu kandydata nieletniego do nagrody",
       "type": "SECTION",
@@ -1922,8 +1832,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "e6de9133-4aac-5df4-be17-7e57cac4d9f3": {
-      "id": "e6de9133-4aac-5df4-be17-7e57cac4d9f3",
+    "46e20221-c8e5-531b-9734-d49362c8ba8f": {
+      "id": "46e20221-c8e5-531b-9734-d49362c8ba8f",
       "techName": "imie_5",
       "title": "Imię",
       "type": "TEXT_FIELD",
@@ -1950,8 +1860,8 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "70bb1d16-2272-5632-9222-66fa4d1e3566": {
-      "id": "70bb1d16-2272-5632-9222-66fa4d1e3566",
+    "cdebc9ca-4972-5b8d-9e38-f0e01da845b5": {
+      "id": "cdebc9ca-4972-5b8d-9e38-f0e01da845b5",
       "techName": "nazwisko_5",
       "title": "Nazwisko",
       "type": "TEXT_FIELD",
@@ -1978,12 +1888,12 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "ada3d0cf-f25c-554c-be8a-936db1869408": {
-      "id": "ada3d0cf-f25c-554c-be8a-936db1869408",
+    "a05ae993-6c62-5147-9177-ef40a61fe782": {
+      "id": "a05ae993-6c62-5147-9177-ef40a61fe782",
       "techName": "wnioskodawca_3",
       "title": "Wnioskodawca",
       "type": "SECTION",
-      "confidence": 0.32,
+      "confidence": 0.33,
       "sources": [
         {
           "page": 1,
@@ -2006,8 +1916,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "28068881-b672-50aa-b163-b2064305ad83": {
-      "id": "28068881-b672-50aa-b163-b2064305ad83",
+    "58f7c1c6-9e91-54c1-b701-9c2875e8f117": {
+      "id": "58f7c1c6-9e91-54c1-b701-9c2875e8f117",
       "techName": "text_block_3",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -2046,8 +1956,8 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "7fa7ddf9-ecba-5d76-900f-a2e8564897ae": {
-      "id": "7fa7ddf9-ecba-5d76-900f-a2e8564897ae",
+    "c0ea870a-ba8c-51d0-8dea-ca16b2042a71": {
+      "id": "c0ea870a-ba8c-51d0-8dea-ca16b2042a71",
       "techName": "prezydent_miasta_zgierza_2",
       "title": "Prezydent Miasta Zgierza",
       "type": "TEXT_FIELD",
@@ -2074,12 +1984,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "78876de1-a56f-5a5d-85c5-027a378d81fe": {
-      "id": "78876de1-a56f-5a5d-85c5-027a378d81fe",
+    "0fac5a9f-afd7-5d68-838a-9e6c5c30e237": {
+      "id": "0fac5a9f-afd7-5d68-838a-9e6c5c30e237",
       "techName": "klub_sportowy_3",
       "title": "Klub sportowy",
       "type": "TEXT_FIELD",
-      "confidence": 0.72,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -2102,12 +2012,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "f4921d63-e443-5e5f-b989-c63328c3144c": {
-      "id": "f4921d63-e443-5e5f-b989-c63328c3144c",
-      "techName": "seesvovessvosonoeworonesoeonwaweaewawowawawowewawe_ee_awe_se_owa_es_owa_w_ee_aa_4",
-      "title": "Seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es",
+    "7fa7ddf9-ecba-5d76-900f-a2e8564897ae": {
+      "id": "7fa7ddf9-ecba-5d76-900f-a2e8564897ae",
+      "techName": "seesvovosososooneoroneoeoenawewawawowawawowesawe_4",
+      "title": "Seesvovosososooneoroneoeoenawewawawowawawowesawe",
       "type": "TEXT_FIELD",
-      "confidence": 0.09,
+      "confidence": 0.14,
       "sources": [
         {
           "page": 1,
@@ -2117,7 +2027,7 @@
             "w": 1258.0,
             "h": 37.0
           },
-          "text": "Numer telefonu (opcjonalnie)  seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es sn ee or ee",
+          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
           "blockIds": [
             "p1-b224",
             "p1-b225",
@@ -2129,15 +2039,75 @@
         "rules"
       ],
       "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "78876de1-a56f-5a5d-85c5-027a378d81fe": {
+      "id": "78876de1-a56f-5a5d-85c5-027a378d81fe",
+      "techName": "owa_es_ow_4",
+      "title": "Owa es ow",
+      "type": "TEXT_FIELD",
+      "confidence": 0.14,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 24143.0,
+            "w": 1258.0,
+            "h": 37.0
+          },
+          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
+          "blockIds": [
+            "p1-b224",
+            "p1-b225",
+            "p1-b226"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "f4921d63-e443-5e5f-b989-c63328c3144c": {
+      "id": "f4921d63-e443-5e5f-b989-c63328c3144c",
+      "techName": "eesereseeeoneeroneseronewe_ee_enewaanewow_es_eee_ak_es",
+      "title": "Eesereseeeoneeroneseronewe ee enewaanewow es eee ak es",
+      "type": "TEXT_FIELD",
+      "confidence": 0.11,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 24394.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Seria i numer dowodu osobistego  eesereseeeoneeroneseronewe ee enewaanewow es eee ak es ee an es ee oa ee se eee seee o ee es",
+          "blockIds": [
+            "p1-b228",
+            "p1-b229",
+            "p1-b230"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
         "pole w treści zdania – sprawdź tytuł"
       ]
     },
-    "0a52d6c7-0b2d-5d10-bbb4-9d280928f0da": {
-      "id": "0a52d6c7-0b2d-5d10-bbb4-9d280928f0da",
-      "techName": "seesvovessvosonoeworonesoeonwaweaewawowawawowewawe_ee_awe_se_owa_es_owa_w_ee_aa_5",
-      "title": "Seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es",
+    "019715c1-e38d-5188-9f47-0d1deb41b638": {
+      "id": "019715c1-e38d-5188-9f47-0d1deb41b638",
+      "techName": "seesvovosososooneoroneoeoenawewawawowawawowesawe_5",
+      "title": "Seesvovosososooneoroneoeoenawewawawowawawowesawe",
       "type": "TEXT_FIELD",
-      "confidence": 0.09,
+      "confidence": 0.14,
       "sources": [
         {
           "page": 1,
@@ -2147,7 +2117,7 @@
             "w": 1258.0,
             "h": 37.0
           },
-          "text": "Numer telefonu (opcjonalnie)  seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es sn ee or ee",
+          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
           "blockIds": [
             "p1-b231",
             "p1-b232",
@@ -2159,7 +2129,37 @@
         "rules"
       ],
       "reasons": [
-        "pole w treści zdania – sprawdź tytuł"
+        "etykieta w dokumencie"
+      ]
+    },
+    "0a52d6c7-0b2d-5d10-bbb4-9d280928f0da": {
+      "id": "0a52d6c7-0b2d-5d10-bbb4-9d280928f0da",
+      "techName": "owa_es_ow_5",
+      "title": "Owa es ow",
+      "type": "TEXT_FIELD",
+      "confidence": 0.14,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 24457.0,
+            "w": 1258.0,
+            "h": 37.0
+          },
+          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
+          "blockIds": [
+            "p1-b231",
+            "p1-b232",
+            "p1-b233"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
       ]
     },
     "39977a99-4ff1-507c-ac35-744f6bc91d47": {
@@ -2205,7 +2205,7 @@
             "w": 1254.0,
             "h": 37.0
           },
-          "text": "Nazwa klubu sportowego  eeseeesesesoneoroneoeoewawe seee see akowewakewawae es oe see ee see eee o eee ee see seee k o ee o w aa e enaa ne",
+          "text": "Nazwa klubu sportowego  eeseveeesosoeenosesoe eee see aewasowawawo ses akesawaw es oe eee k ee eee ee ae e eee see se o e o ee o k aa e en ee",
           "blockIds": [
             "p1-b238",
             "p1-b239",
@@ -2222,8 +2222,8 @@
     },
     "5cb039fb-6b3a-5dfe-8a1b-768fb163d733": {
       "id": "5cb039fb-6b3a-5dfe-8a1b-768fb163d733",
-      "techName": "eeseeesesesoneoroneoeoewawe_2",
-      "title": "Eeseeesesesoneoroneoeoewawe",
+      "techName": "eeseveeesosoeenosesoe",
+      "title": "Eeseveeesosoeenosesoe",
       "type": "TEXT_FIELD",
       "confidence": 0.1,
       "sources": [
@@ -2235,37 +2235,7 @@
             "w": 1254.0,
             "h": 37.0
           },
-          "text": "Nazwa klubu sportowego  eeseeesesesoneoroneoeoewawe seee see akowewakewawae es oe see ee see eee o eee ee see seee k o ee o w aa e enaa ne",
-          "blockIds": [
-            "p1-b238",
-            "p1-b239",
-            "p1-b240"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "etykieta w dokumencie"
-      ]
-    },
-    "1d29d35d-0c20-58cb-bd2e-da4b739f973d": {
-      "id": "1d29d35d-0c20-58cb-bd2e-da4b739f973d",
-      "techName": "akowewakewawae",
-      "title": "Akowewakewawae",
-      "type": "TEXT_FIELD",
-      "confidence": 0.1,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 199.0,
-            "y": 24727.0,
-            "w": 1254.0,
-            "h": 37.0
-          },
-          "text": "Nazwa klubu sportowego  eeseeesesesoneoroneoeoewawe seee see akowewakewawae es oe see ee see eee o eee ee see seee k o ee o w aa e enaa ne",
+          "text": "Nazwa klubu sportowego  eeseveeesosoeenosesoe eee see aewasowawawo ses akesawaw es oe eee k ee eee ee ae e eee see se o e o ee o k aa e en ee",
           "blockIds": [
             "p1-b238",
             "p1-b239",
@@ -2282,70 +2252,10 @@
     },
     "9d404833-edfd-512f-8157-7ebe34206cfc": {
       "id": "9d404833-edfd-512f-8157-7ebe34206cfc",
-      "techName": "seesecevovosovosononoononooe",
-      "title": "Seesecevovosovosononoononooe",
+      "techName": "eeeeeeeoreeneneseeweroeneneneeeeneenenen",
+      "title": "Eeeeeeeoreeneneseeweroeneneneeeeneenenen",
       "type": "TEXT_FIELD",
-      "confidence": 0.18,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 24791.0,
-            "w": 1258.0,
-            "h": 37.0
-          },
-          "text": "Telefon kontaktowy (opcjonalnie)  seesecevovosovosononoononooe eee see aewawewewase ee aweeakanasenawaesowa ses aa se",
-          "blockIds": [
-            "p1-b241",
-            "p1-b242",
-            "p1-b243"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "etykieta w dokumencie"
-      ]
-    },
-    "1edf7975-c8f1-5c1c-8edb-d7d601e96203": {
-      "id": "1edf7975-c8f1-5c1c-8edb-d7d601e96203",
-      "techName": "eevoveeevesosawewononenoroewsoeoewawe_se_awa_seee_wow_oo_ee_w_awa_3",
-      "title": "Eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa",
-      "type": "TEXT_FIELD",
-      "confidence": 0.04,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 24854.0,
-            "w": 1261.0,
-            "h": 37.0
-          },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
-          "blockIds": [
-            "p1-b244",
-            "p1-b245",
-            "p1-b246"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "pole w treści zdania – sprawdź tytuł"
-      ]
-    },
-    "68a36fa8-3983-5b29-9ad2-06fa5834e1a4": {
-      "id": "68a36fa8-3983-5b29-9ad2-06fa5834e1a4",
-      "techName": "eeeeeeeeereenoneasowonoeneneeeweneeneneneeeen",
-      "title": "Eeeeeeeeereenoneasowonoeneneeeweneeneneneeeen",
-      "type": "TEXT_FIELD",
-      "confidence": 0.24,
+      "confidence": 0.22,
       "sources": [
         {
           "page": 1,
@@ -2355,7 +2265,7 @@
             "w": 1193.0,
             "h": 38.0
           },
-          "text": "Skrzynka ePUAP - adres skrzynki:  eeeeeeeeereenoneasowonoeneneeeweneeneneneeeen eee see eee ee anen ee ee ane ne ses",
+          "text": "Skrzynka ePUAP - adres skrzynki:  eeeeeeeoreeneneseeweroeneneneeeeneenenen ee een eee see wen ee onen seee nane ne es",
           "blockIds": [
             "p1-b251",
             "p1-b252",
@@ -2370,10 +2280,10 @@
         "etykieta w dokumencie"
       ]
     },
-    "b099a940-c04d-5227-86f9-6e58d59febca": {
-      "id": "b099a940-c04d-5227-86f9-6e58d59febca",
-      "techName": "e_eeveeeeenrenenereeneneenenereenoneaeeneneenene",
-      "title": "E.eeveeeeenrenenereeneneenenereenoneaeeneneenene",
+    "1ee612cd-6f66-50e3-8567-395647a03d26": {
+      "id": "1ee612cd-6f66-50e3-8567-395647a03d26",
+      "techName": "e_veveeeenenreneneeeeneneeneereeneneaweweseenene",
+      "title": "E.veveeeenenreneneeeeneneeneereeneneaweweseenene",
       "type": "TEXT_FIELD",
       "confidence": 0.21,
       "sources": [
@@ -2385,7 +2295,7 @@
             "w": 1200.0,
             "h": 38.0
           },
-          "text": "eDoręczenia - adres skrzynki:  e.eeveeeeenrenenereeneneenenereenoneaeeneneenene ee eenea eee ee ee en eee eee eee",
+          "text": "eDoręczenia - adres skrzynki:  e.veveeeenenreneneeeeneneeneereeneneaweweseenene ee eenen eee ee ee en eee eee ee",
           "blockIds": [
             "p1-b254",
             "p1-b255",
@@ -2400,12 +2310,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "0f078103-6bdb-55bd-9465-6b425ca7c5fd": {
-      "id": "0f078103-6bdb-55bd-9465-6b425ca7c5fd",
+    "28068881-b672-50aa-b163-b2064305ad83": {
+      "id": "28068881-b672-50aa-b163-b2064305ad83",
       "techName": "twoje_dane_3",
       "title": "Twoje dane",
       "type": "SECTION",
-      "confidence": 0.2,
+      "confidence": 0.19,
       "sources": [
         {
           "page": 1,
@@ -2428,12 +2338,12 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "cb785fea-abb2-5a3a-b062-fd1a9d61a440": {
-      "id": "cb785fea-abb2-5a3a-b062-fd1a9d61a440",
+    "6fbf33ff-1558-5a4a-8aaa-75458d8d472b": {
+      "id": "6fbf33ff-1558-5a4a-8aaa-75458d8d472b",
       "techName": "seria_i_numer_dowodu_osobistego_3",
       "title": "Seria i numer dowodu osobistego",
       "type": "TEXT_FIELD",
-      "confidence": 0.2,
+      "confidence": 0.19,
       "sources": [
         {
           "page": 1,
@@ -2443,7 +2353,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Seria i numer dowodu osobistego  eeeereseeeoeeeroneeee oo eweeawawewawanewewowa ee ok eee on es ee aa es se eee seee o aa es",
+          "text": "Seria i numer dowodu osobistego  eesereseeeoneeroneseronewe ee enewaanewow es eee ak es ee an es ee oa ee se eee seee o ee es",
           "blockIds": [
             "p1-b228",
             "p1-b229",
@@ -2458,8 +2368,8 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "a9c2e055-b493-5668-a0ec-006e964e227c": {
-      "id": "a9c2e055-b493-5668-a0ec-006e964e227c",
+    "ada3d0cf-f25c-554c-be8a-936db1869408": {
+      "id": "ada3d0cf-f25c-554c-be8a-936db1869408",
       "techName": "adres_zamieszkania_3",
       "title": "Adres zamieszkania",
       "type": "SECTION",
@@ -2486,8 +2396,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "90319c75-5e06-5e48-9796-4a611c5928dd": {
-      "id": "90319c75-5e06-5e48-9796-4a611c5928dd",
+    "68a36fa8-3983-5b29-9ad2-06fa5834e1a4": {
+      "id": "68a36fa8-3983-5b29-9ad2-06fa5834e1a4",
       "techName": "kraj_3",
       "title": "Kraj",
       "type": "SELECT",
@@ -2501,7 +2411,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b244",
             "p1-b245",
@@ -2518,8 +2428,8 @@
         "pole korzysta ze słownika „Kraje”"
       ]
     },
-    "960aaf0c-ae8f-5691-9c06-c09ef73be7bd": {
-      "id": "960aaf0c-ae8f-5691-9c06-c09ef73be7bd",
+    "12de914a-8f0e-56ba-9a9b-cef8f538a8c6": {
+      "id": "12de914a-8f0e-56ba-9a9b-cef8f538a8c6",
       "techName": "miejscowosc_zagranica_3",
       "title": "Miejscowość",
       "type": "TEXT_FIELD",
@@ -2533,7 +2443,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b244",
             "p1-b245",
@@ -2548,8 +2458,8 @@
         "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
       ]
     },
-    "61ff9df8-6724-5139-9383-a412c143edbe": {
-      "id": "61ff9df8-6724-5139-9383-a412c143edbe",
+    "b099a940-c04d-5227-86f9-6e58d59febca": {
+      "id": "b099a940-c04d-5227-86f9-6e58d59febca",
       "techName": "kod_pocztowy_zagranica_3",
       "title": "Kod pocztowy",
       "type": "TEXT_FIELD",
@@ -2563,7 +2473,81 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
+          "blockIds": [
+            "p1-b244",
+            "p1-b245",
+            "p1-b246"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "90319c75-5e06-5e48-9796-4a611c5928dd": {
+      "id": "90319c75-5e06-5e48-9796-4a611c5928dd",
+      "techName": "ulica_zagranica_3",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.04,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 24854.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
+          "blockIds": [
+            "p1-b244",
+            "p1-b245",
+            "p1-b246"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "960aaf0c-ae8f-5691-9c06-c09ef73be7bd": {
+      "id": "960aaf0c-ae8f-5691-9c06-c09ef73be7bd",
+      "techName": "teryt_4g_dowodowy_3",
+      "title": "TERYT_4G_DOWODOWY",
+      "type": "SELECT",
+      "confidence": 0.9,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "61ff9df8-6724-5139-9383-a412c143edbe": {
+      "id": "61ff9df8-6724-5139-9383-a412c143edbe",
+      "techName": "kod_pocztowy_3",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.06,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 24854.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b244",
             "p1-b245",
@@ -2580,10 +2564,10 @@
     },
     "c43bd2b9-cc5f-57f0-8459-ca3cd1bfa7f5": {
       "id": "c43bd2b9-cc5f-57f0-8459-ca3cd1bfa7f5",
-      "techName": "ulica_zagranica_3",
+      "techName": "ulica_3",
       "title": "Ulica",
       "type": "TEXT_FIELD",
-      "confidence": 0.04,
+      "confidence": 0.06,
       "sources": [
         {
           "page": 1,
@@ -2593,7 +2577,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b244",
             "p1-b245",
@@ -2610,80 +2594,6 @@
     },
     "5efd01e3-fc60-5e17-857d-9a7b3d09a384": {
       "id": "5efd01e3-fc60-5e17-857d-9a7b3d09a384",
-      "techName": "teryt_4g_dowodowy_3",
-      "title": "TERYT_4G_DOWODOWY",
-      "type": "SELECT",
-      "confidence": 0.9,
-      "sources": [],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
-      ]
-    },
-    "95271dab-8c18-5b7a-bbab-03aa34332161": {
-      "id": "95271dab-8c18-5b7a-bbab-03aa34332161",
-      "techName": "kod_pocztowy_3",
-      "title": "Kod pocztowy",
-      "type": "TEXT_FIELD",
-      "confidence": 0.06,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 24854.0,
-            "w": 1261.0,
-            "h": 37.0
-          },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
-          "blockIds": [
-            "p1-b244",
-            "p1-b245",
-            "p1-b246"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
-      ]
-    },
-    "58f7c1c6-9e91-54c1-b701-9c2875e8f117": {
-      "id": "58f7c1c6-9e91-54c1-b701-9c2875e8f117",
-      "techName": "ulica_3",
-      "title": "Ulica",
-      "type": "TEXT_FIELD",
-      "confidence": 0.06,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 197.0,
-            "y": 24854.0,
-            "w": 1261.0,
-            "h": 37.0
-          },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
-          "blockIds": [
-            "p1-b244",
-            "p1-b245",
-            "p1-b246"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
-      ]
-    },
-    "a05ae993-6c62-5147-9177-ef40a61fe782": {
-      "id": "a05ae993-6c62-5147-9177-ef40a61fe782",
       "techName": "numer_budynku_3",
       "title": "Numer budynku",
       "type": "TEXT_FIELD",
@@ -2697,7 +2607,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b244",
             "p1-b245",
@@ -2712,8 +2622,8 @@
         "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
       ]
     },
-    "a76b246b-5bff-5a8e-88aa-75e0c884e3f7": {
-      "id": "a76b246b-5bff-5a8e-88aa-75e0c884e3f7",
+    "95271dab-8c18-5b7a-bbab-03aa34332161": {
+      "id": "95271dab-8c18-5b7a-bbab-03aa34332161",
       "techName": "numer_lokalu_3",
       "title": "Numer lokalu",
       "type": "TEXT_FIELD",
@@ -2727,7 +2637,7 @@
             "w": 1261.0,
             "h": 37.0
           },
-          "text": "Adres siedziby  eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa o see eee seee er see se see seee e o ee eee n o w o ee ne",
+          "text": "Adres siedziby  eeveseeesovesaewononenonoee see aewawe ses awasewasowew oo so k aw e osae eee aa eee see se eee seee e o se oo e o w o ee o nr",
           "blockIds": [
             "p1-b244",
             "p1-b245",
@@ -2742,8 +2652,8 @@
         "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
       ]
     },
-    "700594e3-26a8-5e7f-a6a7-a75dde23b039": {
-      "id": "700594e3-26a8-5e7f-a6a7-a75dde23b039",
+    "89bd550d-7664-5f72-a1e7-846c0e59de6b": {
+      "id": "89bd550d-7664-5f72-a1e7-846c0e59de6b",
       "techName": "twoje_dane_4",
       "title": "Twoje dane",
       "type": "SECTION",
@@ -2770,8 +2680,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "89bd550d-7664-5f72-a1e7-846c0e59de6b": {
-      "id": "89bd550d-7664-5f72-a1e7-846c0e59de6b",
+    "cd0fd642-d422-5f4b-afcb-bcac89fe2fd1": {
+      "id": "cd0fd642-d422-5f4b-afcb-bcac89fe2fd1",
       "techName": "imie_6",
       "title": "Imię",
       "type": "TEXT_FIELD",
@@ -2798,8 +2708,8 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "a2127a9f-6691-54b8-9ccb-55b5fe22f5c4": {
-      "id": "a2127a9f-6691-54b8-9ccb-55b5fe22f5c4",
+    "6607cf9b-a4dc-57ab-9b50-ce23c5c2af1f": {
+      "id": "6607cf9b-a4dc-57ab-9b50-ce23c5c2af1f",
       "techName": "nazwisko_6",
       "title": "Nazwisko",
       "type": "TEXT_FIELD",
@@ -2826,8 +2736,8 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "7504b0db-96af-5616-af20-bbedfa949b29": {
-      "id": "7504b0db-96af-5616-af20-bbedfa949b29",
+    "a2127a9f-6691-54b8-9ccb-55b5fe22f5c4": {
+      "id": "a2127a9f-6691-54b8-9ccb-55b5fe22f5c4",
       "techName": "dane_osobowe_podopiecznego_trenera",
       "title": "Dane osobowe podopiecznego trenera",
       "type": "SECTION",
@@ -2854,8 +2764,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "ca226cd1-68eb-5fa2-b9fb-0a0ad240c4be": {
-      "id": "ca226cd1-68eb-5fa2-b9fb-0a0ad240c4be",
+    "d7a3cc0e-28e4-5f50-93ff-3269edf93c81": {
+      "id": "d7a3cc0e-28e4-5f50-93ff-3269edf93c81",
       "techName": "osiagniecia_sportowe_podopiecznego",
       "title": "Osiągnięcia sportowe podopiecznego",
       "type": "TEXT_FIELD",
@@ -2882,8 +2792,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "840b9ffe-062d-54ac-86f6-832681c1c69a": {
-      "id": "840b9ffe-062d-54ac-86f6-832681c1c69a",
+    "ae6be8a6-6f2d-54a2-9b2e-2b363c88b5a8": {
+      "id": "ae6be8a6-6f2d-54a2-9b2e-2b363c88b5a8",
       "techName": "twoje_dane_5",
       "title": "Twoje dane",
       "type": "SECTION",
@@ -2910,8 +2820,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "ae6be8a6-6f2d-54a2-9b2e-2b363c88b5a8": {
-      "id": "ae6be8a6-6f2d-54a2-9b2e-2b363c88b5a8",
+    "ca226cd1-68eb-5fa2-b9fb-0a0ad240c4be": {
+      "id": "ca226cd1-68eb-5fa2-b9fb-0a0ad240c4be",
       "techName": "imie_7",
       "title": "Imię",
       "type": "TEXT_FIELD",
@@ -2938,8 +2848,8 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "c9bfd19e-ef7c-5caf-9abf-bce2b6017491": {
-      "id": "c9bfd19e-ef7c-5caf-9abf-bce2b6017491",
+    "700594e3-26a8-5e7f-a6a7-a75dde23b039": {
+      "id": "700594e3-26a8-5e7f-a6a7-a75dde23b039",
       "techName": "nazwisko_7",
       "title": "Nazwisko",
       "type": "TEXT_FIELD",
@@ -2966,12 +2876,12 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "9c8089ee-4029-58fd-8bc9-39a18e0d1c53": {
-      "id": "9c8089ee-4029-58fd-8bc9-39a18e0d1c53",
+    "c9bfd19e-ef7c-5caf-9abf-bce2b6017491": {
+      "id": "c9bfd19e-ef7c-5caf-9abf-bce2b6017491",
       "techName": "dane_osobowe_podopiecznego_trenera_2",
       "title": "Dane osobowe podopiecznego trenera",
       "type": "SECTION",
-      "confidence": 0.71,
+      "confidence": 0.72,
       "sources": [
         {
           "page": 1,
@@ -2994,12 +2904,12 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "2fd23df4-1d04-5e9e-9df7-f90a7428cd0d": {
-      "id": "2fd23df4-1d04-5e9e-9df7-f90a7428cd0d",
+    "7504b0db-96af-5616-af20-bbedfa949b29": {
+      "id": "7504b0db-96af-5616-af20-bbedfa949b29",
       "techName": "osiagniecia_sportowe_podopiecznego_2",
       "title": "Osiągnięcia sportowe podopiecznego",
       "type": "TEXT_FIELD",
-      "confidence": 0.71,
+      "confidence": 0.72,
       "sources": [
         {
           "page": 1,
@@ -3022,8 +2932,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "8721605e-1278-5dd2-a94f-bfa9918bf63b": {
-      "id": "8721605e-1278-5dd2-a94f-bfa9918bf63b",
+    "e781d6d5-d5c6-5750-85cf-8c61d5f4ba16": {
+      "id": "e781d6d5-d5c6-5750-85cf-8c61d5f4ba16",
       "techName": "twoje_dane_6",
       "title": "Twoje dane",
       "type": "SECTION",
@@ -3050,8 +2960,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "cf367d2e-ae20-5004-9417-f29fdd4a22bf": {
-      "id": "cf367d2e-ae20-5004-9417-f29fdd4a22bf",
+    "2fd23df4-1d04-5e9e-9df7-f90a7428cd0d": {
+      "id": "2fd23df4-1d04-5e9e-9df7-f90a7428cd0d",
       "techName": "imie_8",
       "title": "Imię",
       "type": "TEXT_FIELD",
@@ -3078,8 +2988,8 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "e781d6d5-d5c6-5750-85cf-8c61d5f4ba16": {
-      "id": "e781d6d5-d5c6-5750-85cf-8c61d5f4ba16",
+    "840b9ffe-062d-54ac-86f6-832681c1c69a": {
+      "id": "840b9ffe-062d-54ac-86f6-832681c1c69a",
       "techName": "nazwisko_8",
       "title": "Nazwisko",
       "type": "TEXT_FIELD",
@@ -3106,8 +3016,8 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "10147a92-63ce-527b-9ce0-a4213bc23b16": {
-      "id": "10147a92-63ce-527b-9ce0-a4213bc23b16",
+    "e9b5902c-ff99-5b76-a4de-be7895a35142": {
+      "id": "e9b5902c-ff99-5b76-a4de-be7895a35142",
       "techName": "dane_osobowe_podopiecznego_trenera_3",
       "title": "Dane osobowe podopiecznego trenera",
       "type": "SECTION",
@@ -3134,8 +3044,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "d6dd3f8e-9c17-5e38-b134-210c2991f13d": {
-      "id": "d6dd3f8e-9c17-5e38-b134-210c2991f13d",
+    "cf367d2e-ae20-5004-9417-f29fdd4a22bf": {
+      "id": "cf367d2e-ae20-5004-9417-f29fdd4a22bf",
       "techName": "text_block_4",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -3163,8 +3073,8 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "e9b5902c-ff99-5b76-a4de-be7895a35142": {
-      "id": "e9b5902c-ff99-5b76-a4de-be7895a35142",
+    "9c8089ee-4029-58fd-8bc9-39a18e0d1c53": {
+      "id": "9c8089ee-4029-58fd-8bc9-39a18e0d1c53",
       "techName": "osiagniecia_sportowe_podopiecznego_3",
       "title": "Osiągnięcia sportowe podopiecznego",
       "type": "TEXT_FIELD",
@@ -3191,8 +3101,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "ce03e5ca-9988-5824-ada4-437855f31ae8": {
-      "id": "ce03e5ca-9988-5824-ada4-437855f31ae8",
+    "06ba5d48-1d72-5a3a-9132-11034f0754f3": {
+      "id": "06ba5d48-1d72-5a3a-9132-11034f0754f3",
       "techName": "twoje_dane_7",
       "title": "Twoje dane",
       "type": "SECTION",
@@ -3219,8 +3129,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "3c72fa43-92e6-59d0-a8b8-91c3005d4e9c": {
-      "id": "3c72fa43-92e6-59d0-a8b8-91c3005d4e9c",
+    "d6dd3f8e-9c17-5e38-b134-210c2991f13d": {
+      "id": "d6dd3f8e-9c17-5e38-b134-210c2991f13d",
       "techName": "imie_9",
       "title": "Imię",
       "type": "TEXT_FIELD",
@@ -3247,8 +3157,8 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "b4bebdb2-d84d-55d0-94a0-d867a40051ca": {
-      "id": "b4bebdb2-d84d-55d0-94a0-d867a40051ca",
+    "8721605e-1278-5dd2-a94f-bfa9918bf63b": {
+      "id": "8721605e-1278-5dd2-a94f-bfa9918bf63b",
       "techName": "nazwisko_9",
       "title": "Nazwisko",
       "type": "TEXT_FIELD",
@@ -3275,8 +3185,8 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "b935c1b5-d6ef-5cb2-9512-7310026e17ec": {
-      "id": "b935c1b5-d6ef-5cb2-9512-7310026e17ec",
+    "ddc3d289-1bff-572d-967d-0ca53544775c": {
+      "id": "ddc3d289-1bff-572d-967d-0ca53544775c",
       "techName": "dane_osobowe_podopiecznego_trenera_4",
       "title": "Dane osobowe podopiecznego trenera",
       "type": "SECTION",
@@ -3303,8 +3213,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "8027e93b-b1fc-59c3-96cd-2ca4cd85dd59": {
-      "id": "8027e93b-b1fc-59c3-96cd-2ca4cd85dd59",
+    "b4bebdb2-d84d-55d0-94a0-d867a40051ca": {
+      "id": "b4bebdb2-d84d-55d0-94a0-d867a40051ca",
       "techName": "text_block_5",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -3336,12 +3246,12 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "06ba5d48-1d72-5a3a-9132-11034f0754f3": {
-      "id": "06ba5d48-1d72-5a3a-9132-11034f0754f3",
+    "10147a92-63ce-527b-9ce0-a4213bc23b16": {
+      "id": "10147a92-63ce-527b-9ce0-a4213bc23b16",
       "techName": "osiagniecia_sportowe_podopiecznego_4",
       "title": "Osiągnięcia sportowe podopiecznego",
       "type": "TEXT_FIELD",
-      "confidence": 0.72,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -3364,8 +3274,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "ddc3d289-1bff-572d-967d-0ca53544775c": {
-      "id": "ddc3d289-1bff-572d-967d-0ca53544775c",
+    "3c72fa43-92e6-59d0-a8b8-91c3005d4e9c": {
+      "id": "3c72fa43-92e6-59d0-a8b8-91c3005d4e9c",
       "techName": "wymagane_zaswiadczenia_wymienionych_podopiecznych_trenera",
       "title": "Wymagane zaświadczenia wymienionych podopiecznych trenera",
       "type": "TEXT_FIELD",
@@ -3392,12 +3302,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "51612a71-781e-5b0b-bc36-e3f1f87b5bab": {
-      "id": "51612a71-781e-5b0b-bc36-e3f1f87b5bab",
+    "927bd811-2e02-585d-9f4d-b173a1a9ef29": {
+      "id": "927bd811-2e02-585d-9f4d-b173a1a9ef29",
       "techName": "zgoda_kandydata_do_wyroznienia",
       "title": "Zgoda kandydata do wyróżnienia",
       "type": "SECTION",
-      "confidence": 0.21,
+      "confidence": 0.16,
       "sources": [
         {
           "page": 1,
@@ -3420,12 +3330,12 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "a23d85aa-7ca7-5f3a-81ec-4f1804c4cef7": {
-      "id": "a23d85aa-7ca7-5f3a-81ec-4f1804c4cef7",
+    "b935c1b5-d6ef-5cb2-9512-7310026e17ec": {
+      "id": "b935c1b5-d6ef-5cb2-9512-7310026e17ec",
       "techName": "imie_10",
       "title": "Imię",
       "type": "TEXT_FIELD",
-      "confidence": 0.21,
+      "confidence": 0.16,
       "sources": [
         {
           "page": 1,
@@ -3435,7 +3345,7 @@
             "w": 1233.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko kandydata  eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe sse eee ee see seee w o so seee se oo",
+          "text": "Imię i nazwisko kandydata  eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae see se seee so see o wa oo",
           "blockIds": [
             "p1-b303",
             "p1-b304",
@@ -3450,12 +3360,12 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "e3605e5d-1ae6-5147-a114-8d4141c9cb56": {
-      "id": "e3605e5d-1ae6-5147-a114-8d4141c9cb56",
+    "bd23718c-304b-5583-a1ad-250d6fabaa2f": {
+      "id": "bd23718c-304b-5583-a1ad-250d6fabaa2f",
       "techName": "nazwisko_10",
       "title": "Nazwisko",
       "type": "TEXT_FIELD",
-      "confidence": 0.21,
+      "confidence": 0.16,
       "sources": [
         {
           "page": 1,
@@ -3465,7 +3375,7 @@
             "w": 1233.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko kandydata  eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe sse eee ee see seee w o so seee se oo",
+          "text": "Imię i nazwisko kandydata  eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae see se seee so see o wa oo",
           "blockIds": [
             "p1-b303",
             "p1-b304",
@@ -3480,12 +3390,12 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "cbb59a33-6253-5297-9053-6884b3ea5f98": {
-      "id": "cbb59a33-6253-5297-9053-6884b3ea5f98",
+    "4be34e58-4de1-5924-ab3e-b32dd7451895": {
+      "id": "4be34e58-4de1-5924-ab3e-b32dd7451895",
       "techName": "zgoda_podopiecznego_pelnoletniego",
       "title": "Zgoda podopiecznego pełnoletniego",
       "type": "SECTION",
-      "confidence": 0.15,
+      "confidence": 0.13,
       "sources": [
         {
           "page": 1,
@@ -3508,12 +3418,12 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "71370cca-e962-595e-ab29-012a7af2032e": {
-      "id": "71370cca-e962-595e-ab29-012a7af2032e",
+    "bd010476-95f1-5cef-9e09-2a25efdfdbe6": {
+      "id": "bd010476-95f1-5cef-9e09-2a25efdfdbe6",
       "techName": "imie_11",
       "title": "Imię",
       "type": "TEXT_FIELD",
-      "confidence": 0.15,
+      "confidence": 0.13,
       "sources": [
         {
           "page": 1,
@@ -3523,7 +3433,7 @@
             "w": 1251.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko podopiecznego  eeeeveseeesesesonesesoe ee eee wewasowewa eee o eee eee ee eee seee w e eee o eee seee ee ee eee ee",
+          "text": "Imię i nazwisko podopiecznego  eeeeveseeereseeonoeesseoewawa se oo see oo ee o eee ae e ae eee eee o ke eee o ee eee ee o eee ee eee",
           "blockIds": [
             "p1-b315",
             "p1-b316",
@@ -3538,12 +3448,12 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "d6a84705-fdde-557d-955e-cd8ccedd7dc5": {
-      "id": "d6a84705-fdde-557d-955e-cd8ccedd7dc5",
+    "51612a71-781e-5b0b-bc36-e3f1f87b5bab": {
+      "id": "51612a71-781e-5b0b-bc36-e3f1f87b5bab",
       "techName": "nazwisko_11",
       "title": "Nazwisko",
       "type": "TEXT_FIELD",
-      "confidence": 0.15,
+      "confidence": 0.13,
       "sources": [
         {
           "page": 1,
@@ -3553,7 +3463,7 @@
             "w": 1251.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko podopiecznego  eeeeveseeesesesonesesoe ee eee wewasowewa eee o eee eee ee eee seee w e eee o eee seee ee ee eee ee",
+          "text": "Imię i nazwisko podopiecznego  eeeeveseeereseeonoeesseoewawa se oo see oo ee o eee ae e ae eee eee o ke eee o ee eee ee o eee ee eee",
           "blockIds": [
             "p1-b315",
             "p1-b316",
@@ -3568,12 +3478,12 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "1470fa49-c16a-5027-abe8-7412d033c7ac": {
-      "id": "1470fa49-c16a-5027-abe8-7412d033c7ac",
+    "1d088dcb-8103-5434-8b34-a950e64fa36c": {
+      "id": "1d088dcb-8103-5434-8b34-a950e64fa36c",
       "techName": "zgoda_w_imieniu_podopiecznego_nieletniego",
       "title": "Zgoda w imieniu podopiecznego nieletniego",
       "type": "SECTION",
-      "confidence": 0.15,
+      "confidence": 0.13,
       "sources": [
         {
           "page": 1,
@@ -3596,12 +3506,12 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "d9f4403d-91dc-5247-9ad8-05c238e23eed": {
-      "id": "d9f4403d-91dc-5247-9ad8-05c238e23eed",
+    "cbb59a33-6253-5297-9053-6884b3ea5f98": {
+      "id": "cbb59a33-6253-5297-9053-6884b3ea5f98",
       "techName": "imie_12",
       "title": "Imię",
       "type": "TEXT_FIELD",
-      "confidence": 0.15,
+      "confidence": 0.13,
       "sources": [
         {
           "page": 1,
@@ -3611,7 +3521,7 @@
             "w": 1251.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko podopiecznego  eeeeveseeesesesonesesoe ee eee wewasowewa eee o eee eee ee eee seee w e eee o eee seee ee ee eee ee",
+          "text": "Imię i nazwisko podopiecznego  eeeeveseeereseeonoeesseoewawa se oo see oo ee o eee ae e ae eee eee o ke eee o ee eee ee o eee ee eee",
           "blockIds": [
             "p1-b323",
             "p1-b324",
@@ -3626,12 +3536,12 @@
         "rozdzielono 'imię i nazwisko'"
       ]
     },
-    "f4851c2c-85d5-5b41-a28c-24eaeb712948": {
-      "id": "f4851c2c-85d5-5b41-a28c-24eaeb712948",
+    "aef669da-3661-58de-ad3f-12c33432f12a": {
+      "id": "aef669da-3661-58de-ad3f-12c33432f12a",
       "techName": "nazwisko_12",
       "title": "Nazwisko",
       "type": "TEXT_FIELD",
-      "confidence": 0.15,
+      "confidence": 0.13,
       "sources": [
         {
           "page": 1,
@@ -3641,7 +3551,7 @@
             "w": 1251.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko podopiecznego  eeeeveseeesesesonesesoe ee eee wewasowewa eee o eee eee ee eee seee w e eee o eee seee ee ee eee ee",
+          "text": "Imię i nazwisko podopiecznego  eeeeveseeereseeonoeesseoewawa se oo see oo ee o eee ae e ae eee eee o ke eee o ee eee ee o eee ee eee",
           "blockIds": [
             "p1-b323",
             "p1-b324",
@@ -3661,7 +3571,7 @@
       "techName": "dane_wniosku",
       "title": "Dane wniosku",
       "type": "SECTION",
-      "confidence": 0.64,
+      "confidence": 0.61,
       "sources": [],
       "decidedBy": [
         "rules"
@@ -3703,7 +3613,7 @@
       "techName": "zalacznik_nr_3_do_zarzadzenia",
       "title": "Załącznik Nr 3 do zarządzenia",
       "type": "TEXT_FIELD",
-      "confidence": 0.72,
+      "confidence": 0.73,
       "sources": [
         {
           "page": 1,
@@ -3731,7 +3641,7 @@
       "techName": "nr_245",
       "title": "Nr 245",
       "type": "TEXT_FIELD",
-      "confidence": 0.53,
+      "confidence": 0.48,
       "sources": [
         {
           "page": 1,
@@ -3741,7 +3651,7 @@
             "w": 207.0,
             "h": 29.0
           },
-          "text": "Nr 245/1X/2024",
+          "text": "Nr 245/IX/2024",
           "blockIds": [
             "p1-b2"
           ]
@@ -3756,10 +3666,10 @@
     },
     "2c65512d-dcd5-5af9-99c7-29a163adebd9": {
       "id": "2c65512d-dcd5-5af9-99c7-29a163adebd9",
-      "techName": "text_field_1x",
-      "title": "1x",
+      "techName": "ix",
+      "title": "Ix",
       "type": "TEXT_FIELD",
-      "confidence": 0.53,
+      "confidence": 0.48,
       "sources": [
         {
           "page": 1,
@@ -3769,7 +3679,7 @@
             "w": 207.0,
             "h": 29.0
           },
-          "text": "Nr 245/1X/2024",
+          "text": "Nr 245/IX/2024",
           "blockIds": [
             "p1-b2"
           ]
@@ -3787,7 +3697,7 @@
       "techName": "text_field_2024",
       "title": "2024",
       "type": "TEXT_FIELD",
-      "confidence": 0.53,
+      "confidence": 0.48,
       "sources": [
         {
           "page": 1,
@@ -3797,7 +3707,7 @@
             "w": 207.0,
             "h": 29.0
           },
-          "text": "Nr 245/1X/2024",
+          "text": "Nr 245/IX/2024",
           "blockIds": [
             "p1-b2"
           ]
@@ -3815,7 +3725,7 @@
       "techName": "prezydenta_miasta_zgierza",
       "title": "Prezydenta Miasta Zgierza",
       "type": "TEXT_FIELD",
-      "confidence": 0.7,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -3881,7 +3791,7 @@
             "w": 1135.0,
             "h": 2081.0
           },
-          "text": "I. — Wniosek o przyznanie stypendium sportowego Rady Miasta Zgierza II. — Wniosek o przyznanie nagrody sportowej Rady Miasta Zgierza II. Wniosek o przyznanie wyróżnienia sportowego Rady Miasta Zgierza I Wniosek o przyznanie stypendium sportowego Rady Miasta",
+          "text": "I. — Wniosek o przyznanie stypendium sportowego Rady Miasta Zgierza II. — Wniosek o przyznanie nagrody sportowej Rady Miasta Zgierza II. Wniosek o przyznanie wyróżnienia sportowego Rady Miasta Zgierza I. Wniosek o przyznanie stypendium sportowego Rady Miasta",
           "blockIds": [
             "p1-b6",
             "p1-b7",
@@ -3902,7 +3812,7 @@
       "techName": "zgierza",
       "title": "Zgierza",
       "type": "TEXT_FIELD",
-      "confidence": 0.72,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -3925,8 +3835,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "928227e6-3c5c-57b0-9495-8f277e161af5": {
-      "id": "928227e6-3c5c-57b0-9495-8f277e161af5",
+    "4ef62a0b-840e-58d4-a9ca-0a53fe81b97d": {
+      "id": "4ef62a0b-840e-58d4-a9ca-0a53fe81b97d",
       "techName": "dane_kandydatki_kandydata_do_stypendium",
       "title": "Dane kandydatki/kandydata do stypendium",
       "type": "SECTION",
@@ -3953,8 +3863,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "d2dbaa70-0cf2-564f-a3a5-3ddf6dfca60f": {
-      "id": "d2dbaa70-0cf2-564f-a3a5-3ddf6dfca60f",
+    "0180861b-b9ea-5144-87cc-e6bec5585543": {
+      "id": "0180861b-b9ea-5144-87cc-e6bec5585543",
       "techName": "text_block_8",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -3981,8 +3891,8 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "4ef62a0b-840e-58d4-a9ca-0a53fe81b97d": {
-      "id": "4ef62a0b-840e-58d4-a9ca-0a53fe81b97d",
+    "098c7ab7-4cf3-52c8-8379-a85989500944": {
+      "id": "098c7ab7-4cf3-52c8-8379-a85989500944",
       "techName": "dyscypliny_sportowe",
       "title": "Dyscypliny sportowe",
       "type": "TEXT_FIELD",
@@ -4009,8 +3919,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "65b8e5d0-ebff-5d05-9c5c-e54dcb5a447e": {
-      "id": "65b8e5d0-ebff-5d05-9c5c-e54dcb5a447e",
+    "2a4b65f8-d727-54c0-bec8-be036246d193": {
+      "id": "2a4b65f8-d727-54c0-bec8-be036246d193",
       "techName": "a_nastepnie_wybierz_konkretne_dyscypliny_z_listy",
       "title": "A następnie wybierz konkretne dyscypliny z listy",
       "type": "RADIO",
@@ -4040,8 +3950,8 @@
         "opcje z listy po instrukcji 'zaznacz' (brak wykrytych kratek)"
       ]
     },
-    "d8b301a7-5127-5251-80c2-fcfdb6b6e6af": {
-      "id": "d8b301a7-5127-5251-80c2-fcfdb6b6e6af",
+    "9be63b85-1120-59b5-b454-f4250711c851": {
+      "id": "9be63b85-1120-59b5-b454-f4250711c851",
       "techName": "dyscypliny_sportowe_2",
       "title": "Dyscypliny sportowe",
       "type": "SECTION",
@@ -4068,8 +3978,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "f68f786c-1922-5fba-8ef2-b6e92b11a38f": {
-      "id": "f68f786c-1922-5fba-8ef2-b6e92b11a38f",
+    "928227e6-3c5c-57b0-9495-8f277e161af5": {
+      "id": "928227e6-3c5c-57b0-9495-8f277e161af5",
       "techName": "text_block_9",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -4096,8 +4006,8 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "9be63b85-1120-59b5-b454-f4250711c851": {
-      "id": "9be63b85-1120-59b5-b454-f4250711c851",
+    "65b8e5d0-ebff-5d05-9c5c-e54dcb5a447e": {
+      "id": "65b8e5d0-ebff-5d05-9c5c-e54dcb5a447e",
       "techName": "dyscypliny_sportowe_3",
       "title": "Dyscypliny sportowe",
       "type": "RADIO",
@@ -4144,8 +4054,8 @@
         "opcje z listy po instrukcji 'zaznacz' (brak wykrytych kratek)"
       ]
     },
-    "b18dc0db-df5c-5c81-bde7-00c62fe3febc": {
-      "id": "b18dc0db-df5c-5c81-bde7-00c62fe3febc",
+    "d2dbaa70-0cf2-564f-a3a5-3ddf6dfca60f": {
+      "id": "d2dbaa70-0cf2-564f-a3a5-3ddf6dfca60f",
       "techName": "inna",
       "title": "Inna",
       "type": "TEXT_FIELD",
@@ -4172,8 +4082,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "f7d00402-1e15-5c33-8d0b-03c9ab39cb2a": {
-      "id": "f7d00402-1e15-5c33-8d0b-03c9ab39cb2a",
+    "958454cd-02e7-584b-82f0-76938bc5daf1": {
+      "id": "958454cd-02e7-584b-82f0-76938bc5daf1",
       "techName": "osiagniecia_sportowe",
       "title": "Osiągnięcia sportowe",
       "type": "SECTION",
@@ -4200,8 +4110,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "0c7ac2ee-2e9b-5613-9b88-5aa87c815cec": {
-      "id": "0c7ac2ee-2e9b-5613-9b88-5aa87c815cec",
+    "8699e30f-8d38-5758-8a1d-72a690b923a8": {
+      "id": "8699e30f-8d38-5758-8a1d-72a690b923a8",
       "techName": "text_block_10",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -4239,8 +4149,8 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "8699e30f-8d38-5758-8a1d-72a690b923a8": {
-      "id": "8699e30f-8d38-5758-8a1d-72a690b923a8",
+    "b18dc0db-df5c-5c81-bde7-00c62fe3febc": {
+      "id": "b18dc0db-df5c-5c81-bde7-00c62fe3febc",
       "techName": "opinia_macierzystego_klubu_sportowego",
       "title": "Opinia macierzystego klubu sportowego",
       "type": "TEXT_FIELD",
@@ -4267,8 +4177,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "958454cd-02e7-584b-82f0-76938bc5daf1": {
-      "id": "958454cd-02e7-584b-82f0-76938bc5daf1",
+    "f68f786c-1922-5fba-8ef2-b6e92b11a38f": {
+      "id": "f68f786c-1922-5fba-8ef2-b6e92b11a38f",
       "techName": "wymagane_zaswiadczenia",
       "title": "Wymagane zaświadczenia",
       "type": "TEXT_FIELD",
@@ -4295,8 +4205,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "ccbd1355-21a0-524b-9c0c-a5dd2b3cfcd8": {
-      "id": "ccbd1355-21a0-524b-9c0c-a5dd2b3cfcd8",
+    "d8b301a7-5127-5251-80c2-fcfdb6b6e6af": {
+      "id": "d8b301a7-5127-5251-80c2-fcfdb6b6e6af",
       "techName": "dodatkowe_informacje_o_osiagnieciach_sportowych",
       "title": "Dodatkowe informacje o osiągnieciach sportowych",
       "type": "TEXT_FIELD",
@@ -4323,12 +4233,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "e94c204d-d920-507a-8a14-e0e2a8134b59": {
-      "id": "e94c204d-d920-507a-8a14-e0e2a8134b59",
+    "639fbbe9-3df9-5c2c-983a-47c940c046b7": {
+      "id": "639fbbe9-3df9-5c2c-983a-47c940c046b7",
       "techName": "zgoda_kandydata_pelnoletniego_do_stypendium_2",
       "title": "Zgoda kandydata pełnoletniego do stypendium",
       "type": "SECTION",
-      "confidence": 0.57,
+      "confidence": 0.54,
       "sources": [
         {
           "page": 1,
@@ -4351,8 +4261,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "3b7c56e3-c6d5-5b1c-8132-91d0d7f2e06d": {
-      "id": "3b7c56e3-c6d5-5b1c-8132-91d0d7f2e06d",
+    "86c1dbc9-6e7f-5ddb-babf-0c6afcbb4ed3": {
+      "id": "86c1dbc9-6e7f-5ddb-babf-0c6afcbb4ed3",
       "techName": "text_block_11",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -4383,12 +4293,12 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "9beb4a19-38e5-5d6f-a73d-90d58e1518ea": {
-      "id": "9beb4a19-38e5-5d6f-a73d-90d58e1518ea",
-      "techName": "eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe",
-      "title": "Eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe",
+    "95beef5a-d1cb-5122-affb-37f36709185b": {
+      "id": "95beef5a-d1cb-5122-affb-37f36709185b",
+      "techName": "eceoreseoresoronesneeneosowawenowawowowawokowewow_es_se_ae_e_ae",
+      "title": "Eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae",
       "type": "TEXT_FIELD",
-      "confidence": 0.18,
+      "confidence": 0.1,
       "sources": [
         {
           "page": 1,
@@ -4398,7 +4308,7 @@
             "w": 1233.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko kandydata  eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe sse eee ee see seee w o so seee se oo",
+          "text": "Imię i nazwisko kandydata  eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae see se seee so see o wa oo",
           "blockIds": [
             "p1-b108",
             "p1-b109",
@@ -4410,11 +4320,11 @@
         "rules"
       ],
       "reasons": [
-        "etykieta w dokumencie"
+        "pole w treści zdania – sprawdź tytuł"
       ]
     },
-    "639fbbe9-3df9-5c2c-983a-47c940c046b7": {
-      "id": "639fbbe9-3df9-5c2c-983a-47c940c046b7",
+    "cd30eefd-0cf8-596e-b69f-27e827633de2": {
+      "id": "cd30eefd-0cf8-596e-b69f-27e827633de2",
       "techName": "data_podpis_kandydata",
       "title": "Data Podpis kandydata",
       "type": "DATEPICKER",
@@ -4441,12 +4351,12 @@
         "typ z etykiety (DATEPICKER)"
       ]
     },
-    "e4465d13-62b3-56de-b09c-210a6a37d0d9": {
-      "id": "e4465d13-62b3-56de-b09c-210a6a37d0d9",
+    "a479ef30-fbba-51ce-af76-c1a2a7e5cce2": {
+      "id": "a479ef30-fbba-51ce-af76-c1a2a7e5cce2",
       "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_stypendium_2",
       "title": "Zgoda w imieniu kandydata nieletniego do stypendium",
       "type": "SECTION",
-      "confidence": 0.56,
+      "confidence": 0.6,
       "sources": [
         {
           "page": 1,
@@ -4469,8 +4379,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "61b07844-eb5f-5dfd-96eb-3450d7a28470": {
-      "id": "61b07844-eb5f-5dfd-96eb-3450d7a28470",
+    "0573cdfb-a6e6-54e7-bd3a-f843dc3cf38d": {
+      "id": "0573cdfb-a6e6-54e7-bd3a-f843dc3cf38d",
       "techName": "text_block_12",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -4503,42 +4413,12 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "ace63e4d-b817-51da-beab-2e92e7fbb2ec": {
-      "id": "ace63e4d-b817-51da-beab-2e92e7fbb2ec",
-      "techName": "eeeeceeeseeeeosoeneonowononowononowowon",
-      "title": "Eeeeceeeseeeeosoeneonowononowononowowon",
-      "type": "TEXT_FIELD",
-      "confidence": 0.12,
-      "sources": [
-        {
-          "page": 1,
-          "bbox": {
-            "x": 199.0,
-            "y": 12611.0,
-            "w": 1239.0,
-            "h": 37.0
-          },
-          "text": "Imię i nazwisko kandydata  eeeeceeeseeeeosoeneonowononowononowowon es seee ee seee eee se aso ses oo see see ses eee ee se ne",
-          "blockIds": [
-            "p1-b118",
-            "p1-b119",
-            "p1-b120"
-          ]
-        }
-      ],
-      "decidedBy": [
-        "rules"
-      ],
-      "reasons": [
-        "etykieta w dokumencie"
-      ]
-    },
-    "0573cdfb-a6e6-54e7-bd3a-f843dc3cf38d": {
-      "id": "0573cdfb-a6e6-54e7-bd3a-f843dc3cf38d",
+    "e94c204d-d920-507a-8a14-e0e2a8134b59": {
+      "id": "e94c204d-d920-507a-8a14-e0e2a8134b59",
       "techName": "text_field_1_ja_nizej_podpisany",
       "title": "1) Ja niżej podpisany",
       "type": "TEXT_FIELD",
-      "confidence": 0.44,
+      "confidence": 0.37,
       "sources": [
         {
           "page": 1,
@@ -4548,7 +4428,7 @@
             "w": 1248.0,
             "h": 37.0
           },
-          "text": "1) Ja niżej podpisany  eeseevseeseeasowenanowosanonononeosowakaneesosasetoaeaee se o eee (rodzic/opiekun prawny)",
+          "text": "1) Ja niżej podpisany  eeeeeeseseeesowowanowosowowososeosowanawewenowasesan e see ee asa eee (rodzic/opiekun prawny)",
           "blockIds": [
             "p1-b121",
             "p1-b122",
@@ -4563,12 +4443,42 @@
         "etykieta w dokumencie"
       ]
     },
-    "d48e5cd4-0e21-5c53-8a7a-771114116337": {
-      "id": "d48e5cd4-0e21-5c53-8a7a-771114116337",
+    "61de19db-e890-5e72-805b-4d3d7644f8d3": {
+      "id": "61de19db-e890-5e72-805b-4d3d7644f8d3",
+      "techName": "eeeeeeseseeesowowanowosowowososeosowanawewenowasesan",
+      "title": "Eeeeeeseseeesowowanowosowowososeosowanawewenowasesan",
+      "type": "TEXT_FIELD",
+      "confidence": 0.37,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 12675.0,
+            "w": 1248.0,
+            "h": 37.0
+          },
+          "text": "1) Ja niżej podpisany  eeeeeeseseeesowowanowosowowososeosowanawewenowasesan e see ee asa eee (rodzic/opiekun prawny)",
+          "blockIds": [
+            "p1-b121",
+            "p1-b122",
+            "p1-b123"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "8d951229-2c57-57cc-9c18-502137ac6267": {
+      "id": "8d951229-2c57-57cc-9c18-502137ac6267",
       "techName": "data_podpis_rodzica",
       "title": "Data podpis rodzica",
       "type": "DATEPICKER",
-      "confidence": 0.71,
+      "confidence": 0.72,
       "sources": [
         {
           "page": 1,
@@ -4591,12 +4501,12 @@
         "typ z etykiety (DATEPICKER)"
       ]
     },
-    "a479ef30-fbba-51ce-af76-c1a2a7e5cce2": {
-      "id": "a479ef30-fbba-51ce-af76-c1a2a7e5cce2",
+    "ace63e4d-b817-51da-beab-2e92e7fbb2ec": {
+      "id": "ace63e4d-b817-51da-beab-2e92e7fbb2ec",
       "techName": "opiekuna_prawnego",
       "title": "Opiekuna prawnego",
       "type": "TEXT_FIELD",
-      "confidence": 0.71,
+      "confidence": 0.72,
       "sources": [
         {
           "page": 1,
@@ -4619,8 +4529,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "b0b46663-b808-57cf-b77d-16b70ae8d8d2": {
-      "id": "b0b46663-b808-57cf-b77d-16b70ae8d8d2",
+    "0913893e-6dc4-5ad4-8826-a5774fcac7b5": {
+      "id": "0913893e-6dc4-5ad4-8826-a5774fcac7b5",
       "techName": "osiagniecia_sportowe_2",
       "title": "Osiągnięcia sportowe",
       "type": "SECTION",
@@ -4647,8 +4557,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "ebeb3681-84d3-508f-bb0a-a89637461646": {
-      "id": "ebeb3681-84d3-508f-bb0a-a89637461646",
+    "1bd53320-0b56-5d51-a866-f6526bd9e12c": {
+      "id": "1bd53320-0b56-5d51-a866-f6526bd9e12c",
       "techName": "text_block_13",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -4686,12 +4596,12 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "1bd53320-0b56-5d51-a866-f6526bd9e12c": {
-      "id": "1bd53320-0b56-5d51-a866-f6526bd9e12c",
+    "1810a267-6731-57bc-acd5-94fa76eea939": {
+      "id": "1810a267-6731-57bc-acd5-94fa76eea939",
       "techName": "opinia_macierzystego_klubu_sportowego_2",
       "title": "Opinia macierzystego klubu sportowego",
       "type": "TEXT_FIELD",
-      "confidence": 0.72,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -4714,8 +4624,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "0913893e-6dc4-5ad4-8826-a5774fcac7b5": {
-      "id": "0913893e-6dc4-5ad4-8826-a5774fcac7b5",
+    "a8a5653f-fdec-5c31-898b-7033566a7c76": {
+      "id": "a8a5653f-fdec-5c31-898b-7033566a7c76",
       "techName": "wymagane_zaswiadczenia_2",
       "title": "Wymagane zaświadczenia",
       "type": "TEXT_FIELD",
@@ -4742,12 +4652,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "5665a5ae-b88f-5f0a-9d50-938c2fc705c2": {
-      "id": "5665a5ae-b88f-5f0a-9d50-938c2fc705c2",
+    "9d44bf60-325f-5950-9e06-346f843e1c3b": {
+      "id": "9d44bf60-325f-5950-9e06-346f843e1c3b",
       "techName": "dodatkowe_informacje_o_osiagnieciach_sportowych_2",
       "title": "Dodatkowe informacje o osiągnieciach sportowych",
       "type": "TEXT_FIELD",
-      "confidence": 0.71,
+      "confidence": 0.72,
       "sources": [
         {
           "page": 1,
@@ -4770,12 +4680,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "2c0a29d6-e254-5f5e-8d19-e1b8ed32e998": {
-      "id": "2c0a29d6-e254-5f5e-8d19-e1b8ed32e998",
+    "8a816719-ec6c-5ca6-8266-282ceb719e5f": {
+      "id": "8a816719-ec6c-5ca6-8266-282ceb719e5f",
       "techName": "zgoda_kandydata_pelnoletniego_do_nagrody_2",
       "title": "Zgoda kandydata pełnoletniego do nagrody",
       "type": "SECTION",
-      "confidence": 0.57,
+      "confidence": 0.54,
       "sources": [
         {
           "page": 1,
@@ -4798,8 +4708,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "46e20221-c8e5-531b-9734-d49362c8ba8f": {
-      "id": "46e20221-c8e5-531b-9734-d49362c8ba8f",
+    "c7fab2ab-1154-53b6-9cd3-00980c5f9bb9": {
+      "id": "c7fab2ab-1154-53b6-9cd3-00980c5f9bb9",
       "techName": "text_block_14",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -4829,12 +4739,12 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "14b36573-550f-5edd-901e-d258abeabe1d": {
-      "id": "14b36573-550f-5edd-901e-d258abeabe1d",
-      "techName": "eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe_2",
-      "title": "Eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe",
+    "f2aec0bb-d987-53d3-b93d-552a84e49069": {
+      "id": "f2aec0bb-d987-53d3-b93d-552a84e49069",
+      "techName": "eceoreseoresoronesneeneosowawenowawowowawokowewow_es_se_ae_e_ae_2",
+      "title": "Eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae",
       "type": "TEXT_FIELD",
-      "confidence": 0.18,
+      "confidence": 0.1,
       "sources": [
         {
           "page": 1,
@@ -4844,7 +4754,7 @@
             "w": 1233.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko kandydata  eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe sse eee ee see seee w o so seee se oo",
+          "text": "Imię i nazwisko kandydata  eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae see se seee so see o wa oo",
           "blockIds": [
             "p1-b198",
             "p1-b199",
@@ -4856,11 +4766,11 @@
         "rules"
       ],
       "reasons": [
-        "etykieta w dokumencie"
+        "pole w treści zdania – sprawdź tytuł"
       ]
     },
-    "8a816719-ec6c-5ca6-8266-282ceb719e5f": {
-      "id": "8a816719-ec6c-5ca6-8266-282ceb719e5f",
+    "738fc24d-374b-5f1e-a260-93a1bfbbc3fe": {
+      "id": "738fc24d-374b-5f1e-a260-93a1bfbbc3fe",
       "techName": "data_podpis_kandydata_2",
       "title": "Data Podpis kandydata",
       "type": "DATEPICKER",
@@ -4887,12 +4797,12 @@
         "typ z etykiety (DATEPICKER)"
       ]
     },
-    "150e8afb-84fd-52d5-b3c2-d834333a9cf6": {
-      "id": "150e8afb-84fd-52d5-b3c2-d834333a9cf6",
+    "128c9d2d-982f-5e42-891b-2bf7c5fbdcaa": {
+      "id": "128c9d2d-982f-5e42-891b-2bf7c5fbdcaa",
       "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_nagrody_2",
       "title": "Zgoda w imieniu kandydata nieletniego do nagrody",
       "type": "SECTION",
-      "confidence": 0.65,
+      "confidence": 0.67,
       "sources": [
         {
           "page": 1,
@@ -4915,8 +4825,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "c0ea870a-ba8c-51d0-8dea-ca16b2042a71": {
-      "id": "c0ea870a-ba8c-51d0-8dea-ca16b2042a71",
+    "4e726795-2c07-59de-9242-2fcfe8bfbe92": {
+      "id": "4e726795-2c07-59de-9242-2fcfe8bfbe92",
       "techName": "text_block_15",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -4930,7 +4840,7 @@
             "w": 1204.0,
             "h": 1654.0
           },
-          "text": "wyrażam zgodę na przetwarzanie danych osobowych mojego dziecka/podopiecznego zawartych we wniosku w celu przekazania go do dalszego procedowania. 2) Oświadczam, że zapoznałem się z regulaminem przyznawania nagród sportowych Rady Miasta Zgierza i akceptuję wszystkie jego postanowienia. Wypełniony formularz zgody przechowuje właściwy administrator danych osobowych. II. Wniosek o przyznanie wyróżnienia sportowego Rady Miasta",
+          "text": "wyrażam zgodę na przetwarzanie danych osobowych mojego dziecka/podopiecznego zawartych we wniosku w celu przekazania go do dalszego procedowania. 2) Oświadczam, że zapoznałem się z regulaminem przyznawania nagród sportowych Rady Miasta Zgierza i akceptuję wszystkie jego postanowienia. Wypełniony formularz zgody przechowuje właściwy administrator danych osobowych. I. Wniosek o przyznanie wyróżnienia sportowego Rady Miasta",
           "blockIds": [
             "p1-b211",
             "p1-b212",
@@ -4948,12 +4858,12 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "f8fae6c9-8756-5e3a-988a-0ad34367801b": {
-      "id": "f8fae6c9-8756-5e3a-988a-0ad34367801b",
+    "2c0a29d6-e254-5f5e-8d19-e1b8ed32e998": {
+      "id": "2c0a29d6-e254-5f5e-8d19-e1b8ed32e998",
       "techName": "text_field_1_ja_nizej_podpisany_2",
       "title": "1) Ja niżej podpisany",
       "type": "TEXT_FIELD",
-      "confidence": 0.29,
+      "confidence": 0.44,
       "sources": [
         {
           "page": 1,
@@ -4963,7 +4873,7 @@
             "w": 1233.0,
             "h": 37.0
           },
-          "text": "1) Ja niżej podpisany  eeeeeeseeeeeseeeneososananowowawowon see awe ee ee wawawa ses owa seee (rodzic/opiekun prawny)",
+          "text": "1) Ja niżej podpisany  eeeeeeseeeeesseeeeesesaneowowanowonseaewewawasewanawa ses ona ses (rodzic/opiekun prawny)",
           "blockIds": [
             "p1-b208",
             "p1-b209",
@@ -4978,8 +4888,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "4e726795-2c07-59de-9242-2fcfe8bfbe92": {
-      "id": "4e726795-2c07-59de-9242-2fcfe8bfbe92",
+    "e6de9133-4aac-5df4-be17-7e57cac4d9f3": {
+      "id": "e6de9133-4aac-5df4-be17-7e57cac4d9f3",
       "techName": "data_podpis_rodzica_2",
       "title": "Data podpis rodzica",
       "type": "DATEPICKER",
@@ -5006,8 +4916,8 @@
         "typ z etykiety (DATEPICKER)"
       ]
     },
-    "5769e08c-fdf1-5770-bdcd-74d23d877deb": {
-      "id": "5769e08c-fdf1-5770-bdcd-74d23d877deb",
+    "70bb1d16-2272-5632-9222-66fa4d1e3566": {
+      "id": "70bb1d16-2272-5632-9222-66fa4d1e3566",
       "techName": "opiekuna_prawnego_2",
       "title": "Opiekuna prawnego",
       "type": "TEXT_FIELD",
@@ -5034,12 +4944,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "128c9d2d-982f-5e42-891b-2bf7c5fbdcaa": {
-      "id": "128c9d2d-982f-5e42-891b-2bf7c5fbdcaa",
+    "f8fae6c9-8756-5e3a-988a-0ad34367801b": {
+      "id": "f8fae6c9-8756-5e3a-988a-0ad34367801b",
       "techName": "zgierza_2",
       "title": "Zgierza",
       "type": "TEXT_FIELD",
-      "confidence": 0.72,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -5062,8 +4972,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "d7a3cc0e-28e4-5f50-93ff-3269edf93c81": {
-      "id": "d7a3cc0e-28e4-5f50-93ff-3269edf93c81",
+    "fa0aea07-ed8d-5925-9bc1-a2e87fd43539": {
+      "id": "fa0aea07-ed8d-5925-9bc1-a2e87fd43539",
       "techName": "dane_trenera",
       "title": "Dane trenera",
       "type": "SECTION",
@@ -5090,8 +5000,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "6607cf9b-a4dc-57ab-9b50-ce23c5c2af1f": {
-      "id": "6607cf9b-a4dc-57ab-9b50-ce23c5c2af1f",
+    "3bd50056-37bc-589e-bbcf-6713c3155ae5": {
+      "id": "3bd50056-37bc-589e-bbcf-6713c3155ae5",
       "techName": "text_block_16",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -5121,12 +5031,12 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "622b0d2a-6fb5-5df8-94a7-b77bb4b79a14": {
-      "id": "622b0d2a-6fb5-5df8-94a7-b77bb4b79a14",
+    "5c4dd472-c040-526b-8034-42eb5354a8ad": {
+      "id": "5c4dd472-c040-526b-8034-42eb5354a8ad",
       "techName": "dane_osobowe_kandydatki",
       "title": "Dane osobowe kandydatki",
       "type": "TEXT_FIELD",
-      "confidence": 0.72,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -5149,12 +5059,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "3bd50056-37bc-589e-bbcf-6713c3155ae5": {
-      "id": "3bd50056-37bc-589e-bbcf-6713c3155ae5",
+    "0f078103-6bdb-55bd-9465-6b425ca7c5fd": {
+      "id": "0f078103-6bdb-55bd-9465-6b425ca7c5fd",
       "techName": "kandydata_do_wyroznienia",
       "title": "Kandydata do wyroznienia",
       "type": "TEXT_FIELD",
-      "confidence": 0.72,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -5177,8 +5087,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "fa0aea07-ed8d-5925-9bc1-a2e87fd43539": {
-      "id": "fa0aea07-ed8d-5925-9bc1-a2e87fd43539",
+    "a9c2e055-b493-5668-a0ec-006e964e227c": {
+      "id": "a9c2e055-b493-5668-a0ec-006e964e227c",
       "techName": "opinia_macierzystego_klubu_sportowego_3",
       "title": "Opinia macierzystego klubu sportowego",
       "type": "TEXT_FIELD",
@@ -5205,12 +5115,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "cd0fd642-d422-5f4b-afcb-bcac89fe2fd1": {
-      "id": "cd0fd642-d422-5f4b-afcb-bcac89fe2fd1",
+    "622b0d2a-6fb5-5df8-94a7-b77bb4b79a14": {
+      "id": "622b0d2a-6fb5-5df8-94a7-b77bb4b79a14",
       "techName": "dodatkowe_informacje_o_osiagnieciach_sportowych_3",
       "title": "Dodatkowe informacje o osiągnieciach sportowych",
       "type": "TEXT_FIELD",
-      "confidence": 0.72,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -5233,12 +5143,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "70e92d9e-e274-514c-996c-0b7d97f8619e": {
-      "id": "70e92d9e-e274-514c-996c-0b7d97f8619e",
+    "2cb39f7c-9c5e-587a-82dc-0a438daaaa65": {
+      "id": "2cb39f7c-9c5e-587a-82dc-0a438daaaa65",
       "techName": "zgoda_kandydata_do_wyroznienia_2",
       "title": "Zgoda kandydata do wyróżnienia",
       "type": "SECTION",
-      "confidence": 0.57,
+      "confidence": 0.54,
       "sources": [
         {
           "page": 1,
@@ -5261,8 +5171,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "bd010476-95f1-5cef-9e09-2a25efdfdbe6": {
-      "id": "bd010476-95f1-5cef-9e09-2a25efdfdbe6",
+    "e3605e5d-1ae6-5147-a114-8d4141c9cb56": {
+      "id": "e3605e5d-1ae6-5147-a114-8d4141c9cb56",
       "techName": "text_block_17",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -5290,12 +5200,12 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "927bd811-2e02-585d-9f4d-b173a1a9ef29": {
-      "id": "927bd811-2e02-585d-9f4d-b173a1a9ef29",
-      "techName": "eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe_3",
-      "title": "Eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe",
+    "ef951778-a20f-5d94-9c24-67c321fc0d5e": {
+      "id": "ef951778-a20f-5d94-9c24-67c321fc0d5e",
+      "techName": "eceoreseoresoronesneeneosowawenowawowowawokowewow_es_se_ae_e_ae_3",
+      "title": "Eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae",
       "type": "TEXT_FIELD",
-      "confidence": 0.18,
+      "confidence": 0.1,
       "sources": [
         {
           "page": 1,
@@ -5305,7 +5215,7 @@
             "w": 1233.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko kandydata  eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe sse eee ee see seee w o so seee se oo",
+          "text": "Imię i nazwisko kandydata  eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae see se seee so see o wa oo",
           "blockIds": [
             "p1-b303",
             "p1-b304",
@@ -5317,11 +5227,11 @@
         "rules"
       ],
       "reasons": [
-        "etykieta w dokumencie"
+        "pole w treści zdania – sprawdź tytuł"
       ]
     },
-    "2cb39f7c-9c5e-587a-82dc-0a438daaaa65": {
-      "id": "2cb39f7c-9c5e-587a-82dc-0a438daaaa65",
+    "a23d85aa-7ca7-5f3a-81ec-4f1804c4cef7": {
+      "id": "a23d85aa-7ca7-5f3a-81ec-4f1804c4cef7",
       "techName": "data_podpis_kandydata_3",
       "title": "Data Podpis kandydata",
       "type": "DATEPICKER",
@@ -5348,12 +5258,12 @@
         "typ z etykiety (DATEPICKER)"
       ]
     },
-    "aef669da-3661-58de-ad3f-12c33432f12a": {
-      "id": "aef669da-3661-58de-ad3f-12c33432f12a",
+    "3940f7e9-8771-5240-97dd-c47cb07bba77": {
+      "id": "3940f7e9-8771-5240-97dd-c47cb07bba77",
       "techName": "zgoda_podopiecznego_pelnoletniego_2",
       "title": "Zgoda podopiecznego pełnoletniego",
       "type": "SECTION",
-      "confidence": 0.47,
+      "confidence": 0.33,
       "sources": [
         {
           "page": 1,
@@ -5376,8 +5286,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "3940f7e9-8771-5240-97dd-c47cb07bba77": {
-      "id": "3940f7e9-8771-5240-97dd-c47cb07bba77",
+    "d6a84705-fdde-557d-955e-cd8ccedd7dc5": {
+      "id": "d6a84705-fdde-557d-955e-cd8ccedd7dc5",
       "techName": "text_block_18",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -5405,12 +5315,12 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "4be34e58-4de1-5924-ab3e-b32dd7451895": {
-      "id": "4be34e58-4de1-5924-ab3e-b32dd7451895",
-      "techName": "eeeeveseeesesesonesesoe_ee_eee_wewasowewa",
-      "title": "Eeeeveseeesesesonesesoe ee eee wewasowewa",
+    "70e92d9e-e274-514c-996c-0b7d97f8619e": {
+      "id": "70e92d9e-e274-514c-996c-0b7d97f8619e",
+      "techName": "eeeeveseeereseeonoeesseoewawa_se_oo_see_oo_ee_o_eee_ae_e",
+      "title": "Eeeeveseeereseeonoeesseoewawa se oo see oo ee o eee ae e",
       "type": "TEXT_FIELD",
-      "confidence": 0.14,
+      "confidence": 0.08,
       "sources": [
         {
           "page": 1,
@@ -5420,7 +5330,37 @@
             "w": 1251.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko podopiecznego  eeeeveseeesesesonesesoe ee eee wewasowewa eee o eee eee ee eee seee w e eee o eee seee ee ee eee ee",
+          "text": "Imię i nazwisko podopiecznego  eeeeveseeereseeonoeesseoewawa se oo see oo ee o eee ae e ae eee eee o ke eee o ee eee ee o eee ee eee",
+          "blockIds": [
+            "p1-b315",
+            "p1-b316",
+            "p1-b317"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "pole w treści zdania – sprawdź tytuł"
+      ]
+    },
+    "71370cca-e962-595e-ab29-012a7af2032e": {
+      "id": "71370cca-e962-595e-ab29-012a7af2032e",
+      "techName": "ke",
+      "title": "Ke",
+      "type": "TEXT_FIELD",
+      "confidence": 0.11,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 35575.0,
+            "w": 1251.0,
+            "h": 37.0
+          },
+          "text": "Imię i nazwisko podopiecznego  eeeeveseeereseeonoeesseoewawa se oo see oo ee o eee ae e ae eee eee o ke eee o ee eee ee o eee ee eee",
           "blockIds": [
             "p1-b315",
             "p1-b316",
@@ -5435,12 +5375,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "c3e04d65-96b4-5fd8-89c3-4011ef592299": {
-      "id": "c3e04d65-96b4-5fd8-89c3-4011ef592299",
+    "1470fa49-c16a-5027-abe8-7412d033c7ac": {
+      "id": "1470fa49-c16a-5027-abe8-7412d033c7ac",
       "techName": "zgoda_w_imieniu_podopiecznego_nieletniego_2",
       "title": "Zgoda w imieniu podopiecznego nieletniego",
       "type": "SECTION",
-      "confidence": 0.59,
+      "confidence": 0.49,
       "sources": [
         {
           "page": 1,
@@ -5463,8 +5403,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "1d088dcb-8103-5434-8b34-a950e64fa36c": {
-      "id": "1d088dcb-8103-5434-8b34-a950e64fa36c",
+    "220c21f3-6c7d-508e-9ceb-2bfdca073cd1": {
+      "id": "220c21f3-6c7d-508e-9ceb-2bfdca073cd1",
       "techName": "text_block_19",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -5494,12 +5434,12 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "aa8af368-87d8-50b2-b080-260d39d670fc": {
-      "id": "aa8af368-87d8-50b2-b080-260d39d670fc",
-      "techName": "eeeeveseeesesesonesesoe_ee_eee_wewasowewa_2",
-      "title": "Eeeeveseeesesesonesesoe ee eee wewasowewa",
+    "d9f4403d-91dc-5247-9ad8-05c238e23eed": {
+      "id": "d9f4403d-91dc-5247-9ad8-05c238e23eed",
+      "techName": "eeeeveseeereseeonoeesseoewawa_se_oo_see_oo_ee_o_eee_ae_e_2",
+      "title": "Eeeeveseeereseeonoeesseoewawa se oo see oo ee o eee ae e",
       "type": "TEXT_FIELD",
-      "confidence": 0.14,
+      "confidence": 0.08,
       "sources": [
         {
           "page": 1,
@@ -5509,7 +5449,37 @@
             "w": 1251.0,
             "h": 37.0
           },
-          "text": "Imię i nazwisko podopiecznego  eeeeveseeesesesonesesoe ee eee wewasowewa eee o eee eee ee eee seee w e eee o eee seee ee ee eee ee",
+          "text": "Imię i nazwisko podopiecznego  eeeeveseeereseeonoeesseoewawa se oo see oo ee o eee ae e ae eee eee o ke eee o ee eee ee o eee ee eee",
+          "blockIds": [
+            "p1-b323",
+            "p1-b324",
+            "p1-b325"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "pole w treści zdania – sprawdź tytuł"
+      ]
+    },
+    "f4851c2c-85d5-5b41-a28c-24eaeb712948": {
+      "id": "f4851c2c-85d5-5b41-a28c-24eaeb712948",
+      "techName": "ke_2",
+      "title": "Ke",
+      "type": "TEXT_FIELD",
+      "confidence": 0.11,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 36096.0,
+            "w": 1251.0,
+            "h": 37.0
+          },
+          "text": "Imię i nazwisko podopiecznego  eeeeveseeereseeonoeesseoewawa se oo see oo ee o eee ae e ae eee eee o ke eee o ee eee ee o eee ee eee",
           "blockIds": [
             "p1-b323",
             "p1-b324",
@@ -5524,12 +5494,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "5f5b8d4b-183f-526c-943b-63a0879aed88": {
-      "id": "5f5b8d4b-183f-526c-943b-63a0879aed88",
+    "aa8af368-87d8-50b2-b080-260d39d670fc": {
+      "id": "aa8af368-87d8-50b2-b080-260d39d670fc",
       "techName": "data_podpis_rodzica_3",
       "title": "Data podpis rodzica",
       "type": "DATEPICKER",
-      "confidence": 0.71,
+      "confidence": 0.72,
       "sources": [
         {
           "page": 1,
@@ -5552,12 +5522,12 @@
         "typ z etykiety (DATEPICKER)"
       ]
     },
-    "220c21f3-6c7d-508e-9ceb-2bfdca073cd1": {
-      "id": "220c21f3-6c7d-508e-9ceb-2bfdca073cd1",
+    "5f5b8d4b-183f-526c-943b-63a0879aed88": {
+      "id": "5f5b8d4b-183f-526c-943b-63a0879aed88",
       "techName": "opiekuna_prawnego_3",
       "title": "Opiekuna prawnego",
       "type": "TEXT_FIELD",
-      "confidence": 0.71,
+      "confidence": 0.72,
       "sources": [
         {
           "page": 1,
@@ -5580,8 +5550,8 @@
         "etykieta w dokumencie"
       ]
     },
-    "2a4b65f8-d727-54c0-bec8-be036246d193": {
-      "id": "2a4b65f8-d727-54c0-bec8-be036246d193",
+    "0af2ebd7-c296-505f-a9e1-d381fd316dcc": {
+      "id": "0af2ebd7-c296-505f-a9e1-d381fd316dcc",
       "techName": "dane_do_kontaktu",
       "title": "Dane do kontaktu",
       "type": "SECTION",
@@ -5608,12 +5578,12 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "27cf3889-7a0a-5eaa-9b9d-12dd751d569b": {
-      "id": "27cf3889-7a0a-5eaa-9b9d-12dd751d569b",
+    "38ffb2ac-9f32-5158-9aca-7997b4a1e9ea": {
+      "id": "38ffb2ac-9f32-5158-9aca-7997b4a1e9ea",
       "techName": "numer_telefonu",
       "title": "Numer telefonu",
       "type": "TEXT_FIELD",
-      "confidence": 0.15,
+      "confidence": 0.16,
       "sources": [
         {
           "page": 1,
@@ -5623,7 +5593,7 @@
             "w": 1258.0,
             "h": 37.0
           },
-          "text": "Numer telefonu (opcjonalnie)  seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es sn ee or ee",
+          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
           "blockIds": [
             "p1-b24",
             "p1-b25",
@@ -5640,8 +5610,8 @@
         "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (phoneNumber)"
       ]
     },
-    "8246c6f5-b60d-5667-8fe4-b27ee73cb570": {
-      "id": "8246c6f5-b60d-5667-8fe4-b27ee73cb570",
+    "d3e49b2a-29fe-5ff8-b17e-bb38c8f75118": {
+      "id": "d3e49b2a-29fe-5ff8-b17e-bb38c8f75118",
       "techName": "adres_skrytki_epuap",
       "title": "Adres skrytki ePUAP",
       "type": "TEXT_FIELD",
@@ -5668,12 +5638,12 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "a1b743f0-61b1-532a-9047-1063b8c7e4a9": {
-      "id": "a1b743f0-61b1-532a-9047-1063b8c7e4a9",
+    "79a9819a-d4a0-5bd1-bd1a-005c14434246": {
+      "id": "79a9819a-d4a0-5bd1-bd1a-005c14434246",
       "techName": "adres_do_e_doreczen",
       "title": "Adres do e-Doręczeń",
       "type": "TEXT_FIELD",
-      "confidence": 0.23,
+      "confidence": 0.2,
       "sources": [
         {
           "page": 1,
@@ -5683,7 +5653,7 @@
             "w": 1193.0,
             "h": 38.0
           },
-          "text": "eDoręczenia - adres skrzynki:  eeververeeesesereeneneewenenoeneneneeeeneenane ee eenen eee ee ee es eee eee see",
+          "text": "eDoręczenia - adres skrzynki:  eeversereeeeenereeneneneewoneenene see eeneenenew ee eenen eee eee ee en e ne eee seee",
           "blockIds": [
             "p1-b45",
             "p1-b46",
@@ -5698,8 +5668,8 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "1810a267-6731-57bc-acd5-94fa76eea939": {
-      "id": "1810a267-6731-57bc-acd5-94fa76eea939",
+    "96055def-ef31-5086-849b-efff20110f43": {
+      "id": "96055def-ef31-5086-849b-efff20110f43",
       "techName": "dane_do_kontaktu_2",
       "title": "Dane do kontaktu",
       "type": "SECTION",
@@ -5726,12 +5696,12 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "385f742d-25a6-5513-84d5-0c569fdee424": {
-      "id": "385f742d-25a6-5513-84d5-0c569fdee424",
+    "e4465d13-62b3-56de-b09c-210a6a37d0d9": {
+      "id": "e4465d13-62b3-56de-b09c-210a6a37d0d9",
       "techName": "numer_telefonu_2",
       "title": "Numer telefonu",
       "type": "TEXT_FIELD",
-      "confidence": 0.15,
+      "confidence": 0.16,
       "sources": [
         {
           "page": 1,
@@ -5741,7 +5711,7 @@
             "w": 1258.0,
             "h": 37.0
           },
-          "text": "Numer telefonu (opcjonalnie)  seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es sn ee or ee",
+          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
           "blockIds": [
             "p1-b137",
             "p1-b138",
@@ -5756,12 +5726,12 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "23942126-0077-5150-bf44-c7e67cb6c98d": {
-      "id": "23942126-0077-5150-bf44-c7e67cb6c98d",
+    "273333a4-64a9-5733-a479-c73cac7be6ed": {
+      "id": "273333a4-64a9-5733-a479-c73cac7be6ed",
       "techName": "numer_telefonu_3",
       "title": "Numer telefonu",
       "type": "TEXT_FIELD",
-      "confidence": 0.15,
+      "confidence": 0.16,
       "sources": [
         {
           "page": 1,
@@ -5771,7 +5741,7 @@
             "w": 1258.0,
             "h": 37.0
           },
-          "text": "Numer telefonu (opcjonalnie)  seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es sn ee or ee",
+          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
           "blockIds": [
             "p1-b144",
             "p1-b145",
@@ -5786,12 +5756,12 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "e4b27357-2313-5a97-a6d3-11a147187ed0": {
-      "id": "e4b27357-2313-5a97-a6d3-11a147187ed0",
+    "a033078f-85c0-535b-bdfc-ed7a192eddd4": {
+      "id": "a033078f-85c0-535b-bdfc-ed7a192eddd4",
       "techName": "numer_telefonu_4",
       "title": "Numer telefonu",
       "type": "TEXT_FIELD",
-      "confidence": 0.25,
+      "confidence": 0.23,
       "sources": [
         {
           "page": 1,
@@ -5801,7 +5771,7 @@
             "w": 1258.0,
             "h": 37.0
           },
-          "text": "Telefon kontaktowy (opcjonalnie)  seesaeosovosasosononowononeonoewaeeaewae ses ase ee aweeakawasenawawesosa ses aan",
+          "text": "Telefon kontaktowy (opcjonalnie)  eeseeevovosorosononowononeneeoewaweaawawowew sse ee awewawawosewawa ses es asenaa n",
           "blockIds": [
             "p1-b154",
             "p1-b155",
@@ -5816,12 +5786,12 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "5125d9ec-8d53-5100-983f-24ad9fcd7c11": {
-      "id": "5125d9ec-8d53-5100-983f-24ad9fcd7c11",
+    "74ccfb26-a26d-5ae5-b8f2-4f150bce6ae4": {
+      "id": "74ccfb26-a26d-5ae5-b8f2-4f150bce6ae4",
       "techName": "adres_skrytki_epuap_2",
       "title": "Adres skrytki ePUAP",
       "type": "TEXT_FIELD",
-      "confidence": 0.71,
+      "confidence": 0.7,
       "sources": [
         {
           "page": 1,
@@ -5844,12 +5814,12 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "d5c0ad27-f0f9-52bc-883b-d65ee3922256": {
-      "id": "d5c0ad27-f0f9-52bc-883b-d65ee3922256",
+    "e4b27357-2313-5a97-a6d3-11a147187ed0": {
+      "id": "e4b27357-2313-5a97-a6d3-11a147187ed0",
       "techName": "adres_do_e_doreczen_2",
       "title": "Adres do e-Doręczeń",
       "type": "TEXT_FIELD",
-      "confidence": 0.77,
+      "confidence": 0.79,
       "sources": [
         {
           "page": 1,
@@ -5873,8 +5843,8 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "5c4dd472-c040-526b-8034-42eb5354a8ad": {
-      "id": "5c4dd472-c040-526b-8034-42eb5354a8ad",
+    "a76b246b-5bff-5a8e-88aa-75e0c884e3f7": {
+      "id": "a76b246b-5bff-5a8e-88aa-75e0c884e3f7",
       "techName": "dane_do_kontaktu_3",
       "title": "Dane do kontaktu",
       "type": "SECTION",
@@ -5901,12 +5871,12 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "6fbf33ff-1558-5a4a-8aaa-75458d8d472b": {
-      "id": "6fbf33ff-1558-5a4a-8aaa-75458d8d472b",
+    "150e8afb-84fd-52d5-b3c2-d834333a9cf6": {
+      "id": "150e8afb-84fd-52d5-b3c2-d834333a9cf6",
       "techName": "numer_telefonu_5",
       "title": "Numer telefonu",
       "type": "TEXT_FIELD",
-      "confidence": 0.15,
+      "confidence": 0.16,
       "sources": [
         {
           "page": 1,
@@ -5916,7 +5886,7 @@
             "w": 1258.0,
             "h": 37.0
           },
-          "text": "Numer telefonu (opcjonalnie)  seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es sn ee or ee",
+          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
           "blockIds": [
             "p1-b224",
             "p1-b225",
@@ -5931,12 +5901,12 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "019715c1-e38d-5188-9f47-0d1deb41b638": {
-      "id": "019715c1-e38d-5188-9f47-0d1deb41b638",
+    "cb785fea-abb2-5a3a-b062-fd1a9d61a440": {
+      "id": "cb785fea-abb2-5a3a-b062-fd1a9d61a440",
       "techName": "numer_telefonu_6",
       "title": "Numer telefonu",
       "type": "TEXT_FIELD",
-      "confidence": 0.15,
+      "confidence": 0.16,
       "sources": [
         {
           "page": 1,
@@ -5946,7 +5916,7 @@
             "w": 1258.0,
             "h": 37.0
           },
-          "text": "Numer telefonu (opcjonalnie)  seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es sn ee or ee",
+          "text": "Numer telefonu (opcjonalnie)  seesvovosososooneoroneoeoenawewawawowawawowesawe seee so owa es ow eee aa ee sn ee o eee",
           "blockIds": [
             "p1-b231",
             "p1-b232",
@@ -5961,12 +5931,12 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "e10f5b20-d86d-53c4-a97d-9c2047abb362": {
-      "id": "e10f5b20-d86d-53c4-a97d-9c2047abb362",
+    "1d29d35d-0c20-58cb-bd2e-da4b739f973d": {
+      "id": "1d29d35d-0c20-58cb-bd2e-da4b739f973d",
       "techName": "numer_telefonu_7",
       "title": "Numer telefonu",
       "type": "TEXT_FIELD",
-      "confidence": 0.21,
+      "confidence": 0.2,
       "sources": [
         {
           "page": 1,
@@ -5976,7 +5946,7 @@
             "w": 1258.0,
             "h": 37.0
           },
-          "text": "Telefon kontaktowy (opcjonalnie)  seesecevovosovosononoononooe eee see aewawewewase ee aweeakanasenawaesowa ses aa se",
+          "text": "Telefon kontaktowy (opcjonalnie)  eeseeevovesorosononoonoweseeoewaweaawawowow sse ee awewaawesenowa ses es e see oa s",
           "blockIds": [
             "p1-b241",
             "p1-b242",
@@ -5991,12 +5961,12 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "1ee612cd-6f66-50e3-8567-395647a03d26": {
-      "id": "1ee612cd-6f66-50e3-8567-395647a03d26",
+    "e10f5b20-d86d-53c4-a97d-9c2047abb362": {
+      "id": "e10f5b20-d86d-53c4-a97d-9c2047abb362",
       "techName": "adres_skrytki_epuap_3",
       "title": "Adres skrytki ePUAP",
       "type": "TEXT_FIELD",
-      "confidence": 0.27,
+      "confidence": 0.24,
       "sources": [
         {
           "page": 1,
@@ -6006,7 +5976,7 @@
             "w": 1193.0,
             "h": 38.0
           },
-          "text": "Skrzynka ePUAP - adres skrzynki:  eeeeeeeeereenoneasowonoeneneeeweneeneneneeeen eee see eee ee anen ee ee ane ne ses",
+          "text": "Skrzynka ePUAP - adres skrzynki:  eeeeeeeoreeneneseeweroeneneneeeeneenenen ee een eee see wen ee onen seee nane ne es",
           "blockIds": [
             "p1-b251",
             "p1-b252",
@@ -6021,8 +5991,8 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "12de914a-8f0e-56ba-9a9b-cef8f538a8c6": {
-      "id": "12de914a-8f0e-56ba-9a9b-cef8f538a8c6",
+    "1edf7975-c8f1-5c1c-8edb-d7d601e96203": {
+      "id": "1edf7975-c8f1-5c1c-8edb-d7d601e96203",
       "techName": "adres_do_e_doreczen_3",
       "title": "Adres do e-Doręczeń",
       "type": "TEXT_FIELD",
@@ -6036,7 +6006,7 @@
             "w": 1200.0,
             "h": 38.0
           },
-          "text": "eDoręczenia - adres skrzynki:  e.eeveeeeenrenenereeneneenenereenoneaeeneneenene ee eenea eee ee ee en eee eee eee",
+          "text": "eDoręczenia - adres skrzynki:  e.veveeeenenreneneeeeneneeneereeneneaweweseenene ee eenen eee ee ee en eee eee ee",
           "blockIds": [
             "p1-b254",
             "p1-b255",
@@ -6051,8 +6021,8 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "95beef5a-d1cb-5122-affb-37f36709185b": {
-      "id": "95beef5a-d1cb-5122-affb-37f36709185b",
+    "0c7ac2ee-2e9b-5613-9b88-5aa87c815cec": {
+      "id": "0c7ac2ee-2e9b-5613-9b88-5aa87c815cec",
       "techName": "zgody_i_oswiadczenia",
       "title": "Zgody i oświadczenia",
       "type": "SECTION",
@@ -6084,8 +6054,8 @@
         "klauzula/oświadczenie w dokumencie -> sekcja zgód"
       ]
     },
-    "e5a2a212-48fd-506e-804c-061d244fe5a0": {
-      "id": "e5a2a212-48fd-506e-804c-061d244fe5a0",
+    "ccbd1355-21a0-524b-9c0c-a5dd2b3cfcd8": {
+      "id": "ccbd1355-21a0-524b-9c0c-a5dd2b3cfcd8",
       "techName": "consent_section",
       "title": "",
       "type": "CONSENT_SECTION",
@@ -6117,8 +6087,8 @@
         "klauzula/oświadczenie w dokumencie -> sekcja zgód"
       ]
     },
-    "f2aec0bb-d987-53d3-b93d-552a84e49069": {
-      "id": "f2aec0bb-d987-53d3-b93d-552a84e49069",
+    "ebeb3681-84d3-508f-bb0a-a89637461646": {
+      "id": "ebeb3681-84d3-508f-bb0a-a89637461646",
       "techName": "zgody_i_oswiadczenia_2",
       "title": "Zgody i oświadczenia",
       "type": "SECTION",
@@ -6150,8 +6120,8 @@
         "klauzula/oświadczenie w dokumencie -> sekcja zgód"
       ]
     },
-    "f4919694-a964-5989-85f0-72d6cf327bd5": {
-      "id": "f4919694-a964-5989-85f0-72d6cf327bd5",
+    "5665a5ae-b88f-5f0a-9d50-938c2fc705c2": {
+      "id": "5665a5ae-b88f-5f0a-9d50-938c2fc705c2",
       "techName": "consent_section_2",
       "title": "",
       "type": "CONSENT_SECTION",
@@ -6183,8 +6153,8 @@
         "klauzula/oświadczenie w dokumencie -> sekcja zgód"
       ]
     },
-    "ef951778-a20f-5d94-9c24-67c321fc0d5e": {
-      "id": "ef951778-a20f-5d94-9c24-67c321fc0d5e",
+    "ce03e5ca-9988-5824-ada4-437855f31ae8": {
+      "id": "ce03e5ca-9988-5824-ada4-437855f31ae8",
       "techName": "zgody_i_oswiadczenia_3",
       "title": "Zgody i oświadczenia",
       "type": "SECTION",
@@ -6216,8 +6186,8 @@
         "klauzula/oświadczenie w dokumencie -> sekcja zgód"
       ]
     },
-    "bd23718c-304b-5583-a1ad-250d6fabaa2f": {
-      "id": "bd23718c-304b-5583-a1ad-250d6fabaa2f",
+    "8027e93b-b1fc-59c3-96cd-2ca4cd85dd59": {
+      "id": "8027e93b-b1fc-59c3-96cd-2ca4cd85dd59",
       "techName": "consent_section_3",
       "title": "",
       "type": "CONSENT_SECTION",
@@ -6249,8 +6219,8 @@
         "klauzula/oświadczenie w dokumencie -> sekcja zgód"
       ]
     },
-    "80d35239-3bf3-5daa-a000-ceea6c4a2a29": {
-      "id": "80d35239-3bf3-5daa-a000-ceea6c4a2a29",
+    "de2b0b35-977c-54a7-86ef-8fc60a3ac687": {
+      "id": "de2b0b35-977c-54a7-86ef-8fc60a3ac687",
       "techName": "podglad_uzupelnionego_wniosku",
       "title": "Podgląd uzupełnionego wniosku",
       "type": "SECTION",
@@ -6263,8 +6233,8 @@
         "standard: strona końcowa z podglądem"
       ]
     },
-    "de2b0b35-977c-54a7-86ef-8fc60a3ac687": {
-      "id": "de2b0b35-977c-54a7-86ef-8fc60a3ac687",
+    "c3e04d65-96b4-5fd8-89c3-4011ef592299": {
+      "id": "c3e04d65-96b4-5fd8-89c3-4011ef592299",
       "techName": "podglad",
       "title": "Podgląd",
       "type": "INFO_SECTION",
@@ -6280,249 +6250,207 @@
   },
   "review": [
     {
-      "fieldId": "3361f4b1-cc41-5433-84d0-a9f56c6facb1",
-      "techName": "eevoveeevesosawewononenoroewsoeoewawe_se_awa_seee_wow_oo_ee_w_awa",
-      "title": "Eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa",
-      "confidence": 0.04,
-      "reason": "pole w treści zdania – sprawdź tytuł"
-    },
-    {
-      "fieldId": "eab8b79f-599a-5b2e-bd43-7e65f95786f4",
+      "fieldId": "a1b743f0-61b1-532a-9047-1063b8c7e4a9",
       "techName": "miejscowosc_zagranica",
       "title": "Miejscowość",
       "confidence": 0.04,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "2ffd39d5-e773-513d-bf0e-58af2ef17151",
+      "fieldId": "415cdab2-060c-59b8-96fc-bf3fdc6ccd47",
       "techName": "kod_pocztowy_zagranica",
       "title": "Kod pocztowy",
       "confidence": 0.04,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "36143b3d-1965-59ea-a7ad-1f502b64a7ec",
+      "fieldId": "118a28a0-25b9-5912-a712-adfacbcc8d18",
       "techName": "ulica_zagranica",
       "title": "Ulica",
       "confidence": 0.04,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "4e234228-1a00-5d69-9417-eedf63589e90",
-      "techName": "eevoveeevesosawewononenoroewsoeoewawe_se_awa_seee_wow_oo_ee_w_awa_2",
-      "title": "Eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa",
-      "confidence": 0.04,
-      "reason": "pole w treści zdania – sprawdź tytuł"
-    },
-    {
-      "fieldId": "8d396d4d-d6e2-5518-895c-24a96da36874",
+      "fieldId": "5125d9ec-8d53-5100-983f-24ad9fcd7c11",
       "techName": "miejscowosc_zagranica_2",
       "title": "Miejscowość",
       "confidence": 0.04,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "e3b03b82-a876-55f4-a4f2-a1ce93198711",
+      "fieldId": "d5c0ad27-f0f9-52bc-883b-d65ee3922256",
       "techName": "kod_pocztowy_zagranica_2",
       "title": "Kod pocztowy",
       "confidence": 0.04,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "b24bc2aa-963c-5199-b2b4-050e0ab33fd9",
+      "fieldId": "af9d34c1-29c2-5d47-9610-87d11cd4f92b",
       "techName": "ulica_zagranica_2",
       "title": "Ulica",
       "confidence": 0.04,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "1edf7975-c8f1-5c1c-8edb-d7d601e96203",
-      "techName": "eevoveeevesosawewononenoroewsoeoewawe_se_awa_seee_wow_oo_ee_w_awa_3",
-      "title": "Eevoveeevesosawewononenoroewsoeoewawe se awa seee wow oo ee w awa",
-      "confidence": 0.04,
-      "reason": "pole w treści zdania – sprawdź tytuł"
-    },
-    {
-      "fieldId": "960aaf0c-ae8f-5691-9c06-c09ef73be7bd",
+      "fieldId": "12de914a-8f0e-56ba-9a9b-cef8f538a8c6",
       "techName": "miejscowosc_zagranica_3",
       "title": "Miejscowość",
       "confidence": 0.04,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "61ff9df8-6724-5139-9383-a412c143edbe",
+      "fieldId": "b099a940-c04d-5227-86f9-6e58d59febca",
       "techName": "kod_pocztowy_zagranica_3",
       "title": "Kod pocztowy",
       "confidence": 0.04,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "c43bd2b9-cc5f-57f0-8459-ca3cd1bfa7f5",
+      "fieldId": "90319c75-5e06-5e48-9796-4a611c5928dd",
       "techName": "ulica_zagranica_3",
       "title": "Ulica",
       "confidence": 0.04,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "118a28a0-25b9-5912-a712-adfacbcc8d18",
+      "fieldId": "8246c6f5-b60d-5667-8fe4-b27ee73cb570",
       "techName": "kraj",
       "title": "Kraj",
       "confidence": 0.06,
       "reason": "pole korzysta ze słownika „Kraje”"
     },
     {
-      "fieldId": "51052a5f-41cc-5322-b418-606a6e87ffdb",
+      "fieldId": "2ffd39d5-e773-513d-bf0e-58af2ef17151",
       "techName": "kod_pocztowy",
       "title": "Kod pocztowy",
       "confidence": 0.06,
       "reason": "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (postCode)"
     },
     {
-      "fieldId": "fa959613-4821-5e3b-a411-32c4762eb4f6",
+      "fieldId": "36143b3d-1965-59ea-a7ad-1f502b64a7ec",
       "techName": "ulica",
       "title": "Ulica",
       "confidence": 0.06,
       "reason": "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (street)"
     },
     {
-      "fieldId": "83dec20b-f898-577d-a4a9-8ed17e495b3c",
+      "fieldId": "64412605-a595-5f7a-bff1-1a2b15a82f5a",
       "techName": "numer_budynku",
       "title": "Numer budynku",
       "confidence": 0.06,
       "reason": "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (building)"
     },
     {
-      "fieldId": "379be171-c5bf-576b-ace5-f618a35711ce",
+      "fieldId": "51052a5f-41cc-5322-b418-606a6e87ffdb",
       "techName": "numer_lokalu",
       "title": "Numer lokalu",
       "confidence": 0.06,
       "reason": "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (apartment)"
     },
     {
-      "fieldId": "af9d34c1-29c2-5d47-9610-87d11cd4f92b",
+      "fieldId": "4e234228-1a00-5d69-9417-eedf63589e90",
       "techName": "kraj_2",
       "title": "Kraj",
       "confidence": 0.06,
       "reason": "pole korzysta ze słownika „Kraje”"
     },
     {
-      "fieldId": "632c9c3b-f613-50eb-a8a5-14896c2fcd48",
+      "fieldId": "e3b03b82-a876-55f4-a4f2-a1ce93198711",
       "techName": "kod_pocztowy_2",
       "title": "Kod pocztowy",
       "confidence": 0.06,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "a19fb85e-20a9-5aa2-9804-515dc1b8f733",
+      "fieldId": "b24bc2aa-963c-5199-b2b4-050e0ab33fd9",
       "techName": "ulica_2",
       "title": "Ulica",
       "confidence": 0.06,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "586be780-4558-5368-a520-d1bf6f0427e7",
+      "fieldId": "a558ce17-a31b-5641-ac86-9b2d02cc5605",
       "techName": "numer_budynku_2",
       "title": "Numer budynku",
       "confidence": 0.06,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "96055def-ef31-5086-849b-efff20110f43",
+      "fieldId": "632c9c3b-f613-50eb-a8a5-14896c2fcd48",
       "techName": "numer_lokalu_2",
       "title": "Numer lokalu",
       "confidence": 0.06,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "90319c75-5e06-5e48-9796-4a611c5928dd",
+      "fieldId": "68a36fa8-3983-5b29-9ad2-06fa5834e1a4",
       "techName": "kraj_3",
       "title": "Kraj",
       "confidence": 0.06,
       "reason": "pole korzysta ze słownika „Kraje”"
     },
     {
-      "fieldId": "95271dab-8c18-5b7a-bbab-03aa34332161",
+      "fieldId": "61ff9df8-6724-5139-9383-a412c143edbe",
       "techName": "kod_pocztowy_3",
       "title": "Kod pocztowy",
       "confidence": 0.06,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "58f7c1c6-9e91-54c1-b701-9c2875e8f117",
+      "fieldId": "c43bd2b9-cc5f-57f0-8459-ca3cd1bfa7f5",
       "techName": "ulica_3",
       "title": "Ulica",
       "confidence": 0.06,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "a05ae993-6c62-5147-9177-ef40a61fe782",
+      "fieldId": "5efd01e3-fc60-5e17-857d-9a7b3d09a384",
       "techName": "numer_budynku_3",
       "title": "Numer budynku",
       "confidence": 0.06,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "a76b246b-5bff-5a8e-88aa-75e0c884e3f7",
+      "fieldId": "95271dab-8c18-5b7a-bbab-03aa34332161",
       "techName": "numer_lokalu_3",
       "title": "Numer lokalu",
       "confidence": 0.06,
       "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
     },
     {
-      "fieldId": "803486bf-0375-5e29-9c35-f442c124437d",
-      "techName": "seesvovessvosonoeworonesoeonwaweaewawowawawowewawe_ee_awe_se_owa_es_owa_w_ee_aa",
-      "title": "Seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es",
-      "confidence": 0.09,
-      "reason": "pole w treści zdania – sprawdź tytuł"
-    },
-    {
-      "fieldId": "273333a4-64a9-5733-a479-c73cac7be6ed",
-      "techName": "seesvovessvosonoeworonesoeonwaweaewawowawawowewawe_ee_awe_se_owa_es_owa_w_ee_aa_2",
-      "title": "Seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es",
-      "confidence": 0.09,
-      "reason": "pole w treści zdania – sprawdź tytuł"
-    },
-    {
-      "fieldId": "0b47d935-0d95-5e13-94d7-21a88a0c3965",
-      "techName": "seesvovessvosonoeworonesoeonwaweaewawowawawowewawe_ee_awe_se_owa_es_owa_w_ee_aa_3",
-      "title": "Seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es",
-      "confidence": 0.09,
-      "reason": "pole w treści zdania – sprawdź tytuł"
-    },
-    {
-      "fieldId": "f4921d63-e443-5e5f-b989-c63328c3144c",
-      "techName": "seesvovessvosonoeworonesoeonwaweaewawowawawowewawe_ee_awe_se_owa_es_owa_w_ee_aa_4",
-      "title": "Seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es",
-      "confidence": 0.09,
-      "reason": "pole w treści zdania – sprawdź tytuł"
-    },
-    {
-      "fieldId": "0a52d6c7-0b2d-5d10-bbb4-9d280928f0da",
-      "techName": "seesvovessvosonoeworonesoeonwaweaewawowawawowewawe_ee_awe_se_owa_es_owa_w_ee_aa_5",
-      "title": "Seesvovessvosonoeworonesoeonwaweaewawowawawowewawe ee awe se owa es owa w ee aa es",
-      "confidence": 0.09,
-      "reason": "pole w treści zdania – sprawdź tytuł"
-    },
-    {
-      "fieldId": "78cac623-5e7d-5f0b-8664-064b6e042fec",
-      "techName": "nazwa_klubu_sportowego",
-      "title": "Nazwa klubu sportowego",
-      "confidence": 0.1,
-      "reason": "etykieta w dokumencie"
-    },
-    {
       "fieldId": "c4c57bd6-9303-5ea8-a2c3-4cb1bbb90258",
-      "techName": "eeseeesesesoneoroneoeoewawe",
-      "title": "Eeseeesesesoneoroneoeoewawe",
-      "confidence": 0.1,
-      "reason": "etykieta w dokumencie"
+      "techName": "waw_oo_ses_akekataw_es_oe_see_k",
+      "title": "Waw oo ses akekataw es oe see k",
+      "confidence": 0.08,
+      "reason": "pole w treści zdania – sprawdź tytuł"
     },
     {
-      "fieldId": "0601ba8c-5110-56b2-b103-3572383eecd5",
-      "techName": "ako_ses_oo_awaw",
-      "title": "Ako ses oo awaw",
-      "confidence": 0.1,
-      "reason": "etykieta w dokumencie"
+      "fieldId": "3361f4b1-cc41-5433-84d0-a9f56c6facb1",
+      "techName": "eseesesessreeeeneeenesewanonowonosa_es_ote_ses_oawasa_ee_ee_eee_oo_ee_ee_ses_o_s",
+      "title": "Eseesesessreeeeneeenesewanonowonosa es ote ses oawasa ee ee eee oo ee ee ses o so ses an",
+      "confidence": 0.08,
+      "reason": "pole w treści zdania – sprawdź tytuł"
+    },
+    {
+      "fieldId": "519c3ab5-c70e-5c00-a5e2-1487be81fd2d",
+      "techName": "aewasowawako_ses_akesataw_es_ot_eee_k",
+      "title": "Aewasowawako ses akesataw es ot eee k",
+      "confidence": 0.08,
+      "reason": "pole w treści zdania – sprawdź tytuł"
+    },
+    {
+      "fieldId": "70e92d9e-e274-514c-996c-0b7d97f8619e",
+      "techName": "eeeeveseeereseeonoeesseoewawa_se_oo_see_oo_ee_o_eee_ae_e",
+      "title": "Eeeeveseeereseeonoeesseoewawa se oo see oo ee o eee ae e",
+      "confidence": 0.08,
+      "reason": "pole w treści zdania – sprawdź tytuł"
+    },
+    {
+      "fieldId": "d9f4403d-91dc-5247-9ad8-05c238e23eed",
+      "techName": "eeeeveseeereseeonoeesseoewawa_se_oo_see_oo_ee_o_eee_ae_e_2",
+      "title": "Eeeeveseeereseeonoeesseoewawa se oo see oo ee o eee ae e",
+      "confidence": 0.08,
+      "reason": "pole w treści zdania – sprawdź tytuł"
     },
     {
       "fieldId": "0350bfb8-e0b6-5549-9f0e-6e9a52b60ba2",
@@ -6533,290 +6461,395 @@
     },
     {
       "fieldId": "5cb039fb-6b3a-5dfe-8a1b-768fb163d733",
-      "techName": "eeseeesesesoneoroneoeoewawe_2",
-      "title": "Eeseeesesesoneoroneoeoewawe",
+      "techName": "eeseveeesosoeenosesoe",
+      "title": "Eeseveeesosoeenosesoe",
       "confidence": 0.1,
       "reason": "etykieta w dokumencie"
     },
     {
-      "fieldId": "1d29d35d-0c20-58cb-bd2e-da4b739f973d",
-      "techName": "akowewakewawae",
-      "title": "Akowewakewawae",
+      "fieldId": "95beef5a-d1cb-5122-affb-37f36709185b",
+      "techName": "eceoreseoresoronesneeneosowawenowawowowawokowewow_es_se_ae_e_ae",
+      "title": "Eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae",
       "confidence": 0.1,
+      "reason": "pole w treści zdania – sprawdź tytuł"
+    },
+    {
+      "fieldId": "f2aec0bb-d987-53d3-b93d-552a84e49069",
+      "techName": "eceoreseoresoronesneeneosowawenowawowowawokowewow_es_se_ae_e_ae_2",
+      "title": "Eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae",
+      "confidence": 0.1,
+      "reason": "pole w treści zdania – sprawdź tytuł"
+    },
+    {
+      "fieldId": "ef951778-a20f-5d94-9c24-67c321fc0d5e",
+      "techName": "eceoreseoresoronesneeneosowawenowawowowawokowewow_es_se_ae_e_ae_3",
+      "title": "Eceoreseoresoronesneeneosowawenowawowowawokowewow es se ae e ae",
+      "confidence": 0.1,
+      "reason": "pole w treści zdania – sprawdź tytuł"
+    },
+    {
+      "fieldId": "0601ba8c-5110-56b2-b103-3572383eecd5",
+      "techName": "inny_adres_korespondencyjny",
+      "title": "Inny adres korespondencyjny",
+      "confidence": 0.11,
       "reason": "etykieta w dokumencie"
     },
     {
-      "fieldId": "519c3ab5-c70e-5c00-a5e2-1487be81fd2d",
-      "techName": "nazwa_klubu_sportowego_2",
+      "fieldId": "f4921d63-e443-5e5f-b989-c63328c3144c",
+      "techName": "eesereseeeoneeroneseronewe_ee_enewaanewow_es_eee_ak_es",
+      "title": "Eesereseeeoneeroneseronewe ee enewaanewow es eee ak es",
+      "confidence": 0.11,
+      "reason": "pole w treści zdania – sprawdź tytuł"
+    },
+    {
+      "fieldId": "71370cca-e962-595e-ab29-012a7af2032e",
+      "techName": "ke",
+      "title": "Ke",
+      "confidence": 0.11,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "f4851c2c-85d5-5b41-a28c-24eaeb712948",
+      "techName": "ke_2",
+      "title": "Ke",
+      "confidence": 0.11,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "c4dbfee4-70f4-5b8a-b79f-00d413cbaa1b",
+      "techName": "nazwa_klubu_sportowego",
       "title": "Nazwa klubu sportowego",
-      "confidence": 0.11,
-      "reason": "etykieta w dokumencie"
-    },
-    {
-      "fieldId": "a033078f-85c0-535b-bdfc-ed7a192eddd4",
-      "techName": "eesevesesesoneoronesoeoew",
-      "title": "Eesevesesesoneoronesoeoew",
-      "confidence": 0.11,
-      "reason": "etykieta w dokumencie"
-    },
-    {
-      "fieldId": "74ccfb26-a26d-5ae5-b8f2-4f150bce6ae4",
-      "techName": "wewakeatae",
-      "title": "Wewakeatae",
-      "confidence": 0.11,
-      "reason": "etykieta w dokumencie"
-    },
-    {
-      "fieldId": "ace63e4d-b817-51da-beab-2e92e7fbb2ec",
-      "techName": "eeeeceeeseeeeosoeneonowononowononowowon",
-      "title": "Eeeeceeeseeeeosoeneonowononowononowowon",
       "confidence": 0.12,
       "reason": "etykieta w dokumencie"
     },
     {
-      "fieldId": "4ae6d726-ca4b-58cd-8a6f-537ee4418b71",
-      "techName": "aneewowa_es_ak_eee_on_ee_ee_oa_es_se",
-      "title": "Aneewowa es ak eee on ee ee oa es se",
-      "confidence": 0.13,
-      "reason": "pole w treści zdania – sprawdź tytuł"
+      "fieldId": "78cac623-5e7d-5f0b-8664-064b6e042fec",
+      "techName": "eeseeeeesosoneononesoe",
+      "title": "Eeseeeeesosoneononesoe",
+      "confidence": 0.12,
+      "reason": "etykieta w dokumencie"
     },
     {
-      "fieldId": "6559730e-ecfa-5615-97e5-a0cf3f1dd10a",
-      "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_stypendium",
-      "title": "Zgoda w imieniu kandydata nieletniego do stypendium",
+      "fieldId": "0b47d935-0d95-5e13-94d7-21a88a0c3965",
+      "techName": "nazwa_klubu_sportowego_2",
+      "title": "Nazwa klubu sportowego",
+      "confidence": 0.12,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "94ab6b1a-be35-5019-bc32-a9225ebdcd19",
+      "techName": "eeseeesesesonenoronesoe",
+      "title": "Eeseeesesesonenoronesoe",
+      "confidence": 0.12,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "4be34e58-4de1-5924-ab3e-b32dd7451895",
+      "techName": "zgoda_podopiecznego_pelnoletniego",
+      "title": "Zgoda podopiecznego pełnoletniego",
       "confidence": 0.13,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "61de19db-e890-5e72-805b-4d3d7644f8d3",
-      "techName": "imie_3",
+      "fieldId": "bd010476-95f1-5cef-9e09-2a25efdfdbe6",
+      "techName": "imie_11",
       "title": "Imię",
       "confidence": 0.13,
       "reason": "rozdzielono 'imię i nazwisko'"
     },
     {
-      "fieldId": "8d951229-2c57-57cc-9c18-502137ac6267",
-      "techName": "nazwisko_3",
+      "fieldId": "51612a71-781e-5b0b-bc36-e3f1f87b5bab",
+      "techName": "nazwisko_11",
       "title": "Nazwisko",
       "confidence": 0.13,
       "reason": "rozdzielono 'imię i nazwisko'"
     },
     {
-      "fieldId": "4be34e58-4de1-5924-ab3e-b32dd7451895",
-      "techName": "eeeeveseeesesesonesesoe_ee_eee_wewasowewa",
-      "title": "Eeeeveseeesesesonesesoe ee eee wewasowewa",
+      "fieldId": "1d088dcb-8103-5434-8b34-a950e64fa36c",
+      "techName": "zgoda_w_imieniu_podopiecznego_nieletniego",
+      "title": "Zgoda w imieniu podopiecznego nieletniego",
+      "confidence": 0.13,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "cbb59a33-6253-5297-9053-6884b3ea5f98",
+      "techName": "imie_12",
+      "title": "Imię",
+      "confidence": 0.13,
+      "reason": "rozdzielono 'imię i nazwisko'"
+    },
+    {
+      "fieldId": "aef669da-3661-58de-ad3f-12c33432f12a",
+      "techName": "nazwisko_12",
+      "title": "Nazwisko",
+      "confidence": 0.13,
+      "reason": "rozdzielono 'imię i nazwisko'"
+    },
+    {
+      "fieldId": "4ae6d726-ca4b-58cd-8a6f-537ee4418b71",
+      "techName": "seesvovosososooneoroneoeoenawewawawowawawowesawe",
+      "title": "Seesvovosososooneoroneoeoenawewawawowawawowesawe",
       "confidence": 0.14,
       "reason": "etykieta w dokumencie"
     },
     {
-      "fieldId": "aa8af368-87d8-50b2-b080-260d39d670fc",
-      "techName": "eeeeveseeesesesonesesoe_ee_eee_wewasowewa_2",
-      "title": "Eeeeveseeesesesonesesoe ee eee wewasowewa",
+      "fieldId": "27cf3889-7a0a-5eaa-9b9d-12dd751d569b",
+      "techName": "owa_es_ow",
+      "title": "Owa es ow",
       "confidence": 0.14,
       "reason": "etykieta w dokumencie"
     },
     {
-      "fieldId": "0180861b-b9ea-5144-87cc-e6bec5585543",
+      "fieldId": "1607ecf6-7663-5ff0-83b3-b232af64dbae",
+      "techName": "seesvovosososooneoroneoeoenawewawawowawawowesawe_2",
+      "title": "Seesvovosososooneoroneoeoenawewawawowawawowesawe",
+      "confidence": 0.14,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "3be57019-2a08-54d4-946f-d8d446645a76",
+      "techName": "owa_es_ow_2",
+      "title": "Owa es ow",
+      "confidence": 0.14,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "b5050fd3-130f-50c8-86bc-e41cce9964e1",
+      "techName": "seesvovosososooneoroneoeoenawewawawowawawowesawe_3",
+      "title": "Seesvovosososooneoroneoeoenawewawawowawawowesawe",
+      "confidence": 0.14,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "007047ee-656a-5609-aabb-e2286b45d554",
+      "techName": "owa_es_ow_3",
+      "title": "Owa es ow",
+      "confidence": 0.14,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "7fa7ddf9-ecba-5d76-900f-a2e8564897ae",
+      "techName": "seesvovosososooneoroneoeoenawewawawowawawowesawe_4",
+      "title": "Seesvovosososooneoroneoeoenawewawawowawawowesawe",
+      "confidence": 0.14,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "78876de1-a56f-5a5d-85c5-027a378d81fe",
+      "techName": "owa_es_ow_4",
+      "title": "Owa es ow",
+      "confidence": 0.14,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "019715c1-e38d-5188-9f47-0d1deb41b638",
+      "techName": "seesvovosososooneoroneoeoenawewawawowawawowesawe_5",
+      "title": "Seesvovosososooneoroneoeoenawewawawowawawowesawe",
+      "confidence": 0.14,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "0a52d6c7-0b2d-5d10-bbb4-9d280928f0da",
+      "techName": "owa_es_ow_5",
+      "title": "Owa es ow",
+      "confidence": 0.14,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "228d2498-7208-5ac2-a227-940c5dffe2ac",
       "techName": "adres_zamieszkania",
       "title": "Adres zamieszkania",
       "confidence": 0.15,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "9d44bf60-325f-5950-9e06-346f843e1c3b",
+      "fieldId": "d48e5cd4-0e21-5c53-8a7a-771114116337",
+      "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_stypendium",
+      "title": "Zgoda w imieniu kandydata nieletniego do stypendium",
+      "confidence": 0.15,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "3b7c56e3-c6d5-5b1c-8132-91d0d7f2e06d",
+      "techName": "imie_3",
+      "title": "Imię",
+      "confidence": 0.15,
+      "reason": "rozdzielono 'imię i nazwisko'"
+    },
+    {
+      "fieldId": "36bcafa6-87d1-5b54-a576-7edc047109e3",
+      "techName": "nazwisko_3",
+      "title": "Nazwisko",
+      "confidence": 0.15,
+      "reason": "rozdzielono 'imię i nazwisko'"
+    },
+    {
+      "fieldId": "d851db14-96bd-5392-abc5-3260becd4fc2",
       "techName": "adres_zamieszkania_2",
       "title": "Adres zamieszkania",
       "confidence": 0.15,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "a9c2e055-b493-5668-a0ec-006e964e227c",
+      "fieldId": "ada3d0cf-f25c-554c-be8a-936db1869408",
       "techName": "adres_zamieszkania_3",
       "title": "Adres zamieszkania",
       "confidence": 0.15,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "cbb59a33-6253-5297-9053-6884b3ea5f98",
-      "techName": "zgoda_podopiecznego_pelnoletniego",
-      "title": "Zgoda podopiecznego pełnoletniego",
-      "confidence": 0.15,
+      "fieldId": "9beb4a19-38e5-5d6f-a73d-90d58e1518ea",
+      "techName": "zgoda_kandydata_pelnoletniego_do_stypendium",
+      "title": "Zgoda kandydata pełnoletniego do stypendium",
+      "confidence": 0.16,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "71370cca-e962-595e-ab29-012a7af2032e",
-      "techName": "imie_11",
+      "fieldId": "f7d00402-1e15-5c33-8d0b-03c9ab39cb2a",
+      "techName": "imie_2",
       "title": "Imię",
-      "confidence": 0.15,
+      "confidence": 0.16,
       "reason": "rozdzielono 'imię i nazwisko'"
     },
     {
-      "fieldId": "d6a84705-fdde-557d-955e-cd8ccedd7dc5",
-      "techName": "nazwisko_11",
+      "fieldId": "e5a2a212-48fd-506e-804c-061d244fe5a0",
+      "techName": "nazwisko_2",
       "title": "Nazwisko",
-      "confidence": 0.15,
+      "confidence": 0.16,
       "reason": "rozdzielono 'imię i nazwisko'"
     },
     {
-      "fieldId": "1470fa49-c16a-5027-abe8-7412d033c7ac",
-      "techName": "zgoda_w_imieniu_podopiecznego_nieletniego",
-      "title": "Zgoda w imieniu podopiecznego nieletniego",
-      "confidence": 0.15,
+      "fieldId": "14b36573-550f-5edd-901e-d258abeabe1d",
+      "techName": "zgoda_kandydata_pelnoletniego_do_nagrody",
+      "title": "Zgoda kandydata pełnoletniego do nagrody",
+      "confidence": 0.16,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "d9f4403d-91dc-5247-9ad8-05c238e23eed",
-      "techName": "imie_12",
+      "fieldId": "b0b46663-b808-57cf-b77d-16b70ae8d8d2",
+      "techName": "imie_4",
       "title": "Imię",
-      "confidence": 0.15,
+      "confidence": 0.16,
       "reason": "rozdzielono 'imię i nazwisko'"
     },
     {
-      "fieldId": "f4851c2c-85d5-5b41-a28c-24eaeb712948",
-      "techName": "nazwisko_12",
+      "fieldId": "f4919694-a964-5989-85f0-72d6cf327bd5",
+      "techName": "nazwisko_4",
       "title": "Nazwisko",
-      "confidence": 0.15,
+      "confidence": 0.16,
       "reason": "rozdzielono 'imię i nazwisko'"
     },
     {
-      "fieldId": "27cf3889-7a0a-5eaa-9b9d-12dd751d569b",
-      "techName": "numer_telefonu",
-      "title": "Numer telefonu",
-      "confidence": 0.15,
-      "reason": "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (phoneNumber)"
-    },
-    {
-      "fieldId": "385f742d-25a6-5513-84d5-0c569fdee424",
-      "techName": "numer_telefonu_2",
-      "title": "Numer telefonu",
-      "confidence": 0.15,
-      "reason": "typ z etykiety (TEXT_FIELD)"
-    },
-    {
-      "fieldId": "23942126-0077-5150-bf44-c7e67cb6c98d",
-      "techName": "numer_telefonu_3",
-      "title": "Numer telefonu",
-      "confidence": 0.15,
-      "reason": "typ z etykiety (TEXT_FIELD)"
-    },
-    {
-      "fieldId": "6fbf33ff-1558-5a4a-8aaa-75458d8d472b",
-      "techName": "numer_telefonu_5",
-      "title": "Numer telefonu",
-      "confidence": 0.15,
-      "reason": "typ z etykiety (TEXT_FIELD)"
-    },
-    {
-      "fieldId": "019715c1-e38d-5188-9f47-0d1deb41b638",
-      "techName": "numer_telefonu_6",
-      "title": "Numer telefonu",
-      "confidence": 0.15,
-      "reason": "typ z etykiety (TEXT_FIELD)"
-    },
-    {
-      "fieldId": "d3e49b2a-29fe-5ff8-b17e-bb38c8f75118",
-      "techName": "inny_adres_korespondencyjny",
-      "title": "Inny adres korespondencyjny",
+      "fieldId": "927bd811-2e02-585d-9f4d-b173a1a9ef29",
+      "techName": "zgoda_kandydata_do_wyroznienia",
+      "title": "Zgoda kandydata do wyróżnienia",
       "confidence": 0.16,
-      "reason": "etykieta w dokumencie"
+      "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "79a9819a-d4a0-5bd1-bd1a-005c14434246",
-      "techName": "eseereseseseeeeweeeawewononowonosaseeoneeaeoawewe",
-      "title": "Eseereseseseeeeweeeawewononowonosaseeoneeaeoawewe",
+      "fieldId": "b935c1b5-d6ef-5cb2-9512-7310026e17ec",
+      "techName": "imie_10",
+      "title": "Imię",
       "confidence": 0.16,
-      "reason": "etykieta w dokumencie"
+      "reason": "rozdzielono 'imię i nazwisko'"
     },
     {
-      "fieldId": "d89eb100-4a2d-5833-b202-9390233e02d9",
-      "techName": "awe",
-      "title": "Awe",
+      "fieldId": "bd23718c-304b-5583-a1ad-250d6fabaa2f",
+      "techName": "nazwisko_10",
+      "title": "Nazwisko",
       "confidence": 0.16,
-      "reason": "etykieta w dokumencie"
-    },
-    {
-      "fieldId": "007047ee-656a-5609-aabb-e2286b45d554",
-      "techName": "eeeereseseoeeroneeeroenewe",
-      "title": "Eeeereseseoeeroneeeroenewe",
-      "confidence": 0.16,
-      "reason": "etykieta w dokumencie"
+      "reason": "rozdzielono 'imię i nazwisko'"
     },
     {
       "fieldId": "38ffb2ac-9f32-5158-9aca-7997b4a1e9ea",
-      "techName": "eesereseeeroeeroneeenoenawe",
-      "title": "Eesereseeeroeeroneeenoenawe",
+      "techName": "numer_telefonu",
+      "title": "Numer telefonu",
+      "confidence": 0.16,
+      "reason": "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (phoneNumber)"
+    },
+    {
+      "fieldId": "e4465d13-62b3-56de-b09c-210a6a37d0d9",
+      "techName": "numer_telefonu_2",
+      "title": "Numer telefonu",
+      "confidence": 0.16,
+      "reason": "typ z etykiety (TEXT_FIELD)"
+    },
+    {
+      "fieldId": "273333a4-64a9-5733-a479-c73cac7be6ed",
+      "techName": "numer_telefonu_3",
+      "title": "Numer telefonu",
+      "confidence": 0.16,
+      "reason": "typ z etykiety (TEXT_FIELD)"
+    },
+    {
+      "fieldId": "150e8afb-84fd-52d5-b3c2-d834333a9cf6",
+      "techName": "numer_telefonu_5",
+      "title": "Numer telefonu",
+      "confidence": 0.16,
+      "reason": "typ z etykiety (TEXT_FIELD)"
+    },
+    {
+      "fieldId": "cb785fea-abb2-5a3a-b062-fd1a9d61a440",
+      "techName": "numer_telefonu_6",
+      "title": "Numer telefonu",
+      "confidence": 0.16,
+      "reason": "typ z etykiety (TEXT_FIELD)"
+    },
+    {
+      "fieldId": "d89eb100-4a2d-5833-b202-9390233e02d9",
+      "techName": "eeversereeeeenereeneneneewoneenene_see_eeneenenew",
+      "title": "Eeversereeeeenereeneneneewoneenene see eeneenenew",
       "confidence": 0.18,
       "reason": "etykieta w dokumencie"
     },
     {
-      "fieldId": "a8a5653f-fdec-5c31-898b-7033566a7c76",
+      "fieldId": "a44519c8-d5dd-560a-9029-1d276d8eb01c",
       "techName": "twoje_dane_2",
       "title": "Twoje dane",
       "confidence": 0.18,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "b5050fd3-130f-50c8-86bc-e41cce9964e1",
+      "fieldId": "385f742d-25a6-5513-84d5-0c569fdee424",
       "techName": "seria_i_numer_dowodu_osobistego_2",
       "title": "Seria i numer dowodu osobistego",
       "confidence": 0.18,
       "reason": "typ z etykiety (TEXT_FIELD)"
     },
     {
-      "fieldId": "9d404833-edfd-512f-8157-7ebe34206cfc",
-      "techName": "seesecevovosovosononoononooe",
-      "title": "Seesecevovosovosononoononooe",
-      "confidence": 0.18,
-      "reason": "etykieta w dokumencie"
-    },
-    {
-      "fieldId": "9beb4a19-38e5-5d6f-a73d-90d58e1518ea",
-      "techName": "eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe",
-      "title": "Eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe",
-      "confidence": 0.18,
-      "reason": "etykieta w dokumencie"
-    },
-    {
-      "fieldId": "14b36573-550f-5edd-901e-d258abeabe1d",
-      "techName": "eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe_2",
-      "title": "Eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe",
-      "confidence": 0.18,
-      "reason": "etykieta w dokumencie"
-    },
-    {
-      "fieldId": "927bd811-2e02-585d-9f4d-b173a1a9ef29",
-      "techName": "eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe_3",
-      "title": "Eeeoveceorosoeonesseeneowowaeonowononowesoweweeowe",
-      "confidence": 0.18,
-      "reason": "etykieta w dokumencie"
-    },
-    {
-      "fieldId": "0f078103-6bdb-55bd-9465-6b425ca7c5fd",
+      "fieldId": "28068881-b672-50aa-b163-b2064305ad83",
       "techName": "twoje_dane_3",
       "title": "Twoje dane",
-      "confidence": 0.2,
+      "confidence": 0.19,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "cb785fea-abb2-5a3a-b062-fd1a9d61a440",
+      "fieldId": "6fbf33ff-1558-5a4a-8aaa-75458d8d472b",
       "techName": "seria_i_numer_dowodu_osobistego_3",
       "title": "Seria i numer dowodu osobistego",
+      "confidence": 0.19,
+      "reason": "typ z etykiety (TEXT_FIELD)"
+    },
+    {
+      "fieldId": "79a9819a-d4a0-5bd1-bd1a-005c14434246",
+      "techName": "adres_do_e_doreczen",
+      "title": "Adres do e-Doręczeń",
       "confidence": 0.2,
       "reason": "typ z etykiety (TEXT_FIELD)"
     },
     {
-      "fieldId": "5c4dd472-c040-526b-8034-42eb5354a8ad",
+      "fieldId": "a76b246b-5bff-5a8e-88aa-75e0c884e3f7",
       "techName": "dane_do_kontaktu_3",
       "title": "Dane do kontaktu",
       "confidence": 0.2,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "415cdab2-060c-59b8-96fc-bf3fdc6ccd47",
-      "techName": "eeververeeesesereeneneewenenoeneneneeeeneenane",
-      "title": "Eeververeeesesereeneneewenenoeneneneeeeneenane",
-      "confidence": 0.21,
-      "reason": "etykieta w dokumencie"
+      "fieldId": "1d29d35d-0c20-58cb-bd2e-da4b739f973d",
+      "techName": "numer_telefonu_7",
+      "title": "Numer telefonu",
+      "confidence": 0.2,
+      "reason": "typ z etykiety (TEXT_FIELD)"
     },
     {
       "fieldId": "d8783a5b-2d3b-5dd2-8a99-b2edda295657",
@@ -6826,256 +6859,179 @@
       "reason": "typ z etykiety (TEXT_FIELD)"
     },
     {
-      "fieldId": "36bcafa6-87d1-5b54-a576-7edc047109e3",
-      "techName": "zgoda_kandydata_pelnoletniego_do_stypendium",
-      "title": "Zgoda kandydata pełnoletniego do stypendium",
-      "confidence": 0.21,
-      "reason": "nagłówek sekcji w dokumencie"
-    },
-    {
-      "fieldId": "cd30eefd-0cf8-596e-b69f-27e827633de2",
-      "techName": "imie_2",
-      "title": "Imię",
-      "confidence": 0.21,
-      "reason": "rozdzielono 'imię i nazwisko'"
-    },
-    {
-      "fieldId": "86c1dbc9-6e7f-5ddb-babf-0c6afcbb4ed3",
-      "techName": "nazwisko_2",
-      "title": "Nazwisko",
-      "confidence": 0.21,
-      "reason": "rozdzielono 'imię i nazwisko'"
-    },
-    {
-      "fieldId": "cdebc9ca-4972-5b8d-9e38-f0e01da845b5",
-      "techName": "zgoda_kandydata_pelnoletniego_do_nagrody",
-      "title": "Zgoda kandydata pełnoletniego do nagrody",
-      "confidence": 0.21,
-      "reason": "nagłówek sekcji w dokumencie"
-    },
-    {
-      "fieldId": "738fc24d-374b-5f1e-a260-93a1bfbbc3fe",
-      "techName": "imie_4",
-      "title": "Imię",
-      "confidence": 0.21,
-      "reason": "rozdzielono 'imię i nazwisko'"
-    },
-    {
-      "fieldId": "c7fab2ab-1154-53b6-9cd3-00980c5f9bb9",
-      "techName": "nazwisko_4",
-      "title": "Nazwisko",
-      "confidence": 0.21,
-      "reason": "rozdzielono 'imię i nazwisko'"
-    },
-    {
-      "fieldId": "b099a940-c04d-5227-86f9-6e58d59febca",
-      "techName": "e_eeveeeeenrenenereeneneenenereenoneaeeneneenene",
-      "title": "E.eeveeeeenrenenereeneneenenereenoneaeeneneenene",
+      "fieldId": "1ee612cd-6f66-50e3-8567-395647a03d26",
+      "techName": "e_veveeeenenreneneeeeneneeneereeneneaweweseenene",
+      "title": "E.veveeeenenreneneeeeneneeneereeneneaweweseenene",
       "confidence": 0.21,
       "reason": "etykieta w dokumencie"
     },
     {
-      "fieldId": "51612a71-781e-5b0b-bc36-e3f1f87b5bab",
-      "techName": "zgoda_kandydata_do_wyroznienia",
-      "title": "Zgoda kandydata do wyróżnienia",
-      "confidence": 0.21,
-      "reason": "nagłówek sekcji w dokumencie"
+      "fieldId": "9d404833-edfd-512f-8157-7ebe34206cfc",
+      "techName": "eeeeeeeoreeneneseeweroeneneneeeeneenenen",
+      "title": "Eeeeeeeoreeneneseeweroeneneneeeeneenenen",
+      "confidence": 0.22,
+      "reason": "etykieta w dokumencie"
     },
     {
-      "fieldId": "a23d85aa-7ca7-5f3a-81ec-4f1804c4cef7",
-      "techName": "imie_10",
-      "title": "Imię",
-      "confidence": 0.21,
-      "reason": "rozdzielono 'imię i nazwisko'"
-    },
-    {
-      "fieldId": "e3605e5d-1ae6-5147-a114-8d4141c9cb56",
-      "techName": "nazwisko_10",
-      "title": "Nazwisko",
-      "confidence": 0.21,
-      "reason": "rozdzielono 'imię i nazwisko'"
-    },
-    {
-      "fieldId": "e10f5b20-d86d-53c4-a97d-9c2047abb362",
-      "techName": "numer_telefonu_7",
+      "fieldId": "a033078f-85c0-535b-bdfc-ed7a192eddd4",
+      "techName": "numer_telefonu_4",
       "title": "Numer telefonu",
-      "confidence": 0.21,
-      "reason": "typ z etykiety (TEXT_FIELD)"
-    },
-    {
-      "fieldId": "a1b743f0-61b1-532a-9047-1063b8c7e4a9",
-      "techName": "adres_do_e_doreczen",
-      "title": "Adres do e-Doręczeń",
       "confidence": 0.23,
       "reason": "typ z etykiety (TEXT_FIELD)"
     },
     {
-      "fieldId": "68a36fa8-3983-5b29-9ad2-06fa5834e1a4",
-      "techName": "eeeeeeeeereenoneasowonoeneneeeweneeneneneeeen",
-      "title": "Eeeeeeeeereenoneasowonoeneneeeweneeneneneeeen",
+      "fieldId": "e10f5b20-d86d-53c4-a97d-9c2047abb362",
+      "techName": "adres_skrytki_epuap_3",
+      "title": "Adres skrytki ePUAP",
       "confidence": 0.24,
-      "reason": "etykieta w dokumencie"
+      "reason": "typ z etykiety (TEXT_FIELD)"
     },
     {
-      "fieldId": "12de914a-8f0e-56ba-9a9b-cef8f538a8c6",
+      "fieldId": "1edf7975-c8f1-5c1c-8edb-d7d601e96203",
       "techName": "adres_do_e_doreczen_3",
       "title": "Adres do e-Doręczeń",
       "confidence": 0.24,
       "reason": "typ z etykiety (TEXT_FIELD)"
     },
     {
-      "fieldId": "e4b27357-2313-5a97-a6d3-11a147187ed0",
-      "techName": "numer_telefonu_4",
-      "title": "Numer telefonu",
-      "confidence": 0.25,
-      "reason": "typ z etykiety (TEXT_FIELD)"
-    },
-    {
-      "fieldId": "228d2498-7208-5ac2-a227-940c5dffe2ac",
+      "fieldId": "83dec20b-f898-577d-a4a9-8ed17e495b3c",
       "techName": "wnioskodawca",
       "title": "Wnioskodawca",
-      "confidence": 0.26,
-      "reason": "nagłówek sekcji w dokumencie"
-    },
-    {
-      "fieldId": "1ee612cd-6f66-50e3-8567-395647a03d26",
-      "techName": "adres_skrytki_epuap_3",
-      "title": "Adres skrytki ePUAP",
-      "confidence": 0.27,
-      "reason": "typ z etykiety (TEXT_FIELD)"
-    },
-    {
-      "fieldId": "f8fae6c9-8756-5e3a-988a-0ad34367801b",
-      "techName": "text_field_1_ja_nizej_podpisany_2",
-      "title": "1) Ja niżej podpisany",
       "confidence": 0.29,
-      "reason": "etykieta w dokumencie"
-    },
-    {
-      "fieldId": "ada3d0cf-f25c-554c-be8a-936db1869408",
-      "techName": "wnioskodawca_3",
-      "title": "Wnioskodawca",
-      "confidence": 0.32,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "d851db14-96bd-5392-abc5-3260becd4fc2",
-      "techName": "wnioskodawca_2",
+      "fieldId": "a05ae993-6c62-5147-9177-ef40a61fe782",
+      "techName": "wnioskodawca_3",
       "title": "Wnioskodawca",
       "confidence": 0.33,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "2a4b65f8-d727-54c0-bec8-be036246d193",
+      "fieldId": "3940f7e9-8771-5240-97dd-c47cb07bba77",
+      "techName": "zgoda_podopiecznego_pelnoletniego_2",
+      "title": "Zgoda podopiecznego pełnoletniego",
+      "confidence": 0.33,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "586be780-4558-5368-a520-d1bf6f0427e7",
+      "techName": "wnioskodawca_2",
+      "title": "Wnioskodawca",
+      "confidence": 0.35,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "0af2ebd7-c296-505f-a9e1-d381fd316dcc",
       "techName": "dane_do_kontaktu",
       "title": "Dane do kontaktu",
       "confidence": 0.36,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "1810a267-6731-57bc-acd5-94fa76eea939",
+      "fieldId": "e94c204d-d920-507a-8a14-e0e2a8134b59",
+      "techName": "text_field_1_ja_nizej_podpisany",
+      "title": "1) Ja niżej podpisany",
+      "confidence": 0.37,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "61de19db-e890-5e72-805b-4d3d7644f8d3",
+      "techName": "eeeeeeseseeesowowanowosowowososeosowanawewenowasesan",
+      "title": "Eeeeeeseseeesowowanowosowowososeosowanawewenowasesan",
+      "confidence": 0.37,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "96055def-ef31-5086-849b-efff20110f43",
       "techName": "dane_do_kontaktu_2",
       "title": "Dane do kontaktu",
       "confidence": 0.41,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "0573cdfb-a6e6-54e7-bd3a-f843dc3cf38d",
-      "techName": "text_field_1_ja_nizej_podpisany",
+      "fieldId": "2c0a29d6-e254-5f5e-8d19-e1b8ed32e998",
+      "techName": "text_field_1_ja_nizej_podpisany_2",
       "title": "1) Ja niżej podpisany",
       "confidence": 0.44,
       "reason": "etykieta w dokumencie"
     },
     {
-      "fieldId": "aef669da-3661-58de-ad3f-12c33432f12a",
-      "techName": "zgoda_podopiecznego_pelnoletniego_2",
-      "title": "Zgoda podopiecznego pełnoletniego",
-      "confidence": 0.47,
-      "reason": "nagłówek sekcji w dokumencie"
-    },
-    {
-      "fieldId": "098c7ab7-4cf3-52c8-8379-a85989500944",
-      "techName": "twoje_dane",
-      "title": "Twoje dane",
-      "confidence": 0.49,
-      "reason": "nagłówek sekcji w dokumencie"
-    },
-    {
-      "fieldId": "19547eba-ac94-53f6-be36-203c52f1cd93",
-      "techName": "imie",
-      "title": "Imię",
-      "confidence": 0.53,
-      "reason": "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (name)"
-    },
-    {
       "fieldId": "fe4b9f36-f531-5a1a-948f-14ddf3094649",
       "techName": "nr_245",
       "title": "Nr 245",
-      "confidence": 0.53,
+      "confidence": 0.48,
       "reason": "etykieta w dokumencie"
     },
     {
       "fieldId": "2c65512d-dcd5-5af9-99c7-29a163adebd9",
-      "techName": "text_field_1x",
-      "title": "1x",
-      "confidence": 0.53,
+      "techName": "ix",
+      "title": "Ix",
+      "confidence": 0.48,
       "reason": "etykieta w dokumencie"
     },
     {
       "fieldId": "65c38b11-ce96-5142-9478-c80a49d824ea",
       "techName": "text_field_2024",
       "title": "2024",
-      "confidence": 0.53,
+      "confidence": 0.48,
       "reason": "etykieta w dokumencie"
     },
     {
-      "fieldId": "65b8e5d0-ebff-5d05-9c5c-e54dcb5a447e",
+      "fieldId": "379be171-c5bf-576b-ace5-f618a35711ce",
+      "techName": "twoje_dane",
+      "title": "Twoje dane",
+      "confidence": 0.49,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "1470fa49-c16a-5027-abe8-7412d033c7ac",
+      "techName": "zgoda_w_imieniu_podopiecznego_nieletniego_2",
+      "title": "Zgoda w imieniu podopiecznego nieletniego",
+      "confidence": 0.49,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "639fbbe9-3df9-5c2c-983a-47c940c046b7",
+      "techName": "zgoda_kandydata_pelnoletniego_do_stypendium_2",
+      "title": "Zgoda kandydata pełnoletniego do stypendium",
+      "confidence": 0.54,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "8a816719-ec6c-5ca6-8266-282ceb719e5f",
+      "techName": "zgoda_kandydata_pelnoletniego_do_nagrody_2",
+      "title": "Zgoda kandydata pełnoletniego do nagrody",
+      "confidence": 0.54,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "2cb39f7c-9c5e-587a-82dc-0a438daaaa65",
+      "techName": "zgoda_kandydata_do_wyroznienia_2",
+      "title": "Zgoda kandydata do wyróżnienia",
+      "confidence": 0.54,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "19547eba-ac94-53f6-be36-203c52f1cd93",
+      "techName": "imie",
+      "title": "Imię",
+      "confidence": 0.55,
+      "reason": "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (name)"
+    },
+    {
+      "fieldId": "2a4b65f8-d727-54c0-bec8-be036246d193",
       "techName": "a_nastepnie_wybierz_konkretne_dyscypliny_z_listy",
       "title": "A następnie wybierz konkretne dyscypliny z listy",
       "confidence": 0.55,
       "reason": "opcje z listy po instrukcji 'zaznacz' (brak wykrytych kratek)"
     },
     {
-      "fieldId": "9be63b85-1120-59b5-b454-f4250711c851",
+      "fieldId": "65b8e5d0-ebff-5d05-9c5c-e54dcb5a447e",
       "techName": "dyscypliny_sportowe_3",
       "title": "Dyscypliny sportowe",
       "confidence": 0.55,
       "reason": "opcje z listy po instrukcji 'zaznacz' (brak wykrytych kratek)"
-    },
-    {
-      "fieldId": "e4465d13-62b3-56de-b09c-210a6a37d0d9",
-      "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_stypendium_2",
-      "title": "Zgoda w imieniu kandydata nieletniego do stypendium",
-      "confidence": 0.56,
-      "reason": "nagłówek sekcji w dokumencie"
-    },
-    {
-      "fieldId": "e94c204d-d920-507a-8a14-e0e2a8134b59",
-      "techName": "zgoda_kandydata_pelnoletniego_do_stypendium_2",
-      "title": "Zgoda kandydata pełnoletniego do stypendium",
-      "confidence": 0.57,
-      "reason": "nagłówek sekcji w dokumencie"
-    },
-    {
-      "fieldId": "2c0a29d6-e254-5f5e-8d19-e1b8ed32e998",
-      "techName": "zgoda_kandydata_pelnoletniego_do_nagrody_2",
-      "title": "Zgoda kandydata pełnoletniego do nagrody",
-      "confidence": 0.57,
-      "reason": "nagłówek sekcji w dokumencie"
-    },
-    {
-      "fieldId": "70e92d9e-e274-514c-996c-0b7d97f8619e",
-      "techName": "zgoda_kandydata_do_wyroznienia_2",
-      "title": "Zgoda kandydata do wyróżnienia",
-      "confidence": 0.57,
-      "reason": "nagłówek sekcji w dokumencie"
-    },
-    {
-      "fieldId": "c3e04d65-96b4-5fd8-89c3-4011ef592299",
-      "techName": "zgoda_w_imieniu_podopiecznego_nieletniego_2",
-      "title": "Zgoda w imieniu podopiecznego nieletniego",
-      "confidence": 0.59,
-      "reason": "nagłówek sekcji w dokumencie"
     }
   ],
   "rules": [
@@ -7373,7 +7329,7 @@
   "proposedDictionaries": [
     {
       "name": "Dyscypliny sportowe",
-      "fieldId": "9be63b85-1120-59b5-b454-f4250711c851",
+      "fieldId": "65b8e5d0-ebff-5d05-9c5c-e54dcb5a447e",
       "items": [
         "Gimnastyka artystyczna",
         "Hokej",
@@ -7401,11 +7357,11 @@
   ],
   "warnings": [],
   "timings": {
-    "extract": 11977,
-    "infer": 23,
-    "dict": 4,
-    "build": 2,
-    "validate": 32
+    "extract": 11372,
+    "infer": 34,
+    "dict": 5,
+    "build": 3,
+    "validate": 33
   },
   "llm": {
     "used": false

@@ -318,10 +318,10 @@
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "54131817-d469-5074-a7a2-d59a5a8278b4",
+            "id": "717041e8-1a8a-5e6d-a132-abb6031f85d2",
             "type": "SECTION",
-            "techName": "cel_wynajacia_swiellicy_aecsciewsoka_oi_e_niskoknneeowk_kj_kena_kok_nneeozne_c_p",
-            "title": "Cel wynającia ŚWIelliCy: aęcsciewsoka oi e NISKOKNNEEOWK KJ KENA KOK NNEEOZNE C PREREKA",
+            "techName": "szczegoly_wniosku",
+            "title": "Szczegóły wniosku",
             "description": "",
             "options": [],
             "validation": [],
@@ -333,7 +333,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "c5f7bad8-e5cb-52c1-a70c-4cece341c35c",
+                  "id": "b6a1ade2-775a-5da7-aedd-266dc2562ce7",
                   "type": "TEXT_FIELD",
                   "techName": "imie",
                   "title": "Imię",
@@ -355,7 +355,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "717041e8-1a8a-5e6d-a132-abb6031f85d2",
+                  "id": "447305e7-e085-5bcc-90b6-4f3916884ee9",
                   "type": "TEXT_FIELD",
                   "techName": "nazwisko",
                   "title": "Nazwisko",
@@ -475,9 +475,9 @@
           "rows": 5,
           "cols": 3,
           "field": {
-            "id": "447305e7-e085-5bcc-90b6-4f3916884ee9",
+            "id": "c5f7bad8-e5cb-52c1-a70c-4cece341c35c",
             "type": "SECTION",
-            "techName": "szczegoly_wniosku",
+            "techName": "szczegoly_wniosku_2",
             "title": "Szczegóły wniosku",
             "description": "",
             "options": [],
@@ -490,15 +490,13 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "99058463-54ac-576f-90a8-ead6b11ef993",
-                  "type": "TEXT_FIELD",
-                  "techName": "prosze_o_wynajem_uzyczenie_swietlicy_wiejskiej_w",
-                  "title": "Proszę o wynajem/użyczenie świetlicy wiejskiej w",
-                  "description": "",
+                  "id": "046fced6-0c6e-567e-98df-91fac204bf3f",
+                  "type": "TEXT_BLOCK",
+                  "techName": "text_block_2",
+                  "title": "",
+                  "description": "1. Cel wynającia ŚWIElliCY: szęcsciewcowiksjowi ei NINSKOKLNNEEOWK K HKAENA K COKCNNEEOCZNE PR",
                   "options": [],
-                  "validation": [
-                    "REQUIRED"
-                  ],
+                  "validation": [],
                   "readOnly": false,
                   "repeatingSectionGrid": [],
                   "states": [],
@@ -512,10 +510,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "a4e4d2a6-cdb5-5d22-b247-ff4952ba39c7",
+                  "id": "99058463-54ac-576f-90a8-ead6b11ef993",
                   "type": "TEXT_FIELD",
-                  "techName": "text_field",
-                  "title": "+.",
+                  "techName": "prosze_o_wynajem_uzyczenie_swietlicy_wiejskiej_w",
+                  "title": "Proszę o wynajem/użyczenie świetlicy wiejskiej w",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -534,7 +532,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "7388bbfd-3fdf-5802-8ddc-fbfd5ded08c4",
+                  "id": "a4e4d2a6-cdb5-5d22-b247-ff4952ba39c7",
                   "type": "DATEPICKER",
                   "techName": "data_od",
                   "title": "Data od",
@@ -556,10 +554,10 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "b6a1ade2-775a-5da7-aedd-266dc2562ce7",
-                  "type": "DATEPICKER",
-                  "techName": "data_do",
-                  "title": "Data do",
+                  "id": "7388bbfd-3fdf-5802-8ddc-fbfd5ded08c4",
+                  "type": "TEXT_FIELD",
+                  "techName": "rodzaj_uroczystosci_np_wesele_urodziny_zabawa_itp",
+                  "title": "Rodzaj uroczystości, np. wesele, urodziny, zabawa itp.",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -575,49 +573,6 @@
             ],
             "states": [],
             "questionOrder": 1,
-            "tooltipMessage": ""
-          }
-        },
-        {
-          "x": 0,
-          "y": 9,
-          "rows": 2,
-          "cols": 3,
-          "field": {
-            "id": "25c96587-055c-5860-b829-4d420cb36071",
-            "type": "SECTION",
-            "techName": "cel_wynajacia_swiellicy_aecsciewsoka_oi_e_niskoknneeowk_kj_kena_kok_nneeozne_c_p_2",
-            "title": "Cel wynającia ŚWIelliCy: aęcsciewsoka oi e NISKOKNNEEOWK KJ KENA KOK NNEEOZNE C PREREKA",
-            "description": "",
-            "options": [],
-            "validation": [],
-            "readOnly": false,
-            "repeatingSectionGrid": [
-              {
-                "x": 0,
-                "y": 0,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "046fced6-0c6e-567e-98df-91fac204bf3f",
-                  "type": "TEXT_FIELD",
-                  "techName": "rodzaj_uroczystosci_np_wesele_urodziny_zabawa_itp",
-                  "title": "Rodzaj uroczystości, np. wesele, urodziny, zabawa itp.",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 0,
-                  "tooltipMessage": ""
-                }
-              }
-            ],
-            "states": [],
-            "questionOrder": 2,
             "tooltipMessage": ""
           }
         }
@@ -686,7 +641,7 @@
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "7d3ca654-7d07-57d4-abea-53e73a5224e8",
+            "id": "54131817-d469-5074-a7a2-d59a5a8278b4",
             "type": "SECTION",
             "techName": "podglad_uzupelnionego_wniosku",
             "title": "Podgląd uzupełnionego wniosku",
@@ -701,7 +656,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "f31727bb-4444-58e8-9f45-c7f579012ebd",
+                  "id": "25c96587-055c-5860-b829-4d420cb36071",
                   "type": "INFO_SECTION",
                   "techName": "podglad",
                   "title": "Podgląd",

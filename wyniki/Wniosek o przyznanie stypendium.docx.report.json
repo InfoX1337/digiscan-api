@@ -3122,11 +3122,11 @@
   ],
   "warnings": [],
   "timings": {
-    "extract": 119,
-    "infer": 17,
+    "extract": 125,
+    "infer": 20,
     "dict": 3,
     "build": 1,
-    "validate": 40
+    "validate": 32
   },
   "llm": {
     "used": false

@@ -115,10 +115,10 @@
           "bbox": {
             "x": 249.0,
             "y": 857.0,
-            "w": 1158.0,
+            "w": 1202.0,
             "h": 269.0
           },
-          "text": "= ilości posiadanych użytków rolnych w hektarach fizycznych i przeliczeniowych = ilości dzierżawionych użytków rolnych w hektarach fizycznych i przeliczeniowych => okresie posiadania gospodarstwa rolnego => nieposiadaniu użytków rolnych / gospodarstwa rolnego na terenie Gminy Młynary n :: .. .",
+          "text": "= ilości posiadanych użytków rolnych w hektarach fizycznych i przeliczeniowych = ilości dzierżawionych użytków rolnych w hektarach fizycznych i przeliczeniowych => okresie posiadania gospodarstwa rolnego => nieposiadaniu użytków rolnych / gospodarstwa rolnego na terenie Gminy Młynary wm AAAAAAANAbNONONOAOAOAOAOAOAONOAObODObObDbObDbbNNbNNNNNNNŃNN",
           "blockIds": [
             "p1-b7",
             "p1-b8",
@@ -175,10 +175,10 @@
           "bbox": {
             "x": 247.0,
             "y": 1272.0,
-            "w": 1204.9999999999998,
+            "w": 1205.0,
             "h": 39.0
           },
-          "text": "Zaświadczenie potrzebne jest celem przedłożenia w  veveveseeeeseeee",
+          "text": "Zaświadczenie potrzebne jest celem przedłożenia w  eeeeeseeeeseeee",
           "blockIds": [
             "p1-b12",
             "p1-b13",
@@ -542,7 +542,7 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 977,
+    "extract": 841,
     "infer": 2,
     "dict": 0,
     "build": 0,

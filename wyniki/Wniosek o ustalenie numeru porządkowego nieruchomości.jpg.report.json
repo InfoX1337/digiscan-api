@@ -2,7 +2,7 @@
   "filename": "Wniosek o ustalenie numeru porządkowego nieruchomości.jpg",
   "format": "image",
   "ocr": true,
-  "confidence": 0.63,
+  "confidence": 0.61,
   "fields": {
     "8342bdd9-1d50-5601-bf24-c709095a2f1e": {
       "id": "8342bdd9-1d50-5601-bf24-c709095a2f1e",
@@ -60,8 +60,8 @@
         "adresat wniosku z nagłówka dokumentu"
       ]
     },
-    "afe51e83-9d4d-560e-b43b-0ffb5462e2d5": {
-      "id": "afe51e83-9d4d-560e-b43b-0ffb5462e2d5",
+    "cdc33e85-7c90-5ed2-a50f-1724f79f86ac": {
+      "id": "cdc33e85-7c90-5ed2-a50f-1724f79f86ac",
       "techName": "podmiot_wniosku",
       "title": "Podmiot wniosku",
       "type": "SECTION",
@@ -74,8 +74,8 @@
         "standard eUsługi: wybór podmiotu wniosku"
       ]
     },
-    "6c8afa18-46a6-5820-b37f-5aa4802a5a5e": {
-      "id": "6c8afa18-46a6-5820-b37f-5aa4802a5a5e",
+    "d37af3b2-992a-5437-833e-86c4a4845d1d": {
+      "id": "d37af3b2-992a-5437-833e-86c4a4845d1d",
       "techName": "wybierz_w_czyim_imieniu_wnioskujesz",
       "title": "Wybierz, w czyim imieniu wnioskujesz",
       "type": "RADIO",
@@ -103,8 +103,8 @@
         "standard eUsługi: wnioskodawcą może być osoba fizyczna lub podmiot ('nazwa wnioskodawcy')"
       ]
     },
-    "6c641a7e-bf60-5166-b376-0e2a4c1a2ec0": {
-      "id": "6c641a7e-bf60-5166-b376-0e2a4c1a2ec0",
+    "e2bcdb2b-e6c5-55e1-a3ba-8e31f1423fb5": {
+      "id": "e2bcdb2b-e6c5-55e1-a3ba-8e31f1423fb5",
       "techName": "wybierz_jako_kto_wnioskujesz",
       "title": "Wybierz, jako kto wnioskujesz",
       "type": "RADIO",
@@ -201,8 +201,8 @@
         "rozdzielono 'imię i nazwisko'; podpis pod brakującym w OCR miejscem do wpisania"
       ]
     },
-    "eb6b33b6-4948-572b-bf0e-687635289ad7": {
-      "id": "eb6b33b6-4948-572b-bf0e-687635289ad7",
+    "f5b3cb09-5310-5bca-8c7f-757a09c47f81": {
+      "id": "f5b3cb09-5310-5bca-8c7f-757a09c47f81",
       "techName": "dane_podmiotu",
       "title": "Dane podmiotu",
       "type": "SECTION",
@@ -243,8 +243,8 @@
         "'nazwa' dla podmiotu niebędącego osobą; podpis pod brakującym w OCR miejscem do wpisania"
       ]
     },
-    "d37af3b2-992a-5437-833e-86c4a4845d1d": {
-      "id": "d37af3b2-992a-5437-833e-86c4a4845d1d",
+    "38167925-e763-5305-ae65-de956ed82294": {
+      "id": "38167925-e763-5305-ae65-de956ed82294",
       "techName": "nip",
       "title": "NIP",
       "type": "TEXT_FIELD",
@@ -257,8 +257,8 @@
         "standard eUsługi: pole sekcji podmiotu wniosku"
       ]
     },
-    "e2bcdb2b-e6c5-55e1-a3ba-8e31f1423fb5": {
-      "id": "e2bcdb2b-e6c5-55e1-a3ba-8e31f1423fb5",
+    "eb6b33b6-4948-572b-bf0e-687635289ad7": {
+      "id": "eb6b33b6-4948-572b-bf0e-687635289ad7",
       "techName": "regon",
       "title": "REGON",
       "type": "TEXT_FIELD",
@@ -271,8 +271,8 @@
         "standard eUsługi: pole sekcji podmiotu wniosku"
       ]
     },
-    "38167925-e763-5305-ae65-de956ed82294": {
-      "id": "38167925-e763-5305-ae65-de956ed82294",
+    "c80816eb-64be-5db2-abe8-7cfa4a6a7d5c": {
+      "id": "c80816eb-64be-5db2-abe8-7cfa4a6a7d5c",
       "techName": "numer_krs",
       "title": "Numer KRS",
       "type": "TEXT_FIELD",
@@ -285,8 +285,8 @@
         "standard eUsługi: pole sekcji podmiotu wniosku"
       ]
     },
-    "310cbbc5-4b41-5649-b7fc-937e0e9c4888": {
-      "id": "310cbbc5-4b41-5649-b7fc-937e0e9c4888",
+    "0b13fa21-cf82-588d-b1de-350eb9087da4": {
+      "id": "0b13fa21-cf82-588d-b1de-350eb9087da4",
       "techName": "adres_siedziby",
       "title": "Adres siedziby",
       "type": "SECTION",
@@ -299,8 +299,8 @@
         "standard eUsługi: adres siedziby podmiotu"
       ]
     },
-    "f5b3cb09-5310-5bca-8c7f-757a09c47f81": {
-      "id": "f5b3cb09-5310-5bca-8c7f-757a09c47f81",
+    "eb5ca24c-e73f-587b-9466-9bf5cdd50b85": {
+      "id": "eb5ca24c-e73f-587b-9466-9bf5cdd50b85",
       "techName": "kraj",
       "title": "Kraj",
       "type": "SELECT",
@@ -315,8 +315,8 @@
         "pole korzysta ze słownika „Kraje”"
       ]
     },
-    "48085f94-fd71-579b-a909-04f75a967645": {
-      "id": "48085f94-fd71-579b-a909-04f75a967645",
+    "1b2a4c63-f051-5d54-9ccb-318e3ed7910a": {
+      "id": "1b2a4c63-f051-5d54-9ccb-318e3ed7910a",
       "techName": "miejscowosc_zagranica",
       "title": "Miejscowość",
       "type": "TEXT_FIELD",
@@ -329,8 +329,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "eb5ca24c-e73f-587b-9466-9bf5cdd50b85": {
-      "id": "eb5ca24c-e73f-587b-9466-9bf5cdd50b85",
+    "8e81fb42-63b2-5d90-b4ca-6f90c8f01cf8": {
+      "id": "8e81fb42-63b2-5d90-b4ca-6f90c8f01cf8",
       "techName": "kod_pocztowy_zagranica",
       "title": "Kod pocztowy",
       "type": "TEXT_FIELD",
@@ -343,8 +343,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "1b2a4c63-f051-5d54-9ccb-318e3ed7910a": {
-      "id": "1b2a4c63-f051-5d54-9ccb-318e3ed7910a",
+    "6a7b1977-5f23-5a6c-a7b5-2bc7c32740d1": {
+      "id": "6a7b1977-5f23-5a6c-a7b5-2bc7c32740d1",
       "techName": "ulica_zagranica",
       "title": "Ulica",
       "type": "TEXT_FIELD",
@@ -357,8 +357,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "8e81fb42-63b2-5d90-b4ca-6f90c8f01cf8": {
-      "id": "8e81fb42-63b2-5d90-b4ca-6f90c8f01cf8",
+    "63d498c2-a53c-5f60-886a-a4adaf5ac9f2": {
+      "id": "63d498c2-a53c-5f60-886a-a4adaf5ac9f2",
       "techName": "teryt_4g_dowodowy",
       "title": "TERYT_4G_DOWODOWY",
       "type": "SELECT",
@@ -371,8 +371,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "6a7b1977-5f23-5a6c-a7b5-2bc7c32740d1": {
-      "id": "6a7b1977-5f23-5a6c-a7b5-2bc7c32740d1",
+    "618c0003-fa70-598e-9ef1-f70ded1b3d40": {
+      "id": "618c0003-fa70-598e-9ef1-f70ded1b3d40",
       "techName": "kod_pocztowy",
       "title": "Kod pocztowy",
       "type": "TEXT_FIELD",
@@ -385,8 +385,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "63d498c2-a53c-5f60-886a-a4adaf5ac9f2": {
-      "id": "63d498c2-a53c-5f60-886a-a4adaf5ac9f2",
+    "34fd8a7f-f689-5add-9dd9-ca4cea6ab51f": {
+      "id": "34fd8a7f-f689-5add-9dd9-ca4cea6ab51f",
       "techName": "ulica",
       "title": "Ulica",
       "type": "TEXT_FIELD",
@@ -399,8 +399,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "618c0003-fa70-598e-9ef1-f70ded1b3d40": {
-      "id": "618c0003-fa70-598e-9ef1-f70ded1b3d40",
+    "310cbbc5-4b41-5649-b7fc-937e0e9c4888": {
+      "id": "310cbbc5-4b41-5649-b7fc-937e0e9c4888",
       "techName": "numer_budynku",
       "title": "Numer budynku",
       "type": "TEXT_FIELD",
@@ -413,8 +413,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "34fd8a7f-f689-5add-9dd9-ca4cea6ab51f": {
-      "id": "34fd8a7f-f689-5add-9dd9-ca4cea6ab51f",
+    "93a8889a-67b1-56db-954e-48600aee58e6": {
+      "id": "93a8889a-67b1-56db-954e-48600aee58e6",
       "techName": "numer_lokalu",
       "title": "Numer lokalu",
       "type": "TEXT_FIELD",
@@ -427,8 +427,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "0b13fa21-cf82-588d-b1de-350eb9087da4": {
-      "id": "0b13fa21-cf82-588d-b1de-350eb9087da4",
+    "8ddd297c-54cb-585a-b6b5-5efff3bcb60f": {
+      "id": "8ddd297c-54cb-585a-b6b5-5efff3bcb60f",
       "techName": "potwierdzenie_ze_jestes_reprezentantem",
       "title": "Potwierdzenie, że jesteś reprezentantem",
       "type": "SECTION",
@@ -441,8 +441,8 @@
         "standard eUsługi: dokument potwierdzający reprezentację"
       ]
     },
-    "93a8889a-67b1-56db-954e-48600aee58e6": {
-      "id": "93a8889a-67b1-56db-954e-48600aee58e6",
+    "b0a5aab5-47ca-5e5d-b895-a6a48acd7ac7": {
+      "id": "b0a5aab5-47ca-5e5d-b895-a6a48acd7ac7",
       "techName": "plik_z_odpisem_danych",
       "title": "Plik z odpisem danych",
       "type": "FILE_UPLOADER",
@@ -455,8 +455,8 @@
         "standard eUsługi: pole sekcji podmiotu wniosku"
       ]
     },
-    "e0b2867b-e791-5e4b-9ad2-cf2bf5dcd6ea": {
-      "id": "e0b2867b-e791-5e4b-9ad2-cf2bf5dcd6ea",
+    "d334f259-9274-54cb-86b9-b72d8936f33c": {
+      "id": "d334f259-9274-54cb-86b9-b72d8936f33c",
       "techName": "dane_innej_osoby",
       "title": "Dane innej osoby",
       "type": "SECTION",
@@ -469,8 +469,8 @@
         "standard eUsługi: wniosek w imieniu innej osoby"
       ]
     },
-    "b0a5aab5-47ca-5e5d-b895-a6a48acd7ac7": {
-      "id": "b0a5aab5-47ca-5e5d-b895-a6a48acd7ac7",
+    "becc627a-2d96-5d5e-a46b-2e5097e406b5": {
+      "id": "becc627a-2d96-5d5e-a46b-2e5097e406b5",
       "techName": "imie_2",
       "title": "Imię",
       "type": "TEXT_FIELD",
@@ -483,8 +483,8 @@
         "standard eUsługi: pole sekcji podmiotu wniosku"
       ]
     },
-    "8ddd297c-54cb-585a-b6b5-5efff3bcb60f": {
-      "id": "8ddd297c-54cb-585a-b6b5-5efff3bcb60f",
+    "e0b2867b-e791-5e4b-9ad2-cf2bf5dcd6ea": {
+      "id": "e0b2867b-e791-5e4b-9ad2-cf2bf5dcd6ea",
       "techName": "nazwisko_2",
       "title": "Nazwisko",
       "type": "TEXT_FIELD",
@@ -497,8 +497,8 @@
         "standard eUsługi: pole sekcji podmiotu wniosku"
       ]
     },
-    "becc627a-2d96-5d5e-a46b-2e5097e406b5": {
-      "id": "becc627a-2d96-5d5e-a46b-2e5097e406b5",
+    "02f951d8-db73-5251-8568-44ec76901e14": {
+      "id": "02f951d8-db73-5251-8568-44ec76901e14",
       "techName": "numer_pesel",
       "title": "Numer PESEL",
       "type": "TEXT_FIELD",
@@ -511,8 +511,8 @@
         "standard eUsługi: pole sekcji podmiotu wniosku"
       ]
     },
-    "91881a7c-465b-5012-aab5-c8843939a158": {
-      "id": "91881a7c-465b-5012-aab5-c8843939a158",
+    "6109a257-8de6-5367-911d-3a12523113d0": {
+      "id": "6109a257-8de6-5367-911d-3a12523113d0",
       "techName": "adres_zamieszkania_innej_osoby",
       "title": "Adres zamieszkania innej osoby",
       "type": "SECTION",
@@ -525,8 +525,8 @@
         "standard eUsługi: adres innej osoby"
       ]
     },
-    "02f951d8-db73-5251-8568-44ec76901e14": {
-      "id": "02f951d8-db73-5251-8568-44ec76901e14",
+    "97892183-26e3-5063-b36c-b9fbb98810d2": {
+      "id": "97892183-26e3-5063-b36c-b9fbb98810d2",
       "techName": "kraj_2",
       "title": "Kraj",
       "type": "SELECT",
@@ -541,8 +541,8 @@
         "pole korzysta ze słownika „Kraje”"
       ]
     },
-    "d334f259-9274-54cb-86b9-b72d8936f33c": {
-      "id": "d334f259-9274-54cb-86b9-b72d8936f33c",
+    "f8f137ea-d8a2-5133-9319-2a1afa1ae882": {
+      "id": "f8f137ea-d8a2-5133-9319-2a1afa1ae882",
       "techName": "miejscowosc_zagranica_2",
       "title": "Miejscowość",
       "type": "TEXT_FIELD",
@@ -555,8 +555,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "97892183-26e3-5063-b36c-b9fbb98810d2": {
-      "id": "97892183-26e3-5063-b36c-b9fbb98810d2",
+    "43c335f9-a7ce-58c3-9dfd-0ac2a4066184": {
+      "id": "43c335f9-a7ce-58c3-9dfd-0ac2a4066184",
       "techName": "kod_pocztowy_zagranica_2",
       "title": "Kod pocztowy",
       "type": "TEXT_FIELD",
@@ -569,8 +569,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "f8f137ea-d8a2-5133-9319-2a1afa1ae882": {
-      "id": "f8f137ea-d8a2-5133-9319-2a1afa1ae882",
+    "19bf02d3-888c-58ee-a740-d2890bde0ca1": {
+      "id": "19bf02d3-888c-58ee-a740-d2890bde0ca1",
       "techName": "ulica_zagranica_2",
       "title": "Ulica",
       "type": "TEXT_FIELD",
@@ -583,8 +583,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "43c335f9-a7ce-58c3-9dfd-0ac2a4066184": {
-      "id": "43c335f9-a7ce-58c3-9dfd-0ac2a4066184",
+    "dbb2a6d7-aeee-5115-8646-f9c87ba97ab6": {
+      "id": "dbb2a6d7-aeee-5115-8646-f9c87ba97ab6",
       "techName": "teryt_4g_dowodowy_2",
       "title": "TERYT_4G_DOWODOWY",
       "type": "SELECT",
@@ -597,8 +597,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "19bf02d3-888c-58ee-a740-d2890bde0ca1": {
-      "id": "19bf02d3-888c-58ee-a740-d2890bde0ca1",
+    "ae3be70b-4ffe-5c9e-b3fc-37c532609b63": {
+      "id": "ae3be70b-4ffe-5c9e-b3fc-37c532609b63",
       "techName": "kod_pocztowy_2",
       "title": "Kod pocztowy",
       "type": "TEXT_FIELD",
@@ -611,8 +611,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "dbb2a6d7-aeee-5115-8646-f9c87ba97ab6": {
-      "id": "dbb2a6d7-aeee-5115-8646-f9c87ba97ab6",
+    "5e531f1b-e320-550a-8f73-772a9878e3b9": {
+      "id": "5e531f1b-e320-550a-8f73-772a9878e3b9",
       "techName": "ulica_2",
       "title": "Ulica",
       "type": "TEXT_FIELD",
@@ -625,8 +625,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "ae3be70b-4ffe-5c9e-b3fc-37c532609b63": {
-      "id": "ae3be70b-4ffe-5c9e-b3fc-37c532609b63",
+    "91881a7c-465b-5012-aab5-c8843939a158": {
+      "id": "91881a7c-465b-5012-aab5-c8843939a158",
       "techName": "numer_budynku_2",
       "title": "Numer budynku",
       "type": "TEXT_FIELD",
@@ -639,8 +639,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "5e531f1b-e320-550a-8f73-772a9878e3b9": {
-      "id": "5e531f1b-e320-550a-8f73-772a9878e3b9",
+    "b4968e10-a50b-587a-bfa1-821b68c5001e": {
+      "id": "b4968e10-a50b-587a-bfa1-821b68c5001e",
       "techName": "numer_lokalu_2",
       "title": "Numer lokalu",
       "type": "TEXT_FIELD",
@@ -653,8 +653,8 @@
         "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
       ]
     },
-    "6109a257-8de6-5367-911d-3a12523113d0": {
-      "id": "6109a257-8de6-5367-911d-3a12523113d0",
+    "77ca1ab5-1442-5597-8e58-e0f47a5d1afb": {
+      "id": "77ca1ab5-1442-5597-8e58-e0f47a5d1afb",
       "techName": "pelnomocnictwo",
       "title": "Pełnomocnictwo",
       "type": "SECTION",
@@ -667,8 +667,8 @@
         "standard eUsługi: pełnomocnictwo, gdy działasz jako pełnomocnik"
       ]
     },
-    "b4968e10-a50b-587a-bfa1-821b68c5001e": {
-      "id": "b4968e10-a50b-587a-bfa1-821b68c5001e",
+    "22abddcd-b8c4-5515-9a6d-424d775dd6c1": {
+      "id": "22abddcd-b8c4-5515-9a6d-424d775dd6c1",
       "techName": "plik_dokumentu_z_pelnomocnictwem",
       "title": "Plik dokumentu z pełnomocnictwem",
       "type": "FILE_UPLOADER",
@@ -681,8 +681,8 @@
         "standard eUsługi: pole sekcji podmiotu wniosku"
       ]
     },
-    "944a6209-5140-5529-85fe-c15d311546ab": {
-      "id": "944a6209-5140-5529-85fe-c15d311546ab",
+    "ada201d6-73e5-5875-aa43-212057fb5516": {
+      "id": "ada201d6-73e5-5875-aa43-212057fb5516",
       "techName": "oplata_skarbowa",
       "title": "Opłata skarbowa",
       "type": "SECTION",
@@ -695,8 +695,8 @@
         "standard eUsługi: opłata skarbowa za pełnomocnictwo (osoba fizyczna)"
       ]
     },
-    "c80816eb-64be-5db2-abe8-7cfa4a6a7d5c": {
-      "id": "c80816eb-64be-5db2-abe8-7cfa4a6a7d5c",
+    "48085f94-fd71-579b-a909-04f75a967645": {
+      "id": "48085f94-fd71-579b-a909-04f75a967645",
       "techName": "czy_zlozenie_pelnomocnictwa_wymaga_oplaty_skarbowej",
       "title": "Czy złożenie pełnomocnictwa wymaga opłaty skarbowej?",
       "type": "RADIO",
@@ -709,8 +709,8 @@
         "standard eUsługi: pole sekcji podmiotu wniosku"
       ]
     },
-    "22abddcd-b8c4-5515-9a6d-424d775dd6c1": {
-      "id": "22abddcd-b8c4-5515-9a6d-424d775dd6c1",
+    "944a6209-5140-5529-85fe-c15d311546ab": {
+      "id": "944a6209-5140-5529-85fe-c15d311546ab",
       "techName": "text_block",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -723,8 +723,8 @@
         "standard eUsługi: pole sekcji podmiotu wniosku"
       ]
     },
-    "77ca1ab5-1442-5597-8e58-e0f47a5d1afb": {
-      "id": "77ca1ab5-1442-5597-8e58-e0f47a5d1afb",
+    "6d9705ed-851a-50e9-a197-1339a2523cc2": {
+      "id": "6d9705ed-851a-50e9-a197-1339a2523cc2",
       "techName": "plik_z_potwierdzeniem_przelewu",
       "title": "Plik z potwierdzeniem przelewu",
       "type": "FILE_UPLOADER",
@@ -737,8 +737,8 @@
         "standard eUsługi: pole sekcji podmiotu wniosku"
       ]
     },
-    "7134e6a6-d734-591f-83ac-e7f31570bb92": {
-      "id": "7134e6a6-d734-591f-83ac-e7f31570bb92",
+    "3b8bfeda-01c0-5303-b34b-96b177bf9b1c": {
+      "id": "3b8bfeda-01c0-5303-b34b-96b177bf9b1c",
       "techName": "oplata_skarbowa_za_pelnomocnictwo",
       "title": "Opłata skarbowa za pełnomocnictwo",
       "type": "SECTION",
@@ -751,8 +751,8 @@
         "standard eUsługi: opłata skarbowa za pełnomocnictwo (podmiot)"
       ]
     },
-    "6d9705ed-851a-50e9-a197-1339a2523cc2": {
-      "id": "6d9705ed-851a-50e9-a197-1339a2523cc2",
+    "7134e6a6-d734-591f-83ac-e7f31570bb92": {
+      "id": "7134e6a6-d734-591f-83ac-e7f31570bb92",
       "techName": "text_block_2",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -765,8 +765,8 @@
         "standard eUsługi: pole sekcji podmiotu wniosku"
       ]
     },
-    "ada201d6-73e5-5875-aa43-212057fb5516": {
-      "id": "ada201d6-73e5-5875-aa43-212057fb5516",
+    "afe51e83-9d4d-560e-b43b-0ffb5462e2d5": {
+      "id": "afe51e83-9d4d-560e-b43b-0ffb5462e2d5",
       "techName": "plik_z_potwierdzeniem_przelewu_2",
       "title": "Plik z potwierdzeniem przelewu",
       "type": "FILE_UPLOADER",
@@ -836,12 +836,12 @@
         "tekst informacyjny sekcji"
       ]
     },
-    "f7e1effa-36f1-55f1-aeb6-2dd58def7422": {
-      "id": "f7e1effa-36f1-55f1-aeb6-2dd58def7422",
+    "4230c0d4-2821-5777-9f97-3be634158613": {
+      "id": "4230c0d4-2821-5777-9f97-3be634158613",
       "techName": "szczegoly_wniosku",
       "title": "Szczegóły wniosku",
       "type": "SECTION",
-      "confidence": 0.53,
+      "confidence": 0.39,
       "sources": [
         {
           "page": 1,
@@ -864,8 +864,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "944ce83f-665c-50f7-a2f2-241edbfa85d7": {
-      "id": "944ce83f-665c-50f7-a2f2-241edbfa85d7",
+    "2a2d4633-0e5c-5f26-9357-38deab85f522": {
+      "id": "2a2d4633-0e5c-5f26-9357-38deab85f522",
       "techName": "text_block_4",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -874,15 +874,14 @@
         {
           "page": 1,
           "bbox": {
-            "x": 197.0,
+            "x": 198.0,
             "y": 993.0,
-            "w": 1256.0,
+            "w": 1255.0,
             "h": 1148.0
           },
-          "text": "Wnoszę o ustalenie numeru porządkowego budynkowi zlokalizowanemu WsTMIEJSCOWOŚCI ssresrwsestos ee swswwstwośawaawce przyrulicy? swswsztwwiwewaas oW (podpis wnioskodawcy)” 1 ) Dane nicobowiązkowe. %) Podpis własnoręczny, a w przypadku składania wniosku w postaci elektronicznej: kwalifikowany podpis elektroniczny, podpis osobisty albo podpis zaufany.",
+          "text": "Wnoszę o ustalenie numeru porządkowego budynkowi zlokalizowanemu (podpis wnioskodawcy)” 1 ) Dane nicobowiązkowe. %) Podpis własnoręczny, a w przypadku składania wniosku w postaci elektronicznej: kwalifikowany podpis elektroniczny, podpis osobisty albo podpis zaufany.",
           "blockIds": [
             "p1-b9",
-            "p1-b10",
             "p1-b16",
             "p1-b17",
             "p1-b18",
@@ -899,26 +898,22 @@
     },
     "2ccfb7a7-c695-58d0-beb0-9fe86e3d4951": {
       "id": "2ccfb7a7-c695-58d0-beb0-9fe86e3d4951",
-      "techName": "numer_ewidencyjny_dzialki",
-      "title": "Numer ewidencyjny działki",
+      "techName": "ulica_3",
+      "title": "Ulica",
       "type": "TEXT_FIELD",
-      "confidence": 0.4,
+      "confidence": 0.03,
       "sources": [
         {
           "page": 1,
           "bbox": {
             "x": 197.0,
-            "y": 1164.0,
-            "w": 1230.0,
-            "h": 38.0
+            "y": 1084.0,
+            "w": 1216.0,
+            "h": 39.0
           },
-          "text": "nr ewidencyjny działki  w obrębie  -vreeeeeesese seee ses se eee",
+          "text": "WSTIEJSCOWOŚCI ssresrwstestow ee swswwstwośwamaawie pizyrulicy? ssssi",
           "blockIds": [
-            "p1-b11",
-            "p1-b12",
-            "p1-b13",
-            "p1-b14",
-            "p1-b15"
+            "p1-b10"
           ]
         }
       ],
@@ -926,15 +921,15 @@
         "rules"
       ],
       "reasons": [
-        "typ z etykiety (TEXT_FIELD)"
+        "składnik adresu"
       ]
     },
     "3e4bf024-f6d7-513f-8216-c892abd194c1": {
       "id": "3e4bf024-f6d7-513f-8216-c892abd194c1",
-      "techName": "obreb",
-      "title": "Obręb",
+      "techName": "numer_ewidencyjny_dzialki",
+      "title": "Numer ewidencyjny działki",
       "type": "TEXT_FIELD",
-      "confidence": 0.4,
+      "confidence": 0.38,
       "sources": [
         {
           "page": 1,
@@ -944,7 +939,7 @@
             "w": 1230.0,
             "h": 38.0
           },
-          "text": "nr ewidencyjny działki  w obrębie  -vreeeeeesese seee ses se eee",
+          "text": "nr ewidencyjny działki  w obrębie  sveveee.s eee seee eer seee eee",
           "blockIds": [
             "p1-b11",
             "p1-b12",
@@ -961,8 +956,72 @@
         "typ z etykiety (TEXT_FIELD)"
       ]
     },
-    "4230c0d4-2821-5777-9f97-3be634158613": {
-      "id": "4230c0d4-2821-5777-9f97-3be634158613",
+    "944ce83f-665c-50f7-a2f2-241edbfa85d7": {
+      "id": "944ce83f-665c-50f7-a2f2-241edbfa85d7",
+      "techName": "obreb",
+      "title": "Obręb",
+      "type": "TEXT_FIELD",
+      "confidence": 0.38,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 1164.0,
+            "w": 1230.0,
+            "h": 38.0
+          },
+          "text": "nr ewidencyjny działki  w obrębie  sveveee.s eee seee eer seee eee",
+          "blockIds": [
+            "p1-b11",
+            "p1-b12",
+            "p1-b13",
+            "p1-b14",
+            "p1-b15"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)"
+      ]
+    },
+    "f7e1effa-36f1-55f1-aeb6-2dd58def7422": {
+      "id": "f7e1effa-36f1-55f1-aeb6-2dd58def7422",
+      "techName": "sveveee_s",
+      "title": "Sveveee.s",
+      "type": "TEXT_FIELD",
+      "confidence": 0.34,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 1164.0,
+            "w": 1230.0,
+            "h": 38.0
+          },
+          "text": "nr ewidencyjny działki  w obrębie  sveveee.s eee seee eer seee eee",
+          "blockIds": [
+            "p1-b11",
+            "p1-b12",
+            "p1-b13",
+            "p1-b14",
+            "p1-b15"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "6c641a7e-bf60-5166-b376-0e2a4c1a2ec0": {
+      "id": "6c641a7e-bf60-5166-b376-0e2a4c1a2ec0",
       "techName": "zgody_i_oswiadczenia",
       "title": "Zgody i oświadczenia",
       "type": "SECTION",
@@ -994,8 +1053,8 @@
         "klauzula/oświadczenie w dokumencie -> sekcja zgód"
       ]
     },
-    "2a2d4633-0e5c-5f26-9357-38deab85f522": {
-      "id": "2a2d4633-0e5c-5f26-9357-38deab85f522",
+    "6c8afa18-46a6-5820-b37f-5aa4802a5a5e": {
+      "id": "6c8afa18-46a6-5820-b37f-5aa4802a5a5e",
       "techName": "consent_section",
       "title": "",
       "type": "CONSENT_SECTION",
@@ -1027,8 +1086,8 @@
         "klauzula/oświadczenie w dokumencie -> sekcja zgód"
       ]
     },
-    "cdc33e85-7c90-5ed2-a50f-1724f79f86ac": {
-      "id": "cdc33e85-7c90-5ed2-a50f-1724f79f86ac",
+    "7c5bacb5-5d25-5ef9-ab04-c9c8d694f66f": {
+      "id": "7c5bacb5-5d25-5ef9-ab04-c9c8d694f66f",
       "techName": "podglad_uzupelnionego_wniosku",
       "title": "Podgląd uzupełnionego wniosku",
       "type": "SECTION",
@@ -1041,8 +1100,8 @@
         "standard: strona końcowa z podglądem"
       ]
     },
-    "3b8bfeda-01c0-5303-b34b-96b177bf9b1c": {
-      "id": "3b8bfeda-01c0-5303-b34b-96b177bf9b1c",
+    "1de60cbf-73b8-5dd1-9def-2606f5415d10": {
+      "id": "1de60cbf-73b8-5dd1-9def-2606f5415d10",
       "techName": "podglad",
       "title": "Podgląd",
       "type": "INFO_SECTION",
@@ -1059,23 +1118,37 @@
   "review": [
     {
       "fieldId": "2ccfb7a7-c695-58d0-beb0-9fe86e3d4951",
-      "techName": "numer_ewidencyjny_dzialki",
-      "title": "Numer ewidencyjny działki",
-      "confidence": 0.4,
-      "reason": "typ z etykiety (TEXT_FIELD)"
-    },
-    {
-      "fieldId": "3e4bf024-f6d7-513f-8216-c892abd194c1",
-      "techName": "obreb",
-      "title": "Obręb",
-      "confidence": 0.4,
-      "reason": "typ z etykiety (TEXT_FIELD)"
+      "techName": "ulica_3",
+      "title": "Ulica",
+      "confidence": 0.03,
+      "reason": "składnik adresu"
     },
     {
       "fieldId": "f7e1effa-36f1-55f1-aeb6-2dd58def7422",
+      "techName": "sveveee_s",
+      "title": "Sveveee.s",
+      "confidence": 0.34,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "3e4bf024-f6d7-513f-8216-c892abd194c1",
+      "techName": "numer_ewidencyjny_dzialki",
+      "title": "Numer ewidencyjny działki",
+      "confidence": 0.38,
+      "reason": "typ z etykiety (TEXT_FIELD)"
+    },
+    {
+      "fieldId": "944ce83f-665c-50f7-a2f2-241edbfa85d7",
+      "techName": "obreb",
+      "title": "Obręb",
+      "confidence": 0.38,
+      "reason": "typ z etykiety (TEXT_FIELD)"
+    },
+    {
+      "fieldId": "4230c0d4-2821-5777-9f97-3be634158613",
       "techName": "szczegoly_wniosku",
       "title": "Szczegóły wniosku",
-      "confidence": 0.53,
+      "confidence": 0.39,
       "reason": "nagłówek sekcji w dokumencie"
     }
   ],
@@ -1356,7 +1429,7 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 2072,
+    "extract": 2041,
     "infer": 5,
     "dict": 1,
     "build": 1,

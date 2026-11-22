@@ -901,17 +901,17 @@
       "techName": "miejscowosc",
       "title": "Miejscowość",
       "type": "TEXT_FIELD",
-      "confidence": 0.26,
+      "confidence": 0.12,
       "sources": [
         {
           "page": 1,
           "bbox": {
             "x": 197.0,
-            "y": 1088.0,
+            "y": 1084.0,
             "w": 1216.0,
-            "h": 30.0
+            "h": 39.0
           },
-          "text": "W miejscowości  eveveseeseseseeeere przysulicy” eeeriii",
+          "text": "W miejscowości  eeveeeeseeeseeee ee przysulicy ..mezsswycewerwswwwtwiwiowwewiwci",
           "blockIds": [
             "p1-b10",
             "p1-b11",
@@ -931,17 +931,17 @@
       "techName": "numer_ewidencyjny_dzialki",
       "title": "Numer ewidencyjny działki",
       "type": "TEXT_FIELD",
-      "confidence": 0.25,
+      "confidence": 0.41,
       "sources": [
         {
           "page": 1,
           "bbox": {
             "x": 197.0,
-            "y": 1164.0,
-            "w": 1228.0,
-            "h": 39.0
+            "y": 1168.0,
+            "w": 1226.0,
+            "h": 30.0
           },
-          "text": "nr ewidencyjny działki  WPODEODIĆ : srecreceseieodejsetosttwow ee weiseE s eei e zh TE",
+          "text": "nr ewidencyjny działki  AZ(0]6] 4-1( SODODAZNE ANN",
           "blockIds": [
             "p1-b13",
             "p1-b14",
@@ -971,7 +971,7 @@
             "w": 1257.0,
             "h": 250.0
           },
-          "text": "KLAUZULA INFORMACYJNA numeracja porządkowa nieruchomości Zgodnie z art. 13 ust. 1 i 2 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/W - ogólne rozporządzenie o ochronie danych, informujemy, iż: 1. Administratorem Państwa danych osobowych jest Gmina Elbląg.",
+          "text": "KLAUZULA INFORMACYJNA numeracja porządkowa nieruchomości Zgodnie z art. 13 ust. 1 i 2 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/W — ogólne rozporządzenie o ochronie danych, informujemy, iż: 1. Administratorem Państwa danych osobowych jest Gmina Elbląg.",
           "blockIds": [
             "p1-b20",
             "p1-b21",
@@ -1004,7 +1004,7 @@
             "w": 1257.0,
             "h": 250.0
           },
-          "text": "KLAUZULA INFORMACYJNA numeracja porządkowa nieruchomości Zgodnie z art. 13 ust. 1 i 2 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/W - ogólne rozporządzenie o ochronie danych, informujemy, iż: 1. Administratorem Państwa danych osobowych jest Gmina Elbląg.",
+          "text": "KLAUZULA INFORMACYJNA numeracja porządkowa nieruchomości Zgodnie z art. 13 ust. 1 i 2 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/W — ogólne rozporządzenie o ochronie danych, informujemy, iż: 1. Administratorem Państwa danych osobowych jest Gmina Elbląg.",
           "blockIds": [
             "p1-b20",
             "p1-b21",
@@ -1053,18 +1053,18 @@
   },
   "review": [
     {
-      "fieldId": "3e4bf024-f6d7-513f-8216-c892abd194c1",
-      "techName": "numer_ewidencyjny_dzialki",
-      "title": "Numer ewidencyjny działki",
-      "confidence": 0.25,
-      "reason": "typ z etykiety (TEXT_FIELD)"
-    },
-    {
       "fieldId": "2ccfb7a7-c695-58d0-beb0-9fe86e3d4951",
       "techName": "miejscowosc",
       "title": "Miejscowość",
-      "confidence": 0.26,
+      "confidence": 0.12,
       "reason": "składnik adresu"
+    },
+    {
+      "fieldId": "3e4bf024-f6d7-513f-8216-c892abd194c1",
+      "techName": "numer_ewidencyjny_dzialki",
+      "title": "Numer ewidencyjny działki",
+      "confidence": 0.41,
+      "reason": "typ z etykiety (TEXT_FIELD)"
     },
     {
       "fieldId": "f7e1effa-36f1-55f1-aeb6-2dd58def7422",
@@ -1351,7 +1351,7 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 2052,
+    "extract": 1974,
     "infer": 5,
     "dict": 1,
     "build": 1,

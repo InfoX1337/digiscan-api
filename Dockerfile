@@ -1,9 +1,9 @@
 # syntax=docker/dockerfile:1.7
-ARG PY_IMAGE=python:3.14.0-alpine3.22
+ARG PY_IMAGE=python:3.14.10-alpine3.24
 
 FROM ${PY_IMAGE} AS build
 # uv instalowany z PyPI w obrazie oficjalnym (tylko etap budowania; nie trafia do obrazu runtime)
-RUN pip install --no-cache-dir uv==0.11.26
+RUN pip install --no-cache-dir --root-user-action=ignore uv==0.13.9
 ENV UV_COMPILE_BYTECODE=1 UV_LINK_MODE=copy UV_PYTHON_DOWNLOADS=never
 WORKDIR /app
 COPY pyproject.toml uv.lock .python-version ./

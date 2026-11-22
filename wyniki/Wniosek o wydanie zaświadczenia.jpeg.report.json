@@ -2,7 +2,7 @@
   "filename": "Wniosek o wydanie zaświadczenia.jpeg",
   "format": "image",
   "ocr": true,
-  "confidence": 0.65,
+  "confidence": 0.66,
   "fields": {
     "41afe584-feae-5cd7-8e22-71253f873219": {
       "id": "41afe584-feae-5cd7-8e22-71253f873219",
@@ -80,7 +80,7 @@
       "techName": "szczegoly_wniosku",
       "title": "Szczegóły wniosku",
       "type": "SECTION",
-      "confidence": 0.45,
+      "confidence": 0.47,
       "sources": [
         {
           "page": 1,
@@ -163,20 +163,20 @@
     },
     "510f7137-678b-52d5-9f98-9a6ddb257722": {
       "id": "510f7137-678b-52d5-9f98-9a6ddb257722",
-      "techName": "til_okresie_posiadania_gospodarstwa_rolnego",
-      "title": "TIL okresie posiadania gospodarstwa rolnego",
+      "techName": "l_iv_okresie_posiadania_gospodarstwa_rolnego",
+      "title": "L ,IV okresie posiadania gospodarstwa rolnego",
       "type": "TEXT_FIELD",
-      "confidence": 0.0,
+      "confidence": 0.06,
       "sources": [
         {
           "page": 1,
           "bbox": {
-            "x": 249.0,
-            "y": 857.0,
-            "w": 596.0,
-            "h": 267.0
+            "x": 244.0,
+            "y": 855.0,
+            "w": 601.0,
+            "h": 269.0
           },
-          "text": ",TIL okresie posiadania gospodarstwa rolnego",
+          "text": "L ,IV okresie posiadania gospodarstwa rolnego",
           "blockIds": [
             "p1-b7",
             "p1-b10"
@@ -266,16 +266,16 @@
   "review": [
     {
       "fieldId": "510f7137-678b-52d5-9f98-9a6ddb257722",
-      "techName": "til_okresie_posiadania_gospodarstwa_rolnego",
-      "title": "TIL okresie posiadania gospodarstwa rolnego",
-      "confidence": 0.0,
+      "techName": "l_iv_okresie_posiadania_gospodarstwa_rolnego",
+      "title": "L ,IV okresie posiadania gospodarstwa rolnego",
+      "confidence": 0.06,
       "reason": "etykieta w dokumencie"
     },
     {
       "fieldId": "debef8f9-6db7-55ee-8763-db539ed7530e",
       "techName": "szczegoly_wniosku",
       "title": "Szczegóły wniosku",
-      "confidence": 0.45,
+      "confidence": 0.47,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
@@ -553,7 +553,7 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 860,
+    "extract": 780,
     "infer": 2,
     "dict": 0,
     "build": 0,

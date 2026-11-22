@@ -2,7 +2,7 @@
   "filename": "Wniosek o zwrot opłaty skarbowej.jpeg",
   "format": "image",
   "ocr": true,
-  "confidence": 0.68,
+  "confidence": 0.69,
   "fields": {
     "fe810756-04ea-5299-82ef-ec507949decc": {
       "id": "fe810756-04ea-5299-82ef-ec507949decc",
@@ -93,7 +93,7 @@
       "techName": "twoje_dane",
       "title": "Twoje dane",
       "type": "SECTION",
-      "confidence": 0.68,
+      "confidence": 0.69,
       "sources": [
         {
           "page": 1,
@@ -121,7 +121,7 @@
       "techName": "nazwa",
       "title": "Nazwa",
       "type": "TEXT_FIELD",
-      "confidence": 0.63,
+      "confidence": 0.64,
       "sources": [
         {
           "page": 1,
@@ -149,7 +149,7 @@
       "techName": "imie",
       "title": "Imię",
       "type": "TEXT_FIELD",
-      "confidence": 0.7,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -179,7 +179,7 @@
       "techName": "nazwisko",
       "title": "Nazwisko",
       "type": "TEXT_FIELD",
-      "confidence": 0.7,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -1184,7 +1184,7 @@
       "techName": "nazwa_organu_2",
       "title": "Nazwa organu",
       "type": "TEXT_FIELD",
-      "confidence": 0.72,
+      "confidence": 0.71,
       "sources": [
         {
           "page": 1,
@@ -1328,7 +1328,7 @@
       "techName": "g_dd_mm_rrrr_2",
       "title": "G©dd-mm-rrrr",
       "type": "SECTION",
-      "confidence": 0.39,
+      "confidence": 0.5,
       "sources": [
         {
           "page": 1,
@@ -1356,7 +1356,7 @@
       "techName": "g_dd_mm_rrrr_3",
       "title": "G©dd-mm-rrrr",
       "type": "DATEPICKER",
-      "confidence": 0.39,
+      "confidence": 0.5,
       "sources": [
         {
           "page": 1,
@@ -1384,7 +1384,7 @@
       "techName": "dane_kontaktowe_wnioskodawcy",
       "title": "Dane kontaktowe wnioskodawcy",
       "type": "SECTION",
-      "confidence": 0.71,
+      "confidence": 0.72,
       "sources": [
         {
           "page": 1,
@@ -1412,7 +1412,7 @@
       "techName": "numer_telefonu",
       "title": "Numer telefonu",
       "type": "TEXT_FIELD",
-      "confidence": 0.71,
+      "confidence": 0.72,
       "sources": [
         {
           "page": 1,
@@ -1501,14 +1501,14 @@
       "fieldId": "940d6e38-7d29-5b76-b02c-22f1f7723c8f",
       "techName": "g_dd_mm_rrrr_2",
       "title": "G©dd-mm-rrrr",
-      "confidence": 0.39,
+      "confidence": 0.5,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
       "fieldId": "3b4c8818-7ebd-58fa-a91f-e754910e0c61",
       "techName": "g_dd_mm_rrrr_3",
       "title": "G©dd-mm-rrrr",
-      "confidence": 0.39,
+      "confidence": 0.5,
       "reason": "pole wynika z nagłówka sekcji (miejsce do wpisania pod nagłówkiem)"
     },
     {
@@ -1821,11 +1821,11 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 1465,
-    "infer": 3,
+    "extract": 1302,
+    "infer": 5,
     "dict": 1,
     "build": 1,
-    "validate": 10
+    "validate": 13
   },
   "llm": {
     "used": false

@@ -1138,11 +1138,11 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 64,
-    "infer": 4,
+    "extract": 42,
+    "infer": 2,
     "dict": 1,
-    "build": 1,
-    "validate": 7
+    "build": 0,
+    "validate": 6
   },
   "llm": {
     "used": false

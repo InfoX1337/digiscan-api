@@ -5,7 +5,7 @@ Następny krok: /clear -> 'hackathon-sprint-presentation, kontynuuj' (slajdy, wi
 Materiały: COI/.work/mat (symlink tests/fixtures/materials), COI/.work/txt (schema, example1, reguły, słowniki, dane.txt).
 
 ## Decyzje
-- Stack: Python 3.14 + uv + FastAPI + pydantic, Docker python:3.14.0-alpine3.22 + tesseract pol, Ollama qwen3.5:4b. UI czysty HTML+JS w web/.
+- Stack: Python 3.14 + uv + FastAPI + pydantic, Docker python:3.14.10-alpine3.24 + tesseract pol, Ollama qwen3.5:4b. UI czysty HTML+JS w web/.
 - Wyróżnik: Dowód i zaufanie (confidence+source w `report`, 29 reguł COI + auto-naprawa, lista do przeglądu).
 - LLM (R1): tylko pola <0.8; zgoda podnosi pewność, ale NIE wyciąga pola spod progu przeglądu 0.6; zmiana od LLM = 0.55 (człowiek zatwierdza); typ BRAK = nie pole (0.35); odrzuca tytuły-echo promptu. keep_alive 30m, num_predict 1024. ~9–16 s/plik na hoście (Metal), zimny start ~70 s.
 - DICT (R2): Kraje 198, Numery kierunkowe 198, Województwo 16; Powiat/Gmina/Miejscowość próbka (sample:true). MLPZ defaulty tylko w sekcjach wnioskodawcy. Brak TERYT multi-level.

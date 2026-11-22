@@ -54,7 +54,7 @@
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "afe51e83-9d4d-560e-b43b-0ffb5462e2d5",
+            "id": "cdc33e85-7c90-5ed2-a50f-1724f79f86ac",
             "type": "SECTION",
             "techName": "podmiot_wniosku",
             "title": "Podmiot wniosku",
@@ -69,24 +69,24 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "6c8afa18-46a6-5820-b37f-5aa4802a5a5e",
+                  "id": "d37af3b2-992a-5437-833e-86c4a4845d1d",
                   "type": "RADIO",
                   "techName": "wybierz_w_czyim_imieniu_wnioskujesz",
                   "title": "Wybierz, w czyim imieniu wnioskujesz",
                   "description": "",
                   "options": [
                     {
-                      "id": "61ca8cb3-c7f5-579b-8ecd-dc090885e7c3",
+                      "id": "ba5812a4-021d-566c-a455-a9676ce60694",
                       "name": "Swoim",
                       "techName": "swoim"
                     },
                     {
-                      "id": "f55b4604-0c14-5095-b820-44c4379285dd",
+                      "id": "8764ee66-1411-5700-b343-b275dc83ca7b",
                       "name": "Innej osoby",
                       "techName": "innej_osoby"
                     },
                     {
-                      "id": "1390d2f1-0aa3-5d3c-91c2-7dd8b50e08fa",
+                      "id": "af981930-568f-5187-927c-97657abae7c3",
                       "name": "Osoby prawnej lub jednostki organizacyjnej",
                       "techName": "osoby_prawnej_lub_jednostki_organizacyjnej"
                     }
@@ -107,19 +107,19 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "6c641a7e-bf60-5166-b376-0e2a4c1a2ec0",
+                  "id": "e2bcdb2b-e6c5-55e1-a3ba-8e31f1423fb5",
                   "type": "RADIO",
                   "techName": "wybierz_jako_kto_wnioskujesz",
                   "title": "Wybierz, jako kto wnioskujesz",
                   "description": "",
                   "options": [
                     {
-                      "id": "68ebfa86-2964-590c-a2db-3dca870b72bf",
+                      "id": "12631b7b-f7e1-56bf-9722-f19322842df6",
                       "name": "Pełnomocnik",
                       "techName": "pelnomocnik"
                     },
                     {
-                      "id": "f2fb6b2f-2c15-513a-b4cf-fb31d51dcf7b",
+                      "id": "765f9346-5f60-5a76-8cab-a94fb9f603c1",
                       "name": "Reprezentant",
                       "techName": "reprezentant"
                     }
@@ -216,7 +216,7 @@
           "rows": 5,
           "cols": 3,
           "field": {
-            "id": "eb6b33b6-4948-572b-bf0e-687635289ad7",
+            "id": "f5b3cb09-5310-5bca-8c7f-757a09c47f81",
             "type": "SECTION",
             "techName": "dane_podmiotu",
             "title": "Dane podmiotu",
@@ -253,7 +253,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "d37af3b2-992a-5437-833e-86c4a4845d1d",
+                  "id": "38167925-e763-5305-ae65-de956ed82294",
                   "type": "TEXT_FIELD",
                   "techName": "nip",
                   "title": "NIP",
@@ -276,7 +276,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "e2bcdb2b-e6c5-55e1-a3ba-8e31f1423fb5",
+                  "id": "eb6b33b6-4948-572b-bf0e-687635289ad7",
                   "type": "TEXT_FIELD",
                   "techName": "regon",
                   "title": "REGON",
@@ -299,7 +299,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "38167925-e763-5305-ae65-de956ed82294",
+                  "id": "c80816eb-64be-5db2-abe8-7cfa4a6a7d5c",
                   "type": "TEXT_FIELD",
                   "techName": "numer_krs",
                   "title": "Numer KRS",
@@ -330,7 +330,7 @@
           "rows": 10,
           "cols": 3,
           "field": {
-            "id": "310cbbc5-4b41-5649-b7fc-937e0e9c4888",
+            "id": "0b13fa21-cf82-588d-b1de-350eb9087da4",
             "type": "SECTION",
             "techName": "adres_siedziby",
             "title": "Adres siedziby",
@@ -345,7 +345,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "f5b3cb09-5310-5bca-8c7f-757a09c47f81",
+                  "id": "eb5ca24c-e73f-587b-9466-9bf5cdd50b85",
                   "type": "SELECT",
                   "techName": "kraj",
                   "title": "Kraj",
@@ -372,7 +372,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "48085f94-fd71-579b-a909-04f75a967645",
+                  "id": "1b2a4c63-f051-5d54-9ccb-318e3ed7910a",
                   "type": "TEXT_FIELD",
                   "techName": "miejscowosc_zagranica",
                   "title": "Miejscowość",
@@ -399,7 +399,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "eb5ca24c-e73f-587b-9466-9bf5cdd50b85",
+                  "id": "8e81fb42-63b2-5d90-b4ca-6f90c8f01cf8",
                   "type": "TEXT_FIELD",
                   "techName": "kod_pocztowy_zagranica",
                   "title": "Kod pocztowy",
@@ -426,7 +426,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "1b2a4c63-f051-5d54-9ccb-318e3ed7910a",
+                  "id": "6a7b1977-5f23-5a6c-a7b5-2bc7c32740d1",
                   "type": "TEXT_FIELD",
                   "techName": "ulica_zagranica",
                   "title": "Ulica",
@@ -453,7 +453,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "8e81fb42-63b2-5d90-b4ca-6f90c8f01cf8",
+                  "id": "63d498c2-a53c-5f60-886a-a4adaf5ac9f2",
                   "type": "SELECT",
                   "techName": "teryt_4g_dowodowy",
                   "title": "TERYT_4G_DOWODOWY",
@@ -483,7 +483,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "6a7b1977-5f23-5a6c-a7b5-2bc7c32740d1",
+                  "id": "618c0003-fa70-598e-9ef1-f70ded1b3d40",
                   "type": "TEXT_FIELD",
                   "techName": "kod_pocztowy",
                   "title": "Kod pocztowy",
@@ -511,7 +511,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "63d498c2-a53c-5f60-886a-a4adaf5ac9f2",
+                  "id": "34fd8a7f-f689-5add-9dd9-ca4cea6ab51f",
                   "type": "TEXT_FIELD",
                   "techName": "ulica",
                   "title": "Ulica",
@@ -538,7 +538,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "618c0003-fa70-598e-9ef1-f70ded1b3d40",
+                  "id": "310cbbc5-4b41-5649-b7fc-937e0e9c4888",
                   "type": "TEXT_FIELD",
                   "techName": "numer_budynku",
                   "title": "Numer budynku",
@@ -560,7 +560,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "34fd8a7f-f689-5add-9dd9-ca4cea6ab51f",
+                  "id": "93a8889a-67b1-56db-954e-48600aee58e6",
                   "type": "TEXT_FIELD",
                   "techName": "numer_lokalu",
                   "title": "Numer lokalu",
@@ -591,7 +591,7 @@
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "0b13fa21-cf82-588d-b1de-350eb9087da4",
+            "id": "8ddd297c-54cb-585a-b6b5-5efff3bcb60f",
             "type": "SECTION",
             "techName": "potwierdzenie_ze_jestes_reprezentantem",
             "title": "Potwierdzenie, że jesteś reprezentantem",
@@ -606,7 +606,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "93a8889a-67b1-56db-954e-48600aee58e6",
+                  "id": "b0a5aab5-47ca-5e5d-b895-a6a48acd7ac7",
                   "type": "FILE_UPLOADER",
                   "techName": "plik_z_odpisem_danych",
                   "title": "Plik z odpisem danych",
@@ -639,7 +639,7 @@
           "rows": 4,
           "cols": 3,
           "field": {
-            "id": "e0b2867b-e791-5e4b-9ad2-cf2bf5dcd6ea",
+            "id": "d334f259-9274-54cb-86b9-b72d8936f33c",
             "type": "SECTION",
             "techName": "dane_innej_osoby",
             "title": "Dane innej osoby",
@@ -654,7 +654,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "b0a5aab5-47ca-5e5d-b895-a6a48acd7ac7",
+                  "id": "becc627a-2d96-5d5e-a46b-2e5097e406b5",
                   "type": "TEXT_FIELD",
                   "techName": "imie_2",
                   "title": "Imię",
@@ -676,7 +676,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "8ddd297c-54cb-585a-b6b5-5efff3bcb60f",
+                  "id": "e0b2867b-e791-5e4b-9ad2-cf2bf5dcd6ea",
                   "type": "TEXT_FIELD",
                   "techName": "nazwisko_2",
                   "title": "Nazwisko",
@@ -698,7 +698,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "becc627a-2d96-5d5e-a46b-2e5097e406b5",
+                  "id": "02f951d8-db73-5251-8568-44ec76901e14",
                   "type": "TEXT_FIELD",
                   "techName": "numer_pesel",
                   "title": "Numer PESEL",
@@ -732,7 +732,7 @@
           "rows": 10,
           "cols": 3,
           "field": {
-            "id": "91881a7c-465b-5012-aab5-c8843939a158",
+            "id": "6109a257-8de6-5367-911d-3a12523113d0",
             "type": "SECTION",
             "techName": "adres_zamieszkania_innej_osoby",
             "title": "Adres zamieszkania innej osoby",
@@ -747,7 +747,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "02f951d8-db73-5251-8568-44ec76901e14",
+                  "id": "97892183-26e3-5063-b36c-b9fbb98810d2",
                   "type": "SELECT",
                   "techName": "kraj_2",
                   "title": "Kraj",
@@ -774,7 +774,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "d334f259-9274-54cb-86b9-b72d8936f33c",
+                  "id": "f8f137ea-d8a2-5133-9319-2a1afa1ae882",
                   "type": "TEXT_FIELD",
                   "techName": "miejscowosc_zagranica_2",
                   "title": "Miejscowość",
@@ -801,7 +801,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "97892183-26e3-5063-b36c-b9fbb98810d2",
+                  "id": "43c335f9-a7ce-58c3-9dfd-0ac2a4066184",
                   "type": "TEXT_FIELD",
                   "techName": "kod_pocztowy_zagranica_2",
                   "title": "Kod pocztowy",
@@ -828,7 +828,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "f8f137ea-d8a2-5133-9319-2a1afa1ae882",
+                  "id": "19bf02d3-888c-58ee-a740-d2890bde0ca1",
                   "type": "TEXT_FIELD",
                   "techName": "ulica_zagranica_2",
                   "title": "Ulica",
@@ -855,7 +855,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "43c335f9-a7ce-58c3-9dfd-0ac2a4066184",
+                  "id": "dbb2a6d7-aeee-5115-8646-f9c87ba97ab6",
                   "type": "SELECT",
                   "techName": "teryt_4g_dowodowy_2",
                   "title": "TERYT_4G_DOWODOWY",
@@ -885,7 +885,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "19bf02d3-888c-58ee-a740-d2890bde0ca1",
+                  "id": "ae3be70b-4ffe-5c9e-b3fc-37c532609b63",
                   "type": "TEXT_FIELD",
                   "techName": "kod_pocztowy_2",
                   "title": "Kod pocztowy",
@@ -913,7 +913,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "dbb2a6d7-aeee-5115-8646-f9c87ba97ab6",
+                  "id": "5e531f1b-e320-550a-8f73-772a9878e3b9",
                   "type": "TEXT_FIELD",
                   "techName": "ulica_2",
                   "title": "Ulica",
@@ -940,7 +940,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "ae3be70b-4ffe-5c9e-b3fc-37c532609b63",
+                  "id": "91881a7c-465b-5012-aab5-c8843939a158",
                   "type": "TEXT_FIELD",
                   "techName": "numer_budynku_2",
                   "title": "Numer budynku",
@@ -962,7 +962,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "5e531f1b-e320-550a-8f73-772a9878e3b9",
+                  "id": "b4968e10-a50b-587a-bfa1-821b68c5001e",
                   "type": "TEXT_FIELD",
                   "techName": "numer_lokalu_2",
                   "title": "Numer lokalu",
@@ -993,7 +993,7 @@
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "6109a257-8de6-5367-911d-3a12523113d0",
+            "id": "77ca1ab5-1442-5597-8e58-e0f47a5d1afb",
             "type": "SECTION",
             "techName": "pelnomocnictwo",
             "title": "Pełnomocnictwo",
@@ -1008,7 +1008,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "b4968e10-a50b-587a-bfa1-821b68c5001e",
+                  "id": "22abddcd-b8c4-5515-9a6d-424d775dd6c1",
                   "type": "FILE_UPLOADER",
                   "techName": "plik_dokumentu_z_pelnomocnictwem",
                   "title": "Plik dokumentu z pełnomocnictwem",
@@ -1041,7 +1041,7 @@
           "rows": 4,
           "cols": 3,
           "field": {
-            "id": "944a6209-5140-5529-85fe-c15d311546ab",
+            "id": "ada201d6-73e5-5875-aa43-212057fb5516",
             "type": "SECTION",
             "techName": "oplata_skarbowa",
             "title": "Opłata skarbowa",
@@ -1056,19 +1056,19 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "c80816eb-64be-5db2-abe8-7cfa4a6a7d5c",
+                  "id": "48085f94-fd71-579b-a909-04f75a967645",
                   "type": "RADIO",
                   "techName": "czy_zlozenie_pelnomocnictwa_wymaga_oplaty_skarbowej",
                   "title": "Czy złożenie pełnomocnictwa wymaga opłaty skarbowej?",
                   "description": "",
                   "options": [
                     {
-                      "id": "38193a95-e402-568b-ab95-9fa4c4132d17",
+                      "id": "c0840723-f10d-526b-9efd-0907a0a61ddc",
                       "name": "Tak",
                       "techName": "tak"
                     },
                     {
-                      "id": "d0aa6061-c376-5a60-a4e5-a497b8456816",
+                      "id": "c5347cc9-3bc8-53fc-adbe-6b675edec2f0",
                       "name": "Nie",
                       "techName": "nie"
                     }
@@ -1089,7 +1089,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "22abddcd-b8c4-5515-9a6d-424d775dd6c1",
+                  "id": "944a6209-5140-5529-85fe-c15d311546ab",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block",
                   "title": "",
@@ -1114,7 +1114,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "77ca1ab5-1442-5597-8e58-e0f47a5d1afb",
+                  "id": "6d9705ed-851a-50e9-a197-1339a2523cc2",
                   "type": "FILE_UPLOADER",
                   "techName": "plik_z_potwierdzeniem_przelewu",
                   "title": "Plik z potwierdzeniem przelewu",
@@ -1152,7 +1152,7 @@
           "rows": 3,
           "cols": 3,
           "field": {
-            "id": "7134e6a6-d734-591f-83ac-e7f31570bb92",
+            "id": "3b8bfeda-01c0-5303-b34b-96b177bf9b1c",
             "type": "SECTION",
             "techName": "oplata_skarbowa_za_pelnomocnictwo",
             "title": "Opłata skarbowa za pełnomocnictwo",
@@ -1167,7 +1167,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "6d9705ed-851a-50e9-a197-1339a2523cc2",
+                  "id": "7134e6a6-d734-591f-83ac-e7f31570bb92",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_2",
                   "title": "",
@@ -1187,7 +1187,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "ada201d6-73e5-5875-aa43-212057fb5516",
+                  "id": "afe51e83-9d4d-560e-b43b-0ffb5462e2d5",
                   "type": "FILE_UPLOADER",
                   "techName": "plik_z_potwierdzeniem_przelewu_2",
                   "title": "Plik z potwierdzeniem przelewu",
@@ -1265,10 +1265,10 @@
         {
           "x": 0,
           "y": 2,
-          "rows": 4,
+          "rows": 6,
           "cols": 3,
           "field": {
-            "id": "f7e1effa-36f1-55f1-aeb6-2dd58def7422",
+            "id": "4230c0d4-2821-5777-9f97-3be634158613",
             "type": "SECTION",
             "techName": "szczegoly_wniosku",
             "title": "Szczegóły wniosku",
@@ -1283,11 +1283,11 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "944ce83f-665c-50f7-a2f2-241edbfa85d7",
+                  "id": "2a2d4633-0e5c-5f26-9357-38deab85f522",
                   "type": "TEXT_BLOCK",
                   "techName": "text_block_4",
                   "title": "",
-                  "description": "Wnoszę o ustalenie numeru porządkowego budynkowi zlokalizowanemu WsTMIEJSCOWOŚCI ssresrwsestos ee swswwstwośawaawce przyrulicy? swswsztwwiwewaas oW (podpis wnioskodawcy)” 1) Dane nicobowiązkowe. %) Podpis własnoręczny, a w przypadku składania wniosku w postaci elektronicznej: kwalifikowany podpis elektroniczny podpis osobisty albo podpis zaufany.",
+                  "description": "Wnoszę o ustalenie numeru porządkowego budynkowi zlokalizowanemu (podpis wnioskodawcy)” 1) Dane nicobowiązkowe. %) Podpis własnoręczny, a w przypadku składania wniosku w postaci elektronicznej: kwalifikowany podpis elektroniczny podpis osobisty albo podpis zaufany.",
                   "options": [],
                   "validation": [],
                   "readOnly": false,
@@ -1305,8 +1305,8 @@
                 "field": {
                   "id": "2ccfb7a7-c695-58d0-beb0-9fe86e3d4951",
                   "type": "TEXT_FIELD",
-                  "techName": "numer_ewidencyjny_dzialki",
-                  "title": "Numer ewidencyjny działki",
+                  "techName": "ulica_3",
+                  "title": "Ulica",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -1327,6 +1327,28 @@
                 "field": {
                   "id": "3e4bf024-f6d7-513f-8216-c892abd194c1",
                   "type": "TEXT_FIELD",
+                  "techName": "numer_ewidencyjny_dzialki",
+                  "title": "Numer ewidencyjny działki",
+                  "description": "",
+                  "options": [],
+                  "validation": [
+                    "REQUIRED"
+                  ],
+                  "readOnly": false,
+                  "repeatingSectionGrid": [],
+                  "states": [],
+                  "questionOrder": 2,
+                  "tooltipMessage": ""
+                }
+              },
+              {
+                "x": 0,
+                "y": 3,
+                "rows": 1,
+                "cols": 3,
+                "field": {
+                  "id": "944ce83f-665c-50f7-a2f2-241edbfa85d7",
+                  "type": "TEXT_FIELD",
                   "techName": "obreb",
                   "title": "Obręb",
                   "description": "",
@@ -1337,7 +1359,29 @@
                   "readOnly": false,
                   "repeatingSectionGrid": [],
                   "states": [],
-                  "questionOrder": 2,
+                  "questionOrder": 3,
+                  "tooltipMessage": ""
+                }
+              },
+              {
+                "x": 0,
+                "y": 4,
+                "rows": 1,
+                "cols": 3,
+                "field": {
+                  "id": "f7e1effa-36f1-55f1-aeb6-2dd58def7422",
+                  "type": "TEXT_FIELD",
+                  "techName": "sveveee_s",
+                  "title": "Sveveee.s",
+                  "description": "",
+                  "options": [],
+                  "validation": [
+                    "REQUIRED"
+                  ],
+                  "readOnly": false,
+                  "repeatingSectionGrid": [],
+                  "states": [],
+                  "questionOrder": 4,
                   "tooltipMessage": ""
                 }
               }
@@ -1360,7 +1404,7 @@
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "4230c0d4-2821-5777-9f97-3be634158613",
+            "id": "6c641a7e-bf60-5166-b376-0e2a4c1a2ec0",
             "type": "SECTION",
             "techName": "zgody_i_oswiadczenia",
             "title": "Zgody i oświadczenia",
@@ -1375,7 +1419,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "2a2d4633-0e5c-5f26-9357-38deab85f522",
+                  "id": "6c8afa18-46a6-5820-b37f-5aa4802a5a5e",
                   "type": "CONSENT_SECTION",
                   "techName": "consent_section",
                   "title": "",
@@ -1417,7 +1461,7 @@
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "cdc33e85-7c90-5ed2-a50f-1724f79f86ac",
+            "id": "7c5bacb5-5d25-5ef9-ab04-c9c8d694f66f",
             "type": "SECTION",
             "techName": "podglad_uzupelnionego_wniosku",
             "title": "Podgląd uzupełnionego wniosku",
@@ -1432,7 +1476,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "3b8bfeda-01c0-5303-b34b-96b177bf9b1c",
+                  "id": "1de60cbf-73b8-5dd1-9def-2606f5415d10",
                   "type": "INFO_SECTION",
                   "techName": "podglad",
                   "title": "Podgląd",

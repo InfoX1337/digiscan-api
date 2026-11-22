@@ -2,7 +2,7 @@
   "filename": "Wniosek o wynajęcie świetlicy.jpeg",
   "format": "image",
   "ocr": true,
-  "confidence": 0.66,
+  "confidence": 0.65,
   "fields": {
     "6f9f8bf6-b6e6-50f3-9224-8771eb8fbb4e": {
       "id": "6f9f8bf6-b6e6-50f3-9224-8771eb8fbb4e",
@@ -193,7 +193,7 @@
       "techName": "teryt_4g_dowodowy",
       "title": "TERYT_4G_DOWODOWY",
       "type": "SELECT",
-      "confidence": 0.79,
+      "confidence": 0.78,
       "sources": [
         {
           "page": 1,
@@ -336,8 +336,8 @@
         "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (apartment)"
       ]
     },
-    "25c96587-055c-5860-b829-4d420cb36071": {
-      "id": "25c96587-055c-5860-b829-4d420cb36071",
+    "54131817-d469-5074-a7a2-d59a5a8278b4": {
+      "id": "54131817-d469-5074-a7a2-d59a5a8278b4",
       "techName": "szczegoly_wniosku",
       "title": "Szczegóły wniosku",
       "type": "SECTION",
@@ -364,8 +364,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "447305e7-e085-5bcc-90b6-4f3916884ee9": {
-      "id": "447305e7-e085-5bcc-90b6-4f3916884ee9",
+    "046fced6-0c6e-567e-98df-91fac204bf3f": {
+      "id": "046fced6-0c6e-567e-98df-91fac204bf3f",
       "techName": "imie",
       "title": "Imię",
       "type": "TEXT_FIELD",
@@ -381,7 +381,7 @@
           },
           "text": "(imię i nazwisko — wnioskodawca, w przypadku innej osoby niż wnioskodawca - zgoda osoby odpowiedzialnej)",
           "blockIds": [
-            "p1-b18"
+            "p1-b20"
           ]
         }
       ],
@@ -392,8 +392,8 @@
         "rozdzielono 'imię i nazwisko'; podpis pod brakującym w OCR miejscem do wpisania"
       ]
     },
-    "046fced6-0c6e-567e-98df-91fac204bf3f": {
-      "id": "046fced6-0c6e-567e-98df-91fac204bf3f",
+    "c5f7bad8-e5cb-52c1-a70c-4cece341c35c": {
+      "id": "c5f7bad8-e5cb-52c1-a70c-4cece341c35c",
       "techName": "nazwisko",
       "title": "Nazwisko",
       "type": "TEXT_FIELD",
@@ -409,7 +409,7 @@
           },
           "text": "(imię i nazwisko — wnioskodawca, w przypadku innej osoby niż wnioskodawca - zgoda osoby odpowiedzialnej)",
           "blockIds": [
-            "p1-b18"
+            "p1-b20"
           ]
         }
       ],
@@ -518,12 +518,12 @@
         "etykieta w dokumencie"
       ]
     },
-    "717041e8-1a8a-5e6d-a132-abb6031f85d2": {
-      "id": "717041e8-1a8a-5e6d-a132-abb6031f85d2",
+    "25c96587-055c-5860-b829-4d420cb36071": {
+      "id": "25c96587-055c-5860-b829-4d420cb36071",
       "techName": "szczegoly_wniosku_2",
       "title": "Szczegóły wniosku",
       "type": "SECTION",
-      "confidence": 0.57,
+      "confidence": 0.52,
       "sources": [
         {
           "page": 1,
@@ -546,8 +546,8 @@
         "nagłówek sekcji w dokumencie"
       ]
     },
-    "c5f7bad8-e5cb-52c1-a70c-4cece341c35c": {
-      "id": "c5f7bad8-e5cb-52c1-a70c-4cece341c35c",
+    "717041e8-1a8a-5e6d-a132-abb6031f85d2": {
+      "id": "717041e8-1a8a-5e6d-a132-abb6031f85d2",
       "techName": "text_block_2",
       "title": "",
       "type": "TEXT_BLOCK",
@@ -561,9 +561,9 @@
             "w": 1289.0,
             "h": 36.0
           },
-          "text": "1. Col wynajęcia ŚWIELICY: szcsyszsyśsśsyksHrsKISRONNKKGHAYNEKO E ENWKZANY ASA REKOK KKK KSKANYJ E ENWKANAN RAA",
+          "text": "1. Col wynajęcia ŚWIELICY: szcsszsyśsśswksHPsKISRONNKNGKAYNESACHNENWKZANY ASA REKONKONKEAEAKENYO E ENWKCANA ARA",
           "blockIds": [
-            "p1-b16"
+            "p1-b18"
           ]
         }
       ],
@@ -579,7 +579,7 @@
       "techName": "prosze_o_wynajem_uzyczenie_swietlicy_wiejskiej_w",
       "title": "Proszę o wynajem/użyczenie świetlicy wiejskiej w",
       "type": "TEXT_FIELD",
-      "confidence": 0.34,
+      "confidence": 0.33,
       "sources": [
         {
           "page": 1,
@@ -589,7 +589,7 @@
             "w": 1292.0,
             "h": 36.0
           },
-          "text": "Proszę o wynajem/użyczenie* świetlicy wiejskiej w  e.-eeseeseeses seee ne",
+          "text": "Proszę o wynajem/użyczenie* świetlicy wiejskiej w  se.eeseseesssses seee ne",
           "blockIds": [
             "p1-b10",
             "p1-b11",
@@ -606,8 +606,8 @@
     },
     "a4e4d2a6-cdb5-5d22-b247-ff4952ba39c7": {
       "id": "a4e4d2a6-cdb5-5d22-b247-ff4952ba39c7",
-      "techName": "e_eeseeseeses",
-      "title": "E.-eeseeseeses",
+      "techName": "se_eeseseesssses",
+      "title": "Se.eeseseesssses",
       "type": "TEXT_FIELD",
       "confidence": 0.49,
       "sources": [
@@ -619,7 +619,7 @@
             "w": 1292.0,
             "h": 36.0
           },
-          "text": "Proszę o wynajem/użyczenie* świetlicy wiejskiej w  e.-eeseeseeses seee ne",
+          "text": "Proszę o wynajem/użyczenie* świetlicy wiejskiej w  se.eeseseesssses seee ne",
           "blockIds": [
             "p1-b10",
             "p1-b11",
@@ -639,21 +639,23 @@
       "techName": "data_od",
       "title": "Data od",
       "type": "DATEPICKER",
-      "confidence": 0.65,
+      "confidence": 0.44,
       "sources": [
         {
           "page": 1,
           "bbox": {
             "x": 151.0,
             "y": 1018.0,
-            "w": 1294.0,
+            "w": 1296.0,
             "h": 36.0
           },
-          "text": "wraz z wyposażeniem w terminie od  eee",
+          "text": "wraz z wyposażeniem w terminie od  do  seses eee eee eee ne",
           "blockIds": [
             "p1-b13",
             "p1-b14",
-            "p1-b15"
+            "p1-b15",
+            "p1-b16",
+            "p1-b17"
           ]
         }
       ],
@@ -666,6 +668,38 @@
     },
     "b6a1ade2-775a-5da7-aedd-266dc2562ce7": {
       "id": "b6a1ade2-775a-5da7-aedd-266dc2562ce7",
+      "techName": "data_do",
+      "title": "Data do",
+      "type": "DATEPICKER",
+      "confidence": 0.44,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 151.0,
+            "y": 1018.0,
+            "w": 1296.0,
+            "h": 36.0
+          },
+          "text": "wraz z wyposażeniem w terminie od  do  seses eee eee eee ne",
+          "blockIds": [
+            "p1-b13",
+            "p1-b14",
+            "p1-b15",
+            "p1-b16",
+            "p1-b17"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "zakres dat 'od … do …'"
+      ]
+    },
+    "447305e7-e085-5bcc-90b6-4f3916884ee9": {
+      "id": "447305e7-e085-5bcc-90b6-4f3916884ee9",
       "techName": "rodzaj_uroczystosci_np_wesele_urodziny_zabawa_itp",
       "title": "Rodzaj uroczystości, np. wesele, urodziny, zabawa itp.",
       "type": "TEXT_FIELD",
@@ -681,7 +715,7 @@
           },
           "text": "( rodzaj uroczystości, np. wesele, urodziny, zabawa itp.)",
           "blockIds": [
-            "p1-b17"
+            "p1-b19"
           ]
         }
       ],
@@ -736,8 +770,8 @@
         "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (phoneNumber)"
       ]
     },
-    "f31727bb-4444-58e8-9f45-c7f579012ebd": {
-      "id": "f31727bb-4444-58e8-9f45-c7f579012ebd",
+    "7d3ca654-7d07-57d4-abea-53e73a5224e8": {
+      "id": "7d3ca654-7d07-57d4-abea-53e73a5224e8",
       "techName": "podglad_uzupelnionego_wniosku",
       "title": "Podgląd uzupełnionego wniosku",
       "type": "SECTION",
@@ -750,8 +784,8 @@
         "standard: strona końcowa z podglądem"
       ]
     },
-    "54131817-d469-5074-a7a2-d59a5a8278b4": {
-      "id": "54131817-d469-5074-a7a2-d59a5a8278b4",
+    "f31727bb-4444-58e8-9f45-c7f579012ebd": {
+      "id": "f31727bb-4444-58e8-9f45-c7f579012ebd",
       "techName": "podglad",
       "title": "Podgląd",
       "type": "INFO_SECTION",
@@ -770,46 +804,60 @@
       "fieldId": "99058463-54ac-576f-90a8-ead6b11ef993",
       "techName": "prosze_o_wynajem_uzyczenie_swietlicy_wiejskiej_w",
       "title": "Proszę o wynajem/użyczenie świetlicy wiejskiej w",
-      "confidence": 0.34,
+      "confidence": 0.33,
       "reason": "pole w treści zdania – sprawdź tytuł"
     },
     {
+      "fieldId": "7388bbfd-3fdf-5802-8ddc-fbfd5ded08c4",
+      "techName": "data_od",
+      "title": "Data od",
+      "confidence": 0.44,
+      "reason": "typ z etykiety (DATEPICKER)"
+    },
+    {
+      "fieldId": "b6a1ade2-775a-5da7-aedd-266dc2562ce7",
+      "techName": "data_do",
+      "title": "Data do",
+      "confidence": 0.44,
+      "reason": "zakres dat 'od … do …'"
+    },
+    {
       "fieldId": "a4e4d2a6-cdb5-5d22-b247-ff4952ba39c7",
-      "techName": "e_eeseeseeses",
-      "title": "E.-eeseeseeses",
+      "techName": "se_eeseseesssses",
+      "title": "Se.eeseseesssses",
       "confidence": 0.49,
       "reason": "etykieta w dokumencie"
     },
     {
-      "fieldId": "717041e8-1a8a-5e6d-a132-abb6031f85d2",
+      "fieldId": "25c96587-055c-5860-b829-4d420cb36071",
       "techName": "szczegoly_wniosku_2",
       "title": "Szczegóły wniosku",
-      "confidence": 0.57,
+      "confidence": 0.52,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "25c96587-055c-5860-b829-4d420cb36071",
+      "fieldId": "54131817-d469-5074-a7a2-d59a5a8278b4",
       "techName": "szczegoly_wniosku",
       "title": "Szczegóły wniosku",
       "confidence": 0.59,
       "reason": "nagłówek sekcji w dokumencie"
     },
     {
-      "fieldId": "447305e7-e085-5bcc-90b6-4f3916884ee9",
+      "fieldId": "046fced6-0c6e-567e-98df-91fac204bf3f",
       "techName": "imie",
       "title": "Imię",
       "confidence": 0.59,
       "reason": "rozdzielono 'imię i nazwisko'; podpis pod brakującym w OCR miejscem do wpisania"
     },
     {
-      "fieldId": "046fced6-0c6e-567e-98df-91fac204bf3f",
+      "fieldId": "c5f7bad8-e5cb-52c1-a70c-4cece341c35c",
       "techName": "nazwisko",
       "title": "Nazwisko",
       "confidence": 0.59,
       "reason": "rozdzielono 'imię i nazwisko'; podpis pod brakującym w OCR miejscem do wpisania"
     },
     {
-      "fieldId": "b6a1ade2-775a-5da7-aedd-266dc2562ce7",
+      "fieldId": "447305e7-e085-5bcc-90b6-4f3916884ee9",
       "techName": "rodzaj_uroczystosci_np_wesele_urodziny_zabawa_itp",
       "title": "Rodzaj uroczystości, np. wesele, urodziny, zabawa itp.",
       "confidence": 0.59,
@@ -1083,10 +1131,10 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 1028,
-    "infer": 2,
-    "dict": 0,
-    "build": 0,
+    "extract": 1332,
+    "infer": 6,
+    "dict": 1,
+    "build": 1,
     "validate": 6
   },
   "llm": {

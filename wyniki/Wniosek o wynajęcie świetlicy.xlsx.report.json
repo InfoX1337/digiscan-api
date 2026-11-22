@@ -1138,7 +1138,7 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 104,
+    "extract": 100,
     "infer": 2,
     "dict": 1,
     "build": 0,

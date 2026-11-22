@@ -3,7 +3,7 @@
 Stan projektu: `hackathon/STATE.md`. Plan: `hackathon/plan.md`. Brief/idea obok.
 
 ## Stack
-Python 3.14 + uv, FastAPI, pydantic v2, Docker `python:3.14.0-alpine3.22` (user `app`), Ollama (lokalny LLM). UI: `web/` czysty HTML+JS (bez Node). Zero SaaS/LLM-API w runtime (regulamin). Licencje: bez GPL/AGPL.
+Python 3.14 + uv, FastAPI, pydantic v2, Docker `python:3.14.10-alpine3.24` (user `app`), Ollama (lokalny LLM). UI: `web/` czysty HTML+JS (bez Node). Zero SaaS/LLM-API w runtime (regulamin). Licencje: bez GPL/AGPL.
 
 ## Komendy
 - `uv run python -m formproof` – API na :8000 (UI pod `/`, OpenAPI `/docs`)

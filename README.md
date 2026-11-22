@@ -120,7 +120,7 @@ uv run python scripts/eval/run.py # metryki vs wzorcowy JSON formularza 1
 uv run python scripts/license_check.py   # blokuje zależności copyleft (GPL/AGPL)
 ```
 
-Obraz: `python:3.14.0-alpine3.22`, użytkownik `app`, system plików tylko do odczytu. Zależności tylko na licencjach
+Obraz: `python:3.14.10-alpine3.24`, użytkownik `app`, system plików tylko do odczytu. Zależności tylko na licencjach
 MIT/BSD/Apache/MPL.
 
 ## Ograniczenia (uczciwie)

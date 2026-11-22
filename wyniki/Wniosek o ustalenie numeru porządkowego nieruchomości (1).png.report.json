@@ -2,7 +2,7 @@
   "filename": "Wniosek o ustalenie numeru porządkowego nieruchomości (1).png",
   "format": "image",
   "ocr": true,
-  "confidence": 0.63,
+  "confidence": 0.62,
   "fields": {
     "8342bdd9-1d50-5601-bf24-c709095a2f1e": {
       "id": "8342bdd9-1d50-5601-bf24-c709095a2f1e",
@@ -841,7 +841,7 @@
       "techName": "szczegoly_wniosku",
       "title": "Szczegóły wniosku",
       "type": "SECTION",
-      "confidence": 0.54,
+      "confidence": 0.51,
       "sources": [
         {
           "page": 1,
@@ -901,7 +901,7 @@
       "techName": "miejscowosc",
       "title": "Miejscowość",
       "type": "TEXT_FIELD",
-      "confidence": 0.41,
+      "confidence": 0.37,
       "sources": [
         {
           "page": 1,
@@ -911,7 +911,7 @@
             "w": 1216.0,
             "h": 30.0
           },
-          "text": "W miejscowości  eeeveseesereseeeere przy ulicy?  eeeeeeeeeeeeeeee",
+          "text": "w miejscowości  eeeveseeseeeseeeere przy ulicy?  eeeeeeeeeeeeeeee",
           "blockIds": [
             "p1-b10",
             "p1-b11",
@@ -933,7 +933,7 @@
       "techName": "ulica_3",
       "title": "Ulica",
       "type": "TEXT_FIELD",
-      "confidence": 0.41,
+      "confidence": 0.37,
       "sources": [
         {
           "page": 1,
@@ -943,7 +943,7 @@
             "w": 1216.0,
             "h": 30.0
           },
-          "text": "W miejscowości  eeeveseesereseeeere przy ulicy?  eeeeeeeeeeeeeeee",
+          "text": "w miejscowości  eeeveseeseeeseeeere przy ulicy?  eeeeeeeeeeeeeeee",
           "blockIds": [
             "p1-b10",
             "p1-b11",
@@ -965,17 +965,17 @@
       "techName": "numer_ewidencyjny_dzialki",
       "title": "Numer ewidencyjny działki",
       "type": "TEXT_FIELD",
-      "confidence": 0.53,
+      "confidence": 0.51,
       "sources": [
         {
           "page": 1,
           "bbox": {
             "x": 197.0,
             "y": 1164.0,
-            "w": 1228.0,
+            "w": 1227.9999999999998,
             "h": 39.0
           },
-          "text": "nr ewidencyjny działki  w obrębie  eeeeeeeeeereseeee seee eee",
+          "text": "nr ewidencyjny działki  w obrębie  eeeeeseeeeeeseeee seee rene",
           "blockIds": [
             "p1-b15",
             "p1-b16",
@@ -997,17 +997,17 @@
       "techName": "obreb",
       "title": "Obręb",
       "type": "TEXT_FIELD",
-      "confidence": 0.53,
+      "confidence": 0.51,
       "sources": [
         {
           "page": 1,
           "bbox": {
             "x": 197.0,
             "y": 1164.0,
-            "w": 1228.0,
+            "w": 1227.9999999999998,
             "h": 39.0
           },
-          "text": "nr ewidencyjny działki  w obrębie  eeeeeeeeeereseeee seee eee",
+          "text": "nr ewidencyjny działki  w obrębie  eeeeeseeeeeeseeee seee rene",
           "blockIds": [
             "p1-b15",
             "p1-b16",
@@ -1039,7 +1039,7 @@
             "w": 1257.0,
             "h": 250.0
           },
-          "text": "KLAUZULA INFORMACYJNA numeracja porządkowa nieruchomości Zgodnie z art. 13 ust. 1 i 2 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/W - ogólne rozporządzenie o ochronie danych, informujemy, iż: 1. Administratorem Państwa danych osobowych jest Gmina Elbląg.",
+          "text": "KLAUZULA INFORMACYJNA numeracja porządkowa nieruchomości Zgodnie z art. 13 ust. 1 i 2 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/W — ogólne rozporządzenie o ochronie danych, informujemy, iż: 1. Administratorem Państwa danych osobowych jest Gmina Elbląg.",
           "blockIds": [
             "p1-b24",
             "p1-b25",
@@ -1072,7 +1072,7 @@
             "w": 1257.0,
             "h": 250.0
           },
-          "text": "KLAUZULA INFORMACYJNA numeracja porządkowa nieruchomości Zgodnie z art. 13 ust. 1 i 2 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/W - ogólne rozporządzenie o ochronie danych, informujemy, iż: 1. Administratorem Państwa danych osobowych jest Gmina Elbląg.",
+          "text": "KLAUZULA INFORMACYJNA numeracja porządkowa nieruchomości Zgodnie z art. 13 ust. 1 i 2 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/W — ogólne rozporządzenie o ochronie danych, informujemy, iż: 1. Administratorem Państwa danych osobowych jest Gmina Elbląg.",
           "blockIds": [
             "p1-b24",
             "p1-b25",
@@ -1124,36 +1124,36 @@
       "fieldId": "2ccfb7a7-c695-58d0-beb0-9fe86e3d4951",
       "techName": "miejscowosc",
       "title": "Miejscowość",
-      "confidence": 0.41,
+      "confidence": 0.37,
       "reason": "składnik adresu"
     },
     {
       "fieldId": "3e4bf024-f6d7-513f-8216-c892abd194c1",
       "techName": "ulica_3",
       "title": "Ulica",
-      "confidence": 0.41,
+      "confidence": 0.37,
       "reason": "składnik adresu"
+    },
+    {
+      "fieldId": "4230c0d4-2821-5777-9f97-3be634158613",
+      "techName": "szczegoly_wniosku",
+      "title": "Szczegóły wniosku",
+      "confidence": 0.51,
+      "reason": "nagłówek sekcji w dokumencie"
     },
     {
       "fieldId": "944ce83f-665c-50f7-a2f2-241edbfa85d7",
       "techName": "numer_ewidencyjny_dzialki",
       "title": "Numer ewidencyjny działki",
-      "confidence": 0.53,
+      "confidence": 0.51,
       "reason": "typ z etykiety (TEXT_FIELD)"
     },
     {
       "fieldId": "f7e1effa-36f1-55f1-aeb6-2dd58def7422",
       "techName": "obreb",
       "title": "Obręb",
-      "confidence": 0.53,
+      "confidence": 0.51,
       "reason": "typ z etykiety (TEXT_FIELD)"
-    },
-    {
-      "fieldId": "4230c0d4-2821-5777-9f97-3be634158613",
-      "techName": "szczegoly_wniosku",
-      "title": "Szczegóły wniosku",
-      "confidence": 0.54,
-      "reason": "nagłówek sekcji w dokumencie"
     }
   ],
   "rules": [
@@ -1433,7 +1433,7 @@
   "proposedDictionaries": [],
   "warnings": [],
   "timings": {
-    "extract": 2012,
+    "extract": 1885,
     "infer": 14,
     "dict": 2,
     "build": 1,

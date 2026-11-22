@@ -12,7 +12,7 @@ Godziny: Faza 3 sekwencja 12:25–13:15, runda 1 13:15–14:45, runda 2 14:45–
 6. Pobierz JSON; `curl` API z JWT (REST, batch).
 
 ## Stack (zmiana 11:55: Python zamiast TS – regulamin preferuje Python 3.14+)
-Python 3.14 + uv, FastAPI + uvicorn, pydantic v2 (kontrakt = modele), PyJWT, jsonschema, jsonata-python. Docker `python:3.14.0-alpine3.22`, user `app`, read-only FS. Ollama (osobny kontener, pinned tag) do wzbogacenia. Baza: brak (stateless, pliki w pamięci).
+Python 3.14 + uv, FastAPI + uvicorn, pydantic v2 (kontrakt = modele), PyJWT, jsonschema, jsonata-python. Docker `python:3.14.10-alpine3.24`, user `app`, read-only FS. Ollama (osobny kontener, pinned tag) do wzbogacenia. Baza: brak (stateless, pliki w pamięci).
 Ekstrakcja: pdfplumber (tekst+pozycje+prostokąty/checkboxy), pypdfium2 (render stron -> OCR/podgląd), pytesseract + tesseract-ocr pol (apk), Pillow, python-docx, openpyxl, ODS = zip+xml (stdlib), DOC = olefile + własny odczyt tekstu z WordDocument (bez układu).
 UI: `web/` czysty HTML + ES modules JS (bez Node/build), serwowany przez FastAPI StaticFiles. Podgląd oryginału: `?previews=true` -> `report.previews[]` (PNG + width/height w jednostkach bbox) – bez pdf.js.
 Licencje: tylko MIT/BSD/Apache/MPL(certifi). Zakaz GPL/AGPL (PyMuPDF, antiword, poppler, libreoffice). `uv run python scripts/license_check.py`.

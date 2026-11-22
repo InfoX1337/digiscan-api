@@ -145,8 +145,8 @@
                 "field": {
                   "id": "510f7137-678b-52d5-9f98-9a6ddb257722",
                   "type": "TEXT_FIELD",
-                  "techName": "iv_okresie_posiadania_gospodarstwa_rolnego",
-                  "title": "IV, okresie posiadania gospodarstwa rolnego",
+                  "techName": "l_9_okresie_posiadania_gospodarstwa_rolnego",
+                  "title": "L 9 okresie posiadania gospodarstwa rolnego",
                   "description": "",
                   "options": [],
                   "validation": [

@@ -407,10 +407,10 @@
         {
           "x": 0,
           "y": 4,
-          "rows": 5,
+          "rows": 4,
           "cols": 3,
           "field": {
-            "id": "447305e7-e085-5bcc-90b6-4f3916884ee9",
+            "id": "b6a1ade2-775a-5da7-aedd-266dc2562ce7",
             "type": "SECTION",
             "techName": "szczegoly_wniosku",
             "title": "Szczegóły wniosku",
@@ -448,9 +448,9 @@
                 "cols": 3,
                 "field": {
                   "id": "a4e4d2a6-cdb5-5d22-b247-ff4952ba39c7",
-                  "type": "TEXT_FIELD",
-                  "techName": "e_eesereessese_s",
-                  "title": "E.eesereessese s",
+                  "type": "DATEPICKER",
+                  "techName": "data_od",
+                  "title": "Data od",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -471,8 +471,8 @@
                 "field": {
                   "id": "7388bbfd-3fdf-5802-8ddc-fbfd5ded08c4",
                   "type": "DATEPICKER",
-                  "techName": "data_od",
-                  "title": "Data od",
+                  "techName": "data_do",
+                  "title": "Data do",
                   "description": "",
                   "options": [],
                   "validation": [
@@ -484,28 +484,6 @@
                   "questionOrder": 2,
                   "tooltipMessage": ""
                 }
-              },
-              {
-                "x": 0,
-                "y": 3,
-                "rows": 1,
-                "cols": 3,
-                "field": {
-                  "id": "b6a1ade2-775a-5da7-aedd-266dc2562ce7",
-                  "type": "DATEPICKER",
-                  "techName": "data_do",
-                  "title": "Data do",
-                  "description": "",
-                  "options": [],
-                  "validation": [
-                    "REQUIRED"
-                  ],
-                  "readOnly": false,
-                  "repeatingSectionGrid": [],
-                  "states": [],
-                  "questionOrder": 3,
-                  "tooltipMessage": ""
-                }
               }
             ],
             "states": [],
@@ -515,14 +493,14 @@
         },
         {
           "x": 0,
-          "y": 9,
+          "y": 8,
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "c5f7bad8-e5cb-52c1-a70c-4cece341c35c",
+            "id": "046fced6-0c6e-567e-98df-91fac204bf3f",
             "type": "SECTION",
-            "techName": "cel_wynajecia_swietlicy_x_see_es_ee_ss8_e_ss8_ke_ss8_es_er_ee",
-            "title": "Cel wynajęcia świetlicy: --x.see. es ee ss8 e ss8 ke ss8 es er ee",
+            "techName": "cel_wynajecia_swietlicy_x_see_sesse_ss8_e_8_s8",
+            "title": "Cel wynajęcia świetlicy: -.x+see.sesse ss8 e 8 s8",
             "description": "",
             "options": [],
             "validation": [],
@@ -534,19 +512,19 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "046fced6-0c6e-567e-98df-91fac204bf3f",
+                  "id": "447305e7-e085-5bcc-90b6-4f3916884ee9",
                   "type": "RADIO",
-                  "techName": "cel_wynajecia_swietlicy_x_see_es_ee_ss8_e_ss8_ke_ss8_es_er_ee_2",
-                  "title": "Cel wynajęcia świetlicy: --x.see. es ee ss8 e ss8 ke ss8 es er ee",
+                  "techName": "cel_wynajecia_swietlicy_x_see_sesse_ss8_e_8_s8_2",
+                  "title": "Cel wynajęcia świetlicy: -.x+see.sesse ss8 e 8 s8",
                   "description": "",
                   "options": [
                     {
-                      "id": "41b1d3ff-4f71-54cb-8bd0-44f274fc3738",
+                      "id": "870bdead-3c0d-5bb0-9e1c-9af459454617",
                       "name": "( rodzaj uroczystości, np. wesele, urodziny, zabawa itp.)",
                       "techName": "rodzaj_uroczystosci_np_wesele_urodziny_zabawa_itp"
                     },
                     {
-                      "id": "13e9ef29-42db-56d0-af94-70f509fcedd2",
+                      "id": "0e3bfae6-4ec0-53d6-8c01-4e47b74af7c0",
                       "name": "(imię i nazwisko — wnioskodawca, w przypadku innej osoby niż wnioskodawca - zgoda osoby odpowiedzialnej)",
                       "techName": "imie_i_nazwisko_wnioskodawca_w_przypadku_innej_osoby_niz_wnioskodawca_zgoda_osob"
                     }
@@ -632,7 +610,7 @@
           "rows": 2,
           "cols": 3,
           "field": {
-            "id": "25c96587-055c-5860-b829-4d420cb36071",
+            "id": "717041e8-1a8a-5e6d-a132-abb6031f85d2",
             "type": "SECTION",
             "techName": "podglad_uzupelnionego_wniosku",
             "title": "Podgląd uzupełnionego wniosku",
@@ -647,7 +625,7 @@
                 "rows": 1,
                 "cols": 3,
                 "field": {
-                  "id": "717041e8-1a8a-5e6d-a132-abb6031f85d2",
+                  "id": "c5f7bad8-e5cb-52c1-a70c-4cece341c35c",
                   "type": "INFO_SECTION",
                   "techName": "podglad",
                   "title": "Podgląd",
