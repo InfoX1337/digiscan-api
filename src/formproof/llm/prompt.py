@@ -64,9 +64,11 @@ def all_fields(draft: DraftForm) -> list[DraftField]:
     return [f for tab in draft.tabs for f in iter_draft(tab.fields)]
 
 
-def candidates(draft: DraftForm) -> list[DraftField]:
+def candidates(draft: DraftForm, exclude: set[str] | None = None) -> list[DraftField]:
     out: list[DraftField] = []
     for f in all_fields(draft):
+        if exclude and f.key in exclude:
+            continue
         if f.type in ("TEXT_BLOCK", "INFO_SECTION", "CONSENT_SECTION", "REPEATING_SECTION"):
             continue
         if f.confidence < CANDIDATE_BELOW:
@@ -111,8 +113,8 @@ LINE_FORMAT = (
 )
 
 
-def build_batches(doc: SourceDoc, draft: DraftForm) -> list[Batch]:
-    cands = candidates(draft)
+def build_batches(doc: SourceDoc, draft: DraftForm, exclude: set[str] | None = None) -> list[Batch]:
+    cands = candidates(draft, exclude)
     want_title = draft.title_confidence < CANDIDATE_BELOW
     if not cands and not want_title:
         return []

@@ -79,15 +79,26 @@ def sniff(data: bytes) -> str:
 MAX_ZIP_ENTRIES = 5000
 MAX_ZIP_UNCOMPRESSED = 200 * 1024 * 1024  # ochrona przed zip bomb (DOCX/XLSX/ODS)
 
+# Ta sama rodzina formatów przy innym rozszerzeniu (np. DOCX zapisany jako .doc, PNG jako .jpg) – częste
+# w realnych plikach urzędów. Format przetwarzania wynika wtedy z zawartości, nie z rozszerzenia.
 _EXT_SNIFF: dict[str, set[str]] = {
     "pdf": {"pdf"},
-    "png": {"png"},
-    "jpg": {"jpeg"},
-    "jpeg": {"jpeg"},
-    "docx": {"docx"},
-    "xlsx": {"xlsx"},
-    "ods": {"ods"},
-    "doc": {"doc"},
+    "png": {"png", "jpeg"},
+    "jpg": {"jpeg", "png"},
+    "jpeg": {"jpeg", "png"},
+    "docx": {"docx", "doc"},
+    "xlsx": {"xlsx", "ods"},
+    "ods": {"ods", "xlsx"},
+    "doc": {"doc", "docx"},
+}
+_SNIFF_FORMAT: dict[str, SourceFormat] = {
+    "pdf": "pdf",
+    "png": "image",
+    "jpeg": "image",
+    "docx": "docx",
+    "doc": "doc",
+    "xlsx": "xlsx",
+    "ods": "ods",
 }
 
 # Deklarowany Content-Type: typy ogólne (brak / octet-stream) dopuszczamy, bo przeglądarki i klienci HTTP
@@ -138,4 +149,4 @@ def ingest(filename: str | None, data: bytes, max_bytes: int, content_type: str 
     detected = sniff(data)
     if detected not in _EXT_SNIFF[ext]:
         raise IngestError("MIME_MISMATCH", f'Zawartość pliku ({detected}) nie pasuje do rozszerzenia ".{ext}".', 415)
-    return IngestedFile(filename=name, ext=ext, format=fmt, detected=detected, data=data)
+    return IngestedFile(filename=name, ext=ext, format=_SNIFF_FORMAT.get(detected, fmt), detected=detected, data=data)

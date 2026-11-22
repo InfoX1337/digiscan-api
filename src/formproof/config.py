@@ -23,7 +23,7 @@ class Settings(BaseSettings):
     max_batch_files: int = 10
     max_batch_bytes: int = 50 * 1024 * 1024  # łączny rozmiar żądania batch
     max_ocr_pages: int = 5
-    request_timeout_s: float = 120.0
+    request_timeout_s: float = 180.0
 
     # Demo: API otwarte (bez JWT). AUTH_ENABLED=true włącza Bearer HS256 na wszystkich endpointach.
     auth_enabled: bool = False
@@ -38,7 +38,7 @@ class Settings(BaseSettings):
     llm_enabled: bool = True
     ollama_url: str = "http://localhost:11434"
     llm_model: str = "qwen3.5:4b"
-    llm_timeout_s: float = 45.0
+    llm_timeout_s: float = 100.0
 
     tesseract_cmd: str = "tesseract"
     demo_ui: bool = True  # UI w trybie demo pobiera token automatycznie

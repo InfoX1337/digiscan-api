@@ -57,6 +57,13 @@ def _settings(monkeypatch: pytest.MonkeyPatch) -> None:
     monkeypatch.setattr(llm, "get_settings", lambda: s)
 
 
+def _is_structure(payload: dict[str, Any]) -> bool:
+    return "lines" in payload["format"]["properties"]
+
+
+EMPTY_STRUCTURE = {"title": "", "lines": []}
+
+
 def _answer(content: dict[str, Any] | str) -> dict[str, Any]:
     return {"message": {"role": "assistant", "content": content if isinstance(content, str) else json.dumps(content)}}
 
@@ -78,6 +85,8 @@ def test_fusion_agree_disagree_and_additions(monkeypatch: pytest.MonkeyPatch) ->
     calls: list[dict[str, Any]] = []
 
     def fake(url: str, payload: dict[str, Any], timeout: float) -> dict[str, Any]:
+        if _is_structure(payload):
+            return _answer(EMPTY_STRUCTURE)  # brak struktury -> zostaje wynik reguł
         calls.append(payload)
         return _answer(GOOD)
 
@@ -155,7 +164,11 @@ def test_invalid_json_ignored(monkeypatch: pytest.MonkeyPatch) -> None:
 
 def test_retry_then_success(monkeypatch: pytest.MonkeyPatch) -> None:
     answers = [_answer("[]"), _answer(GOOD)]
-    monkeypatch.setattr(client, "post_json", lambda url, payload, timeout: answers.pop(0))
+    monkeypatch.setattr(
+        client,
+        "post_json",
+        lambda url, payload, timeout: _answer(EMPTY_STRUCTURE) if _is_structure(payload) else answers.pop(0),
+    )
     res = llm.enrich(_doc(), _draft())
     assert res.used and _by_key(res.draft)["f3"].type == "DATEPICKER"
 
@@ -179,8 +192,12 @@ def test_cache(monkeypatch: pytest.MonkeyPatch) -> None:
 
     monkeypatch.setattr(client, "post_json", fake)
     llm.enrich(_doc(), _draft())
+    n["calls"] = 0
+    llm.enrich(_doc(), _draft())
+    assert n["calls"] == 0  # oba wywołania (struktura i pola) z cache
+    llm.enrich(_doc(), _draft())
     r2 = llm.enrich(_doc(), _draft())
-    assert n["calls"] == 1 and r2.used
+    assert n["calls"] == 0 and r2.used
     monkeypatch.setattr(client, "CACHE_MAX", 1)
     for i in range(3):
         client._cache_put(str(i), {})
@@ -223,8 +240,11 @@ def test_integration_ollama(monkeypatch: pytest.MonkeyPatch) -> None:
     doc = SourceDoc.model_validate_json((FIX / "sample-source1.json").read_text())
     draft = infer(doc)
     res = llm.enrich(doc, draft)
-    assert len(_by_key(res.draft)) == len(_by_key(draft))
     assert res.used or res.error
+    # każde pole utworzone przez LLM ma dowód w dokumencie (blok źródłowy) – nic wymyślonego
+    for f in _by_key(res.draft).values():
+        if any(e.by == "llm" and "struktur" in (e.reason or "") for e in f.evidence) and f.type != "SECTION":
+            assert any(e.block_ids for e in f.evidence), f.title
 
 
 def test_not_a_field_lowers_confidence_and_keeps_field() -> None:

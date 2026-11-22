@@ -83,6 +83,7 @@ main { max-width: 1600px; margin: 0 auto; padding: var(--s-6) var(--s-5) 64px; }
 .stages .active::after { content: ""; position: absolute; left: 0; bottom: 0; height: 2px; width: 40%; background: var(--accent); animation: slide 1.4s infinite; }
 .stages .done { color: var(--ok); } .stages .done .dot { background: var(--ok); }
 .stages .failed { color: var(--fail); } .stages .failed .dot { background: var(--fail); }
+.stages .skipped { opacity: .55; }
 @keyframes pulse { 50% { opacity: .35; } }
 @keyframes slide { from { transform: translateX(-100%); } to { transform: translateX(350%); } }
 .error { background: var(--fail-bg); color: var(--fail); padding: 10px 14px; border-radius: var(--r); font-size: var(--fs-md); }

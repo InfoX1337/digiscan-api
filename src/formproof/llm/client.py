@@ -82,9 +82,10 @@ def chat_json(
     schema: dict[str, Any],
     deadline: float,
     retries: int = 1,
+    num_predict: int = 1024,
 ) -> dict[str, Any]:
     """Wywołanie z JSON-schemą; rzuca LlmError. `deadline` = time.monotonic() granica całkowita."""
-    key = cache_key(model, system, user, schema)
+    key = cache_key(model, system, user, schema) + str(num_predict)
     hit = _cache_get(key)
     if hit is not None:
         return hit
@@ -95,7 +96,7 @@ def chat_json(
         "stream": False,
         "think": False,
         "keep_alive": "30m",  # model w pamięci między żądaniami demo
-        "options": {"temperature": 0, "num_ctx": 8192, "num_predict": 1024},
+        "options": {"temperature": 0, "num_ctx": 12288, "num_predict": num_predict},
     }
     url = base_url.rstrip("/") + "/api/chat"
     remaining = deadline - time.monotonic()

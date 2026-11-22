@@ -57,17 +57,28 @@ class ConvertResult:
         return {"form": self.form.dump(), "report": self.report.model_dump(mode="json", exclude_none=True)}
 
 
-def _timed[R](timings: dict[str, int], name: str, fn: Callable[[], R]) -> R:
-    t0 = time.perf_counter()
-    try:
-        return fn()
-    finally:
-        timings[name] = round((time.perf_counter() - t0) * 1000)
+StageFn = Callable[[str, str, int | None], None]  # (etap, "start" | "done", ms)
 
 
-def convert(file: IngestedFile, cfg: Settings, opts: ConvertOptions) -> ConvertResult:
+def _noop(_stage: str, _status: str, _ms: int | None) -> None:
+    return None
+
+
+def convert(file: IngestedFile, cfg: Settings, opts: ConvertOptions, on_stage: StageFn | None = None) -> ConvertResult:
+    """Pełny pipeline. `on_stage` dostaje start/koniec każdego etapu (postęp w UI przez strumień NDJSON)."""
     deadline = time.monotonic() + cfg.request_timeout_s
     timings: dict[str, int] = {}
+    notify = on_stage or _noop
+
+    def _timed[R](timings: dict[str, int], name: str, fn: Callable[[], R]) -> R:
+        notify(name, "start", None)
+        t0 = time.perf_counter()
+        try:
+            return fn()
+        finally:
+            timings[name] = round((time.perf_counter() - t0) * 1000)
+            notify(name, "done", timings[name])
+
     doc = _timed(
         timings,
         "extract",
@@ -105,7 +116,8 @@ def convert(file: IngestedFile, cfg: Settings, opts: ConvertOptions) -> ConvertR
     ]
     report = assemble_report(doc, draft, built.key_to_id, v.form, v.rules, v.repairs, proposed, timings, llm)
     if opts.previews:
-        report.previews = render_previews(file, doc, cfg.max_ocr_pages)
+        report.previews = _timed(timings, "previews", lambda: render_previews(file, doc, cfg.max_ocr_pages))
+        report.timings = {**report.timings, "previews": timings["previews"]}
     return ConvertResult(form=v.form, report=report)
 
 

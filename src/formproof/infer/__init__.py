@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import re
+from collections.abc import Callable
 from dataclasses import dataclass, field
 
 from ..types.draft import DraftField, DraftForm, DraftOption, DraftTab, Evidence, ShowWhen, iter_draft
@@ -105,7 +106,18 @@ def _title(lines: list[Line], doc: SourceDoc, mf: float) -> tuple[str, float, li
                 used.append(nxt)
         # 'WNIOSEK' / 'o' / 'wynajęcie świetlicy' – dokończenie tytułu z kolejnych linii pisanych małą literą
         j = i + len(used)
-        while len(t.split()) <= 3 and j < len(lines) and j - i <= 3:
+
+        def wrapped(nxt: Line) -> bool:
+            """Druga linia zawiniętego tytułu: ten sam styl, tuż pod spodem ('… uznawanych' / 'za agresywne')."""
+            prev = used[-1]
+            if not (prev.bbox and nxt.bbox) or t.endswith((".", ":")):
+                return False
+            gap = nxt.y - (prev.y + prev.bbox.h)
+            same_style = nxt.bold == prev.bold and abs((nxt.font or mf) - (prev.font or mf)) <= 0.15 * (prev.font or mf)
+            centered = abs((nxt.x + nxt.bbox.w / 2) - (prev.x + prev.bbox.w / 2)) < 0.1 * max(prev.bbox.w, 1)
+            return 0 <= gap < 0.9 * prev.bbox.h and same_style and (centered or nxt.bold) and len(clean(nxt.text)) < 80
+
+        while j < len(lines) and j - i <= 3 and (len(t.split()) <= 3 or wrapped(lines[j])):
             nxt = lines[j]
             nt = clean(nxt.text).replace("*", "").strip()
             if len(nt) <= 1 and not nt.isalnum():  # szum OCR ('°' zamiast 'o')
@@ -672,7 +684,10 @@ def _assemble(
             elif len(order) > 1 and g == "contact":
                 st = "Dane do kontaktu"
             elif len(order) > 1 and g == "person" and s.kind in ("person", ""):
-                st = "Twoje dane" if s.kind == "person" or fold(s.title) == "dane wniosku" else s.title
+                generic = fold(s.title) in ("dane wniosku", "szczegoly wniosku")
+                st = "Twoje dane" if s.kind == "person" or generic else s.title
+            elif g == "person" and fold(s.title) in ("dane wniosku", "szczegoly wniosku"):
+                st = "Twoje dane"  # ogólny tytuł zastępczy nie opisuje danych osoby
             sec = DraftField(
                 key=key(),
                 type="SECTION",
@@ -912,6 +927,11 @@ def _address_fields(found: dict[str, list[Item]], key: _Keys, optional: bool) ->
             trg = by_title[sp.show_when[0]]
             df.show_when.append(ShowWhen(when_key=trg.key, equals=sp.show_when[1], negate=sp.show_when[2]))
     return out
+
+
+def address_fields(key: Callable[[], str], optional: bool) -> list[DraftField]:
+    """Standardowy zestaw pól adresu eUsługi (kraj + adres krajowy/zagraniczny) – dla etapu LLM."""
+    return _address_fields({}, key, optional)  # type: ignore[arg-type]
 
 
 def _consent_section(s: Section, txt: str, key: _Keys) -> DraftField:

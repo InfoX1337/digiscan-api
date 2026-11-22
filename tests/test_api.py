@@ -169,3 +169,18 @@ def test_body_limit_streamed_without_length(client, token: str) -> None:  # type
     )
     assert r.status_code == 413
     assert r.json()["code"] == "FILE_TOO_LARGE"
+
+
+def test_ingest_same_family_uses_content_format() -> None:
+    """DOCX zapisany z rozszerzeniem .doc (realny plik urzędu) – przetwarzamy wg zawartości."""
+    import io
+    import zipfile
+
+    buf = io.BytesIO()
+    with zipfile.ZipFile(buf, "w") as z:
+        z.writestr("word/document.xml", "<w:document/>")
+    f = ingest("wniosek.DOC", buf.getvalue(), 10**6)
+    assert (f.ext, f.format, f.detected) == ("doc", "docx", "docx")
+    with pytest.raises(IngestError) as e:
+        ingest("a.doc", PDF, 10**6)  # inna rodzina – nadal odrzucone
+    assert e.value.code == "MIME_MISMATCH"

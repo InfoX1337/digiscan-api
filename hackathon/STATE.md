@@ -46,3 +46,7 @@ Zostaje (użytkownik): repo publiczne, prezentacja PDF ≤10 slajdów, film ≤3
 - OCR: preprocessing (autocontrast, upscale) nie poprawił recall – cofnięty. Skany R ~0.72 (struktura, nie OCR).
 - wyniki/ odświeżone z nowego obrazu: 40/40 schema, 29/29 reguł. pytest 177, UI e2e 14/14 na kontenerze :8000.
 - Nie ruszone (decyzja użytkownika): przepisanie historii git (materiały COI od ad4a168), upublicznienie repo, regulamin AI hacknation.pl.
+
+## 2026-11-22 – obraz Docker odświeżony
+- Niezcommitowane: LLM R3 `llm/structure.py` (przebudowa zakładki „Szczegóły wniosku” z dowodem w tekście) + zmiany pipeline/routes/UI, timeouty REQUEST 180 s / LLM 100 s. pytest 189, ruff+mypy OK.
+- Obraz coi-api przebudowany z working tree; kontener formproof-demo (:8000, OLLAMA na host) podmieniony, healthy, UI e2e 14/14.

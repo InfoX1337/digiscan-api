@@ -34,6 +34,40 @@ export function convert(file, { llm, previews }) {
   const fd = new FormData(); fd.append("file", file);
   return call(`/forms/convert?llm=${llm}&previews=${previews}`, { method: "POST", body: fd });
 }
+/** Konwersja z postępem: onStage({stage, status, ms}) przy starcie/końcu etapów (strumień NDJSON). */
+export async function convertStream(file, { llm, previews }, onStage, retried = false) {
+  const fd = new FormData(); fd.append("file", file);
+  const r = await fetch(`${BASE}/forms/convert?llm=${llm}&previews=${previews}&stream=true`, {
+    method: "POST", body: fd, headers: token ? { Authorization: `Bearer ${token}` } : {},
+  });
+  if (r.status === 401 && authRequired && !retried && (await demoLogin())) return convertStream(file, { llm, previews }, onStage, true);
+  if (!r.ok || !r.body) {
+    const body = await r.json().catch(() => ({}));
+    const e = new Error(body.message || `Błąd HTTP ${r.status}`);
+    e.code = body.code || String(r.status); e.status = r.status;
+    throw e;
+  }
+  const reader = r.body.pipeThrough(new TextDecoderStream()).getReader();
+  let buf = "";
+  for (;;) {
+    const { value, done } = await reader.read();
+    if (done) break;
+    buf += value;
+    let nl;
+    while ((nl = buf.indexOf("\n")) >= 0) {
+      const line = buf.slice(0, nl).trim(); buf = buf.slice(nl + 1);
+      if (!line) continue;
+      const msg = JSON.parse(line);
+      if (msg.stage) onStage(msg);
+      else if (msg.result) return msg.result;
+      else if (msg.error) {
+        const e = new Error(msg.error.message); e.code = msg.error.code; e.status = msg.error.status;
+        throw e;
+      }
+    }
+  }
+  throw new Error("Połączenie przerwane przed końcem przetwarzania.");
+}
 export function convertBatch(files, { llm }) {
   const fd = new FormData(); files.forEach((f) => fd.append("file", f));
   return call(`/forms/convert/batch?llm=${llm}`, { method: "POST", body: fd });

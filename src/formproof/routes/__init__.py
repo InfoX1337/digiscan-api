@@ -2,12 +2,15 @@
 
 from __future__ import annotations
 
+import asyncio
+import json
 import logging
+from collections.abc import AsyncIterator
 from typing import Annotated, Any
 
 from fastapi import APIRouter, Body, Depends, File, Query, UploadFile
 from fastapi.concurrency import run_in_threadpool
-from fastapi.responses import JSONResponse
+from fastapi.responses import JSONResponse, StreamingResponse
 from pydantic import BaseModel, Field, ValidationError
 
 from .. import dictionaries as dict_mod
@@ -69,15 +72,51 @@ async def convert_one(
     file: Annotated[UploadFile | None, File(description="Formularz: pdf, doc, docx, ods, xlsx, jpg, jpeg, png")] = None,
     llm: Annotated[bool, Query(description="Wzbogacenie lokalnym LLM")] = True,
     previews: Annotated[bool, Query(description="Dołącz PNG stron oryginału do report.previews")] = False,
+    stream: Annotated[
+        bool,
+        Query(
+            description="Strumień NDJSON: {stage, status, ms} przy starcie i końcu każdego etapu, "
+            "na końcu {result: {form, report}} albo {error: {status, code, message}}"
+        ),
+    ] = False,
 ) -> Any:
     try:
         if file is None:
             raise IngestError("NO_FILE", 'Brak pliku w polu "file".')
         f = ingest(file.filename, await _read(file, cfg), cfg.max_file_bytes, file.content_type)
-        res = await run_in_threadpool(convert, f, cfg, ConvertOptions(llm=llm, previews=previews))
+        opts = ConvertOptions(llm=llm, previews=previews)
+        if stream:
+            return StreamingResponse(_stream(f, cfg, opts), media_type="application/x-ndjson")
+        res = await run_in_threadpool(convert, f, cfg, opts)
         return res.dump()
     except Exception as e:  # noqa: BLE001
         return err(*_to_error(e))
+
+
+async def _stream(f: Any, cfg: Settings, opts: ConvertOptions) -> AsyncIterator[str]:
+    """Postęp etapów pipeline'u na żywo (wątek konwersji -> kolejka asyncio -> linie NDJSON)."""
+    loop = asyncio.get_running_loop()
+    queue: asyncio.Queue[dict[str, Any] | None] = asyncio.Queue()
+
+    def on_stage(stage: str, status: str, ms: int | None) -> None:
+        loop.call_soon_threadsafe(queue.put_nowait, {"stage": stage, "status": status, "ms": ms})
+
+    async def run() -> None:
+        try:
+            res = await run_in_threadpool(convert, f, cfg, opts, on_stage)
+            await queue.put({"result": res.dump()})
+        except Exception as e:  # noqa: BLE001
+            status, code, msg = _to_error(e)
+            await queue.put({"error": {"status": status, "code": code, "message": msg}})
+        finally:
+            await queue.put(None)
+
+    task = asyncio.create_task(run())
+    try:
+        while (item := await queue.get()) is not None:
+            yield json.dumps(item, ensure_ascii=False) + "\n"
+    finally:
+        await task
 
 
 @router.post("/forms/convert/batch", tags=["forms"])

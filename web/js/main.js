@@ -1,5 +1,5 @@
 import { h, $, $$ } from "./util.js";
-import { authRequired, demoLogin, setToken, getToken, convert, convertBatch, validate } from "./api.js";
+import { authRequired, demoLogin, setToken, getToken, convertStream, convertBatch, validate } from "./api.js";
 import { renderForm, iterQuestions } from "./viz.js";
 import { renderRules, renderReview, renderJson, renderReport, renderDetails, renderPreview, download } from "./panels.js";
 
@@ -50,26 +50,56 @@ drop.addEventListener("drop", (e) => { if (e.dataTransfer?.files?.length) setFil
 drop.addEventListener("click", () => input.click());
 drop.addEventListener("keydown", (e) => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); input.click(); } });
 
-/* ---------- postęp (etapy szacowane po stronie klienta, backend nie streamuje) ---------- */
-const STAGES = [["extract", "Odczyt / OCR"], ["infer", "Rozpoznanie pól"], ["llm", "Model językowy"], ["validate", "Walidacja COI"]];
-let timer = null;
-function startProgress(useLlm) {
-  const stages = STAGES.filter(([k]) => useLlm || k !== "llm");
+/* ---------- postęp: prawdziwe etapy z backendu (strumień NDJSON) ---------- */
+// etap UI <- etapy pipeline'u (dict + build + validate = walidacja COI)
+const STAGES = [
+  ["extract", "Odczyt / OCR", ["extract"]],
+  ["infer", "Rozpoznanie pól", ["infer"]],
+  ["llm", "Model językowy", ["llm"]],
+  ["validate", "Walidacja COI", ["dict", "build", "validate"]],
+  ["previews", "Podgląd oryginału", ["previews"]],
+];
+let tick = null;
+const fmtS = (ms) => (ms >= 1000 ? `${(ms / 1000).toFixed(1)} s` : `${ms} ms`);
+
+function startProgress({ llm, previews, batch = 0 }) {
   progress.hidden = false;
-  progress.replaceChildren(h("ol", { class: "stages" }, stages.map(([k, l]) => h("li", { "data-stage": k }, h("span", { class: "dot" }), l, h("small", {})))));
-  let i = 0;
-  const mark = () => $$("li", progress).forEach((li, j) => { li.className = j < i ? "done" : j === i ? "active" : ""; });
-  mark();
-  clearInterval(timer);
-  timer = setInterval(() => { if (i < stages.length - 1) { i++; mark(); } }, 1800);
-}
-function finishProgress(timings, ok = true) {
-  clearInterval(timer);
-  $$("li", progress).forEach((li) => {
-    const t = timings?.[li.dataset.stage];
-    li.className = ok ? "done" : "failed";
-    $("small", li).textContent = t != null ? `${t} ms` : "";
-  });
+  clearInterval(tick);
+  const items = batch
+    ? [["batch", `Przetwarzanie ${batch} plików`, []]]
+    : STAGES.filter(([k]) => (k !== "llm" || llm) && (k !== "previews" || previews));
+  progress.replaceChildren(h("ol", { class: "stages" }, items.map(([k, l, parts]) =>
+    h("li", { "data-stage": k, "data-parts": parts.join(" ") }, h("span", { class: "dot" }), l, h("small", {})))));
+  const t0 = {};
+  const ms = {};
+  if (batch) { const li = $("li", progress); li.className = "active"; t0.batch = performance.now(); }
+  tick = setInterval(() => {
+    for (const li of $$("li.active", progress)) {
+      const k = li.dataset.stage;
+      if (t0[k]) $("small", li).textContent = fmtS(Math.round(performance.now() - t0[k]));
+    }
+  }, 200);
+  return {
+    stage({ stage, status, ms: took }) {
+      const li = $$("li", progress).find((x) => x.dataset.parts.split(" ").includes(stage));
+      if (!li) return;
+      const k = li.dataset.stage, parts = li.dataset.parts.split(" ");
+      if (status === "start" && !t0[k]) { t0[k] = performance.now(); li.className = "active"; }
+      if (status === "done") {
+        ms[k] = (ms[k] || 0) + (took || 0);
+        if (stage === parts[parts.length - 1]) { li.className = "done"; $("small", li).textContent = fmtS(ms[k]); }
+      }
+    },
+    finish(ok) {
+      clearInterval(tick);
+      for (const li of $$("li", progress)) {
+        if (li.className === "done") continue;
+        if (!ok && li.className === "active") li.className = "failed";
+        else if (ok && li.dataset.stage === "batch") { li.className = "done"; $("small", li).textContent = fmtS(Math.round(performance.now() - t0.batch)); }
+        else if (ok) { li.className = "skipped"; $("small", li).textContent = "pominięto"; }
+      }
+    },
+  };
 }
 
 function showError(msg, code) {
@@ -82,21 +112,21 @@ btn.addEventListener("click", async () => {
   const llm = $("#opt-llm").checked, previews = $("#opt-previews").checked;
   showError("");
   btn.disabled = true; btn.textContent = "Przetwarzanie…";
-  startProgress(llm);
+  const prog = startProgress({ llm, previews, batch: files.length > 1 ? files.length : 0 });
   try {
     if (files.length === 1) {
-      const r = await convert(files[0], { llm, previews });
+      const r = await convertStream(files[0], { llm, previews }, prog.stage);
       results = [{ filename: files[0].name, form: r.form, report: r.report }];
     } else {
       const r = await convertBatch(files, { llm });
       results = r.results.map((x) => ({ filename: x.filename, form: x.form, report: x.report, error: x.ok ? null : x.error }));
     }
     const first = results.find((x) => x.form);
-    finishProgress(first?.report?.timings, !!first);
+    prog.finish(!!first);
     if (!first) showError(results[0]?.error?.message || "Nie udało się przetworzyć plików.", results[0]?.error?.code);
     show(first || null);
   } catch (e) {
-    finishProgress(null, false);
+    prog.finish(false);
     showError(e.message, e.code);
   } finally { btn.disabled = false; btn.textContent = "Konwertuj"; }
 });
