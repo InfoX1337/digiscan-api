@@ -129,7 +129,12 @@ def specs_for_label(label: str) -> list[Spec]:
     f = fold(label).strip(" .:")
     if not f or DROP.search(f):
         return []
-    parts = [p for p in re.split(r"\s*/\s*|\s+lub\s+(?=adres|nr|numer|e-?mail|tel)", f) if p] if "/" in f else [f]
+    # dzielimy oryginał (nie `f`), żeby tytuły części zachowały polskie znaki
+    parts = (
+        [p for p in re.split(r"\s*/\s*|\s+lub\s+(?=adres|nr|numer|e-?mail|tel)", label.strip(" .:"), flags=re.I) if p]
+        if "/" in f
+        else [f]
+    )
     if len(parts) > 1 and not NAME_PAIR.search(f):
         out: list[Spec] = []
         for p in parts:
@@ -173,7 +178,7 @@ SECTION_PERSON = _r(
 SECTION_PROXY = _r(r"pelnomocni")
 SECTION_CONTACT = _r(r"kontakt")
 SECTION_ATTACH = _r(r"zalacznik|dokumenty dolacz")
-SECTION_SKIP = _r(r"instrukcj|sposob wypelnien|objasnien|pouczeni|adnotacje urzedu|wypelnia urzad|podpis")
+SECTION_SKIP = _r(r"instrukcj|sposob wypelnien|objasnien|pouczeni|adnotac|wypelnia urzad|wypelnia organ|podpis")
 SECTION_CONSENT = _r(r"klauzul|rodo|ochron\w* danych|przetwarzani\w* danych|oswiadczen")
 CHOICE_HINT = _r(r"postaw\s*[„\"']?x|zaznacz|wybierz|wlasciwe|\bx\b")
 MULTI_HINT = _r(r"mozna zaznaczyc (kilka|wiecej)|zaznacz wszystkie|wielokrotn")

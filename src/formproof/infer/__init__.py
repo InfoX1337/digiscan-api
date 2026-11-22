@@ -223,7 +223,7 @@ def _labels_before_options(lines: list[Line]) -> None:
                     cb.kind in ("checkbox", "line")
                     and cb.bbox
                     and cb.page == lab.page
-                    and cb.x > lab.x + 40
+                    and (cb.x > lab.x + 40 or cb.y >= lab.y + 6)  # obok etykiety albo pod nią
                     and cb.y >= lab.y - 4
                 ):
                     break
@@ -306,6 +306,11 @@ def _infer_one(doc: SourceDoc, key: _Keys) -> DraftForm:
         cur.entries.append(it)
         last_item = it
         return it
+
+    from .positions import positional_sections
+
+    if positional_sections(lines, sections, new_section, Item, Choice):
+        return _assemble(title, tconf, tlines, organ, sections, key)
 
     open_choice: tuple[Choice, Line] | None = None
     prev_ln: Line | None = None  # poprzednia linia z treścią (bez kresek pól)
