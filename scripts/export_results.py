@@ -14,7 +14,7 @@ from formproof.config import Settings
 from formproof.ingest import IngestError, ingest
 from formproof.pipeline import ConvertOptions, convert
 
-EXTS = {".pdf", ".png", ".jpg", ".jpeg", ".tif", ".tiff", ".docx", ".doc", ".xlsx", ".ods"}
+EXTS = {".pdf", ".png", ".jpg", ".jpeg", ".docx", ".doc", ".xlsx", ".ods"}
 
 
 def main() -> int:

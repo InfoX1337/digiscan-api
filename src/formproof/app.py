@@ -8,6 +8,7 @@ from fastapi.exceptions import RequestValidationError
 from fastapi.responses import JSONResponse
 from fastapi.staticfiles import StaticFiles
 
+from .limits import BodyLimitMiddleware
 from .routes import router
 
 WEB_DIR = Path(os.environ.get("WEB_DIR", Path(__file__).resolve().parents[2] / "web"))
@@ -32,6 +33,7 @@ def create_app() -> FastAPI:
     async def _val(_: Request, exc: RequestValidationError) -> JSONResponse:
         return JSONResponse(status_code=400, content={"code": "INVALID_REQUEST", "message": "Niepoprawne żądanie."})
 
+    app.add_middleware(BodyLimitMiddleware)
     app.include_router(router)
     if (WEB_DIR / "index.html").exists():
         app.mount("/", StaticFiles(directory=WEB_DIR, html=True), name="web")

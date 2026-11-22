@@ -1,0 +1,5961 @@
+{
+  "filename": "Wniosek o przyznanie stypendium.jpg",
+  "format": "image",
+  "ocr": true,
+  "confidence": 0.51,
+  "fields": {
+    "e5634ac7-25bd-55f1-8916-94818ead6184": {
+      "id": "e5634ac7-25bd-55f1-8916-94818ead6184",
+      "techName": "organ_do_ktorego_jest_skladany_wniosek",
+      "title": "Organ, do którego jest składany wniosek",
+      "type": "SECTION",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 349.0,
+            "y": 2733.0,
+            "w": 332.0,
+            "h": 29.0
+          },
+          "text": "Prezydent Miasta Zgierza",
+          "blockIds": [
+            "p1-b12"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "adresat wniosku"
+      ]
+    },
+    "657a0acd-2e61-505d-a75f-2dd73fec4ab3": {
+      "id": "657a0acd-2e61-505d-a75f-2dd73fec4ab3",
+      "techName": "nazwa_organu",
+      "title": "Nazwa organu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 349.0,
+            "y": 2733.0,
+            "w": 332.0,
+            "h": 29.0
+          },
+          "text": "Prezydent Miasta Zgierza",
+          "blockIds": [
+            "p1-b12"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "adresat wniosku z nagłówka dokumentu"
+      ]
+    },
+    "64412605-a595-5f7a-bff1-1a2b15a82f5a": {
+      "id": "64412605-a595-5f7a-bff1-1a2b15a82f5a",
+      "techName": "wnioskodawca",
+      "title": "Wnioskodawca",
+      "type": "SECTION",
+      "confidence": 0.33,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 200.0,
+            "y": 2668.0,
+            "w": 246.0,
+            "h": 26.0
+          },
+          "text": "1. Wnioskodawca",
+          "blockIds": [
+            "p1-b11"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "36143b3d-1965-59ea-a7ad-1f502b64a7ec": {
+      "id": "36143b3d-1965-59ea-a7ad-1f502b64a7ec",
+      "techName": "text_block",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 2845.0,
+            "w": 1228.0,
+            "h": 1561.0
+          },
+          "text": "Należy wypełnić w przypadku Wnioskodawcy — Klubu sportowego. o Dane reprezentanta klubu sportowego z KRS lub innego właściwego rejestru Numer telefonu (opcjonalnie) o Dane pełnomocnika klubu sportowego Do wniosku należy dołączyć pełnomocnictwo potwierdzające uprawnienia do działania w imieniu klubu wraz z potwierdzeniem uiszczenia opłaty skarbowej (opłata skarbowa jest niezbędna w związku z udzielonym pełnomocnictwem). Telefon kontaktowy (opcjonalnie) Korespondencja z urzędem (wybierz preferowan",
+          "blockIds": [
+            "p1-b14",
+            "p1-b15",
+            "p1-b19",
+            "p1-b20",
+            "p1-b27",
+            "p1-b28",
+            "p1-b29",
+            "p1-b32",
+            "p1-b36",
+            "p1-b37",
+            "p1-b38",
+            "p1-b42",
+            "p1-b43",
+            "p1-b44"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "fcf2d758-1d44-5402-aa2c-0035c7ea9748": {
+      "id": "fcf2d758-1d44-5402-aa2c-0035c7ea9748",
+      "techName": "klub_sportowy",
+      "title": "Klub sportowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 349.0,
+            "y": 2782.0,
+            "w": 192.0,
+            "h": 29.0
+          },
+          "text": "Klub sportowy",
+          "blockIds": [
+            "p1-b13"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "38ffb2ac-9f32-5158-9aca-7997b4a1e9ea": {
+      "id": "38ffb2ac-9f32-5158-9aca-7997b4a1e9ea",
+      "techName": "eesereseeeoeeeroneseronweweeawase_ee_aneanowa_see_ok_eee_an_es",
+      "title": "Eesereseeeoeeeroneseronweweeawase ee aneanowa see ok eee an es",
+      "type": "TEXT_FIELD",
+      "confidence": 0.13,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 3404.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Seria i numer dowodu osobistego  eesereseeeoeeeroneseronweweeawase ee aneanowa see ok eee an es se oa es seee ee seee ea eee",
+          "blockIds": [
+            "p1-b21",
+            "p1-b22",
+            "p1-b23"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "pole w treści zdania – sprawdź tytuł"
+      ]
+    },
+    "27cf3889-7a0a-5eaa-9b9d-12dd751d569b": {
+      "id": "27cf3889-7a0a-5eaa-9b9d-12dd751d569b",
+      "techName": "dane_klubu_sportowego",
+      "title": "Dane klubu sportowego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 3670.0,
+            "w": 315.0,
+            "h": 30.0
+          },
+          "text": "Dane klubu sportowego",
+          "blockIds": [
+            "p1-b30"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "803486bf-0375-5e29-9c35-f442c124437d": {
+      "id": "803486bf-0375-5e29-9c35-f442c124437d",
+      "techName": "nazwa_klubu_sportowego_siszzsiiszsaza_sii_reswka_ski_se_sga_ps_wape_s_ey_yp_peee",
+      "title": "Nazwa klubu sportowego siszzsiiszsaza sii reswka ski se SGA PS WAPE S EY YP PEEE Y GUG E ROW Y YY",
+      "type": "TEXT_FIELD",
+      "confidence": 0.09,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 3726.0,
+            "w": 1250.0,
+            "h": 37.0
+          },
+          "text": "Nazwa klubu sportowego siszzsiiszsaza sii reswka ski se SGA PS WAPE S EY YP PEEE Y GUG E ROW Y YY EEE EEE PA E SRA P EEE",
+          "blockIds": [
+            "p1-b31"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "pole w treści zdania – sprawdź tytuł"
+      ]
+    },
+    "c4dbfee4-70f4-5b8a-b79f-00d413cbaa1b": {
+      "id": "c4dbfee4-70f4-5b8a-b79f-00d413cbaa1b",
+      "techName": "eeveseeevososawowononenononwsoeoewawesewawa",
+      "title": "Eeveseeevososawowononenononwsoeoewawesewawa",
+      "type": "TEXT_FIELD",
+      "confidence": 0.07,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 3859.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eeveseeevososawowononenononwsoeoewawesewawa seee ee w ooo kawe es ae eee se w eee se es see seee ee see see o w o se n o w",
+          "blockIds": [
+            "p1-b33",
+            "p1-b34",
+            "p1-b35"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "78cac623-5e7d-5f0b-8664-064b6e042fec": {
+      "id": "78cac623-5e7d-5f0b-8664-064b6e042fec",
+      "techName": "ooo_kawe_es_ae_eee_se_w",
+      "title": "Ooo kawe es ae eee se w",
+      "type": "TEXT_FIELD",
+      "confidence": 0.05,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 3859.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eeveseeevososawowononenononwsoeoewawesewawa seee ee w ooo kawe es ae eee se w eee se es see seee ee see see o w o se n o w",
+          "blockIds": [
+            "p1-b33",
+            "p1-b34",
+            "p1-b35"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "pole w treści zdania – sprawdź tytuł"
+      ]
+    },
+    "c4c57bd6-9303-5ea8-a2c3-4cb1bbb90258": {
+      "id": "c4c57bd6-9303-5ea8-a2c3-4cb1bbb90258",
+      "techName": "n_inny_adres_korespondencyjny_szsizszszesrzseorssowisszwos_re_row_te_plgr_tene_g",
+      "title": "N inny'adres:korespondencyjny szsizszszesrzseorssowisszwoś RE ROW TE PLGR TENE GWA E WS YY",
+      "type": "TEXT_FIELD",
+      "confidence": 0.05,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 238.0,
+            "y": 4070.0,
+            "w": 1217.0,
+            "h": 37.0
+          },
+          "text": "n inny'adres:korespondencyjny szsizszszesrzseorssowisszwoś RE ROW TE PLGR TENE GWA E WS YY EEE RRA WS WYE YAS SRA K RE AWWA",
+          "blockIds": [
+            "p1-b39"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "pole w treści zdania – sprawdź tytuł"
+      ]
+    },
+    "51052a5f-41cc-5322-b418-606a6e87ffdb": {
+      "id": "51052a5f-41cc-5322-b418-606a6e87ffdb",
+      "techName": "twoje_dane",
+      "title": "Twoje dane",
+      "type": "SECTION",
+      "confidence": 0.44,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 200.0,
+            "y": 2668.0,
+            "w": 246.0,
+            "h": 26.0
+          },
+          "text": "1. Wnioskodawca",
+          "blockIds": [
+            "p1-b11"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "19547eba-ac94-53f6-be36-203c52f1cd93": {
+      "id": "19547eba-ac94-53f6-be36-203c52f1cd93",
+      "techName": "imie",
+      "title": "Imię",
+      "type": "TEXT_FIELD",
+      "confidence": 0.39,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 2987.0,
+            "w": 93.0,
+            "h": 28.0
+          },
+          "text": "Imię ",
+          "blockIds": [
+            "p1-b16",
+            "p1-b17"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (name)"
+      ]
+    },
+    "3ab24b35-5d82-595f-a30c-633f75b4a493": {
+      "id": "3ab24b35-5d82-595f-a30c-633f75b4a493",
+      "techName": "nazwisko",
+      "title": "Nazwisko",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 3066.0,
+            "w": 122.0,
+            "h": 23.0
+          },
+          "text": "Nazwisko",
+          "blockIds": [
+            "p1-b18"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (surname)"
+      ]
+    },
+    "d8783a5b-2d3b-5dd2-8a99-b2edda295657": {
+      "id": "d8783a5b-2d3b-5dd2-8a99-b2edda295657",
+      "techName": "seria_i_numer_dowodu_osobistego",
+      "title": "Seria i numer dowodu osobistego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.21,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 3404.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Seria i numer dowodu osobistego  eesereseeeoeeeroneseronweweeawase ee aneanowa see ok eee an es se oa es seee ee seee ea eee",
+          "blockIds": [
+            "p1-b21",
+            "p1-b22",
+            "p1-b23"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)"
+      ]
+    },
+    "83dec20b-f898-577d-a4a9-8ed17e495b3c": {
+      "id": "83dec20b-f898-577d-a4a9-8ed17e495b3c",
+      "techName": "adres_zamieszkania",
+      "title": "Adres zamieszkania",
+      "type": "SECTION",
+      "confidence": 0.16,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 200.0,
+            "y": 2668.0,
+            "w": 246.0,
+            "h": 26.0
+          },
+          "text": "1. Wnioskodawca",
+          "blockIds": [
+            "p1-b11"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "d3e49b2a-29fe-5ff8-b17e-bb38c8f75118": {
+      "id": "d3e49b2a-29fe-5ff8-b17e-bb38c8f75118",
+      "techName": "kraj",
+      "title": "Kraj",
+      "type": "SELECT",
+      "confidence": 0.08,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 3859.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eeveseeevososawowononenononwsoeoewawesewawa seee ee w ooo kawe es ae eee se w eee se es see seee ee see see o w o se n o w",
+          "blockIds": [
+            "p1-b33",
+            "p1-b34",
+            "p1-b35"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi",
+        "pole korzysta ze słownika „Kraje”"
+      ]
+    },
+    "79a9819a-d4a0-5bd1-bd1a-005c14434246": {
+      "id": "79a9819a-d4a0-5bd1-bd1a-005c14434246",
+      "techName": "miejscowosc_zagranica",
+      "title": "Miejscowość",
+      "type": "TEXT_FIELD",
+      "confidence": 0.05,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 3859.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eeveseeevososawowononenononwsoeoewawesewawa seee ee w ooo kawe es ae eee se w eee se es see seee ee see see o w o se n o w",
+          "blockIds": [
+            "p1-b33",
+            "p1-b34",
+            "p1-b35"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "d89eb100-4a2d-5833-b202-9390233e02d9": {
+      "id": "d89eb100-4a2d-5833-b202-9390233e02d9",
+      "techName": "kod_pocztowy_zagranica",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.05,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 3859.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eeveseeevososawowononenononwsoeoewawesewawa seee ee w ooo kawe es ae eee se w eee se es see seee ee see see o w o se n o w",
+          "blockIds": [
+            "p1-b33",
+            "p1-b34",
+            "p1-b35"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "8246c6f5-b60d-5667-8fe4-b27ee73cb570": {
+      "id": "8246c6f5-b60d-5667-8fe4-b27ee73cb570",
+      "techName": "ulica_zagranica",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.05,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 3859.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eeveseeevososawowononenononwsoeoewawesewawa seee ee w ooo kawe es ae eee se w eee se es see seee ee see see o w o se n o w",
+          "blockIds": [
+            "p1-b33",
+            "p1-b34",
+            "p1-b35"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "a1b743f0-61b1-532a-9047-1063b8c7e4a9": {
+      "id": "a1b743f0-61b1-532a-9047-1063b8c7e4a9",
+      "techName": "teryt_4g_dowodowy",
+      "title": "TERYT_4G_DOWODOWY",
+      "type": "SELECT",
+      "confidence": 0.9,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "415cdab2-060c-59b8-96fc-bf3fdc6ccd47": {
+      "id": "415cdab2-060c-59b8-96fc-bf3fdc6ccd47",
+      "techName": "kod_pocztowy",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.08,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 3859.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eeveseeevososawowononenononwsoeoewawesewawa seee ee w ooo kawe es ae eee se w eee se es see seee ee see see o w o se n o w",
+          "blockIds": [
+            "p1-b33",
+            "p1-b34",
+            "p1-b35"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (postCode)"
+      ]
+    },
+    "118a28a0-25b9-5912-a712-adfacbcc8d18": {
+      "id": "118a28a0-25b9-5912-a712-adfacbcc8d18",
+      "techName": "ulica",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.08,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 3859.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eeveseeevososawowononenononwsoeoewawesewawa seee ee w ooo kawe es ae eee se w eee se es see seee ee see see o w o se n o w",
+          "blockIds": [
+            "p1-b33",
+            "p1-b34",
+            "p1-b35"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (street)"
+      ]
+    },
+    "eab8b79f-599a-5b2e-bd43-7e65f95786f4": {
+      "id": "eab8b79f-599a-5b2e-bd43-7e65f95786f4",
+      "techName": "numer_budynku",
+      "title": "Numer budynku",
+      "type": "TEXT_FIELD",
+      "confidence": 0.08,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 3859.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eeveseeevososawowononenononwsoeoewawesewawa seee ee w ooo kawe es ae eee se w eee se es see seee ee see see o w o se n o w",
+          "blockIds": [
+            "p1-b33",
+            "p1-b34",
+            "p1-b35"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (building)"
+      ]
+    },
+    "2ffd39d5-e773-513d-bf0e-58af2ef17151": {
+      "id": "2ffd39d5-e773-513d-bf0e-58af2ef17151",
+      "techName": "numer_lokalu",
+      "title": "Numer lokalu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.08,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 3859.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eeveseeevososawowononenononwsoeoewawesewawa seee ee w ooo kawe es ae eee se w eee se es see seee ee see see o w o se n o w",
+          "blockIds": [
+            "p1-b33",
+            "p1-b34",
+            "p1-b35"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (apartment)"
+      ]
+    },
+    "95beef5a-d1cb-5122-affb-37f36709185b": {
+      "id": "95beef5a-d1cb-5122-affb-37f36709185b",
+      "techName": "zgoda_kandydata_pelnoletniego_do_stypendium",
+      "title": "Zgoda kandydata pełnoletniego do stypendium",
+      "type": "SECTION",
+      "confidence": 0.17,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 11954.0,
+            "w": 681.0,
+            "h": 29.0
+          },
+          "text": "5.1. Zgoda kandydata pełnoletniego do stypendium",
+          "blockIds": [
+            "p1-b101"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "958454cd-02e7-584b-82f0-76938bc5daf1": {
+      "id": "958454cd-02e7-584b-82f0-76938bc5daf1",
+      "techName": "imie_2",
+      "title": "Imię",
+      "type": "TEXT_FIELD",
+      "confidence": 0.17,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 12027.0,
+            "w": 1233.0,
+            "h": 37.0
+          },
+          "text": "Imię i nazwisko kandydata  eceerecesoresoeenesseeneewooaeonowanawo ses ow eee es es ee see ee eee sse ee o se se awa seee",
+          "blockIds": [
+            "p1-b102",
+            "p1-b103",
+            "p1-b104"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "ccbd1355-21a0-524b-9c0c-a5dd2b3cfcd8": {
+      "id": "ccbd1355-21a0-524b-9c0c-a5dd2b3cfcd8",
+      "techName": "nazwisko_2",
+      "title": "Nazwisko",
+      "type": "TEXT_FIELD",
+      "confidence": 0.17,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 12027.0,
+            "w": 1233.0,
+            "h": 37.0
+          },
+          "text": "Imię i nazwisko kandydata  eceerecesoresoeenesseeneewooaeonowanawo ses ow eee es es ee see ee eee sse ee o se se awa seee",
+          "blockIds": [
+            "p1-b102",
+            "p1-b103",
+            "p1-b104"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "ace63e4d-b817-51da-beab-2e92e7fbb2ec": {
+      "id": "ace63e4d-b817-51da-beab-2e92e7fbb2ec",
+      "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_stypendium",
+      "title": "Zgoda w imieniu kandydata nieletniego do stypendium",
+      "type": "SECTION",
+      "confidence": 0.13,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 12539.0,
+            "w": 784.0,
+            "h": 29.0
+          },
+          "text": "5.2. Zgoda w imieniu kandydata nieletniego do stypendium",
+          "blockIds": [
+            "p1-b111"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "86c1dbc9-6e7f-5ddb-babf-0c6afcbb4ed3": {
+      "id": "86c1dbc9-6e7f-5ddb-babf-0c6afcbb4ed3",
+      "techName": "imie_3",
+      "title": "Imię",
+      "type": "TEXT_FIELD",
+      "confidence": 0.13,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 12611.0,
+            "w": 1239.0,
+            "h": 37.0
+          },
+          "text": "Imię i nazwisko kandydata  eeeeceoeseeeeosoeneonowononowonanosseon es se eee e seee eee se asa ses oo waa see ses eee ee aa ke",
+          "blockIds": [
+            "p1-b112",
+            "p1-b113",
+            "p1-b114"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "9beb4a19-38e5-5d6f-a73d-90d58e1518ea": {
+      "id": "9beb4a19-38e5-5d6f-a73d-90d58e1518ea",
+      "techName": "nazwisko_3",
+      "title": "Nazwisko",
+      "type": "TEXT_FIELD",
+      "confidence": 0.13,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 12611.0,
+            "w": 1239.0,
+            "h": 37.0
+          },
+          "text": "Imię i nazwisko kandydata  eeeeceoeseeeeosoeneonowononowonanosseon es se eee e seee eee se asa ses oo waa see ses eee ee aa ke",
+          "blockIds": [
+            "p1-b112",
+            "p1-b113",
+            "p1-b114"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "af9d34c1-29c2-5d47-9610-87d11cd4f92b": {
+      "id": "af9d34c1-29c2-5d47-9610-87d11cd4f92b",
+      "techName": "wnioskodawca_2",
+      "title": "Wnioskodawca",
+      "type": "SECTION",
+      "confidence": 0.43,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 200.0,
+            "y": 14304.0,
+            "w": 246.0,
+            "h": 26.0
+          },
+          "text": "1. Wnioskodawca",
+          "blockIds": [
+            "p1-b126"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "d5c0ad27-f0f9-52bc-883b-d65ee3922256": {
+      "id": "d5c0ad27-f0f9-52bc-883b-d65ee3922256",
+      "techName": "text_block_2",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 14481.0,
+            "w": 1260.0,
+            "h": 1551.0
+          },
+          "text": "Należy wypełnić w przypadku Wnioskodawcy — Klubu sportowego. o Dane reprezentanta klubu sportowego z KRS lub innego właściwego rejestru Numer'telefonu:(opcjonalnie) ssirscycswyszwszeoczeriskobwykis swAi REKGEZEC ULW Y RTRUN PEEW W EEE PK RW EAY WTE AS SEETESZŁE KY RPEEAE o Dane pełnomocnika klubu sportowego Do wniosku należy dołączyć pełnomocnictwo potwierdzające uprawnienia do działania w imieniu klubu wraz z potwierdzeniem uiszczenia opłaty skarbowej (opłata skarbowa jest niezbędna w związku z",
+          "blockIds": [
+            "p1-b129",
+            "p1-b130",
+            "p1-b131",
+            "p1-b132",
+            "p1-b139",
+            "p1-b140",
+            "p1-b141",
+            "p1-b143",
+            "p1-b144",
+            "p1-b148",
+            "p1-b149",
+            "p1-b150",
+            "p1-b151",
+            "p1-b155",
+            "p1-b156",
+            "p1-b157"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "d48e5cd4-0e21-5c53-8a7a-771114116337": {
+      "id": "d48e5cd4-0e21-5c53-8a7a-771114116337",
+      "techName": "prezydent_miasta_zgierza",
+      "title": "Prezydent Miasta Zgierza",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 299.0,
+            "y": 14369.0,
+            "w": 332.0,
+            "h": 29.0
+          },
+          "text": "Prezydent Miasta Zgierza",
+          "blockIds": [
+            "p1-b127"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "a479ef30-fbba-51ce-af76-c1a2a7e5cce2": {
+      "id": "a479ef30-fbba-51ce-af76-c1a2a7e5cce2",
+      "techName": "klub_sportowy_2",
+      "title": "Klub sportowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 299.0,
+            "y": 14418.0,
+            "w": 191.0,
+            "h": 29.0
+          },
+          "text": "Klub sportowy",
+          "blockIds": [
+            "p1-b128"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "6559730e-ecfa-5615-97e5-a0cf3f1dd10a": {
+      "id": "6559730e-ecfa-5615-97e5-a0cf3f1dd10a",
+      "techName": "eesereseeesoneeronesenonnewe_ee_ee_wawane",
+      "title": "Eesereseeesoneeronesenonnewe ee ee wawane",
+      "type": "TEXT_FIELD",
+      "confidence": 0.17,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 14996.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Seria i numer dowodu osobistego  eesereseeesoneeronesenonnewe ee ee wawane eee eee see oa ee seee ewa ee ee ee an e enowa sn",
+          "blockIds": [
+            "p1-b133",
+            "p1-b134",
+            "p1-b135"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "e4465d13-62b3-56de-b09c-210a6a37d0d9": {
+      "id": "e4465d13-62b3-56de-b09c-210a6a37d0d9",
+      "techName": "ewa",
+      "title": "Ewa",
+      "type": "TEXT_FIELD",
+      "confidence": 0.17,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 14996.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Seria i numer dowodu osobistego  eesereseeesoneeronesenonnewe ee ee wawane eee eee see oa ee seee ewa ee ee ee an e enowa sn",
+          "blockIds": [
+            "p1-b133",
+            "p1-b134",
+            "p1-b135"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "3be57019-2a08-54d4-946f-d8d446645a76": {
+      "id": "3be57019-2a08-54d4-946f-d8d446645a76",
+      "techName": "dane_klubu_sportowego_2",
+      "title": "Dane klubu sportowego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 15301.0,
+            "w": 315.0,
+            "h": 30.0
+          },
+          "text": "Dane klubu sportowego",
+          "blockIds": [
+            "p1-b142"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "385f742d-25a6-5513-84d5-0c569fdee424": {
+      "id": "385f742d-25a6-5513-84d5-0c569fdee424",
+      "techName": "eevoveeavesonarowononenonoewseeaewawewewawa",
+      "title": "Eevoveeavesonarowononenonoewseeaewawewewawa",
+      "type": "TEXT_FIELD",
+      "confidence": 0.08,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 15490.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eevoveeavesonarowononenonoewseeaewawewewawa seee ee w awe ee k awe es ee eee seee ee se ne se eee so ee ee see o e o w o se o w",
+          "blockIds": [
+            "p1-b145",
+            "p1-b146",
+            "p1-b147"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "273333a4-64a9-5733-a479-c73cac7be6ed": {
+      "id": "273333a4-64a9-5733-a479-c73cac7be6ed",
+      "techName": "awe_ee_k_awe",
+      "title": "Awe ee k awe",
+      "type": "TEXT_FIELD",
+      "confidence": 0.08,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 15490.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eevoveeavesonarowononenonoewseeaewawewewawa seee ee w awe ee k awe es ee eee seee ee se ne se eee so ee ee see o e o w o se o w",
+          "blockIds": [
+            "p1-b145",
+            "p1-b146",
+            "p1-b147"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "8d396d4d-d6e2-5518-895c-24a96da36874": {
+      "id": "8d396d4d-d6e2-5518-895c-24a96da36874",
+      "techName": "twoje_dane_2",
+      "title": "Twoje dane",
+      "type": "SECTION",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 200.0,
+            "y": 14304.0,
+            "w": 246.0,
+            "h": 26.0
+          },
+          "text": "1. Wnioskodawca",
+          "blockIds": [
+            "p1-b126"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "61b07844-eb5f-5dfd-96eb-3450d7a28470": {
+      "id": "61b07844-eb5f-5dfd-96eb-3450d7a28470",
+      "techName": "seria_i_numer_dowodu_osobistego_2",
+      "title": "Seria i numer dowodu osobistego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 14996.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Seria i numer dowodu osobistego  eesereseeesoneeronesenonnewe ee ee wawane eee eee see oa ee seee ewa ee ee ee an e enowa sn",
+          "blockIds": [
+            "p1-b133",
+            "p1-b134",
+            "p1-b135"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)"
+      ]
+    },
+    "b24bc2aa-963c-5199-b2b4-050e0ab33fd9": {
+      "id": "b24bc2aa-963c-5199-b2b4-050e0ab33fd9",
+      "techName": "adres_zamieszkania_2",
+      "title": "Adres zamieszkania",
+      "type": "SECTION",
+      "confidence": 0.17,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 200.0,
+            "y": 14304.0,
+            "w": 246.0,
+            "h": 26.0
+          },
+          "text": "1. Wnioskodawca",
+          "blockIds": [
+            "p1-b126"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "23942126-0077-5150-bf44-c7e67cb6c98d": {
+      "id": "23942126-0077-5150-bf44-c7e67cb6c98d",
+      "techName": "kraj_2",
+      "title": "Kraj",
+      "type": "SELECT",
+      "confidence": 0.09,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 15490.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eevoveeavesonarowononenonoewseeaewawewewawa seee ee w awe ee k awe es ee eee seee ee se ne se eee so ee ee see o e o w o se o w",
+          "blockIds": [
+            "p1-b145",
+            "p1-b146",
+            "p1-b147"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi",
+        "pole korzysta ze słownika „Kraje”"
+      ]
+    },
+    "0b47d935-0d95-5e13-94d7-21a88a0c3965": {
+      "id": "0b47d935-0d95-5e13-94d7-21a88a0c3965",
+      "techName": "miejscowosc_zagranica_2",
+      "title": "Miejscowość",
+      "type": "TEXT_FIELD",
+      "confidence": 0.06,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 15490.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eevoveeavesonarowononenonoewseeaewawewewawa seee ee w awe ee k awe es ee eee seee ee se ne se eee so ee ee see o e o w o se o w",
+          "blockIds": [
+            "p1-b145",
+            "p1-b146",
+            "p1-b147"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "94ab6b1a-be35-5019-bc32-a9225ebdcd19": {
+      "id": "94ab6b1a-be35-5019-bc32-a9225ebdcd19",
+      "techName": "kod_pocztowy_zagranica_2",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.06,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 15490.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eevoveeavesonarowononenonoewseeaewawewewawa seee ee w awe ee k awe es ee eee seee ee se ne se eee so ee ee see o e o w o se o w",
+          "blockIds": [
+            "p1-b145",
+            "p1-b146",
+            "p1-b147"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "519c3ab5-c70e-5c00-a5e2-1487be81fd2d": {
+      "id": "519c3ab5-c70e-5c00-a5e2-1487be81fd2d",
+      "techName": "ulica_zagranica_2",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.06,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 15490.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eevoveeavesonarowononenonoewseeaewawewewawa seee ee w awe ee k awe es ee eee seee ee se ne se eee so ee ee see o e o w o se o w",
+          "blockIds": [
+            "p1-b145",
+            "p1-b146",
+            "p1-b147"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "a033078f-85c0-535b-bdfc-ed7a192eddd4": {
+      "id": "a033078f-85c0-535b-bdfc-ed7a192eddd4",
+      "techName": "teryt_4g_dowodowy_2",
+      "title": "TERYT_4G_DOWODOWY",
+      "type": "SELECT",
+      "confidence": 0.9,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "74ccfb26-a26d-5ae5-b8f2-4f150bce6ae4": {
+      "id": "74ccfb26-a26d-5ae5-b8f2-4f150bce6ae4",
+      "techName": "kod_pocztowy_2",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.09,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 15490.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eevoveeavesonarowononenonoewseeaewawewewawa seee ee w awe ee k awe es ee eee seee ee se ne se eee so ee ee see o e o w o se o w",
+          "blockIds": [
+            "p1-b145",
+            "p1-b146",
+            "p1-b147"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "e4b27357-2313-5a97-a6d3-11a147187ed0": {
+      "id": "e4b27357-2313-5a97-a6d3-11a147187ed0",
+      "techName": "ulica_2",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.09,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 15490.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eevoveeavesonarowononenonoewseeaewawewewawa seee ee w awe ee k awe es ee eee seee ee se ne se eee so ee ee see o e o w o se o w",
+          "blockIds": [
+            "p1-b145",
+            "p1-b146",
+            "p1-b147"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "4e234228-1a00-5d69-9417-eedf63589e90": {
+      "id": "4e234228-1a00-5d69-9417-eedf63589e90",
+      "techName": "numer_budynku_2",
+      "title": "Numer budynku",
+      "type": "TEXT_FIELD",
+      "confidence": 0.09,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 15490.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eevoveeavesonarowononenonoewseeaewawewewawa seee ee w awe ee k awe es ee eee seee ee se ne se eee so ee ee see o e o w o se o w",
+          "blockIds": [
+            "p1-b145",
+            "p1-b146",
+            "p1-b147"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "5125d9ec-8d53-5100-983f-24ad9fcd7c11": {
+      "id": "5125d9ec-8d53-5100-983f-24ad9fcd7c11",
+      "techName": "numer_lokalu_2",
+      "title": "Numer lokalu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.09,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 15490.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Adres siedziby  eevoveeavesonarowononenonoewseeaewawewewawa seee ee w awe ee k awe es ee eee seee ee se ne se eee so ee ee see o e o w o se o w",
+          "blockIds": [
+            "p1-b145",
+            "p1-b146",
+            "p1-b147"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "f2aec0bb-d987-53d3-b93d-552a84e49069": {
+      "id": "f2aec0bb-d987-53d3-b93d-552a84e49069",
+      "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_nagrody",
+      "title": "Zgoda w imieniu kandydata nieletniego do nagrody",
+      "type": "SECTION",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 21814.0,
+            "w": 738.0,
+            "h": 30.0
+          },
+          "text": "5.2. Zgoda w imieniu kandydata nieletniego do nagrody",
+          "blockIds": [
+            "p1-b192"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "1bd53320-0b56-5d51-a866-f6526bd9e12c": {
+      "id": "1bd53320-0b56-5d51-a866-f6526bd9e12c",
+      "techName": "imie_4",
+      "title": "Imię",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 21875.0,
+            "w": 347.0,
+            "h": 29.0
+          },
+          "text": "Imię i nazwisko kandydata",
+          "blockIds": [
+            "p1-b193"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "0913893e-6dc4-5ad4-8826-a5774fcac7b5": {
+      "id": "0913893e-6dc4-5ad4-8826-a5774fcac7b5",
+      "techName": "nazwisko_4",
+      "title": "Nazwisko",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 21875.0,
+            "w": 347.0,
+            "h": 29.0
+          },
+          "text": "Imię i nazwisko kandydata",
+          "blockIds": [
+            "p1-b193"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "150e8afb-84fd-52d5-b3c2-d834333a9cf6": {
+      "id": "150e8afb-84fd-52d5-b3c2-d834333a9cf6",
+      "techName": "wnioskodawca_3",
+      "title": "Wnioskodawca",
+      "type": "SECTION",
+      "confidence": 0.39,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 200.0,
+            "y": 23719.0,
+            "w": 246.0,
+            "h": 26.0
+          },
+          "text": "1. Wnioskodawca",
+          "blockIds": [
+            "p1-b203"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "0fac5a9f-afd7-5d68-838a-9e6c5c30e237": {
+      "id": "0fac5a9f-afd7-5d68-838a-9e6c5c30e237",
+      "techName": "text_block_3",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 23896.0,
+            "w": 1260.0,
+            "h": 1523.0
+          },
+          "text": "Należy wypełnić w przypadku Wnioskodawcy — Klubu sportowego. o Dane reprezentanta klubu sportowego z KRS lub innego właściwego rejestru Numertelefonu:(opcjonalnie)wszwczisszrzsewejcaeweci OW YAGE CW SY RN SE EEE R o Dane pełnomocnika klubu sportowego Do wniosku należy dołączyć pełnomocnictwo potwierdzające uprawnienia do działania w imieniu klubu wraz z potwierdzeniem uiszczenia opłaty skarbowej (opłata skarbowa jest niezbędna w związku z udzielonym pełnomocnictwem). Nazwa klubu sportoWego szszi",
+          "blockIds": [
+            "p1-b206",
+            "p1-b207",
+            "p1-b208",
+            "p1-b209",
+            "p1-b216",
+            "p1-b217",
+            "p1-b218",
+            "p1-b220",
+            "p1-b222",
+            "p1-b223",
+            "p1-b224",
+            "p1-b225",
+            "p1-b226",
+            "p1-b233",
+            "p1-b234",
+            "p1-b235"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "c7fab2ab-1154-53b6-9cd3-00980c5f9bb9": {
+      "id": "c7fab2ab-1154-53b6-9cd3-00980c5f9bb9",
+      "techName": "prezydent_miasta_zgierza_2",
+      "title": "Prezydent Miasta Zgierza",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 299.0,
+            "y": 23784.0,
+            "w": 332.0,
+            "h": 29.0
+          },
+          "text": "Prezydent Miasta Zgierza",
+          "blockIds": [
+            "p1-b204"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "14b36573-550f-5edd-901e-d258abeabe1d": {
+      "id": "14b36573-550f-5edd-901e-d258abeabe1d",
+      "techName": "klub_sportowy_3",
+      "title": "Klub sportowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 299.0,
+            "y": 23833.0,
+            "w": 191.0,
+            "h": 29.0
+          },
+          "text": "Klub sportowy",
+          "blockIds": [
+            "p1-b205"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "46e20221-c8e5-531b-9734-d49362c8ba8f": {
+      "id": "46e20221-c8e5-531b-9734-d49362c8ba8f",
+      "techName": "eesereseseroeseroneeer_ee_owe",
+      "title": "Eesereseseroeseroneeer ee owe",
+      "type": "TEXT_FIELD",
+      "confidence": 0.16,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 24394.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Seria i numer dowodu osobistego  eesereseseroeseroneeer ee owe es ee ee anawawow eee ok eee ak ee se oa ee se eee seee ee aanane",
+          "blockIds": [
+            "p1-b210",
+            "p1-b211",
+            "p1-b212"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "cdebc9ca-4972-5b8d-9e38-f0e01da845b5": {
+      "id": "cdebc9ca-4972-5b8d-9e38-f0e01da845b5",
+      "techName": "anawawow_eee_ok_eee_ak",
+      "title": "Anawawow eee ok eee ak",
+      "type": "TEXT_FIELD",
+      "confidence": 0.11,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 24394.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Seria i numer dowodu osobistego  eesereseseroeseroneeer ee owe es ee ee anawawow eee ok eee ak ee se oa ee se eee seee ee aanane",
+          "blockIds": [
+            "p1-b210",
+            "p1-b211",
+            "p1-b212"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "pole w treści zdania – sprawdź tytuł"
+      ]
+    },
+    "e6de9133-4aac-5df4-be17-7e57cac4d9f3": {
+      "id": "e6de9133-4aac-5df4-be17-7e57cac4d9f3",
+      "techName": "dane_klubu_sportowego_3",
+      "title": "Dane klubu sportowego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 24671.0,
+            "w": 315.0,
+            "h": 30.0
+          },
+          "text": "Dane klubu sportowego",
+          "blockIds": [
+            "p1-b219"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "70bb1d16-2272-5632-9222-66fa4d1e3566": {
+      "id": "70bb1d16-2272-5632-9222-66fa4d1e3566",
+      "techName": "telefon_kontaktowy_opcjonalnie_szszeszsszsrzsowrcskiaenoissa_yz_wik",
+      "title": "Telefon kontaktowy(opcjonalnie) szszeszsszsrzsowrcskiaenoiśsa YZ WIK",
+      "type": "TEXT_FIELD",
+      "confidence": 0.07,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 24791.0,
+            "w": 1258.0,
+            "h": 37.0
+          },
+          "text": "Telefon kontaktowy(opcjonalnie) szszeszsszsrzsowrcskiaenoiśsa YZ WIK RE EEE EEE OD SRL PR SRB",
+          "blockIds": [
+            "p1-b221"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "pole w treści zdania – sprawdź tytuł",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (phoneNumber)"
+      ]
+    },
+    "4e726795-2c07-59de-9242-2fcfe8bfbe92": {
+      "id": "4e726795-2c07-59de-9242-2fcfe8bfbe92",
+      "techName": "eeeeeeeeereeneneneewenoenone_ee_weneenewek",
+      "title": "Eeeeeeeeereeneneneewenoenone ee weneenewek",
+      "type": "TEXT_FIELD",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 257.0,
+            "y": 25178.0,
+            "w": 1193.0,
+            "h": 38.0
+          },
+          "text": "Skrzynka ePUAP - adres skrzynki:  eeeeeeeeereeneneneewenoenone ee weneenewek ee een eee eee wen ee onenee ee ene ne nene",
+          "blockIds": [
+            "p1-b227",
+            "p1-b228",
+            "p1-b229"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "5769e08c-fdf1-5770-bdcd-74d23d877deb": {
+      "id": "5769e08c-fdf1-5770-bdcd-74d23d877deb",
+      "techName": "wen",
+      "title": "Wen",
+      "type": "TEXT_FIELD",
+      "confidence": 0.2,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 257.0,
+            "y": 25178.0,
+            "w": 1193.0,
+            "h": 38.0
+          },
+          "text": "Skrzynka ePUAP - adres skrzynki:  eeeeeeeeereeneneneewenoenone ee weneenewek ee een eee eee wen ee onenee ee ene ne nene",
+          "blockIds": [
+            "p1-b227",
+            "p1-b228",
+            "p1-b229"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "c0ea870a-ba8c-51d0-8dea-ca16b2042a71": {
+      "id": "c0ea870a-ba8c-51d0-8dea-ca16b2042a71",
+      "techName": "eeveveeveenreneereenenwenenereeneneaweweseenene",
+      "title": "Eeveveeveenreneereenenwenenereeneneaweweseenene",
+      "type": "TEXT_FIELD",
+      "confidence": 0.17,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 257.0,
+            "y": 25226.0,
+            "w": 1200.0,
+            "h": 38.0
+          },
+          "text": "eDoręczenia - adres skrzynki:  eeveveeveenreneereenenwenenereeneneaweweseenene ee ee n ee eee ee ee en ee ne eee eee",
+          "blockIds": [
+            "p1-b230",
+            "p1-b231",
+            "p1-b232"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "7fa7ddf9-ecba-5d76-900f-a2e8564897ae": {
+      "id": "7fa7ddf9-ecba-5d76-900f-a2e8564897ae",
+      "techName": "twoje_dane_3",
+      "title": "Twoje dane",
+      "type": "SECTION",
+      "confidence": 0.18,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 200.0,
+            "y": 23719.0,
+            "w": 246.0,
+            "h": 26.0
+          },
+          "text": "1. Wnioskodawca",
+          "blockIds": [
+            "p1-b203"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "8a816719-ec6c-5ca6-8266-282ceb719e5f": {
+      "id": "8a816719-ec6c-5ca6-8266-282ceb719e5f",
+      "techName": "seria_i_numer_dowodu_osobistego_3",
+      "title": "Seria i numer dowodu osobistego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.18,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 24394.0,
+            "w": 1261.0,
+            "h": 37.0
+          },
+          "text": "Seria i numer dowodu osobistego  eesereseseroeseroneeer ee owe es ee ee anawawow eee ok eee ak ee se oa ee se eee seee ee aanane",
+          "blockIds": [
+            "p1-b210",
+            "p1-b211",
+            "p1-b212"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)"
+      ]
+    },
+    "e10f5b20-d86d-53c4-a97d-9c2047abb362": {
+      "id": "e10f5b20-d86d-53c4-a97d-9c2047abb362",
+      "techName": "twoje_dane_4",
+      "title": "Twoje dane",
+      "type": "SECTION",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 28478.0,
+            "w": 546.0,
+            "h": 29.0
+          },
+          "text": "1. Dane osobowe podopiecznego trenera",
+          "blockIds": [
+            "p1-b248"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "0350bfb8-e0b6-5549-9f0e-6e9a52b60ba2": {
+      "id": "0350bfb8-e0b6-5549-9f0e-6e9a52b60ba2",
+      "techName": "imie_5",
+      "title": "Imię",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 28521.0,
+            "w": 525.0,
+            "h": 30.0
+          },
+          "text": "Imię i nazwisko zawodniczki/zawodnika",
+          "blockIds": [
+            "p1-b249"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "5cb039fb-6b3a-5dfe-8a1b-768fb163d733": {
+      "id": "5cb039fb-6b3a-5dfe-8a1b-768fb163d733",
+      "techName": "nazwisko_5",
+      "title": "Nazwisko",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 28521.0,
+            "w": 525.0,
+            "h": 30.0
+          },
+          "text": "Imię i nazwisko zawodniczki/zawodnika",
+          "blockIds": [
+            "p1-b249"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "9d404833-edfd-512f-8157-7ebe34206cfc": {
+      "id": "9d404833-edfd-512f-8157-7ebe34206cfc",
+      "techName": "dane_osobowe_podopiecznego_trenera",
+      "title": "Dane osobowe podopiecznego trenera",
+      "type": "SECTION",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 28478.0,
+            "w": 546.0,
+            "h": 29.0
+          },
+          "text": "1. Dane osobowe podopiecznego trenera",
+          "blockIds": [
+            "p1-b248"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "1d29d35d-0c20-58cb-bd2e-da4b739f973d": {
+      "id": "1d29d35d-0c20-58cb-bd2e-da4b739f973d",
+      "techName": "osiagniecia_sportowe_podopiecznego",
+      "title": "Osiągnięcia sportowe podopiecznego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 28660.0,
+            "w": 496.0,
+            "h": 29.0
+          },
+          "text": "Osiągnięcia sportowe podopiecznego",
+          "blockIds": [
+            "p1-b250"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "12de914a-8f0e-56ba-9a9b-cef8f538a8c6": {
+      "id": "12de914a-8f0e-56ba-9a9b-cef8f538a8c6",
+      "techName": "twoje_dane_5",
+      "title": "Twoje dane",
+      "type": "SECTION",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 29018.0,
+            "w": 547.0,
+            "h": 30.0
+          },
+          "text": "2. Dane osobowe podopiecznego trenera",
+          "blockIds": [
+            "p1-b251"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "1edf7975-c8f1-5c1c-8edb-d7d601e96203": {
+      "id": "1edf7975-c8f1-5c1c-8edb-d7d601e96203",
+      "techName": "imie_6",
+      "title": "Imię",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 29061.0,
+            "w": 525.0,
+            "h": 30.0
+          },
+          "text": "Imię i nazwisko zawodniczki/zawodnika",
+          "blockIds": [
+            "p1-b252"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "1ee612cd-6f66-50e3-8567-395647a03d26": {
+      "id": "1ee612cd-6f66-50e3-8567-395647a03d26",
+      "techName": "nazwisko_6",
+      "title": "Nazwisko",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 29061.0,
+            "w": 525.0,
+            "h": 30.0
+          },
+          "text": "Imię i nazwisko zawodniczki/zawodnika",
+          "blockIds": [
+            "p1-b252"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "b099a940-c04d-5227-86f9-6e58d59febca": {
+      "id": "b099a940-c04d-5227-86f9-6e58d59febca",
+      "techName": "dane_osobowe_podopiecznego_trenera_2",
+      "title": "Dane osobowe podopiecznego trenera",
+      "type": "SECTION",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 29018.0,
+            "w": 547.0,
+            "h": 30.0
+          },
+          "text": "2. Dane osobowe podopiecznego trenera",
+          "blockIds": [
+            "p1-b251"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "68a36fa8-3983-5b29-9ad2-06fa5834e1a4": {
+      "id": "68a36fa8-3983-5b29-9ad2-06fa5834e1a4",
+      "techName": "osiagniecia_sportowe_podopiecznego_2",
+      "title": "Osiągnięcia sportowe podopiecznego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 29200.0,
+            "w": 496.0,
+            "h": 30.0
+          },
+          "text": "Osiągnięcia sportowe podopiecznego",
+          "blockIds": [
+            "p1-b253"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "5efd01e3-fc60-5e17-857d-9a7b3d09a384": {
+      "id": "5efd01e3-fc60-5e17-857d-9a7b3d09a384",
+      "techName": "twoje_dane_6",
+      "title": "Twoje dane",
+      "type": "SECTION",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 29558.0,
+            "w": 547.0,
+            "h": 30.0
+          },
+          "text": "3. Dane osobowe podopiecznego trenera",
+          "blockIds": [
+            "p1-b254"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "90319c75-5e06-5e48-9796-4a611c5928dd": {
+      "id": "90319c75-5e06-5e48-9796-4a611c5928dd",
+      "techName": "imie_7",
+      "title": "Imię",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 29601.0,
+            "w": 525.0,
+            "h": 30.0
+          },
+          "text": "Imię i nazwisko zawodniczki/zawodnika",
+          "blockIds": [
+            "p1-b255"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "960aaf0c-ae8f-5691-9c06-c09ef73be7bd": {
+      "id": "960aaf0c-ae8f-5691-9c06-c09ef73be7bd",
+      "techName": "nazwisko_7",
+      "title": "Nazwisko",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 29601.0,
+            "w": 525.0,
+            "h": 30.0
+          },
+          "text": "Imię i nazwisko zawodniczki/zawodnika",
+          "blockIds": [
+            "p1-b255"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "95271dab-8c18-5b7a-bbab-03aa34332161": {
+      "id": "95271dab-8c18-5b7a-bbab-03aa34332161",
+      "techName": "dane_osobowe_podopiecznego_trenera_3",
+      "title": "Dane osobowe podopiecznego trenera",
+      "type": "SECTION",
+      "confidence": 0.76,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 29558.0,
+            "w": 547.0,
+            "h": 30.0
+          },
+          "text": "3. Dane osobowe podopiecznego trenera",
+          "blockIds": [
+            "p1-b254"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "c43bd2b9-cc5f-57f0-8459-ca3cd1bfa7f5": {
+      "id": "c43bd2b9-cc5f-57f0-8459-ca3cd1bfa7f5",
+      "techName": "text_block_4",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 29784.0,
+            "w": 1216.0,
+            "h": 69.0
+          },
+          "text": "Osiągnięcia sportowe podopiecznego kandydata, które będą brane pod uwagę przy ocenie wniosku",
+          "blockIds": [
+            "p1-b257",
+            "p1-b258"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "61ff9df8-6724-5139-9383-a412c143edbe": {
+      "id": "61ff9df8-6724-5139-9383-a412c143edbe",
+      "techName": "osiagniecia_sportowe_podopiecznego_3",
+      "title": "Osiągnięcia sportowe podopiecznego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 29740.0,
+            "w": 496.0,
+            "h": 30.0
+          },
+          "text": "Osiągnięcia sportowe podopiecznego",
+          "blockIds": [
+            "p1-b256"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "5c4dd472-c040-526b-8034-42eb5354a8ad": {
+      "id": "5c4dd472-c040-526b-8034-42eb5354a8ad",
+      "techName": "twoje_dane_7",
+      "title": "Twoje dane",
+      "type": "SECTION",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 30612.0,
+            "w": 548.0,
+            "h": 30.0
+          },
+          "text": "4. Dane osobowe podopiecznego trenera",
+          "blockIds": [
+            "p1-b259"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "58f7c1c6-9e91-54c1-b701-9c2875e8f117": {
+      "id": "58f7c1c6-9e91-54c1-b701-9c2875e8f117",
+      "techName": "imie_8",
+      "title": "Imię",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 30655.0,
+            "w": 525.0,
+            "h": 30.0
+          },
+          "text": "Imię i nazwisko zawodniczki/zawodnika",
+          "blockIds": [
+            "p1-b260"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "a05ae993-6c62-5147-9177-ef40a61fe782": {
+      "id": "a05ae993-6c62-5147-9177-ef40a61fe782",
+      "techName": "nazwisko_8",
+      "title": "Nazwisko",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 30655.0,
+            "w": 525.0,
+            "h": 30.0
+          },
+          "text": "Imię i nazwisko zawodniczki/zawodnika",
+          "blockIds": [
+            "p1-b260"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "0f078103-6bdb-55bd-9465-6b425ca7c5fd": {
+      "id": "0f078103-6bdb-55bd-9465-6b425ca7c5fd",
+      "techName": "dane_osobowe_podopiecznego_trenera_4",
+      "title": "Dane osobowe podopiecznego trenera",
+      "type": "SECTION",
+      "confidence": 0.74,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 30612.0,
+            "w": 548.0,
+            "h": 30.0
+          },
+          "text": "4. Dane osobowe podopiecznego trenera",
+          "blockIds": [
+            "p1-b259"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "ada3d0cf-f25c-554c-be8a-936db1869408": {
+      "id": "ada3d0cf-f25c-554c-be8a-936db1869408",
+      "techName": "text_block_5",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 30838.0,
+            "w": 1229.0,
+            "h": 707.0
+          },
+          "text": "Osiągnięcia sportowe podopiecznego kandydata, które będą brane pod uwagę przy ocenie wniosku Do wniosku należy załączyć zaświadczenia wydane przez Polski Związek Sportowy odpowiedni dla danej dyscypliny sportowej lub inne oficjalne dokumenty (np. komunikaty z zawodów), które potwierdzają osiągnięcia sportowe zawodniczek/zawodników. Data sporządzenia wniosku Podpis i pieczątka wnioskodawcy",
+          "blockIds": [
+            "p1-b262",
+            "p1-b263",
+            "p1-b265",
+            "p1-b266",
+            "p1-b267",
+            "p1-b268"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "a76b246b-5bff-5a8e-88aa-75e0c884e3f7": {
+      "id": "a76b246b-5bff-5a8e-88aa-75e0c884e3f7",
+      "techName": "osiagniecia_sportowe_podopiecznego_4",
+      "title": "Osiągnięcia sportowe podopiecznego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 30794.0,
+            "w": 496.0,
+            "h": 30.0
+          },
+          "text": "Osiągnięcia sportowe podopiecznego",
+          "blockIds": [
+            "p1-b261"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "28068881-b672-50aa-b163-b2064305ad83": {
+      "id": "28068881-b672-50aa-b163-b2064305ad83",
+      "techName": "wymagane_zaswiadczenia_wymienionych_podopiecznych_trenera",
+      "title": "Wymagane zaświadczenia wymienionych podopiecznych trenera",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 31218.0,
+            "w": 858.0,
+            "h": 30.0
+          },
+          "text": "Wymagane zaświadczenia wymienionych podopiecznych trenera",
+          "blockIds": [
+            "p1-b264"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "89bd550d-7664-5f72-a1e7-846c0e59de6b": {
+      "id": "89bd550d-7664-5f72-a1e7-846c0e59de6b",
+      "techName": "zgoda_kandydata_do_wyroznienia",
+      "title": "Zgoda kandydata do wyróżnienia",
+      "type": "SECTION",
+      "confidence": 0.16,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 33035.0,
+            "w": 491.0,
+            "h": 30.0
+          },
+          "text": "5.1. Zgoda kandydata do wyróżnienia",
+          "blockIds": [
+            "p1-b278"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "3bd50056-37bc-589e-bbcf-6713c3155ae5": {
+      "id": "3bd50056-37bc-589e-bbcf-6713c3155ae5",
+      "techName": "imie_9",
+      "title": "Imię",
+      "type": "TEXT_FIELD",
+      "confidence": 0.16,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 33092.0,
+            "w": 1233.0,
+            "h": 37.0
+          },
+          "text": "Imię i nazwisko kandydata  eceovesocoresoeonesseeneewooawanowasanowesawo see es es aeae e oe see ee ee w eee see so wa oo",
+          "blockIds": [
+            "p1-b279",
+            "p1-b280",
+            "p1-b281"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "fa0aea07-ed8d-5925-9bc1-a2e87fd43539": {
+      "id": "fa0aea07-ed8d-5925-9bc1-a2e87fd43539",
+      "techName": "nazwisko_9",
+      "title": "Nazwisko",
+      "type": "TEXT_FIELD",
+      "confidence": 0.16,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 33092.0,
+            "w": 1233.0,
+            "h": 37.0
+          },
+          "text": "Imię i nazwisko kandydata  eceovesocoresoeonesseeneewooawanowasanowesawo see es es aeae e oe see ee ee w eee see so wa oo",
+          "blockIds": [
+            "p1-b279",
+            "p1-b280",
+            "p1-b281"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "7736259a-f12c-5133-b5af-704116b55072": {
+      "id": "7736259a-f12c-5133-b5af-704116b55072",
+      "techName": "dane_wniosku",
+      "title": "Dane wniosku",
+      "type": "SECTION",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "grupa pól"
+      ]
+    },
+    "0a2b0015-de42-59e8-b01f-73402577871e": {
+      "id": "0a2b0015-de42-59e8-b01f-73402577871e",
+      "techName": "text_block_6",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 985.0,
+            "y": 346.0,
+            "w": 347.0,
+            "h": 29.0
+          },
+          "text": "z dnia 26 listopada 2024 r.",
+          "blockIds": [
+            "p1-b4"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "af2a978f-1967-5238-bf48-70641b214378": {
+      "id": "af2a978f-1967-5238-bf48-70641b214378",
+      "techName": "zalacznik_nr_3_do_zarzadzenia",
+      "title": "Załącznik Nr 3 do zarządzenia",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 984.0,
+            "y": 205.0,
+            "w": 393.0,
+            "h": 29.0
+          },
+          "text": "Załącznik Nr 3 do zarządzenia",
+          "blockIds": [
+            "p1-b1"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "fe4b9f36-f531-5a1a-948f-14ddf3094649": {
+      "id": "fe4b9f36-f531-5a1a-948f-14ddf3094649",
+      "techName": "nr_245",
+      "title": "Nr 245",
+      "type": "TEXT_FIELD",
+      "confidence": 0.46,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 986.0,
+            "y": 251.0,
+            "w": 207.0,
+            "h": 29.0
+          },
+          "text": "Nr 245/IX/2024",
+          "blockIds": [
+            "p1-b2"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "2c65512d-dcd5-5af9-99c7-29a163adebd9": {
+      "id": "2c65512d-dcd5-5af9-99c7-29a163adebd9",
+      "techName": "ix",
+      "title": "Ix",
+      "type": "TEXT_FIELD",
+      "confidence": 0.46,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 986.0,
+            "y": 251.0,
+            "w": 207.0,
+            "h": 29.0
+          },
+          "text": "Nr 245/IX/2024",
+          "blockIds": [
+            "p1-b2"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "65c38b11-ce96-5142-9478-c80a49d824ea": {
+      "id": "65c38b11-ce96-5142-9478-c80a49d824ea",
+      "techName": "text_field_2024",
+      "title": "2024",
+      "type": "TEXT_FIELD",
+      "confidence": 0.46,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 986.0,
+            "y": 251.0,
+            "w": 207.0,
+            "h": 29.0
+          },
+          "text": "Nr 245/IX/2024",
+          "blockIds": [
+            "p1-b2"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "06c916a6-316f-54e2-93dc-4c1e42b566b1": {
+      "id": "06c916a6-316f-54e2-93dc-4c1e42b566b1",
+      "techName": "prezydenta_miasta_zgierza",
+      "title": "Prezydenta Miasta Zgierza",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 986.0,
+            "y": 299.0,
+            "w": 348.0,
+            "h": 29.0
+          },
+          "text": "Prezydenta Miasta Zgierza",
+          "blockIds": [
+            "p1-b3"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "ca265cdc-c1a5-57ca-a84a-f0d0d5fbac89": {
+      "id": "ca265cdc-c1a5-57ca-a84a-f0d0d5fbac89",
+      "techName": "rodzaje_wnioskow",
+      "title": "Rodzaje wniosków",
+      "type": "SECTION",
+      "confidence": 0.76,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 200.0,
+            "y": 461.0,
+            "w": 289.0,
+            "h": 35.0
+          },
+          "text": "Rodzaje wniosków:",
+          "blockIds": [
+            "p1-b5"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "b5a29580-eb76-5f31-9aa8-3cfb82925d5d": {
+      "id": "b5a29580-eb76-5f31-9aa8-3cfb82925d5d",
+      "techName": "text_block_7",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 216.0,
+            "y": 506.0,
+            "w": 1135.0,
+            "h": 2081.0
+          },
+          "text": "I. — Wniosek o przyznanie stypendium sportowego Rady Miasta Zgierza II. — Wniosek o przyznanie nagrody sportowej Rady Miasta Zgierza II. Wniosek o przyznanie wyróżnienia sportowego Rady Miasta Zgierza I. Wniosek o przyznanie stypendium sportowego Rady Miasta",
+          "blockIds": [
+            "p1-b6",
+            "p1-b7",
+            "p1-b8",
+            "p1-b9"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "fd7c96b8-68f2-5a74-a920-c54082d515cf": {
+      "id": "fd7c96b8-68f2-5a74-a920-c54082d515cf",
+      "techName": "zgierza",
+      "title": "Zgierza",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 297.0,
+            "y": 2608.0,
+            "w": 123.0,
+            "h": 37.0
+          },
+          "text": "Zgierza",
+          "blockIds": [
+            "p1-b10"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "098c7ab7-4cf3-52c8-8379-a85989500944": {
+      "id": "098c7ab7-4cf3-52c8-8379-a85989500944",
+      "techName": "dane_kandydatki_kandydata_do_stypendium",
+      "title": "Dane kandydatki/kandydata do stypendium",
+      "type": "SECTION",
+      "confidence": 0.69,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 4930.0,
+            "w": 593.0,
+            "h": 30.0
+          },
+          "text": "Dane kandydatki/kandydata do stypendium:",
+          "blockIds": [
+            "p1-b46"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "228d2498-7208-5ac2-a227-940c5dffe2ac": {
+      "id": "228d2498-7208-5ac2-a227-940c5dffe2ac",
+      "techName": "text_block_8",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 200.0,
+            "y": 5432.0,
+            "w": 1146.0,
+            "h": 29.0
+          },
+          "text": "Wskaż rodzaje dyscyplin sportowych, w których bierze udział osoba objęta wnioskiem,",
+          "blockIds": [
+            "p1-b48"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "379be171-c5bf-576b-ace5-f618a35711ce": {
+      "id": "379be171-c5bf-576b-ace5-f618a35711ce",
+      "techName": "dyscypliny_sportowe",
+      "title": "Dyscypliny sportowe",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 5389.0,
+            "w": 270.0,
+            "h": 30.0
+          },
+          "text": "Dyscypliny sportowe",
+          "blockIds": [
+            "p1-b47"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "0af2ebd7-c296-505f-a9e1-d381fd316dcc": {
+      "id": "0af2ebd7-c296-505f-a9e1-d381fd316dcc",
+      "techName": "a_nastepnie_wybierz_konkretne_dyscypliny_z_listy",
+      "title": "A następnie wybierz konkretne dyscypliny z listy",
+      "type": "RADIO",
+      "confidence": 0.55,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 5475.0,
+            "w": 652.0,
+            "h": 179.0
+          },
+          "text": "a następnie wybierz konkretne dyscypliny z listy: zespołowa indywidualna — inna indywidualna — lekkoatletyka",
+          "blockIds": [
+            "p1-b49",
+            "p1-b50",
+            "p1-b51",
+            "p1-b52"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "opcje z listy po instrukcji 'zaznacz' (brak wykrytych kratek)"
+      ]
+    },
+    "65b8e5d0-ebff-5d05-9c5c-e54dcb5a447e": {
+      "id": "65b8e5d0-ebff-5d05-9c5c-e54dcb5a447e",
+      "techName": "dyscypliny_sportowe_2",
+      "title": "Dyscypliny sportowe",
+      "type": "SECTION",
+      "confidence": 0.69,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 5678.0,
+            "w": 278.0,
+            "h": 29.0
+          },
+          "text": "Dyscypliny sportowe:",
+          "blockIds": [
+            "p1-b53"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "4ef62a0b-840e-58d4-a9ca-0a53fe81b97d": {
+      "id": "4ef62a0b-840e-58d4-a9ca-0a53fe81b97d",
+      "techName": "text_block_9",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 6739.0,
+            "w": 137.0,
+            "h": 29.0
+          },
+          "text": "dyscyplina",
+          "blockIds": [
+            "p1-b75"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "2a4b65f8-d727-54c0-bec8-be036246d193": {
+      "id": "2a4b65f8-d727-54c0-bec8-be036246d193",
+      "techName": "dyscypliny_sportowe_3",
+      "title": "Dyscypliny sportowe",
+      "type": "RADIO",
+      "confidence": 0.55,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 5678.0,
+            "w": 408.0,
+            "h": 997.0
+          },
+          "text": "Dyscypliny sportowe: gimnastyka artystyczna hokej karate kolarstwo koszykówka lekkoatletyka łucznictwo łyżwiarstwo narciarstwo klasyczne piłka nożna piłka ręczna piłka siatkowa piłka wodna sport motocyklowy sporty walki sporty wodne tenis stołowy tenis ziemny unihokej zapasy",
+          "blockIds": [
+            "p1-b53",
+            "p1-b54",
+            "p1-b55",
+            "p1-b56",
+            "p1-b57",
+            "p1-b58",
+            "p1-b59",
+            "p1-b60",
+            "p1-b61",
+            "p1-b62",
+            "p1-b63",
+            "p1-b64",
+            "p1-b65",
+            "p1-b66",
+            "p1-b67",
+            "p1-b68",
+            "p1-b69",
+            "p1-b70",
+            "p1-b71",
+            "p1-b72",
+            "p1-b73"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "opcje z listy po instrukcji 'zaznacz' (brak wykrytych kratek)"
+      ]
+    },
+    "0180861b-b9ea-5144-87cc-e6bec5585543": {
+      "id": "0180861b-b9ea-5144-87cc-e6bec5585543",
+      "techName": "inna",
+      "title": "Inna",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 298.0,
+            "y": 6694.0,
+            "w": 54.0,
+            "h": 21.0
+          },
+          "text": "Inna",
+          "blockIds": [
+            "p1-b74"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "f68f786c-1922-5fba-8ef2-b6e92b11a38f": {
+      "id": "f68f786c-1922-5fba-8ef2-b6e92b11a38f",
+      "techName": "osiagniecia_sportowe",
+      "title": "Osiągnięcia sportowe",
+      "type": "SECTION",
+      "confidence": 0.73,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 7225.0,
+            "w": 342.0,
+            "h": 30.0
+          },
+          "text": "3. Osiągnięcia sportowe",
+          "blockIds": [
+            "p1-b76"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "b18dc0db-df5c-5c81-bde7-00c62fe3febc": {
+      "id": "b18dc0db-df5c-5c81-bde7-00c62fe3febc",
+      "techName": "text_block_10",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 7270.0,
+            "w": 1257.0,
+            "h": 1831.0
+          },
+          "text": "Opisz najważniejsze osiągnięcia sportowe kandydata, które będą brane pod uwagę przy ocenie wniosku Do wniosku można dołączyć dyplomy lub inne dokumenty potwierdzające opisane osiągnięcia sportowe. Opinia macierzystego klubu sportowego, potwierdzająca nienaganną postawę etyczną i moralną sportowca Do wniosku można dołączyć dokument z opinią klubu. Do wniosku należy załączyć zaświadczenia wydane przez Polski Związek Sportowy odpowiedni dla danej dyscypliny sportowej lub inne oficjalne dokumenty (n",
+          "blockIds": [
+            "p1-b77",
+            "p1-b78",
+            "p1-b79",
+            "p1-b80",
+            "p1-b82",
+            "p1-b83",
+            "p1-b84",
+            "p1-b86",
+            "p1-b87",
+            "p1-b88",
+            "p1-b90",
+            "p1-b91"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "d2dbaa70-0cf2-564f-a3a5-3ddf6dfca60f": {
+      "id": "d2dbaa70-0cf2-564f-a3a5-3ddf6dfca60f",
+      "techName": "opinia_macierzystego_klubu_sportowego",
+      "title": "Opinia macierzystego klubu sportowego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 7978.0,
+            "w": 532.0,
+            "h": 29.0
+          },
+          "text": "Opinia macierzystego klubu sportowego",
+          "blockIds": [
+            "p1-b81"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "928227e6-3c5c-57b0-9495-8f277e161af5": {
+      "id": "928227e6-3c5c-57b0-9495-8f277e161af5",
+      "techName": "wymagane_zaswiadczenia",
+      "title": "Wymagane zaświadczenia",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 8448.0,
+            "w": 343.0,
+            "h": 30.0
+          },
+          "text": "Wymagane zaświadczenia",
+          "blockIds": [
+            "p1-b85"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "9be63b85-1120-59b5-b454-f4250711c851": {
+      "id": "9be63b85-1120-59b5-b454-f4250711c851",
+      "techName": "dodatkowe_informacje_o_osiagnieciach_sportowych",
+      "title": "Dodatkowe informacje o osiągnieciach sportowych",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 8654.0,
+            "w": 640.0,
+            "h": 27.0
+          },
+          "text": "Dodatkowe informacje o osiągnieciach sportowych",
+          "blockIds": [
+            "p1-b89"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "cd30eefd-0cf8-596e-b69f-27e827633de2": {
+      "id": "cd30eefd-0cf8-596e-b69f-27e827633de2",
+      "techName": "zgoda_kandydata_pelnoletniego_do_stypendium_2",
+      "title": "Zgoda kandydata pełnoletniego do stypendium",
+      "type": "SECTION",
+      "confidence": 0.56,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 11954.0,
+            "w": 681.0,
+            "h": 29.0
+          },
+          "text": "5.1. Zgoda kandydata pełnoletniego do stypendium",
+          "blockIds": [
+            "p1-b101"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "e5a2a212-48fd-506e-804c-061d244fe5a0": {
+      "id": "e5a2a212-48fd-506e-804c-061d244fe5a0",
+      "techName": "text_block_11",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 12073.0,
+            "w": 1230.0,
+            "h": 220.0
+          },
+          "text": "1) Wyrażam zgodę na przetwarzanie moich danych osobowych zwartych we wniosku w celu przekazania go do dalszego procedowania przez Komisję stypendialną ds. stypendiów sportowych Rady Miasta Zgierza. 2) Oświadczam, że zapoznałem się z regulaminem przyznawania stypendiów sportowych Rady Miasta Zgierza i akceptuję wszystkie jego postanowienia.",
+          "blockIds": [
+            "p1-b105",
+            "p1-b106",
+            "p1-b107",
+            "p1-b108",
+            "p1-b109"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "0c7ac2ee-2e9b-5613-9b88-5aa87c815cec": {
+      "id": "0c7ac2ee-2e9b-5613-9b88-5aa87c815cec",
+      "techName": "eceerecesoresoeenesseeneewooaeonowanawo_ses_ow",
+      "title": "Eceerecesoresoeenesseeneewooaeonowanawo ses ow",
+      "type": "TEXT_FIELD",
+      "confidence": 0.15,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 12027.0,
+            "w": 1233.0,
+            "h": 37.0
+          },
+          "text": "Imię i nazwisko kandydata  eceerecesoresoeenesseeneewooaeonowanawo ses ow eee es es ee see ee eee sse ee o se se awa seee",
+          "blockIds": [
+            "p1-b102",
+            "p1-b103",
+            "p1-b104"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "f7d00402-1e15-5c33-8d0b-03c9ab39cb2a": {
+      "id": "f7d00402-1e15-5c33-8d0b-03c9ab39cb2a",
+      "techName": "data_podpis_kandydata",
+      "title": "Data Podpis kandydata",
+      "type": "DATEPICKER",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 396.0,
+            "y": 12425.0,
+            "w": 929.0,
+            "h": 29.0
+          },
+          "text": "Data Podpis kandydata",
+          "blockIds": [
+            "p1-b110"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (DATEPICKER)"
+      ]
+    },
+    "0573cdfb-a6e6-54e7-bd3a-f843dc3cf38d": {
+      "id": "0573cdfb-a6e6-54e7-bd3a-f843dc3cf38d",
+      "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_stypendium_2",
+      "title": "Zgoda w imieniu kandydata nieletniego do stypendium",
+      "type": "SECTION",
+      "confidence": 0.53,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 12539.0,
+            "w": 784.0,
+            "h": 29.0
+          },
+          "text": "5.2. Zgoda w imieniu kandydata nieletniego do stypendium",
+          "blockIds": [
+            "p1-b111"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "8d951229-2c57-57cc-9c18-502137ac6267": {
+      "id": "8d951229-2c57-57cc-9c18-502137ac6267",
+      "techName": "text_block_12",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 12725.0,
+            "w": 1191.0,
+            "h": 1557.0
+          },
+          "text": "wyrażam zgodę na przetwarzanie danych osobowych mojego dziecka/podopiecznego zawartych we wniosku w celu przekazania go do dalszego procedowania przez Komisję stypendialną ds. stypendiów sportowych Rady Miasta Zgierza. 2) Oświadczam, że zapoznałem się z regulaminem przyznawania stypendiów sportowych Rady Miasta Zgierza i akceptuję wszystkie jego postanowienia. Wypełniony formularz zgody przechowuje właściwy administrator danych osobowych. II. Wniosek o przyznanie nagrody sportowej Rady Miasta Zg",
+          "blockIds": [
+            "p1-b118",
+            "p1-b119",
+            "p1-b120",
+            "p1-b121",
+            "p1-b122",
+            "p1-b124",
+            "p1-b125"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "639fbbe9-3df9-5c2c-983a-47c940c046b7": {
+      "id": "639fbbe9-3df9-5c2c-983a-47c940c046b7",
+      "techName": "eeeeceoeseeeeosoeneonowononowonanosseon_es_se_eee_e_seee_eee_se_asa_ses_oo_waa",
+      "title": "Eeeeceoeseeeeosoeneonowononowonanosseon es se eee e seee eee se asa ses oo waa",
+      "type": "TEXT_FIELD",
+      "confidence": 0.08,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 12611.0,
+            "w": 1239.0,
+            "h": 37.0
+          },
+          "text": "Imię i nazwisko kandydata  eeeeceoeseeeeosoeneonowononowonanosseon es se eee e seee eee se asa ses oo waa see ses eee ee aa ke",
+          "blockIds": [
+            "p1-b112",
+            "p1-b113",
+            "p1-b114"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "pole w treści zdania – sprawdź tytuł"
+      ]
+    },
+    "3b7c56e3-c6d5-5b1c-8132-91d0d7f2e06d": {
+      "id": "3b7c56e3-c6d5-5b1c-8132-91d0d7f2e06d",
+      "techName": "text_field_1_ja_nizej_podpisany",
+      "title": "1) Ja niżej podpisany",
+      "type": "TEXT_FIELD",
+      "confidence": 0.44,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 12675.0,
+            "w": 1248.0,
+            "h": 37.0
+          },
+          "text": "1) Ja niżej podpisany  eeeseeeeseeasewenenowonawowonosewonowaaweosowasenaaeaae se asa eee (rodzic/opiekun prawny)",
+          "blockIds": [
+            "p1-b115",
+            "p1-b116",
+            "p1-b117"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "36bcafa6-87d1-5b54-a576-7edc047109e3": {
+      "id": "36bcafa6-87d1-5b54-a576-7edc047109e3",
+      "techName": "eeeseeeeseeasewenenowonawowonosewonowaaweosowasenaaeaae_se",
+      "title": "Eeeseeeeseeasewenenowonawowonosewonowaaweosowasenaaeaae se",
+      "type": "TEXT_FIELD",
+      "confidence": 0.44,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 12675.0,
+            "w": 1248.0,
+            "h": 37.0
+          },
+          "text": "1) Ja niżej podpisany  eeeseeeeseeasewenenowonawowonosewonowaaweosowasenaaeaae se asa eee (rodzic/opiekun prawny)",
+          "blockIds": [
+            "p1-b115",
+            "p1-b116",
+            "p1-b117"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "e94c204d-d920-507a-8a14-e0e2a8134b59": {
+      "id": "e94c204d-d920-507a-8a14-e0e2a8134b59",
+      "techName": "data_podpis_rodzica",
+      "title": "Data podpis rodzica",
+      "type": "DATEPICKER",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 396.0,
+            "y": 13089.0,
+            "w": 962.0,
+            "h": 30.0
+          },
+          "text": "Data Podpis rodzica/opiekuna prawnego",
+          "blockIds": [
+            "p1-b123"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (DATEPICKER)"
+      ]
+    },
+    "61de19db-e890-5e72-805b-4d3d7644f8d3": {
+      "id": "61de19db-e890-5e72-805b-4d3d7644f8d3",
+      "techName": "opiekuna_prawnego",
+      "title": "Opiekuna prawnego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 396.0,
+            "y": 13089.0,
+            "w": 962.0,
+            "h": 30.0
+          },
+          "text": "Data Podpis rodzica/opiekuna prawnego",
+          "blockIds": [
+            "p1-b123"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "96055def-ef31-5086-849b-efff20110f43": {
+      "id": "96055def-ef31-5086-849b-efff20110f43",
+      "techName": "osiagniecia_sportowe_2",
+      "title": "Osiągnięcia sportowe",
+      "type": "SECTION",
+      "confidence": 0.73,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 17008.0,
+            "w": 342.0,
+            "h": 31.0
+          },
+          "text": "3. Osiągnięcia sportowe",
+          "blockIds": [
+            "p1-b160"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "586be780-4558-5368-a520-d1bf6f0427e7": {
+      "id": "586be780-4558-5368-a520-d1bf6f0427e7",
+      "techName": "text_block_13",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 17053.0,
+            "w": 1257.0,
+            "h": 2331.0
+          },
+          "text": "Opisz najważniejsze osiągnięcia sportowe kandydata, które będą brane pod uwagę przy ocenie wniosku Do wniosku można dołączyć dyplomy lub inne dokumenty potwierdzające opisane osiągnięcia sportowe. Opinia macierzystego klubu sportowego, potwierdzająca nienaganną postawę etyczną i moralną sportowca Do wniosku można dołączyć dokument z opinią klubu. Do wniosku należy załączyć zaświadczenia wydane przez Polski Związek Sportowy odpowiedni dla danej dyscypliny sportowej lub inne oficjalne dokumenty (n",
+          "blockIds": [
+            "p1-b161",
+            "p1-b162",
+            "p1-b163",
+            "p1-b164",
+            "p1-b166",
+            "p1-b167",
+            "p1-b168",
+            "p1-b170",
+            "p1-b171",
+            "p1-b172",
+            "p1-b174",
+            "p1-b175"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "a558ce17-a31b-5641-ac86-9b2d02cc5605": {
+      "id": "a558ce17-a31b-5641-ac86-9b2d02cc5605",
+      "techName": "opinia_macierzystego_klubu_sportowego_2",
+      "title": "Opinia macierzystego klubu sportowego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 17714.0,
+            "w": 532.0,
+            "h": 30.0
+          },
+          "text": "Opinia macierzystego klubu sportowego",
+          "blockIds": [
+            "p1-b165"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "632c9c3b-f613-50eb-a8a5-14896c2fcd48": {
+      "id": "632c9c3b-f613-50eb-a8a5-14896c2fcd48",
+      "techName": "wymagane_zaswiadczenia_2",
+      "title": "Wymagane zaświadczenia",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 18185.0,
+            "w": 343.0,
+            "h": 30.0
+          },
+          "text": "Wymagane zaświadczenia",
+          "blockIds": [
+            "p1-b169"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "a19fb85e-20a9-5aa2-9804-515dc1b8f733": {
+      "id": "a19fb85e-20a9-5aa2-9804-515dc1b8f733",
+      "techName": "dodatkowe_informacje_o_osiagnieciach_sportowych_2",
+      "title": "Dodatkowe informacje o osiągnieciach sportowych",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 18917.0,
+            "w": 673.0,
+            "h": 30.0
+          },
+          "text": "Dodatkowe informacje o osiągnieciach sportowych",
+          "blockIds": [
+            "p1-b173"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "9d44bf60-325f-5950-9e06-346f843e1c3b": {
+      "id": "9d44bf60-325f-5950-9e06-346f843e1c3b",
+      "techName": "zgoda_kandydata_pelnoletniego_do_nagrody",
+      "title": "Zgoda kandydata pełnoletniego do nagrody",
+      "type": "SECTION",
+      "confidence": 0.76,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 21310.0,
+            "w": 635.0,
+            "h": 29.0
+          },
+          "text": "5.1. Zgoda kandydata pełnoletniego do nagrody",
+          "blockIds": [
+            "p1-b185"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "a8a5653f-fdec-5c31-898b-7033566a7c76": {
+      "id": "a8a5653f-fdec-5c31-898b-7033566a7c76",
+      "techName": "text_block_14",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 21366.0,
+            "w": 1234.0,
+            "h": 220.0
+          },
+          "text": "Imię i nazwisko kandydatasszszsscriysswizeywzszewsie SRAGW GA RSA SRAĘ SE TWLW TE LA SR OPO NY SUYW G SE EEE WSS ŁN OYTA 1) Wyrażam zgodę na przetwarzanie moich danych osobowych zwartych we wniosku w celu przekazania go do dalszego procedowania. 2) Oświadczam, że zapoznałem się z regulaminem przyznawania nagród sportowych Rady Miasta Zgierza i akceptuję wszystkie jego postanowienia.",
+          "blockIds": [
+            "p1-b186",
+            "p1-b187",
+            "p1-b188",
+            "p1-b189",
+            "p1-b190"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "1810a267-6731-57bc-acd5-94fa76eea939": {
+      "id": "1810a267-6731-57bc-acd5-94fa76eea939",
+      "techName": "data_podpis_kandydata_2",
+      "title": "Data Podpis kandydata",
+      "type": "DATEPICKER",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 396.0,
+            "y": 21717.0,
+            "w": 929.0,
+            "h": 29.0
+          },
+          "text": "Data Podpis kandydata",
+          "blockIds": [
+            "p1-b191"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (DATEPICKER)"
+      ]
+    },
+    "738fc24d-374b-5f1e-a260-93a1bfbbc3fe": {
+      "id": "738fc24d-374b-5f1e-a260-93a1bfbbc3fe",
+      "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_nagrody_2",
+      "title": "Zgoda w imieniu kandydata nieletniego do nagrody",
+      "type": "SECTION",
+      "confidence": 0.74,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 21814.0,
+            "w": 738.0,
+            "h": 30.0
+          },
+          "text": "5.2. Zgoda w imieniu kandydata nieletniego do nagrody",
+          "blockIds": [
+            "p1-b192"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "f4919694-a964-5989-85f0-72d6cf327bd5": {
+      "id": "f4919694-a964-5989-85f0-72d6cf327bd5",
+      "techName": "text_block_15",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 21934.0,
+            "w": 1235.0,
+            "h": 1704.0
+          },
+          "text": "1),Ja niżej podpiSany ssczswisiisziiszel wi Se SRU AE EEE YWT E GE RW EEE WĘ ERERC (rodzic/opiekun prawny) wyrażam zgodę na przetwarzanie danych osobowych mojego dziecka/podopiecznego zawartych we wniosku w celu przekazania go do dalszego procedowania. 2) Oświadczam, że zapoznałem się z regulaminem przyznawania nagród sportowych Rady Miasta Zgierza i akceptuję wszystkie jego postanowienia. Wypełniony formularz zgody przechowuje właściwy administrator danych osobowych. I. Wniosek o przyznanie wyr",
+          "blockIds": [
+            "p1-b194",
+            "p1-b195",
+            "p1-b196",
+            "p1-b197",
+            "p1-b198",
+            "p1-b200",
+            "p1-b201"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "5665a5ae-b88f-5f0a-9d50-938c2fc705c2": {
+      "id": "5665a5ae-b88f-5f0a-9d50-938c2fc705c2",
+      "techName": "data_podpis_rodzica_2",
+      "title": "Data podpis rodzica",
+      "type": "DATEPICKER",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 396.0,
+            "y": 22301.0,
+            "w": 962.0,
+            "h": 30.0
+          },
+          "text": "Data Podpis rodzica/opiekuna prawnego",
+          "blockIds": [
+            "p1-b199"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (DATEPICKER)"
+      ]
+    },
+    "ebeb3681-84d3-508f-bb0a-a89637461646": {
+      "id": "ebeb3681-84d3-508f-bb0a-a89637461646",
+      "techName": "opiekuna_prawnego_2",
+      "title": "Opiekuna prawnego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 396.0,
+            "y": 22301.0,
+            "w": 962.0,
+            "h": 30.0
+          },
+          "text": "Data Podpis rodzica/opiekuna prawnego",
+          "blockIds": [
+            "p1-b199"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "b0b46663-b808-57cf-b77d-16b70ae8d8d2": {
+      "id": "b0b46663-b808-57cf-b77d-16b70ae8d8d2",
+      "techName": "zgierza_2",
+      "title": "Zgierza",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 297.0,
+            "y": 23659.0,
+            "w": 123.0,
+            "h": 37.0
+          },
+          "text": "Zgierza",
+          "blockIds": [
+            "p1-b202"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "39977a99-4ff1-507c-ac35-744f6bc91d47": {
+      "id": "39977a99-4ff1-507c-ac35-744f6bc91d47",
+      "techName": "dane_trenera",
+      "title": "Dane trenera",
+      "type": "SECTION",
+      "confidence": 0.73,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 25937.0,
+            "w": 222.0,
+            "h": 24.0
+          },
+          "text": "2. Dane trenera",
+          "blockIds": [
+            "p1-b236"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "0a52d6c7-0b2d-5d10-bbb4-9d280928f0da": {
+      "id": "0a52d6c7-0b2d-5d10-bbb4-9d280928f0da",
+      "techName": "text_block_16",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 26578.0,
+            "w": 1156.0,
+            "h": 546.0
+          },
+          "text": "Opinia macierzystego klubu sportowego, potwierdzająca nienaganną postawę etyczną i moralną opiekuna sportowego. Do wniosku można dołączyć dokument z opinią klubu Ewentualne dodatkowe informacje o kandydatce/kandydacie do wyróżnienia",
+          "blockIds": [
+            "p1-b239",
+            "p1-b240",
+            "p1-b241",
+            "p1-b243"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "6fbf33ff-1558-5a4a-8aaa-75458d8d472b": {
+      "id": "6fbf33ff-1558-5a4a-8aaa-75458d8d472b",
+      "techName": "dane_osobowe_kandydatki",
+      "title": "Dane osobowe kandydatki",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 25981.0,
+            "w": 718.0,
+            "h": 30.0
+          },
+          "text": "Dane osobowe kandydatki/kandydata do wyróżnienia",
+          "blockIds": [
+            "p1-b237"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "f4921d63-e443-5e5f-b989-c63328c3144c": {
+      "id": "f4921d63-e443-5e5f-b989-c63328c3144c",
+      "techName": "kandydata_do_wyroznienia",
+      "title": "Kandydata do wyroznienia",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 25981.0,
+            "w": 718.0,
+            "h": 30.0
+          },
+          "text": "Dane osobowe kandydatki/kandydata do wyróżnienia",
+          "blockIds": [
+            "p1-b237"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "cb785fea-abb2-5a3a-b062-fd1a9d61a440": {
+      "id": "cb785fea-abb2-5a3a-b062-fd1a9d61a440",
+      "techName": "opinia_macierzystego_klubu_sportowego_3",
+      "title": "Opinia macierzystego klubu sportowego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 26534.0,
+            "w": 532.0,
+            "h": 30.0
+          },
+          "text": "Opinia macierzystego klubu sportowego",
+          "blockIds": [
+            "p1-b238"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "019715c1-e38d-5188-9f47-0d1deb41b638": {
+      "id": "019715c1-e38d-5188-9f47-0d1deb41b638",
+      "techName": "dodatkowe_informacje_o_osiagnieciach_sportowych_3",
+      "title": "Dodatkowe informacje o osiągnieciach sportowych",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 27052.0,
+            "w": 673.0,
+            "h": 29.0
+          },
+          "text": "Dodatkowe informacje o osiągnieciach sportowych",
+          "blockIds": [
+            "p1-b242"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "a2127a9f-6691-54b8-9ccb-55b5fe22f5c4": {
+      "id": "a2127a9f-6691-54b8-9ccb-55b5fe22f5c4",
+      "techName": "zgoda_kandydata_do_wyroznienia_2",
+      "title": "Zgoda kandydata do wyróżnienia",
+      "type": "SECTION",
+      "confidence": 0.55,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 33035.0,
+            "w": 491.0,
+            "h": 30.0
+          },
+          "text": "5.1. Zgoda kandydata do wyróżnienia",
+          "blockIds": [
+            "p1-b278"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "d7a3cc0e-28e4-5f50-93ff-3269edf93c81": {
+      "id": "d7a3cc0e-28e4-5f50-93ff-3269edf93c81",
+      "techName": "text_block_17",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 33206.0,
+            "w": 759.0,
+            "h": 123.0
+          },
+          "text": "przekazania go do dalszego procedowania. Miasta Zgierza i akceptuję wszystkie jego postanowienia.",
+          "blockIds": [
+            "p1-b283",
+            "p1-b285"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "cd0fd642-d422-5f4b-afcb-bcac89fe2fd1": {
+      "id": "cd0fd642-d422-5f4b-afcb-bcac89fe2fd1",
+      "techName": "eceovesocoresoeonesseeneewooawanowasanowesawo_see_es_es",
+      "title": "Eceovesocoresoeonesseeneewooawanowasanowesawo see es es",
+      "type": "TEXT_FIELD",
+      "confidence": 0.14,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 33092.0,
+            "w": 1233.0,
+            "h": 37.0
+          },
+          "text": "Imię i nazwisko kandydata  eceovesocoresoeonesseeneewooawanowasanowesawo see es es aeae e oe see ee ee w eee see so wa oo",
+          "blockIds": [
+            "p1-b279",
+            "p1-b280",
+            "p1-b281"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "6607cf9b-a4dc-57ab-9b50-ce23c5c2af1f": {
+      "id": "6607cf9b-a4dc-57ab-9b50-ce23c5c2af1f",
+      "techName": "data_podpis_kandydata_3",
+      "title": "Data Podpis kandydata",
+      "type": "DATEPICKER",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 396.0,
+            "y": 33460.0,
+            "w": 929.0,
+            "h": 29.0
+          },
+          "text": "Data Podpis kandydata",
+          "blockIds": [
+            "p1-b286"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (DATEPICKER)"
+      ]
+    },
+    "ae6be8a6-6f2d-54a2-9b2e-2b363c88b5a8": {
+      "id": "ae6be8a6-6f2d-54a2-9b2e-2b363c88b5a8",
+      "techName": "zgoda_w_imieniu_podopiecznego_nieletniego",
+      "title": "Zgoda w imieniu podopiecznego nieletniego",
+      "type": "SECTION",
+      "confidence": 0.75,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 198.0,
+            "y": 36040.0,
+            "w": 645.0,
+            "h": 30.0
+          },
+          "text": "6.2. Zgoda w imieniu podopiecznego nieletniego",
+          "blockIds": [
+            "p1-b296"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "7504b0db-96af-5616-af20-bbedfa949b29": {
+      "id": "7504b0db-96af-5616-af20-bbedfa949b29",
+      "techName": "text_block_18",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 36096.0,
+            "w": 1253.0,
+            "h": 608.0
+          },
+          "text": "Imię i nazwisko podopiecznego wrsiąszwswwzowejoowwy E W Y ZISU RZR NNYCCZA wyrażam zgodę na przetwarzanie danych osobowych mojego dziecka/podopiecznego zawartych we wniosku w celu przekazania go do dalszego procedowania. Miasta Zgierza i akceptuję wszystkie jego postanowienia. Wypełniony formularz zgody przechowuje właściwy administrator danych osobowych.",
+          "blockIds": [
+            "p1-b297",
+            "p1-b299",
+            "p1-b300",
+            "p1-b302",
+            "p1-b304"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "ca226cd1-68eb-5fa2-b9fb-0a0ad240c4be": {
+      "id": "ca226cd1-68eb-5fa2-b9fb-0a0ad240c4be",
+      "techName": "data_podpis_rodzica_3",
+      "title": "Data podpis rodzica",
+      "type": "DATEPICKER",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 396.0,
+            "y": 36527.0,
+            "w": 962.0,
+            "h": 30.0
+          },
+          "text": "Data Podpis rodzica/opiekuna prawnego",
+          "blockIds": [
+            "p1-b303"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (DATEPICKER)"
+      ]
+    },
+    "700594e3-26a8-5e7f-a6a7-a75dde23b039": {
+      "id": "700594e3-26a8-5e7f-a6a7-a75dde23b039",
+      "techName": "opiekuna_prawnego_3",
+      "title": "Opiekuna prawnego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 396.0,
+            "y": 36527.0,
+            "w": 962.0,
+            "h": 30.0
+          },
+          "text": "Data Podpis rodzica/opiekuna prawnego",
+          "blockIds": [
+            "p1-b303"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "fa959613-4821-5e3b-a411-32c4762eb4f6": {
+      "id": "fa959613-4821-5e3b-a411-32c4762eb4f6",
+      "techName": "dane_do_kontaktu",
+      "title": "Dane do kontaktu",
+      "type": "SECTION",
+      "confidence": 0.31,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 200.0,
+            "y": 2668.0,
+            "w": 246.0,
+            "h": 26.0
+          },
+          "text": "1. Wnioskodawca",
+          "blockIds": [
+            "p1-b11"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "4ae6d726-ca4b-58cd-8a6f-537ee4418b71": {
+      "id": "4ae6d726-ca4b-58cd-8a6f-537ee4418b71",
+      "techName": "numer_telefonu",
+      "title": "Numer telefonu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.14,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 3473.0,
+            "w": 1258.0,
+            "h": 37.0
+          },
+          "text": "Numer telefonu (opcjonalnie)  seesvovesovosoonenoroneoronwswesewawowawawo ses oo ee awe se owa es aa eee aa ee sn aa o ne",
+          "blockIds": [
+            "p1-b24",
+            "p1-b25",
+            "p1-b26"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (phoneNumber)"
+      ]
+    },
+    "0601ba8c-5110-56b2-b103-3572383eecd5": {
+      "id": "0601ba8c-5110-56b2-b103-3572383eecd5",
+      "techName": "adres_skrytki_epuap",
+      "title": "Adres skrytki ePUAP",
+      "type": "TEXT_FIELD",
+      "confidence": 0.71,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 257.0,
+            "y": 4169.0,
+            "w": 434.0,
+            "h": 30.0
+          },
+          "text": "Skrzynka ePUAP - adres skrzynki:",
+          "blockIds": [
+            "p1-b40"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)"
+      ]
+    },
+    "3361f4b1-cc41-5433-84d0-a9f56c6facb1": {
+      "id": "3361f4b1-cc41-5433-84d0-a9f56c6facb1",
+      "techName": "adres_do_e_doreczen",
+      "title": "Adres do e-Doręczeń",
+      "type": "TEXT_FIELD",
+      "confidence": 0.07,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 257.0,
+            "y": 4214.0,
+            "w": 1193.0,
+            "h": 38.0
+          },
+          "text": "eDoręczenia-adres skrzynki z zesszzsosświszwsiasychsskśwszękisiy sih PIA NRG GA ERE WAŁ KES A SĄ SA WA A TRAE EEE RW CE YSR GE",
+          "blockIds": [
+            "p1-b41"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)"
+      ]
+    },
+    "e3b03b82-a876-55f4-a4f2-a1ce93198711": {
+      "id": "e3b03b82-a876-55f4-a4f2-a1ce93198711",
+      "techName": "dane_do_kontaktu_2",
+      "title": "Dane do kontaktu",
+      "type": "SECTION",
+      "confidence": 0.54,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 200.0,
+            "y": 14304.0,
+            "w": 246.0,
+            "h": 26.0
+          },
+          "text": "1. Wnioskodawca",
+          "blockIds": [
+            "p1-b126"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "1607ecf6-7663-5ff0-83b3-b232af64dbae": {
+      "id": "1607ecf6-7663-5ff0-83b3-b232af64dbae",
+      "techName": "numer_telefonu_2",
+      "title": "Numer telefonu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.14,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 15065.0,
+            "w": 1258.0,
+            "h": 37.0
+          },
+          "text": "Numer telefonu (opcjonalnie)  seesvovesovosoonenoroneoronwswesewawowawawo ses oo ee awe se owa es aa eee aa ee sn aa o ne",
+          "blockIds": [
+            "p1-b136",
+            "p1-b137",
+            "p1-b138"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)"
+      ]
+    },
+    "b5050fd3-130f-50c8-86bc-e41cce9964e1": {
+      "id": "b5050fd3-130f-50c8-86bc-e41cce9964e1",
+      "techName": "adres_skrytki_epuap_2",
+      "title": "Adres skrytki ePUAP",
+      "type": "TEXT_FIELD",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 257.0,
+            "y": 15800.0,
+            "w": 434.0,
+            "h": 30.0
+          },
+          "text": "Skrzynka ePUAP - adres skrzynki:",
+          "blockIds": [
+            "p1-b152"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)"
+      ]
+    },
+    "007047ee-656a-5609-aabb-e2286b45d554": {
+      "id": "007047ee-656a-5609-aabb-e2286b45d554",
+      "techName": "adres_do_e_doreczen_2",
+      "title": "Adres do e-Doręczeń",
+      "type": "TEXT_FIELD",
+      "confidence": 0.79,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 257.0,
+            "y": 15849.0,
+            "w": 471.0,
+            "h": 30.0
+          },
+          "text": "eDoręczenia - adres skrzynki: ",
+          "blockIds": [
+            "p1-b153",
+            "p1-b154"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)"
+      ]
+    },
+    "78876de1-a56f-5a5d-85c5-027a378d81fe": {
+      "id": "78876de1-a56f-5a5d-85c5-027a378d81fe",
+      "techName": "dane_do_kontaktu_3",
+      "title": "Dane do kontaktu",
+      "type": "SECTION",
+      "confidence": 0.18,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 200.0,
+            "y": 23719.0,
+            "w": 246.0,
+            "h": 26.0
+          },
+          "text": "1. Wnioskodawca",
+          "blockIds": [
+            "p1-b203"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "2c0a29d6-e254-5f5e-8d19-e1b8ed32e998": {
+      "id": "2c0a29d6-e254-5f5e-8d19-e1b8ed32e998",
+      "techName": "numer_telefonu_3",
+      "title": "Numer telefonu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.14,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 199.0,
+            "y": 24457.0,
+            "w": 1258.0,
+            "h": 37.0
+          },
+          "text": "Numer telefonu (opcjonalnie)  seesvovesovosoonenoroneoronwswesewawowawawo ses oo ee awe se owa es aa eee aa ee sn aa o ne",
+          "blockIds": [
+            "p1-b213",
+            "p1-b214",
+            "p1-b215"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)"
+      ]
+    },
+    "f8fae6c9-8756-5e3a-988a-0ad34367801b": {
+      "id": "f8fae6c9-8756-5e3a-988a-0ad34367801b",
+      "techName": "adres_skrytki_epuap_3",
+      "title": "Adres skrytki ePUAP",
+      "type": "TEXT_FIELD",
+      "confidence": 0.22,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 257.0,
+            "y": 25178.0,
+            "w": 1193.0,
+            "h": 38.0
+          },
+          "text": "Skrzynka ePUAP - adres skrzynki:  eeeeeeeeereeneneneewenoenone ee weneenewek ee een eee eee wen ee onenee ee ene ne nene",
+          "blockIds": [
+            "p1-b227",
+            "p1-b228",
+            "p1-b229"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)"
+      ]
+    },
+    "128c9d2d-982f-5e42-891b-2bf7c5fbdcaa": {
+      "id": "128c9d2d-982f-5e42-891b-2bf7c5fbdcaa",
+      "techName": "adres_do_e_doreczen_3",
+      "title": "Adres do e-Doręczeń",
+      "type": "TEXT_FIELD",
+      "confidence": 0.19,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 257.0,
+            "y": 25226.0,
+            "w": 1200.0,
+            "h": 38.0
+          },
+          "text": "eDoręczenia - adres skrzynki:  eeveveeveenreneereenenwenenereeneneaweweseenene ee ee n ee eee ee ee en ee ne eee eee",
+          "blockIds": [
+            "p1-b230",
+            "p1-b231",
+            "p1-b232"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)"
+      ]
+    },
+    "8699e30f-8d38-5758-8a1d-72a690b923a8": {
+      "id": "8699e30f-8d38-5758-8a1d-72a690b923a8",
+      "techName": "zgody_i_oswiadczenia",
+      "title": "Zgody i oświadczenia",
+      "type": "SECTION",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 9562.0,
+            "w": 1249.0,
+            "h": 263.0
+          },
+          "text": "4. Klauzula informacyjna Informacje na temat ochrony danych osobowych stosowanych przez administratora danych, którymi są wnioskujący: a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5; b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza",
+          "blockIds": [
+            "p1-b92",
+            "p1-b93",
+            "p1-b94",
+            "p1-b95",
+            "p1-b96",
+            "p1-b97"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
+      ]
+    },
+    "d8b301a7-5127-5251-80c2-fcfdb6b6e6af": {
+      "id": "d8b301a7-5127-5251-80c2-fcfdb6b6e6af",
+      "techName": "consent_section",
+      "title": "",
+      "type": "CONSENT_SECTION",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 9562.0,
+            "w": 1249.0,
+            "h": 263.0
+          },
+          "text": "4. Klauzula informacyjna Informacje na temat ochrony danych osobowych stosowanych przez administratora danych, którymi są wnioskujący: a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5; b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza",
+          "blockIds": [
+            "p1-b92",
+            "p1-b93",
+            "p1-b94",
+            "p1-b95",
+            "p1-b96",
+            "p1-b97"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
+      ]
+    },
+    "d851db14-96bd-5392-abc5-3260becd4fc2": {
+      "id": "d851db14-96bd-5392-abc5-3260becd4fc2",
+      "techName": "zgody_i_oswiadczenia_2",
+      "title": "Zgody i oświadczenia",
+      "type": "SECTION",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 19470.0,
+            "w": 1249.0,
+            "h": 262.0
+          },
+          "text": "4. Klauzula informacyjna Informacje na temat ochrony danych osobowych stosowanych przez administratora danych, którymi są wnioskujący: a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5; b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza",
+          "blockIds": [
+            "p1-b176",
+            "p1-b177",
+            "p1-b178",
+            "p1-b179",
+            "p1-b180",
+            "p1-b181"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
+      ]
+    },
+    "a44519c8-d5dd-560a-9029-1d276d8eb01c": {
+      "id": "a44519c8-d5dd-560a-9029-1d276d8eb01c",
+      "techName": "consent_section_2",
+      "title": "",
+      "type": "CONSENT_SECTION",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 19470.0,
+            "w": 1249.0,
+            "h": 262.0
+          },
+          "text": "4. Klauzula informacyjna Informacje na temat ochrony danych osobowych stosowanych przez administratora danych, którymi są wnioskujący: a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5; b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza",
+          "blockIds": [
+            "p1-b176",
+            "p1-b177",
+            "p1-b178",
+            "p1-b179",
+            "p1-b180",
+            "p1-b181"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
+      ]
+    },
+    "622b0d2a-6fb5-5df8-94a7-b77bb4b79a14": {
+      "id": "622b0d2a-6fb5-5df8-94a7-b77bb4b79a14",
+      "techName": "zgody_i_oswiadczenia_3",
+      "title": "Zgody i oświadczenia",
+      "type": "SECTION",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 31614.0,
+            "w": 1249.0,
+            "h": 262.0
+          },
+          "text": "4. Klauzula informacyjna Informacje na temat ochrony danych osobowych stosowanych przez administratora danych, którymi są wnioskujący: a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5i 6; b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza",
+          "blockIds": [
+            "p1-b269",
+            "p1-b270",
+            "p1-b271",
+            "p1-b272",
+            "p1-b273",
+            "p1-b274"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
+      ]
+    },
+    "a9c2e055-b493-5668-a0ec-006e964e227c": {
+      "id": "a9c2e055-b493-5668-a0ec-006e964e227c",
+      "techName": "consent_section_3",
+      "title": "",
+      "type": "CONSENT_SECTION",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 31614.0,
+            "w": 1249.0,
+            "h": 262.0
+          },
+          "text": "4. Klauzula informacyjna Informacje na temat ochrony danych osobowych stosowanych przez administratora danych, którymi są wnioskujący: a) klub sportowy - znajdują się na jego stronie internetowej lub w wersji papierowej w jego siedzibie oraz wymagane zgody z pkt. 5i 6; b) Prezydent Miasta Zgierza — znajdują się na stronie podmiotowej BIP Urzędu Miasta Zgierza",
+          "blockIds": [
+            "p1-b269",
+            "p1-b270",
+            "p1-b271",
+            "p1-b272",
+            "p1-b273",
+            "p1-b274"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
+      ]
+    },
+    "2fd23df4-1d04-5e9e-9df7-f90a7428cd0d": {
+      "id": "2fd23df4-1d04-5e9e-9df7-f90a7428cd0d",
+      "techName": "podglad_uzupelnionego_wniosku",
+      "title": "Podgląd uzupełnionego wniosku",
+      "type": "SECTION",
+      "confidence": 1.0,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard: strona końcowa z podglądem"
+      ]
+    },
+    "c9bfd19e-ef7c-5caf-9abf-bce2b6017491": {
+      "id": "c9bfd19e-ef7c-5caf-9abf-bce2b6017491",
+      "techName": "podglad",
+      "title": "Podgląd",
+      "type": "INFO_SECTION",
+      "confidence": 1.0,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard: strona końcowa z podglądem"
+      ]
+    }
+  },
+  "review": [
+    {
+      "fieldId": "78cac623-5e7d-5f0b-8664-064b6e042fec",
+      "techName": "ooo_kawe_es_ae_eee_se_w",
+      "title": "Ooo kawe es ae eee se w",
+      "confidence": 0.05,
+      "reason": "pole w treści zdania – sprawdź tytuł"
+    },
+    {
+      "fieldId": "c4c57bd6-9303-5ea8-a2c3-4cb1bbb90258",
+      "techName": "n_inny_adres_korespondencyjny_szsizszszesrzseorssowisszwos_re_row_te_plgr_tene_g",
+      "title": "N inny'adres:korespondencyjny szsizszszesrzseorssowisszwoś RE ROW TE PLGR TENE GWA E WS YY",
+      "confidence": 0.05,
+      "reason": "pole w treści zdania – sprawdź tytuł"
+    },
+    {
+      "fieldId": "79a9819a-d4a0-5bd1-bd1a-005c14434246",
+      "techName": "miejscowosc_zagranica",
+      "title": "Miejscowość",
+      "confidence": 0.05,
+      "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+    },
+    {
+      "fieldId": "d89eb100-4a2d-5833-b202-9390233e02d9",
+      "techName": "kod_pocztowy_zagranica",
+      "title": "Kod pocztowy",
+      "confidence": 0.05,
+      "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+    },
+    {
+      "fieldId": "8246c6f5-b60d-5667-8fe4-b27ee73cb570",
+      "techName": "ulica_zagranica",
+      "title": "Ulica",
+      "confidence": 0.05,
+      "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+    },
+    {
+      "fieldId": "0b47d935-0d95-5e13-94d7-21a88a0c3965",
+      "techName": "miejscowosc_zagranica_2",
+      "title": "Miejscowość",
+      "confidence": 0.06,
+      "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+    },
+    {
+      "fieldId": "94ab6b1a-be35-5019-bc32-a9225ebdcd19",
+      "techName": "kod_pocztowy_zagranica_2",
+      "title": "Kod pocztowy",
+      "confidence": 0.06,
+      "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+    },
+    {
+      "fieldId": "519c3ab5-c70e-5c00-a5e2-1487be81fd2d",
+      "techName": "ulica_zagranica_2",
+      "title": "Ulica",
+      "confidence": 0.06,
+      "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+    },
+    {
+      "fieldId": "c4dbfee4-70f4-5b8a-b79f-00d413cbaa1b",
+      "techName": "eeveseeevososawowononenononwsoeoewawesewawa",
+      "title": "Eeveseeevososawowononenononwsoeoewawesewawa",
+      "confidence": 0.07,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "70bb1d16-2272-5632-9222-66fa4d1e3566",
+      "techName": "telefon_kontaktowy_opcjonalnie_szszeszsszsrzsowrcskiaenoissa_yz_wik",
+      "title": "Telefon kontaktowy(opcjonalnie) szszeszsszsrzsowrcskiaenoiśsa YZ WIK",
+      "confidence": 0.07,
+      "reason": "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (phoneNumber)"
+    },
+    {
+      "fieldId": "3361f4b1-cc41-5433-84d0-a9f56c6facb1",
+      "techName": "adres_do_e_doreczen",
+      "title": "Adres do e-Doręczeń",
+      "confidence": 0.07,
+      "reason": "typ z etykiety (TEXT_FIELD)"
+    },
+    {
+      "fieldId": "d3e49b2a-29fe-5ff8-b17e-bb38c8f75118",
+      "techName": "kraj",
+      "title": "Kraj",
+      "confidence": 0.08,
+      "reason": "pole korzysta ze słownika „Kraje”"
+    },
+    {
+      "fieldId": "415cdab2-060c-59b8-96fc-bf3fdc6ccd47",
+      "techName": "kod_pocztowy",
+      "title": "Kod pocztowy",
+      "confidence": 0.08,
+      "reason": "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (postCode)"
+    },
+    {
+      "fieldId": "118a28a0-25b9-5912-a712-adfacbcc8d18",
+      "techName": "ulica",
+      "title": "Ulica",
+      "confidence": 0.08,
+      "reason": "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (street)"
+    },
+    {
+      "fieldId": "eab8b79f-599a-5b2e-bd43-7e65f95786f4",
+      "techName": "numer_budynku",
+      "title": "Numer budynku",
+      "confidence": 0.08,
+      "reason": "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (building)"
+    },
+    {
+      "fieldId": "2ffd39d5-e773-513d-bf0e-58af2ef17151",
+      "techName": "numer_lokalu",
+      "title": "Numer lokalu",
+      "confidence": 0.08,
+      "reason": "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (apartment)"
+    },
+    {
+      "fieldId": "385f742d-25a6-5513-84d5-0c569fdee424",
+      "techName": "eevoveeavesonarowononenonoewseeaewawewewawa",
+      "title": "Eevoveeavesonarowononenonoewseeaewawewewawa",
+      "confidence": 0.08,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "273333a4-64a9-5733-a479-c73cac7be6ed",
+      "techName": "awe_ee_k_awe",
+      "title": "Awe ee k awe",
+      "confidence": 0.08,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "639fbbe9-3df9-5c2c-983a-47c940c046b7",
+      "techName": "eeeeceoeseeeeosoeneonowononowonanosseon_es_se_eee_e_seee_eee_se_asa_ses_oo_waa",
+      "title": "Eeeeceoeseeeeosoeneonowononowonanosseon es se eee e seee eee se asa ses oo waa",
+      "confidence": 0.08,
+      "reason": "pole w treści zdania – sprawdź tytuł"
+    },
+    {
+      "fieldId": "803486bf-0375-5e29-9c35-f442c124437d",
+      "techName": "nazwa_klubu_sportowego_siszzsiiszsaza_sii_reswka_ski_se_sga_ps_wape_s_ey_yp_peee",
+      "title": "Nazwa klubu sportowego siszzsiiszsaza sii reswka ski se SGA PS WAPE S EY YP PEEE Y GUG E ROW Y YY",
+      "confidence": 0.09,
+      "reason": "pole w treści zdania – sprawdź tytuł"
+    },
+    {
+      "fieldId": "23942126-0077-5150-bf44-c7e67cb6c98d",
+      "techName": "kraj_2",
+      "title": "Kraj",
+      "confidence": 0.09,
+      "reason": "pole korzysta ze słownika „Kraje”"
+    },
+    {
+      "fieldId": "74ccfb26-a26d-5ae5-b8f2-4f150bce6ae4",
+      "techName": "kod_pocztowy_2",
+      "title": "Kod pocztowy",
+      "confidence": 0.09,
+      "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+    },
+    {
+      "fieldId": "e4b27357-2313-5a97-a6d3-11a147187ed0",
+      "techName": "ulica_2",
+      "title": "Ulica",
+      "confidence": 0.09,
+      "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+    },
+    {
+      "fieldId": "4e234228-1a00-5d69-9417-eedf63589e90",
+      "techName": "numer_budynku_2",
+      "title": "Numer budynku",
+      "confidence": 0.09,
+      "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+    },
+    {
+      "fieldId": "5125d9ec-8d53-5100-983f-24ad9fcd7c11",
+      "techName": "numer_lokalu_2",
+      "title": "Numer lokalu",
+      "confidence": 0.09,
+      "reason": "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+    },
+    {
+      "fieldId": "cdebc9ca-4972-5b8d-9e38-f0e01da845b5",
+      "techName": "anawawow_eee_ok_eee_ak",
+      "title": "Anawawow eee ok eee ak",
+      "confidence": 0.11,
+      "reason": "pole w treści zdania – sprawdź tytuł"
+    },
+    {
+      "fieldId": "38ffb2ac-9f32-5158-9aca-7997b4a1e9ea",
+      "techName": "eesereseeeoeeeroneseronweweeawase_ee_aneanowa_see_ok_eee_an_es",
+      "title": "Eesereseeeoeeeroneseronweweeawase ee aneanowa see ok eee an es",
+      "confidence": 0.13,
+      "reason": "pole w treści zdania – sprawdź tytuł"
+    },
+    {
+      "fieldId": "ace63e4d-b817-51da-beab-2e92e7fbb2ec",
+      "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_stypendium",
+      "title": "Zgoda w imieniu kandydata nieletniego do stypendium",
+      "confidence": 0.13,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "86c1dbc9-6e7f-5ddb-babf-0c6afcbb4ed3",
+      "techName": "imie_3",
+      "title": "Imię",
+      "confidence": 0.13,
+      "reason": "rozdzielono 'imię i nazwisko'"
+    },
+    {
+      "fieldId": "9beb4a19-38e5-5d6f-a73d-90d58e1518ea",
+      "techName": "nazwisko_3",
+      "title": "Nazwisko",
+      "confidence": 0.13,
+      "reason": "rozdzielono 'imię i nazwisko'"
+    },
+    {
+      "fieldId": "cd0fd642-d422-5f4b-afcb-bcac89fe2fd1",
+      "techName": "eceovesocoresoeonesseeneewooawanowasanowesawo_see_es_es",
+      "title": "Eceovesocoresoeonesseeneewooawanowasanowesawo see es es",
+      "confidence": 0.14,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "4ae6d726-ca4b-58cd-8a6f-537ee4418b71",
+      "techName": "numer_telefonu",
+      "title": "Numer telefonu",
+      "confidence": 0.14,
+      "reason": "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (phoneNumber)"
+    },
+    {
+      "fieldId": "1607ecf6-7663-5ff0-83b3-b232af64dbae",
+      "techName": "numer_telefonu_2",
+      "title": "Numer telefonu",
+      "confidence": 0.14,
+      "reason": "typ z etykiety (TEXT_FIELD)"
+    },
+    {
+      "fieldId": "2c0a29d6-e254-5f5e-8d19-e1b8ed32e998",
+      "techName": "numer_telefonu_3",
+      "title": "Numer telefonu",
+      "confidence": 0.14,
+      "reason": "typ z etykiety (TEXT_FIELD)"
+    },
+    {
+      "fieldId": "0c7ac2ee-2e9b-5613-9b88-5aa87c815cec",
+      "techName": "eceerecesoresoeenesseeneewooaeonowanawo_ses_ow",
+      "title": "Eceerecesoresoeenesseeneewooaeonowanawo ses ow",
+      "confidence": 0.15,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "83dec20b-f898-577d-a4a9-8ed17e495b3c",
+      "techName": "adres_zamieszkania",
+      "title": "Adres zamieszkania",
+      "confidence": 0.16,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "46e20221-c8e5-531b-9734-d49362c8ba8f",
+      "techName": "eesereseseroeseroneeer_ee_owe",
+      "title": "Eesereseseroeseroneeer ee owe",
+      "confidence": 0.16,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "89bd550d-7664-5f72-a1e7-846c0e59de6b",
+      "techName": "zgoda_kandydata_do_wyroznienia",
+      "title": "Zgoda kandydata do wyróżnienia",
+      "confidence": 0.16,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "3bd50056-37bc-589e-bbcf-6713c3155ae5",
+      "techName": "imie_9",
+      "title": "Imię",
+      "confidence": 0.16,
+      "reason": "rozdzielono 'imię i nazwisko'"
+    },
+    {
+      "fieldId": "fa0aea07-ed8d-5925-9bc1-a2e87fd43539",
+      "techName": "nazwisko_9",
+      "title": "Nazwisko",
+      "confidence": 0.16,
+      "reason": "rozdzielono 'imię i nazwisko'"
+    },
+    {
+      "fieldId": "95beef5a-d1cb-5122-affb-37f36709185b",
+      "techName": "zgoda_kandydata_pelnoletniego_do_stypendium",
+      "title": "Zgoda kandydata pełnoletniego do stypendium",
+      "confidence": 0.17,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "958454cd-02e7-584b-82f0-76938bc5daf1",
+      "techName": "imie_2",
+      "title": "Imię",
+      "confidence": 0.17,
+      "reason": "rozdzielono 'imię i nazwisko'"
+    },
+    {
+      "fieldId": "ccbd1355-21a0-524b-9c0c-a5dd2b3cfcd8",
+      "techName": "nazwisko_2",
+      "title": "Nazwisko",
+      "confidence": 0.17,
+      "reason": "rozdzielono 'imię i nazwisko'"
+    },
+    {
+      "fieldId": "6559730e-ecfa-5615-97e5-a0cf3f1dd10a",
+      "techName": "eesereseeesoneeronesenonnewe_ee_ee_wawane",
+      "title": "Eesereseeesoneeronesenonnewe ee ee wawane",
+      "confidence": 0.17,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "e4465d13-62b3-56de-b09c-210a6a37d0d9",
+      "techName": "ewa",
+      "title": "Ewa",
+      "confidence": 0.17,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "b24bc2aa-963c-5199-b2b4-050e0ab33fd9",
+      "techName": "adres_zamieszkania_2",
+      "title": "Adres zamieszkania",
+      "confidence": 0.17,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "c0ea870a-ba8c-51d0-8dea-ca16b2042a71",
+      "techName": "eeveveeveenreneereenenwenenereeneneaweweseenene",
+      "title": "Eeveveeveenreneereenenwenenereeneneaweweseenene",
+      "confidence": 0.17,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "7fa7ddf9-ecba-5d76-900f-a2e8564897ae",
+      "techName": "twoje_dane_3",
+      "title": "Twoje dane",
+      "confidence": 0.18,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "8a816719-ec6c-5ca6-8266-282ceb719e5f",
+      "techName": "seria_i_numer_dowodu_osobistego_3",
+      "title": "Seria i numer dowodu osobistego",
+      "confidence": 0.18,
+      "reason": "typ z etykiety (TEXT_FIELD)"
+    },
+    {
+      "fieldId": "78876de1-a56f-5a5d-85c5-027a378d81fe",
+      "techName": "dane_do_kontaktu_3",
+      "title": "Dane do kontaktu",
+      "confidence": 0.18,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "128c9d2d-982f-5e42-891b-2bf7c5fbdcaa",
+      "techName": "adres_do_e_doreczen_3",
+      "title": "Adres do e-Doręczeń",
+      "confidence": 0.19,
+      "reason": "typ z etykiety (TEXT_FIELD)"
+    },
+    {
+      "fieldId": "8d396d4d-d6e2-5518-895c-24a96da36874",
+      "techName": "twoje_dane_2",
+      "title": "Twoje dane",
+      "confidence": 0.2,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "61b07844-eb5f-5dfd-96eb-3450d7a28470",
+      "techName": "seria_i_numer_dowodu_osobistego_2",
+      "title": "Seria i numer dowodu osobistego",
+      "confidence": 0.2,
+      "reason": "typ z etykiety (TEXT_FIELD)"
+    },
+    {
+      "fieldId": "4e726795-2c07-59de-9242-2fcfe8bfbe92",
+      "techName": "eeeeeeeeereeneneneewenoenone_ee_weneenewek",
+      "title": "Eeeeeeeeereeneneneewenoenone ee weneenewek",
+      "confidence": 0.2,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "5769e08c-fdf1-5770-bdcd-74d23d877deb",
+      "techName": "wen",
+      "title": "Wen",
+      "confidence": 0.2,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "d8783a5b-2d3b-5dd2-8a99-b2edda295657",
+      "techName": "seria_i_numer_dowodu_osobistego",
+      "title": "Seria i numer dowodu osobistego",
+      "confidence": 0.21,
+      "reason": "typ z etykiety (TEXT_FIELD)"
+    },
+    {
+      "fieldId": "f8fae6c9-8756-5e3a-988a-0ad34367801b",
+      "techName": "adres_skrytki_epuap_3",
+      "title": "Adres skrytki ePUAP",
+      "confidence": 0.22,
+      "reason": "typ z etykiety (TEXT_FIELD)"
+    },
+    {
+      "fieldId": "fa959613-4821-5e3b-a411-32c4762eb4f6",
+      "techName": "dane_do_kontaktu",
+      "title": "Dane do kontaktu",
+      "confidence": 0.31,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "64412605-a595-5f7a-bff1-1a2b15a82f5a",
+      "techName": "wnioskodawca",
+      "title": "Wnioskodawca",
+      "confidence": 0.33,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "19547eba-ac94-53f6-be36-203c52f1cd93",
+      "techName": "imie",
+      "title": "Imię",
+      "confidence": 0.39,
+      "reason": "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (name)"
+    },
+    {
+      "fieldId": "150e8afb-84fd-52d5-b3c2-d834333a9cf6",
+      "techName": "wnioskodawca_3",
+      "title": "Wnioskodawca",
+      "confidence": 0.39,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "af9d34c1-29c2-5d47-9610-87d11cd4f92b",
+      "techName": "wnioskodawca_2",
+      "title": "Wnioskodawca",
+      "confidence": 0.43,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "51052a5f-41cc-5322-b418-606a6e87ffdb",
+      "techName": "twoje_dane",
+      "title": "Twoje dane",
+      "confidence": 0.44,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "3b7c56e3-c6d5-5b1c-8132-91d0d7f2e06d",
+      "techName": "text_field_1_ja_nizej_podpisany",
+      "title": "1) Ja niżej podpisany",
+      "confidence": 0.44,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "36bcafa6-87d1-5b54-a576-7edc047109e3",
+      "techName": "eeeseeeeseeasewenenowonawowonosewonowaaweosowasenaaeaae_se",
+      "title": "Eeeseeeeseeasewenenowonawowonosewonowaaweosowasenaaeaae se",
+      "confidence": 0.44,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "fe4b9f36-f531-5a1a-948f-14ddf3094649",
+      "techName": "nr_245",
+      "title": "Nr 245",
+      "confidence": 0.46,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "2c65512d-dcd5-5af9-99c7-29a163adebd9",
+      "techName": "ix",
+      "title": "Ix",
+      "confidence": 0.46,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "65c38b11-ce96-5142-9478-c80a49d824ea",
+      "techName": "text_field_2024",
+      "title": "2024",
+      "confidence": 0.46,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "0573cdfb-a6e6-54e7-bd3a-f843dc3cf38d",
+      "techName": "zgoda_w_imieniu_kandydata_nieletniego_do_stypendium_2",
+      "title": "Zgoda w imieniu kandydata nieletniego do stypendium",
+      "confidence": 0.53,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "e3b03b82-a876-55f4-a4f2-a1ce93198711",
+      "techName": "dane_do_kontaktu_2",
+      "title": "Dane do kontaktu",
+      "confidence": 0.54,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "0af2ebd7-c296-505f-a9e1-d381fd316dcc",
+      "techName": "a_nastepnie_wybierz_konkretne_dyscypliny_z_listy",
+      "title": "A następnie wybierz konkretne dyscypliny z listy",
+      "confidence": 0.55,
+      "reason": "opcje z listy po instrukcji 'zaznacz' (brak wykrytych kratek)"
+    },
+    {
+      "fieldId": "2a4b65f8-d727-54c0-bec8-be036246d193",
+      "techName": "dyscypliny_sportowe_3",
+      "title": "Dyscypliny sportowe",
+      "confidence": 0.55,
+      "reason": "opcje z listy po instrukcji 'zaznacz' (brak wykrytych kratek)"
+    },
+    {
+      "fieldId": "a2127a9f-6691-54b8-9ccb-55b5fe22f5c4",
+      "techName": "zgoda_kandydata_do_wyroznienia_2",
+      "title": "Zgoda kandydata do wyróżnienia",
+      "confidence": 0.55,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "cd30eefd-0cf8-596e-b69f-27e827633de2",
+      "techName": "zgoda_kandydata_pelnoletniego_do_stypendium_2",
+      "title": "Zgoda kandydata pełnoletniego do stypendium",
+      "confidence": 0.56,
+      "reason": "nagłówek sekcji w dokumencie"
+    }
+  ],
+  "rules": [
+    {
+      "id": "COI-R01",
+      "title": "Zgodność ze schematem JSON importu",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: importowanyPlikJsonSchemat (schema.json)"
+    },
+    {
+      "id": "COI-R02",
+      "title": "Tytuł formularza (nazwa usługi) – wymagany, max 255 znaków",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R03",
+      "title": "Formularz zawiera minimum dwie strony",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R04",
+      "title": "Strona końcowa oznaczona FINISH (jedna, ostatnia), pozostałe MAIN",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R05",
+      "title": "Każda strona zawiera minimum jedno pole",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R06",
+      "title": "Każde pole zagnieżdżone w sekcji lub sekcji powtarzającej się",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R07",
+      "title": "Brak zagnieżdżania sekcji w innej sekcji",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R08",
+      "title": "Na stronie końcowej brak pól typu Input",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R09",
+      "title": "Strony połączone warunkami przepływu (flow)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu; OpisImportowanegoPlikuJSON (flow.links)"
+    },
+    {
+      "id": "COI-R10",
+      "title": "Unikatowe identyfikatory UUID stron, pól i przejść",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON"
+    },
+    {
+      "id": "COI-R11",
+      "title": "Unikatowa nazwa techniczna pola (techName)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (techName → JSONata)"
+    },
+    {
+      "id": "COI-R12",
+      "title": "Poprawny format nazwy technicznej (ASCII, bez spacji)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (techName → JSONata)"
+    },
+    {
+      "id": "COI-R13",
+      "title": "Pozycja pola mieści się w siatce (x, y, rows, cols)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (CSS grid-area)"
+    },
+    {
+      "id": "COI-R14",
+      "title": "Pola w siatce nie nakładają się",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (CSS grid-area)"
+    },
+    {
+      "id": "COI-R15",
+      "title": "Pola wyboru mają opcje lub słownik",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R16",
+      "title": "Opcje wyboru: id, nazwa i unikatowy techName",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu; OpisImportowanegoPlikuJSON"
+    },
+    {
+      "id": "COI-R17",
+      "title": "Słownik tylko w polach SELECT/RADIO/CHECKBOX (adresowe i Kraje – SELECT)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Hacknation – Słowniki"
+    },
+    {
+      "id": "COI-R18",
+      "title": "Poprawna składnia wyrażeń JSONata w stanach pól",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (warunki jsonaty)"
+    },
+    {
+      "id": "COI-R19",
+      "title": "Wyrażenia JSONata odwołują się do istniejących pól i stron",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (warunki jsonaty)"
+    },
+    {
+      "id": "COI-R20",
+      "title": "Dozwolone typy stanów: SHOW, READ_ONLY (sekcje: SHOW)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (dynamiczne stany)"
+    },
+    {
+      "id": "COI-R21",
+      "title": "Sekcja ma nazwę (title)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (sekcja: title – TAK)"
+    },
+    {
+      "id": "COI-R22",
+      "title": "Sekcja informacyjna ma opis (description)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (INFO_SECTION: description – TAK)"
+    },
+    {
+      "id": "COI-R23",
+      "title": "Sekcja zgód zawiera zgody (consentSectionConfig)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu; OpisImportowanegoPlikuJSON"
+    },
+    {
+      "id": "COI-R24",
+      "title": "Dane z rejestru (EXTERNAL_SYSTEM) – źródło i tylko do odczytu",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON; Standardy projektowania formularzy eUsług (Twoje dane)"
+    },
+    {
+      "id": "COI-R25",
+      "title": "Walidatory PESEL/NIP/REGON/e-mail/kod pocztowy zgodne z etykietą",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Standardy projektowania formularzy eUsług; Reguły techniczne konfiguracji formularzy i pól na formularzu (walidatory)"
+    },
+    {
+      "id": "COI-R26",
+      "title": "Walidatory dozwolone dla typu pola",
+      "severity": "error",
+      "passed": true,
+      "repaired": true,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (specyfikacja komponentów)"
+    },
+    {
+      "id": "COI-R27",
+      "title": "Strony mają niepusty, jednoznaczny tytuł",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON; Reguły techniczne konfiguracji formularzy i pól na formularzu (JSONata tabs[… in title])"
+    },
+    {
+      "id": "COI-R28",
+      "title": "Lista rozwijana z >15 opcjami ma wyszukiwarkę",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Standardy projektowania formularzy eUsług (pkt 4f)"
+    },
+    {
+      "id": "COI-R29",
+      "title": "Formularz zawiera pola do wypełnienia",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    }
+  ],
+  "repairs": [
+    {
+      "ruleId": "COI-R26",
+      "path": "/tabs/2/questions/3/field/repeatingSectionGrid/0/field/validation",
+      "description": "Usunięto niedozwolone/powtórzone walidatory",
+      "before": [
+        "REQUIRED"
+      ],
+      "after": []
+    },
+    {
+      "ruleId": "COI-R26",
+      "path": "/tabs/2/questions/4/field/repeatingSectionGrid/0/field/validation",
+      "description": "Usunięto niedozwolone/powtórzone walidatory",
+      "before": [
+        "REQUIRED"
+      ],
+      "after": []
+    },
+    {
+      "ruleId": "COI-R26",
+      "path": "/tabs/2/questions/5/field/repeatingSectionGrid/0/field/validation",
+      "description": "Usunięto niedozwolone/powtórzone walidatory",
+      "before": [
+        "REQUIRED"
+      ],
+      "after": []
+    }
+  ],
+  "proposedDictionaries": [
+    {
+      "name": "Dyscypliny sportowe",
+      "fieldId": "2a4b65f8-d727-54c0-bec8-be036246d193",
+      "items": [
+        "Gimnastyka artystyczna",
+        "Hokej",
+        "Karate",
+        "Kolarstwo",
+        "Koszykówka",
+        "Lekkoatletyka",
+        "Łucznictwo",
+        "Łyżwiarstwo",
+        "Narciarstwo klasyczne",
+        "Piłka nożna",
+        "Piłka ręczna",
+        "Piłka siatkowa",
+        "Piłka wodna",
+        "Sport motocyklowy",
+        "Sporty walki",
+        "Sporty wodne",
+        "Tenis stołowy",
+        "Tenis ziemny",
+        "Unihokej",
+        "Zapasy"
+      ],
+      "reason": "długa lista (20 opcji) – warto wydzielić jako słownik"
+    }
+  ],
+  "warnings": [],
+  "timings": {
+    "extract": 12242,
+    "infer": 23,
+    "dict": 3,
+    "build": 2,
+    "validate": 24
+  },
+  "llm": {
+    "used": false
+  }
+}

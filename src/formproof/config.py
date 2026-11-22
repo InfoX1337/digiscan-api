@@ -21,6 +21,7 @@ class Settings(BaseSettings):
 
     max_file_bytes: int = 15 * 1024 * 1024
     max_batch_files: int = 10
+    max_batch_bytes: int = 50 * 1024 * 1024  # łączny rozmiar żądania batch
     max_ocr_pages: int = 5
     request_timeout_s: float = 120.0
 

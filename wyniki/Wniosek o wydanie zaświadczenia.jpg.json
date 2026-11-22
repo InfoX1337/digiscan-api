@@ -1,0 +1,274 @@
+{
+  "title": "Wniosek o wydanie zaświadczenia",
+  "tabs": [
+    {
+      "id": "547db94d-fb7c-58b7-a9f4-901fa428edc6",
+      "title": "Szczegóły wniosku",
+      "type": "MAIN",
+      "questions": [
+        {
+          "x": 0,
+          "y": 0,
+          "rows": 3,
+          "cols": 3,
+          "field": {
+            "id": "41afe584-feae-5cd7-8e22-71253f873219",
+            "type": "SECTION",
+            "techName": "dane_wniosku",
+            "title": "Dane wniosku",
+            "description": "",
+            "options": [],
+            "validation": [],
+            "readOnly": false,
+            "repeatingSectionGrid": [
+              {
+                "x": 0,
+                "y": 0,
+                "rows": 1,
+                "cols": 3,
+                "field": {
+                  "id": "c8fba0d1-3837-5769-b18b-bf3fcf8c002e",
+                  "type": "TEXT_BLOCK",
+                  "techName": "text_block",
+                  "title": "",
+                  "description": "/ adres / Urząd Miasta i Gminy Młynary ul. Dworcowa 29",
+                  "options": [],
+                  "validation": [],
+                  "readOnly": false,
+                  "repeatingSectionGrid": [],
+                  "states": [],
+                  "questionOrder": 0,
+                  "tooltipMessage": ""
+                }
+              },
+              {
+                "x": 0,
+                "y": 1,
+                "rows": 1,
+                "cols": 3,
+                "field": {
+                  "id": "35229f22-a331-59f8-9a95-75c93fc189c2",
+                  "type": "TEXT_FIELD",
+                  "techName": "text_field_14_420_mlynary",
+                  "title": "14-420 Młynary",
+                  "description": "",
+                  "options": [],
+                  "validation": [
+                    "REQUIRED"
+                  ],
+                  "readOnly": false,
+                  "repeatingSectionGrid": [],
+                  "states": [],
+                  "questionOrder": 1,
+                  "tooltipMessage": ""
+                }
+              }
+            ],
+            "states": [],
+            "questionOrder": 0,
+            "tooltipMessage": ""
+          }
+        },
+        {
+          "x": 0,
+          "y": 3,
+          "rows": 4,
+          "cols": 3,
+          "field": {
+            "id": "debef8f9-6db7-55ee-8763-db539ed7530e",
+            "type": "SECTION",
+            "techName": "szczegoly_wniosku",
+            "title": "Szczegóły wniosku",
+            "description": "",
+            "options": [],
+            "validation": [],
+            "readOnly": false,
+            "repeatingSectionGrid": [
+              {
+                "x": 0,
+                "y": 0,
+                "rows": 1,
+                "cols": 3,
+                "field": {
+                  "id": "84b0ebf4-d9c5-512b-89eb-a629fed81f06",
+                  "type": "TEXT_BLOCK",
+                  "techName": "text_block_2",
+                  "title": "",
+                  "description": "= ilości posiadanych użytków rolnych w hektarach fizycznych i przeliczeniowych = ilości dzierżawionych użytków rolnych w hektarach fizycznych i przeliczeniowych => okresie posiadania gospodarstwa rolnego => nieposiadaniu użytków rolnych / gospodarstwa rolnego na terenie Gminy Młynary n :: .. .",
+                  "options": [],
+                  "validation": [],
+                  "readOnly": false,
+                  "repeatingSectionGrid": [],
+                  "states": [],
+                  "questionOrder": 0,
+                  "tooltipMessage": ""
+                }
+              },
+              {
+                "x": 0,
+                "y": 1,
+                "rows": 1,
+                "cols": 3,
+                "field": {
+                  "id": "fd59d016-24a2-5704-a357-1f37ee0deb9a",
+                  "type": "TEXT_FIELD",
+                  "techName": "prosze_o_wydanie_zaswiadczenia_0",
+                  "title": "Proszę o wydanie zaświadczenia 0",
+                  "description": "",
+                  "options": [],
+                  "validation": [
+                    "REQUIRED"
+                  ],
+                  "readOnly": false,
+                  "repeatingSectionGrid": [],
+                  "states": [],
+                  "questionOrder": 1,
+                  "tooltipMessage": ""
+                }
+              },
+              {
+                "x": 0,
+                "y": 2,
+                "rows": 1,
+                "cols": 3,
+                "field": {
+                  "id": "510f7137-678b-52d5-9f98-9a6ddb257722",
+                  "type": "TEXT_FIELD",
+                  "techName": "zaswiadczenie_potrzebne_jest_celem_przedlozenia_w",
+                  "title": "Zaświadczenie potrzebne jest celem przedłożenia w",
+                  "description": "",
+                  "options": [],
+                  "validation": [
+                    "REQUIRED"
+                  ],
+                  "readOnly": false,
+                  "repeatingSectionGrid": [],
+                  "states": [],
+                  "questionOrder": 2,
+                  "tooltipMessage": ""
+                }
+              }
+            ],
+            "states": [],
+            "questionOrder": 1,
+            "tooltipMessage": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "0991b883-84ea-5940-a58e-5dcb7b07fade",
+      "title": "Kontakt i zgody",
+      "type": "MAIN",
+      "questions": [
+        {
+          "x": 0,
+          "y": 0,
+          "rows": 2,
+          "cols": 3,
+          "field": {
+            "id": "5da858c6-eec5-5df7-8656-3bb194fd7d38",
+            "type": "SECTION",
+            "techName": "dane_do_kontaktu",
+            "title": "Dane do kontaktu",
+            "description": "",
+            "options": [],
+            "validation": [],
+            "readOnly": false,
+            "repeatingSectionGrid": [
+              {
+                "x": 0,
+                "y": 0,
+                "rows": 1,
+                "cols": 3,
+                "field": {
+                  "id": "ba0db4ef-4f07-5fec-996c-dccfb1302bf7",
+                  "type": "TEXT_FIELD",
+                  "techName": "numer_telefonu",
+                  "title": "Numer telefonu",
+                  "description": "",
+                  "options": [],
+                  "validation": [
+                    "REQUIRED"
+                  ],
+                  "readOnly": true,
+                  "repeatingSectionGrid": [],
+                  "states": [],
+                  "questionOrder": 0,
+                  "tooltipMessage": "",
+                  "defaultValue": "MLPZ.phoneNumber",
+                  "defaultValueType": "EXTERNAL_SYSTEM"
+                }
+              }
+            ],
+            "states": [],
+            "questionOrder": 0,
+            "tooltipMessage": ""
+          }
+        }
+      ]
+    },
+    {
+      "id": "8b3b7864-fd15-5c4a-a61c-9a4ac2875a6f",
+      "title": "Strona końcowa",
+      "type": "FINISH",
+      "questions": [
+        {
+          "x": 0,
+          "y": 0,
+          "rows": 2,
+          "cols": 3,
+          "field": {
+            "id": "35e22d6c-42a7-5f1e-b5e4-7635c1186afd",
+            "type": "SECTION",
+            "techName": "podglad_uzupelnionego_wniosku",
+            "title": "Podgląd uzupełnionego wniosku",
+            "description": "",
+            "options": [],
+            "validation": [],
+            "readOnly": false,
+            "repeatingSectionGrid": [
+              {
+                "x": 0,
+                "y": 0,
+                "rows": 1,
+                "cols": 3,
+                "field": {
+                  "id": "63b5140d-cf7d-56c8-937c-d347668aa47b",
+                  "type": "INFO_SECTION",
+                  "techName": "podglad",
+                  "title": "Podgląd",
+                  "description": "Sprawdź podgląd uzupełnionego wniosku przed wysłaniem.",
+                  "options": [],
+                  "validation": [],
+                  "readOnly": false,
+                  "repeatingSectionGrid": [],
+                  "states": [],
+                  "questionOrder": 0,
+                  "tooltipMessage": ""
+                }
+              }
+            ],
+            "states": [],
+            "questionOrder": 0,
+            "tooltipMessage": ""
+          }
+        }
+      ]
+    }
+  ],
+  "flow": {
+    "links": [
+      {
+        "id": "b3684084-d089-594b-941c-6c78e33e3375",
+        "source": "547db94d-fb7c-58b7-a9f4-901fa428edc6",
+        "target": "0991b883-84ea-5940-a58e-5dcb7b07fade"
+      },
+      {
+        "id": "3876fd1b-9419-5851-b38e-b6c221bcc102",
+        "source": "0991b883-84ea-5940-a58e-5dcb7b07fade",
+        "target": "8b3b7864-fd15-5c4a-a61c-9a4ac2875a6f"
+      }
+    ]
+  }
+}

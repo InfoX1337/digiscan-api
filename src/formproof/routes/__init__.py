@@ -66,14 +66,14 @@ async def _read(upload: UploadFile, cfg: Settings) -> bytes:
 async def convert_one(
     _: Auth,
     cfg: Cfg,
-    file: Annotated[UploadFile | None, File(description="Formularz: pdf, png, jpg, tiff, docx, doc, xlsx, ods")] = None,
+    file: Annotated[UploadFile | None, File(description="Formularz: pdf, doc, docx, ods, xlsx, jpg, jpeg, png")] = None,
     llm: Annotated[bool, Query(description="Wzbogacenie lokalnym LLM")] = True,
     previews: Annotated[bool, Query(description="Dołącz PNG stron oryginału do report.previews")] = False,
 ) -> Any:
     try:
         if file is None:
             raise IngestError("NO_FILE", 'Brak pliku w polu "file".')
-        f = ingest(file.filename, await _read(file, cfg), cfg.max_file_bytes)
+        f = ingest(file.filename, await _read(file, cfg), cfg.max_file_bytes, file.content_type)
         res = await run_in_threadpool(convert, f, cfg, ConvertOptions(llm=llm, previews=previews))
         return res.dump()
     except Exception as e:  # noqa: BLE001
@@ -95,7 +95,7 @@ async def convert_batch(
     results: list[dict[str, Any]] = []
     for up in files:
         try:
-            f = ingest(up.filename, await _read(up, cfg), cfg.max_file_bytes)
+            f = ingest(up.filename, await _read(up, cfg), cfg.max_file_bytes, up.content_type)
             res = await run_in_threadpool(convert, f, cfg, ConvertOptions(llm=llm))
             results.append({"filename": up.filename, "ok": True, **res.dump()})
         except Exception as e:  # noqa: BLE001

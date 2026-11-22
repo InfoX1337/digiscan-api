@@ -76,3 +76,96 @@ def test_convert_stub_pipeline_422(client, token: str) -> None:  # type: ignore[
     )
     # stub extract -> brak bloków -> 422; po EXTRACT -> 200
     assert r.status_code in (200, 422)
+
+
+@pytest.mark.parametrize("ch", list(";:><\\|'*%$/"))
+def test_ingest_rejects_forbidden_chars(ch: str) -> None:
+    with pytest.raises(IngestError) as e:
+        ingest(f"wniosek{ch}1.pdf", PDF, 10**6)
+    assert e.value.code == "BAD_FILENAME"
+
+
+def test_ingest_name_length_limit_250() -> None:
+    assert ingest("a" * 246 + ".pdf", PDF, 10**6).filename
+    with pytest.raises(IngestError) as e:
+        ingest("a" * 247 + ".pdf", PDF, 10**6)
+    assert e.value.code == "BAD_FILENAME"
+
+
+@pytest.mark.parametrize("ext", ["tif", "tiff", "xls", "odt"])
+def test_ingest_rejects_extensions_outside_spec(ext: str) -> None:
+    with pytest.raises(IngestError) as e:
+        ingest(f"a.{ext}", PDF, 10**6)
+    assert e.value.code == "BAD_EXTENSION"
+
+
+@pytest.mark.parametrize(
+    ("ctype", "ok"),
+    [
+        ("application/pdf", True),
+        ("application/pdf; charset=binary", True),
+        ("application/octet-stream", True),
+        (None, True),
+        ("image/png", False),
+        ("text/plain", False),
+    ],
+)
+def test_ingest_checks_declared_content_type(ctype: str | None, ok: bool) -> None:
+    if ok:
+        assert ingest("a.pdf", PDF, 10**6, ctype).ext == "pdf"
+    else:
+        with pytest.raises(IngestError) as e:
+            ingest("a.pdf", PDF, 10**6, ctype)
+        assert e.value.code == "MIME_MISMATCH"
+
+
+def test_ingest_doc_requires_word_ole() -> None:
+    ole = b"\xd0\xcf\x11\xe0\xa1\xb1\x1a\xe1" + b"\x00" * 600
+    with pytest.raises(IngestError) as e:
+        ingest("a.doc", ole + "Workbook".encode("utf-16-le"), 10**6)
+    assert e.value.code == "MIME_MISMATCH"
+    assert ingest("a.doc", ole + "WordDocument".encode("utf-16-le"), 10**6).ext == "doc"
+
+
+def test_convert_content_type_mismatch_via_api(client, token: str) -> None:  # type: ignore[no-untyped-def]
+    r = client.post(
+        "/api/v1/forms/convert",
+        headers={"Authorization": f"Bearer {token}"},
+        files={"file": ("x.pdf", PDF, "image/png")},
+    )
+    assert r.status_code == 415
+    assert r.json()["code"] == "MIME_MISMATCH"
+
+
+def test_body_limit_content_length(client, token: str) -> None:  # type: ignore[no-untyped-def]
+    from formproof.config import get_settings
+
+    big = b"%PDF-" + b"0" * (get_settings().max_file_bytes + 128 * 1024)
+    r = client.post(
+        "/api/v1/forms/convert",
+        headers={"Authorization": f"Bearer {token}"},
+        files={"file": ("big.pdf", big, "application/pdf")},
+    )
+    assert r.status_code == 413
+    assert r.json()["code"] == "FILE_TOO_LARGE"
+
+
+def test_body_limit_streamed_without_length(client, token: str) -> None:  # type: ignore[no-untyped-def]
+    from formproof.config import get_settings
+
+    limit = get_settings().max_batch_bytes
+
+    def chunks():  # type: ignore[no-untyped-def]
+        boundary = b'--b\r\nContent-Disposition: form-data; name="file"; filename="a.pdf"\r\n\r\n'
+        yield boundary
+        piece = b"0" * (1024 * 1024)
+        for _ in range(limit // len(piece) + 2):
+            yield piece
+
+    r = client.post(
+        "/api/v1/forms/convert/batch",
+        headers={"Authorization": f"Bearer {token}", "content-type": "multipart/form-data; boundary=b"},
+        content=chunks(),
+    )
+    assert r.status_code == 413
+    assert r.json()["code"] == "FILE_TOO_LARGE"

@@ -1,0 +1,565 @@
+{
+  "filename": "Wniosek o wydanie zaświadczenia.png",
+  "format": "image",
+  "ocr": true,
+  "confidence": 0.65,
+  "fields": {
+    "41afe584-feae-5cd7-8e22-71253f873219": {
+      "id": "41afe584-feae-5cd7-8e22-71253f873219",
+      "techName": "dane_wniosku",
+      "title": "Dane wniosku",
+      "type": "SECTION",
+      "confidence": 0.76,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "grupa pól"
+      ]
+    },
+    "c8fba0d1-3837-5769-b18b-bf3fcf8c002e": {
+      "id": "c8fba0d1-3837-5769-b18b-bf3fcf8c002e",
+      "techName": "text_block",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 312.0,
+            "w": 1247.0,
+            "h": 75.0
+          },
+          "text": "/ adres / Urząd Miasta i Gminy Młynary ul. Dworcowa 29",
+          "blockIds": [
+            "p1-b1",
+            "p1-b2"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "35229f22-a331-59f8-9a95-75c93fc189c2": {
+      "id": "35229f22-a331-59f8-9a95-75c93fc189c2",
+      "techName": "text_field_14_420_mlynary",
+      "title": "14-420 Młynary",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 996.0,
+            "y": 407.0,
+            "w": 223.0,
+            "h": 30.0
+          },
+          "text": "14-420 Młynary",
+          "blockIds": [
+            "p1-b3"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "debef8f9-6db7-55ee-8763-db539ed7530e": {
+      "id": "debef8f9-6db7-55ee-8763-db539ed7530e",
+      "techName": "szczegoly_wniosku",
+      "title": "Szczegóły wniosku",
+      "type": "SECTION",
+      "confidence": 0.45,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 494.0,
+            "y": 671.0,
+            "w": 666.0,
+            "h": 31.0
+          },
+          "text": "WNIOSEK O WYDANIE ZAŚWIADCZENIA",
+          "blockIds": [
+            "p1-b5"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "84b0ebf4-d9c5-512b-89eb-a629fed81f06": {
+      "id": "84b0ebf4-d9c5-512b-89eb-a629fed81f06",
+      "techName": "text_block_2",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 297.0,
+            "y": 1041.0,
+            "w": 1100.0,
+            "h": 30.0
+          },
+          "text": "nieposiadaniu użytków rolnych / gospodarstwa rolnego na terenie Gminy Młynary",
+          "blockIds": [
+            "p1-b11"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "fd59d016-24a2-5704-a357-1f37ee0deb9a": {
+      "id": "fd59d016-24a2-5704-a357-1f37ee0deb9a",
+      "techName": "prosze_o_wydanie_zaswiadczenia_0",
+      "title": "Proszę o wydanie zaświadczenia 0",
+      "type": "RADIO",
+      "confidence": 0.55,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 297.0,
+            "y": 767.0,
+            "w": 1110.0,
+            "h": 181.0
+          },
+          "text": "Proszę o wydanie zaświadczenia 0:* ilości posiadanych użytków rolnych w hektarach fizycznych i przeliczeniowych ilości dzierżawionych użytków rolnych w hektarach fizycznych i przeliczeniowych",
+          "blockIds": [
+            "p1-b6",
+            "p1-b8",
+            "p1-b9"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "opcje z listy po instrukcji 'zaznacz' (brak wykrytych kratek)"
+      ]
+    },
+    "510f7137-678b-52d5-9f98-9a6ddb257722": {
+      "id": "510f7137-678b-52d5-9f98-9a6ddb257722",
+      "techName": "iv_okresie_posiadania_gospodarstwa_rolnego",
+      "title": "IV, okresie posiadania gospodarstwa rolnego",
+      "type": "TEXT_FIELD",
+      "confidence": 0.0,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 249.0,
+            "y": 857.0,
+            "w": 596.0,
+            "h": 267.0
+          },
+          "text": ",IV, okresie posiadania gospodarstwa rolnego",
+          "blockIds": [
+            "p1-b7",
+            "p1-b10"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "5da858c6-eec5-5df7-8656-3bb194fd7d38": {
+      "id": "5da858c6-eec5-5df7-8656-3bb194fd7d38",
+      "techName": "dane_do_kontaktu",
+      "title": "Dane do kontaktu",
+      "type": "SECTION",
+      "confidence": 0.61,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "grupa pól"
+      ]
+    },
+    "ba0db4ef-4f07-5fec-996c-dccfb1302bf7": {
+      "id": "ba0db4ef-4f07-5fec-996c-dccfb1302bf7",
+      "techName": "numer_telefonu",
+      "title": "Numer telefonu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.61,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 197.0,
+            "y": 546.0,
+            "w": 180.0,
+            "h": 23.0
+          },
+          "text": "/ nr telefonu /",
+          "blockIds": [
+            "p1-b4"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD); podpis pod brakującym w OCR miejscem do wpisania",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (phoneNumber)"
+      ]
+    },
+    "35e22d6c-42a7-5f1e-b5e4-7635c1186afd": {
+      "id": "35e22d6c-42a7-5f1e-b5e4-7635c1186afd",
+      "techName": "podglad_uzupelnionego_wniosku",
+      "title": "Podgląd uzupełnionego wniosku",
+      "type": "SECTION",
+      "confidence": 1.0,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard: strona końcowa z podglądem"
+      ]
+    },
+    "63b5140d-cf7d-56c8-937c-d347668aa47b": {
+      "id": "63b5140d-cf7d-56c8-937c-d347668aa47b",
+      "techName": "podglad",
+      "title": "Podgląd",
+      "type": "INFO_SECTION",
+      "confidence": 1.0,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard: strona końcowa z podglądem"
+      ]
+    }
+  },
+  "review": [
+    {
+      "fieldId": "510f7137-678b-52d5-9f98-9a6ddb257722",
+      "techName": "iv_okresie_posiadania_gospodarstwa_rolnego",
+      "title": "IV, okresie posiadania gospodarstwa rolnego",
+      "confidence": 0.0,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "debef8f9-6db7-55ee-8763-db539ed7530e",
+      "techName": "szczegoly_wniosku",
+      "title": "Szczegóły wniosku",
+      "confidence": 0.45,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "fd59d016-24a2-5704-a357-1f37ee0deb9a",
+      "techName": "prosze_o_wydanie_zaswiadczenia_0",
+      "title": "Proszę o wydanie zaświadczenia 0",
+      "confidence": 0.55,
+      "reason": "opcje z listy po instrukcji 'zaznacz' (brak wykrytych kratek)"
+    }
+  ],
+  "rules": [
+    {
+      "id": "COI-R01",
+      "title": "Zgodność ze schematem JSON importu",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: importowanyPlikJsonSchemat (schema.json)"
+    },
+    {
+      "id": "COI-R02",
+      "title": "Tytuł formularza (nazwa usługi) – wymagany, max 255 znaków",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R03",
+      "title": "Formularz zawiera minimum dwie strony",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R04",
+      "title": "Strona końcowa oznaczona FINISH (jedna, ostatnia), pozostałe MAIN",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R05",
+      "title": "Każda strona zawiera minimum jedno pole",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R06",
+      "title": "Każde pole zagnieżdżone w sekcji lub sekcji powtarzającej się",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R07",
+      "title": "Brak zagnieżdżania sekcji w innej sekcji",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R08",
+      "title": "Na stronie końcowej brak pól typu Input",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R09",
+      "title": "Strony połączone warunkami przepływu (flow)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu; OpisImportowanegoPlikuJSON (flow.links)"
+    },
+    {
+      "id": "COI-R10",
+      "title": "Unikatowe identyfikatory UUID stron, pól i przejść",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON"
+    },
+    {
+      "id": "COI-R11",
+      "title": "Unikatowa nazwa techniczna pola (techName)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (techName → JSONata)"
+    },
+    {
+      "id": "COI-R12",
+      "title": "Poprawny format nazwy technicznej (ASCII, bez spacji)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (techName → JSONata)"
+    },
+    {
+      "id": "COI-R13",
+      "title": "Pozycja pola mieści się w siatce (x, y, rows, cols)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (CSS grid-area)"
+    },
+    {
+      "id": "COI-R14",
+      "title": "Pola w siatce nie nakładają się",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (CSS grid-area)"
+    },
+    {
+      "id": "COI-R15",
+      "title": "Pola wyboru mają opcje lub słownik",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R16",
+      "title": "Opcje wyboru: id, nazwa i unikatowy techName",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu; OpisImportowanegoPlikuJSON"
+    },
+    {
+      "id": "COI-R17",
+      "title": "Słownik tylko w polach SELECT/RADIO/CHECKBOX (adresowe i Kraje – SELECT)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Hacknation – Słowniki"
+    },
+    {
+      "id": "COI-R18",
+      "title": "Poprawna składnia wyrażeń JSONata w stanach pól",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (warunki jsonaty)"
+    },
+    {
+      "id": "COI-R19",
+      "title": "Wyrażenia JSONata odwołują się do istniejących pól i stron",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (warunki jsonaty)"
+    },
+    {
+      "id": "COI-R20",
+      "title": "Dozwolone typy stanów: SHOW, READ_ONLY (sekcje: SHOW)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (dynamiczne stany)"
+    },
+    {
+      "id": "COI-R21",
+      "title": "Sekcja ma nazwę (title)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (sekcja: title – TAK)"
+    },
+    {
+      "id": "COI-R22",
+      "title": "Sekcja informacyjna ma opis (description)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (INFO_SECTION: description – TAK)"
+    },
+    {
+      "id": "COI-R23",
+      "title": "Sekcja zgód zawiera zgody (consentSectionConfig)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu; OpisImportowanegoPlikuJSON"
+    },
+    {
+      "id": "COI-R24",
+      "title": "Dane z rejestru (EXTERNAL_SYSTEM) – źródło i tylko do odczytu",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON; Standardy projektowania formularzy eUsług (Twoje dane)"
+    },
+    {
+      "id": "COI-R25",
+      "title": "Walidatory PESEL/NIP/REGON/e-mail/kod pocztowy zgodne z etykietą",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Standardy projektowania formularzy eUsług; Reguły techniczne konfiguracji formularzy i pól na formularzu (walidatory)"
+    },
+    {
+      "id": "COI-R26",
+      "title": "Walidatory dozwolone dla typu pola",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (specyfikacja komponentów)"
+    },
+    {
+      "id": "COI-R27",
+      "title": "Strony mają niepusty, jednoznaczny tytuł",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON; Reguły techniczne konfiguracji formularzy i pól na formularzu (JSONata tabs[… in title])"
+    },
+    {
+      "id": "COI-R28",
+      "title": "Lista rozwijana z >15 opcjami ma wyszukiwarkę",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Standardy projektowania formularzy eUsług (pkt 4f)"
+    },
+    {
+      "id": "COI-R29",
+      "title": "Formularz zawiera pola do wypełnienia",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    }
+  ],
+  "repairs": [],
+  "proposedDictionaries": [],
+  "warnings": [],
+  "timings": {
+    "extract": 866,
+    "infer": 2,
+    "dict": 0,
+    "build": 0,
+    "validate": 1
+  },
+  "llm": {
+    "used": false
+  }
+}

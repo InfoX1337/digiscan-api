@@ -24,7 +24,7 @@ Materiały: COI/.work/mat (symlink tests/fixtures/materials), COI/.work/txt (sch
 - `.env` (lokalny, poza gitem): OLLAMA_URL=http://localhost:11434 dla uruchomienia na hoście; compose nadpisuje na ollama:11434.
 
 ## Linki / worktree / problemy
-Repo remote: brak (utworzyć publiczne na GitHub przed zgłoszeniem).
+Repo remote: github.com/InfoX1337/digiscan-api – PRYWATNE, upublicznić przed zgłoszeniem. Materiały COI (PDF regulaminu, zipy) usunięte z indeksu 2026-11-22, ale są w historii od ad4a168 – decyzja użytkownika o przepisaniu historii.
 3b (13:11): krok 1 przegląd UI DONE (commit 4db5f58: reguły OK zwinięte, intro 3 kroki, placeholder rejestru, odmiana; UI e2e 9/9).
 Stretch 1+2+3 SCALONE (15:33): walidatory live, pętla urzędnika (edit-apply/edit-confirm → /forms/validate, sekcje też), strona web/eval.html (link w nagłówku, testid eval-link). pytest 135, UI e2e 11/11.
 feat/infer SCALONY (eval form 1 PDF/ODS P 0.93 R 0.96). Worktree: brak.
@@ -32,3 +32,8 @@ Form 9 (3 wnioski w 1, materiał w .work/mat/9.*): infer/variants.py – spis 'R
 Znane braki form 9: blok 'Wnioskodawca' (Prezydent/Klub) słabo rozpoznany; 4× 'Dane osobowe podopiecznego' zamiast REPEATING_SECTION; ukryte sekcje zostawiają lukę w siatce podglądu.
 Freeze 17:50: pytest 149/149, ruff+mypy zielone, UI e2e (real+variants) 7/7 w Dockerze, README z listą funkcji i docs/screenshot.png. Demo: Docker :8000, konto demo/demo-secret (auto-login APP_ENV=demo). testid: upload-input, convert-btn, form-viz, rules-panel, download-json, eval-link. Reset: brak bazy (bezstanowe).
 Problemy: Tesseract na hoście bez `pol` (brew install tesseract-lang albo demo w Dockerze). Zasady AI hacknation.pl niesprawdzone. Ollama w Dockerze na Mac bez GPU wolna -> OLLAMA_URL na host.
+
+## Audyt zewnętrzny – poprawki 2026-11-22
+Nazwa: zakazane ; : > < / \ | ' * % $, ≤250. Usunięto .tif/.tiff (poza listą zadania). Content-Type musi pasować do rozszerzenia (octet-stream dopuszczony); DOC = OLE ze strumieniem WordDocument. limits.py: limit ciała (Content-Length + strumień), MAX_BATCH_BYTES=50 MB. README: ostrzeżenie o trybie demo, kody błędów, walidacja. docs/ARCHITECTURE.md. compose: .env opcjonalny. Dockerfile: uv z PyPI (bez obrazu ghcr). wyniki/: 40 form + raporty (Docker, llm off), 40/40 schema, 29/29 reguł. Hardkod 17 zł/pełnomocnictwo = standard eUsług COI (standardy.txt), wyzwalany treścią – zostaje.
+Testy: pytest 175 + e2e API 45, UI e2e 7/7 na nowym obrazie, ruff/mypy/licencje OK. Kontener formproof-demo (:8000) na starym obrazie – przebudować.
+Zostaje (użytkownik): repo publiczne, prezentacja PDF ≤10 slajdów, film ≤3 min w otwartym repo, opis zgłoszenia, sprawdzić regulamin AI hacknation.pl.

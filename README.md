@@ -1,6 +1,6 @@
 # FormProof – formularz urzędowy → JSON e-usługi COI, z dowodem dla każdego pola
 
-FormProof zamienia plik formularza (PDF, skan JPG/PNG/TIFF, DOCX, DOC, XLSX, ODS) w konfigurację formularza
+FormProof zamienia plik formularza (PDF, DOC/DOCX, ODS, XLSX, skan JPG/JPEG/PNG) w konfigurację formularza
 e-usługi zgodną ze schemą COI (`importowanyPlikJsonSchemat`). Działa w całości lokalnie: parsery, OCR (Tesseract)
 i opcjonalnie lokalny model open-weights (Ollama). Żadnych usług SaaS ani zewnętrznych API LLM.
 
@@ -16,7 +16,7 @@ z auto-naprawą kieruje urzędnika tylko do pól niepewnych, więc cyfryzacja tr
 
 **Co działa:**
 
-- 8 formatów wejścia (PDF, DOCX, DOC, XLSX, ODS, JPG/PNG/TIFF przez OCR), także kilka plików naraz.
+- 8 rozszerzeń wejścia wg zadania (PDF, DOC, DOCX, ODS, XLSX, JPG, JPEG, PNG – obrazy przez OCR), także kilka plików naraz.
 - Sekcje, pola, typy, walidatory, REQUIRED, słowniki (Kraje, Numery kierunkowe, Województwo, adres TERYT), stany SHOW.
 - Plik z kilkoma wnioskami (spis „Rodzaje wniosków”) → pole wyboru rodzaju wniosku, sekcje wariantów pokazywane warunkowo,
   wspólne sekcje raz.
@@ -26,7 +26,7 @@ z auto-naprawą kieruje urzędnika tylko do pól niepewnych, więc cyfryzacja tr
 ## Szybki start
 
 ```bash
-cp .env.example .env              # w produkcji: własne JWT_SECRET, AUTH_CLIENT_SECRET, APP_ENV=production
+cp .env.example .env              # opcjonalne (bez .env działają wartości domyślne trybu demo)
 docker compose up --build         # api :8000 + ollama
 docker compose exec ollama ollama pull qwen3.5:4b   # jednorazowo (opcjonalne; bez modelu działa tryb reguł)
 ```
@@ -51,6 +51,12 @@ uv run python -m formproof        # :8000
 
 Dane z `.env` (`AUTH_CLIENT_ID`, `AUTH_CLIENT_SECRET`). `APP_ENV=production` wymaga własnych sekretów i wyłącza auto-logowanie UI.
 
+> **Uwaga – tryb demo nie jest zabezpieczony.** Obraz startuje z `APP_ENV=demo`, żeby jury mogło od razu klikać w UI:
+> `GET /api/v1/demo-config` wydaje każdemu 15-minutowy token, a `JWT_SECRET` i `demo-secret` mają jawne wartości
+> domyślne (w kodzie i w tym README). W tym trybie JWT **nie chroni** API. Wdrożenie: `APP_ENV=production`,
+> losowy `JWT_SECRET` (≥ 32 znaki), własny `AUTH_CLIENT_SECRET`, `DEMO_UI=false` – aplikacja odmówi startu,
+> jeśli któregoś brakuje.
+
 ## REST API (prefiks `/api/v1`, JWT Bearer HS256)
 
 | Metoda | Ścieżka | Opis |
@@ -69,17 +75,29 @@ curl -s localhost:8000/api/v1/forms/convert -H "Authorization: Bearer $TOKEN" \
   -F 'file=@Wniosek o zwrot opłaty skarbowej.pdf' | jq '.report.rules | length'
 ```
 
-Błędy: `400` (`BAD_FILENAME`, `EMPTY`, `FILE_TOO_LARGE`, `MIME_MISMATCH`), `401`, `415` (`BAD_EXTENSION`),
-`422` (`NOTHING_EXTRACTED`), `504` (przekroczony czas). Plik sprawdzany po rozszerzeniu i sygnaturze bajtów
-(magic bytes), trzymany tylko w pamięci na czas żądania.
+Błędy: `400` (`NO_FILE`, `BAD_FILENAME`, `EMPTY`, `TOO_MANY_FILES`, `INVALID_REQUEST`), `401` (`UNAUTHORIZED`),
+`413` (`FILE_TOO_LARGE`), `415` (`BAD_EXTENSION`, `MIME_MISMATCH`), `422` (`NOTHING_EXTRACTED`, `INVALID_FORM`),
+`504` (`TIMEOUT`). Format: `{code, message}`.
+
+Walidacja pliku:
+
+- rozszerzenie: `pdf`, `doc`, `docx`, `ods`, `xlsx`, `jpg`, `jpeg`, `png`;
+- nazwa ≤ 250 znaków, bez `; : > < / \ | ' * % $` (oraz znaków sterujących, `"`, `?`, `..`);
+- typ MIME: deklarowany `Content-Type` musi pasować do rozszerzenia (dopuszczalny ogólny `application/octet-stream`),
+  a zawartość jest sprawdzana po sygnaturze bajtów i strukturze (OOXML/ODF w ZIP, strumień `WordDocument` w OLE dla DOC);
+- rozmiar: `MAX_FILE_BYTES` na plik, `MAX_BATCH_BYTES` na całe żądanie batch – sprawdzane po `Content-Length`
+  i w trakcie odbioru, zanim plik trafi do parsera;
+- plik żyje tylko w pamięci (i w `tmpfs` kontenera) na czas żądania, nic nie jest zapisywane.
 
 ## Konfiguracja (`.env`)
 
 `APP_ENV`, `PORT`, `JWT_SECRET`, `JWT_EXPIRES_S`, `JWT_ISSUER`, `JWT_AUDIENCE`, `AUTH_CLIENT_ID`, `AUTH_CLIENT_SECRET`,
-`MAX_FILE_BYTES`, `MAX_BATCH_FILES`, `MAX_OCR_PAGES`, `REQUEST_TIMEOUT_S`, `LLM_ENABLED`, `OLLAMA_URL`, `LLM_MODEL`,
+`MAX_FILE_BYTES`, `MAX_BATCH_FILES`, `MAX_BATCH_BYTES`, `MAX_OCR_PAGES`, `REQUEST_TIMEOUT_S`, `LLM_ENABLED`, `OLLAMA_URL`, `LLM_MODEL`,
 `LLM_TIMEOUT_S`, `TESSERACT_CMD`, `DEMO_UI`. Opis i wartości domyślne: `.env.example`.
 
 ## Architektura
+
+Pełny opis: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
 
 ```
 plik → ingest (rozszerzenie, MIME, nazwa, rozmiar)

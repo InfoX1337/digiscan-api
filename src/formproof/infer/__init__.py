@@ -740,6 +740,8 @@ def _assemble(
     )
 
 
+# Bloki i teksty wg dokumentu standardów eUsług COI (sekcje „Podmiot wniosku”, „Pełnomocnictwo”,
+# „Opłata skarbowa” – kwota 17 zł z tego standardu). Dodawane tylko, gdy treść pliku to uzasadnia (_subject_block).
 _FIZ, _INNA, _PRAWNA = "Swoim", "Innej osoby", "Osoby prawnej lub jednostki organizacyjnej"
 _FEE_TEXT = (
     "Opłata skarbowa za pełnomocnictwo wynosi 17 zł. Przelej ją na konto urzędu miasta lub gminy właściwego "

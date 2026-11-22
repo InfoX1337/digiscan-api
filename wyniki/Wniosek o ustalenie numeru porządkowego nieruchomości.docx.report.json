@@ -1,0 +1,1566 @@
+{
+  "filename": "Wniosek o ustalenie numeru porządkowego nieruchomości.docx",
+  "format": "docx",
+  "ocr": false,
+  "confidence": 0.69,
+  "fields": {
+    "8342bdd9-1d50-5601-bf24-c709095a2f1e": {
+      "id": "8342bdd9-1d50-5601-bf24-c709095a2f1e",
+      "techName": "organ_do_ktorego_jest_skladany_wniosek",
+      "title": "Organ, do którego jest składany wniosek",
+      "type": "SECTION",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "page": 1,
+          "text": "Wnioskodawca: Adresat: (imię i nazwisko/nazwa wnioskodawcy)                                                  Wójt Gminy Elbląg ul. Browarna 85 82-300 Elbląg WNIOSEK O USTALENIE NUMERU PORZĄDKOWEGO",
+          "blockIds": [
+            "p1-b3",
+            "p1-b5",
+            "p1-b7",
+            "p1-b9",
+            "p1-b13"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "adresat wniosku"
+      ]
+    },
+    "2b1a7e03-9843-527d-9b27-12ee6fb296cd": {
+      "id": "2b1a7e03-9843-527d-9b27-12ee6fb296cd",
+      "techName": "nazwa_organu",
+      "title": "Nazwa organu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "page": 1,
+          "text": "Wnioskodawca: Adresat: (imię i nazwisko/nazwa wnioskodawcy)                                                  Wójt Gminy Elbląg ul. Browarna 85 82-300 Elbląg WNIOSEK O USTALENIE NUMERU PORZĄDKOWEGO",
+          "blockIds": [
+            "p1-b3",
+            "p1-b5",
+            "p1-b7",
+            "p1-b9",
+            "p1-b13"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "adresat wniosku z nagłówka dokumentu"
+      ]
+    },
+    "20919e6e-743f-5f4f-9ba2-f2101f32ffb8": {
+      "id": "20919e6e-743f-5f4f-9ba2-f2101f32ffb8",
+      "techName": "podmiot_wniosku",
+      "title": "Podmiot wniosku",
+      "type": "SECTION",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: wybór podmiotu wniosku"
+      ]
+    },
+    "63d498c2-a53c-5f60-886a-a4adaf5ac9f2": {
+      "id": "63d498c2-a53c-5f60-886a-a4adaf5ac9f2",
+      "techName": "wybierz_w_czyim_imieniu_wnioskujesz",
+      "title": "Wybierz, w czyim imieniu wnioskujesz",
+      "type": "RADIO",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "page": 1,
+          "text": " (imię i nazwisko/nazwa wnioskodawcy)                                                  Wójt Gminy Elbląg",
+          "blockIds": [
+            "p1-b4",
+            "p1-b5"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "'nazwa' dla podmiotu niebędącego osobą",
+        "standard eUsługi: wnioskodawcą może być osoba fizyczna lub podmiot ('nazwa wnioskodawcy')"
+      ]
+    },
+    "618c0003-fa70-598e-9ef1-f70ded1b3d40": {
+      "id": "618c0003-fa70-598e-9ef1-f70ded1b3d40",
+      "techName": "wybierz_jako_kto_wnioskujesz",
+      "title": "Wybierz, jako kto wnioskujesz",
+      "type": "RADIO",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: pole sekcji podmiotu wniosku"
+      ]
+    },
+    "d37af3b2-992a-5437-833e-86c4a4845d1d": {
+      "id": "d37af3b2-992a-5437-833e-86c4a4845d1d",
+      "techName": "twoje_dane",
+      "title": "Twoje dane",
+      "type": "SECTION",
+      "confidence": 0.83,
+      "sources": [
+        {
+          "page": 1,
+          "text": "Wnioskodawca: Adresat:",
+          "blockIds": [
+            "p1-b3"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "914fe4ce-74ed-552c-ad79-cfbf69ce3a94": {
+      "id": "914fe4ce-74ed-552c-ad79-cfbf69ce3a94",
+      "techName": "imie",
+      "title": "Imię",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "text": " (imię i nazwisko/nazwa wnioskodawcy)                                                  Wójt Gminy Elbląg",
+          "blockIds": [
+            "p1-b4",
+            "p1-b5"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (name)"
+      ]
+    },
+    "10c11bd2-6ca6-5b9e-be99-3343ed4c44b2": {
+      "id": "10c11bd2-6ca6-5b9e-be99-3343ed4c44b2",
+      "techName": "nazwisko",
+      "title": "Nazwisko",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "text": " (imię i nazwisko/nazwa wnioskodawcy)                                                  Wójt Gminy Elbląg",
+          "blockIds": [
+            "p1-b4",
+            "p1-b5"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (surname)"
+      ]
+    },
+    "e2bcdb2b-e6c5-55e1-a3ba-8e31f1423fb5": {
+      "id": "e2bcdb2b-e6c5-55e1-a3ba-8e31f1423fb5",
+      "techName": "adres_zamieszkania",
+      "title": "Adres zamieszkania",
+      "type": "SECTION",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "text": "Wnioskodawca: Adresat:",
+          "blockIds": [
+            "p1-b3"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "cb8a533f-ddb1-50b3-b9d6-4e97371b083d": {
+      "id": "cb8a533f-ddb1-50b3-b9d6-4e97371b083d",
+      "techName": "kraj",
+      "title": "Kraj",
+      "type": "SELECT",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "text": " (adres)",
+          "blockIds": [
+            "p1-b8",
+            "p1-b10"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi",
+        "pole korzysta ze słownika „Kraje”"
+      ]
+    },
+    "2ccfb7a7-c695-58d0-beb0-9fe86e3d4951": {
+      "id": "2ccfb7a7-c695-58d0-beb0-9fe86e3d4951",
+      "techName": "miejscowosc_zagranica",
+      "title": "Miejscowość",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "page": 1,
+          "text": " (adres)",
+          "blockIds": [
+            "p1-b8",
+            "p1-b10"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "3e4bf024-f6d7-513f-8216-c892abd194c1": {
+      "id": "3e4bf024-f6d7-513f-8216-c892abd194c1",
+      "techName": "kod_pocztowy_zagranica",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "page": 1,
+          "text": " (adres)",
+          "blockIds": [
+            "p1-b8",
+            "p1-b10"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "944ce83f-665c-50f7-a2f2-241edbfa85d7": {
+      "id": "944ce83f-665c-50f7-a2f2-241edbfa85d7",
+      "techName": "ulica_zagranica",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "page": 1,
+          "text": " (adres)",
+          "blockIds": [
+            "p1-b8",
+            "p1-b10"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "f7e1effa-36f1-55f1-aeb6-2dd58def7422": {
+      "id": "f7e1effa-36f1-55f1-aeb6-2dd58def7422",
+      "techName": "teryt_4g_dowodowy",
+      "title": "TERYT_4G_DOWODOWY",
+      "type": "SELECT",
+      "confidence": 0.9,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi"
+      ]
+    },
+    "2a2d4633-0e5c-5f26-9357-38deab85f522": {
+      "id": "2a2d4633-0e5c-5f26-9357-38deab85f522",
+      "techName": "kod_pocztowy",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "text": " (adres)",
+          "blockIds": [
+            "p1-b8",
+            "p1-b10"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (postCode)"
+      ]
+    },
+    "4230c0d4-2821-5777-9f97-3be634158613": {
+      "id": "4230c0d4-2821-5777-9f97-3be634158613",
+      "techName": "ulica",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "text": " (adres)",
+          "blockIds": [
+            "p1-b8",
+            "p1-b10"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (street)"
+      ]
+    },
+    "6c8afa18-46a6-5820-b37f-5aa4802a5a5e": {
+      "id": "6c8afa18-46a6-5820-b37f-5aa4802a5a5e",
+      "techName": "numer_budynku",
+      "title": "Numer budynku",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "text": " (adres)",
+          "blockIds": [
+            "p1-b8",
+            "p1-b10"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (building)"
+      ]
+    },
+    "6c641a7e-bf60-5166-b376-0e2a4c1a2ec0": {
+      "id": "6c641a7e-bf60-5166-b376-0e2a4c1a2ec0",
+      "techName": "numer_lokalu",
+      "title": "Numer lokalu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "text": " (adres)",
+          "blockIds": [
+            "p1-b8",
+            "p1-b10"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "rozwinięto ogólne pole 'adres' wg standardu adresu eUsługi",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (apartment)"
+      ]
+    },
+    "0b13fa21-cf82-588d-b1de-350eb9087da4": {
+      "id": "0b13fa21-cf82-588d-b1de-350eb9087da4",
+      "techName": "dane_podmiotu",
+      "title": "Dane podmiotu",
+      "type": "SECTION",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: dane podmiotu, gdy wniosek w imieniu osoby prawnej"
+      ]
+    },
+    "5a76ede1-7cac-5cfd-a1e3-cf7fe7d5bddc": {
+      "id": "5a76ede1-7cac-5cfd-a1e3-cf7fe7d5bddc",
+      "techName": "nazwa",
+      "title": "Nazwa",
+      "type": "TEXT_FIELD",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "page": 1,
+          "text": " (imię i nazwisko/nazwa wnioskodawcy)                                                  Wójt Gminy Elbląg",
+          "blockIds": [
+            "p1-b4",
+            "p1-b5"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "'nazwa' dla podmiotu niebędącego osobą"
+      ]
+    },
+    "34fd8a7f-f689-5add-9dd9-ca4cea6ab51f": {
+      "id": "34fd8a7f-f689-5add-9dd9-ca4cea6ab51f",
+      "techName": "nip",
+      "title": "NIP",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: pole sekcji podmiotu wniosku"
+      ]
+    },
+    "310cbbc5-4b41-5649-b7fc-937e0e9c4888": {
+      "id": "310cbbc5-4b41-5649-b7fc-937e0e9c4888",
+      "techName": "regon",
+      "title": "REGON",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: pole sekcji podmiotu wniosku"
+      ]
+    },
+    "93a8889a-67b1-56db-954e-48600aee58e6": {
+      "id": "93a8889a-67b1-56db-954e-48600aee58e6",
+      "techName": "numer_krs",
+      "title": "Numer KRS",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: pole sekcji podmiotu wniosku"
+      ]
+    },
+    "dbb2a6d7-aeee-5115-8646-f9c87ba97ab6": {
+      "id": "dbb2a6d7-aeee-5115-8646-f9c87ba97ab6",
+      "techName": "adres_siedziby",
+      "title": "Adres siedziby",
+      "type": "SECTION",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: adres siedziby podmiotu"
+      ]
+    },
+    "8ddd297c-54cb-585a-b6b5-5efff3bcb60f": {
+      "id": "8ddd297c-54cb-585a-b6b5-5efff3bcb60f",
+      "techName": "kraj_2",
+      "title": "Kraj",
+      "type": "SELECT",
+      "confidence": 0.62,
+      "sources": [],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)",
+        "pole korzysta ze słownika „Kraje”"
+      ]
+    },
+    "becc627a-2d96-5d5e-a46b-2e5097e406b5": {
+      "id": "becc627a-2d96-5d5e-a46b-2e5097e406b5",
+      "techName": "miejscowosc_zagranica_2",
+      "title": "Miejscowość",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "e0b2867b-e791-5e4b-9ad2-cf2bf5dcd6ea": {
+      "id": "e0b2867b-e791-5e4b-9ad2-cf2bf5dcd6ea",
+      "techName": "kod_pocztowy_zagranica_2",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "02f951d8-db73-5251-8568-44ec76901e14": {
+      "id": "02f951d8-db73-5251-8568-44ec76901e14",
+      "techName": "ulica_zagranica_2",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "d334f259-9274-54cb-86b9-b72d8936f33c": {
+      "id": "d334f259-9274-54cb-86b9-b72d8936f33c",
+      "techName": "teryt_4g_dowodowy_2",
+      "title": "TERYT_4G_DOWODOWY",
+      "type": "SELECT",
+      "confidence": 0.62,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "97892183-26e3-5063-b36c-b9fbb98810d2": {
+      "id": "97892183-26e3-5063-b36c-b9fbb98810d2",
+      "techName": "kod_pocztowy_2",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.62,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "f8f137ea-d8a2-5133-9319-2a1afa1ae882": {
+      "id": "f8f137ea-d8a2-5133-9319-2a1afa1ae882",
+      "techName": "ulica_2",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.62,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "43c335f9-a7ce-58c3-9dfd-0ac2a4066184": {
+      "id": "43c335f9-a7ce-58c3-9dfd-0ac2a4066184",
+      "techName": "numer_budynku_2",
+      "title": "Numer budynku",
+      "type": "TEXT_FIELD",
+      "confidence": 0.62,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "19bf02d3-888c-58ee-a740-d2890bde0ca1": {
+      "id": "19bf02d3-888c-58ee-a740-d2890bde0ca1",
+      "techName": "numer_lokalu_2",
+      "title": "Numer lokalu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.62,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "5e531f1b-e320-550a-8f73-772a9878e3b9": {
+      "id": "5e531f1b-e320-550a-8f73-772a9878e3b9",
+      "techName": "potwierdzenie_ze_jestes_reprezentantem",
+      "title": "Potwierdzenie, że jesteś reprezentantem",
+      "type": "SECTION",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: dokument potwierdzający reprezentację"
+      ]
+    },
+    "ae3be70b-4ffe-5c9e-b3fc-37c532609b63": {
+      "id": "ae3be70b-4ffe-5c9e-b3fc-37c532609b63",
+      "techName": "plik_z_odpisem_danych",
+      "title": "Plik z odpisem danych",
+      "type": "FILE_UPLOADER",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: pole sekcji podmiotu wniosku"
+      ]
+    },
+    "22abddcd-b8c4-5515-9a6d-424d775dd6c1": {
+      "id": "22abddcd-b8c4-5515-9a6d-424d775dd6c1",
+      "techName": "dane_innej_osoby",
+      "title": "Dane innej osoby",
+      "type": "SECTION",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: wniosek w imieniu innej osoby"
+      ]
+    },
+    "91881a7c-465b-5012-aab5-c8843939a158": {
+      "id": "91881a7c-465b-5012-aab5-c8843939a158",
+      "techName": "imie_2",
+      "title": "Imię",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: pole sekcji podmiotu wniosku"
+      ]
+    },
+    "b4968e10-a50b-587a-bfa1-821b68c5001e": {
+      "id": "b4968e10-a50b-587a-bfa1-821b68c5001e",
+      "techName": "nazwisko_2",
+      "title": "Nazwisko",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: pole sekcji podmiotu wniosku"
+      ]
+    },
+    "6109a257-8de6-5367-911d-3a12523113d0": {
+      "id": "6109a257-8de6-5367-911d-3a12523113d0",
+      "techName": "numer_pesel",
+      "title": "Numer PESEL",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: pole sekcji podmiotu wniosku"
+      ]
+    },
+    "7c5bacb5-5d25-5ef9-ab04-c9c8d694f66f": {
+      "id": "7c5bacb5-5d25-5ef9-ab04-c9c8d694f66f",
+      "techName": "adres_zamieszkania_innej_osoby",
+      "title": "Adres zamieszkania innej osoby",
+      "type": "SECTION",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: adres innej osoby"
+      ]
+    },
+    "77ca1ab5-1442-5597-8e58-e0f47a5d1afb": {
+      "id": "77ca1ab5-1442-5597-8e58-e0f47a5d1afb",
+      "techName": "kraj_3",
+      "title": "Kraj",
+      "type": "SELECT",
+      "confidence": 0.62,
+      "sources": [],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)",
+        "pole korzysta ze słownika „Kraje”"
+      ]
+    },
+    "944a6209-5140-5529-85fe-c15d311546ab": {
+      "id": "944a6209-5140-5529-85fe-c15d311546ab",
+      "techName": "miejscowosc_zagranica_3",
+      "title": "Miejscowość",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "6d9705ed-851a-50e9-a197-1339a2523cc2": {
+      "id": "6d9705ed-851a-50e9-a197-1339a2523cc2",
+      "techName": "kod_pocztowy_zagranica_3",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "ada201d6-73e5-5875-aa43-212057fb5516": {
+      "id": "ada201d6-73e5-5875-aa43-212057fb5516",
+      "techName": "ulica_zagranica_3",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "7134e6a6-d734-591f-83ac-e7f31570bb92": {
+      "id": "7134e6a6-d734-591f-83ac-e7f31570bb92",
+      "techName": "teryt_4g_dowodowy_3",
+      "title": "TERYT_4G_DOWODOWY",
+      "type": "SELECT",
+      "confidence": 0.62,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "afe51e83-9d4d-560e-b43b-0ffb5462e2d5": {
+      "id": "afe51e83-9d4d-560e-b43b-0ffb5462e2d5",
+      "techName": "kod_pocztowy_3",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.62,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "3b8bfeda-01c0-5303-b34b-96b177bf9b1c": {
+      "id": "3b8bfeda-01c0-5303-b34b-96b177bf9b1c",
+      "techName": "ulica_3",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.62,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "cdc33e85-7c90-5ed2-a50f-1724f79f86ac": {
+      "id": "cdc33e85-7c90-5ed2-a50f-1724f79f86ac",
+      "techName": "numer_budynku_3",
+      "title": "Numer budynku",
+      "type": "TEXT_FIELD",
+      "confidence": 0.62,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "1de60cbf-73b8-5dd1-9def-2606f5415d10": {
+      "id": "1de60cbf-73b8-5dd1-9def-2606f5415d10",
+      "techName": "numer_lokalu_3",
+      "title": "Numer lokalu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.62,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "a7d15232-f924-5e56-ad5a-f902e020a734": {
+      "id": "a7d15232-f924-5e56-ad5a-f902e020a734",
+      "techName": "pelnomocnictwo",
+      "title": "Pełnomocnictwo",
+      "type": "SECTION",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: pełnomocnictwo, gdy działasz jako pełnomocnik"
+      ]
+    },
+    "70683450-080d-51cb-974c-74c3d3240330": {
+      "id": "70683450-080d-51cb-974c-74c3d3240330",
+      "techName": "plik_dokumentu_z_pelnomocnictwem",
+      "title": "Plik dokumentu z pełnomocnictwem",
+      "type": "FILE_UPLOADER",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: pole sekcji podmiotu wniosku"
+      ]
+    },
+    "6345b63c-b85f-5597-83c3-fdc34d54ea2b": {
+      "id": "6345b63c-b85f-5597-83c3-fdc34d54ea2b",
+      "techName": "oplata_skarbowa",
+      "title": "Opłata skarbowa",
+      "type": "SECTION",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: opłata skarbowa za pełnomocnictwo (osoba fizyczna)"
+      ]
+    },
+    "b0a5aab5-47ca-5e5d-b895-a6a48acd7ac7": {
+      "id": "b0a5aab5-47ca-5e5d-b895-a6a48acd7ac7",
+      "techName": "czy_zlozenie_pelnomocnictwa_wymaga_oplaty_skarbowej",
+      "title": "Czy złożenie pełnomocnictwa wymaga opłaty skarbowej?",
+      "type": "RADIO",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: pole sekcji podmiotu wniosku"
+      ]
+    },
+    "8303aabb-4407-5414-b52f-9309d03169ab": {
+      "id": "8303aabb-4407-5414-b52f-9309d03169ab",
+      "techName": "text_block",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: pole sekcji podmiotu wniosku"
+      ]
+    },
+    "af158629-544e-5388-a05a-8446fbc66657": {
+      "id": "af158629-544e-5388-a05a-8446fbc66657",
+      "techName": "plik_z_potwierdzeniem_przelewu",
+      "title": "Plik z potwierdzeniem przelewu",
+      "type": "FILE_UPLOADER",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: pole sekcji podmiotu wniosku"
+      ]
+    },
+    "aa706851-133a-51c2-adce-c3029375c2cc": {
+      "id": "aa706851-133a-51c2-adce-c3029375c2cc",
+      "techName": "oplata_skarbowa_za_pelnomocnictwo",
+      "title": "Opłata skarbowa za pełnomocnictwo",
+      "type": "SECTION",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: opłata skarbowa za pełnomocnictwo (podmiot)"
+      ]
+    },
+    "24b40947-12a8-559b-9c5c-c744b5570575": {
+      "id": "24b40947-12a8-559b-9c5c-c744b5570575",
+      "techName": "text_block_2",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: pole sekcji podmiotu wniosku"
+      ]
+    },
+    "e754c34f-c7c0-5880-9fbf-2173fdd0a8a8": {
+      "id": "e754c34f-c7c0-5880-9fbf-2173fdd0a8a8",
+      "techName": "plik_z_potwierdzeniem_przelewu_2",
+      "title": "Plik z potwierdzeniem przelewu",
+      "type": "FILE_UPLOADER",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard eUsługi: pole sekcji podmiotu wniosku"
+      ]
+    },
+    "1b2a4c63-f051-5d54-9ccb-318e3ed7910a": {
+      "id": "1b2a4c63-f051-5d54-9ccb-318e3ed7910a",
+      "techName": "szczegoly_wniosku",
+      "title": "Szczegóły wniosku",
+      "type": "SECTION",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "text": "WNIOSEK O USTALENIE NUMERU PORZĄDKOWEGO",
+          "blockIds": [
+            "p1-b13"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "eb5ca24c-e73f-587b-9466-9bf5cdd50b85": {
+      "id": "eb5ca24c-e73f-587b-9466-9bf5cdd50b85",
+      "techName": "text_block_3",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "text": "Wnoszę o ustalenie numeru porządkowego budynkowi zlokalizowanemu",
+          "blockIds": [
+            "p1-b14"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "eb6b33b6-4948-572b-bf0e-687635289ad7": {
+      "id": "eb6b33b6-4948-572b-bf0e-687635289ad7",
+      "techName": "miejscowosc",
+      "title": "Miejscowość",
+      "type": "TEXT_FIELD",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "text": "w miejscowości ",
+          "blockIds": [
+            "p1-b15",
+            "p1-b16"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "składnik adresu"
+      ]
+    },
+    "c80816eb-64be-5db2-abe8-7cfa4a6a7d5c": {
+      "id": "c80816eb-64be-5db2-abe8-7cfa4a6a7d5c",
+      "techName": "ulica_4",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "text": "przy ulicy1) ",
+          "blockIds": [
+            "p1-b17",
+            "p1-b18"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "składnik adresu"
+      ]
+    },
+    "f5b3cb09-5310-5bca-8c7f-757a09c47f81": {
+      "id": "f5b3cb09-5310-5bca-8c7f-757a09c47f81",
+      "techName": "numer_ewidencyjny_dzialki",
+      "title": "Numer ewidencyjny działki",
+      "type": "TEXT_FIELD",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "text": "nr ewidencyjny działki ",
+          "blockIds": [
+            "p1-b19",
+            "p1-b20"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)"
+      ]
+    },
+    "48085f94-fd71-579b-a909-04f75a967645": {
+      "id": "48085f94-fd71-579b-a909-04f75a967645",
+      "techName": "obreb",
+      "title": "Obręb",
+      "type": "TEXT_FIELD",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "text": "w obrębie ",
+          "blockIds": [
+            "p1-b21",
+            "p1-b22"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)"
+      ]
+    },
+    "38167925-e763-5305-ae65-de956ed82294": {
+      "id": "38167925-e763-5305-ae65-de956ed82294",
+      "techName": "dane_do_kontaktu",
+      "title": "Dane do kontaktu",
+      "type": "SECTION",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "text": "Wnioskodawca: Adresat:",
+          "blockIds": [
+            "p1-b3"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "78cf8c84-7114-5f13-b228-7ec5712b0995": {
+      "id": "78cf8c84-7114-5f13-b228-7ec5712b0995",
+      "techName": "numer_telefonu",
+      "title": "Numer telefonu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "text": " (nr telefonu/adres e-mail))",
+          "blockIds": [
+            "p1-b11",
+            "p1-b12"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (phoneNumber)"
+      ]
+    },
+    "1e241d4e-8e5b-586b-8349-12fe1e817f81": {
+      "id": "1e241d4e-8e5b-586b-8349-12fe1e817f81",
+      "techName": "adres_e_mail",
+      "title": "Adres e-mail",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "text": " (nr telefonu/adres e-mail))",
+          "blockIds": [
+            "p1-b11",
+            "p1-b12"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (email)"
+      ]
+    },
+    "6a7b1977-5f23-5a6c-a7b5-2bc7c32740d1": {
+      "id": "6a7b1977-5f23-5a6c-a7b5-2bc7c32740d1",
+      "techName": "zgody_i_oswiadczenia",
+      "title": "Zgody i oświadczenia",
+      "type": "SECTION",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "page": 1,
+          "text": "KLAUZULA INFORMACYJNA numeracja porządkowa nieruchomości Zgodnie z art. 13 ust. 1 i 2 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/W – ogólne rozporządzenie o ochronie danych, informujemy, iż: Administratorem Państwa danych osobowych jest Gmina Elbląg. Można się z nim kontaktować w następujący sposób: ",
+          "blockIds": [
+            "p1-b25",
+            "p1-b26",
+            "p1-b27",
+            "p1-b28",
+            "p1-b29",
+            "p1-b30",
+            "p1-b31"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
+      ]
+    },
+    "8e81fb42-63b2-5d90-b4ca-6f90c8f01cf8": {
+      "id": "8e81fb42-63b2-5d90-b4ca-6f90c8f01cf8",
+      "techName": "consent_section",
+      "title": "",
+      "type": "CONSENT_SECTION",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "page": 1,
+          "text": "KLAUZULA INFORMACYJNA numeracja porządkowa nieruchomości Zgodnie z art. 13 ust. 1 i 2 Rozporządzenia Parlamentu Europejskiego i Rady (UE) 2016/679 z dnia 27 kwietnia 2016 r. w sprawie ochrony osób fizycznych w związku przetwarzaniem danych osobowych i w sprawie swobodnego przepływu takich danych oraz uchylenia dyrektywy 95/46/W – ogólne rozporządzenie o ochronie danych, informujemy, iż: Administratorem Państwa danych osobowych jest Gmina Elbląg. Można się z nim kontaktować w następujący sposób: ",
+          "blockIds": [
+            "p1-b25",
+            "p1-b26",
+            "p1-b27",
+            "p1-b28",
+            "p1-b29",
+            "p1-b30",
+            "p1-b31"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "klauzula/oświadczenie w dokumencie -> sekcja zgód"
+      ]
+    },
+    "a7559e88-2d09-5151-8d9c-358184e6fc7d": {
+      "id": "a7559e88-2d09-5151-8d9c-358184e6fc7d",
+      "techName": "podglad_uzupelnionego_wniosku",
+      "title": "Podgląd uzupełnionego wniosku",
+      "type": "SECTION",
+      "confidence": 1.0,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard: strona końcowa z podglądem"
+      ]
+    },
+    "2797d3b8-7351-5718-8c45-5cb403bba66d": {
+      "id": "2797d3b8-7351-5718-8c45-5cb403bba66d",
+      "techName": "podglad",
+      "title": "Podgląd",
+      "type": "INFO_SECTION",
+      "confidence": 1.0,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard: strona końcowa z podglądem"
+      ]
+    }
+  },
+  "review": [],
+  "rules": [
+    {
+      "id": "COI-R01",
+      "title": "Zgodność ze schematem JSON importu",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: importowanyPlikJsonSchemat (schema.json)"
+    },
+    {
+      "id": "COI-R02",
+      "title": "Tytuł formularza (nazwa usługi) – wymagany, max 255 znaków",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R03",
+      "title": "Formularz zawiera minimum dwie strony",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R04",
+      "title": "Strona końcowa oznaczona FINISH (jedna, ostatnia), pozostałe MAIN",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R05",
+      "title": "Każda strona zawiera minimum jedno pole",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R06",
+      "title": "Każde pole zagnieżdżone w sekcji lub sekcji powtarzającej się",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R07",
+      "title": "Brak zagnieżdżania sekcji w innej sekcji",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R08",
+      "title": "Na stronie końcowej brak pól typu Input",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R09",
+      "title": "Strony połączone warunkami przepływu (flow)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu; OpisImportowanegoPlikuJSON (flow.links)"
+    },
+    {
+      "id": "COI-R10",
+      "title": "Unikatowe identyfikatory UUID stron, pól i przejść",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON"
+    },
+    {
+      "id": "COI-R11",
+      "title": "Unikatowa nazwa techniczna pola (techName)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (techName → JSONata)"
+    },
+    {
+      "id": "COI-R12",
+      "title": "Poprawny format nazwy technicznej (ASCII, bez spacji)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (techName → JSONata)"
+    },
+    {
+      "id": "COI-R13",
+      "title": "Pozycja pola mieści się w siatce (x, y, rows, cols)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (CSS grid-area)"
+    },
+    {
+      "id": "COI-R14",
+      "title": "Pola w siatce nie nakładają się",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (CSS grid-area)"
+    },
+    {
+      "id": "COI-R15",
+      "title": "Pola wyboru mają opcje lub słownik",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R16",
+      "title": "Opcje wyboru: id, nazwa i unikatowy techName",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu; OpisImportowanegoPlikuJSON"
+    },
+    {
+      "id": "COI-R17",
+      "title": "Słownik tylko w polach SELECT/RADIO/CHECKBOX (adresowe i Kraje – SELECT)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Hacknation – Słowniki"
+    },
+    {
+      "id": "COI-R18",
+      "title": "Poprawna składnia wyrażeń JSONata w stanach pól",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (warunki jsonaty)"
+    },
+    {
+      "id": "COI-R19",
+      "title": "Wyrażenia JSONata odwołują się do istniejących pól i stron",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (warunki jsonaty)"
+    },
+    {
+      "id": "COI-R20",
+      "title": "Dozwolone typy stanów: SHOW, READ_ONLY (sekcje: SHOW)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (dynamiczne stany)"
+    },
+    {
+      "id": "COI-R21",
+      "title": "Sekcja ma nazwę (title)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (sekcja: title – TAK)"
+    },
+    {
+      "id": "COI-R22",
+      "title": "Sekcja informacyjna ma opis (description)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (INFO_SECTION: description – TAK)"
+    },
+    {
+      "id": "COI-R23",
+      "title": "Sekcja zgód zawiera zgody (consentSectionConfig)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu; OpisImportowanegoPlikuJSON"
+    },
+    {
+      "id": "COI-R24",
+      "title": "Dane z rejestru (EXTERNAL_SYSTEM) – źródło i tylko do odczytu",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON; Standardy projektowania formularzy eUsług (Twoje dane)"
+    },
+    {
+      "id": "COI-R25",
+      "title": "Walidatory PESEL/NIP/REGON/e-mail/kod pocztowy zgodne z etykietą",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Standardy projektowania formularzy eUsług; Reguły techniczne konfiguracji formularzy i pól na formularzu (walidatory)"
+    },
+    {
+      "id": "COI-R26",
+      "title": "Walidatory dozwolone dla typu pola",
+      "severity": "error",
+      "passed": true,
+      "repaired": true,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (specyfikacja komponentów)"
+    },
+    {
+      "id": "COI-R27",
+      "title": "Strony mają niepusty, jednoznaczny tytuł",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON; Reguły techniczne konfiguracji formularzy i pól na formularzu (JSONata tabs[… in title])"
+    },
+    {
+      "id": "COI-R28",
+      "title": "Lista rozwijana z >15 opcjami ma wyszukiwarkę",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Standardy projektowania formularzy eUsług (pkt 4f)"
+    },
+    {
+      "id": "COI-R29",
+      "title": "Formularz zawiera pola do wypełnienia",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    }
+  ],
+  "repairs": [
+    {
+      "ruleId": "COI-R26",
+      "path": "/tabs/2/questions/1/field/repeatingSectionGrid/0/field/validation",
+      "description": "Usunięto niedozwolone/powtórzone walidatory",
+      "before": [
+        "REQUIRED"
+      ],
+      "after": []
+    }
+  ],
+  "proposedDictionaries": [],
+  "warnings": [],
+  "timings": {
+    "extract": 40,
+    "infer": 3,
+    "dict": 1,
+    "build": 1,
+    "validate": 22
+  },
+  "llm": {
+    "used": false
+  }
+}

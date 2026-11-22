@@ -1,0 +1,1095 @@
+{
+  "filename": "Wniosek o wynajęcie świetlicy.jpeg",
+  "format": "image",
+  "ocr": true,
+  "confidence": 0.66,
+  "fields": {
+    "6f9f8bf6-b6e6-50f3-9224-8771eb8fbb4e": {
+      "id": "6f9f8bf6-b6e6-50f3-9224-8771eb8fbb4e",
+      "techName": "organ_do_ktorego_jest_skladany_wniosek",
+      "title": "Organ, do którego jest składany wniosek",
+      "type": "SECTION",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 862.0,
+            "y": 612.0,
+            "w": 371.0,
+            "h": 28.0
+          },
+          "text": "WÓJT GMINY PŁOSKINIA",
+          "blockIds": [
+            "p1-b4"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "adresat wniosku"
+      ]
+    },
+    "253ab3fa-a311-5d30-ae13-6e8966778091": {
+      "id": "253ab3fa-a311-5d30-ae13-6e8966778091",
+      "techName": "nazwa_organu",
+      "title": "Nazwa organu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 862.0,
+            "y": 612.0,
+            "w": 371.0,
+            "h": 28.0
+          },
+          "text": "WÓJT GMINY PŁOSKINIA",
+          "blockIds": [
+            "p1-b4"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "adresat wniosku z nagłówka dokumentu"
+      ]
+    },
+    "65c33970-9f2e-5f44-be22-dc0045987a36": {
+      "id": "65c33970-9f2e-5f44-be22-dc0045987a36",
+      "techName": "adres_zamieszkania",
+      "title": "Adres zamieszkania",
+      "type": "SECTION",
+      "confidence": 0.63,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "grupa pól"
+      ]
+    },
+    "fafe4087-98fa-511e-9cc5-1c507a433035": {
+      "id": "fafe4087-98fa-511e-9cc5-1c507a433035",
+      "techName": "kraj",
+      "title": "Kraj",
+      "type": "SELECT",
+      "confidence": 0.62,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 1090.0,
+            "y": 336.0,
+            "w": 224.0,
+            "h": 23.0
+          },
+          "text": "(miejscowość i data)",
+          "blockIds": [
+            "p1-b2"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)",
+        "pole korzysta ze słownika „Kraje”"
+      ]
+    },
+    "f15d4163-ad95-562e-b16b-97d751d247da": {
+      "id": "f15d4163-ad95-562e-b16b-97d751d247da",
+      "techName": "miejscowosc_zagranica",
+      "title": "Miejscowość",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 1090.0,
+            "y": 336.0,
+            "w": 224.0,
+            "h": 23.0
+          },
+          "text": "(miejscowość i data)",
+          "blockIds": [
+            "p1-b2"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "86944562-0456-5951-b015-22ec3f52162a": {
+      "id": "86944562-0456-5951-b015-22ec3f52162a",
+      "techName": "kod_pocztowy_zagranica",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 1090.0,
+            "y": 336.0,
+            "w": 224.0,
+            "h": 23.0
+          },
+          "text": "(miejscowość i data)",
+          "blockIds": [
+            "p1-b2"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "ca890bba-f022-5902-bd31-1a552c8861ef": {
+      "id": "ca890bba-f022-5902-bd31-1a552c8861ef",
+      "techName": "ulica_zagranica",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 1090.0,
+            "y": 336.0,
+            "w": 224.0,
+            "h": 23.0
+          },
+          "text": "(miejscowość i data)",
+          "blockIds": [
+            "p1-b2"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "1154585d-af64-5086-b29b-b716e72e0f4e": {
+      "id": "1154585d-af64-5086-b29b-b716e72e0f4e",
+      "techName": "teryt_4g_dowodowy",
+      "title": "TERYT_4G_DOWODOWY",
+      "type": "SELECT",
+      "confidence": 0.79,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 1090.0,
+            "y": 336.0,
+            "w": 224.0,
+            "h": 23.0
+          },
+          "text": "(miejscowość i data)",
+          "blockIds": [
+            "p1-b2"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "składniki adresu (miejscowość/gmina/…) -> TERYT"
+      ]
+    },
+    "4ae6c7fd-ebda-562a-a0d1-eaec8a138011": {
+      "id": "4ae6c7fd-ebda-562a-a0d1-eaec8a138011",
+      "techName": "kod_pocztowy",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.62,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 1090.0,
+            "y": 336.0,
+            "w": 224.0,
+            "h": 23.0
+          },
+          "text": "(miejscowość i data)",
+          "blockIds": [
+            "p1-b2"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (postCode)"
+      ]
+    },
+    "48649b82-89d1-55a2-97d5-8c84a3394fbd": {
+      "id": "48649b82-89d1-55a2-97d5-8c84a3394fbd",
+      "techName": "ulica",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.62,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 1090.0,
+            "y": 336.0,
+            "w": 224.0,
+            "h": 23.0
+          },
+          "text": "(miejscowość i data)",
+          "blockIds": [
+            "p1-b2"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (street)"
+      ]
+    },
+    "23df7902-4381-5786-a978-58de42be501b": {
+      "id": "23df7902-4381-5786-a978-58de42be501b",
+      "techName": "numer_budynku",
+      "title": "Numer budynku",
+      "type": "TEXT_FIELD",
+      "confidence": 0.62,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 1090.0,
+            "y": 336.0,
+            "w": 224.0,
+            "h": 23.0
+          },
+          "text": "(miejscowość i data)",
+          "blockIds": [
+            "p1-b2"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (building)"
+      ]
+    },
+    "a0df6961-9353-57a4-98bf-ad3b13e87624": {
+      "id": "a0df6961-9353-57a4-98bf-ad3b13e87624",
+      "techName": "numer_lokalu",
+      "title": "Numer lokalu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.62,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 1090.0,
+            "y": 336.0,
+            "w": 224.0,
+            "h": 23.0
+          },
+          "text": "(miejscowość i data)",
+          "blockIds": [
+            "p1-b2"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (apartment)"
+      ]
+    },
+    "25c96587-055c-5860-b829-4d420cb36071": {
+      "id": "25c96587-055c-5860-b829-4d420cb36071",
+      "techName": "szczegoly_wniosku",
+      "title": "Szczegóły wniosku",
+      "type": "SECTION",
+      "confidence": 0.59,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 754.0,
+            "y": 794.0,
+            "w": 145.0,
+            "h": 22.0
+          },
+          "text": "WNIOSEK",
+          "blockIds": [
+            "p1-b7"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "447305e7-e085-5bcc-90b6-4f3916884ee9": {
+      "id": "447305e7-e085-5bcc-90b6-4f3916884ee9",
+      "techName": "imie",
+      "title": "Imię",
+      "type": "TEXT_FIELD",
+      "confidence": 0.59,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 152.0,
+            "y": 1355.0,
+            "w": 1224.0,
+            "h": 23.0
+          },
+          "text": "(imię i nazwisko — wnioskodawca, w przypadku innej osoby niż wnioskodawca - zgoda osoby odpowiedzialnej)",
+          "blockIds": [
+            "p1-b18"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'; podpis pod brakującym w OCR miejscem do wpisania"
+      ]
+    },
+    "046fced6-0c6e-567e-98df-91fac204bf3f": {
+      "id": "046fced6-0c6e-567e-98df-91fac204bf3f",
+      "techName": "nazwisko",
+      "title": "Nazwisko",
+      "type": "TEXT_FIELD",
+      "confidence": 0.59,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 152.0,
+            "y": 1355.0,
+            "w": 1224.0,
+            "h": 23.0
+          },
+          "text": "(imię i nazwisko — wnioskodawca, w przypadku innej osoby niż wnioskodawca - zgoda osoby odpowiedzialnej)",
+          "blockIds": [
+            "p1-b18"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'; podpis pod brakującym w OCR miejscem do wpisania"
+      ]
+    },
+    "ee75d6c4-9faf-5ba8-8f4e-66ce05264fec": {
+      "id": "ee75d6c4-9faf-5ba8-8f4e-66ce05264fec",
+      "techName": "dane_wniosku",
+      "title": "Dane wniosku",
+      "type": "SECTION",
+      "confidence": 0.75,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "grupa pól"
+      ]
+    },
+    "8aa3cab7-a534-5ede-8c81-199746d962c4": {
+      "id": "8aa3cab7-a534-5ede-8c81-199746d962c4",
+      "techName": "text_block",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 151.0,
+            "y": 206.0,
+            "w": 1269.0,
+            "h": 26.0
+          },
+          "text": "Załącznik nr 2 do Regulaminu korzystania ze świetlic wiejskich stanowiących własność Gminy Płoskinia",
+          "blockIds": [
+            "p1-b1"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "b625932e-dcc5-57a7-a586-4a8a9ad979d3": {
+      "id": "b625932e-dcc5-57a7-a586-4a8a9ad979d3",
+      "techName": "ploskinia_8",
+      "title": "Płoskinia 8",
+      "type": "TEXT_FIELD",
+      "confidence": 0.73,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 945.0,
+            "y": 653.0,
+            "w": 156.0,
+            "h": 22.0
+          },
+          "text": "Płoskinia 8",
+          "blockIds": [
+            "p1-b5"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "282bea35-a982-5b51-8e30-caef8371213d": {
+      "id": "282bea35-a982-5b51-8e30-caef8371213d",
+      "techName": "text_field_14_526_ploskinia",
+      "title": "14-526 Płoskinia",
+      "type": "TEXT_FIELD",
+      "confidence": 0.72,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 914.0,
+            "y": 689.0,
+            "w": 235.0,
+            "h": 22.0
+          },
+          "text": "14-526 Płoskinia",
+          "blockIds": [
+            "p1-b6"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "717041e8-1a8a-5e6d-a132-abb6031f85d2": {
+      "id": "717041e8-1a8a-5e6d-a132-abb6031f85d2",
+      "techName": "szczegoly_wniosku_2",
+      "title": "Szczegóły wniosku",
+      "type": "SECTION",
+      "confidence": 0.57,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 754.0,
+            "y": 794.0,
+            "w": 145.0,
+            "h": 22.0
+          },
+          "text": "WNIOSEK",
+          "blockIds": [
+            "p1-b7"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "c5f7bad8-e5cb-52c1-a70c-4cece341c35c": {
+      "id": "c5f7bad8-e5cb-52c1-a70c-4cece341c35c",
+      "techName": "text_block_2",
+      "title": "",
+      "type": "TEXT_BLOCK",
+      "confidence": 0.8,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 154.0,
+            "y": 1071.0,
+            "w": 1289.0,
+            "h": 36.0
+          },
+          "text": "1. Col wynajęcia ŚWIELICY: szcsyszsyśsśsyksHrsKISRONNKKGHAYNEKO E ENWKZANY ASA REKOK KKK KSKANYJ E ENWKANAN RAA",
+          "blockIds": [
+            "p1-b16"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "tekst informacyjny sekcji"
+      ]
+    },
+    "99058463-54ac-576f-90a8-ead6b11ef993": {
+      "id": "99058463-54ac-576f-90a8-ead6b11ef993",
+      "techName": "prosze_o_wynajem_uzyczenie_swietlicy_wiejskiej_w",
+      "title": "Proszę o wynajem/użyczenie świetlicy wiejskiej w",
+      "type": "TEXT_FIELD",
+      "confidence": 0.34,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 153.0,
+            "y": 966.0,
+            "w": 1292.0,
+            "h": 36.0
+          },
+          "text": "Proszę o wynajem/użyczenie* świetlicy wiejskiej w  e.-eeseeseeses seee ne",
+          "blockIds": [
+            "p1-b10",
+            "p1-b11",
+            "p1-b12"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "pole w treści zdania – sprawdź tytuł"
+      ]
+    },
+    "a4e4d2a6-cdb5-5d22-b247-ff4952ba39c7": {
+      "id": "a4e4d2a6-cdb5-5d22-b247-ff4952ba39c7",
+      "techName": "e_eeseeseeses",
+      "title": "E.-eeseeseeses",
+      "type": "TEXT_FIELD",
+      "confidence": 0.49,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 153.0,
+            "y": 966.0,
+            "w": 1292.0,
+            "h": 36.0
+          },
+          "text": "Proszę o wynajem/użyczenie* świetlicy wiejskiej w  e.-eeseeseeses seee ne",
+          "blockIds": [
+            "p1-b10",
+            "p1-b11",
+            "p1-b12"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie"
+      ]
+    },
+    "7388bbfd-3fdf-5802-8ddc-fbfd5ded08c4": {
+      "id": "7388bbfd-3fdf-5802-8ddc-fbfd5ded08c4",
+      "techName": "data_od",
+      "title": "Data od",
+      "type": "DATEPICKER",
+      "confidence": 0.65,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 151.0,
+            "y": 1018.0,
+            "w": 1294.0,
+            "h": 36.0
+          },
+          "text": "wraz z wyposażeniem w terminie od  eee",
+          "blockIds": [
+            "p1-b13",
+            "p1-b14",
+            "p1-b15"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (DATEPICKER)"
+      ]
+    },
+    "b6a1ade2-775a-5da7-aedd-266dc2562ce7": {
+      "id": "b6a1ade2-775a-5da7-aedd-266dc2562ce7",
+      "techName": "rodzaj_uroczystosci_np_wesele_urodziny_zabawa_itp",
+      "title": "Rodzaj uroczystości, np. wesele, urodziny, zabawa itp.",
+      "type": "TEXT_FIELD",
+      "confidence": 0.59,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 576.0,
+            "y": 1135.0,
+            "w": 615.0,
+            "h": 23.0
+          },
+          "text": "( rodzaj uroczystości, np. wesele, urodziny, zabawa itp.)",
+          "blockIds": [
+            "p1-b17"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie; podpis pod brakującym w OCR miejscem do wpisania"
+      ]
+    },
+    "349daa3c-d06d-55e6-b33a-404fe7af9a1d": {
+      "id": "349daa3c-d06d-55e6-b33a-404fe7af9a1d",
+      "techName": "dane_do_kontaktu",
+      "title": "Dane do kontaktu",
+      "type": "SECTION",
+      "confidence": 0.6,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "grupa pól"
+      ]
+    },
+    "8016061d-7b37-5b1b-920c-9b2221ab125e": {
+      "id": "8016061d-7b37-5b1b-920c-9b2221ab125e",
+      "techName": "numer_telefonu",
+      "title": "Numer telefonu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 160.0,
+            "y": 586.0,
+            "w": 147.0,
+            "h": 26.0
+          },
+          "text": "(nr telefonu)",
+          "blockIds": [
+            "p1-b3"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD); podpis pod brakującym w OCR miejscem do wpisania",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (phoneNumber)"
+      ]
+    },
+    "f31727bb-4444-58e8-9f45-c7f579012ebd": {
+      "id": "f31727bb-4444-58e8-9f45-c7f579012ebd",
+      "techName": "podglad_uzupelnionego_wniosku",
+      "title": "Podgląd uzupełnionego wniosku",
+      "type": "SECTION",
+      "confidence": 1.0,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard: strona końcowa z podglądem"
+      ]
+    },
+    "54131817-d469-5074-a7a2-d59a5a8278b4": {
+      "id": "54131817-d469-5074-a7a2-d59a5a8278b4",
+      "techName": "podglad",
+      "title": "Podgląd",
+      "type": "INFO_SECTION",
+      "confidence": 1.0,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard: strona końcowa z podglądem"
+      ]
+    }
+  },
+  "review": [
+    {
+      "fieldId": "99058463-54ac-576f-90a8-ead6b11ef993",
+      "techName": "prosze_o_wynajem_uzyczenie_swietlicy_wiejskiej_w",
+      "title": "Proszę o wynajem/użyczenie świetlicy wiejskiej w",
+      "confidence": 0.34,
+      "reason": "pole w treści zdania – sprawdź tytuł"
+    },
+    {
+      "fieldId": "a4e4d2a6-cdb5-5d22-b247-ff4952ba39c7",
+      "techName": "e_eeseeseeses",
+      "title": "E.-eeseeseeses",
+      "confidence": 0.49,
+      "reason": "etykieta w dokumencie"
+    },
+    {
+      "fieldId": "717041e8-1a8a-5e6d-a132-abb6031f85d2",
+      "techName": "szczegoly_wniosku_2",
+      "title": "Szczegóły wniosku",
+      "confidence": 0.57,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "25c96587-055c-5860-b829-4d420cb36071",
+      "techName": "szczegoly_wniosku",
+      "title": "Szczegóły wniosku",
+      "confidence": 0.59,
+      "reason": "nagłówek sekcji w dokumencie"
+    },
+    {
+      "fieldId": "447305e7-e085-5bcc-90b6-4f3916884ee9",
+      "techName": "imie",
+      "title": "Imię",
+      "confidence": 0.59,
+      "reason": "rozdzielono 'imię i nazwisko'; podpis pod brakującym w OCR miejscem do wpisania"
+    },
+    {
+      "fieldId": "046fced6-0c6e-567e-98df-91fac204bf3f",
+      "techName": "nazwisko",
+      "title": "Nazwisko",
+      "confidence": 0.59,
+      "reason": "rozdzielono 'imię i nazwisko'; podpis pod brakującym w OCR miejscem do wpisania"
+    },
+    {
+      "fieldId": "b6a1ade2-775a-5da7-aedd-266dc2562ce7",
+      "techName": "rodzaj_uroczystosci_np_wesele_urodziny_zabawa_itp",
+      "title": "Rodzaj uroczystości, np. wesele, urodziny, zabawa itp.",
+      "confidence": 0.59,
+      "reason": "etykieta w dokumencie; podpis pod brakującym w OCR miejscem do wpisania"
+    }
+  ],
+  "rules": [
+    {
+      "id": "COI-R01",
+      "title": "Zgodność ze schematem JSON importu",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: importowanyPlikJsonSchemat (schema.json)"
+    },
+    {
+      "id": "COI-R02",
+      "title": "Tytuł formularza (nazwa usługi) – wymagany, max 255 znaków",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R03",
+      "title": "Formularz zawiera minimum dwie strony",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R04",
+      "title": "Strona końcowa oznaczona FINISH (jedna, ostatnia), pozostałe MAIN",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R05",
+      "title": "Każda strona zawiera minimum jedno pole",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R06",
+      "title": "Każde pole zagnieżdżone w sekcji lub sekcji powtarzającej się",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R07",
+      "title": "Brak zagnieżdżania sekcji w innej sekcji",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R08",
+      "title": "Na stronie końcowej brak pól typu Input",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R09",
+      "title": "Strony połączone warunkami przepływu (flow)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu; OpisImportowanegoPlikuJSON (flow.links)"
+    },
+    {
+      "id": "COI-R10",
+      "title": "Unikatowe identyfikatory UUID stron, pól i przejść",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON"
+    },
+    {
+      "id": "COI-R11",
+      "title": "Unikatowa nazwa techniczna pola (techName)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (techName → JSONata)"
+    },
+    {
+      "id": "COI-R12",
+      "title": "Poprawny format nazwy technicznej (ASCII, bez spacji)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (techName → JSONata)"
+    },
+    {
+      "id": "COI-R13",
+      "title": "Pozycja pola mieści się w siatce (x, y, rows, cols)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (CSS grid-area)"
+    },
+    {
+      "id": "COI-R14",
+      "title": "Pola w siatce nie nakładają się",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (CSS grid-area)"
+    },
+    {
+      "id": "COI-R15",
+      "title": "Pola wyboru mają opcje lub słownik",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R16",
+      "title": "Opcje wyboru: id, nazwa i unikatowy techName",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu; OpisImportowanegoPlikuJSON"
+    },
+    {
+      "id": "COI-R17",
+      "title": "Słownik tylko w polach SELECT/RADIO/CHECKBOX (adresowe i Kraje – SELECT)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Hacknation – Słowniki"
+    },
+    {
+      "id": "COI-R18",
+      "title": "Poprawna składnia wyrażeń JSONata w stanach pól",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (warunki jsonaty)"
+    },
+    {
+      "id": "COI-R19",
+      "title": "Wyrażenia JSONata odwołują się do istniejących pól i stron",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (warunki jsonaty)"
+    },
+    {
+      "id": "COI-R20",
+      "title": "Dozwolone typy stanów: SHOW, READ_ONLY (sekcje: SHOW)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (dynamiczne stany)"
+    },
+    {
+      "id": "COI-R21",
+      "title": "Sekcja ma nazwę (title)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (sekcja: title – TAK)"
+    },
+    {
+      "id": "COI-R22",
+      "title": "Sekcja informacyjna ma opis (description)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (INFO_SECTION: description – TAK)"
+    },
+    {
+      "id": "COI-R23",
+      "title": "Sekcja zgód zawiera zgody (consentSectionConfig)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu; OpisImportowanegoPlikuJSON"
+    },
+    {
+      "id": "COI-R24",
+      "title": "Dane z rejestru (EXTERNAL_SYSTEM) – źródło i tylko do odczytu",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON; Standardy projektowania formularzy eUsług (Twoje dane)"
+    },
+    {
+      "id": "COI-R25",
+      "title": "Walidatory PESEL/NIP/REGON/e-mail/kod pocztowy zgodne z etykietą",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Standardy projektowania formularzy eUsług; Reguły techniczne konfiguracji formularzy i pól na formularzu (walidatory)"
+    },
+    {
+      "id": "COI-R26",
+      "title": "Walidatory dozwolone dla typu pola",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (specyfikacja komponentów)"
+    },
+    {
+      "id": "COI-R27",
+      "title": "Strony mają niepusty, jednoznaczny tytuł",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON; Reguły techniczne konfiguracji formularzy i pól na formularzu (JSONata tabs[… in title])"
+    },
+    {
+      "id": "COI-R28",
+      "title": "Lista rozwijana z >15 opcjami ma wyszukiwarkę",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Standardy projektowania formularzy eUsług (pkt 4f)"
+    },
+    {
+      "id": "COI-R29",
+      "title": "Formularz zawiera pola do wypełnienia",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    }
+  ],
+  "repairs": [],
+  "proposedDictionaries": [],
+  "warnings": [],
+  "timings": {
+    "extract": 1028,
+    "infer": 2,
+    "dict": 0,
+    "build": 0,
+    "validate": 6
+  },
+  "llm": {
+    "used": false
+  }
+}

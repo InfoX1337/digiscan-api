@@ -11,3 +11,6 @@ tests/fixtures/materials
 *.log
 .DS_Store
 materiały/
+
+# materiały COI (nie publikujemy)
+COI - *.pdf

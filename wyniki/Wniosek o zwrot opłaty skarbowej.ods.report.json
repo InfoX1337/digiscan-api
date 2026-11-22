@@ -1,0 +1,1820 @@
+{
+  "filename": "Wniosek o zwrot opłaty skarbowej.ods",
+  "format": "ods",
+  "ocr": false,
+  "confidence": 0.77,
+  "fields": {
+    "fe810756-04ea-5299-82ef-ec507949decc": {
+      "id": "fe810756-04ea-5299-82ef-ec507949decc",
+      "techName": "organ_do_ktorego_jest_skladany_wniosek",
+      "title": "Organ, do którego jest składany wniosek",
+      "type": "SECTION",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 339.477684,
+            "y": 0.0,
+            "w": 84.0,
+            "h": 21.7417655
+          },
+          "text": "Urząd Gminy Stawiguda",
+          "blockIds": [
+            "p1-b1"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "adresat wniosku"
+      ]
+    },
+    "133edc9a-606d-5968-9d8c-63fd61f85b2e": {
+      "id": "133edc9a-606d-5968-9d8c-63fd61f85b2e",
+      "techName": "nazwa_organu",
+      "title": "Nazwa organu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 339.477684,
+            "y": 0.0,
+            "w": 84.0,
+            "h": 21.7417655
+          },
+          "text": "Urząd Gminy Stawiguda",
+          "blockIds": [
+            "p1-b1"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "adresat wniosku z nagłówka dokumentu"
+      ]
+    },
+    "4c0aa95d-4279-5ec4-89d2-4f741c830c45": {
+      "id": "4c0aa95d-4279-5ec4-89d2-4f741c830c45",
+      "techName": "podmiot_wniosku",
+      "title": "Podmiot wniosku",
+      "type": "SECTION",
+      "confidence": 0.55,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "dokument zawiera sekcję pełnomocnika – dodano przełącznik (SHOW)"
+      ]
+    },
+    "eba662cb-82ef-5b47-8547-1f66f9fe382f": {
+      "id": "eba662cb-82ef-5b47-8547-1f66f9fe382f",
+      "techName": "czy_wniosek_sklada_pelnomocnik",
+      "title": "Czy wniosek składa pełnomocnik?",
+      "type": "RADIO",
+      "confidence": 0.55,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "dokument zawiera sekcję pełnomocnika – dodano przełącznik (SHOW)"
+      ]
+    },
+    "0734f326-6b9a-5010-acae-2e644e32251a": {
+      "id": "0734f326-6b9a-5010-acae-2e644e32251a",
+      "techName": "twoje_dane",
+      "title": "Twoje dane",
+      "type": "SECTION",
+      "confidence": 0.75,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 155.5939385,
+            "y": 254.2681049999999,
+            "w": 100.0,
+            "h": 14.995298500000018
+          },
+          "text": "2.1. Dane identyfikacyjne",
+          "blockIds": [
+            "p1-b12"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "3203dba6-8e78-5642-8957-907d6a49e938": {
+      "id": "3203dba6-8e78-5642-8957-907d6a49e938",
+      "techName": "nazwa",
+      "title": "Nazwa",
+      "type": "TEXT_FIELD",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 273.0051414999999,
+            "w": 509.21652600000004,
+            "h": 22.507120999999984
+          },
+          "text": "Nazwa /Imię i nazwisko ",
+          "blockIds": [
+            "p1-b13",
+            "p1-b14"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "'nazwa' dla podmiotu niebędącego osobą"
+      ]
+    },
+    "5e06a93b-ffab-5c76-8bfc-afdc2db4e69e": {
+      "id": "5e06a93b-ffab-5c76-8bfc-afdc2db4e69e",
+      "techName": "imie",
+      "title": "Imię",
+      "type": "TEXT_FIELD",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 273.0051414999999,
+            "w": 509.21652600000004,
+            "h": 22.507120999999984
+          },
+          "text": "Nazwa /Imię i nazwisko ",
+          "blockIds": [
+            "p1-b13",
+            "p1-b14"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (name)"
+      ]
+    },
+    "886b2892-79ab-57f6-aacf-5cb2c8b5e9dc": {
+      "id": "886b2892-79ab-57f6-aacf-5cb2c8b5e9dc",
+      "techName": "nazwisko",
+      "title": "Nazwisko",
+      "type": "TEXT_FIELD",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 273.0051414999999,
+            "w": 509.21652600000004,
+            "h": 22.507120999999984
+          },
+          "text": "Nazwa /Imię i nazwisko ",
+          "blockIds": [
+            "p1-b13",
+            "p1-b14"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (surname)"
+      ]
+    },
+    "29e25e70-aca4-5b3a-a207-d88059ce236f": {
+      "id": "29e25e70-aca4-5b3a-a207-d88059ce236f",
+      "techName": "dane_identyfikacyjne",
+      "title": "Dane identyfikacyjne",
+      "type": "SECTION",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 155.5939385,
+            "y": 254.2681049999999,
+            "w": 100.0,
+            "h": 14.995298500000018
+          },
+          "text": "2.1. Dane identyfikacyjne",
+          "blockIds": [
+            "p1-b12"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "baecf893-8abd-513f-826b-ee4b60f75d5f": {
+      "id": "baecf893-8abd-513f-826b-ee4b60f75d5f",
+      "techName": "nip",
+      "title": "NIP",
+      "type": "TEXT_FIELD",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 300.0193559999999,
+            "w": 297.0429735,
+            "h": 22.507120999999984
+          },
+          "text": "NIP ",
+          "blockIds": [
+            "p1-b15",
+            "p1-b16"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)"
+      ]
+    },
+    "903abd38-e523-5e9f-ac9d-ad05ccac9067": {
+      "id": "903abd38-e523-5e9f-ac9d-ad05ccac9067",
+      "techName": "adres_siedziby_lub_miejsca_zamieszkania_wnioskodawcy",
+      "title": "Adres siedziby lub miejsca zamieszkania wnioskodawcy",
+      "type": "SECTION",
+      "confidence": 0.76,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 155.5939385,
+            "y": 325.5312059999999,
+            "w": 228.00000000000003,
+            "h": 14.99529849999999
+          },
+          "text": "2.2. Adres siedziby lub miejsca zamieszkania wnioskodawcy",
+          "blockIds": [
+            "p1-b17"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "147f88a2-9131-58a1-b1d1-18d3c7b3879f": {
+      "id": "147f88a2-9131-58a1-b1d1-18d3c7b3879f",
+      "techName": "kraj",
+      "title": "Kraj",
+      "type": "SELECT",
+      "confidence": 0.62,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 344.2682424999999,
+            "w": 509.21652600000004,
+            "h": 79.54027899999994
+          },
+          "text": "Miejscowość Ulica  Nr domu  Nr lokalu  Kod pocztowy  - ",
+          "blockIds": [
+            "p1-b18",
+            "p1-b19",
+            "p1-b20",
+            "p1-b21",
+            "p1-b22",
+            "p1-b23",
+            "p1-b24",
+            "p1-b25",
+            "p1-b26",
+            "p1-b27",
+            "p1-b28"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)",
+        "pole korzysta ze słownika „Kraje”"
+      ]
+    },
+    "4fbb231a-2fcb-551a-8fb2-8ca046e79baa": {
+      "id": "4fbb231a-2fcb-551a-8fb2-8ca046e79baa",
+      "techName": "miejscowosc_zagranica",
+      "title": "Miejscowość",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 344.2682424999999,
+            "w": 509.21652600000004,
+            "h": 79.54027899999994
+          },
+          "text": "Miejscowość Ulica  Nr domu  Nr lokalu  Kod pocztowy  - ",
+          "blockIds": [
+            "p1-b18",
+            "p1-b19",
+            "p1-b20",
+            "p1-b21",
+            "p1-b22",
+            "p1-b23",
+            "p1-b24",
+            "p1-b25",
+            "p1-b26",
+            "p1-b27",
+            "p1-b28"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "68a65785-0809-5f1e-a6b1-19f1a45b0924": {
+      "id": "68a65785-0809-5f1e-a6b1-19f1a45b0924",
+      "techName": "kod_pocztowy_zagranica",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 344.2682424999999,
+            "w": 509.21652600000004,
+            "h": 79.54027899999994
+          },
+          "text": "Miejscowość Ulica  Nr domu  Nr lokalu  Kod pocztowy  - ",
+          "blockIds": [
+            "p1-b18",
+            "p1-b19",
+            "p1-b20",
+            "p1-b21",
+            "p1-b22",
+            "p1-b23",
+            "p1-b24",
+            "p1-b25",
+            "p1-b26",
+            "p1-b27",
+            "p1-b28"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "bd7771d9-6db5-527e-8faf-fa29e0711355": {
+      "id": "bd7771d9-6db5-527e-8faf-fa29e0711355",
+      "techName": "ulica_zagranica",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 344.2682424999999,
+            "w": 509.21652600000004,
+            "h": 79.54027899999994
+          },
+          "text": "Miejscowość Ulica  Nr domu  Nr lokalu  Kod pocztowy  - ",
+          "blockIds": [
+            "p1-b18",
+            "p1-b19",
+            "p1-b20",
+            "p1-b21",
+            "p1-b22",
+            "p1-b23",
+            "p1-b24",
+            "p1-b25",
+            "p1-b26",
+            "p1-b27",
+            "p1-b28"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "832aacfd-d8d3-5e0f-9551-bc9fd9da15b9": {
+      "id": "832aacfd-d8d3-5e0f-9551-bc9fd9da15b9",
+      "techName": "teryt_4g_dowodowy",
+      "title": "TERYT_4G_DOWODOWY",
+      "type": "SELECT",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 344.2682424999999,
+            "w": 44.0,
+            "h": 22.507120999999984
+          },
+          "text": "Miejscowość",
+          "blockIds": [
+            "p1-b18"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "składniki adresu (miejscowość/gmina/…) -> TERYT"
+      ]
+    },
+    "3269ef83-e062-5e2f-b93e-e06c9d708440": {
+      "id": "3269ef83-e062-5e2f-b93e-e06c9d708440",
+      "techName": "kod_pocztowy",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 155.5939385,
+            "y": 401.30140049999983,
+            "w": 353.6225875,
+            "h": 22.507120999999984
+          },
+          "text": " Nr lokalu  Kod pocztowy  - ",
+          "blockIds": [
+            "p1-b22",
+            "p1-b23",
+            "p1-b24",
+            "p1-b25",
+            "p1-b26",
+            "p1-b27",
+            "p1-b28"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "składnik adresu"
+      ]
+    },
+    "f79017bc-163d-5b17-8640-dc9b2175ac28": {
+      "id": "f79017bc-163d-5b17-8640-dc9b2175ac28",
+      "techName": "ulica",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 372.78482149999985,
+            "w": 509.21652600000004,
+            "h": 22.507120999999984
+          },
+          "text": "Ulica ",
+          "blockIds": [
+            "p1-b19",
+            "p1-b20"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "składnik adresu"
+      ]
+    },
+    "570504ab-befc-52f5-b2e7-4bda238bf1ef": {
+      "id": "570504ab-befc-52f5-b2e7-4bda238bf1ef",
+      "techName": "numer_budynku",
+      "title": "Numer budynku",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 401.30140049999983,
+            "w": 28.0,
+            "h": 22.507120999999984
+          },
+          "text": "Nr domu",
+          "blockIds": [
+            "p1-b21"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "składnik adresu"
+      ]
+    },
+    "3a81becc-10db-52fd-a439-f3fa0d97b75f": {
+      "id": "3a81becc-10db-52fd-a439-f3fa0d97b75f",
+      "techName": "numer_lokalu",
+      "title": "Numer lokalu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 155.5939385,
+            "y": 401.30140049999983,
+            "w": 353.6225875,
+            "h": 22.507120999999984
+          },
+          "text": " Nr lokalu  Kod pocztowy  - ",
+          "blockIds": [
+            "p1-b22",
+            "p1-b23",
+            "p1-b24",
+            "p1-b25",
+            "p1-b26",
+            "p1-b27",
+            "p1-b28"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "składnik adresu"
+      ]
+    },
+    "157ab229-430a-5283-b340-25922aa022ad": {
+      "id": "157ab229-430a-5283-b340-25922aa022ad",
+      "techName": "dane_pelnomocnika",
+      "title": "Dane pełnomocnika",
+      "type": "SECTION",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 155.5939385,
+            "y": 508.59290299999975,
+            "w": 88.0,
+            "h": 14.99529849999999
+          },
+          "text": "2.4. Dane pełnomocnika",
+          "blockIds": [
+            "p1-b33"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "e42a1492-24f0-5309-be21-930aa7ced525": {
+      "id": "e42a1492-24f0-5309-be21-930aa7ced525",
+      "techName": "imie_2",
+      "title": "Imię",
+      "type": "TEXT_FIELD",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 527.3299394999998,
+            "w": 60.0,
+            "h": 22.507120999999984
+          },
+          "text": "Imię i nazwisko",
+          "blockIds": [
+            "p1-b34"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "48414bcd-4b91-500e-a796-67b083404b36": {
+      "id": "48414bcd-4b91-500e-a796-67b083404b36",
+      "techName": "nazwisko_2",
+      "title": "Nazwisko",
+      "type": "TEXT_FIELD",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 527.3299394999998,
+            "w": 60.0,
+            "h": 22.507120999999984
+          },
+          "text": "Imię i nazwisko",
+          "blockIds": [
+            "p1-b34"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "rozdzielono 'imię i nazwisko'"
+      ]
+    },
+    "f9f87308-f0ff-5882-af84-44538f6b5079": {
+      "id": "f9f87308-f0ff-5882-af84-44538f6b5079",
+      "techName": "adres_dane_pelnomocnika",
+      "title": "Adres – dane pełnomocnika",
+      "type": "SECTION",
+      "confidence": 0.76,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 155.5939385,
+            "y": 508.59290299999975,
+            "w": 88.0,
+            "h": 14.99529849999999
+          },
+          "text": "2.4. Dane pełnomocnika",
+          "blockIds": [
+            "p1-b33"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "07298f4d-b816-5417-a9f2-99d6ea4c1adb": {
+      "id": "07298f4d-b816-5417-a9f2-99d6ea4c1adb",
+      "techName": "kraj_2",
+      "title": "Kraj",
+      "type": "SELECT",
+      "confidence": 0.62,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 555.8465184999998,
+            "w": 509.21652600000004,
+            "h": 79.54027899999994
+          },
+          "text": "Miejscowość Ulica  Nr domu  Nr lokalu  Kod pocztowy  - ",
+          "blockIds": [
+            "p1-b35",
+            "p1-b36",
+            "p1-b37",
+            "p1-b38",
+            "p1-b39",
+            "p1-b40",
+            "p1-b41",
+            "p1-b42",
+            "p1-b43",
+            "p1-b44",
+            "p1-b45"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)",
+        "pole korzysta ze słownika „Kraje”"
+      ]
+    },
+    "e4beed40-dd6e-57ca-a8b5-1438dcb8e24c": {
+      "id": "e4beed40-dd6e-57ca-a8b5-1438dcb8e24c",
+      "techName": "miejscowosc_zagranica_2",
+      "title": "Miejscowość",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 555.8465184999998,
+            "w": 509.21652600000004,
+            "h": 79.54027899999994
+          },
+          "text": "Miejscowość Ulica  Nr domu  Nr lokalu  Kod pocztowy  - ",
+          "blockIds": [
+            "p1-b35",
+            "p1-b36",
+            "p1-b37",
+            "p1-b38",
+            "p1-b39",
+            "p1-b40",
+            "p1-b41",
+            "p1-b42",
+            "p1-b43",
+            "p1-b44",
+            "p1-b45"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "c7b822aa-1bd8-5269-bcab-3959db8bde34": {
+      "id": "c7b822aa-1bd8-5269-bcab-3959db8bde34",
+      "techName": "kod_pocztowy_zagranica_2",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 555.8465184999998,
+            "w": 509.21652600000004,
+            "h": 79.54027899999994
+          },
+          "text": "Miejscowość Ulica  Nr domu  Nr lokalu  Kod pocztowy  - ",
+          "blockIds": [
+            "p1-b35",
+            "p1-b36",
+            "p1-b37",
+            "p1-b38",
+            "p1-b39",
+            "p1-b40",
+            "p1-b41",
+            "p1-b42",
+            "p1-b43",
+            "p1-b44",
+            "p1-b45"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "3d484451-6393-5ebe-a1f6-9512825dcea1": {
+      "id": "3d484451-6393-5ebe-a1f6-9512825dcea1",
+      "techName": "ulica_zagranica_2",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.6,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 555.8465184999998,
+            "w": 509.21652600000004,
+            "h": 79.54027899999994
+          },
+          "text": "Miejscowość Ulica  Nr domu  Nr lokalu  Kod pocztowy  - ",
+          "blockIds": [
+            "p1-b35",
+            "p1-b36",
+            "p1-b37",
+            "p1-b38",
+            "p1-b39",
+            "p1-b40",
+            "p1-b41",
+            "p1-b42",
+            "p1-b43",
+            "p1-b44",
+            "p1-b45"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "uzupełniono wg standardu adresu eUsługi (kraj + adres krajowy/zagraniczny)"
+      ]
+    },
+    "b6e212fb-3463-5e38-9754-3e717f52211a": {
+      "id": "b6e212fb-3463-5e38-9754-3e717f52211a",
+      "techName": "teryt_4g_dowodowy_2",
+      "title": "TERYT_4G_DOWODOWY",
+      "type": "SELECT",
+      "confidence": 0.85,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 555.8465184999998,
+            "w": 44.0,
+            "h": 22.507120999999984
+          },
+          "text": "Miejscowość",
+          "blockIds": [
+            "p1-b35"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "składniki adresu (miejscowość/gmina/…) -> TERYT"
+      ]
+    },
+    "fb0ecea6-9a15-5711-8e1c-e3fd6d064538": {
+      "id": "fb0ecea6-9a15-5711-8e1c-e3fd6d064538",
+      "techName": "kod_pocztowy_2",
+      "title": "Kod pocztowy",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 155.5939385,
+            "y": 612.8796764999997,
+            "w": 353.6225875,
+            "h": 22.507120999999984
+          },
+          "text": " Nr lokalu  Kod pocztowy  - ",
+          "blockIds": [
+            "p1-b39",
+            "p1-b40",
+            "p1-b41",
+            "p1-b42",
+            "p1-b43",
+            "p1-b44",
+            "p1-b45"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "składnik adresu"
+      ]
+    },
+    "cddcafce-4405-54e6-9130-d342181b1475": {
+      "id": "cddcafce-4405-54e6-9130-d342181b1475",
+      "techName": "ulica_2",
+      "title": "Ulica",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 584.3630974999998,
+            "w": 509.21652600000004,
+            "h": 22.507120999999984
+          },
+          "text": "Ulica ",
+          "blockIds": [
+            "p1-b36",
+            "p1-b37"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "składnik adresu"
+      ]
+    },
+    "bab28146-098a-55a9-a838-9630f1b68aa7": {
+      "id": "bab28146-098a-55a9-a838-9630f1b68aa7",
+      "techName": "numer_budynku_2",
+      "title": "Numer budynku",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 612.8796764999997,
+            "w": 28.0,
+            "h": 22.507120999999984
+          },
+          "text": "Nr domu",
+          "blockIds": [
+            "p1-b38"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "składnik adresu"
+      ]
+    },
+    "1a0963e4-48a4-5878-bcee-5c5328467d14": {
+      "id": "1a0963e4-48a4-5878-bcee-5c5328467d14",
+      "techName": "numer_lokalu_2",
+      "title": "Numer lokalu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 155.5939385,
+            "y": 612.8796764999997,
+            "w": 353.6225875,
+            "h": 22.507120999999984
+          },
+          "text": " Nr lokalu  Kod pocztowy  - ",
+          "blockIds": [
+            "p1-b39",
+            "p1-b40",
+            "p1-b41",
+            "p1-b42",
+            "p1-b43",
+            "p1-b44",
+            "p1-b45"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "składnik adresu"
+      ]
+    },
+    "b5de4f3a-83b4-5a6a-8562-db08cdde6f77": {
+      "id": "b5de4f3a-83b4-5a6a-8562-db08cdde6f77",
+      "techName": "informacje_o_oplacie_skarbowej",
+      "title": "Informacje o opłacie skarbowej",
+      "type": "SECTION",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 651.1191049999996,
+            "w": 132.0,
+            "h": 14.99529849999999
+          },
+          "text": "3. Informacje o opłacie skarbowej",
+          "blockIds": [
+            "p1-b46"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "a68abac4-2bb9-5f32-a74e-fd3e87e42cbf": {
+      "id": "a68abac4-2bb9-5f32-a74e-fd3e87e42cbf",
+      "techName": "data_uiszczenia_oplaty",
+      "title": "Data uiszczenia opłaty",
+      "type": "DATEPICKER",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 670.6214969999996,
+            "w": 325.3327805,
+            "h": 37.502419499999974
+          },
+          "text": "Data uiszczenia opłaty  -  -  ⓘ DD-MM-RRRR",
+          "blockIds": [
+            "p1-b47",
+            "p1-b48",
+            "p1-b49",
+            "p1-b50",
+            "p1-b51",
+            "p1-b52",
+            "p1-b53"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (DATEPICKER)"
+      ]
+    },
+    "72352690-f328-5513-8215-df1499fe9ce4": {
+      "id": "72352690-f328-5513-8215-df1499fe9ce4",
+      "techName": "wysokosc_oplaty",
+      "title": "Wysokość opłaty",
+      "type": "NUMBER",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 714.1333744999996,
+            "w": 60.0,
+            "h": 22.507120999999984
+          },
+          "text": "Wysokość opłaty",
+          "blockIds": [
+            "p1-b54"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (NUMBER)"
+      ]
+    },
+    "8d5868e9-0594-59d0-b7c5-b34282022507": {
+      "id": "8d5868e9-0594-59d0-b7c5-b34282022507",
+      "techName": "nazwa_organu_w_ktorym_zaplacono_oplate",
+      "title": "Nazwa organu, w którym zapłacono opłatę",
+      "type": "TEXT_FIELD",
+      "confidence": 0.55,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 742.6499534999996,
+            "w": 509.21652600000004,
+            "h": 22.507120999999984
+          },
+          "text": "Nazwa organu, w którym zapłacono opłatę ",
+          "blockIds": [
+            "p1-b55",
+            "p1-b56"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "pole w treści zdania – sprawdź tytuł"
+      ]
+    },
+    "39854735-9f99-5f81-b0e1-c52df7e138f0": {
+      "id": "39854735-9f99-5f81-b0e1-c52df7e138f0",
+      "techName": "uzasadnienie_wniosku",
+      "title": "Uzasadnienie wniosku",
+      "type": "SECTION",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 768.8988124999996,
+            "w": 480.0,
+            "h": 14.99529849999999
+          },
+          "text": "4. Uzasadnienie wniosku (opisz w polu poniżej dlaczego opłata skarbowa, której dotyczy wniosek została błędnie uiszczona",
+          "blockIds": [
+            "p1-b57"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "f8703a37-c7f0-5936-9373-66ec6b537794": {
+      "id": "f8703a37-c7f0-5936-9373-66ec6b537794",
+      "techName": "uzasadnienie_wniosku_2",
+      "title": "Uzasadnienie wniosku",
+      "type": "TEXTAREA",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 768.8988124999996,
+            "w": 480.0,
+            "h": 14.99529849999999
+          },
+          "text": "4. Uzasadnienie wniosku (opisz w polu poniżej dlaczego opłata skarbowa, której dotyczy wniosek została błędnie uiszczona",
+          "blockIds": [
+            "p1-b57"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "pole wynika z nagłówka sekcji (miejsce do wpisania pod nagłówkiem)"
+      ]
+    },
+    "051c20e3-49c7-55a3-9deb-d6a525019e83": {
+      "id": "051c20e3-49c7-55a3-9deb-d6a525019e83",
+      "techName": "informacje_dotyczace_sposobu_zwrotu_oplaty_skarbowej",
+      "title": "Informacje dotyczące sposobu zwrotu opłaty skarbowej",
+      "type": "SECTION",
+      "confidence": 0.7,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 837.9225399999996,
+            "w": 336.0,
+            "h": 14.99529849999999
+          },
+          "text": "5. Informacje dotyczące sposobu zwrotu opłaty skarbowej (postaw „x” w wybranym polu)",
+          "blockIds": [
+            "p1-b60"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "e59c3074-d19c-5f6b-a710-ea0f2a9e8ef7": {
+      "id": "e59c3074-d19c-5f6b-a710-ea0f2a9e8ef7",
+      "techName": "informacje_dotyczace_sposobu_zwrotu_oplaty_skarbowej_2",
+      "title": "Informacje dotyczące sposobu zwrotu opłaty skarbowej",
+      "type": "RADIO",
+      "confidence": 0.55,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 183.8837455,
+            "y": 857.4249319999996,
+            "w": 116.00000000000003,
+            "h": 49.521335499999964
+          },
+          "text": "Gotówką w kasie organu Przelewem na rachunek w banku",
+          "blockIds": [
+            "p1-b61",
+            "p1-b62"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "opcje z listy po instrukcji 'zaznacz' (brak wykrytych kratek)"
+      ]
+    },
+    "0d348d54-4eeb-5a2c-9b0c-21f4cabfa84b": {
+      "id": "0d348d54-4eeb-5a2c-9b0c-21f4cabfa84b",
+      "techName": "nr_rachunku",
+      "title": "Nr rachunku",
+      "type": "TEXT_FIELD",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 931.6927619999996,
+            "w": 509.21652600000004,
+            "h": 22.507120999999984
+          },
+          "text": "Nr rachunku ",
+          "blockIds": [
+            "p1-b64",
+            "p1-b65"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)",
+        "widoczne gdy 'Informacje dotyczące sposobu zwrotu opłaty skarbowej' = 'Przelewem na rachunek w banku'"
+      ]
+    },
+    "5c8e1b55-376f-53f8-97ab-7a1c1ebe7580": {
+      "id": "5c8e1b55-376f-53f8-97ab-7a1c1ebe7580",
+      "techName": "dane_wlasciciela",
+      "title": "Dane właściciela",
+      "type": "TEXT_FIELD",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 99.0143245,
+            "y": 957.2046119999995,
+            "w": 63.999999999999986,
+            "h": 14.99529849999999
+          },
+          "text": "Dane właściciela",
+          "blockIds": [
+            "p1-b66"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "etykieta w dokumencie",
+        "widoczne gdy 'Informacje dotyczące sposobu zwrotu opłaty skarbowej' = 'Przelewem na rachunek w banku'"
+      ]
+    },
+    "deb4e491-1a38-54f2-b985-c4d8a55a271b": {
+      "id": "deb4e491-1a38-54f2-b985-c4d8a55a271b",
+      "techName": "zalaczniki",
+      "title": "Załączniki",
+      "type": "SECTION",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 1013.4440679999994,
+            "w": 168.0,
+            "h": 14.995298500000104
+          },
+          "text": "7. Załączniki (postaw „x” w wybranym polu)",
+          "blockIds": [
+            "p1-b69"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "1b8b1191-32fb-5836-be32-92366fd39bca": {
+      "id": "1b8b1191-32fb-5836-be32-92366fd39bca",
+      "techName": "dokument_stwierdzajacy_udzielenie_pelnomocnictwa",
+      "title": "Dokument stwierdzający udzielenie pełnomocnictwa",
+      "type": "FILE_UPLOADER",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 155.5939385,
+            "y": 1032.9464599999997,
+            "w": 192.00000000000003,
+            "h": 22.507121000000097
+          },
+          "text": "Dokument stwierdzający udzielenie pełnomocnictwa",
+          "blockIds": [
+            "p1-b71"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "pozycja listy załączników"
+      ]
+    },
+    "4040c6f2-0356-505a-95bc-4ae02d6a4540": {
+      "id": "4040c6f2-0356-505a-95bc-4ae02d6a4540",
+      "techName": "dowod_uiszczenia_oplaty_skarbowej_za_pelnomocnictwo",
+      "title": "Dowód uiszczenia opłaty skarbowej za pełnomocnictwo",
+      "type": "FILE_UPLOADER",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 155.5939385,
+            "y": 1059.9606744999999,
+            "w": 204.00000000000003,
+            "h": 22.507121000000097
+          },
+          "text": "Dowód uiszczenia opłaty skarbowej za pełnomocnictwo",
+          "blockIds": [
+            "p1-b73"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "pozycja listy załączników"
+      ]
+    },
+    "8bf37f60-684f-529a-ae21-a43a1c4f908f": {
+      "id": "8bf37f60-684f-529a-ae21-a43a1c4f908f",
+      "techName": "dane_kontaktowe_wnioskodawcy",
+      "title": "Dane kontaktowe wnioskodawcy",
+      "type": "SECTION",
+      "confidence": 0.84,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 155.5939385,
+            "y": 425.3108859999998,
+            "w": 353.6225875,
+            "h": 25.51184999999998
+          },
+          "text": "2.3. Dane kontaktowe wnioskodawcy (dane kontaktowe nie są obowiązkowe, ale ułatwią kontakt w sprawie wniosku)",
+          "blockIds": [
+            "p1-b29"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "nagłówek sekcji w dokumencie"
+      ]
+    },
+    "f080613c-3f1a-5a92-a2ee-8f247b7aafbb": {
+      "id": "f080613c-3f1a-5a92-a2ee-8f247b7aafbb",
+      "techName": "numer_telefonu",
+      "title": "Numer telefonu",
+      "type": "TEXT_FIELD",
+      "confidence": 0.78,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 454.5644739999998,
+            "w": 56.0,
+            "h": 22.507120999999984
+          },
+          "text": "Numer telefonu",
+          "blockIds": [
+            "p1-b30"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (phoneNumber)"
+      ]
+    },
+    "680882cc-9a29-5221-9dde-36bb52bd78eb": {
+      "id": "680882cc-9a29-5221-9dde-36bb52bd78eb",
+      "techName": "adres_e_mail",
+      "title": "Adres e-mail",
+      "type": "TEXT_FIELD",
+      "confidence": 0.9,
+      "sources": [
+        {
+          "page": 1,
+          "bbox": {
+            "x": 0.0,
+            "y": 483.08105299999977,
+            "w": 509.21652600000004,
+            "h": 22.507120999999984
+          },
+          "text": "Adres poczty elektronicznej ",
+          "blockIds": [
+            "p1-b31",
+            "p1-b32"
+          ]
+        }
+      ],
+      "decidedBy": [
+        "rules",
+        "dict"
+      ],
+      "reasons": [
+        "typ z etykiety (TEXT_FIELD)",
+        "pole danych zalogowanego użytkownika w sekcji wnioskodawcy – zasilane z MLPZ (email)"
+      ]
+    },
+    "3b4c8818-7ebd-58fa-a91f-e754910e0c61": {
+      "id": "3b4c8818-7ebd-58fa-a91f-e754910e0c61",
+      "techName": "podglad_uzupelnionego_wniosku",
+      "title": "Podgląd uzupełnionego wniosku",
+      "type": "SECTION",
+      "confidence": 1.0,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard: strona końcowa z podglądem"
+      ]
+    },
+    "e29cb506-a594-5efb-a8b1-11fcb1655855": {
+      "id": "e29cb506-a594-5efb-a8b1-11fcb1655855",
+      "techName": "podglad",
+      "title": "Podgląd",
+      "type": "INFO_SECTION",
+      "confidence": 1.0,
+      "sources": [],
+      "decidedBy": [
+        "rules"
+      ],
+      "reasons": [
+        "standard: strona końcowa z podglądem"
+      ]
+    }
+  },
+  "review": [
+    {
+      "fieldId": "4c0aa95d-4279-5ec4-89d2-4f741c830c45",
+      "techName": "podmiot_wniosku",
+      "title": "Podmiot wniosku",
+      "confidence": 0.55,
+      "reason": "dokument zawiera sekcję pełnomocnika – dodano przełącznik (SHOW)"
+    },
+    {
+      "fieldId": "eba662cb-82ef-5b47-8547-1f66f9fe382f",
+      "techName": "czy_wniosek_sklada_pelnomocnik",
+      "title": "Czy wniosek składa pełnomocnik?",
+      "confidence": 0.55,
+      "reason": "dokument zawiera sekcję pełnomocnika – dodano przełącznik (SHOW)"
+    },
+    {
+      "fieldId": "8d5868e9-0594-59d0-b7c5-b34282022507",
+      "techName": "nazwa_organu_w_ktorym_zaplacono_oplate",
+      "title": "Nazwa organu, w którym zapłacono opłatę",
+      "confidence": 0.55,
+      "reason": "pole w treści zdania – sprawdź tytuł"
+    },
+    {
+      "fieldId": "e59c3074-d19c-5f6b-a710-ea0f2a9e8ef7",
+      "techName": "informacje_dotyczace_sposobu_zwrotu_oplaty_skarbowej_2",
+      "title": "Informacje dotyczące sposobu zwrotu opłaty skarbowej",
+      "confidence": 0.55,
+      "reason": "opcje z listy po instrukcji 'zaznacz' (brak wykrytych kratek)"
+    }
+  ],
+  "rules": [
+    {
+      "id": "COI-R01",
+      "title": "Zgodność ze schematem JSON importu",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: importowanyPlikJsonSchemat (schema.json)"
+    },
+    {
+      "id": "COI-R02",
+      "title": "Tytuł formularza (nazwa usługi) – wymagany, max 255 znaków",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R03",
+      "title": "Formularz zawiera minimum dwie strony",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R04",
+      "title": "Strona końcowa oznaczona FINISH (jedna, ostatnia), pozostałe MAIN",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R05",
+      "title": "Każda strona zawiera minimum jedno pole",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R06",
+      "title": "Każde pole zagnieżdżone w sekcji lub sekcji powtarzającej się",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R07",
+      "title": "Brak zagnieżdżania sekcji w innej sekcji",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R08",
+      "title": "Na stronie końcowej brak pól typu Input",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R09",
+      "title": "Strony połączone warunkami przepływu (flow)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu; OpisImportowanegoPlikuJSON (flow.links)"
+    },
+    {
+      "id": "COI-R10",
+      "title": "Unikatowe identyfikatory UUID stron, pól i przejść",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON"
+    },
+    {
+      "id": "COI-R11",
+      "title": "Unikatowa nazwa techniczna pola (techName)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (techName → JSONata)"
+    },
+    {
+      "id": "COI-R12",
+      "title": "Poprawny format nazwy technicznej (ASCII, bez spacji)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (techName → JSONata)"
+    },
+    {
+      "id": "COI-R13",
+      "title": "Pozycja pola mieści się w siatce (x, y, rows, cols)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (CSS grid-area)"
+    },
+    {
+      "id": "COI-R14",
+      "title": "Pola w siatce nie nakładają się",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON (CSS grid-area)"
+    },
+    {
+      "id": "COI-R15",
+      "title": "Pola wyboru mają opcje lub słownik",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    },
+    {
+      "id": "COI-R16",
+      "title": "Opcje wyboru: id, nazwa i unikatowy techName",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu; OpisImportowanegoPlikuJSON"
+    },
+    {
+      "id": "COI-R17",
+      "title": "Słownik tylko w polach SELECT/RADIO/CHECKBOX (adresowe i Kraje – SELECT)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Hacknation – Słowniki"
+    },
+    {
+      "id": "COI-R18",
+      "title": "Poprawna składnia wyrażeń JSONata w stanach pól",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (warunki jsonaty)"
+    },
+    {
+      "id": "COI-R19",
+      "title": "Wyrażenia JSONata odwołują się do istniejących pól i stron",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (warunki jsonaty)"
+    },
+    {
+      "id": "COI-R20",
+      "title": "Dozwolone typy stanów: SHOW, READ_ONLY (sekcje: SHOW)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (dynamiczne stany)"
+    },
+    {
+      "id": "COI-R21",
+      "title": "Sekcja ma nazwę (title)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (sekcja: title – TAK)"
+    },
+    {
+      "id": "COI-R22",
+      "title": "Sekcja informacyjna ma opis (description)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (INFO_SECTION: description – TAK)"
+    },
+    {
+      "id": "COI-R23",
+      "title": "Sekcja zgód zawiera zgody (consentSectionConfig)",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu; OpisImportowanegoPlikuJSON"
+    },
+    {
+      "id": "COI-R24",
+      "title": "Dane z rejestru (EXTERNAL_SYSTEM) – źródło i tylko do odczytu",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON; Standardy projektowania formularzy eUsług (Twoje dane)"
+    },
+    {
+      "id": "COI-R25",
+      "title": "Walidatory PESEL/NIP/REGON/e-mail/kod pocztowy zgodne z etykietą",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Standardy projektowania formularzy eUsług; Reguły techniczne konfiguracji formularzy i pól na formularzu (walidatory)"
+    },
+    {
+      "id": "COI-R26",
+      "title": "Walidatory dozwolone dla typu pola",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu (specyfikacja komponentów)"
+    },
+    {
+      "id": "COI-R27",
+      "title": "Strony mają niepusty, jednoznaczny tytuł",
+      "severity": "error",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: OpisImportowanegoPlikuJSON; Reguły techniczne konfiguracji formularzy i pól na formularzu (JSONata tabs[… in title])"
+    },
+    {
+      "id": "COI-R28",
+      "title": "Lista rozwijana z >15 opcjami ma wyszukiwarkę",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Standardy projektowania formularzy eUsług (pkt 4f)"
+    },
+    {
+      "id": "COI-R29",
+      "title": "Formularz zawiera pola do wypełnienia",
+      "severity": "warning",
+      "passed": true,
+      "repaired": false,
+      "targets": [],
+      "message": "Spełniona. Źródło: Reguły techniczne konfiguracji formularzy i pól na formularzu"
+    }
+  ],
+  "repairs": [],
+  "proposedDictionaries": [],
+  "warnings": [],
+  "timings": {
+    "extract": 4,
+    "infer": 3,
+    "dict": 1,
+    "build": 1,
+    "validate": 12
+  },
+  "llm": {
+    "used": false
+  }
+}
