@@ -46,10 +46,20 @@ def _cell(
 _W = "http://schemas.openxmlformats.org/wordprocessingml/2006/main"
 
 
-def _docx_textboxes(b: Builder, d: Any, ptext: Any, pstyle: Any) -> None:
-    """Pola tekstowe (np. PDF zapisany do DOCX): pozycjonowane kotwicą, kolejność = (y, x)."""
+def _docx_textboxes(b: Builder, d: Any, ptext: Any, pstyle: Any) -> int:
+    """Pola tekstowe (np. PDF zapisany do DOCX): pozycjonowane kotwicą względem strony, kolejność = (strona, y, x).
+
+    Strona = numer sekcji akapitu-kotwicy (PDF->DOCX: każda strona to sekcja 'nextPage'). Zwraca liczbę stron.
+    """
     from docx.text.paragraph import Paragraph
 
+    body = d.element.body
+    page_of: list[int] = []  # strona dla kolejnych dzieci body
+    page = 1
+    for child in body.iterchildren():
+        page_of.append(page)
+        if child.xpath('./*[local-name()="pPr"]/*[local-name()="sectPr"]'):
+            page += 1
     boxes = d.element.body.xpath(
         './/*[local-name()="txbxContent"][not(ancestor::*[local-name()="Fallback"])]'
         '[not(ancestor::*[local-name()="txbxContent"])]'
@@ -69,16 +79,19 @@ def _docx_textboxes(b: Builder, d: Any, ptext: Any, pstyle: Any) -> None:
             ext = a.xpath('./*[local-name()="extent"]')
             if ext:
                 w, h = float(ext[0].get("cx", 0)) / 12700, float(ext[0].get("cy", 0)) / 12700
-        found.append((y if y is not None else 0.0, x if x is not None else 0.0, i, tb, (x, y, w, h)))
-    found.sort(key=lambda f: (round(f[0] / 4), f[1], f[2]))
-    for _, _, _, tb, (x, y, w, h) in found:
+        top = tb.xpath('ancestor::*[parent::*[local-name()="body"]]')
+        pg = page_of[body.index(top[0])] if top else 1
+        found.append((pg, y if y is not None else 0.0, x if x is not None else 0.0, i, tb, (x, y, w, h)))
+    found.sort(key=lambda f: (f[0], round(f[1] / 4), f[2], f[3]))
+    for pg, _, _, _, tb, (x, y, w, h) in found:
         bbox = BBox(x=x, y=y, w=w or 0, h=h or 0) if x is not None and y is not None else None
         for pel in tb.xpath("./*[local-name()='p']"):
             p = Paragraph(pel, d)
             for line in ptext(p).split("\n"):
                 if line.strip():
-                    for blk in b.add_text(1, line, style=pstyle(p)):
+                    for blk in b.add_text(pg, line, style=pstyle(p)):
                         blk.bbox = bbox
+    return max((f[0] for f in found), default=1)
 
 
 def extract_docx(inp: ExtractInput) -> SourceDoc:
@@ -186,11 +199,15 @@ def extract_docx(inp: ExtractInput) -> SourceDoc:
         elif tag == "tbl":
             do_table(Table(child, d), tno)
             tno += 1
-    _docx_textboxes(b, d, ptext, pstyle)
+    n_pages = _docx_textboxes(b, d, ptext, pstyle)
     if not b.blocks:
         warnings.append("DOCX: brak tekstu")
     return SourceDoc(
-        filename=inp.filename, format="docx", pages=[SourcePage(page=1)], blocks=b.blocks, warnings=warnings
+        filename=inp.filename,
+        format="docx",
+        pages=[SourcePage(page=k) for k in range(1, n_pages + 1)],
+        blocks=b.blocks,
+        warnings=warnings,
     )
 
 

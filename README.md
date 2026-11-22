@@ -143,7 +143,14 @@ MIT/BSD/Apache/MPL.
 
 - Słowniki Powiat/Gmina/Miejscowość: w JSON-ie pola dostają `dictionaryName` (dane dostarcza platforma COI); lokalnie dołączona jest tylko próbka. Kraje, Numery kierunkowe, Województwo – pełne.
 - DOC (binarny Word) – tylko tekst, bez układu.
-- Jakość OCR zależy od skanu; pola z OCR mają niższe `confidence` i trafiają do przeglądu.
+- **OCR (JPG/PNG/skany PDF) wymaga poprawy – nie zdążyliśmy w trakcie hackathonu.** Tekst czytany jest
+  poprawnie, ale układ tabel jest słaby: Tesseract skleja komórki jednego wiersza, ramki tabel dają śmieci
+  („BB”, „|”), wykropkowania bywają czytane jako litery, a linie do wpisania poza tabelą giną (brak pól).
+  Plan: wykrywanie linii tabeli i wykropkowań na obrazie, wymazanie ich przed OCR, podział tekstu na komórki
+  i kolejność wg wierszy tabeli. Do tego czasu pola z OCR mają niższe `confidence` i trafiają do przeglądu;
+  najlepsze wyniki dają PDF z warstwą tekstu, DOCX, ODS i XLSX.
+- Deklaracje z numerowanymi pozycjami (np. deklaracja śmieciowa) obsługuje osobny tryb pozycji; dla DOC
+  (binarny Word, bez układu) wynik jest wyraźnie słabszy.
 - Pliki z kilkoma wnioskami: sąsiednie identyczne bloki (np. kilku podopiecznych) scalamy w `REPEATING_SECTION`;
   nietypowe bloki wnioskodawcy rozpoznawane słabiej.
 - Wynik to propozycja do przeglądu przez urzędnika, nie ostateczna decyzja.

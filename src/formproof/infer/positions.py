@@ -48,6 +48,17 @@ def is_positional(lines: list[Line]) -> bool:
     return n >= MIN_POSITIONS
 
 
+def _subs(label: str) -> list[tuple[int, int, int]]:
+    """Podpunkty '1. … 2. …' wewnątrz etykiety pozycji (numeracja od 1, kolejno)."""
+    out: list[tuple[int, int, int]] = []
+    for n, a, b in _chunks(label):
+        if n == len(out) + 1:
+            out.append((n, a, b))
+        elif out:
+            break
+    return out
+
+
 @dataclass
 class _Pos:
     num: int
@@ -107,6 +118,14 @@ def positional_sections(
                     sp = C.Spec(sub_t, reason=f"pozycja {p.num}: podpunkt bez kratek TAK/NIE")
                     cur.entries.append(item_cls(spec=sp, lines=list(p.lines), optional=True))
             return
+        if not p.opts and len(subs) >= 2 and subs[0][0] == 1 and not yn:
+            # opcje bez wykrytych kratek (DOCX: kratki to osobne kształty) – '1. właściciel 2. najemca …'
+            sp_subs = _subs(p.label)
+            if len(sp_subs) >= 2:
+                head = p.label[: sp_subs[0][1]].rsplit("1.", 1)[0]
+                title, desc = _title(head)
+                p.opts = [(clean(p.label[a:b]).strip(" :"), p.lines[0]) for _, a, b in sp_subs]
+                p.opts = [(o[:1].upper() + o[1:], ln) for o, ln in p.opts if o]
         if not title and not p.opts:
             return
         if p.opts:
@@ -232,6 +251,21 @@ def positional_sections(
             if cur.kind == "consent":
                 cur.texts.append(ln)
             continue
+        if DATE_MASK.match(t):
+            continue
+        if open_ is not None:
+            if fold(t) in ("tak", "nie"):
+                open_.opts.append((t, ln))
+                continue
+            mo = NUM_OPT.match(t)
+            k = len(_subs(open_.label))
+            rest = t[mo.end() :] if mo else ""
+            only_yn = all(fold(o[0]) in ("tak", "nie") for o in open_.opts)
+            n_mo = int(mo.group(1)) if mo else 0
+            if mo and n_mo == k + 1 and (rest[:1].islower() or k >= 1 or n_mo <= last) and only_yn:
+                open_.label += " " + t  # podpunkt/opcja pozycji, nie nowa pozycja
+                open_.lines.append(ln)
+                continue
         accepted = [(n, a, b) for n, a, b in _chunks(t) if last < n <= last + MAX_STEP]
         # tylko rosnące w obrębie linii
         acc: list[tuple[int, int, int]] = []
